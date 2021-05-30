@@ -1,0 +1,114 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "gutocarvalho.net",
+    "description": "",
+    "home_page_url": "https://gutocarvalho.net",
+    "feed_url": "https://gutocarvalho.net/feed.json",
+    "user_comment": "",
+    "author": {
+        "name": "Guto Carvalho"
+    },
+    "items": [
+        {
+            "id": "https://gutocarvalho.net/2021-novo-ano-novo-lar/",
+            "url": "https://gutocarvalho.net/2021-novo-ano-novo-lar/",
+            "title": "2021, novo ano, novo lar...",
+            "summary": "Esse ano me mudei para longe do centro urbano de Brasília, to no meio da natureza – mas tem fibra.",
+            "content_html": "<p>Esse ano me mudei para longe do centro urbano de Brasília, to no meio da natureza – mas tem fibra.<br><br>Chega um momento que a busca pela qualidade de vida, em especial durante a pandemia, faz toda a diferença.<br><br></p>\n<div class=\"gallery-wrapper\"><div class=\"gallery\"  data-is-empty=\"false\" data-columns=\"3\">\n<figure class=\"gallery__item\"><a href=\"https://gutocarvalho.net/media/posts/9/gallery/casa2.jpg\" data-size=\"1280x960\"><img loading=\"lazy\" src=\"https://gutocarvalho.net/media/posts/9/gallery/casa2-thumbnail.jpg\" alt=\"\" width=\"768\" height=\"576\"></a></figure>\n<figure class=\"gallery__item\"><a href=\"https://gutocarvalho.net/media/posts/9/gallery/casa1.jpg\" data-size=\"1280x960\"><img loading=\"lazy\" src=\"https://gutocarvalho.net/media/posts/9/gallery/casa1-thumbnail.jpg\" alt=\"\" width=\"768\" height=\"576\"></a></figure>\n</div></div>\n<p><br><br>Começo o ano na fronteira entre DF e GO, com muitas trilhas, ar puro e natureza vibrante!<br><br>Recomendo :)</p>",
+            "author": {
+                "name": "Guto Carvalho"
+            },
+            "tags": [
+            ],
+            "date_published": "2021-05-30T00:09:24-03:00",
+            "date_modified": "2021-05-30T00:11:21-03:00"
+        },
+        {
+            "id": "https://gutocarvalho.net/voltando-lives-com-forca-total/",
+            "url": "https://gutocarvalho.net/voltando-lives-com-forca-total/",
+            "title": "Voltando lives com força total...",
+            "summary": "To aqui montando o novo setup para as lives JAC retornarem, se prepara que vem conteúdo intenso e gente fera!&hellip;",
+            "content_html": "<p>To aqui montando o novo setup para as lives JAC retornarem, se prepara que vem conteúdo intenso e gente fera!</p>\n<p>Só vem!</p>\n",
+            "author": {
+                "name": "Guto Carvalho"
+            },
+            "tags": [
+            ],
+            "date_published": "2021-05-29T23:28:08-03:00",
+            "date_modified": "2021-05-29T23:46:10-03:00"
+        },
+        {
+            "id": "https://gutocarvalho.net/novo-motor-de-site/",
+            "url": "https://gutocarvalho.net/novo-motor-de-site/",
+            "title": "Novo motor de site",
+            "summary": "Migrando para o Publii pq né, a pessoa aqui não aguenta ficar na mesma ferramenta mais de 1 ano kkk&hellip;",
+            "content_html": "<p>Migrando para o Publii pq né, a pessoa aqui não aguenta ficar na mesma ferramenta mais de 1 ano kkk :)<br><br>De 2003 para cá já passei por Drupal, Joomla, Wordpress, Octopress, Hugo, Ghost e agora Publii.</p>\n<p>Vamo que vamo!<br><br>#EarlyAdopter</p>",
+            "author": {
+                "name": "Guto Carvalho"
+            },
+            "tags": [
+            ],
+            "date_published": "2021-05-29T23:25:10-03:00",
+            "date_modified": "2021-05-29T23:45:17-03:00"
+        },
+        {
+            "id": "https://gutocarvalho.net/eventos/",
+            "url": "https://gutocarvalho.net/eventos/",
+            "title": "Eventos",
+            "summary": "Eventos que eu recomendo participar - DevOpsDays ",
+            "content_html": "<p><strong>Eventos que eu recomendo participar</strong></p>\n<p>- DevOpsDays</p>\n<p> </p>",
+            "image": "https://gutocarvalho.net/media/posts/5/foto-2021.jpg",
+            "author": {
+                "name": "Guto Carvalho"
+            },
+            "tags": [
+            ],
+            "date_published": "2021-05-29T22:44:37-03:00",
+            "date_modified": "2021-05-30T00:27:42-03:00"
+        },
+        {
+            "id": "https://gutocarvalho.net/comunidades/",
+            "url": "https://gutocarvalho.net/comunidades/",
+            "title": "Comunidades",
+            "summary": "WhatsAPP SysadminQCODA (https://go.jac.bsb.br/sysadminqcoda) JAC Experts (https://go.jac.bsb.br/whatsapp) Telegram Comunidades que eu mantenho Comunidades que eu recomendo Docker BR ( https://t.me/devopsbr ) Kubernetes BR&hellip;",
+            "content_html": "<h2 id=\"whatsapp\">WhatsAPP</h2>\n<ul>\n<li>SysadminQCODA (https://go.jac.bsb.br/sysadminqcoda)</li>\n<li>JAC Experts (https://go.jac.bsb.br/whatsapp)</li>\n</ul>\n<h2 id=\"telegram\">Telegram</h2>\n<p>Comunidades que eu mantenho</p>\n<ul>\n<li>DevOps BSB ( <a href=\"https://t.me/devopsbsb\">https://t.me/devopsbsb</a> )</li>\n<li>DevOPS BR ( <a href=\"https://t.me/devopsbr\">https://t.me/novodevopsbr</a> )</li>\n<li>Cloud Native BR ( <a href=\"https://t.me/devopsbr\">https://t.me/c</a>loudnativebr )</li>\n<li>Teclado Mecanico (https://t.me/tecladomecanico)</li>\n<li>JAC Experts (https://t.me/jacexperts)</li>\n<li>Mac Users BR ( ttps://t.me/macusersbr )</li>\n</ul>\n<p>Comunidades que eu recomendo</p>\n<ul>\n<li>Docker BR ( <a href=\"https://t.me/devopsbr\">https://t.me/devopsbr</a> )</li>\n<li>Kubernetes BR ( <a href=\"https://t.me/kubernetesbr\">https://t.me/kubernetesbr</a> )</li>\n<li>Ansible BR ( <a href=\"https://t.me/ansiblebr\">https://t.me/ansiblebr</a> )</li>\n<li>Terraform BR ( <a href=\"https://t.me/terraformbr\">https://t.me/terraformbr</a> )</li>\n<li>GitLab BR ( <a href=\"https://t.me/kubernetesbr\">https://t.me/kubernetesbr</a> )</li>\n<li>Rancher BR ( <a href=\"https://t.me/rancherbr\">https://t.me/rancherbr</a> )</li>\n<li>Rundeck BR ( <a href=\"https://t.me/rundeckbr\">https://t.me/rundeckbr</a> )</li>\n<li>Azure BR ( <a href=\"https://t.me/azurebrasil\">https://t.me/azurebrasil</a> )</li>\n<li>AWS BR ( <a href=\"https://t.me/awsbrasil\">https://t.me/awsbrasil</a>)</li>\n<li>GCP BR (https://t.me/gcpbr)</li>\n<li>ProxMox BR (https://t.me/proxmoxbrasil)</li>\n</ul>",
+            "image": "https://gutocarvalho.net/media/posts/4/kubeconf_01.jpg",
+            "author": {
+                "name": "Guto Carvalho"
+            },
+            "tags": [
+            ],
+            "date_published": "2021-05-29T22:44:28-03:00",
+            "date_modified": "2021-05-30T00:27:16-03:00"
+        },
+        {
+            "id": "https://gutocarvalho.net/contato/",
+            "url": "https://gutocarvalho.net/contato/",
+            "title": "Contato",
+            "summary": "E-mail guto [at] carvalho.life contato [at] gutocarvalho.net guto [at] jacexperts.io Redes sociais Skype: @devopsguto Telegram: @gutocarvalho Twitter: @gutocarvalho Github: http://github.com/gutocarvalho&hellip;",
+            "content_html": "<p><strong>E-mail</strong></p>\n<p>guto [at] carvalho.life<br>contato [at] gutocarvalho.net<br>guto [at] jacexperts.io<br><br><strong>Redes sociais</strong><br><br>Skype: @devopsguto<br>Telegram: @gutocarvalho<br>Twitter: @gutocarvalho<br>Github: http://github.com/gutocarvalho<br>GitLab: http://gitlab.com/gutocarvalho<br>Bitbucket: http://bitbucket.org/gutocarvalho<br>LinkedIN: https://br.linkedin.com/in/devopsguto<br>Facebook: https://facebook.com/devopsguto<br>Slideshare: http://www.slideshare.net/gutocarvalho<br>Speakerdeck: https://speakerdeck.com/gutocarvalho<br>Ello: https://ello.co/gutocarvalho<br>Aboutme: https://about.me/gutocarvalho<br>Instagram: https://www.instagram.com/falagutera/</p>\n<p> </p>\n<p> </p>",
+            "author": {
+                "name": "Guto Carvalho"
+            },
+            "tags": [
+            ],
+            "date_published": "2021-05-29T22:44:16-03:00",
+            "date_modified": "2021-05-30T00:15:21-03:00"
+        },
+        {
+            "id": "https://gutocarvalho.net/quem-sou/",
+            "url": "https://gutocarvalho.net/quem-sou/",
+            "title": "Quem sou?",
+            "summary": " Eu sou uma pessoa simples, fã de tecnologias que facilitam a vida e entusiasta do movimento open source, Infra&hellip;",
+            "content_html": "<figure class=\"post__image\"><img loading=\"lazy\"  src=\"https://gutocarvalho.net/media/posts/2/guto-2021.jpg\" sizes=\"(min-width: 61.3125em) 50vw, 100vw\" srcset=\"https://gutocarvalho.net/media/posts/2/responsive/guto-2021-xs.jpg 300w ,https://gutocarvalho.net/media/posts/2/responsive/guto-2021-sm.jpg 480w ,https://gutocarvalho.net/media/posts/2/responsive/guto-2021-md.jpg 768w\"  alt=\"Guto 2021\" width=\"1616\" height=\"1077\"></figure><br><br>Eu sou uma pessoa simples, fã de tecnologias que facilitam a vida e entusiasta do movimento open source, Infra as Code, DevOps e Cloud Native.</p>\n<p>Eu acredito que compartilhar o conhecimento é um dos caminhos mais eficientes para construirmos uma sociedade mais justa, coerente e evoluída, acredito que o conhecimento deve ser livre e que todos devem ter acesso a ele.</p>\n<figure class=\"post__image\">Tenho 40 anos (12/maio), tenho dois filhos, nasci em Campo Grande/MS (sou filho de pai carioca com mãe pantaneira). Eu tenho um profundo respeito pela natureza, cresci no Pantanal Sul - região de Corumbá/MS - e daquela época só trago boas lembranças.<br><br><img loading=\"lazy\"  src=\"https://gutocarvalho.net/media/posts/2/turma.jpg\" sizes=\"(min-width: 61.3125em) 50vw, 100vw\" srcset=\"https://gutocarvalho.net/media/posts/2/responsive/turma-xs.jpg 300w ,https://gutocarvalho.net/media/posts/2/responsive/turma-sm.jpg 480w ,https://gutocarvalho.net/media/posts/2/responsive/turma-md.jpg 768w\"  alt=\"Familia Carvalho 2021\" width=\"1280\" height=\"720\"></figure><br><br>Eu gosto música de qualidade como mbp, bossa nova, choro, jazz, música clássica e instrumental, um bom rock, eletronica, passando por literatura, poesia e principalmente cinema e seriados.</p>\n<p>Atualmente eu moro em Brasília/DF, sou SysAdmin e entusiasta DevOps e meu foco está nas tecnologias opensource, na cultura DevOps, em Cloud Native e na aplicação de métodos ágeis.</p>\n<p>Nos últimos anos eu me especializei em automação de infraestrutura (Infra as Code) e no estudo e aplicação da cultura DevOps. Estudo DevOps desde 2012, já organizei 2 DevOpsDays em Brasília (2016 e 2017) com apoio de uma comunidade fantástica e mantive por muitos anos meetups diversos de devops, puppet, git, docker e outras tecnologias, procuro sempre que possível fomentar o compartilhamento de informação e conhecimento.</p>\n<figure class=\"post__image\">De 2014 a 2019 fui sócio de uma empresa pioneira em DevOps e Infra as Code no Brasil. Nestes quase 5 anos de experiência como empreendedor eu adicionei novos skills ao meu toolkit, em especial a coordenação de equipes, elaboração e execução de projetos complexos para grandes empresas privadas no Brasil.<br><br><img loading=\"lazy\"  src=\"https://gutocarvalho.net/media/posts/2/guto-barba-2016.jpg\" sizes=\"(min-width: 61.3125em) 50vw, 100vw\" srcset=\"https://gutocarvalho.net/media/posts/2/responsive/guto-barba-2016-xs.jpg 300w ,https://gutocarvalho.net/media/posts/2/responsive/guto-barba-2016-sm.jpg 480w ,https://gutocarvalho.net/media/posts/2/responsive/guto-barba-2016-md.jpg 768w\"  alt=\"DevOpsDays BSB 2016\" width=\"640\" height=\"427\"></figure>\n<figure class=\"post__image\">Desde de 2019 começo uma nova aventura em Brasília, onde atuo como consultor apoiando diversas empresas na adoção e transformação de sua cultura através do DevOps, Agile e Kubernetes. Esses consultorias são feitas pela JAC Experts a nova empresa que estou construindo junto a sócios muito competentes, conheça nosso site <a href=\"https://jacexperts.io\" target=\"_blank\" rel=\"noopener noreferrer\">https://jacexperts.io</a><br><br><img loading=\"lazy\"  src=\"https://gutocarvalho.net/media/posts/2/socios-2021-almoco-dirceu.jpg\" sizes=\"(min-width: 61.3125em) 50vw, 100vw\" srcset=\"https://gutocarvalho.net/media/posts/2/responsive/socios-2021-almoco-dirceu-xs.jpg 300w ,https://gutocarvalho.net/media/posts/2/responsive/socios-2021-almoco-dirceu-sm.jpg 480w ,https://gutocarvalho.net/media/posts/2/responsive/socios-2021-almoco-dirceu-md.jpg 768w\"  alt=\"\" width=\"1280\" height=\"962\"></figure>\n<p>Este é o meu espaço na rede, espero poder compartilhar com você coisas boas e interessantes, aproveite a visita.</p>\n<p>Abraços,<br>Guto Carvalho</p>",
+            "image": "https://gutocarvalho.net/media/posts/2/foto-2021.jpg",
+            "author": {
+                "name": "Guto Carvalho"
+            },
+            "tags": [
+            ],
+            "date_published": "2021-05-29T22:43:33-03:00",
+            "date_modified": "2021-05-30T00:24:14-03:00"
+        }
+    ]
+}
