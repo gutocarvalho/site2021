@@ -3,12 +3,36 @@
     <title>gutocarvalho.net</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2021-05-30T00:27:42-03:00</updated>
+    <updated>2021-05-30T01:46:46-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
     <id>https://gutocarvalho.net</id>
 
+    <entry>
+        <title>Siga o pessoal do bem!</title>
+        <author>
+            <name>Guto Carvalho</name>
+        </author>
+        <link href="https://gutocarvalho.net/siga-o-pessoal-do-bem/"/>
+        <id>https://gutocarvalho.net/siga-o-pessoal-do-bem/</id>
+
+        <updated>2021-05-30T01:46:46-03:00</updated>
+            <summary>
+                <![CDATA[
+                    Recomendo! @gomex @somatorio @fernandoike @sebawebber ...
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p>Recomendo!<br><br>@gomex</p>
+<p>@somatorio</p>
+<p>@fernandoike</p>
+<p>@sebawebber</p>
+<p>...</p>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>2021, novo ano, novo lar...</title>
         <author>
@@ -85,7 +109,7 @@
         <link href="https://gutocarvalho.net/eventos/"/>
         <id>https://gutocarvalho.net/eventos/</id>
 
-        <updated>2021-05-30T00:27:42-03:00</updated>
+        <updated>2021-05-30T01:45:07-03:00</updated>
             <summary>
                 <![CDATA[
                         <img src="https://gutocarvalho.net/media/posts/5/foto-2021.jpg" alt="" />
@@ -96,6 +120,7 @@
             <![CDATA[
                     <img src="https://gutocarvalho.net/media/posts/5/foto-2021.jpg" alt="" />
                 <p><strong>Eventos que eu recomendo participar</strong></p>
+<p> </p>
 <p>- DevOpsDays</p>
 <p> </p>
             ]]>
@@ -109,45 +134,17 @@
         <link href="https://gutocarvalho.net/comunidades/"/>
         <id>https://gutocarvalho.net/comunidades/</id>
 
-        <updated>2021-05-30T00:27:16-03:00</updated>
+        <updated>2021-05-30T01:45:00-03:00</updated>
             <summary>
                 <![CDATA[
                         <img src="https://gutocarvalho.net/media/posts/4/kubeconf_01.jpg" alt="" />
-                    WhatsAPP SysadminQCODA (https://go.jac.bsb.br/sysadminqcoda) JAC Experts (https://go.jac.bsb.br/whatsapp) Telegram Comunidades que eu mantenho Comunidades que eu recomendo Docker BR ( https://t.me/devopsbr ) Kubernetes BR&hellip;
+                    Comunidades que eu recomendo participar. WhatsAPP SysadminQCODA (https://go.jac.bsb.br/sysadminqcoda) JAC Experts (https://go.jac.bsb.br/whatsapp) Telegram Comunidades que eu mantenho DevOps BSB ( https://t.me/devopsbsb&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
                     <img src="https://gutocarvalho.net/media/posts/4/kubeconf_01.jpg" alt="" />
-                <h2 id="whatsapp">WhatsAPP</h2>
-<ul>
-<li>SysadminQCODA (https://go.jac.bsb.br/sysadminqcoda)</li>
-<li>JAC Experts (https://go.jac.bsb.br/whatsapp)</li>
-</ul>
-<h2 id="telegram">Telegram</h2>
-<p>Comunidades que eu mantenho</p>
-<ul>
-<li>DevOps BSB ( <a href="https://t.me/devopsbsb">https://t.me/devopsbsb</a> )</li>
-<li>DevOPS BR ( <a href="https://t.me/devopsbr">https://t.me/novodevopsbr</a> )</li>
-<li>Cloud Native BR ( <a href="https://t.me/devopsbr">https://t.me/c</a>loudnativebr )</li>
-<li>Teclado Mecanico (https://t.me/tecladomecanico)</li>
-<li>JAC Experts (https://t.me/jacexperts)</li>
-<li>Mac Users BR ( ttps://t.me/macusersbr )</li>
-</ul>
-<p>Comunidades que eu recomendo</p>
-<ul>
-<li>Docker BR ( <a href="https://t.me/devopsbr">https://t.me/devopsbr</a> )</li>
-<li>Kubernetes BR ( <a href="https://t.me/kubernetesbr">https://t.me/kubernetesbr</a> )</li>
-<li>Ansible BR ( <a href="https://t.me/ansiblebr">https://t.me/ansiblebr</a> )</li>
-<li>Terraform BR ( <a href="https://t.me/terraformbr">https://t.me/terraformbr</a> )</li>
-<li>GitLab BR ( <a href="https://t.me/kubernetesbr">https://t.me/kubernetesbr</a> )</li>
-<li>Rancher BR ( <a href="https://t.me/rancherbr">https://t.me/rancherbr</a> )</li>
-<li>Rundeck BR ( <a href="https://t.me/rundeckbr">https://t.me/rundeckbr</a> )</li>
-<li>Azure BR ( <a href="https://t.me/azurebrasil">https://t.me/azurebrasil</a> )</li>
-<li>AWS BR ( <a href="https://t.me/awsbrasil">https://t.me/awsbrasil</a>)</li>
-<li>GCP BR (https://t.me/gcpbr)</li>
-<li>ProxMox BR (https://t.me/proxmoxbrasil)</li>
-</ul>
+                <p>Comunidades que eu recomendo participar.<br><br><br>WhatsAPP<br>SysadminQCODA (https://go.jac.bsb.br/sysadminqcoda)<br>JAC Experts (https://go.jac.bsb.br/whatsapp)<br>Telegram<br><br>Comunidades que eu mantenho<br><br>DevOps BSB ( https://t.me/devopsbsb )<br>DevOPS BR ( https://t.me/novodevopsbr )<br>Cloud Native BR ( https://t.me/cloudnativebr )<br>Teclado Mecanico (https://t.me/tecladomecanico)<br>JAC Experts (https://t.me/jacexperts)<br>Mac Users BR ( ttps://t.me/macusersbr )<br><br>Comunidades que eu recomendo<br><br>Docker BR ( https://t.me/devopsbr )<br>Kubernetes BR ( https://t.me/kubernetesbr )<br>Ansible BR ( https://t.me/ansiblebr )<br>Terraform BR ( https://t.me/terraformbr )<br>GitLab BR ( https://t.me/kubernetesbr )<br>Rancher BR ( https://t.me/rancherbr )<br>Rundeck BR ( https://t.me/rundeckbr )<br>Azure BR ( https://t.me/azurebrasil )<br>AWS BR ( https://t.me/awsbrasil)<br>GCP BR (https://t.me/gcpbr)<br>ProxMox BR (https://t.me/proxmoxbrasil)</p>
             ]]>
         </content>
     </entry>
@@ -159,7 +156,7 @@
         <link href="https://gutocarvalho.net/contato/"/>
         <id>https://gutocarvalho.net/contato/</id>
 
-        <updated>2021-05-30T00:15:21-03:00</updated>
+        <updated>2021-05-30T01:44:49-03:00</updated>
             <summary>
                 <![CDATA[
                     E-mail guto [at] carvalho.life contato [at] gutocarvalho.net guto [at] jacexperts.io Redes sociais Skype: @devopsguto Telegram: @gutocarvalho Twitter: @gutocarvalho Github: http://github.com/gutocarvalho&hellip;
@@ -182,7 +179,7 @@
         <link href="https://gutocarvalho.net/quem-sou/"/>
         <id>https://gutocarvalho.net/quem-sou/</id>
 
-        <updated>2021-05-30T00:24:14-03:00</updated>
+        <updated>2021-05-30T01:44:55-03:00</updated>
             <summary>
                 <![CDATA[
                         <img src="https://gutocarvalho.net/media/posts/2/foto-2021.jpg" alt="" />

@@ -10,6 +10,20 @@
     },
     "items": [
         {
+            "id": "https://gutocarvalho.net/siga-o-pessoal-do-bem/",
+            "url": "https://gutocarvalho.net/siga-o-pessoal-do-bem/",
+            "title": "Siga o pessoal do bem!",
+            "summary": "Recomendo! @gomex @somatorio @fernandoike @sebawebber ...",
+            "content_html": "<p>Recomendo!<br><br>@gomex</p>\n<p>@somatorio</p>\n<p>@fernandoike</p>\n<p>@sebawebber</p>\n<p>...</p>",
+            "author": {
+                "name": "Guto Carvalho"
+            },
+            "tags": [
+            ],
+            "date_published": "2021-05-30T01:46:46-03:00",
+            "date_modified": "2021-05-30T01:46:46-03:00"
+        },
+        {
             "id": "https://gutocarvalho.net/2021-novo-ano-novo-lar/",
             "url": "https://gutocarvalho.net/2021-novo-ano-novo-lar/",
             "title": "2021, novo ano, novo lar...",
@@ -56,7 +70,7 @@
             "url": "https://gutocarvalho.net/eventos/",
             "title": "Eventos",
             "summary": "Eventos que eu recomendo participar - DevOpsDays ",
-            "content_html": "<p><strong>Eventos que eu recomendo participar</strong></p>\n<p>- DevOpsDays</p>\n<p> </p>",
+            "content_html": "<p><strong>Eventos que eu recomendo participar</strong></p>\n<p> </p>\n<p>- DevOpsDays</p>\n<p> </p>",
             "image": "https://gutocarvalho.net/media/posts/5/foto-2021.jpg",
             "author": {
                 "name": "Guto Carvalho"
@@ -64,14 +78,14 @@
             "tags": [
             ],
             "date_published": "2021-05-29T22:44:37-03:00",
-            "date_modified": "2021-05-30T00:27:42-03:00"
+            "date_modified": "2021-05-30T01:45:07-03:00"
         },
         {
             "id": "https://gutocarvalho.net/comunidades/",
             "url": "https://gutocarvalho.net/comunidades/",
             "title": "Comunidades",
-            "summary": "WhatsAPP SysadminQCODA (https://go.jac.bsb.br/sysadminqcoda) JAC Experts (https://go.jac.bsb.br/whatsapp) Telegram Comunidades que eu mantenho Comunidades que eu recomendo Docker BR ( https://t.me/devopsbr ) Kubernetes BR&hellip;",
-            "content_html": "<h2 id=\"whatsapp\">WhatsAPP</h2>\n<ul>\n<li>SysadminQCODA (https://go.jac.bsb.br/sysadminqcoda)</li>\n<li>JAC Experts (https://go.jac.bsb.br/whatsapp)</li>\n</ul>\n<h2 id=\"telegram\">Telegram</h2>\n<p>Comunidades que eu mantenho</p>\n<ul>\n<li>DevOps BSB ( <a href=\"https://t.me/devopsbsb\">https://t.me/devopsbsb</a> )</li>\n<li>DevOPS BR ( <a href=\"https://t.me/devopsbr\">https://t.me/novodevopsbr</a> )</li>\n<li>Cloud Native BR ( <a href=\"https://t.me/devopsbr\">https://t.me/c</a>loudnativebr )</li>\n<li>Teclado Mecanico (https://t.me/tecladomecanico)</li>\n<li>JAC Experts (https://t.me/jacexperts)</li>\n<li>Mac Users BR ( ttps://t.me/macusersbr )</li>\n</ul>\n<p>Comunidades que eu recomendo</p>\n<ul>\n<li>Docker BR ( <a href=\"https://t.me/devopsbr\">https://t.me/devopsbr</a> )</li>\n<li>Kubernetes BR ( <a href=\"https://t.me/kubernetesbr\">https://t.me/kubernetesbr</a> )</li>\n<li>Ansible BR ( <a href=\"https://t.me/ansiblebr\">https://t.me/ansiblebr</a> )</li>\n<li>Terraform BR ( <a href=\"https://t.me/terraformbr\">https://t.me/terraformbr</a> )</li>\n<li>GitLab BR ( <a href=\"https://t.me/kubernetesbr\">https://t.me/kubernetesbr</a> )</li>\n<li>Rancher BR ( <a href=\"https://t.me/rancherbr\">https://t.me/rancherbr</a> )</li>\n<li>Rundeck BR ( <a href=\"https://t.me/rundeckbr\">https://t.me/rundeckbr</a> )</li>\n<li>Azure BR ( <a href=\"https://t.me/azurebrasil\">https://t.me/azurebrasil</a> )</li>\n<li>AWS BR ( <a href=\"https://t.me/awsbrasil\">https://t.me/awsbrasil</a>)</li>\n<li>GCP BR (https://t.me/gcpbr)</li>\n<li>ProxMox BR (https://t.me/proxmoxbrasil)</li>\n</ul>",
+            "summary": "Comunidades que eu recomendo participar. WhatsAPP SysadminQCODA (https://go.jac.bsb.br/sysadminqcoda) JAC Experts (https://go.jac.bsb.br/whatsapp) Telegram Comunidades que eu mantenho DevOps BSB ( https://t.me/devopsbsb&hellip;",
+            "content_html": "<p>Comunidades que eu recomendo participar.<br><br><br>WhatsAPP<br>SysadminQCODA (https://go.jac.bsb.br/sysadminqcoda)<br>JAC Experts (https://go.jac.bsb.br/whatsapp)<br>Telegram<br><br>Comunidades que eu mantenho<br><br>DevOps BSB ( https://t.me/devopsbsb )<br>DevOPS BR ( https://t.me/novodevopsbr )<br>Cloud Native BR ( https://t.me/cloudnativebr )<br>Teclado Mecanico (https://t.me/tecladomecanico)<br>JAC Experts (https://t.me/jacexperts)<br>Mac Users BR ( ttps://t.me/macusersbr )<br><br>Comunidades que eu recomendo<br><br>Docker BR ( https://t.me/devopsbr )<br>Kubernetes BR ( https://t.me/kubernetesbr )<br>Ansible BR ( https://t.me/ansiblebr )<br>Terraform BR ( https://t.me/terraformbr )<br>GitLab BR ( https://t.me/kubernetesbr )<br>Rancher BR ( https://t.me/rancherbr )<br>Rundeck BR ( https://t.me/rundeckbr )<br>Azure BR ( https://t.me/azurebrasil )<br>AWS BR ( https://t.me/awsbrasil)<br>GCP BR (https://t.me/gcpbr)<br>ProxMox BR (https://t.me/proxmoxbrasil)</p>",
             "image": "https://gutocarvalho.net/media/posts/4/kubeconf_01.jpg",
             "author": {
                 "name": "Guto Carvalho"
@@ -79,7 +93,7 @@
             "tags": [
             ],
             "date_published": "2021-05-29T22:44:28-03:00",
-            "date_modified": "2021-05-30T00:27:16-03:00"
+            "date_modified": "2021-05-30T01:45:00-03:00"
         },
         {
             "id": "https://gutocarvalho.net/contato/",
@@ -93,7 +107,7 @@
             "tags": [
             ],
             "date_published": "2021-05-29T22:44:16-03:00",
-            "date_modified": "2021-05-30T00:15:21-03:00"
+            "date_modified": "2021-05-30T01:44:49-03:00"
         },
         {
             "id": "https://gutocarvalho.net/quem-sou/",
@@ -108,7 +122,7 @@
             "tags": [
             ],
             "date_published": "2021-05-29T22:43:33-03:00",
-            "date_modified": "2021-05-30T00:24:14-03:00"
+            "date_modified": "2021-05-30T01:44:55-03:00"
         }
     ]
 }
