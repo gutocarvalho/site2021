@@ -3,7 +3,7 @@
     <title>gutocarvalho.net</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2021-05-31T18:22:31-03:00</updated>
+    <updated>2021-05-31T18:27:26-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
@@ -164,7 +164,7 @@
         <link href="https://gutocarvalho.net/comunidades/"/>
         <id>https://gutocarvalho.net/comunidades/</id>
 
-        <updated>2021-05-30T01:45:00-03:00</updated>
+        <updated>2021-05-31T18:27:26-03:00</updated>
             <summary>
                 <![CDATA[
                         <img src="https://gutocarvalho.net/media/posts/4/kubeconf_01.jpg" alt="" />
@@ -174,7 +174,7 @@
         <content type="html">
             <![CDATA[
                     <img src="https://gutocarvalho.net/media/posts/4/kubeconf_01.jpg" alt="" />
-                <p>Comunidades que eu recomendo participar.<br><br><br>WhatsAPP<br>SysadminQCODA (https://go.jac.bsb.br/sysadminqcoda)<br>JAC Experts (https://go.jac.bsb.br/whatsapp)<br>Telegram<br><br>Comunidades que eu mantenho<br><br>DevOps BSB ( https://t.me/devopsbsb )<br>DevOPS BR ( https://t.me/novodevopsbr )<br>Cloud Native BR ( https://t.me/cloudnativebr )<br>Teclado Mecanico (https://t.me/tecladomecanico)<br>JAC Experts (https://t.me/jacexperts)<br>Mac Users BR ( ttps://t.me/macusersbr )<br><br>Comunidades que eu recomendo<br><br>Docker BR ( https://t.me/devopsbr )<br>Kubernetes BR ( https://t.me/kubernetesbr )<br>Ansible BR ( https://t.me/ansiblebr )<br>Terraform BR ( https://t.me/terraformbr )<br>GitLab BR ( https://t.me/kubernetesbr )<br>Rancher BR ( https://t.me/rancherbr )<br>Rundeck BR ( https://t.me/rundeckbr )<br>Azure BR ( https://t.me/azurebrasil )<br>AWS BR ( https://t.me/awsbrasil)<br>GCP BR (https://t.me/gcpbr)<br>ProxMox BR (https://t.me/proxmoxbrasil)</p>
+                <p>Comunidades que eu recomendo participar.<br><br><strong>WhatsAPP</strong><br><br>SysadminQCODA (https://go.jac.bsb.br/sysadminqcoda)<br>JAC Experts (https://go.jac.bsb.br/whatsapp)<br><strong><br>Telegram</strong><br><br>Comunidades que eu mantenho<br><br>DevOps BSB ( https://t.me/devopsbsb )<br>DevOPS BR ( https://t.me/novodevopsbr )<br>Cloud Native BR ( https://t.me/cloudnativebr )<br>Teclado Mecanico (https://t.me/tecladomecanico)<br>JAC Experts (https://t.me/jacexperts)<br>Mac Users BR ( ttps://t.me/macusersbr )<br><br>Comunidades que eu recomendo<br><br>Docker BR ( https://t.me/devopsbr )<br>Kubernetes BR ( https://t.me/kubernetesbr )<br>Ansible BR ( https://t.me/ansiblebr )<br>Terraform BR ( https://t.me/terraformbr )<br>GitLab BR ( https://t.me/kubernetesbr )<br>Rancher BR ( https://t.me/rancherbr )<br>Rundeck BR ( https://t.me/rundeckbr )<br>Azure BR ( https://t.me/azurebrasil )<br>AWS BR ( https://t.me/awsbrasil)<br>GCP BR (https://t.me/gcpbr)<br>ProxMox BR (https://t.me/proxmoxbrasil)</p>
             ]]>
         </content>
     </entry>
