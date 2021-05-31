@@ -3,35 +3,12 @@
     <title>gutocarvalho.net</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2021-05-31T15:44:45-03:00</updated>
+    <updated>2021-05-31T18:22:31-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
     <id>https://gutocarvalho.net</id>
 
-    <entry>
-        <title>Voltando com as Lives!</title>
-        <author>
-            <name>Guto Carvalho</name>
-        </author>
-        <link href="https://gutocarvalho.net/voltando-com-as-lives/"/>
-        <id>https://gutocarvalho.net/voltando-com-as-lives/</id>
-
-        <updated>2021-05-31T14:06:19-03:00</updated>
-            <summary>
-                <![CDATA[
-                    <p>To aqui montando o novo setup para as lives JAC retornarem o quanto antes.</p>
-
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                <p>To aqui montando o novo setup para as lives JAC retornarem o quanto antes.</p>
-
-<p>Se prepara que vem conteúdo intenso e gente fera!<br><br>Só vem!</p>
-            ]]>
-        </content>
-    </entry>
     <entry>
         <title>Zammad</title>
         <author>
@@ -41,7 +18,7 @@
         <id>https://gutocarvalho.net/zammad/</id>
             <category term="Projetos"/>
 
-        <updated>2021-05-31T15:44:45-03:00</updated>
+        <updated>2021-05-31T18:19:07-03:00</updated>
             <summary>
                 <![CDATA[
                     <p>Conhece esse projeto?</p>
@@ -55,6 +32,29 @@
 <figure class="post__image post__image--wide">É uma ferramenta de tickets, opensource, moderna, que me surpreendeu.<br><br><img loading="lazy"  src="https://gutocarvalho.net/media/posts/11/Screen-Shot-2021-05-31-at-13.58.03.png" sizes="(min-width: 61.3125em) 50vw, 100vw" srcset="https://gutocarvalho.net/media/posts/11/responsive/Screen-Shot-2021-05-31-at-13.58.03-xs.png 300w ,https://gutocarvalho.net/media/posts/11/responsive/Screen-Shot-2021-05-31-at-13.58.03-sm.png 480w ,https://gutocarvalho.net/media/posts/11/responsive/Screen-Shot-2021-05-31-at-13.58.03-md.png 768w"  alt="" width="1103" height="951"></figure><br><br>No passado usei ferramentas como OTRS e GLPI, bem no passado, ver um projeto tão vibrante e visualmente agradável me deixou muito feliz.</p>
 <p><a href="https://zammad.org/">https://zammad.org/</a><br><br>Estou usando na JAC, no meu condomínio e até para minhas atividades pessoais.</p>
 <p>:)</p>
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>Voltando com as Lives!</title>
+        <author>
+            <name>Guto Carvalho</name>
+        </author>
+        <link href="https://gutocarvalho.net/voltando-com-as-lives/"/>
+        <id>https://gutocarvalho.net/voltando-com-as-lives/</id>
+
+        <updated>2021-05-31T18:22:01-03:00</updated>
+            <summary>
+                <![CDATA[
+                    <p>To aqui montando o novo setup para as lives JAC retornarem o quanto antes.</p>
+
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p>To aqui montando o novo setup para as lives JAC retornarem o quanto antes.</p>
+
+<p>Se prepara que vem conteúdo intenso e gente fera!<br><br>Só vem!</p>
             ]]>
         </content>
     </entry>
@@ -90,7 +90,7 @@
         <link href="https://gutocarvalho.net/2021-novo-ano-novo-lar/"/>
         <id>https://gutocarvalho.net/2021-novo-ano-novo-lar/</id>
 
-        <updated>2021-05-31T14:02:26-03:00</updated>
+        <updated>2021-05-31T18:22:11-03:00</updated>
             <summary>
                 <![CDATA[
                     <p>Esse ano me mudei para longe do centro urbano de Brasília, to no meio da natureza – mas tem fibra.<br><br></p>
@@ -118,7 +118,7 @@
         <link href="https://gutocarvalho.net/novo-motor-de-site/"/>
         <id>https://gutocarvalho.net/novo-motor-de-site/</id>
 
-        <updated>2021-05-29T23:45:17-03:00</updated>
+        <updated>2021-05-31T18:22:31-03:00</updated>
             <summary>
                 <![CDATA[
                     Migrando para o Publii pq né, a pessoa aqui não aguenta ficar na mesma ferramenta mais de 1 ano kkk&hellip;
