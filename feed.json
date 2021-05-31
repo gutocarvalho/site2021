@@ -10,6 +10,35 @@
     },
     "items": [
         {
+            "id": "https://gutocarvalho.net/voltando-com-as-lives/",
+            "url": "https://gutocarvalho.net/voltando-com-as-lives/",
+            "title": "Voltando com as Lives!",
+            "summary": "<p>To aqui montando o novo setup para as lives JAC retornarem o quanto antes.</p>\n",
+            "content_html": "<p>To aqui montando o novo setup para as lives JAC retornarem o quanto antes.</p>\n\n<p>Se prepara que vem conteúdo intenso e gente fera!<br><br>Só vem!</p>",
+            "author": {
+                "name": "Guto Carvalho"
+            },
+            "tags": [
+            ],
+            "date_published": "2021-05-31T14:06:19-03:00",
+            "date_modified": "2021-05-31T14:06:19-03:00"
+        },
+        {
+            "id": "https://gutocarvalho.net/zammad/",
+            "url": "https://gutocarvalho.net/zammad/",
+            "title": "Zammad",
+            "summary": "<p>Conhece esse projeto?</p>\n",
+            "content_html": "<p>Conhece esse projeto?</p>\n\n<figure class=\"post__image post__image--wide\">É uma ferramenta de tickets, opensource, moderna, que me surpreendeu.<br><br><img loading=\"lazy\"  src=\"https://gutocarvalho.net/media/posts/11/Screen-Shot-2021-05-31-at-13.58.03.png\" sizes=\"(min-width: 61.3125em) 50vw, 100vw\" srcset=\"https://gutocarvalho.net/media/posts/11/responsive/Screen-Shot-2021-05-31-at-13.58.03-xs.png 300w ,https://gutocarvalho.net/media/posts/11/responsive/Screen-Shot-2021-05-31-at-13.58.03-sm.png 480w ,https://gutocarvalho.net/media/posts/11/responsive/Screen-Shot-2021-05-31-at-13.58.03-md.png 768w\"  alt=\"\" width=\"1103\" height=\"951\"></figure><br><br>No passado usei ferramentas como OTRS e GLPI, bem no passado, ver um projeto tão vibrante e visualmente agradável me deixou muito feliz.</p>\n<p><a href=\"https://zammad.org/\">https://zammad.org/</a><br><br>Estou usando na JAC, no meu condomínio e até para minhas atividades pessoais.</p>\n<p>:)</p>",
+            "author": {
+                "name": "Guto Carvalho"
+            },
+            "tags": [
+                   "Projetos"
+            ],
+            "date_published": "2021-05-31T14:01:18-03:00",
+            "date_modified": "2021-05-31T15:44:45-03:00"
+        },
+        {
             "id": "https://gutocarvalho.net/siga-o-pessoal-do-bem/",
             "url": "https://gutocarvalho.net/siga-o-pessoal-do-bem/",
             "title": "Siga o pessoal do bem!",
@@ -27,29 +56,15 @@
             "id": "https://gutocarvalho.net/2021-novo-ano-novo-lar/",
             "url": "https://gutocarvalho.net/2021-novo-ano-novo-lar/",
             "title": "2021, novo ano, novo lar...",
-            "summary": "Esse ano me mudei para longe do centro urbano de Brasília, to no meio da natureza – mas tem fibra.",
-            "content_html": "<p>Esse ano me mudei para longe do centro urbano de Brasília, to no meio da natureza – mas tem fibra.<br><br>Chega um momento que a busca pela qualidade de vida, em especial durante a pandemia, faz toda a diferença.<br><br></p>\n<div class=\"gallery-wrapper\"><div class=\"gallery\"  data-is-empty=\"false\" data-columns=\"3\">\n<figure class=\"gallery__item\"><a href=\"https://gutocarvalho.net/media/posts/9/gallery/casa2.jpg\" data-size=\"1280x960\"><img loading=\"lazy\" src=\"https://gutocarvalho.net/media/posts/9/gallery/casa2-thumbnail.jpg\" alt=\"\" width=\"768\" height=\"576\"></a></figure>\n<figure class=\"gallery__item\"><a href=\"https://gutocarvalho.net/media/posts/9/gallery/casa1.jpg\" data-size=\"1280x960\"><img loading=\"lazy\" src=\"https://gutocarvalho.net/media/posts/9/gallery/casa1-thumbnail.jpg\" alt=\"\" width=\"768\" height=\"576\"></a></figure>\n</div></div>\n<p><br><br>Começo o ano na fronteira entre DF e GO, com muitas trilhas, ar puro e natureza vibrante!<br><br>Recomendo :)</p>",
+            "summary": "<p>Esse ano me mudei para longe do centro urbano de Brasília, to no meio da natureza – mas tem fibra.<br><br></p>\n",
+            "content_html": "<p>Esse ano me mudei para longe do centro urbano de Brasília, to no meio da natureza – mas tem fibra.<br><br></p>\n\n<p><br><br>Chega um momento que a busca pela qualidade de vida, em especial durante a pandemia, faz toda a diferença.<br><br></p>\n<div class=\"gallery-wrapper\"><div class=\"gallery\"  data-is-empty=\"false\" data-columns=\"3\">\n<figure class=\"gallery__item\"><a href=\"https://gutocarvalho.net/media/posts/9/gallery/casa2.jpg\" data-size=\"1280x960\"><img loading=\"lazy\" src=\"https://gutocarvalho.net/media/posts/9/gallery/casa2-thumbnail.jpg\" alt=\"\" width=\"768\" height=\"576\"></a></figure>\n<figure class=\"gallery__item\"><a href=\"https://gutocarvalho.net/media/posts/9/gallery/casa1.jpg\" data-size=\"1280x960\"><img loading=\"lazy\" src=\"https://gutocarvalho.net/media/posts/9/gallery/casa1-thumbnail.jpg\" alt=\"\" width=\"768\" height=\"576\"></a></figure>\n</div></div>\n<p><br><br>Começo o ano na fronteira entre DF e GO, com muitas trilhas, ar puro e natureza vibrante!<br><br>Recomendo :)</p>",
             "author": {
                 "name": "Guto Carvalho"
             },
             "tags": [
             ],
             "date_published": "2021-05-30T00:09:24-03:00",
-            "date_modified": "2021-05-30T00:11:21-03:00"
-        },
-        {
-            "id": "https://gutocarvalho.net/voltando-lives-com-forca-total/",
-            "url": "https://gutocarvalho.net/voltando-lives-com-forca-total/",
-            "title": "Voltando lives com força total...",
-            "summary": "To aqui montando o novo setup para as lives JAC retornarem, se prepara que vem conteúdo intenso e gente fera!&hellip;",
-            "content_html": "<p>To aqui montando o novo setup para as lives JAC retornarem, se prepara que vem conteúdo intenso e gente fera!</p>\n<p>Só vem!</p>\n",
-            "author": {
-                "name": "Guto Carvalho"
-            },
-            "tags": [
-            ],
-            "date_published": "2021-05-29T23:28:08-03:00",
-            "date_modified": "2021-05-29T23:46:10-03:00"
+            "date_modified": "2021-05-31T14:02:26-03:00"
         },
         {
             "id": "https://gutocarvalho.net/novo-motor-de-site/",
