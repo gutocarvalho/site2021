@@ -13,8 +13,8 @@
             "id": "https://gutocarvalho.net/k8s-criando-pod-com-cliente-de-banco-de-dados/",
             "url": "https://gutocarvalho.net/k8s-criando-pod-com-cliente-de-banco-de-dados/",
             "title": "K8S: Criando POD com cliente de banco de dados",
-            "summary": "<p>Quer conhecer uma forma fácil de usar um cliente de banco de dados no k8s? Só vem!</p>\n",
-            "content_html": "<p>Quer conhecer uma forma fácil de usar um cliente de banco de dados no k8s? Só vem!</p>\n\n<p><strong>Cenário</strong><br><br>Bancos no RDS, apenas o cluster K8S chega no RDS<br><br><strong>Necessidade</strong><br><br>Conectar no banco e rodar alguns comandos</p>\n<p><strong>Cliente MySQL</strong></p>\n<p><code>❯ kubectl run -n default  --rm --restart=Never -ti --image=bitnami/mysql-client bash</code></p>\n<p><strong>Cliente PostgreSQL</strong></p>\n<p><code>❯ kubectl run -n default  --rm --restart=Never -ti --image=bitnami/postgresql postgre-client-novo bash</code><br><br><strong>Observações</strong></p>\n<p>Quando vocês sairem do POD ele vai morrer, isso vai acontecer por causa do <strong>--rm</strong> e <strong>--restart=Never</strong></p>",
+            "summary": "<p>Conheça uma forma fácil de usar um cliente sgbd no k8s</p>\n",
+            "content_html": "<p>Conheça uma forma fácil de usar um cliente sgbd no k8s</p>\n\n<p><strong>Cenário</strong><br><br>Bancos no RDS, apenas o cluster K8S chega no RDS<br><br><strong>Necessidade</strong><br><br>Conectar no banco e rodar alguns comandos</p>\n<p><strong>Cliente MySQL</strong></p>\n<p><code>❯ kubectl run -n default  --rm --restart=Never -ti --image=bitnami/mysql-client bash</code></p>\n<p><strong>Cliente PostgreSQL</strong></p>\n<p><code>❯ kubectl run -n default  --rm --restart=Never -ti --image=bitnami/postgresql postgre-client bash</code><br><br><strong>Observações</strong></p>\n<p>Quando vocês sairem do POD ele vai morrer, isso vai acontecer por causa do <strong>--rm</strong> e <strong>--restart=Never</strong></p>",
             "author": {
                 "name": "Guto Carvalho"
             },
@@ -22,7 +22,7 @@
                    "Notes"
             ],
             "date_published": "2021-06-01T19:04:16-03:00",
-            "date_modified": "2021-06-01T19:23:23-03:00"
+            "date_modified": "2021-06-01T19:26:41-03:00"
         },
         {
             "id": "https://gutocarvalho.net/k8s-removendo-evicted-pods/",

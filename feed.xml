@@ -3,7 +3,7 @@
     <title>gutocarvalho.net</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2021-06-01T19:23:31-03:00</updated>
+    <updated>2021-06-01T19:26:41-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
@@ -18,22 +18,22 @@
         <id>https://gutocarvalho.net/k8s-criando-pod-com-cliente-de-banco-de-dados/</id>
             <category term="Notes"/>
 
-        <updated>2021-06-01T19:23:23-03:00</updated>
+        <updated>2021-06-01T19:26:41-03:00</updated>
             <summary>
                 <![CDATA[
-                    <p>Quer conhecer uma forma fácil de usar um cliente de banco de dados no k8s? Só vem!</p>
+                    <p>Conheça uma forma fácil de usar um cliente sgbd no k8s</p>
 
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                <p>Quer conhecer uma forma fácil de usar um cliente de banco de dados no k8s? Só vem!</p>
+                <p>Conheça uma forma fácil de usar um cliente sgbd no k8s</p>
 
 <p><strong>Cenário</strong><br><br>Bancos no RDS, apenas o cluster K8S chega no RDS<br><br><strong>Necessidade</strong><br><br>Conectar no banco e rodar alguns comandos</p>
 <p><strong>Cliente MySQL</strong></p>
 <p><code>❯ kubectl run -n default  --rm --restart=Never -ti --image=bitnami/mysql-client bash</code></p>
 <p><strong>Cliente PostgreSQL</strong></p>
-<p><code>❯ kubectl run -n default  --rm --restart=Never -ti --image=bitnami/postgresql postgre-client-novo bash</code><br><br><strong>Observações</strong></p>
+<p><code>❯ kubectl run -n default  --rm --restart=Never -ti --image=bitnami/postgresql postgre-client bash</code><br><br><strong>Observações</strong></p>
 <p>Quando vocês sairem do POD ele vai morrer, isso vai acontecer por causa do <strong>--rm</strong> e <strong>--restart=Never</strong></p>
             ]]>
         </content>
