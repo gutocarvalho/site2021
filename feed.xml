@@ -3,12 +3,37 @@
     <title>gutocarvalho.net</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2021-06-01T08:58:39-03:00</updated>
+    <updated>2021-06-01T18:11:17-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
     <id>https://gutocarvalho.net</id>
 
+    <entry>
+        <title>K8S: Removendo Evicted Pods</title>
+        <author>
+            <name>Guto Carvalho</name>
+        </author>
+        <link href="https://gutocarvalho.net/k8s-removendo-evicted-pods/"/>
+        <id>https://gutocarvalho.net/k8s-removendo-evicted-pods/</id>
+            <category term="Notes"/>
+
+        <updated>2021-06-01T18:11:17-03:00</updated>
+            <summary>
+                <![CDATA[
+                    <p>Precisa matar posd evicted todos de uma vez?</p>
+
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p>Precisa matar posd evicted todos de uma vez?</p>
+
+<p><code>kubectl get pods --all-namespaces | grep <span class="search-highlight">Evicted</span> | awk '{print $2, "--namespace", $1}' | xargs kubectl delete pod</code></p>
+<p>Obviamente você vai descobrir pq está acontecendo isso e corrigir né? :)<br><br>Normalmente tem relação com falta de recursos, revise seu sizing !</p>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>Tinystatus</title>
         <author>
@@ -225,36 +250,6 @@
 <p>guto [at] carvalho.life<br>contato [at] gutocarvalho.net<br>guto [at] jacexperts.io<br><br><strong>Redes sociais</strong><br><br>Skype: @devopsguto<br>Telegram: @gutocarvalho<br>Twitter: @gutocarvalho<br>Github: http://github.com/gutocarvalho<br>GitLab: http://gitlab.com/gutocarvalho<br>Bitbucket: http://bitbucket.org/gutocarvalho<br>LinkedIN: https://br.linkedin.com/in/devopsguto<br>Facebook: https://facebook.com/devopsguto<br>Slideshare: http://www.slideshare.net/gutocarvalho<br>Speakerdeck: https://speakerdeck.com/gutocarvalho<br>Ello: https://ello.co/gutocarvalho<br>Aboutme: https://about.me/gutocarvalho<br>Instagram: https://www.instagram.com/falagutera/</p>
 <p> </p>
 <p> </p>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>Quem sou?</title>
-        <author>
-            <name>Guto Carvalho</name>
-        </author>
-        <link href="https://gutocarvalho.net/quem-sou/"/>
-        <id>https://gutocarvalho.net/quem-sou/</id>
-
-        <updated>2021-05-30T01:44:55-03:00</updated>
-            <summary>
-                <![CDATA[
-                        <img src="https://gutocarvalho.net/media/posts/2/foto-2021.jpg" alt="" />
-                     Eu sou uma pessoa simples, fã de tecnologias que facilitam a vida e entusiasta do movimento open source, Infra&hellip;
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                    <img src="https://gutocarvalho.net/media/posts/2/foto-2021.jpg" alt="" />
-                <figure class="post__image"><img loading="lazy"  src="https://gutocarvalho.net/media/posts/2/guto-2021.jpg" sizes="(min-width: 61.3125em) 50vw, 100vw" srcset="https://gutocarvalho.net/media/posts/2/responsive/guto-2021-xs.jpg 300w ,https://gutocarvalho.net/media/posts/2/responsive/guto-2021-sm.jpg 480w ,https://gutocarvalho.net/media/posts/2/responsive/guto-2021-md.jpg 768w"  alt="Guto 2021" width="1616" height="1077"></figure><br><br>Eu sou uma pessoa simples, fã de tecnologias que facilitam a vida e entusiasta do movimento open source, Infra as Code, DevOps e Cloud Native.</p>
-<p>Eu acredito que compartilhar o conhecimento é um dos caminhos mais eficientes para construirmos uma sociedade mais justa, coerente e evoluída, acredito que o conhecimento deve ser livre e que todos devem ter acesso a ele.</p>
-<figure class="post__image">Tenho 40 anos (12/maio), tenho dois filhos, nasci em Campo Grande/MS (sou filho de pai carioca com mãe pantaneira). Eu tenho um profundo respeito pela natureza, cresci no Pantanal Sul - região de Corumbá/MS - e daquela época só trago boas lembranças.<br><br><img loading="lazy"  src="https://gutocarvalho.net/media/posts/2/turma.jpg" sizes="(min-width: 61.3125em) 50vw, 100vw" srcset="https://gutocarvalho.net/media/posts/2/responsive/turma-xs.jpg 300w ,https://gutocarvalho.net/media/posts/2/responsive/turma-sm.jpg 480w ,https://gutocarvalho.net/media/posts/2/responsive/turma-md.jpg 768w"  alt="Familia Carvalho 2021" width="1280" height="720"></figure><br><br>Eu gosto música de qualidade como mbp, bossa nova, choro, jazz, música clássica e instrumental, um bom rock, eletronica, passando por literatura, poesia e principalmente cinema e seriados.</p>
-<p>Atualmente eu moro em Brasília/DF, sou SysAdmin e entusiasta DevOps e meu foco está nas tecnologias opensource, na cultura DevOps, em Cloud Native e na aplicação de métodos ágeis.</p>
-<p>Nos últimos anos eu me especializei em automação de infraestrutura (Infra as Code) e no estudo e aplicação da cultura DevOps. Estudo DevOps desde 2012, já organizei 2 DevOpsDays em Brasília (2016 e 2017) com apoio de uma comunidade fantástica e mantive por muitos anos meetups diversos de devops, puppet, git, docker e outras tecnologias, procuro sempre que possível fomentar o compartilhamento de informação e conhecimento.</p>
-<figure class="post__image">De 2014 a 2019 fui sócio de uma empresa pioneira em DevOps e Infra as Code no Brasil. Nestes quase 5 anos de experiência como empreendedor eu adicionei novos skills ao meu toolkit, em especial a coordenação de equipes, elaboração e execução de projetos complexos para grandes empresas privadas no Brasil.<br><br><img loading="lazy"  src="https://gutocarvalho.net/media/posts/2/guto-barba-2016.jpg" sizes="(min-width: 61.3125em) 50vw, 100vw" srcset="https://gutocarvalho.net/media/posts/2/responsive/guto-barba-2016-xs.jpg 300w ,https://gutocarvalho.net/media/posts/2/responsive/guto-barba-2016-sm.jpg 480w ,https://gutocarvalho.net/media/posts/2/responsive/guto-barba-2016-md.jpg 768w"  alt="DevOpsDays BSB 2016" width="640" height="427"></figure>
-<figure class="post__image">Desde de 2019 começo uma nova aventura em Brasília, onde atuo como consultor apoiando diversas empresas na adoção e transformação de sua cultura através do DevOps, Agile e Kubernetes. Esses consultorias são feitas pela JAC Experts a nova empresa que estou construindo junto a sócios muito competentes, conheça nosso site <a href="https://jacexperts.io" target="_blank" rel="noopener noreferrer">https://jacexperts.io</a><br><br><img loading="lazy"  src="https://gutocarvalho.net/media/posts/2/socios-2021-almoco-dirceu.jpg" sizes="(min-width: 61.3125em) 50vw, 100vw" srcset="https://gutocarvalho.net/media/posts/2/responsive/socios-2021-almoco-dirceu-xs.jpg 300w ,https://gutocarvalho.net/media/posts/2/responsive/socios-2021-almoco-dirceu-sm.jpg 480w ,https://gutocarvalho.net/media/posts/2/responsive/socios-2021-almoco-dirceu-md.jpg 768w"  alt="" width="1280" height="962"></figure>
-<p>Este é o meu espaço na rede, espero poder compartilhar com você coisas boas e interessantes, aproveite a visita.</p>
-<p>Abraços,<br>Guto Carvalho</p>
             ]]>
         </content>
     </entry>
