@@ -10,6 +10,21 @@
     },
     "items": [
         {
+            "id": "https://gutocarvalho.net/tinystatus/",
+            "url": "https://gutocarvalho.net/tinystatus/",
+            "title": "Tinystatus",
+            "summary": "<p>Achei um projetinho bacana de statuspage, totalmente feito em shell :]</p>\n",
+            "content_html": "<p>Achei um projetinho bacana de statuspage, totalmente feito em shell :]</p>\n\n<p>- <a href=\"https://github.com/bderenzo/tinystatus\">https://github.com/bderenzo/tinystatus</a></p>\n<p>Exemplos<br><br>- <a href=\"https://status.jacexperts.io\">https://status.jacexperts.io</a><br>- <a href=\"https://status.rnp.tools\">https://status.rnp.tools</a></p>\n<p><br>Vou adotar esse projetinho e melhorar ele :)</p>\n<p>[s]</p>",
+            "author": {
+                "name": "Guto Carvalho"
+            },
+            "tags": [
+                   "Notes"
+            ],
+            "date_published": "2021-06-01T08:51:12-03:00",
+            "date_modified": "2021-06-01T08:58:39-03:00"
+        },
+        {
             "id": "https://gutocarvalho.net/zammad/",
             "url": "https://gutocarvalho.net/zammad/",
             "title": "Zammad",
@@ -56,15 +71,15 @@
             "id": "https://gutocarvalho.net/2021-novo-ano-novo-lar/",
             "url": "https://gutocarvalho.net/2021-novo-ano-novo-lar/",
             "title": "2021, novo ano, novo lar...",
-            "summary": "<p>Esse ano me mudei para longe do centro urbano de Brasília, to no meio da natureza – mas tem fibra.<br><br></p>\n",
-            "content_html": "<p>Esse ano me mudei para longe do centro urbano de Brasília, to no meio da natureza – mas tem fibra.<br><br></p>\n\n<p><br><br>Chega um momento que a busca pela qualidade de vida, em especial durante a pandemia, faz toda a diferença.<br><br></p>\n<div class=\"gallery-wrapper\"><div class=\"gallery\"  data-is-empty=\"false\" data-columns=\"3\">\n<figure class=\"gallery__item\"><a href=\"https://gutocarvalho.net/media/posts/9/gallery/casa2.jpg\" data-size=\"1280x960\"><img loading=\"lazy\" src=\"https://gutocarvalho.net/media/posts/9/gallery/casa2-thumbnail.jpg\" alt=\"\" width=\"768\" height=\"576\"></a></figure>\n<figure class=\"gallery__item\"><a href=\"https://gutocarvalho.net/media/posts/9/gallery/casa1.jpg\" data-size=\"1280x960\"><img loading=\"lazy\" src=\"https://gutocarvalho.net/media/posts/9/gallery/casa1-thumbnail.jpg\" alt=\"\" width=\"768\" height=\"576\"></a></figure>\n</div></div>\n<p><br><br>Começo o ano na fronteira entre DF e GO, com muitas trilhas, ar puro e natureza vibrante!<br><br>Recomendo :)</p>",
+            "summary": "<p>Esse ano me mudei para longe do centro urbano de Brasília, to no meio da natureza – mas tem fibra.</p>\n",
+            "content_html": "<p>Esse ano me mudei para longe do centro urbano de Brasília, to no meio da natureza – mas tem fibra.</p>\n\n<p>Chega um momento que a busca pela qualidade de vida, em especial durante a pandemia, faz toda a diferença.<br><br></p>\n<div class=\"gallery-wrapper\"><div class=\"gallery\"  data-is-empty=\"false\" data-columns=\"3\">\n<figure class=\"gallery__item\"><a href=\"https://gutocarvalho.net/media/posts/9/gallery/casa2.jpg\" data-size=\"1280x960\"><img loading=\"lazy\" src=\"https://gutocarvalho.net/media/posts/9/gallery/casa2-thumbnail.jpg\" alt=\"\" width=\"768\" height=\"576\"></a></figure>\n<figure class=\"gallery__item\"><a href=\"https://gutocarvalho.net/media/posts/9/gallery/casa1.jpg\" data-size=\"1280x960\"><img loading=\"lazy\" src=\"https://gutocarvalho.net/media/posts/9/gallery/casa1-thumbnail.jpg\" alt=\"\" width=\"768\" height=\"576\"></a></figure>\n</div></div>\n<p><br><br>Começo o ano na fronteira entre DF e GO, com muitas trilhas, ar puro e natureza vibrante!<br><br>Recomendo :)</p>",
             "author": {
                 "name": "Guto Carvalho"
             },
             "tags": [
             ],
             "date_published": "2021-05-30T00:09:24-03:00",
-            "date_modified": "2021-05-31T18:22:11-03:00"
+            "date_modified": "2021-05-31T19:41:18-03:00"
         },
         {
             "id": "https://gutocarvalho.net/novo-motor-de-site/",

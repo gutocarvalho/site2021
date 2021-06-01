@@ -3,12 +3,39 @@
     <title>gutocarvalho.net</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2021-05-31T18:27:26-03:00</updated>
+    <updated>2021-06-01T08:58:39-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
     <id>https://gutocarvalho.net</id>
 
+    <entry>
+        <title>Tinystatus</title>
+        <author>
+            <name>Guto Carvalho</name>
+        </author>
+        <link href="https://gutocarvalho.net/tinystatus/"/>
+        <id>https://gutocarvalho.net/tinystatus/</id>
+            <category term="Notes"/>
+
+        <updated>2021-06-01T08:58:39-03:00</updated>
+            <summary>
+                <![CDATA[
+                    <p>Achei um projetinho bacana de statuspage, totalmente feito em shell :]</p>
+
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p>Achei um projetinho bacana de statuspage, totalmente feito em shell :]</p>
+
+<p>- <a href="https://github.com/bderenzo/tinystatus">https://github.com/bderenzo/tinystatus</a></p>
+<p>Exemplos<br><br>- <a href="https://status.jacexperts.io">https://status.jacexperts.io</a><br>- <a href="https://status.rnp.tools">https://status.rnp.tools</a></p>
+<p><br>Vou adotar esse projetinho e melhorar ele :)</p>
+<p>[s]</p>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>Zammad</title>
         <author>
@@ -90,18 +117,18 @@
         <link href="https://gutocarvalho.net/2021-novo-ano-novo-lar/"/>
         <id>https://gutocarvalho.net/2021-novo-ano-novo-lar/</id>
 
-        <updated>2021-05-31T18:22:11-03:00</updated>
+        <updated>2021-05-31T19:41:18-03:00</updated>
             <summary>
                 <![CDATA[
-                    <p>Esse ano me mudei para longe do centro urbano de Brasília, to no meio da natureza – mas tem fibra.<br><br></p>
+                    <p>Esse ano me mudei para longe do centro urbano de Brasília, to no meio da natureza – mas tem fibra.</p>
 
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                <p>Esse ano me mudei para longe do centro urbano de Brasília, to no meio da natureza – mas tem fibra.<br><br></p>
+                <p>Esse ano me mudei para longe do centro urbano de Brasília, to no meio da natureza – mas tem fibra.</p>
 
-<p><br><br>Chega um momento que a busca pela qualidade de vida, em especial durante a pandemia, faz toda a diferença.<br><br></p>
+<p>Chega um momento que a busca pela qualidade de vida, em especial durante a pandemia, faz toda a diferença.<br><br></p>
 <div class="gallery-wrapper"><div class="gallery"  data-is-empty="false" data-columns="3">
 <figure class="gallery__item"><a href="https://gutocarvalho.net/media/posts/9/gallery/casa2.jpg" data-size="1280x960"><img loading="lazy" src="https://gutocarvalho.net/media/posts/9/gallery/casa2-thumbnail.jpg" alt="" width="768" height="576"></a></figure>
 <figure class="gallery__item"><a href="https://gutocarvalho.net/media/posts/9/gallery/casa1.jpg" data-size="1280x960"><img loading="lazy" src="https://gutocarvalho.net/media/posts/9/gallery/casa1-thumbnail.jpg" alt="" width="768" height="576"></a></figure>
