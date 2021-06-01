@@ -3,7 +3,7 @@
     <title>gutocarvalho.net</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2021-06-01T19:08:06-03:00</updated>
+    <updated>2021-06-01T19:23:31-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
@@ -18,7 +18,7 @@
         <id>https://gutocarvalho.net/k8s-criando-pod-com-cliente-de-banco-de-dados/</id>
             <category term="Notes"/>
 
-        <updated>2021-06-01T19:07:26-03:00</updated>
+        <updated>2021-06-01T19:23:23-03:00</updated>
             <summary>
                 <![CDATA[
                     <p>Quer conhecer uma forma fácil de usar um cliente de banco de dados no k8s? Só vem!</p>
@@ -47,7 +47,7 @@
         <id>https://gutocarvalho.net/k8s-removendo-evicted-pods/</id>
             <category term="Notes"/>
 
-        <updated>2021-06-01T19:05:26-03:00</updated>
+        <updated>2021-06-01T19:23:31-03:00</updated>
             <summary>
                 <![CDATA[
                     <p>Precisa matar pods evicted todos de uma vez?</p>
