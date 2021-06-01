@@ -3,7 +3,7 @@
     <title>gutocarvalho.net</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2021-06-01T19:26:41-03:00</updated>
+    <updated>2021-06-01T20:28:50-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
@@ -47,7 +47,7 @@
         <id>https://gutocarvalho.net/k8s-removendo-evicted-pods/</id>
             <category term="Notes"/>
 
-        <updated>2021-06-01T19:23:31-03:00</updated>
+        <updated>2021-06-01T20:28:50-03:00</updated>
             <summary>
                 <![CDATA[
                     <p>Precisa matar pods evicted todos de uma vez?</p>
@@ -59,7 +59,13 @@
                 <p>Precisa matar pods evicted todos de uma vez?</p>
 
 <p><code>❯ kubectl get pods --all-namespaces | grep <span class="search-highlight">Evicted</span> | awk '{print $2, "--namespace", $1}' | xargs kubectl delete pod</code></p>
-<p>Obviamente você vai descobrir pq está acontecendo isso e corrigir né? :)<br><br>Normalmente tem relação com falta de recursos, revise seu sizing !</p>
+<p><strong>O que são Evicted Pods?</strong><br><br>São pods que o kubernetes não conseguiu fazer schedule por falta de recursos, seja disco ou memória.</p>
+<p><strong>Por quê isso acontece?</strong></p>
+<p>Isso acontece quando não fazemos o sizing correto do cluster e também por falta de configuração de quotas (requests e limits) nos pods.<br><br><strong>Onde posso pesquisar mais sobre o assunto?</strong></p>
+<p>❯ <a href="https://kubernetes.io/docs/concepts/scheduling-eviction">https://kubernetes.io/docs/concepts/scheduling-eviction</a></p>
+<p>❯ <a href="https://sysdig.com/blog/kubernetes-pod-evicted/">https://sysdig.com/blog/kubernetes-pod-evicted/</a></p>
+<p>❯ <a href="https://www.padok.fr/en/blog/kubernetes-pods-evicted">https://www.padok.fr/en/blog/kubernetes-pods-evicted</a></p>
+<p>[s]</p>
             ]]>
         </content>
     </entry>

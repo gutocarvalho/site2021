@@ -29,7 +29,7 @@
             "url": "https://gutocarvalho.net/k8s-removendo-evicted-pods/",
             "title": "K8S: Removendo Evicted Pods",
             "summary": "<p>Precisa matar pods evicted todos de uma vez?</p>\n",
-            "content_html": "<p>Precisa matar pods evicted todos de uma vez?</p>\n\n<p><code>❯ kubectl get pods --all-namespaces | grep <span class=\"search-highlight\">Evicted</span> | awk '{print $2, \"--namespace\", $1}' | xargs kubectl delete pod</code></p>\n<p>Obviamente você vai descobrir pq está acontecendo isso e corrigir né? :)<br><br>Normalmente tem relação com falta de recursos, revise seu sizing !</p>",
+            "content_html": "<p>Precisa matar pods evicted todos de uma vez?</p>\n\n<p><code>❯ kubectl get pods --all-namespaces | grep <span class=\"search-highlight\">Evicted</span> | awk '{print $2, \"--namespace\", $1}' | xargs kubectl delete pod</code></p>\n<p><strong>O que são Evicted Pods?</strong><br><br>São pods que o kubernetes não conseguiu fazer schedule por falta de recursos, seja disco ou memória.</p>\n<p><strong>Por quê isso acontece?</strong></p>\n<p>Isso acontece quando não fazemos o sizing correto do cluster e também por falta de configuração de quotas (requests e limits) nos pods.<br><br><strong>Onde posso pesquisar mais sobre o assunto?</strong></p>\n<p>❯ <a href=\"https://kubernetes.io/docs/concepts/scheduling-eviction\">https://kubernetes.io/docs/concepts/scheduling-eviction</a></p>\n<p>❯ <a href=\"https://sysdig.com/blog/kubernetes-pod-evicted/\">https://sysdig.com/blog/kubernetes-pod-evicted/</a></p>\n<p>❯ <a href=\"https://www.padok.fr/en/blog/kubernetes-pods-evicted\">https://www.padok.fr/en/blog/kubernetes-pods-evicted</a></p>\n<p>[s]</p>",
             "author": {
                 "name": "Guto Carvalho"
             },
@@ -37,7 +37,7 @@
                    "Notes"
             ],
             "date_published": "2021-06-01T17:53:40-03:00",
-            "date_modified": "2021-06-01T19:23:31-03:00"
+            "date_modified": "2021-06-01T20:28:50-03:00"
         },
         {
             "id": "https://gutocarvalho.net/tinystatus/",
