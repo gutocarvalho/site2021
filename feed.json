@@ -10,11 +10,26 @@
     },
     "items": [
         {
+            "id": "https://gutocarvalho.net/k8s-criando-pod-com-cliente-de-banco-de-dados/",
+            "url": "https://gutocarvalho.net/k8s-criando-pod-com-cliente-de-banco-de-dados/",
+            "title": "K8S: Criando POD com cliente de banco de dados",
+            "summary": "<p>Quer conhecer uma forma fácil de usar um cliente de banco de dados no k8s? Só vem!</p>\n",
+            "content_html": "<p>Quer conhecer uma forma fácil de usar um cliente de banco de dados no k8s? Só vem!</p>\n\n<p><strong>Cenário</strong><br><br>Bancos no RDS, apenas o cluster K8S chega no RDS<br><br><strong>Necessidade</strong><br><br>Conectar no banco e rodar alguns comandos</p>\n<p><strong>Cliente MySQL</strong></p>\n<p><code>❯ kubectl run -n default  --rm --restart=Never -ti --image=bitnami/mysql-client bash</code></p>\n<p><strong>Cliente PostgreSQL</strong></p>\n<p><code>❯ kubectl run -n default  --rm --restart=Never -ti --image=bitnami/postgresql postgre-client-novo bash</code><br><br><strong>Observações</strong></p>\n<p>Quando vocês sairem do POD ele vai morrer, isso vai acontecer por causa do <strong>--rm</strong> e <strong>--restart=Never</strong></p>",
+            "author": {
+                "name": "Guto Carvalho"
+            },
+            "tags": [
+                   "Notes"
+            ],
+            "date_published": "2021-06-01T19:04:16-03:00",
+            "date_modified": "2021-06-01T19:07:26-03:00"
+        },
+        {
             "id": "https://gutocarvalho.net/k8s-removendo-evicted-pods/",
             "url": "https://gutocarvalho.net/k8s-removendo-evicted-pods/",
             "title": "K8S: Removendo Evicted Pods",
-            "summary": "<p>Precisa matar posd evicted todos de uma vez?</p>\n",
-            "content_html": "<p>Precisa matar posd evicted todos de uma vez?</p>\n\n<p><code>kubectl get pods --all-namespaces | grep <span class=\"search-highlight\">Evicted</span> | awk '{print $2, \"--namespace\", $1}' | xargs kubectl delete pod</code></p>\n<p>Obviamente você vai descobrir pq está acontecendo isso e corrigir né? :)<br><br>Normalmente tem relação com falta de recursos, revise seu sizing !</p>",
+            "summary": "<p>Precisa matar pods evicted todos de uma vez?</p>\n",
+            "content_html": "<p>Precisa matar pods evicted todos de uma vez?</p>\n\n<p><code>❯ kubectl get pods --all-namespaces | grep <span class=\"search-highlight\">Evicted</span> | awk '{print $2, \"--namespace\", $1}' | xargs kubectl delete pod</code></p>\n<p>Obviamente você vai descobrir pq está acontecendo isso e corrigir né? :)<br><br>Normalmente tem relação com falta de recursos, revise seu sizing !</p>",
             "author": {
                 "name": "Guto Carvalho"
             },
@@ -22,7 +37,7 @@
                    "Notes"
             ],
             "date_published": "2021-06-01T17:53:40-03:00",
-            "date_modified": "2021-06-01T18:11:17-03:00"
+            "date_modified": "2021-06-01T19:05:26-03:00"
         },
         {
             "id": "https://gutocarvalho.net/tinystatus/",
@@ -34,10 +49,10 @@
                 "name": "Guto Carvalho"
             },
             "tags": [
-                   "Notes"
+                   "Projetos"
             ],
             "date_published": "2021-06-01T08:51:12-03:00",
-            "date_modified": "2021-06-01T08:58:39-03:00"
+            "date_modified": "2021-06-01T19:08:06-03:00"
         },
         {
             "id": "https://gutocarvalho.net/zammad/",
@@ -139,20 +154,6 @@
             ],
             "date_published": "2021-05-29T22:44:28-03:00",
             "date_modified": "2021-05-31T18:27:26-03:00"
-        },
-        {
-            "id": "https://gutocarvalho.net/contato/",
-            "url": "https://gutocarvalho.net/contato/",
-            "title": "Contato",
-            "summary": "E-mail guto [at] carvalho.life contato [at] gutocarvalho.net guto [at] jacexperts.io Redes sociais Skype: @devopsguto Telegram: @gutocarvalho Twitter: @gutocarvalho Github: http://github.com/gutocarvalho&hellip;",
-            "content_html": "<p><strong>E-mail</strong></p>\n<p>guto [at] carvalho.life<br>contato [at] gutocarvalho.net<br>guto [at] jacexperts.io<br><br><strong>Redes sociais</strong><br><br>Skype: @devopsguto<br>Telegram: @gutocarvalho<br>Twitter: @gutocarvalho<br>Github: http://github.com/gutocarvalho<br>GitLab: http://gitlab.com/gutocarvalho<br>Bitbucket: http://bitbucket.org/gutocarvalho<br>LinkedIN: https://br.linkedin.com/in/devopsguto<br>Facebook: https://facebook.com/devopsguto<br>Slideshare: http://www.slideshare.net/gutocarvalho<br>Speakerdeck: https://speakerdeck.com/gutocarvalho<br>Ello: https://ello.co/gutocarvalho<br>Aboutme: https://about.me/gutocarvalho<br>Instagram: https://www.instagram.com/falagutera/</p>\n<p> </p>\n<p> </p>",
-            "author": {
-                "name": "Guto Carvalho"
-            },
-            "tags": [
-            ],
-            "date_published": "2021-05-29T22:44:16-03:00",
-            "date_modified": "2021-05-30T01:44:49-03:00"
         }
     ]
 }

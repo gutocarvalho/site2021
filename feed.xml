@@ -3,12 +3,41 @@
     <title>gutocarvalho.net</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2021-06-01T18:11:17-03:00</updated>
+    <updated>2021-06-01T19:08:06-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
     <id>https://gutocarvalho.net</id>
 
+    <entry>
+        <title>K8S: Criando POD com cliente de banco de dados</title>
+        <author>
+            <name>Guto Carvalho</name>
+        </author>
+        <link href="https://gutocarvalho.net/k8s-criando-pod-com-cliente-de-banco-de-dados/"/>
+        <id>https://gutocarvalho.net/k8s-criando-pod-com-cliente-de-banco-de-dados/</id>
+            <category term="Notes"/>
+
+        <updated>2021-06-01T19:07:26-03:00</updated>
+            <summary>
+                <![CDATA[
+                    <p>Quer conhecer uma forma fácil de usar um cliente de banco de dados no k8s? Só vem!</p>
+
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p>Quer conhecer uma forma fácil de usar um cliente de banco de dados no k8s? Só vem!</p>
+
+<p><strong>Cenário</strong><br><br>Bancos no RDS, apenas o cluster K8S chega no RDS<br><br><strong>Necessidade</strong><br><br>Conectar no banco e rodar alguns comandos</p>
+<p><strong>Cliente MySQL</strong></p>
+<p><code>❯ kubectl run -n default  --rm --restart=Never -ti --image=bitnami/mysql-client bash</code></p>
+<p><strong>Cliente PostgreSQL</strong></p>
+<p><code>❯ kubectl run -n default  --rm --restart=Never -ti --image=bitnami/postgresql postgre-client-novo bash</code><br><br><strong>Observações</strong></p>
+<p>Quando vocês sairem do POD ele vai morrer, isso vai acontecer por causa do <strong>--rm</strong> e <strong>--restart=Never</strong></p>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>K8S: Removendo Evicted Pods</title>
         <author>
@@ -18,18 +47,18 @@
         <id>https://gutocarvalho.net/k8s-removendo-evicted-pods/</id>
             <category term="Notes"/>
 
-        <updated>2021-06-01T18:11:17-03:00</updated>
+        <updated>2021-06-01T19:05:26-03:00</updated>
             <summary>
                 <![CDATA[
-                    <p>Precisa matar posd evicted todos de uma vez?</p>
+                    <p>Precisa matar pods evicted todos de uma vez?</p>
 
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                <p>Precisa matar posd evicted todos de uma vez?</p>
+                <p>Precisa matar pods evicted todos de uma vez?</p>
 
-<p><code>kubectl get pods --all-namespaces | grep <span class="search-highlight">Evicted</span> | awk '{print $2, "--namespace", $1}' | xargs kubectl delete pod</code></p>
+<p><code>❯ kubectl get pods --all-namespaces | grep <span class="search-highlight">Evicted</span> | awk '{print $2, "--namespace", $1}' | xargs kubectl delete pod</code></p>
 <p>Obviamente você vai descobrir pq está acontecendo isso e corrigir né? :)<br><br>Normalmente tem relação com falta de recursos, revise seu sizing !</p>
             ]]>
         </content>
@@ -41,9 +70,9 @@
         </author>
         <link href="https://gutocarvalho.net/tinystatus/"/>
         <id>https://gutocarvalho.net/tinystatus/</id>
-            <category term="Notes"/>
+            <category term="Projetos"/>
 
-        <updated>2021-06-01T08:58:39-03:00</updated>
+        <updated>2021-06-01T19:08:06-03:00</updated>
             <summary>
                 <![CDATA[
                     <p>Achei um projetinho bacana de statuspage, totalmente feito em shell :]</p>
@@ -227,29 +256,6 @@
             <![CDATA[
                     <img src="https://gutocarvalho.net/media/posts/4/kubeconf_01.jpg" alt="" />
                 <p>Comunidades que eu recomendo participar.<br><br><strong>WhatsAPP</strong><br><br>SysadminQCODA (https://go.jac.bsb.br/sysadminqcoda)<br>JAC Experts (https://go.jac.bsb.br/whatsapp)<br><strong><br>Telegram</strong><br><br>Comunidades que eu mantenho<br><br>DevOps BSB ( https://t.me/devopsbsb )<br>DevOPS BR ( https://t.me/novodevopsbr )<br>Cloud Native BR ( https://t.me/cloudnativebr )<br>Teclado Mecanico (https://t.me/tecladomecanico)<br>JAC Experts (https://t.me/jacexperts)<br>Mac Users BR ( ttps://t.me/macusersbr )<br><br>Comunidades que eu recomendo<br><br>Docker BR ( https://t.me/devopsbr )<br>Kubernetes BR ( https://t.me/kubernetesbr )<br>Ansible BR ( https://t.me/ansiblebr )<br>Terraform BR ( https://t.me/terraformbr )<br>GitLab BR ( https://t.me/kubernetesbr )<br>Rancher BR ( https://t.me/rancherbr )<br>Rundeck BR ( https://t.me/rundeckbr )<br>Azure BR ( https://t.me/azurebrasil )<br>AWS BR ( https://t.me/awsbrasil)<br>GCP BR (https://t.me/gcpbr)<br>ProxMox BR (https://t.me/proxmoxbrasil)</p>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>Contato</title>
-        <author>
-            <name>Guto Carvalho</name>
-        </author>
-        <link href="https://gutocarvalho.net/contato/"/>
-        <id>https://gutocarvalho.net/contato/</id>
-
-        <updated>2021-05-30T01:44:49-03:00</updated>
-            <summary>
-                <![CDATA[
-                    E-mail guto [at] carvalho.life contato [at] gutocarvalho.net guto [at] jacexperts.io Redes sociais Skype: @devopsguto Telegram: @gutocarvalho Twitter: @gutocarvalho Github: http://github.com/gutocarvalho&hellip;
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                <p><strong>E-mail</strong></p>
-<p>guto [at] carvalho.life<br>contato [at] gutocarvalho.net<br>guto [at] jacexperts.io<br><br><strong>Redes sociais</strong><br><br>Skype: @devopsguto<br>Telegram: @gutocarvalho<br>Twitter: @gutocarvalho<br>Github: http://github.com/gutocarvalho<br>GitLab: http://gitlab.com/gutocarvalho<br>Bitbucket: http://bitbucket.org/gutocarvalho<br>LinkedIN: https://br.linkedin.com/in/devopsguto<br>Facebook: https://facebook.com/devopsguto<br>Slideshare: http://www.slideshare.net/gutocarvalho<br>Speakerdeck: https://speakerdeck.com/gutocarvalho<br>Ello: https://ello.co/gutocarvalho<br>Aboutme: https://about.me/gutocarvalho<br>Instagram: https://www.instagram.com/falagutera/</p>
-<p> </p>
-<p> </p>
             ]]>
         </content>
     </entry>
