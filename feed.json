@@ -10,6 +10,35 @@
     },
     "items": [
         {
+            "id": "https://gutocarvalho.net/archives/",
+            "url": "https://gutocarvalho.net/archives/",
+            "title": "Archives",
+            "summary": "Esses sites já não são mais mantidos, contudo, estão disponíveis para consulta. ❯ https://archive.gutocarvalho.net/hugo ❯ https://archive.gutocarvalho.net/octopress ❯ https://archive.gutocarvalho.net/wordpress ❯ https://archive.gutocarvalho.net/mindnotes&hellip;",
+            "content_html": "<p>Esses sites já não são mais mantidos, contudo, estão disponíveis para consulta.</p>\n<p><a href=\"https://archive.gutocarvalho.net/hugo\">❯ https://archive.gutocarvalho.net/hugo</a></p>\n<p><a href=\"https://archive.gutocarvalho.net/hugo\"></a><a href=\"https://archive.gutocarvalho.net/hugo\">❯ </a><a href=\"https://archive.gutocarvalho.net/hugo\">https://archive.gutocarvalho.net/octopress</a></p>\n<p><a href=\"https://archive.gutocarvalho.net/hugo\"></a><a href=\"https://archive.gutocarvalho.net/hugo\">❯ </a><a href=\"https://archive.gutocarvalho.net/hugo\">https://archive.gutocarvalho.net/wordpress</a></p>\n<p><a href=\"https://archive.gutocarvalho.net/hugo\"></a><a href=\"https://archive.gutocarvalho.net/hugo\">❯ </a><a href=\"https://archive.gutocarvalho.net/hugo\">https://archive.gutocarvalho.net/mindnotes</a></p>\n<p><a href=\"https://archive.gutocarvalho.net/hugo\"></a><a href=\"https://archive.gutocarvalho.net/hugo\">❯ </a><a href=\"https://archive.gutocarvalho.net/hugo\">https://archive.gutocarvalho.net/dokuwiki/main</a></p>\n<p><a href=\"https://archive.gutocarvalho.net/hugo\"></a><a href=\"https://archive.gutocarvalho.net/hugo\">❯ </a><a href=\"https://archive.gutocarvalho.net/hugo\">https://archive.gutocarvalho.net/dokuwiki/puppet</a></p>",
+            "author": {
+                "name": "Guto Carvalho"
+            },
+            "tags": [
+            ],
+            "date_published": "2021-06-02T03:55:48-03:00",
+            "date_modified": "2021-06-02T03:55:48-03:00"
+        },
+        {
+            "id": "https://gutocarvalho.net/k8s-copiando-arquivos-do-pod/",
+            "url": "https://gutocarvalho.net/k8s-copiando-arquivos-do-pod/",
+            "title": "K8S: Copiando arquivos do POD",
+            "summary": "<p>Precisa copiar arquivo para o POD ou do POD? Sabia como!</p>\n",
+            "content_html": "<p>Precisa copiar arquivo para o POD ou do POD? Sabia como!</p>\n\n<p><strong>Da sua máquina para um pod</strong><br><br><code>❯ kubectl cp ./image-service-export.sql postgres-client:/tmp/image-service-export.sql</code><br><br><strong>De um pod para sua máquina</strong><br><br><code>❯ kubectl cp postgre-client:/tmp/images-dump.sql ./images-dump.sql</code><br><br><strong>Onde posso conhecer melhor o kubectl e seus comandos?</strong><br><br>❯ <a href=\"https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands\">https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands</a></p>\n<p>[s]</p>",
+            "author": {
+                "name": "Guto Carvalho"
+            },
+            "tags": [
+                   "MindNotes"
+            ],
+            "date_published": "2021-06-02T00:18:56-03:00",
+            "date_modified": "2021-06-02T04:04:17-03:00"
+        },
+        {
             "id": "https://gutocarvalho.net/k8s-criando-pod-com-cliente-de-banco-de-dados/",
             "url": "https://gutocarvalho.net/k8s-criando-pod-com-cliente-de-banco-de-dados/",
             "title": "K8S: Criando POD com cliente de banco de dados",
@@ -19,7 +48,7 @@
                 "name": "Guto Carvalho"
             },
             "tags": [
-                   "Notes"
+                   "MindNotes"
             ],
             "date_published": "2021-06-01T19:04:16-03:00",
             "date_modified": "2021-06-01T19:26:41-03:00"
@@ -29,15 +58,15 @@
             "url": "https://gutocarvalho.net/k8s-removendo-evicted-pods/",
             "title": "K8S: Removendo Evicted Pods",
             "summary": "<p>Precisa matar pods evicted todos de uma vez?</p>\n",
-            "content_html": "<p>Precisa matar pods evicted todos de uma vez?</p>\n\n<p><code>❯ kubectl get pods --all-namespaces | grep <span class=\"search-highlight\">Evicted</span> | awk '{print $2, \"--namespace\", $1}' | xargs kubectl delete pod</code></p>\n<p><strong>O que são Evicted Pods?</strong><br><br>São pods que o kubernetes não conseguiu fazer schedule por falta de recursos, seja disco ou memória.</p>\n<p><strong>Por quê isso acontece?</strong></p>\n<p>Isso acontece quando não fazemos o sizing correto do cluster e também por falta de configuração de quotas (requests e limits) nos pods.<br><br><strong>Onde posso pesquisar mais sobre o assunto?</strong></p>\n<p>❯ <a href=\"https://kubernetes.io/docs/concepts/scheduling-eviction\">https://kubernetes.io/docs/concepts/scheduling-eviction</a></p>\n<p>❯ <a href=\"https://sysdig.com/blog/kubernetes-pod-evicted/\">https://sysdig.com/blog/kubernetes-pod-evicted/</a></p>\n<p>❯ <a href=\"https://www.padok.fr/en/blog/kubernetes-pods-evicted\">https://www.padok.fr/en/blog/kubernetes-pods-evicted</a></p>\n<p>[s]</p>",
+            "content_html": "<p>Precisa matar pods evicted todos de uma vez?</p>\n\n<p><code>❯ kubectl get pods --all-namespaces | grep <span class=\"search-highlight\">Evicted</span> | awk '{print $2, \"--namespace\", $1}' | xargs kubectl delete pod</code></p>\n<p><strong>O que são Evicted Pods?</strong><br><br>São pods que o kubernetes não conseguiu fazer schedule por falta de recursos, seja disco ou memória.</p>\n<p><strong>Por que isso acontece?</strong></p>\n<p>Isso acontece quando não fazemos o sizing correto do cluster e também por falta de configuração de quotas (requests e limits) nos pods.<br><br><strong>Onde posso pesquisar mais sobre o assunto?</strong></p>\n<p>❯ <a href=\"https://kubernetes.io/docs/concepts/scheduling-eviction\">https://kubernetes.io/docs/concepts/scheduling-eviction</a></p>\n<p>❯ <a href=\"https://sysdig.com/blog/kubernetes-pod-evicted/\">https://sysdig.com/blog/kubernetes-pod-evicted/</a></p>\n<p>❯ <a href=\"https://www.padok.fr/en/blog/kubernetes-pods-evicted\">https://www.padok.fr/en/blog/kubernetes-pods-evicted</a></p>\n<p>[s]</p>",
             "author": {
                 "name": "Guto Carvalho"
             },
             "tags": [
-                   "Notes"
+                   "MindNotes"
             ],
             "date_published": "2021-06-01T17:53:40-03:00",
-            "date_modified": "2021-06-01T20:28:50-03:00"
+            "date_modified": "2021-06-01T20:32:57-03:00"
         },
         {
             "id": "https://gutocarvalho.net/tinystatus/",
@@ -124,36 +153,6 @@
             ],
             "date_published": "2021-05-29T23:25:10-03:00",
             "date_modified": "2021-05-31T18:22:31-03:00"
-        },
-        {
-            "id": "https://gutocarvalho.net/eventos/",
-            "url": "https://gutocarvalho.net/eventos/",
-            "title": "Eventos",
-            "summary": "Eventos que eu recomendo participar - DevOpsDays ",
-            "content_html": "<p><strong>Eventos que eu recomendo participar</strong></p>\n<p> </p>\n<p>- DevOpsDays</p>\n<p> </p>",
-            "image": "https://gutocarvalho.net/media/posts/5/foto-2021.jpg",
-            "author": {
-                "name": "Guto Carvalho"
-            },
-            "tags": [
-            ],
-            "date_published": "2021-05-29T22:44:37-03:00",
-            "date_modified": "2021-05-30T01:45:07-03:00"
-        },
-        {
-            "id": "https://gutocarvalho.net/comunidades/",
-            "url": "https://gutocarvalho.net/comunidades/",
-            "title": "Comunidades",
-            "summary": "Comunidades que eu recomendo participar. WhatsAPP SysadminQCODA (https://go.jac.bsb.br/sysadminqcoda) JAC Experts (https://go.jac.bsb.br/whatsapp) Telegram Comunidades que eu mantenho DevOps BSB ( https://t.me/devopsbsb&hellip;",
-            "content_html": "<p>Comunidades que eu recomendo participar.<br><br><strong>WhatsAPP</strong><br><br>SysadminQCODA (https://go.jac.bsb.br/sysadminqcoda)<br>JAC Experts (https://go.jac.bsb.br/whatsapp)<br><strong><br>Telegram</strong><br><br>Comunidades que eu mantenho<br><br>DevOps BSB ( https://t.me/devopsbsb )<br>DevOPS BR ( https://t.me/novodevopsbr )<br>Cloud Native BR ( https://t.me/cloudnativebr )<br>Teclado Mecanico (https://t.me/tecladomecanico)<br>JAC Experts (https://t.me/jacexperts)<br>Mac Users BR ( ttps://t.me/macusersbr )<br><br>Comunidades que eu recomendo<br><br>Docker BR ( https://t.me/devopsbr )<br>Kubernetes BR ( https://t.me/kubernetesbr )<br>Ansible BR ( https://t.me/ansiblebr )<br>Terraform BR ( https://t.me/terraformbr )<br>GitLab BR ( https://t.me/kubernetesbr )<br>Rancher BR ( https://t.me/rancherbr )<br>Rundeck BR ( https://t.me/rundeckbr )<br>Azure BR ( https://t.me/azurebrasil )<br>AWS BR ( https://t.me/awsbrasil)<br>GCP BR (https://t.me/gcpbr)<br>ProxMox BR (https://t.me/proxmoxbrasil)</p>",
-            "image": "https://gutocarvalho.net/media/posts/4/kubeconf_01.jpg",
-            "author": {
-                "name": "Guto Carvalho"
-            },
-            "tags": [
-            ],
-            "date_published": "2021-05-29T22:44:28-03:00",
-            "date_modified": "2021-05-31T18:27:26-03:00"
         }
     ]
 }
