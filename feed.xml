@@ -3,12 +3,37 @@
     <title>gutocarvalho.net</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2021-06-02T04:04:17-03:00</updated>
+    <updated>2021-06-02T09:14:58-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
     <id>https://gutocarvalho.net</id>
 
+    <entry>
+        <title>MacOs no ProxMox?</title>
+        <author>
+            <name>Guto Carvalho</name>
+        </author>
+        <link href="https://gutocarvalho.net/macos-no-proxmox/"/>
+        <id>https://gutocarvalho.net/macos-no-proxmox/</id>
+            <category term="MindNotes"/>
+
+        <updated>2021-06-02T08:38:56-03:00</updated>
+            <summary>
+                <![CDATA[
+                    <p>Quer usar o MacOS no proxmox? Então olha isso!</p>
+
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p>Quer usar o MacOS no proxmox? Então olha isso!</p>
+
+<p>Parece que dá... eu ainda não testei, mas segue a URL que explica!<br><br><a href="https://www.nicksherlock.com/2020/04/installing-macos-catalina-on-proxmox-with-opencore/">❯ https://www.nicksherlock.com/2020/04/installing-macos-catalina-on-proxmox-with-opencore/</a></p>
+<p>:)</p>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>Archives</title>
         <author>
@@ -44,7 +69,7 @@
         <id>https://gutocarvalho.net/k8s-copiando-arquivos-do-pod/</id>
             <category term="MindNotes"/>
 
-        <updated>2021-06-02T04:04:17-03:00</updated>
+        <updated>2021-06-02T08:39:07-03:00</updated>
             <summary>
                 <![CDATA[
                     <p>Precisa copiar arquivo para o POD ou do POD? Sabia como!</p>
@@ -129,7 +154,7 @@
         <id>https://gutocarvalho.net/tinystatus/</id>
             <category term="Projetos"/>
 
-        <updated>2021-06-01T19:08:06-03:00</updated>
+        <updated>2021-06-02T08:39:34-03:00</updated>
             <summary>
                 <![CDATA[
                     <p>Achei um projetinho bacana de statuspage, totalmente feito em shell :]</p>
@@ -204,10 +229,10 @@
         <link href="https://gutocarvalho.net/siga-o-pessoal-do-bem/"/>
         <id>https://gutocarvalho.net/siga-o-pessoal-do-bem/</id>
 
-        <updated>2021-05-30T01:46:46-03:00</updated>
+        <updated>2021-06-02T09:14:58-03:00</updated>
             <summary>
                 <![CDATA[
-                    Recomendo! @gomex @somatorio @fernandoike @sebawebber ...
+                    Recomendo! @gomex @somatorio @fernandoike @sebawebber Voltar e terminar...
                 ]]>
             </summary>
         <content type="html">
@@ -216,7 +241,7 @@
 <p>@somatorio</p>
 <p>@fernandoike</p>
 <p>@sebawebber</p>
-<p>...</p>
+<p>Voltar e terminar...</p>
             ]]>
         </content>
     </entry>
@@ -245,27 +270,6 @@
 <figure class="gallery__item"><a href="https://gutocarvalho.net/media/posts/9/gallery/casa1.jpg" data-size="1280x960"><img loading="lazy" src="https://gutocarvalho.net/media/posts/9/gallery/casa1-thumbnail.jpg" alt="" width="768" height="576"></a></figure>
 </div></div>
 <p><br><br>Começo o ano na fronteira entre DF e GO, com muitas trilhas, ar puro e natureza vibrante!<br><br>Recomendo :)</p>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>Novo motor de site</title>
-        <author>
-            <name>Guto Carvalho</name>
-        </author>
-        <link href="https://gutocarvalho.net/novo-motor-de-site/"/>
-        <id>https://gutocarvalho.net/novo-motor-de-site/</id>
-
-        <updated>2021-05-31T18:22:31-03:00</updated>
-            <summary>
-                <![CDATA[
-                    Migrando para o Publii pq né, a pessoa aqui não aguenta ficar na mesma ferramenta mais de 1 ano kkk&hellip;
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                <p>Migrando para o Publii pq né, a pessoa aqui não aguenta ficar na mesma ferramenta mais de 1 ano kkk :)<br><br>De 2003 para cá já passei por Drupal, Joomla, Wordpress, Octopress, Hugo, Ghost e agora Publii.</p>
-<p>Vamo que vamo!<br><br>#EarlyAdopter</p>
             ]]>
         </content>
     </entry>

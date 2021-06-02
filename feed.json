@@ -10,6 +10,21 @@
     },
     "items": [
         {
+            "id": "https://gutocarvalho.net/macos-no-proxmox/",
+            "url": "https://gutocarvalho.net/macos-no-proxmox/",
+            "title": "MacOs no ProxMox?",
+            "summary": "<p>Quer usar o MacOS no proxmox? Então olha isso!</p>\n",
+            "content_html": "<p>Quer usar o MacOS no proxmox? Então olha isso!</p>\n\n<p>Parece que dá... eu ainda não testei, mas segue a URL que explica!<br><br><a href=\"https://www.nicksherlock.com/2020/04/installing-macos-catalina-on-proxmox-with-opencore/\">❯ https://www.nicksherlock.com/2020/04/installing-macos-catalina-on-proxmox-with-opencore/</a></p>\n<p>:)</p>",
+            "author": {
+                "name": "Guto Carvalho"
+            },
+            "tags": [
+                   "MindNotes"
+            ],
+            "date_published": "2021-06-02T08:19:04-03:00",
+            "date_modified": "2021-06-02T08:38:56-03:00"
+        },
+        {
             "id": "https://gutocarvalho.net/archives/",
             "url": "https://gutocarvalho.net/archives/",
             "title": "Archives",
@@ -36,7 +51,7 @@
                    "MindNotes"
             ],
             "date_published": "2021-06-02T00:18:56-03:00",
-            "date_modified": "2021-06-02T04:04:17-03:00"
+            "date_modified": "2021-06-02T08:39:07-03:00"
         },
         {
             "id": "https://gutocarvalho.net/k8s-criando-pod-com-cliente-de-banco-de-dados/",
@@ -81,7 +96,7 @@
                    "Projetos"
             ],
             "date_published": "2021-06-01T08:51:12-03:00",
-            "date_modified": "2021-06-01T19:08:06-03:00"
+            "date_modified": "2021-06-02T08:39:34-03:00"
         },
         {
             "id": "https://gutocarvalho.net/zammad/",
@@ -116,15 +131,15 @@
             "id": "https://gutocarvalho.net/siga-o-pessoal-do-bem/",
             "url": "https://gutocarvalho.net/siga-o-pessoal-do-bem/",
             "title": "Siga o pessoal do bem!",
-            "summary": "Recomendo! @gomex @somatorio @fernandoike @sebawebber ...",
-            "content_html": "<p>Recomendo!<br><br>@gomex</p>\n<p>@somatorio</p>\n<p>@fernandoike</p>\n<p>@sebawebber</p>\n<p>...</p>",
+            "summary": "Recomendo! @gomex @somatorio @fernandoike @sebawebber Voltar e terminar...",
+            "content_html": "<p>Recomendo!<br><br>@gomex</p>\n<p>@somatorio</p>\n<p>@fernandoike</p>\n<p>@sebawebber</p>\n<p>Voltar e terminar...</p>",
             "author": {
                 "name": "Guto Carvalho"
             },
             "tags": [
             ],
             "date_published": "2021-05-30T01:46:46-03:00",
-            "date_modified": "2021-05-30T01:46:46-03:00"
+            "date_modified": "2021-06-02T09:14:58-03:00"
         },
         {
             "id": "https://gutocarvalho.net/2021-novo-ano-novo-lar/",
@@ -139,20 +154,6 @@
             ],
             "date_published": "2021-05-30T00:09:24-03:00",
             "date_modified": "2021-05-31T19:41:18-03:00"
-        },
-        {
-            "id": "https://gutocarvalho.net/novo-motor-de-site/",
-            "url": "https://gutocarvalho.net/novo-motor-de-site/",
-            "title": "Novo motor de site",
-            "summary": "Migrando para o Publii pq né, a pessoa aqui não aguenta ficar na mesma ferramenta mais de 1 ano kkk&hellip;",
-            "content_html": "<p>Migrando para o Publii pq né, a pessoa aqui não aguenta ficar na mesma ferramenta mais de 1 ano kkk :)<br><br>De 2003 para cá já passei por Drupal, Joomla, Wordpress, Octopress, Hugo, Ghost e agora Publii.</p>\n<p>Vamo que vamo!<br><br>#EarlyAdopter</p>",
-            "author": {
-                "name": "Guto Carvalho"
-            },
-            "tags": [
-            ],
-            "date_published": "2021-05-29T23:25:10-03:00",
-            "date_modified": "2021-05-31T18:22:31-03:00"
         }
     ]
 }
