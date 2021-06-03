@@ -43,7 +43,7 @@
             "url": "https://gutocarvalho.net/k8s-copiando-arquivos-do-pod/",
             "title": "K8S: Copiando arquivos do POD",
             "summary": "<p>Precisa copiar arquivo para o POD ou do POD? Sabia como!</p>\n",
-            "content_html": "<p>Precisa copiar arquivo para o POD ou do POD? Sabia como!</p>\n\n<p><strong>Da sua máquina para um pod</strong><br><br><code>❯ kubectl cp ./image-service-export.sql postgres-client:/tmp/image-service-export.sql</code><br><br><strong>De um pod para sua máquina</strong><br><br><code>❯ kubectl cp postgre-client:/tmp/images-dump.sql ./images-dump.sql</code><br><br><strong>Onde posso conhecer melhor o kubectl e seus comandos?</strong><br><br>❯ <a href=\"https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands\">https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands</a></p>\n<p>[s]</p>",
+            "content_html": "<p>Precisa copiar arquivo para o POD ou do POD? Sabia como!</p>\n\n<p><strong>Sintaxe</strong></p>\n<p><code>❯ kubectl cp $ARQUIVO $POD:$CAMINHO/$ARQUIVO</code><br><code>❯ kubectl cp $POD:$CAMINHO/$ARQUIVO $ARQUIVO</code></p>\n<p><strong>Copiando o arquivo service.sql para o pod postgres-client</strong><br><br><code>❯ kubectl cp ./service.sql postgres-client:/tmp/service.sql</code><br><br><strong>Copiando o arquivo service-dump.sql do pod postgres-client</strong><br><br><code>❯ kubectl cp postgre-client:/tmp/service-dump.sql ./service-dump.sql</code><br><br><strong>Onde posso conhecer melhor o kubectl e seus comandos?</strong><br><br>❯ <a href=\"https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands\">https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands</a></p>\n<p>[s]</p>",
             "author": {
                 "name": "Guto Carvalho"
             },
@@ -51,7 +51,7 @@
                    "MindNotes"
             ],
             "date_published": "2021-06-02T00:18:56-03:00",
-            "date_modified": "2021-06-02T08:39:07-03:00"
+            "date_modified": "2021-06-02T12:49:16-03:00"
         },
         {
             "id": "https://gutocarvalho.net/k8s-criando-pod-com-cliente-de-banco-de-dados/",
