@@ -10,6 +10,20 @@
     },
     "items": [
         {
+            "id": "https://gutocarvalho.net/eventos-de-junho-21-bora-la/",
+            "url": "https://gutocarvalho.net/eventos-de-junho-21-bora-la/",
+            "title": "Eventos de Junho 21",
+            "summary": "<p>Bora lá!</p>\n",
+            "content_html": "<p>Bora lá!</p>\n\n<p><strong>Próximos!<br><br></strong>- GitOps Summit - Junho/22 - Virtual<br>- GitOps Days - Junho/9 - Virtual<br><br>Sabe de mais algum interessante? Manda nos comentários que eu atualizo!<br><br>[s]</p>",
+            "author": {
+                "name": "Guto Carvalho"
+            },
+            "tags": [
+            ],
+            "date_published": "2021-06-03T22:56:20-03:00",
+            "date_modified": "2021-06-03T22:57:26-03:00"
+        },
+        {
             "id": "https://gutocarvalho.net/vagas-abertas-na-jac-para-gitops/",
             "url": "https://gutocarvalho.net/vagas-abertas-na-jac-para-gitops/",
             "title": "Vagas abertas na JAC para GitOps!",
@@ -140,20 +154,6 @@
             ],
             "date_published": "2021-05-31T14:10:00-03:00",
             "date_modified": "2021-05-31T18:22:01-03:00"
-        },
-        {
-            "id": "https://gutocarvalho.net/siga-o-pessoal-do-bem/",
-            "url": "https://gutocarvalho.net/siga-o-pessoal-do-bem/",
-            "title": "Siga o pessoal do bem!",
-            "summary": "Recomendo! @gomex @somatorio @fernandoike @sebawebber Voltar e terminar...",
-            "content_html": "<p>Recomendo!<br><br>@gomex</p>\n<p>@somatorio</p>\n<p>@fernandoike</p>\n<p>@sebawebber</p>\n<p>Voltar e terminar...</p>",
-            "author": {
-                "name": "Guto Carvalho"
-            },
-            "tags": [
-            ],
-            "date_published": "2021-05-30T01:46:46-03:00",
-            "date_modified": "2021-06-02T09:14:58-03:00"
         }
     ]
 }

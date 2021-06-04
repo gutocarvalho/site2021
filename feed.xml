@@ -3,12 +3,35 @@
     <title>gutocarvalho.net</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2021-06-03T20:47:51-03:00</updated>
+    <updated>2021-06-03T22:57:26-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
     <id>https://gutocarvalho.net</id>
 
+    <entry>
+        <title>Eventos de Junho 21</title>
+        <author>
+            <name>Guto Carvalho</name>
+        </author>
+        <link href="https://gutocarvalho.net/eventos-de-junho-21-bora-la/"/>
+        <id>https://gutocarvalho.net/eventos-de-junho-21-bora-la/</id>
+
+        <updated>2021-06-03T22:57:26-03:00</updated>
+            <summary>
+                <![CDATA[
+                    <p>Bora lá!</p>
+
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p>Bora lá!</p>
+
+<p><strong>Próximos!<br><br></strong>- GitOps Summit - Junho/22 - Virtual<br>- GitOps Days - Junho/9 - Virtual<br><br>Sabe de mais algum interessante? Manda nos comentários que eu atualizo!<br><br>[s]</p>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>Vagas abertas na JAC para GitOps!</title>
         <author>
@@ -242,30 +265,6 @@
                 <p>To aqui montando o novo setup para as lives JAC retornarem o quanto antes.</p>
 
 <p>Se prepara que vem conteúdo intenso e gente fera!<br><br>Só vem!</p>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>Siga o pessoal do bem!</title>
-        <author>
-            <name>Guto Carvalho</name>
-        </author>
-        <link href="https://gutocarvalho.net/siga-o-pessoal-do-bem/"/>
-        <id>https://gutocarvalho.net/siga-o-pessoal-do-bem/</id>
-
-        <updated>2021-06-02T09:14:58-03:00</updated>
-            <summary>
-                <![CDATA[
-                    Recomendo! @gomex @somatorio @fernandoike @sebawebber Voltar e terminar...
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                <p>Recomendo!<br><br>@gomex</p>
-<p>@somatorio</p>
-<p>@fernandoike</p>
-<p>@sebawebber</p>
-<p>Voltar e terminar...</p>
             ]]>
         </content>
     </entry>
