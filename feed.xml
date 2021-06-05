@@ -3,7 +3,7 @@
     <title>gutocarvalho.net</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2021-06-04T21:13:49-03:00</updated>
+    <updated>2021-06-05T18:34:17-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
@@ -18,7 +18,7 @@
         <id>https://gutocarvalho.net/passbolt/</id>
             <category term="Projetos"/>
 
-        <updated>2021-06-04T21:12:30-03:00</updated>
+        <updated>2021-06-05T18:26:32-03:00</updated>
             <summary>
                 <![CDATA[
                     <p>Precisa gerenciar as senhas e compartilhar com seu time?</p>
@@ -29,8 +29,12 @@
             <![CDATA[
                 <p>Precisa gerenciar as senhas e compartilhar com seu time?</p>
 
-<p>Esse é um projeto web, opensource, com uma interface amigável e moderna, com criptografia padrão opensource, bem simples de usar e compartilhar as senhas com seu time, ou gerenciar suas senhas pessoais.</p>
-<figure class="post__image">Conheça o <a href="https://www.passbolt.com/" target="_blank" rel="noopener noreferrer">projeto</a>!<br><br><img loading="lazy"  src="https://gutocarvalho.net/media/posts/22//Screen-Shot-2021-06-04-at-21.09.25.png" sizes="(min-width: 61.3125em) 50vw, 100vw" srcset="https://gutocarvalho.net/media/posts/22//responsive/Screen-Shot-2021-06-04-at-21.09.25-xs.png 300w ,https://gutocarvalho.net/media/posts/22//responsive/Screen-Shot-2021-06-04-at-21.09.25-sm.png 480w ,https://gutocarvalho.net/media/posts/22//responsive/Screen-Shot-2021-06-04-at-21.09.25-md.png 768w"  alt="" width="1267" height="886"></figure>
+<p>Esse é um projeto web, opensource, com uma interface amigável e moderna, com criptografia padrão pgp, bem simples de usar e compartilhar as senhas com seu time, ou gerenciar suas senhas pessoais.</p>
+<p>É um item obrigatório em praticamente qualquer projeto que executo hoje.</p>
+<p>Conheça o <a href="https://www.passbolt.com/" target="_blank" rel="noopener noreferrer">projeto</a>!</p>
+<figure class="post__image"><img loading="lazy"  src="https://gutocarvalho.net/media/posts/22//Screen-Shot-2021-06-04-at-21.09.25.png" sizes="(min-width: 61.3125em) 50vw, 100vw" srcset="https://gutocarvalho.net/media/posts/22//responsive/Screen-Shot-2021-06-04-at-21.09.25-xs.png 300w ,https://gutocarvalho.net/media/posts/22//responsive/Screen-Shot-2021-06-04-at-21.09.25-sm.png 480w ,https://gutocarvalho.net/media/posts/22//responsive/Screen-Shot-2021-06-04-at-21.09.25-md.png 768w"  alt="" width="1267" height="886"></figure>
+<figure class="post__image"><img loading="lazy"  src="https://gutocarvalho.net/media/posts/22/Screen-Shot-2021-06-05-at-18.25.43.png" sizes="(min-width: 61.3125em) 50vw, 100vw" srcset="https://gutocarvalho.net/media/posts/22/responsive/Screen-Shot-2021-06-05-at-18.25.43-xs.png 300w ,https://gutocarvalho.net/media/posts/22/responsive/Screen-Shot-2021-06-05-at-18.25.43-sm.png 480w ,https://gutocarvalho.net/media/posts/22/responsive/Screen-Shot-2021-06-05-at-18.25.43-md.png 768w"  alt="" width="1010" height="613"></figure><br><br>Usamos na JAC e em vários clientes e projetos, recomendo :)</p>
+<p> </p>
             ]]>
         </content>
     </entry>
@@ -42,7 +46,7 @@
         <link href="https://gutocarvalho.net/eventos-de-junho-21-bora-la/"/>
         <id>https://gutocarvalho.net/eventos-de-junho-21-bora-la/</id>
 
-        <updated>2021-06-03T22:57:26-03:00</updated>
+        <updated>2021-06-05T18:34:17-03:00</updated>
             <summary>
                 <![CDATA[
                     <p>Bora lá!</p>
@@ -53,7 +57,7 @@
             <![CDATA[
                 <p>Bora lá!</p>
 
-<p><strong>Próximos!<br><br></strong>- GitOps Summit - Junho/22 - Virtual<br>- GitOps Days - Junho/9 - Virtual<br><br>Sabe de mais algum interessante? Manda nos comentários que eu atualizo!<br><br>[s]</p>
+<p><strong>Próximos!<br><br></strong>- GitOps Summit - Junho/22 - Virtual<br>- <a href="https://hashiconf.com/europe/" target="_blank" rel="noopener noreferrer">Hashicon Europe</a> Junho/8-11 - Virtual<br>- GitOps Days - Junho/9-10 - Virtual<br><br>Sabe de mais algum interessante? Manda nos comentários que eu atualizo!<br><br>[s]</p>
             ]]>
         </content>
     </entry>

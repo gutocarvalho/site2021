@@ -22,7 +22,7 @@
 </url>
 <url>
 <loc>https://gutocarvalho.net/comunidades/</loc>
-<lastmod>2021-05-31T18:27:26-03:00</lastmod>
+<lastmod>2021-06-05T18:31:00-03:00</lastmod>
 <image:image>
 <image:loc>https://gutocarvalho.net/media/posts/4/kubeconf_01.jpg</image:loc>
 <image:title><![CDATA[]]></image:title>
@@ -42,7 +42,7 @@
 </url>
 <url>
 <loc>https://gutocarvalho.net/eventos-de-junho-21-bora-la/</loc>
-<lastmod>2021-06-03T22:57:26-03:00</lastmod>
+<lastmod>2021-06-05T18:34:17-03:00</lastmod>
 </url>
 <url>
 <loc>https://gutocarvalho.net/k8s-copiando-arquivos-do-pod/</loc>
@@ -69,9 +69,13 @@
 </url>
 <url>
 <loc>https://gutocarvalho.net/passbolt/</loc>
-<lastmod>2021-06-04T21:12:30-03:00</lastmod>
+<lastmod>2021-06-05T18:26:32-03:00</lastmod>
 <image:image>
 <image:loc>https://gutocarvalho.net/media/posts/22//Screen-Shot-2021-06-04-at-21.09.25.png</image:loc>
+<image:title><![CDATA[]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://gutocarvalho.net/media/posts/22/Screen-Shot-2021-06-05-at-18.25.43.png</image:loc>
 <image:title><![CDATA[]]></image:title>
 </image:image>
 </url>

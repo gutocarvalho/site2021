@@ -14,7 +14,7 @@
             "url": "https://gutocarvalho.net/passbolt/",
             "title": "Passbolt",
             "summary": "<p>Precisa gerenciar as senhas e compartilhar com seu time?</p>\n",
-            "content_html": "<p>Precisa gerenciar as senhas e compartilhar com seu time?</p>\n\n<p>Esse é um projeto web, opensource, com uma interface amigável e moderna, com criptografia padrão opensource, bem simples de usar e compartilhar as senhas com seu time, ou gerenciar suas senhas pessoais.</p>\n<figure class=\"post__image\">Conheça o <a href=\"https://www.passbolt.com/\" target=\"_blank\" rel=\"noopener noreferrer\">projeto</a>!<br><br><img loading=\"lazy\"  src=\"https://gutocarvalho.net/media/posts/22//Screen-Shot-2021-06-04-at-21.09.25.png\" sizes=\"(min-width: 61.3125em) 50vw, 100vw\" srcset=\"https://gutocarvalho.net/media/posts/22//responsive/Screen-Shot-2021-06-04-at-21.09.25-xs.png 300w ,https://gutocarvalho.net/media/posts/22//responsive/Screen-Shot-2021-06-04-at-21.09.25-sm.png 480w ,https://gutocarvalho.net/media/posts/22//responsive/Screen-Shot-2021-06-04-at-21.09.25-md.png 768w\"  alt=\"\" width=\"1267\" height=\"886\"></figure>",
+            "content_html": "<p>Precisa gerenciar as senhas e compartilhar com seu time?</p>\n\n<p>Esse é um projeto web, opensource, com uma interface amigável e moderna, com criptografia padrão pgp, bem simples de usar e compartilhar as senhas com seu time, ou gerenciar suas senhas pessoais.</p>\n<p>É um item obrigatório em praticamente qualquer projeto que executo hoje.</p>\n<p>Conheça o <a href=\"https://www.passbolt.com/\" target=\"_blank\" rel=\"noopener noreferrer\">projeto</a>!</p>\n<figure class=\"post__image\"><img loading=\"lazy\"  src=\"https://gutocarvalho.net/media/posts/22//Screen-Shot-2021-06-04-at-21.09.25.png\" sizes=\"(min-width: 61.3125em) 50vw, 100vw\" srcset=\"https://gutocarvalho.net/media/posts/22//responsive/Screen-Shot-2021-06-04-at-21.09.25-xs.png 300w ,https://gutocarvalho.net/media/posts/22//responsive/Screen-Shot-2021-06-04-at-21.09.25-sm.png 480w ,https://gutocarvalho.net/media/posts/22//responsive/Screen-Shot-2021-06-04-at-21.09.25-md.png 768w\"  alt=\"\" width=\"1267\" height=\"886\"></figure>\n<figure class=\"post__image\"><img loading=\"lazy\"  src=\"https://gutocarvalho.net/media/posts/22/Screen-Shot-2021-06-05-at-18.25.43.png\" sizes=\"(min-width: 61.3125em) 50vw, 100vw\" srcset=\"https://gutocarvalho.net/media/posts/22/responsive/Screen-Shot-2021-06-05-at-18.25.43-xs.png 300w ,https://gutocarvalho.net/media/posts/22/responsive/Screen-Shot-2021-06-05-at-18.25.43-sm.png 480w ,https://gutocarvalho.net/media/posts/22/responsive/Screen-Shot-2021-06-05-at-18.25.43-md.png 768w\"  alt=\"\" width=\"1010\" height=\"613\"></figure><br><br>Usamos na JAC e em vários clientes e projetos, recomendo :)</p>\n<p> </p>",
             "author": {
                 "name": "Guto Carvalho"
             },
@@ -22,21 +22,21 @@
                    "Projetos"
             ],
             "date_published": "2021-06-04T21:10:59-03:00",
-            "date_modified": "2021-06-04T21:12:30-03:00"
+            "date_modified": "2021-06-05T18:26:32-03:00"
         },
         {
             "id": "https://gutocarvalho.net/eventos-de-junho-21-bora-la/",
             "url": "https://gutocarvalho.net/eventos-de-junho-21-bora-la/",
             "title": "Eventos de Junho 21",
             "summary": "<p>Bora lá!</p>\n",
-            "content_html": "<p>Bora lá!</p>\n\n<p><strong>Próximos!<br><br></strong>- GitOps Summit - Junho/22 - Virtual<br>- GitOps Days - Junho/9 - Virtual<br><br>Sabe de mais algum interessante? Manda nos comentários que eu atualizo!<br><br>[s]</p>",
+            "content_html": "<p>Bora lá!</p>\n\n<p><strong>Próximos!<br><br></strong>- GitOps Summit - Junho/22 - Virtual<br>- <a href=\"https://hashiconf.com/europe/\" target=\"_blank\" rel=\"noopener noreferrer\">Hashicon Europe</a> Junho/8-11 - Virtual<br>- GitOps Days - Junho/9-10 - Virtual<br><br>Sabe de mais algum interessante? Manda nos comentários que eu atualizo!<br><br>[s]</p>",
             "author": {
                 "name": "Guto Carvalho"
             },
             "tags": [
             ],
             "date_published": "2021-06-03T22:56:20-03:00",
-            "date_modified": "2021-06-03T22:57:26-03:00"
+            "date_modified": "2021-06-05T18:34:17-03:00"
         },
         {
             "id": "https://gutocarvalho.net/vagas-abertas-na-jac-para-gitops/",
