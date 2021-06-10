@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <title>gutocarvalho.net</title>
+    <title>Guto@Site</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2021-06-10T12:52:17-03:00</updated>
+    <updated>2021-06-10T14:14:28-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
     <id>https://gutocarvalho.net</id>
 
     <entry>
-        <title>GitOps Days acontecento!</title>
+        <title>GitOps Days acontecendo!</title>
         <author>
             <name>Guto Carvalho</name>
         </author>
@@ -18,7 +18,7 @@
         <id>https://gutocarvalho.net/gitops-days-acontecento/</id>
             <category term="Eventos"/>
 
-        <updated>2021-06-10T12:52:17-03:00</updated>
+        <updated>2021-06-10T14:14:28-03:00</updated>
             <summary>
                 <![CDATA[
                     <p>Vem participar do evento, vamos aprender juntos!</p>
