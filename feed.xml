@@ -3,7 +3,7 @@
     <title>gutocarvalho.net</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2021-06-10T12:51:23-03:00</updated>
+    <updated>2021-06-10T12:52:17-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
@@ -16,8 +16,9 @@
         </author>
         <link href="https://gutocarvalho.net/gitops-days-acontecento/"/>
         <id>https://gutocarvalho.net/gitops-days-acontecento/</id>
+            <category term="Eventos"/>
 
-        <updated>2021-06-10T12:51:23-03:00</updated>
+        <updated>2021-06-10T12:52:17-03:00</updated>
             <summary>
                 <![CDATA[
                     <p>Vem participar do evento, vamos aprender juntos!</p>
