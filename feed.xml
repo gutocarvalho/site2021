@@ -3,7 +3,7 @@
     <title>Guto@Site</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2021-06-10T14:14:28-03:00</updated>
+    <updated>2021-06-12T09:55:04-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
@@ -18,7 +18,7 @@
         <id>https://gutocarvalho.net/gitops-days-acontecento/</id>
             <category term="Eventos"/>
 
-        <updated>2021-06-10T14:14:28-03:00</updated>
+        <updated>2021-06-10T14:33:22-03:00</updated>
             <summary>
                 <![CDATA[
                     <p>Vem participar do evento, vamos aprender juntos!</p>
@@ -29,7 +29,7 @@
             <![CDATA[
                 <p>Vem participar do evento, vamos aprender juntos!</p>
 
-<p><strong>Acesso o site do evento e se inscreva<br><br></strong><a href="https://www.gitopsdays.com/">https://www.gitopsdays.com/</a><strong><br><br>Streaming GitOpsDays Dia 1</strong><br><br><a href="https://www.youtube.com/watch?v=gMpRcFDC8wA&amp;feature=youtu.be">https://www.youtube.com/watch?v=gMpRcFDC8wA&amp;feature=youtu.be</a><br><br><strong>Streaming GitOpsDays Dia 2</strong><br><br><a href="https://www.youtube.com/watch?v=jMjB7H2IzQE&amp;feature=youtu.be">https://www.youtube.com/watch?v=jMjB7H2IzQE&amp;feature=youtu.be</a></p>
+<p><strong>Acesso o site do evento e se inscreva<br><br></strong><a href="https://www.gitopsdays.com/">https://www.gitopsdays.com/</a><strong><br><br>Streaming GitOpsDays Dia 2</strong><br><br><a href="https://www.youtube.com/watch?v=gMpRcFDC8wA&amp;feature=youtu.be">https://www.youtube.com/watch?v=gMpRcFDC8wA&amp;feature=youtu.be</a><br><br><strong>Streaming GitOpsDays Dia 1</strong><br><br><a href="https://www.youtube.com/watch?v=jMjB7H2IzQE&amp;feature=youtu.be">https://www.youtube.com/watch?v=jMjB7H2IzQE&amp;feature=youtu.be</a></p>
 <hr>
 <p><strong>Day 2</strong><br><strong>June 10, 2021</strong><br><span style="color: var(--text-editor-body-color); font-family: var(--font-base); font-size: inherit;">All times are US Pacific Standard Time (PT)</span></p>
 <p>07:00 – 08:30 PT: Pre-show – <a href="https://www.gitopsdays.com/speaker/stefan-prodan/">Flux Deep Dive – Stefan Prodan</a></p>
@@ -144,7 +144,7 @@
         <link href="https://gutocarvalho.net/eventos-de-junho-21-bora-la/"/>
         <id>https://gutocarvalho.net/eventos-de-junho-21-bora-la/</id>
 
-        <updated>2021-06-09T09:09:35-03:00</updated>
+        <updated>2021-06-12T09:55:04-03:00</updated>
             <summary>
                 <![CDATA[
                     <p>Bora lá!</p>
@@ -155,7 +155,7 @@
             <![CDATA[
                 <p>Bora lá!</p>
 
-<p><strong>Próximos!<br><br></strong>- <a href="https://events.linuxfoundation.org/gitops-summit/" target="_blank" rel="noopener noreferrer">GitOps Summit </a>- Junho/22 - Virtual<br>- <a href="https://hashiconf.com/europe/" target="_blank" rel="noopener noreferrer">Hashicon Europe</a> - Junho/8-11 - Virtual<br>- <a href="https://grafana.com/about/events/grafanacon/2021/">GrafanaCon</a> - Junho/8-17 - Virtual<br>- <a href="https://www.gitopsdays.com/">GitOps Days</a> - Junho/9-10 - Virtual<br><br>Sabe de mais algum interessante? Manda nos comentários que eu atualizo!<br><br>[s]</p>
+<p><strong>Próximos!<br><br></strong>- <a href="https://events.linuxfoundation.org/cdcon/register/">CDCON</a> - Junho/23-24 - Virtual<br>- <a href="https://events.linuxfoundation.org/gitops-summit/" target="_blank" rel="noopener noreferrer">GitOps Summit </a>- Junho/22 - Virtual<br>- <a href="https://hashiconf.com/europe/" target="_blank" rel="noopener noreferrer">Hashicon Europe</a> - Junho/8-11 - Virtual<br>- <a href="https://grafana.com/about/events/grafanacon/2021/">GrafanaCon</a> - Junho/8-17 - Virtual<br>- <a href="https://www.gitopsdays.com/">GitOps Days</a> - Junho/9-10 - Virtual<br><br>Sabe de mais algum interessante? Manda nos comentários que eu atualizo!<br><br>[s]</p>
             ]]>
         </content>
     </entry>
