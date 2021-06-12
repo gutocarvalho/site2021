@@ -34,10 +34,11 @@
                 "name": "Guto Carvalho"
             },
             "tags": [
-                   "MindNotes"
+                   "MindNotes",
+                   "JACExperts"
             ],
             "date_published": "2021-06-08T19:08:15-03:00",
-            "date_modified": "2021-06-08T20:25:57-03:00"
+            "date_modified": "2021-06-12T11:40:10-03:00"
         },
         {
             "id": "https://gutocarvalho.net/passbolt/",
@@ -78,9 +79,10 @@
                 "name": "Guto Carvalho"
             },
             "tags": [
+                   "JACExperts"
             ],
             "date_published": "2021-06-03T20:47:51-03:00",
-            "date_modified": "2021-06-04T21:13:49-03:00"
+            "date_modified": "2021-06-12T11:41:24-03:00"
         },
         {
             "id": "https://gutocarvalho.net/macos-no-proxmox/",

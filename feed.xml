@@ -3,7 +3,7 @@
     <title>Guto@Site</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2021-06-12T09:55:04-03:00</updated>
+    <updated>2021-06-12T11:41:24-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
@@ -90,8 +90,9 @@
         <link href="https://gutocarvalho.net/diferenca-entre-jr-pl-sr-e-especialista/"/>
         <id>https://gutocarvalho.net/diferenca-entre-jr-pl-sr-e-especialista/</id>
             <category term="MindNotes"/>
+            <category term="JACExperts"/>
 
-        <updated>2021-06-08T20:25:57-03:00</updated>
+        <updated>2021-06-12T11:40:10-03:00</updated>
             <summary>
                 <![CDATA[
                     <p>Bora entender isso de um jeito simples? Vem!</p>
@@ -166,8 +167,9 @@
         </author>
         <link href="https://gutocarvalho.net/vagas-abertas-na-jac-para-gitops/"/>
         <id>https://gutocarvalho.net/vagas-abertas-na-jac-para-gitops/</id>
+            <category term="JACExperts"/>
 
-        <updated>2021-06-04T21:13:49-03:00</updated>
+        <updated>2021-06-12T11:41:24-03:00</updated>
             <summary>
                 <![CDATA[
                     <p>Vagas abertas na JAC para trabalhar comigo e outras feras! Só Vem!</p>
