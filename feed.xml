@@ -3,7 +3,7 @@
     <title>Guto@Site</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2021-06-12T22:51:30-03:00</updated>
+    <updated>2021-06-13T09:32:32-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
@@ -188,8 +188,9 @@
         </author>
         <link href="https://gutocarvalho.net/eventos-de-junho-21-bora-la/"/>
         <id>https://gutocarvalho.net/eventos-de-junho-21-bora-la/</id>
+            <category term="Eventos"/>
 
-        <updated>2021-06-12T09:55:04-03:00</updated>
+        <updated>2021-06-13T02:34:20-03:00</updated>
             <summary>
                 <![CDATA[
                     <p>Bora lá!</p>
@@ -287,8 +288,9 @@
         <link href="https://gutocarvalho.net/k8s-copiando-arquivos-do-pod/"/>
         <id>https://gutocarvalho.net/k8s-copiando-arquivos-do-pod/</id>
             <category term="MindNotes"/>
+            <category term="K8S"/>
 
-        <updated>2021-06-02T12:49:16-03:00</updated>
+        <updated>2021-06-13T09:32:20-03:00</updated>
             <summary>
                 <![CDATA[
                     <p>Precisa copiar arquivo para o POD ou do POD? Sabia como!</p>
@@ -314,8 +316,9 @@
         <link href="https://gutocarvalho.net/k8s-criando-pod-com-cliente-de-banco-de-dados/"/>
         <id>https://gutocarvalho.net/k8s-criando-pod-com-cliente-de-banco-de-dados/</id>
             <category term="MindNotes"/>
+            <category term="K8S"/>
 
-        <updated>2021-06-01T19:26:41-03:00</updated>
+        <updated>2021-06-13T09:32:32-03:00</updated>
             <summary>
                 <![CDATA[
                     <p>Conheça uma forma fácil de usar um cliente sgbd no k8s</p>
