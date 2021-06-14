@@ -3,7 +3,7 @@
     <title>Guto@Site</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2021-06-14T16:12:42-03:00</updated>
+    <updated>2021-06-14T16:14:18-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
@@ -18,7 +18,7 @@
         <id>https://gutocarvalho.net/meu-toolkit-2021/</id>
             <category term="MindNotes"/>
 
-        <updated>2021-06-14T16:12:42-03:00</updated>
+        <updated>2021-06-14T16:14:18-03:00</updated>
             <summary>
                 <![CDATA[
                     Para Uso Pessoal OSes Browsers Brave Chrome Firefox Correio GIT VIM ZSH Gerenciador de pacotes Editor Websites Editor WYSWYG Documentação&hellip;
@@ -27,6 +27,7 @@
         <content type="html">
             <![CDATA[
                 <h2 id="toc_0">Para Uso Pessoal</h2>
+<p> </p>
 <p><strong>OSes</strong></p>
 <ul>
 <li>MacOS BigSur 11.3.1</li>
@@ -370,7 +371,9 @@
 <li>Amazon Prime</li>
 <li>Icloud Storage</li>
 </ul>
-<h1 id="toc_1">PARA PROJETOS PESSOAIS OU PROFISSIONAIS</h1>
+<hr>
+<h1 id="toc_1"><br>PARA PROJETOS PESSOAIS OU PROFISSIONAIS</h1>
+<p> </p>
 <p><strong>OS</strong></p>
 <ul>
 <li>Ubuntu 20.04 LTS</li>
