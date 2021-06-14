@@ -3,7 +3,7 @@
     <title>Guto@Site</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2021-06-14T16:02:11-03:00</updated>
+    <updated>2021-06-14T16:12:42-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
@@ -18,18 +18,15 @@
         <id>https://gutocarvalho.net/meu-toolkit-2021/</id>
             <category term="MindNotes"/>
 
-        <updated>2021-06-14T16:02:11-03:00</updated>
+        <updated>2021-06-14T16:12:42-03:00</updated>
             <summary>
                 <![CDATA[
-                    <p>Vem ver oq eu estou usando ;)</p>
-
+                    Para Uso Pessoal OSes Browsers Brave Chrome Firefox Correio GIT VIM ZSH Gerenciador de pacotes Editor Websites Editor WYSWYG Documentação&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                <p>Vem ver oq eu estou usando ;)</p>
-
-<h2 id="toc_0">PARA USO PESSOAL<br><br></h2>
+                <h2 id="toc_0">Para Uso Pessoal</h2>
 <p><strong>OSes</strong></p>
 <ul>
 <li>MacOS BigSur 11.3.1</li>
@@ -86,44 +83,35 @@
 <li>Spark (principal)</li>
 <li>Apple Mail</li>
 </ul>
-<p><strong>Terminal</strong></p>
+<p><strong>GIT</strong></p>
 <ul>
-<li>GIT</li>
-<li>SSH</li>
-<li>
-<p>VIM</p>
+<li>git</li>
+<li>git-lfs</li>
+<li>git-flow</li>
+<li>git-annex</li>
+</ul>
+<p><strong>VIM</strong></p>
 <ul>
 <li>vim-airline</li>
 <li>vundle</li>
-<li>promptline</li>
-<li>dracula/vim (theme)</li>
+<li>vundle/promptline</li>
+<li>vundle/dracula-vim (theme)</li>
 </ul>
-</li>
-<li>
-<p>ZSH</p>
+<p><strong>ZSH</strong></p>
 <ul>
+<li>Starhip.rs</li>
 <li>OH MY ZSH!
 <ul>
-<li>Plugins
-<ul>
-<li>osx</li>
-<li>git</li>
-<li>brew</li>
-<li>docker</li>
-<li>docker-compose</li>
-<li>history</li>
-<li>vagrant</li>
-<li>zsh-syntax-highlighting</li>
-<li>zsh-autosuggestions</li>
-</ul>
-</li>
-<li>Theme
-<ul>
-<li>agnoste</li>
-</ul>
-</li>
-</ul>
-</li>
+<li>plugin/osx</li>
+<li>plugin/git</li>
+<li>plugin/brew</li>
+<li>plugin/docker</li>
+<li>plugin/docker-compose</li>
+<li>plugin/history</li>
+<li>plugin/vagrant</li>
+<li>plugin/zsh-syntax-highlighting</li>
+<li>plugin/zsh-autosuggestions</li>
+<li>theme/agnoster</li>
 </ul>
 </li>
 </ul>
@@ -380,11 +368,10 @@
 <li>1Password</li>
 <li>NetFlix</li>
 <li>Amazon Prime</li>
-<li>Icloud Storage<br><br></li>
+<li>Icloud Storage</li>
 </ul>
-<hr>
-<h1 id="toc_1"><br>PARA PROJETOS <br>PESSOAIS OU PROFISSIONAIS</h1>
-<p><strong><br>OSes</strong></p>
+<h1 id="toc_1">PARA PROJETOS PESSOAIS OU PROFISSIONAIS</h1>
+<p><strong>OS</strong></p>
 <ul>
 <li>Ubuntu 20.04 LTS</li>
 </ul>
