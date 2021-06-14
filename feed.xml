@@ -3,7 +3,7 @@
     <title>Guto@Site</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2021-06-13T23:32:32-03:00</updated>
+    <updated>2021-06-14T01:27:44-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
@@ -16,8 +16,9 @@
         </author>
         <link href="https://gutocarvalho.net/lognumber20210613/"/>
         <id>https://gutocarvalho.net/lognumber20210613/</id>
+            <category term="Alma"/>
 
-        <updated>2021-06-13T23:32:32-03:00</updated>
+        <updated>2021-06-14T01:27:44-03:00</updated>
             <summary>
                 <![CDATA[
                     <p>Still here, still fighting!</p>
