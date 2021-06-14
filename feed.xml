@@ -3,12 +3,599 @@
     <title>Guto@Site</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2021-06-14T01:58:09-03:00</updated>
+    <updated>2021-06-14T16:02:11-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
     <id>https://gutocarvalho.net</id>
 
+    <entry>
+        <title>Meu toolkit 2021</title>
+        <author>
+            <name>Guto Carvalho</name>
+        </author>
+        <link href="https://gutocarvalho.net/meu-toolkit-2021/"/>
+        <id>https://gutocarvalho.net/meu-toolkit-2021/</id>
+            <category term="MindNotes"/>
+
+        <updated>2021-06-14T16:02:11-03:00</updated>
+            <summary>
+                <![CDATA[
+                    <p>Vem ver oq eu estou usando ;)</p>
+
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p>Vem ver oq eu estou usando ;)</p>
+
+<h2 id="toc_0">PARA USO PESSOAL<br><br></h2>
+<p><strong>OSes</strong></p>
+<ul>
+<li>MacOS BigSur 11.3.1</li>
+<li>MacOS Catalina 10.15.6</li>
+<li>Ubuntu 20.04 LTS</li>
+</ul>
+<p><strong>Browsers</strong></p>
+<ul>
+<li>
+<p>Brave</p>
+<ul>
+<li>Dark Reader (novo)</li>
+<li>GoFullPage (novo)</li>
+<li>Volume Control (novo)</li>
+<li>Window Sizer (novo)</li>
+<li>Extension Website IP</li>
+<li>Extension Passbolt</li>
+<li>Extension Reticle</li>
+<li>Extension Passbolt</li>
+<li>Extension Grammarly</li>
+<li>Extension ADBlock For YT</li>
+</ul>
+</li>
+<li>
+<p>Chrome</p>
+<ul>
+<li>Dark Reader (novo)</li>
+<li>GoFullPage (novo)</li>
+<li>Volume Control (novo)</li>
+<li>Window Sizer (novo)</li>
+<li>Extension Website IP</li>
+<li>Extension Reticle</li>
+<li>Extension 1Password</li>
+<li>Extension Passbolt</li>
+<li>Extension Grammarly</li>
+<li>Extension ADBlock Ultimate</li>
+<li>Extension ADBlock fo YT</li>
+</ul>
+</li>
+<li>
+<p>Firefox</p>
+<ul>
+<li>Addon Server IP</li>
+<li>Addon Passbolt</li>
+<li>Addon 1Password</li>
+<li>Addon Grammarly</li>
+<li>Addon Easy Screenshot</li>
+<li>Addon Adblock Ultimate</li>
+</ul>
+</li>
+</ul>
+<p><strong>Correio</strong></p>
+<ul>
+<li>Spark (principal)</li>
+<li>Apple Mail</li>
+</ul>
+<p><strong>Terminal</strong></p>
+<ul>
+<li>GIT</li>
+<li>SSH</li>
+<li>
+<p>VIM</p>
+<ul>
+<li>vim-airline</li>
+<li>vundle</li>
+<li>promptline</li>
+<li>dracula/vim (theme)</li>
+</ul>
+</li>
+<li>
+<p>ZSH</p>
+<ul>
+<li>OH MY ZSH!
+<ul>
+<li>Plugins
+<ul>
+<li>osx</li>
+<li>git</li>
+<li>brew</li>
+<li>docker</li>
+<li>docker-compose</li>
+<li>history</li>
+<li>vagrant</li>
+<li>zsh-syntax-highlighting</li>
+<li>zsh-autosuggestions</li>
+</ul>
+</li>
+<li>Theme
+<ul>
+<li>agnoste</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>Gerenciador de pacotes</strong></p>
+<ul>
+<li>Homebrew</li>
+<li>Homebrew Cask</li>
+</ul>
+<p><strong>Editor</strong></p>
+<ul>
+<li>VSCode</li>
+<li>MacDown</li>
+<li>Nodio (novo)</li>
+<li>Spaces (novo)</li>
+</ul>
+<p><strong>Websites Editor WYSWYG</strong></p>
+<ul>
+<li>Mobirise</li>
+<li>Publii (novo)</li>
+</ul>
+<p><strong>Documentação</strong></p>
+<ul>
+<li>Dash</li>
+</ul>
+<p><strong>IM</strong></p>
+<ul>
+<li>WhatsAPP</li>
+<li>Telegram</li>
+</ul>
+<p><strong>Chat</strong></p>
+<ul>
+<li>Textual (IRC)</li>
+<li>Slack</li>
+<li>Teams</li>
+<li>MatterMost</li>
+<li>RocketChat</li>
+<li>Discord</li>
+<li>Keybase</li>
+<li>Signal</li>
+</ul>
+<p><strong>Videconf</strong></p>
+<ul>
+<li>Zoom</li>
+<li>ClickMeeting</li>
+<li>GotoMeeting</li>
+<li>Join.me</li>
+<li>Jitsi</li>
+<li>Skype</li>
+</ul>
+<p><strong>Social Networks</strong></p>
+<ul>
+<li>TweetBot</li>
+</ul>
+<p><strong>Password Manager</strong></p>
+<ul>
+<li>1Password</li>
+<li>Nativesec.io (da JAC)</li>
+</ul>
+<p><strong>Utils</strong></p>
+<ul>
+<li>Mactrack</li>
+<li>CheatSheet</li>
+<li>IstatMenus</li>
+<li>Unclutter</li>
+<li>Alfred 4</li>
+<li>Bartender 4</li>
+<li>MagicanRest</li>
+<li>Moom</li>
+<li>MacPilot</li>
+<li>DiskMap</li>
+<li>Istatistica</li>
+<li>Paragon NTFS</li>
+<li>Amphetamine</li>
+<li>Display Menu</li>
+<li>CleanMyMac</li>
+<li>SubnetCalc</li>
+<li>Black Magic Disk Speed</li>
+<li>Speedtest by Okla</li>
+<li>The Unarchiver</li>
+<li>Folx</li>
+</ul>
+<p><strong>Network Security</strong></p>
+<ul>
+<li>Little Snitch (Firewall)</li>
+</ul>
+<p><strong>Remote Assistance</strong></p>
+<ul>
+<li>AnyDesk</li>
+<li>Teamviewer</li>
+</ul>
+<p><strong>Remote Connect</strong></p>
+<ul>
+<li>MS RDP</li>
+</ul>
+<p><strong>Multimedia</strong></p>
+<ul>
+<li>VLC</li>
+<li>MPV</li>
+<li>Subtitles</li>
+<li>Shazam</li>
+<li>Piezo</li>
+<li>OBS</li>
+<li>Isky Video Converter</li>
+</ul>
+<p><strong>Video Capture</strong></p>
+<ul>
+<li>ScreenFlow</li>
+<li>Camtasia (novo)</li>
+<li>Capto (novo)</li>
+</ul>
+<p><strong>VPN</strong></p>
+<ul>
+<li>Viscosity</li>
+<li>FortiClient</li>
+</ul>
+<p><strong>Graphics</strong></p>
+<ul>
+<li>Gimp</li>
+<li>Inkscape</li>
+<li>Color Pallete</li>
+<li>Color Slurp</li>
+<li>Pastel</li>
+<li>Color Ray</li>
+</ul>
+<p><strong>Finances</strong></p>
+<ul>
+<li>Chronicle Pro</li>
+<li>Money</li>
+</ul>
+<p><strong>File transfer</strong></p>
+<ul>
+<li>Transmission (p2p)</li>
+<li>Resilio Sync (p2p)</li>
+<li>Transmit</li>
+</ul>
+<p><strong>Cloud Storage</strong></p>
+<ul>
+<li>Google Drive</li>
+</ul>
+<p><strong>Virtualization</strong></p>
+<ul>
+<li>Parallels</li>
+<li>VirtualBox</li>
+<li>VMWare Fusion</li>
+</ul>
+<p><strong>Containers</strong></p>
+<ul>
+<li>Docker</li>
+<li>Docker Compose</li>
+</ul>
+<p><strong>Logitech</strong></p>
+<ul>
+<li>Presentation</li>
+<li>Gaming Software</li>
+</ul>
+<p><strong>Kubernetes</strong></p>
+<ul>
+<li>Lens</li>
+<li>K8S</li>
+<li>Kubetail</li>
+<li>Etc Manager</li>
+</ul>
+<p><strong>Keyboard tools</strong></p>
+<ul>
+<li>Karabiner</li>
+</ul>
+<p><strong>Office</strong></p>
+<ul>
+<li>Cardhop</li>
+<li>Fantastical</li>
+<li>Apple Keynote</li>
+<li>Apple Notes</li>
+<li>Office 365</li>
+<li>LibreOffice</li>
+<li>Adobe Acrobat Reader</li>
+</ul>
+<p><strong>Database Client</strong></p>
+<ul>
+<li>PSequel</li>
+<li>Dbeaver</li>
+<li>Postico</li>
+<li>Workbench</li>
+<li>Robo3T</li>
+<li>Datagrip</li>
+</ul>
+<p><strong>Hardware</strong></p>
+<ul>
+<li>IMAC 21' 8GB (office e videconfs)</li>
+<li>Intel NUC
+<ul>
+<li>Intel NUC 32GB (laboratorios e testes)</li>
+<li>Intel NUC 16GB (laboratorios e testes)</li>
+<li>HD 1 Tera Seagate USB 3.0 p/ BKP</li>
+</ul>
+</li>
+<li>Notebook MPB 13' 16GB (note principal)</li>
+<li>Notebook MPB 11' 4GB (reuniões e viagens curtas)
+<ul>
+<li>HD Western Digital USB 3.0 4TB para TimeMachine</li>
+</ul>
+</li>
+<li>Teclado mecânico Keycron K6</li>
+<li>Teclado mecânico HyperX Alloy FPS Pro</li>
+<li>2 Switchs USB Anker Ultra Slim 4 Portas USB 3.0</li>
+<li>Mouse Logitech G-305</li>
+<li>Apple Trackpad 1o Geração</li>
+</ul>
+<p><strong>Mobile</strong></p>
+<ul>
+<li>iPhone 8 Plus 256 GB</li>
+<li>Apple Watch 3º Geração</li>
+<li>Bateria Anker Powercore 26.800Mah</li>
+</ul>
+<p><strong>Studio</strong></p>
+<ul>
+<li>Microfone HyperX QuadCast</li>
+<li>Headphone Sony WH-1000XM-3</li>
+<li>Headphone Samsung Level On</li>
+<li>WebCam FullHD Logitech C925</li>
+<li>WebCam FullHD Logitech Stram</li>
+<li>Monitor de áudio Edifier R1280DB 42W</li>
+<li>Tripé articulado para microfone</li>
+</ul>
+<p><strong>Network</strong></p>
+<ul>
+<li>LoadBalancer TP-Link TL-R605 VPN
+<ul>
+<li>Link R2 Telecom IP Fixo 400/200</li>
+<li>Link Skillnet Telecom IP Fixo 400/200</li>
+</ul>
+</li>
+<li>Switch DLINK DGS101C6 GigaBit 16 Portas</li>
+<li>2 Roteadores TP-Link DECO M4 MESH Gigabit</li>
+<li>3 Roteadores TP-Link DECO M5 MESH Gigabit</li>
+</ul>
+<p><strong>Desk &amp; Chair</strong></p>
+<ul>
+<li>Mesa sob-medida MDF com 70cm de altura, 150 de largua e 85 de profundidade
+<ul>
+<li>Cadeira DT3sports Elise Vermelha</li>
+<li>2 Monitores AOC 24' Widescreen Freesync</li>
+<li>MousePad HyperX Fursy S RO XI 90x42</li>
+<li>Suporte de monitor Duplo c/ pistão a gás ELG F160N</li>
+</ul>
+</li>
+<li>Mesa digitalizadora WACOM ONE</li>
+<li>Carregador ANKER USB A2133 10 portas</li>
+<li>Carregador ANKER USB PowerPort 6</li>
+<li>HP OfficeJet J4580 All-in-one</li>
+</ul>
+<p><strong>Nuvem Pessoal</strong></p>
+<ul>
+<li>Office 365</li>
+<li>1Password</li>
+<li>NetFlix</li>
+<li>Amazon Prime</li>
+<li>Icloud Storage<br><br></li>
+</ul>
+<hr>
+<h1 id="toc_1"><br>PARA PROJETOS <br>PESSOAIS OU PROFISSIONAIS</h1>
+<p><strong><br>OSes</strong></p>
+<ul>
+<li>Ubuntu 20.04 LTS</li>
+</ul>
+<p><strong>Utils</strong></p>
+<ul>
+<li>BASH</li>
+<li>ZSH</li>
+<li>SSH</li>
+<li>GIT</li>
+<li>VIM</li>
+</ul>
+<p><strong>Automação</strong></p>
+<ul>
+<li>Ansible</li>
+<li>Terraform</li>
+<li>Rundeck</li>
+<li>Certbot</li>
+<li>Curl</li>
+</ul>
+<p><strong>Linguagens, ferramentas, estruturas e modelo de dados</strong></p>
+<ul>
+<li>Shell</li>
+<li>Ruby</li>
+<li>Python</li>
+<li>YAML</li>
+<li>JSON</li>
+<li>REST</li>
+</ul>
+<p><strong>Console tools</strong></p>
+<div>
+<pre><code class="language-none">    | (pipe)
+    tcpdump
+    net-tools (netstat, route)
+    ip
+    top, vmstat
+    htop, iotop
+    screen
+    wget, curl
+    rsync
+    iperf
+    cat, grep, egrep
+    tar, gzip, bzip2
+    cut, awk, sed
+    more, less, head, tail
+    df, du, mount
+    lvm
+    lynx, elinks
+    nmap
+    telnet
+    netcat
+    traceroute
+    strace
+    jq
+    asciinema</code></pre>
+</div>
+<p><strong>Metodologias, culturas, técnicas e modelos</strong></p>
+<ul>
+<li>Kanban</li>
+<li>Scrum</li>
+<li>Agile</li>
+<li>IaC</li>
+<li>DevOps</li>
+<li>SRE</li>
+<li>GitOPS</li>
+</ul>
+<p><strong>Bancos</strong></p>
+<ul>
+<li>MariaDB/MySQL</li>
+<li>PostgreSQL</li>
+<li>SQLite</li>
+<li>Elastic</li>
+<li>MongoDB (novo)</li>
+<li>Cassandra (novo)</li>
+</ul>
+<p><strong>Brokers</strong></p>
+<ul>
+<li>RabbitMQ</li>
+<li>ApacheMQ</li>
+</ul>
+<p><strong>Containers</strong></p>
+<ul>
+<li>Docker</li>
+<li>Docker Compose</li>
+</ul>
+<p><strong>K8S</strong></p>
+<ul>
+<li>Rancher</li>
+<li>K3S</li>
+<li>K3D</li>
+<li>K3OS</li>
+<li>RKE</li>
+<li>Kubernetes</li>
+<li>Kubectl</li>
+<li>Etcdctl</li>
+<li>Helm</li>
+<li>k9s (novo)</li>
+<li>Kubetail (novo)</li>
+<li>Lens</li>
+<li>Kustomize</li>
+<li>Velero</li>
+<li>CertManager</li>
+</ul>
+<p><strong>Cloud</strong></p>
+<ul>
+<li>awscli</li>
+</ul>
+<p><strong>Monitoração</strong></p>
+<ul>
+<li>Zabbix</li>
+<li>Grafana</li>
+<li>Prometheus</li>
+</ul>
+<p><strong>Centralização de logs e eventos em K8S</strong></p>
+<ul>
+<li>Loki (novo)</li>
+<li>Promtail (novo)</li>
+<li>Grafana</li>
+</ul>
+<p><strong>Virtualizacao OnPrem</strong></p>
+<ul>
+<li>ProxMox</li>
+</ul>
+<p><strong>Gerenciamento de senhas entre times</strong></p>
+<ul>
+<li>Passbolt</li>
+</ul>
+<p><strong>ChatOPS e Videconferência</strong></p>
+<ul>
+<li>MatterMost (chatops)</li>
+<li>MatterBridge</li>
+<li>Jitsi (video)</li>
+</ul>
+<p><strong>Gerenciamento de código fonte</strong></p>
+<ul>
+<li>GitLab</li>
+<li>GitHub</li>
+</ul>
+<p><strong>Esteiras</strong></p>
+<ul>
+<li>Tekton (novo)</li>
+<li>Argo (novo)</li>
+<li>GitLab CI</li>
+</ul>
+<p><strong>Gerenciamento de artefatos e registry docker</strong></p>
+<ul>
+<li>Nexus Repo</li>
+<li>Harbour (novo)</li>
+</ul>
+<p><strong>Reverse Proxy, LB e Cache</strong></p>
+<ul>
+<li>NGINX</li>
+</ul>
+<p><strong>Nuvens que normalmente utilizamos em projetos</strong></p>
+<ul>
+<li>AWS</li>
+<li>GCP</li>
+<li>OVH</li>
+<li>DO</li>
+</ul>
+<p><strong>Virtualização &amp; Baremetal</strong></p>
+<ul>
+<li>OVH</li>
+</ul>
+<p><strong>Provedor de DNS</strong></p>
+<ul>
+<li>Cloudflare</li>
+</ul>
+<p><strong>Domain Registrar</strong></p>
+<ul>
+<li>Namecheap</li>
+<li>Registro.br</li>
+</ul>
+<p><strong>Monitoramento Externo tipo SaaS</strong></p>
+<ul>
+<li>UptimeRobot</li>
+</ul>
+<p><strong>Monitoramento statuspge</strong></p>
+<ul>
+<li>Tinystatus</li>
+</ul>
+<p><strong>Documentação</strong></p>
+<ul>
+<li>GitHub Markdown</li>
+<li>GitLab Wiki</li>
+</ul>
+<p><strong>Blogs</strong></p>
+<ul>
+<li>Valendo
+<ul>
+<li>Publii (novo)</li>
+</ul>
+</li>
+<li>Legado
+<ul>
+<li>Ghost</li>
+<li>Hugo</li>
+<li>Wordpress</li>
+<li>Octopress</li>
+</ul>
+</li>
+</ul>
+<p><strong>Gerenciamento tickets, demandas e atividades</strong></p>
+<ul>
+<li>Zammad</li>
+</ul>
+<p>Acho que é isso, daqui um ano a gente compara!</p>
+<p>Se você fizer um post como esse, comenta aí e deixa a URL :)</p>
+<p>;)</p>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>Log.Number.2021.06.13</title>
         <author>
@@ -313,34 +900,6 @@
 <p><a href="https://archive.gutocarvalho.net/hugo"></a><a href="https://archive.gutocarvalho.net/hugo">❯ </a><a href="https://archive.gutocarvalho.net/hugo">https://archive.gutocarvalho.net/mindnotes</a></p>
 <p><a href="https://archive.gutocarvalho.net/hugo"></a><a href="https://archive.gutocarvalho.net/hugo">❯ </a><a href="https://archive.gutocarvalho.net/hugo">https://archive.gutocarvalho.net/dokuwiki/main</a></p>
 <p><a href="https://archive.gutocarvalho.net/hugo"></a><a href="https://archive.gutocarvalho.net/hugo">❯ </a><a href="https://archive.gutocarvalho.net/hugo">https://archive.gutocarvalho.net/dokuwiki/puppet</a><br><br><a href="https://archive.gutocarvalho.net/hugo">❯ </a><a href="https://archive.gutocarvalho.net/hugo">https://archive.gutocarvalho.net/wordpress</a></p>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>K8S: Copiando arquivos do POD</title>
-        <author>
-            <name>Guto Carvalho</name>
-        </author>
-        <link href="https://gutocarvalho.net/k8s-copiando-arquivos-do-pod/"/>
-        <id>https://gutocarvalho.net/k8s-copiando-arquivos-do-pod/</id>
-            <category term="MindNotes"/>
-            <category term="K8S"/>
-
-        <updated>2021-06-13T09:32:20-03:00</updated>
-            <summary>
-                <![CDATA[
-                    <p>Precisa copiar arquivo para o POD ou do POD? Sabia como!</p>
-
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                <p>Precisa copiar arquivo para o POD ou do POD? Sabia como!</p>
-
-<p><strong>Sintaxe</strong></p>
-<p><code>❯ kubectl cp $ARQUIVO $POD:$CAMINHO/$ARQUIVO</code><br><code>❯ kubectl cp $POD:$CAMINHO/$ARQUIVO $ARQUIVO</code></p>
-<p><strong>Copiando o arquivo service.sql para o pod postgres-client</strong><br><br><code>❯ kubectl cp ./service.sql postgres-client:/tmp/service.sql</code><br><br><strong>Copiando o arquivo service-dump.sql do pod postgres-client</strong><br><br><code>❯ kubectl cp postgre-client:/tmp/service-dump.sql ./service-dump.sql</code><br><br><strong>Onde posso conhecer melhor o kubectl e seus comandos?</strong><br><br>❯ <a href="https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands">https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands</a></p>
-<p>[s]</p>
             ]]>
         </content>
     </entry>
