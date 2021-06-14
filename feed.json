@@ -10,6 +10,20 @@
     },
     "items": [
         {
+            "id": "https://gutocarvalho.net/lognumber20210613/",
+            "url": "https://gutocarvalho.net/lognumber20210613/",
+            "title": "Log.Number.2021.06.13",
+            "summary": "<p>Still here, still fighting!</p>\n",
+            "content_html": "<p>Still here, still fighting!</p>\n\n<p>É incrível como a música consegue me tirar daquele cantinho escuro, aliviar aquela dor no peito e me fazer respirar. Respirar sem que doa, sem que seja aquele esforço hercúleo para continuar aqui neste plano.</p>\n<p>E falando em música, recentemente descobri a doce, talentosa e competente Allie Sherlock, e agradeço de verdade por sua música deixar meu coração mais quentinho, sempre que preciso :]</p>\n<figure class=\"post__video\"><iframe loading=\"lazy\" width=\"600\" height=\"336\" src=\"https://www.youtube.com/embed/KUASFbtSX9E\" allowfullscreen=\"allowfullscreen\" data-mce-fragment=\"1\"></iframe></figure>\n<p>Escutar música é como receber luz, é como dar um pause em todas aquelas sensações e vibrações angustiantes que nos acompanham. É como dar um pause no mundo, e descer dessa montanha russa insana, onde por algum tempo esquecemos de tudo e todos, pelo menos por alguns segundos, talvez até alguns minutos, momentos que valem a pena e nos ajudam a seguir em frente.</p>\n<p>Divago pensando que um mundo sem música parece não ter graça, da mesma forma em que em um mundo sem graça, parece nunca ter tido música.<br><br>Então, se estiver triste, se estiver com seu corpo reverberando angústia, medo, solidão e incerteza, dá um pulinho no YT e assista pessoas tocando e cantando músicas. Sério, isso vai te ajudar a elevar suas vibrações e pensamentos, sendo também totalmente sem contra-indicação.</p>\n<p>Mais um dia aq, e se você está aq comigo, vencemos juntos.</p>\n<p>Nos vemos amanhã!</p>\n<p>A luta nunca para.</p>\n<figure class=\"post__video\"><iframe loading=\"lazy\" width=\"600\" height=\"340\" src=\"https://www.youtube.com/embed/CJo8gUV8Czw\" allowfullscreen=\"allowfullscreen\" data-mce-fragment=\"1\"></iframe></figure>\n<p><br><br>[s]</p>",
+            "author": {
+                "name": "Guto Carvalho"
+            },
+            "tags": [
+            ],
+            "date_published": "2021-06-13T23:26:30-03:00",
+            "date_modified": "2021-06-13T23:29:07-03:00"
+        },
+        {
             "id": "https://gutocarvalho.net/lognumber20210612/",
             "url": "https://gutocarvalho.net/lognumber20210612/",
             "title": "Log.Number.2021.06.12",
@@ -111,10 +125,10 @@
                 "name": "Guto Carvalho"
             },
             "tags": [
-                   "MindNotes"
+                   "Tips"
             ],
             "date_published": "2021-06-02T08:19:04-03:00",
-            "date_modified": "2021-06-02T08:38:56-03:00"
+            "date_modified": "2021-06-13T09:42:26-03:00"
         },
         {
             "id": "https://gutocarvalho.net/archives/",
@@ -145,22 +159,6 @@
             ],
             "date_published": "2021-06-02T00:18:56-03:00",
             "date_modified": "2021-06-13T09:32:20-03:00"
-        },
-        {
-            "id": "https://gutocarvalho.net/k8s-criando-pod-com-cliente-de-banco-de-dados/",
-            "url": "https://gutocarvalho.net/k8s-criando-pod-com-cliente-de-banco-de-dados/",
-            "title": "K8S: Criando POD com cliente de banco de dados",
-            "summary": "<p>Conheça uma forma fácil de usar um cliente sgbd no k8s</p>\n",
-            "content_html": "<p>Conheça uma forma fácil de usar um cliente sgbd no k8s</p>\n\n<p><strong>Cenário</strong><br><br>Bancos no RDS, apenas o cluster K8S chega no RDS<br><br><strong>Necessidade</strong><br><br>Conectar no banco e rodar alguns comandos</p>\n<p><strong>Cliente MySQL</strong></p>\n<p><code>❯ kubectl run -n default  --rm --restart=Never -ti --image=bitnami/mysql-client bash</code></p>\n<p><strong>Cliente PostgreSQL</strong></p>\n<p><code>❯ kubectl run -n default  --rm --restart=Never -ti --image=bitnami/postgresql postgre-client bash</code><br><br><strong>Observações</strong></p>\n<p>Quando vocês sairem do POD ele vai morrer, isso vai acontecer por causa do <strong>--rm</strong> e <strong>--restart=Never</strong></p>",
-            "author": {
-                "name": "Guto Carvalho"
-            },
-            "tags": [
-                   "MindNotes",
-                   "K8S"
-            ],
-            "date_published": "2021-06-01T19:04:16-03:00",
-            "date_modified": "2021-06-13T09:32:32-03:00"
         }
     ]
 }

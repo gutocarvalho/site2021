@@ -3,12 +3,44 @@
     <title>Guto@Site</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2021-06-13T09:32:32-03:00</updated>
+    <updated>2021-06-13T23:29:07-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
     <id>https://gutocarvalho.net</id>
 
+    <entry>
+        <title>Log.Number.2021.06.13</title>
+        <author>
+            <name>Guto Carvalho</name>
+        </author>
+        <link href="https://gutocarvalho.net/lognumber20210613/"/>
+        <id>https://gutocarvalho.net/lognumber20210613/</id>
+
+        <updated>2021-06-13T23:29:07-03:00</updated>
+            <summary>
+                <![CDATA[
+                    <p>Still here, still fighting!</p>
+
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p>Still here, still fighting!</p>
+
+<p>É incrível como a música consegue me tirar daquele cantinho escuro, aliviar aquela dor no peito e me fazer respirar. Respirar sem que doa, sem que seja aquele esforço hercúleo para continuar aqui neste plano.</p>
+<p>E falando em música, recentemente descobri a doce, talentosa e competente Allie Sherlock, e agradeço de verdade por sua música deixar meu coração mais quentinho, sempre que preciso :]</p>
+<figure class="post__video"><iframe loading="lazy" width="600" height="336" src="https://www.youtube.com/embed/KUASFbtSX9E" allowfullscreen="allowfullscreen" data-mce-fragment="1"></iframe></figure>
+<p>Escutar música é como receber luz, é como dar um pause em todas aquelas sensações e vibrações angustiantes que nos acompanham. É como dar um pause no mundo, e descer dessa montanha russa insana, onde por algum tempo esquecemos de tudo e todos, pelo menos por alguns segundos, talvez até alguns minutos, momentos que valem a pena e nos ajudam a seguir em frente.</p>
+<p>Divago pensando que um mundo sem música parece não ter graça, da mesma forma em que em um mundo sem graça, parece nunca ter tido música.<br><br>Então, se estiver triste, se estiver com seu corpo reverberando angústia, medo, solidão e incerteza, dá um pulinho no YT e assista pessoas tocando e cantando músicas. Sério, isso vai te ajudar a elevar suas vibrações e pensamentos, sendo também totalmente sem contra-indicação.</p>
+<p>Mais um dia aq, e se você está aq comigo, vencemos juntos.</p>
+<p>Nos vemos amanhã!</p>
+<p>A luta nunca para.</p>
+<figure class="post__video"><iframe loading="lazy" width="600" height="340" src="https://www.youtube.com/embed/CJo8gUV8Czw" allowfullscreen="allowfullscreen" data-mce-fragment="1"></iframe></figure>
+<p><br><br>[s]</p>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>Log.Number.2021.06.12</title>
         <author>
@@ -237,9 +269,9 @@
         </author>
         <link href="https://gutocarvalho.net/macos-no-proxmox/"/>
         <id>https://gutocarvalho.net/macos-no-proxmox/</id>
-            <category term="MindNotes"/>
+            <category term="Tips"/>
 
-        <updated>2021-06-02T08:38:56-03:00</updated>
+        <updated>2021-06-13T09:42:26-03:00</updated>
             <summary>
                 <![CDATA[
                     <p>Quer usar o MacOS no proxmox? Então olha isso!</p>
@@ -305,36 +337,6 @@
 <p><code>❯ kubectl cp $ARQUIVO $POD:$CAMINHO/$ARQUIVO</code><br><code>❯ kubectl cp $POD:$CAMINHO/$ARQUIVO $ARQUIVO</code></p>
 <p><strong>Copiando o arquivo service.sql para o pod postgres-client</strong><br><br><code>❯ kubectl cp ./service.sql postgres-client:/tmp/service.sql</code><br><br><strong>Copiando o arquivo service-dump.sql do pod postgres-client</strong><br><br><code>❯ kubectl cp postgre-client:/tmp/service-dump.sql ./service-dump.sql</code><br><br><strong>Onde posso conhecer melhor o kubectl e seus comandos?</strong><br><br>❯ <a href="https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands">https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands</a></p>
 <p>[s]</p>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>K8S: Criando POD com cliente de banco de dados</title>
-        <author>
-            <name>Guto Carvalho</name>
-        </author>
-        <link href="https://gutocarvalho.net/k8s-criando-pod-com-cliente-de-banco-de-dados/"/>
-        <id>https://gutocarvalho.net/k8s-criando-pod-com-cliente-de-banco-de-dados/</id>
-            <category term="MindNotes"/>
-            <category term="K8S"/>
-
-        <updated>2021-06-13T09:32:32-03:00</updated>
-            <summary>
-                <![CDATA[
-                    <p>Conheça uma forma fácil de usar um cliente sgbd no k8s</p>
-
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                <p>Conheça uma forma fácil de usar um cliente sgbd no k8s</p>
-
-<p><strong>Cenário</strong><br><br>Bancos no RDS, apenas o cluster K8S chega no RDS<br><br><strong>Necessidade</strong><br><br>Conectar no banco e rodar alguns comandos</p>
-<p><strong>Cliente MySQL</strong></p>
-<p><code>❯ kubectl run -n default  --rm --restart=Never -ti --image=bitnami/mysql-client bash</code></p>
-<p><strong>Cliente PostgreSQL</strong></p>
-<p><code>❯ kubectl run -n default  --rm --restart=Never -ti --image=bitnami/postgresql postgre-client bash</code><br><br><strong>Observações</strong></p>
-<p>Quando vocês sairem do POD ele vai morrer, isso vai acontecer por causa do <strong>--rm</strong> e <strong>--restart=Never</strong></p>
             ]]>
         </content>
     </entry>
