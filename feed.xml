@@ -3,7 +3,7 @@
     <title>Guto@Site</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2021-06-23T23:26:16-03:00</updated>
+    <updated>2021-06-23T23:40:54-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
@@ -18,15 +18,17 @@
         <id>https://gutocarvalho.net/zammad-41/</id>
             <category term="Projetos"/>
 
-        <updated>2021-06-23T23:26:16-03:00</updated>
+        <updated>2021-06-23T23:40:54-03:00</updated>
             <summary>
                 <![CDATA[
+                        <img src="https://gutocarvalho.net/media/posts/30/team-zammad.jpg" alt="" />
                     <p>Já saiu do forno o Zammad 4.1, inclusive já atualizei em alguns lugares, está excelente!<br><br></p>
 
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
+                    <img src="https://gutocarvalho.net/media/posts/30/team-zammad.jpg" alt="" />
                 <p>Já saiu do forno o Zammad 4.1, inclusive já atualizei em alguns lugares, está excelente!<br><br></p>
 
 <p>Mais informações:</p>

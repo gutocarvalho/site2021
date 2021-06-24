@@ -15,6 +15,7 @@
             "title": "Zammad 4.1",
             "summary": "<p>Já saiu do forno o Zammad 4.1, inclusive já atualizei em alguns lugares, está excelente!<br><br></p>\n",
             "content_html": "<p>Já saiu do forno o Zammad 4.1, inclusive já atualizei em alguns lugares, está excelente!<br><br></p>\n\n<p>Mais informações:</p>\n<p><a href=\"https://zammad.com/en/releases/4-1\">- https://zammad.com/en/releases/4-1</a><br>- <a href=\"https://github.com/zammad/zammad/blob/4.1.0/CHANGELOG.md\">https://github.com/zammad/zammad/blob/4.1.0/CHANGELOG.md</a></p>\n<p> </p>",
+            "image": "https://gutocarvalho.net/media/posts/30/team-zammad.jpg",
             "author": {
                 "name": "Guto Carvalho"
             },
@@ -22,7 +23,7 @@
                    "Projetos"
             ],
             "date_published": "2021-06-23T22:29:32-03:00",
-            "date_modified": "2021-06-23T23:26:16-03:00"
+            "date_modified": "2021-06-23T23:40:54-03:00"
         },
         {
             "id": "https://gutocarvalho.net/gitlab-14/",
