@@ -3,12 +3,63 @@
     <title>Guto@Site</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2021-06-23T23:40:54-03:00</updated>
+    <updated>2021-06-25T02:03:56-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
     <id>https://gutocarvalho.net</id>
 
+    <entry>
+        <title>Live GitLab 14</title>
+        <author>
+            <name>Guto Carvalho</name>
+        </author>
+        <link href="https://gutocarvalho.net/live-gitlab-14/"/>
+        <id>https://gutocarvalho.net/live-gitlab-14/</id>
+            <category term="Lives"/>
+
+        <updated>2021-06-25T02:03:56-03:00</updated>
+            <summary>
+                <![CDATA[
+                        <img src="https://gutocarvalho.net/media/posts/32/gitlab-version-14-wide.png" alt="" />
+                    <p>Fizemos uma live sobre as novidades do GitLab 14 no dia 24/06 as 16:30</p>
+
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                    <img src="https://gutocarvalho.net/media/posts/32/gitlab-version-14-wide.png" alt="" />
+                <p>Fizemos uma live sobre as novidades do GitLab 14 no dia 24/06 as 16:30</p>
+
+<p>Eu, Adriano Silva da EBC e Hugo Azevedo da GitLab estivemos presentes!</p>
+<figure class="post__video"><iframe loading="lazy" width="560" height="314" src="https://www.youtube.com/embed/JU1Br4M_duk" allowfullscreen="allowfullscreen" data-mce-fragment="1"></iframe></figure>
+<p>:)</p>
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>MatterMost 5.36</title>
+        <author>
+            <name>Guto Carvalho</name>
+        </author>
+        <link href="https://gutocarvalho.net/mattermost-536/"/>
+        <id>https://gutocarvalho.net/mattermost-536/</id>
+
+        <updated>2021-06-25T02:02:35-03:00</updated>
+            <summary>
+                <![CDATA[
+                    <p>O MatterMost já chegou na versão 5.36, confira!</p>
+
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p>O MatterMost já chegou na versão 5.36, confira!</p>
+
+<p>Novidades da release<br><br>- <a href="https://mattermost.com/blog/mattermost-release-v5-36">https://mattermost.com/blog/mattermost-release-v5-36</a></p>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>Zammad 4.1</title>
         <author>
@@ -46,7 +97,7 @@
         <id>https://gutocarvalho.net/gitlab-14/</id>
             <category term="Projetos"/>
 
-        <updated>2021-06-23T21:39:43-03:00</updated>
+        <updated>2021-06-25T01:52:32-03:00</updated>
             <summary>
                 <![CDATA[
                         <img src="https://gutocarvalho.net/media/posts/29/default-blog-image.png" alt="" />
@@ -63,7 +114,7 @@
 <p>- <a href="https://about.gitlab.com/blog/2021/06/22/gitlab-14-modern-devops">https://about.gitlab.com/blog/2021/06/22/gitlab-14-modern-devops</a></p>
 <p>- <a href="https://about.gitlab.com/blog/2021/06/04/gitlab-moving-to-14-breaking-changes/">https://about.gitlab.com/blog/2021/06/04/gitlab-moving-to-14-breaking-changes/</a></p>
 <p>- <a href="https://gitlab.com/gitlab-org/gitlab-foss/blob/master/CHANGELOG.md">https://gitlab.com/gitlab-org/gitlab-foss/blob/master/CHANGELOG.md</a></p>
-<p>Eu tô tentando marcar uma Live com o pessoal do canal @gitlabbr no telegram, se conseguir aviso aqui!<br><br><br>[s]</p>
+<p>Eu tô tentando marcar uma Live com o pessoal do canal @gitlabbr no telegram, se conseguir aviso aqui!<br><br>A versão embarcada do MatterMost já foi para a 5.35<br><br>- <a href="https://mattermost.com/blog/mattermost-release-v5-35">https://mattermost.com/blog/mattermost-release-v5-35</a><br><br>[s]</p>
             ]]>
         </content>
     </entry>
@@ -875,59 +926,6 @@
 
 <p><strong>A cultura JAC Experts vê da seguinte forma:</strong><br><br>Se ele(a) saber fazer algo que é pedido – e precisa de supervisão, ele(a) é <strong>JR</strong><br><br>Se ele(a) saber fazer o que é pedido, entende oq tá fazendo, não precisa de supervisão, mas precisa de alguém priorizando as demandas – ele(a) é <strong>PL</strong><br><br>Se ele(a) sabe fazer oq é pedido, entende oq tá fazendo, entende pq tá fazendo, sabe priorizar, sabe gerenciar recursos financeiros, pessoas, demandas, elaborar projetos, falar com clientes e gestores, enxergar e desenhar a arquitetura de um solução, ele(a) é <strong>SR</strong><br><br>Agora se ele(a) é um(a) profundo(a) conhecedor(a) de um produto ou tecnologia a ponto de fazer oq ninguém consegue fazer, resolver oq ninguém consegue resolver naquele produto ou tecnologia, ele(a) é um(a) <strong>ESPECIALISTA</strong>. Contudo, não significa que o(a) especialista saiba fazer oq um JR, PL ou SR faça.<br><br>Sacou?<br><br>Pérolas do Tio Dirceu, que são parte da Cultura da JAC Experts</p>
 <p>:)</p>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>Passbolt</title>
-        <author>
-            <name>Guto Carvalho</name>
-        </author>
-        <link href="https://gutocarvalho.net/passbolt/"/>
-        <id>https://gutocarvalho.net/passbolt/</id>
-            <category term="Projetos"/>
-
-        <updated>2021-06-05T18:26:32-03:00</updated>
-            <summary>
-                <![CDATA[
-                    <p>Precisa gerenciar as senhas e compartilhar com seu time?</p>
-
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                <p>Precisa gerenciar as senhas e compartilhar com seu time?</p>
-
-<p>Esse é um projeto web, opensource, com uma interface amigável e moderna, com criptografia padrão pgp, bem simples de usar e compartilhar as senhas com seu time, ou gerenciar suas senhas pessoais.</p>
-<p>É um item obrigatório em praticamente qualquer projeto que executo hoje.</p>
-<p>Conheça o <a href="https://www.passbolt.com/" target="_blank" rel="noopener noreferrer">projeto</a>!</p>
-<figure class="post__image"><img loading="lazy"  src="https://gutocarvalho.net/media/posts/22//Screen-Shot-2021-06-04-at-21.09.25.png" sizes="(min-width: 61.3125em) 50vw, 100vw" srcset="https://gutocarvalho.net/media/posts/22//responsive/Screen-Shot-2021-06-04-at-21.09.25-xs.png 300w ,https://gutocarvalho.net/media/posts/22//responsive/Screen-Shot-2021-06-04-at-21.09.25-sm.png 480w ,https://gutocarvalho.net/media/posts/22//responsive/Screen-Shot-2021-06-04-at-21.09.25-md.png 768w"  alt="" width="1267" height="886"></figure>
-<figure class="post__image"><img loading="lazy"  src="https://gutocarvalho.net/media/posts/22/Screen-Shot-2021-06-05-at-18.25.43.png" sizes="(min-width: 61.3125em) 50vw, 100vw" srcset="https://gutocarvalho.net/media/posts/22/responsive/Screen-Shot-2021-06-05-at-18.25.43-xs.png 300w ,https://gutocarvalho.net/media/posts/22/responsive/Screen-Shot-2021-06-05-at-18.25.43-sm.png 480w ,https://gutocarvalho.net/media/posts/22/responsive/Screen-Shot-2021-06-05-at-18.25.43-md.png 768w"  alt="" width="1010" height="613"></figure><br><br>Usamos na JAC e em vários clientes e projetos, recomendo :)</p>
-<p> </p>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>Eventos de Junho 21</title>
-        <author>
-            <name>Guto Carvalho</name>
-        </author>
-        <link href="https://gutocarvalho.net/eventos-de-junho-21-bora-la/"/>
-        <id>https://gutocarvalho.net/eventos-de-junho-21-bora-la/</id>
-            <category term="Eventos"/>
-
-        <updated>2021-06-13T02:34:20-03:00</updated>
-            <summary>
-                <![CDATA[
-                    <p>Bora lá!</p>
-
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                <p>Bora lá!</p>
-
-<p><strong>Próximos!<br><br></strong>- <a href="https://events.linuxfoundation.org/cdcon/register/">CDCON</a> - Junho/23-24 - Virtual<br>- <a href="https://events.linuxfoundation.org/gitops-summit/" target="_blank" rel="noopener noreferrer">GitOps Summit </a>- Junho/22 - Virtual<br>- <a href="https://hashiconf.com/europe/" target="_blank" rel="noopener noreferrer">Hashicon Europe</a> - Junho/8-11 - Virtual<br>- <a href="https://grafana.com/about/events/grafanacon/2021/">GrafanaCon</a> - Junho/8-17 - Virtual<br>- <a href="https://www.gitopsdays.com/">GitOps Days</a> - Junho/9-10 - Virtual<br><br>Sabe de mais algum interessante? Manda nos comentários que eu atualizo!<br><br>[s]</p>
             ]]>
         </content>
     </entry>

@@ -22,7 +22,7 @@
 </url>
 <url>
 <loc>https://gutocarvalho.net/comunidades/</loc>
-<lastmod>2021-06-06T16:17:59-03:00</lastmod>
+<lastmod>2021-06-25T01:42:30-03:00</lastmod>
 <image:image>
 <image:loc>https://gutocarvalho.net/media/posts/4/kubeconf_01.jpg</image:loc>
 <image:title><![CDATA[]]></image:title>
@@ -50,7 +50,7 @@
 </url>
 <url>
 <loc>https://gutocarvalho.net/gitlab-14/</loc>
-<lastmod>2021-06-23T21:39:43-03:00</lastmod>
+<lastmod>2021-06-25T01:52:32-03:00</lastmod>
 <image:image>
 <image:loc>https://gutocarvalho.net/media/posts/29/default-blog-image.png</image:loc>
 <image:title><![CDATA[]]></image:title>
@@ -71,6 +71,14 @@
 <url>
 <loc>https://gutocarvalho.net/k8s-removendo-evicted-pods/</loc>
 <lastmod>2021-06-13T09:33:12-03:00</lastmod>
+</url>
+<url>
+<loc>https://gutocarvalho.net/live-gitlab-14/</loc>
+<lastmod>2021-06-25T02:03:56-03:00</lastmod>
+<image:image>
+<image:loc>https://gutocarvalho.net/media/posts/32/gitlab-version-14-wide.png</image:loc>
+<image:title><![CDATA[]]></image:title>
+</image:image>
 </url>
 <url>
 <loc>https://gutocarvalho.net/lognumber20210612/</loc>
@@ -99,6 +107,10 @@
 <url>
 <loc>https://gutocarvalho.net/macos-no-proxmox/</loc>
 <lastmod>2021-06-13T09:42:26-03:00</lastmod>
+</url>
+<url>
+<loc>https://gutocarvalho.net/mattermost-536/</loc>
+<lastmod>2021-06-25T02:02:35-03:00</lastmod>
 </url>
 <url>
 <loc>https://gutocarvalho.net/meu-toolkit-2021/</loc>

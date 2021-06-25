@@ -10,6 +10,36 @@
     },
     "items": [
         {
+            "id": "https://gutocarvalho.net/live-gitlab-14/",
+            "url": "https://gutocarvalho.net/live-gitlab-14/",
+            "title": "Live GitLab 14",
+            "summary": "<p>Fizemos uma live sobre as novidades do GitLab 14 no dia 24/06 as 16:30</p>\n",
+            "content_html": "<p>Fizemos uma live sobre as novidades do GitLab 14 no dia 24/06 as 16:30</p>\n\n<p>Eu, Adriano Silva da EBC e Hugo Azevedo da GitLab estivemos presentes!</p>\n<figure class=\"post__video\"><iframe loading=\"lazy\" width=\"560\" height=\"314\" src=\"https://www.youtube.com/embed/JU1Br4M_duk\" allowfullscreen=\"allowfullscreen\" data-mce-fragment=\"1\"></iframe></figure>\n<p>:)</p>",
+            "image": "https://gutocarvalho.net/media/posts/32/gitlab-version-14-wide.png",
+            "author": {
+                "name": "Guto Carvalho"
+            },
+            "tags": [
+                   "Lives"
+            ],
+            "date_published": "2021-06-25T02:01:55-03:00",
+            "date_modified": "2021-06-25T02:03:56-03:00"
+        },
+        {
+            "id": "https://gutocarvalho.net/mattermost-536/",
+            "url": "https://gutocarvalho.net/mattermost-536/",
+            "title": "MatterMost 5.36",
+            "summary": "<p>O MatterMost já chegou na versão 5.36, confira!</p>\n",
+            "content_html": "<p>O MatterMost já chegou na versão 5.36, confira!</p>\n\n<p>Novidades da release<br><br>- <a href=\"https://mattermost.com/blog/mattermost-release-v5-36\">https://mattermost.com/blog/mattermost-release-v5-36</a></p>",
+            "author": {
+                "name": "Guto Carvalho"
+            },
+            "tags": [
+            ],
+            "date_published": "2021-06-25T01:51:04-03:00",
+            "date_modified": "2021-06-25T02:02:35-03:00"
+        },
+        {
             "id": "https://gutocarvalho.net/zammad-41/",
             "url": "https://gutocarvalho.net/zammad-41/",
             "title": "Zammad 4.1",
@@ -30,7 +60,7 @@
             "url": "https://gutocarvalho.net/gitlab-14/",
             "title": "GitLab 14",
             "summary": "<p>Pessoal foi lançado o GitLab 14.0, acabo de atualizar! Vem também :)</p>\n",
-            "content_html": "<p>Pessoal foi lançado o GitLab 14.0, acabo de atualizar! Vem também :)</p>\n\n<p>Novidades sobre a release:<br><br>- <a href=\"https://about.gitlab.com/releases/2021/06/22/gitlab-14-0-released/\">https://about.gitlab.com/releases/2021/06/22/gitlab-14-0-released/</a></p>\n<p>- <a href=\"https://about.gitlab.com/blog/2021/06/22/gitlab-14-modern-devops\">https://about.gitlab.com/blog/2021/06/22/gitlab-14-modern-devops</a></p>\n<p>- <a href=\"https://about.gitlab.com/blog/2021/06/04/gitlab-moving-to-14-breaking-changes/\">https://about.gitlab.com/blog/2021/06/04/gitlab-moving-to-14-breaking-changes/</a></p>\n<p>- <a href=\"https://gitlab.com/gitlab-org/gitlab-foss/blob/master/CHANGELOG.md\">https://gitlab.com/gitlab-org/gitlab-foss/blob/master/CHANGELOG.md</a></p>\n<p>Eu tô tentando marcar uma Live com o pessoal do canal @gitlabbr no telegram, se conseguir aviso aqui!<br><br><br>[s]</p>",
+            "content_html": "<p>Pessoal foi lançado o GitLab 14.0, acabo de atualizar! Vem também :)</p>\n\n<p>Novidades sobre a release:<br><br>- <a href=\"https://about.gitlab.com/releases/2021/06/22/gitlab-14-0-released/\">https://about.gitlab.com/releases/2021/06/22/gitlab-14-0-released/</a></p>\n<p>- <a href=\"https://about.gitlab.com/blog/2021/06/22/gitlab-14-modern-devops\">https://about.gitlab.com/blog/2021/06/22/gitlab-14-modern-devops</a></p>\n<p>- <a href=\"https://about.gitlab.com/blog/2021/06/04/gitlab-moving-to-14-breaking-changes/\">https://about.gitlab.com/blog/2021/06/04/gitlab-moving-to-14-breaking-changes/</a></p>\n<p>- <a href=\"https://gitlab.com/gitlab-org/gitlab-foss/blob/master/CHANGELOG.md\">https://gitlab.com/gitlab-org/gitlab-foss/blob/master/CHANGELOG.md</a></p>\n<p>Eu tô tentando marcar uma Live com o pessoal do canal @gitlabbr no telegram, se conseguir aviso aqui!<br><br>A versão embarcada do MatterMost já foi para a 5.35<br><br>- <a href=\"https://mattermost.com/blog/mattermost-release-v5-35\">https://mattermost.com/blog/mattermost-release-v5-35</a><br><br>[s]</p>",
             "image": "https://gutocarvalho.net/media/posts/29/default-blog-image.png",
             "author": {
                 "name": "Guto Carvalho"
@@ -39,7 +69,7 @@
                    "Projetos"
             ],
             "date_published": "2021-06-23T21:39:30-03:00",
-            "date_modified": "2021-06-23T21:39:43-03:00"
+            "date_modified": "2021-06-25T01:52:32-03:00"
         },
         {
             "id": "https://gutocarvalho.net/lognumber20210614/",
@@ -134,36 +164,6 @@
             ],
             "date_published": "2021-06-08T19:08:15-03:00",
             "date_modified": "2021-06-12T11:40:10-03:00"
-        },
-        {
-            "id": "https://gutocarvalho.net/passbolt/",
-            "url": "https://gutocarvalho.net/passbolt/",
-            "title": "Passbolt",
-            "summary": "<p>Precisa gerenciar as senhas e compartilhar com seu time?</p>\n",
-            "content_html": "<p>Precisa gerenciar as senhas e compartilhar com seu time?</p>\n\n<p>Esse é um projeto web, opensource, com uma interface amigável e moderna, com criptografia padrão pgp, bem simples de usar e compartilhar as senhas com seu time, ou gerenciar suas senhas pessoais.</p>\n<p>É um item obrigatório em praticamente qualquer projeto que executo hoje.</p>\n<p>Conheça o <a href=\"https://www.passbolt.com/\" target=\"_blank\" rel=\"noopener noreferrer\">projeto</a>!</p>\n<figure class=\"post__image\"><img loading=\"lazy\"  src=\"https://gutocarvalho.net/media/posts/22//Screen-Shot-2021-06-04-at-21.09.25.png\" sizes=\"(min-width: 61.3125em) 50vw, 100vw\" srcset=\"https://gutocarvalho.net/media/posts/22//responsive/Screen-Shot-2021-06-04-at-21.09.25-xs.png 300w ,https://gutocarvalho.net/media/posts/22//responsive/Screen-Shot-2021-06-04-at-21.09.25-sm.png 480w ,https://gutocarvalho.net/media/posts/22//responsive/Screen-Shot-2021-06-04-at-21.09.25-md.png 768w\"  alt=\"\" width=\"1267\" height=\"886\"></figure>\n<figure class=\"post__image\"><img loading=\"lazy\"  src=\"https://gutocarvalho.net/media/posts/22/Screen-Shot-2021-06-05-at-18.25.43.png\" sizes=\"(min-width: 61.3125em) 50vw, 100vw\" srcset=\"https://gutocarvalho.net/media/posts/22/responsive/Screen-Shot-2021-06-05-at-18.25.43-xs.png 300w ,https://gutocarvalho.net/media/posts/22/responsive/Screen-Shot-2021-06-05-at-18.25.43-sm.png 480w ,https://gutocarvalho.net/media/posts/22/responsive/Screen-Shot-2021-06-05-at-18.25.43-md.png 768w\"  alt=\"\" width=\"1010\" height=\"613\"></figure><br><br>Usamos na JAC e em vários clientes e projetos, recomendo :)</p>\n<p> </p>",
-            "author": {
-                "name": "Guto Carvalho"
-            },
-            "tags": [
-                   "Projetos"
-            ],
-            "date_published": "2021-06-04T21:10:59-03:00",
-            "date_modified": "2021-06-05T18:26:32-03:00"
-        },
-        {
-            "id": "https://gutocarvalho.net/eventos-de-junho-21-bora-la/",
-            "url": "https://gutocarvalho.net/eventos-de-junho-21-bora-la/",
-            "title": "Eventos de Junho 21",
-            "summary": "<p>Bora lá!</p>\n",
-            "content_html": "<p>Bora lá!</p>\n\n<p><strong>Próximos!<br><br></strong>- <a href=\"https://events.linuxfoundation.org/cdcon/register/\">CDCON</a> - Junho/23-24 - Virtual<br>- <a href=\"https://events.linuxfoundation.org/gitops-summit/\" target=\"_blank\" rel=\"noopener noreferrer\">GitOps Summit </a>- Junho/22 - Virtual<br>- <a href=\"https://hashiconf.com/europe/\" target=\"_blank\" rel=\"noopener noreferrer\">Hashicon Europe</a> - Junho/8-11 - Virtual<br>- <a href=\"https://grafana.com/about/events/grafanacon/2021/\">GrafanaCon</a> - Junho/8-17 - Virtual<br>- <a href=\"https://www.gitopsdays.com/\">GitOps Days</a> - Junho/9-10 - Virtual<br><br>Sabe de mais algum interessante? Manda nos comentários que eu atualizo!<br><br>[s]</p>",
-            "author": {
-                "name": "Guto Carvalho"
-            },
-            "tags": [
-                   "Eventos"
-            ],
-            "date_published": "2021-06-03T22:56:20-03:00",
-            "date_modified": "2021-06-13T02:34:20-03:00"
         }
     ]
 }
