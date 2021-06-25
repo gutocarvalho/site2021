@@ -15,7 +15,6 @@
             "title": "Live GitLab 14",
             "summary": "<p>Fizemos uma live sobre as novidades do GitLab 14 no dia 24/06 as 16:30</p>\n",
             "content_html": "<p>Fizemos uma live sobre as novidades do GitLab 14 no dia 24/06 as 16:30</p>\n\n<p>Eu, Adriano Silva da EBC e Hugo Azevedo da GitLab estivemos presentes!</p>\n<figure class=\"post__video\"><iframe loading=\"lazy\" width=\"560\" height=\"314\" src=\"https://www.youtube.com/embed/JU1Br4M_duk\" allowfullscreen=\"allowfullscreen\" data-mce-fragment=\"1\"></iframe></figure>\n<p>:)</p>",
-            "image": "https://gutocarvalho.net/media/posts/32/gitlab-version-14-wide.png",
             "author": {
                 "name": "Guto Carvalho"
             },
@@ -23,7 +22,7 @@
                    "Lives"
             ],
             "date_published": "2021-06-25T02:01:55-03:00",
-            "date_modified": "2021-06-25T02:03:56-03:00"
+            "date_modified": "2021-06-25T02:12:12-03:00"
         },
         {
             "id": "https://gutocarvalho.net/mattermost-536/",

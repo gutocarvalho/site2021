@@ -3,7 +3,7 @@
     <title>Guto@Site</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2021-06-25T02:03:56-03:00</updated>
+    <updated>2021-06-25T02:12:12-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
@@ -18,17 +18,15 @@
         <id>https://gutocarvalho.net/live-gitlab-14/</id>
             <category term="Lives"/>
 
-        <updated>2021-06-25T02:03:56-03:00</updated>
+        <updated>2021-06-25T02:12:12-03:00</updated>
             <summary>
                 <![CDATA[
-                        <img src="https://gutocarvalho.net/media/posts/32/gitlab-version-14-wide.png" alt="" />
                     <p>Fizemos uma live sobre as novidades do GitLab 14 no dia 24/06 as 16:30</p>
 
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                    <img src="https://gutocarvalho.net/media/posts/32/gitlab-version-14-wide.png" alt="" />
                 <p>Fizemos uma live sobre as novidades do GitLab 14 no dia 24/06 as 16:30</p>
 
 <p>Eu, Adriano Silva da EBC e Hugo Azevedo da GitLab estivemos presentes!</p>
