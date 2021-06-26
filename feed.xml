@@ -3,12 +3,35 @@
     <title>Guto@Site</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2021-06-25T02:16:31-03:00</updated>
+    <updated>2021-06-25T23:45:06-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
     <id>https://gutocarvalho.net</id>
 
+    <entry>
+        <title>Log.Number.2021.06.25</title>
+        <author>
+            <name>Guto Carvalho</name>
+        </author>
+        <link href="https://gutocarvalho.net/lognumber20210625/"/>
+        <id>https://gutocarvalho.net/lognumber20210625/</id>
+            <category term="Alma"/>
+
+        <updated>2021-06-25T23:45:06-03:00</updated>
+            <summary>
+                <![CDATA[
+                    Hoje é um daqueles dias que e eu não gostaria de ter acordado :( E ontem, acho que também foi&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p>Hoje é um daqueles dias que e eu não gostaria de ter acordado :(<br><br>E ontem, acho que também foi<br><br>Me sinto tão estranho nos últimos dias<br><br>Sentir tem sido difícil, inclusive interpretar sentimentos fluindo no ritmo que desejam<br><br>Olho e parece que as coisas não encaixam, que não fazem sentido<br><br>Não importa se vou para esquerda, direita, se volto ou se sigo em frente, todos os caminhos me parecem errados, todos parecem sem sentido, todos parecem que não valem a pena<br><br>A única coisa que sinto de forma clara é que nada está funcionando<br><br>Absolutamente nada<br><br>Parece que tudo esta quebrado, o mundo, a sociedade e eu<br><br>Sinto saudades do filhos, e já nem entendo mais pq estamos distantes<br><br>Sinto saudades de me sentir bem<br><br>Sinto saudades de passar pelo menos alguns momentos do dia sem ter que administrar algum conflito<br><br>Sinto e acredito que não sou uma boa companhia<br><br>Sinto e acredito que não sou uma bom exemplo para eles ou para qualquer um<br><br>Sinto que estou amargo e que transpareço essa amargura<br><br>Sinto que não sou desejado<br><br>Sinto saudades do amor, de amar, de ser amado<br><br>Sinto a decepção das pessoas com meu momento atual, como se tivesse que ser sempre aquele cara alegre e pronto pra tudo<br><br>Sinto que minha sinceridade fere<br><br>Sinto que meu pragmatismo ofende<br><br>Sinto que meu distanciamento gera fúria e decepção<br><br>Sinto que minha paciência para o mundo acabou, mas ao mesmo tempo não consigo descer<br><br>Sinto a dor do mundo e parece que meu mundo é apenas isso, dor, decepção, fracasso e sentimentos conflituosos<br><br>Sinto tanta coisa e ao mesmo tempo parece que eu não sinto nada<br><br>Ainda assim, acordo, levanto, tomo banho, escovo os dentes e sigo, ainda não sei para onde, mas sigo<br><br>Só me pergunto por quanto tempo ainda vou conseguir acordar, abrir os olhos e seguir<br><br>Sinto que o momento de não querer mais levantar está próximo e ainda não sem bem como vou lidar ou como irão lidar com isso<br><br>Eu e minha sombra estamos travando lutas contraditórias e já percebemos esse paradoxo</p>
+<p>Ainda caminho, sendo o que dá para ser, vivendo o que dá para viver, sentindo o que dá para sentir, sem muita exigências</p>
+<p>E vamos até onde der pé nessa piscina de desilusões infinitas e constantes<br><br>[ s ]</p>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>Live GitLab 14</title>
         <author>
@@ -899,32 +922,6 @@
 <li><strong>Linkerd + Flux + Flagger + Helm</strong> – <a href="https://www.gitopsdays.com/speaker/scott-rigby/">Scott Rigby</a> and <a href="https://www.gitopsdays.com/speaker/jason-morgan/">Jason Morgan</a></li>
 </ul>
 <p> </p>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>Diferença entre JR, PL, SR e Especialista?</title>
-        <author>
-            <name>Guto Carvalho</name>
-        </author>
-        <link href="https://gutocarvalho.net/diferenca-entre-jr-pl-sr-e-especialista/"/>
-        <id>https://gutocarvalho.net/diferenca-entre-jr-pl-sr-e-especialista/</id>
-            <category term="MindNotes"/>
-            <category term="JACExperts"/>
-
-        <updated>2021-06-12T11:40:10-03:00</updated>
-            <summary>
-                <![CDATA[
-                    <p>Bora entender isso de um jeito simples? Vem!</p>
-
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                <p>Bora entender isso de um jeito simples? Vem!</p>
-
-<p><strong>A cultura JAC Experts vê da seguinte forma:</strong><br><br>Se ele(a) saber fazer algo que é pedido – e precisa de supervisão, ele(a) é <strong>JR</strong><br><br>Se ele(a) saber fazer o que é pedido, entende oq tá fazendo, não precisa de supervisão, mas precisa de alguém priorizando as demandas – ele(a) é <strong>PL</strong><br><br>Se ele(a) sabe fazer oq é pedido, entende oq tá fazendo, entende pq tá fazendo, sabe priorizar, sabe gerenciar recursos financeiros, pessoas, demandas, elaborar projetos, falar com clientes e gestores, enxergar e desenhar a arquitetura de um solução, ele(a) é <strong>SR</strong><br><br>Agora se ele(a) é um(a) profundo(a) conhecedor(a) de um produto ou tecnologia a ponto de fazer oq ninguém consegue fazer, resolver oq ninguém consegue resolver naquele produto ou tecnologia, ele(a) é um(a) <strong>ESPECIALISTA</strong>. Contudo, não significa que o(a) especialista saiba fazer oq um JR, PL ou SR faça.<br><br>Sacou?<br><br>Pérolas do Tio Dirceu, que são parte da Cultura da JAC Experts</p>
-<p>:)</p>
             ]]>
         </content>
     </entry>
