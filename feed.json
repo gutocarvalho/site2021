@@ -10,6 +10,20 @@
     },
     "items": [
         {
+            "id": "https://gutocarvalho.net/nao-celebre-mortes/",
+            "url": "https://gutocarvalho.net/nao-celebre-mortes/",
+            "title": "Não celebre mortes!",
+            "summary": "<p>A morte de alguém pelas mão dos <strong>Estado</strong> não deve ser aplaudida.</p>\n",
+            "content_html": "<p>A morte de alguém pelas mão dos <strong>Estado</strong> não deve ser aplaudida.</p>\n\n<p>O <strong>Estado</strong> deveria amparar;</p>\n<p>O <strong>Estado</strong> deveria dar condições dignas de vida;<br><br>O <strong>Estado</strong> deveria oferecer justiça e igualdade a todos;</p>\n<p>O <strong>Estado</strong> deveria acolher e gerar oportunidades;<br><br>O <strong>Estado</strong> deveria acabar com a miséria, pobreza e resolver conflitos;</p>\n<p>O <strong>Estado</strong> <strong>não</strong> deveria matar;</p>\n<p>A autoridade policial <strong>não</strong> deveria matar;<br><br>A Polícia deveria servir e proteger;<br><br>A Polícia deveria apoiar na educação dos direitos e deveres;<br><br>E mesmo um indivíduo doente deveria ser amparado e tratado pelo Estado;</p>\n<p>Em especial em um Estado em que isso tudo está em sua constituição;<br><br>Uma pessoa não deveria morrer pelas mãos do Estado, jamais, independente do crime;<br><br>E digo isso com a certeza de que ela foi a primeira <strong>vítima</strong> de uma sociedade que não a acolheu, não  a tratou e que não lhe proveu as garantias – mínimas – de sua própria Constituição Federal;<br><br>Por isso eu peço, não celebre a morte, ao contrário, reflita sobre as falhas e as injustiças da sociedade que criaram aquele que foi morto;</p>\n<p>Ninguém nasce bom ou mal, ninguém nasce engenheiro, juiz, médico ou assassino, isso quem contrói é sociedade em que vivemos, você pode ser o médico ou o assassino, só depende das oportunidades, ou neste caso na falta delas;<br><br>Toda a força as famílias que foram maculadas, ainda assim, o Estado não deveria matar, deveria educar, proteger, tratar e prover;<br><br>Tirar uma vida não restaura outra.</p>\n<p>Reflita!</p>",
+            "author": {
+                "name": "Guto Carvalho"
+            },
+            "tags": [
+            ],
+            "date_published": "2021-06-29T19:14:48-03:00",
+            "date_modified": "2021-06-29T20:56:33-03:00"
+        },
+        {
             "id": "https://gutocarvalho.net/reflexoes-release-4-0/",
             "url": "https://gutocarvalho.net/reflexoes-release-4-0/",
             "title": "Reflexões 4.0",
@@ -145,22 +159,6 @@
             ],
             "date_published": "2021-06-14T15:59:25-03:00",
             "date_modified": "2021-06-23T01:32:11-03:00"
-        },
-        {
-            "id": "https://gutocarvalho.net/lognumber20210613/",
-            "url": "https://gutocarvalho.net/lognumber20210613/",
-            "title": "Log.Number.2021.06.13",
-            "summary": "<p><strong>Still here, still fighting!</strong></p>\n",
-            "content_html": "<p><strong>Still here, still fighting!</strong></p>\n\n<p>É incrível como a música consegue me tirar daquele cantinho escuro em que as vezes me escondo. É incrível como consegue aliviar aquela dor no peito e me fazer respirar com esperança, respirar sem que doa, sem que seja aquele esforço hercúleo para continuar aqui neste lado.</p>\n<p>E falando em música, recentemente descobri a doce, talentosa e competente Allie Sherlock, e agradeço de verdade por sua música me tocar e deixar meu coração mais quentinho, sempre que eu preciso :]</p>\n<figure class=\"post__video\"><iframe loading=\"lazy\" width=\"600\" height=\"336\" src=\"https://www.youtube.com/embed/KUASFbtSX9E\" allowfullscreen=\"allowfullscreen\" data-mce-fragment=\"1\"></iframe></figure>\n<p>Escutar música é como receber luz, é um momento de incrível paz, é como dar um pause em todas aquelas sensações e vibrações angustiantes que nos acompanham. É como dar um escapada da loucura da vida, é como descer de uma montanha russa insana e parar por algum tempo, só para admirar aquela melodia e esquecer de tudo e de todos. E mesmo que sejam meros segundos, ainda assim, são momentos que valem a pena viver, sentir e que nos ajudam a seguir em frente.<br><br></p>\n<figure class=\"post__video\"><iframe loading=\"lazy\" width=\"600\" height=\"336\" src=\"https://www.youtube.com/embed/P5sgmuS06qQ\" allowfullscreen=\"allowfullscreen\" data-mce-fragment=\"1\"></iframe></figure>\n<p>Divago que um mundo sem música parece não ter graça, da mesma forma em que em um mundo sem graça, parece nunca ter tido sua música.<br><br>Então, se estiver triste, se estiver com seu corpo reverberando a angústia, o medo, a solidão e incerteza, dá um pulinho no YT e assista pessoas tocando e cantando músicas. Sério, isso vai te ajudar a elevar suas vibrações e pensamentos ':\")</p>\n<p>Mais um dia aq, e se você está comigo, hoje nós vencemos juntos.</p>\n<p>Nos vemos amanhã!</p>\n<p>A luta nunca para.</p>\n<figure class=\"post__video\"><iframe loading=\"lazy\" width=\"600\" height=\"340\" src=\"https://www.youtube.com/embed/CJo8gUV8Czw\" allowfullscreen=\"allowfullscreen\" data-mce-fragment=\"1\"></iframe></figure>\n<p><br><br>[s]</p>",
-            "image": "https://gutocarvalho.net/media/posts/26/allie-smile-2.jpg",
-            "author": {
-                "name": "Guto Carvalho"
-            },
-            "tags": [
-                   "Alma"
-            ],
-            "date_published": "2021-06-13T23:26:30-03:00",
-            "date_modified": "2021-06-14T23:52:25-03:00"
         }
     ]
 }
