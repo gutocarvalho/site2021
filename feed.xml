@@ -3,7 +3,7 @@
     <title>Guto@Site</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2021-06-29T21:08:24-03:00</updated>
+    <updated>2021-06-29T21:13:23-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
@@ -16,8 +16,9 @@
         </author>
         <link href="https://gutocarvalho.net/nao-celebre-mortes/"/>
         <id>https://gutocarvalho.net/nao-celebre-mortes/</id>
+            <category term="FalaGutera"/>
 
-        <updated>2021-06-29T21:08:24-03:00</updated>
+        <updated>2021-06-29T21:13:23-03:00</updated>
             <summary>
                 <![CDATA[
                     <p>A morte de alguém pelas mão dos <strong>Estado</strong> não deve ser aplaudida.</p>
