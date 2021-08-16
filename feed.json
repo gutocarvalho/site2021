@@ -10,6 +10,38 @@
     },
     "items": [
         {
+            "id": "https://gutocarvalho.net/brewgreater-speedtest/",
+            "url": "https://gutocarvalho.net/brewgreater-speedtest/",
+            "title": "brew&gt; speedtest",
+            "summary": "Rodar o speedtest por terminal é bem fácil $ brew install speedtest-cli Executando $ speedtest-cli Veja o exemplo: :)",
+            "content_html": "<p>Rodar o speedtest por terminal é bem fácil</p>\n<p><code>$ brew install speedtest-cli</code></p>\n<p>Executando</p>\n<p><code>$ speedtest-cli</code><br><br>Veja o exemplo:\n<script id=\"asciicast-428197\" src=\"https://asciinema.org/a/428197.js\" async=\"\"></script>\n</p>\n<p>:)</p>",
+            "author": {
+                "name": "Guto Carvalho"
+            },
+            "tags": [
+                   "Tips",
+                   "Projetos"
+            ],
+            "date_published": "2021-07-31T16:37:25-03:00",
+            "date_modified": "2021-07-31T16:37:25-03:00"
+        },
+        {
+            "id": "https://gutocarvalho.net/brew-tipsgreater-broot/",
+            "url": "https://gutocarvalho.net/brew-tipsgreater-broot/",
+            "title": "brew&gt; broot",
+            "summary": "Conhece o projeto broot? Esse projeto prove uma forma bem bacana de navegar em diretórios do seu mac/linux. Para instalar&hellip;",
+            "content_html": "<p>Conhece o projeto broot?</p>\n<ul>\n<li><a href=\"https://github.com/Canop/broot\">https://github.com/Canop/broot</a></li>\n<li>https://dystroy.org/broot/</li>\n</ul>\n<p>Esse projeto prove uma forma bem bacana de navegar em diretórios do seu mac/linux.</p>\n<p>Para instalar via brew é simples</p>\n<p><code>$ brew install broot</code></p>\n<p>Para ativar  </p>\n<p><code>$ broot</code><br><br>Para usar</p>\n<p><code>$ br</code></p>\n<p>:)</p>\n<p> </p>",
+            "author": {
+                "name": "Guto Carvalho"
+            },
+            "tags": [
+                   "Tips",
+                   "Projetos"
+            ],
+            "date_published": "2021-07-31T14:55:54-03:00",
+            "date_modified": "2021-07-31T16:37:44-03:00"
+        },
+        {
             "id": "https://gutocarvalho.net/videos-cdcon/",
             "url": "https://gutocarvalho.net/videos-cdcon/",
             "title": "Vídeos CDCON",
@@ -128,38 +160,6 @@
             ],
             "date_published": "2021-06-23T22:29:32-03:00",
             "date_modified": "2021-06-25T02:16:31-03:00"
-        },
-        {
-            "id": "https://gutocarvalho.net/gitlab-14/",
-            "url": "https://gutocarvalho.net/gitlab-14/",
-            "title": "GitLab 14",
-            "summary": "<p>Pessoal foi lançado o GitLab 14.0, acabo de atualizar! Vem também :)</p>\n",
-            "content_html": "<p>Pessoal foi lançado o GitLab 14.0, acabo de atualizar! Vem também :)</p>\n\n<p>Novidades sobre a release:<br><br>- <a href=\"https://about.gitlab.com/releases/2021/06/22/gitlab-14-0-released/\">https://about.gitlab.com/releases/2021/06/22/gitlab-14-0-released/</a></p>\n<p>- <a href=\"https://about.gitlab.com/blog/2021/06/22/gitlab-14-modern-devops\">https://about.gitlab.com/blog/2021/06/22/gitlab-14-modern-devops</a></p>\n<p>- <a href=\"https://about.gitlab.com/blog/2021/06/04/gitlab-moving-to-14-breaking-changes/\">https://about.gitlab.com/blog/2021/06/04/gitlab-moving-to-14-breaking-changes/</a></p>\n<p>- <a href=\"https://gitlab.com/gitlab-org/gitlab-foss/blob/master/CHANGELOG.md\">https://gitlab.com/gitlab-org/gitlab-foss/blob/master/CHANGELOG.md</a></p>\n<p>Eu tô tentando marcar uma Live com o pessoal do canal @gitlabbr no telegram, se conseguir aviso aqui!<br><br>A versão embarcada do MatterMost já foi para a 5.35<br><br>- <a href=\"https://mattermost.com/blog/mattermost-release-v5-35\">https://mattermost.com/blog/mattermost-release-v5-35</a><br><br>[s]</p>",
-            "image": "https://gutocarvalho.net/media/posts/29/default-blog-image.png",
-            "author": {
-                "name": "Guto Carvalho"
-            },
-            "tags": [
-                   "Projetos"
-            ],
-            "date_published": "2021-06-23T21:39:30-03:00",
-            "date_modified": "2021-06-25T01:52:32-03:00"
-        },
-        {
-            "id": "https://gutocarvalho.net/lognumber20210614/",
-            "url": "https://gutocarvalho.net/lognumber20210614/",
-            "title": "Log.Number.2021.06.14",
-            "summary": "<p><strong>Still here, nothing more, or less.</strong></p>\n",
-            "content_html": "<p><strong>Still here, nothing more, or less.</strong></p>\n\n<p>Hoje foi um daqueles dias que a gente gostaria de voltar no tempo e nunca ter acordado.</p>\n<p>Dentre tudo o que ocorre hoje, o fato indiscutível é que essa pandemia tem nos colocado em uma grande panela de pressão, em fogo alto, apitando sem parar.</p>\n<p>Sabemos que cada ação gera uma reação - segundo a mecânica newtoniana, proporcional e de igual intensidade, contudo, nesse negócio chamado pandemia, toda a reação parece que já começa de uma forma absolutamente desproporcional, exponencial, e quando você menos espera, você já pisou fora da faixa por pelo menos uns 10 kilômetros.<br><br>Talvez pq sentimentos não sejam corpos em movimento, e portanto, não podem se qualificar dentro de meras leis newtonianas, sentimentos ainda são mistérios que a ciência não conseguiu decifrar.</p>\n<p>E quando se fala de sentimentos, tudo pode acontecer, e o duro de pisar fora da faixa é que não tem como apertar o CTRL+Z. </p>\n<p>Simplesmente já foi.<br><br>Daí eu observo que:</p>\n<p>Manter a sanidade não é mais tão simples.</p>\n<p>Manter a calma já não é tão fácil.</p>\n<p>Manter a coerência, isso sim, me parece impossível.</p>\n<p>Hoje eu me perdi e me encontrei mais vezes do que eu consigo me lembrar.</p>\n<p>Hoje eu falei e agi mais do que devia, e neste interim é bom saber e as consequências vem – sempre – a galope.</p>\n<p>O que mais dói, é que em algum momento enquanto perdido em sua ira, transbordando em sua fúria e excitado por sua própria cólera, você para e percebe que machuca mais do que ajuda, que assusta mais do que inspira e que se afasta cada vez mais de quem você é, ou talvez, sendo bem honesto, de quem você já foi.</p>\n<p>Mas será que somos só uma versão de nós mesmos?<br><br>Será que a cada dia, quando abrimos os olhos, ainda somos os mesmos, com os mesmos sentimentos?</p>\n<p>Ou talvez sejamos apenas o resultado das exceções e situações frutos de nossas decisões e intempéries? <br><br>Quem sabe? Eu certamente não sei.<br><br>Hoje foi incrivelmente difícil me manter incólume em relação as investidas de minha própria sombra. Ela agia de forma tangenciada e certeira, sendo cada vez mais irresistível.</p>\n<p>Cheguei a aceitar que não estaria aqui hoje escrevendo esse log, mas cá estou, me agarrando nos fiapos da realidade, e nas moléculas da esperança de que amanhã o sol ainda vai aparecer, sem me perguntar nada, simplesmente pq é de sua natureza compartilhar sua luz.</p>\n<p>Sigo, cansado dessa montanha russa emocional, mas sigo, mais uma vez.</p>\n<p>Hoje não posso dizer que venci, eu apenas estou por aqui, mas se você está lendo, então já somos dois, e que estejamos aqui amanhã novamente.</p>\n<p>Segura de um lado que eu seguro de outro, como dira o outro. Eu posso pelo menos prometer mais uma dia, e que venha – se possível – nem que seja um de cada vez, uma batalha por dia.</p>\n<p>[s]</p>\n<p> </p>\n<p> </p>",
-            "image": "https://gutocarvalho.net/media/posts/28/dan-gribbin-fDcwEmqMJls-unsplash.jpg",
-            "author": {
-                "name": "Guto Carvalho"
-            },
-            "tags": [
-                   "Alma"
-            ],
-            "date_published": "2021-06-14T23:46:51-03:00",
-            "date_modified": "2021-06-15T00:16:32-03:00"
         }
     ]
 }
