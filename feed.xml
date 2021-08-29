@@ -3,7 +3,7 @@
     <title>Guto@Site</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2021-08-29T14:44:30-03:00</updated>
+    <updated>2021-08-29T14:51:25-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
@@ -14,12 +14,12 @@
         <author>
             <name>Guto Carvalho</name>
         </author>
-        <link href="https://gutocarvalho.net/sinto-falta-2/"/>
-        <id>https://gutocarvalho.net/sinto-falta-2/</id>
+        <link href="https://gutocarvalho.net/sinto-sua-falta/"/>
+        <id>https://gutocarvalho.net/sinto-sua-falta/</id>
             <category term="Poesia"/>
             <category term="Alma"/>
 
-        <updated>2021-08-29T14:44:30-03:00</updated>
+        <updated>2021-08-29T14:51:25-03:00</updated>
             <summary>
                 <![CDATA[
                         <img src="https://gutocarvalho.net/media/posts/41/andrew-neel-NsI0IffS1jo-unsplash.jpg" alt="" />
@@ -43,15 +43,18 @@
             <category term="Tips"/>
             <category term="Projetos"/>
 
-        <updated>2021-07-31T16:37:25-03:00</updated>
+        <updated>2021-08-29T14:49:07-03:00</updated>
             <summary>
                 <![CDATA[
-                    Rodar o speedtest por terminal é bem fácil $ brew install speedtest-cli Executando $ speedtest-cli Veja o exemplo: :)
+                    <p>Rode o speedtest pelo terminal ;)</p>
+
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                <p>Rodar o speedtest por terminal é bem fácil</p>
+                <p>Rode o speedtest pelo terminal ;)</p>
+
+<p>É bem fácil usando o brew</p>
 <p><code>$ brew install speedtest-cli</code></p>
 <p>Executando</p>
 <p><code>$ speedtest-cli</code><br><br>Veja o exemplo:
@@ -71,15 +74,18 @@
             <category term="Tips"/>
             <category term="Projetos"/>
 
-        <updated>2021-07-31T16:37:44-03:00</updated>
+        <updated>2021-08-29T14:49:59-03:00</updated>
             <summary>
                 <![CDATA[
-                    Conhece o projeto broot? Esse projeto prove uma forma bem bacana de navegar em diretórios do seu mac/linux. Para instalar&hellip;
+                    <p>Navegue em seus diretórios pelo terminal com o broot</p>
+
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                <p>Conhece o projeto broot?</p>
+                <p>Navegue em seus diretórios pelo terminal com o broot</p>
+
+<p>Conhece o projeto broot?</p>
 <ul>
 <li><a href="https://github.com/Canop/broot">https://github.com/Canop/broot</a></li>
 <li>https://dystroy.org/broot/</li>
