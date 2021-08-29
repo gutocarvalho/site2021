@@ -3,12 +3,36 @@
     <title>Guto@Site</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2021-07-31T16:37:44-03:00</updated>
+    <updated>2021-08-29T14:31:31-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
     <id>https://gutocarvalho.net</id>
 
+    <entry>
+        <title>Sinto falta</title>
+        <author>
+            <name>Guto Carvalho</name>
+        </author>
+        <link href="https://gutocarvalho.net/sinto-falta-2/"/>
+        <id>https://gutocarvalho.net/sinto-falta-2/</id>
+            <category term="Poesia"/>
+            <category term="Alma"/>
+
+        <updated>2021-08-29T14:31:31-03:00</updated>
+            <summary>
+                <![CDATA[
+                        <img src="https://gutocarvalho.net/media/posts/41/andrew-neel-NsI0IffS1jo-unsplash.jpg" alt="" />
+                    As vezes sinto falta do amor Do coração com aquela sensação de vida Sinto falta de amar, de ser amado&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                    <img src="https://gutocarvalho.net/media/posts/41/andrew-neel-NsI0IffS1jo-unsplash.jpg" alt="" />
+                <p>As vezes sinto falta do amor<br>Do coração com aquela sensação de vida<br>Sinto falta de amar, de ser amado<br>De beijar, de ser beijado<br>Mas também<br>Do abraço<br>Do cheiro<br>Do calor<br>Da companhia<br><br>Do beijo quando saio<br>E quando eu chego<br>De cozinhar junto contigo<br>De comer com o mesmo garfo<br>E beber no mesmo copo<br><br>De chorar  as conquistas e as perdas<br>De sentir a falta<br>De sentir o medo da falta<br>De ficar acordado te esperando<br>De sentir sua força e presença<br><br>Sinto falta <br>De proteger e de ser protegido<br>Sinto falta dos pés cruzados embaixo da coberta<br>De deitar de conchinha<br>De ver você abrindo os olhos toda a manhã<br>Da sensação de nunca estar sozinho, mesmo se estiver<br><br>Sinto falta <br>De andar de mãos dadas pelos gramados<br>De pedalar pelas montanhas da vida<br>De dirigir pelo mundo<br>De dividir a vida contigo<br><br>Sinto falta<br>De te dar força quando era preciso<br>De receber força quando era necessário<br><br>De tomar um carão da vida<br>E de encarar ela de volta – com a lingua de fora<br>Juntos<br>Com medo<br>Com força<br>E com vontade de seguir em frente<br><br>Sinto falta <br>De me sentir vivo<br>Do cansaço de fazer tudo que a vida exige<br>Do prazer de entender que é preciso<br>Do amadurecimento de lidar com os erros cometidos<br>Do mútuo êxtase quando fazíamos alguma coisa certa<br><br>Sinto falta<br>Das brigas<br>Dos desentendimentos<br>Mesmo que poucos<br>E da cumplicidade apesar de tudo<br><br>Sinto falta<br>Dos desvios e percalços<br>Dos reencontros<br>Da confiança de ser e de estar<br>Em ambas direções<br>E principalmente<br>Sinto falta da parceria<br><br>E mesmo sentido falta<br>Sua falta<br>EU PRECISO<br>Aprender a seguir sem você<br>Mesmo não desejando isso<br>Mesmo não querendo isso<br>Mesmo não aceitando isso - ainda que soe de forma egoísta<br><br>Mas EU preciso<br>Respeitar<br>Respirar<br>Entender<br>E acima de tudo aceitar<br><br>Eu preciso<br>Saber viver<br>Sozinho<br>E aprender a ser feliz assim<br><br>Eu preciso descobrir sentido<br>Mesmo onde aparentemente não exista<br><br>Eu preciso levantar<br>Mesmo quando desejo dormir eternamente<br><br>Eu preciso ser forte<br>Pois sou exemplo para eles<br>E sou espelho<br>E não tenho a opção de desistir<br><br>Eu preciso ser forte<br>Pois o dever é maior<br><br>E mesmo que doa<br>Que sinta sua falta <br>Que as lágrimas escorram todas manhãs<br>Que o coração acelere de dor e desespero<br><br>Mesmo assim<br>Não devo esmorecer<br>Ao contrário<br>Preciso encontrar forças em tudo que vivi e aprendi<br>Preciso encontrar paz no sentimentos que me acometem<br><br>Eu preciso usar isso<br>Para crescer<br>Amadurecer<br>Evoluir<br><br>Acho que nós dois precisamos<br>Pois sabemos que a felicidade não é desse mundo<br>Desse mundo só temos a chance de fazer um novo fim<br>Reavaliando e aprendendo com nossas escolhas<br>Mesmo que não gostemos de nossos começos<br><br>Sinto falta<br>Mas preciso muito<br>Saber viver uma vida sem arrependimentos<br><br>Por mim<br>E por eles<br>É essa força me fará seguir em frente<br><br>Hoje essa é a minha escolha<br>E luto que seja também amanhã<br>E sempre<br>Por mim<br>Por eles<br>E por nossa história</p>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>brew&gt; speedtest</title>
         <author>
@@ -266,35 +290,6 @@
                 <p>O MatterMost já chegou na versão 5.36, confira!</p>
 
 <p>Novidades da release<br><br>- <a href="https://mattermost.com/blog/mattermost-release-v5-36">https://mattermost.com/blog/mattermost-release-v5-36</a></p>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>Zammad 4.1</title>
-        <author>
-            <name>Guto Carvalho</name>
-        </author>
-        <link href="https://gutocarvalho.net/zammad-41/"/>
-        <id>https://gutocarvalho.net/zammad-41/</id>
-            <category term="Projetos"/>
-
-        <updated>2021-06-25T02:16:31-03:00</updated>
-            <summary>
-                <![CDATA[
-                        <img src="https://gutocarvalho.net/media/posts/30/team-zammad.jpg" alt="" />
-                    <p>Já saiu do forno o Zammad 4.1, cada vez melhor!<br><br></p>
-
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                    <img src="https://gutocarvalho.net/media/posts/30/team-zammad.jpg" alt="" />
-                <p>Já saiu do forno o Zammad 4.1, cada vez melhor!<br><br></p>
-
-<p>Eu inclusive já atualizei em alguns lugares, a release 4 está excelente!</p>
-<p>Mais informações:</p>
-<p><a href="https://zammad.com/en/releases/4-1">- https://zammad.com/en/releases/4-1</a><br>- <a href="https://github.com/zammad/zammad/blob/4.1.0/CHANGELOG.md">https://github.com/zammad/zammad/blob/4.1.0/CHANGELOG.md</a></p>
-<p> </p>
             ]]>
         </content>
     </entry>
