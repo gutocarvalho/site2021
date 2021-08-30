@@ -10,6 +10,22 @@
     },
     "items": [
         {
+            "id": "https://gutocarvalho.net/aerial-screensaver-opensource/",
+            "url": "https://gutocarvalho.net/aerial-screensaver-opensource/",
+            "title": "Aerial Screensaver",
+            "summary": "<p>Quer um screensaver maneiro pro Mac? Vai de Aerial!</p>\n",
+            "content_html": "<p>Quer um screensaver maneiro pro Mac? Vai de Aerial!</p>\n\n<p>O Aerial é baseado no conceito do AppleTV Screensaver, aquele esquema que mostra as localidades com um visual maravilhoso feito por drones ou voos de helicópteros.<br><br>O projeto é opensource e pode se encontrado nas URLs abaixo:<br><br>- <a href=\"#INTERNAL_LINK#/post/NaN\" target=\"_blank\" rel=\"noopener noreferrer\">https://aerialscreensaver.github.io/</a><br>- <a href=\"#INTERNAL_LINK#/post/NaN\" target=\"_blank\" rel=\"noopener noreferrer\">https://github.com/JohnCoates/Aerial</a><br><br>Dá uma olhadinha<br><br><div class=\"post__iframe\"><iframe loading=\"lazy\" width=\"640\" height=\"360\" src=\"https://player.vimeo.com/video/449330833?h=36becf3668&amp;title=0&amp;byline=0&amp;portrait=0\" frameborder=\"0\" allow=\"autoplay; fullscreen; picture-in-picture\" allowfullscreen=\"allowfullscreen\" data-mce-fragment=\"1\"></iframe></div>\n<p><br><br>Como instalo no MAC?<br><br><code>brew install --cask aerial</code><br><br>Dali pra frente é só usar e escolher os lindos lugares para seu screensaver.<br><br>O mais legal é que funciona com múltiplos monitores, isso significa que você pode ter diferentes visões em cada monitor.<br><br>Não usa mac? Não tem problema, seguem projetos similares</p>\n<p>Para windows =&gt; <a href=\"#INTERNAL_LINK#/post/null\" target=\"_blank\" rel=\"noopener noreferrer\">https://github.com/OrangeJedi/Aerial</a><br>Para linux =&gt; <a href=\"#INTERNAL_LINK#/post/null\" target=\"_blank\" rel=\"noopener noreferrer\">https://github.com/graysky2/xscreensaver-aerial/</a><br><br>[s]<br>Guto<br><br></p>",
+            "author": {
+                "name": "Guto Carvalho"
+            },
+            "tags": [
+                   "Tips",
+                   "Projetos"
+            ],
+            "date_published": "2021-08-30T13:38:49-03:00",
+            "date_modified": "2021-08-30T13:41:27-03:00"
+        },
+        {
             "id": "https://gutocarvalho.net/brewgreater-ncdu/",
             "url": "https://gutocarvalho.net/brewgreater-ncdu/",
             "title": "brew&gt; ncdu",
@@ -23,7 +39,7 @@
                    "Projetos"
             ],
             "date_published": "2021-08-29T23:13:11-03:00",
-            "date_modified": "2021-08-29T23:35:34-03:00"
+            "date_modified": "2021-08-30T13:33:14-03:00"
         },
         {
             "id": "https://gutocarvalho.net/live-rancher-26/",
@@ -38,7 +54,7 @@
                    "Projetos"
             ],
             "date_published": "2021-08-29T22:44:38-03:00",
-            "date_modified": "2021-08-29T22:45:29-03:00"
+            "date_modified": "2021-08-30T13:33:23-03:00"
         },
         {
             "id": "https://gutocarvalho.net/sinto-sua-falta/",
@@ -71,7 +87,7 @@
                    "Projetos"
             ],
             "date_published": "2021-07-31T16:37:25-03:00",
-            "date_modified": "2021-08-29T14:49:07-03:00"
+            "date_modified": "2021-08-30T13:33:36-03:00"
         },
         {
             "id": "https://gutocarvalho.net/brew-tipsgreater-broot/",
@@ -87,7 +103,7 @@
                    "Projetos"
             ],
             "date_published": "2021-07-31T14:55:54-03:00",
-            "date_modified": "2021-08-29T14:49:59-03:00"
+            "date_modified": "2021-08-30T13:33:41-03:00"
         },
         {
             "id": "https://gutocarvalho.net/videos-cdcon/",
@@ -148,21 +164,6 @@
             ],
             "date_published": "2021-06-26T00:01:57-03:00",
             "date_modified": "2021-06-26T16:25:41-03:00"
-        },
-        {
-            "id": "https://gutocarvalho.net/lognumber20210625/",
-            "url": "https://gutocarvalho.net/lognumber20210625/",
-            "title": "Log.Number.2021.06.25",
-            "summary": "<p>Hoje é um daqueles dias que e eu não gostaria de ter acordado :(</p>\n",
-            "content_html": "<p>Hoje é um daqueles dias que e eu não gostaria de ter acordado :(</p>\n\n<p>E ontem, acho que também foi<br><br>Me sinto tão estranho nos últimos dias<br><br>Sentir tem sido difícil, inclusive interpretar sentimentos fluindo no ritmo que desejam<br><br>Olho e parece que as coisas não encaixam, que não fazem sentido<br><br>Não importa se vou para esquerda, direita, se volto ou se sigo em frente, todos os caminhos me parecem errados, todos parecem sem sentido, todos parecem que não valem a pena<br><br>A única coisa que sinto de forma clara é que nada está funcionando<br><br>Absolutamente nada<br><br>Parece que tudo esta quebrado, o mundo, a sociedade e eu<br><br>Sinto saudades do filhos, e já nem entendo mais pq estamos distantes<br><br>Sinto saudades de me sentir bem<br><br>Sinto saudades de passar pelo menos alguns momentos do dia sem ter que administrar algum conflito<br><br>Sinto e acredito que não sou uma boa companhia<br><br>Sinto e acredito que não sou um bom exemplo para eles ou para qualquer um<br><br>Sinto que estou amargo e que transpareço essa amargura<br><br>Sinto que não sou desejado<br><br>Sinto saudades do amor, de amar, de ser amado<br><br>Sinto a decepção das pessoas com meu momento atual, como se tivesse que ser sempre aquele cara alegre e pronto pra tudo<br><br>Sinto que minha sinceridade fere<br><br>Sinto que meu pragmatismo ofende<br><br>Sinto que meu distanciamento gera fúria e decepção<br><br>Sinto que minha paciência para o mundo acabou, mas ao mesmo tempo não consigo descer<br><br>Sinto a dor do mundo e parece que meu mundo é apenas isso, dor, decepção, fracasso e sentimentos conflituosos<br><br>Sinto tanta coisa e ao mesmo tempo parece que eu não sinto nada<br><br>Ainda assim, acordo, levanto, tomo banho, escovo os dentes e sigo, ainda não sei para onde, mas sigo<br><br>Só me pergunto por quanto tempo ainda vou conseguir acordar, abrir os olhos e seguir<br><br>Sinto que o momento de não querer mais levantar está próximo e ainda não sei bem como vou lidar com esse dia ou como irão lidar com esse dia<br><br>Eu e minha sombra estamos travando lutas contraditórias e já percebemos esse paradoxo</p>\n<p>Ainda caminho, sendo o que dá para ser, vivendo o que dá para viver, sentindo o que dá para sentir, sem muita exigências</p>\n<p>E vamos até onde der pé nessa piscina de desilusões infinitas e constantes<br><br>[ s ]</p>",
-            "author": {
-                "name": "Guto Carvalho"
-            },
-            "tags": [
-                   "Alma"
-            ],
-            "date_published": "2021-06-25T23:39:52-03:00",
-            "date_modified": "2021-06-26T00:34:27-03:00"
         }
     ]
 }
