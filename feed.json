@@ -10,6 +10,22 @@
     },
     "items": [
         {
+            "id": "https://gutocarvalho.net/brewgreater-ncdu/",
+            "url": "https://gutocarvalho.net/brewgreater-ncdu/",
+            "title": "brew&gt; ncdu",
+            "summary": "<p>Bora visualizar o espaço em disco de um jeitinho visual no terminal?<br><br></p>\n",
+            "content_html": "<p>Bora visualizar o espaço em disco de um jeitinho visual no terminal?<br><br></p>\n\n<p>Instalando via brew</p>\n<p><code>$ brew install ncdu</code><br><br>Executando</p>\n<p><code>$ ncdu</code><br><br>Veja a saída </p>\n<p>\n<script id=\"asciicast-xuwkzyAGvCztUsLH45g12WdUW\" src=\"https://asciinema.org/a/xuwkzyAGvCztUsLH45g12WdUW.js\" async=\"\"></script>\n</p>",
+            "author": {
+                "name": "Guto Carvalho"
+            },
+            "tags": [
+                   "Tips",
+                   "Projetos"
+            ],
+            "date_published": "2021-08-29T23:13:11-03:00",
+            "date_modified": "2021-08-29T23:35:34-03:00"
+        },
+        {
             "id": "https://gutocarvalho.net/live-rancher-26/",
             "url": "https://gutocarvalho.net/live-rancher-26/",
             "title": "Live Rancher 2.6",
@@ -147,21 +163,6 @@
             ],
             "date_published": "2021-06-25T23:39:52-03:00",
             "date_modified": "2021-06-26T00:34:27-03:00"
-        },
-        {
-            "id": "https://gutocarvalho.net/live-gitlab-14/",
-            "url": "https://gutocarvalho.net/live-gitlab-14/",
-            "title": "Live GitLab 14",
-            "summary": "<p>Fizemos uma live sobre as novidades do GitLab 14 no dia 24/06 as 16:30</p>\n",
-            "content_html": "<p>Fizemos uma live sobre as novidades do GitLab 14 no dia 24/06 as 16:30</p>\n\n<p>Eu, Adriano Silva da EBC e Hugo Azevedo da GitLab estivemos presentes!</p>\n<figure class=\"post__video\"><iframe loading=\"lazy\" width=\"560\" height=\"314\" src=\"https://www.youtube.com/embed/JU1Br4M_duk\" allowfullscreen=\"allowfullscreen\" data-mce-fragment=\"1\"></iframe></figure>\n<p>:)</p>",
-            "author": {
-                "name": "Guto Carvalho"
-            },
-            "tags": [
-                   "Lives"
-            ],
-            "date_published": "2021-06-25T02:01:55-03:00",
-            "date_modified": "2021-06-25T02:12:12-03:00"
         }
     ]
 }
