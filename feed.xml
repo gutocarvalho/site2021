@@ -3,12 +3,37 @@
     <title>Guto@Site</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2021-08-29T14:51:25-03:00</updated>
+    <updated>2021-08-29T22:45:29-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
     <id>https://gutocarvalho.net</id>
 
+    <entry>
+        <title>Live Rancher 2.6</title>
+        <author>
+            <name>Guto Carvalho</name>
+        </author>
+        <link href="https://gutocarvalho.net/live-rancher-26/"/>
+        <id>https://gutocarvalho.net/live-rancher-26/</id>
+            <category term="Projetos"/>
+
+        <updated>2021-08-29T22:45:29-03:00</updated>
+            <summary>
+                <![CDATA[
+                    <p>Live de lançamento do Rancher 2.6 no dia 15 de Setembro, bora!</p>
+
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p>Live de lançamento do Rancher 2.6 no dia 15 de Setembro, bora!</p>
+
+<p><a href="https://more.suse.com/RancherSept2021OnlineMeetup.html">https://more.suse.com/RancherSept2021OnlineMeetup.html</a></p>
+<p>Se inscreva!<br><br>[s]</p>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>Sinto falta</title>
         <author>
@@ -273,29 +298,6 @@
 <p>Eu, Adriano Silva da EBC e Hugo Azevedo da GitLab estivemos presentes!</p>
 <figure class="post__video"><iframe loading="lazy" width="560" height="314" src="https://www.youtube.com/embed/JU1Br4M_duk" allowfullscreen="allowfullscreen" data-mce-fragment="1"></iframe></figure>
 <p>:)</p>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>MatterMost 5.36</title>
-        <author>
-            <name>Guto Carvalho</name>
-        </author>
-        <link href="https://gutocarvalho.net/mattermost-536/"/>
-        <id>https://gutocarvalho.net/mattermost-536/</id>
-
-        <updated>2021-06-25T02:02:35-03:00</updated>
-            <summary>
-                <![CDATA[
-                    <p>O MatterMost já chegou na versão 5.36, confira!</p>
-
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                <p>O MatterMost já chegou na versão 5.36, confira!</p>
-
-<p>Novidades da release<br><br>- <a href="https://mattermost.com/blog/mattermost-release-v5-36">https://mattermost.com/blog/mattermost-release-v5-36</a></p>
             ]]>
         </content>
     </entry>

@@ -10,6 +10,21 @@
     },
     "items": [
         {
+            "id": "https://gutocarvalho.net/live-rancher-26/",
+            "url": "https://gutocarvalho.net/live-rancher-26/",
+            "title": "Live Rancher 2.6",
+            "summary": "<p>Live de lançamento do Rancher 2.6 no dia 15 de Setembro, bora!</p>\n",
+            "content_html": "<p>Live de lançamento do Rancher 2.6 no dia 15 de Setembro, bora!</p>\n\n<p><a href=\"https://more.suse.com/RancherSept2021OnlineMeetup.html\">https://more.suse.com/RancherSept2021OnlineMeetup.html</a></p>\n<p>Se inscreva!<br><br>[s]</p>",
+            "author": {
+                "name": "Guto Carvalho"
+            },
+            "tags": [
+                   "Projetos"
+            ],
+            "date_published": "2021-08-29T22:44:38-03:00",
+            "date_modified": "2021-08-29T22:45:29-03:00"
+        },
+        {
             "id": "https://gutocarvalho.net/sinto-sua-falta/",
             "url": "https://gutocarvalho.net/sinto-sua-falta/",
             "title": "Sinto falta",
@@ -147,20 +162,6 @@
             ],
             "date_published": "2021-06-25T02:01:55-03:00",
             "date_modified": "2021-06-25T02:12:12-03:00"
-        },
-        {
-            "id": "https://gutocarvalho.net/mattermost-536/",
-            "url": "https://gutocarvalho.net/mattermost-536/",
-            "title": "MatterMost 5.36",
-            "summary": "<p>O MatterMost já chegou na versão 5.36, confira!</p>\n",
-            "content_html": "<p>O MatterMost já chegou na versão 5.36, confira!</p>\n\n<p>Novidades da release<br><br>- <a href=\"https://mattermost.com/blog/mattermost-release-v5-36\">https://mattermost.com/blog/mattermost-release-v5-36</a></p>",
-            "author": {
-                "name": "Guto Carvalho"
-            },
-            "tags": [
-            ],
-            "date_published": "2021-06-25T01:51:04-03:00",
-            "date_modified": "2021-06-25T02:02:35-03:00"
         }
     ]
 }
