@@ -10,8 +10,8 @@
     },
     "items": [
         {
-            "id": "https://gutocarvalho.net/instalando-metric-server-2/",
-            "url": "https://gutocarvalho.net/instalando-metric-server-2/",
+            "id": "https://gutocarvalho.net/instalando-metricserver/",
+            "url": "https://gutocarvalho.net/instalando-metricserver/",
             "title": "Instalando o metric server no k8s",
             "summary": "<p>Aprenda a instalar o agregador de métricas em seu cluster.</p>\n",
             "content_html": "<p>Aprenda a instalar o agregador de métricas em seu cluster.</p>\n\n<p><strong>Para que serve?</strong><br><br>O Metric server é um agregador de informações sobre os recursos utilizados em seu cluster. Uma vez instalado ele ai expor essas informações via APIServer.<br><br>O Metric server é em especial importante para usar recursos de escalabilidade horizontal e vertical de PODs dentro do seu cluster K8S, tal como HPA e VPA.<br><br>Em alguns provedores como AWS EKS ele não é instalado por padrão.<br><br><strong>Como eu instalo em meu cluster?<br><br></strong><code>$ kubectl apply -f https://github.com/kubernetes-sigs/metrics-server/releases/latest/download/components.yaml</code><br><br><strong>Verificando se está instalado<br></strong><br><code>$ kubectl get deployment metrics-server -n kube-system</code><br><br><strong>Refs </strong><br><br>- <a href=\"https://docs.aws.amazon.com/eks/latest/userguide/metrics-server.html\" target=\"_blank\" rel=\"noopener\">https://docs.aws.amazon.com/eks/latest/userguide/metrics-server.html</a><br>- <a href=\"https://github.com/kubernetes-sigs/metrics-server\" target=\"_blank\" rel=\"noopener\">https://github.com/kubernetes-sigs/metrics-server</a></p>",
@@ -24,7 +24,7 @@
                    "MindNotes"
             ],
             "date_published": "2021-09-23T15:43:50-03:00",
-            "date_modified": "2021-09-23T15:44:25-03:00"
+            "date_modified": "2021-09-23T16:26:52-03:00"
         },
         {
             "id": "https://gutocarvalho.net/aerial-screensaver-opensource/",
