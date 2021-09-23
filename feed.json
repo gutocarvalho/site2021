@@ -10,6 +10,23 @@
     },
     "items": [
         {
+            "id": "https://gutocarvalho.net/instalando-metric-server-2/",
+            "url": "https://gutocarvalho.net/instalando-metric-server-2/",
+            "title": "Instalando o metric server no k8s",
+            "summary": "<p>Aprenda a instalar o agregador de métricas em seu cluster.</p>\n",
+            "content_html": "<p>Aprenda a instalar o agregador de métricas em seu cluster.</p>\n\n<p><strong>Para que serve?</strong><br><br>O Metric server é um agregador de informações sobre os recursos utilizados em seu cluster. Uma vez instalado ele ai expor essas informações via APIServer.<br><br>O Metric server é em especial importante para usar recursos de escalabilidade horizontal e vertical de PODs dentro do seu cluster K8S, tal como HPA e VPA.<br><br>Em alguns provedores como AWS EKS ele não é instalado por padrão.<br><br><strong>Como eu instalo em meu cluster?<br><br></strong><code>$ kubectl apply -f https://github.com/kubernetes-sigs/metrics-server/releases/latest/download/components.yaml</code><br><br><strong>Verificando se está instalado<br></strong><br><code>$ kubectl get deployment metrics-server -n kube-system</code><br><br><strong>Refs </strong><br><br>- <a href=\"https://docs.aws.amazon.com/eks/latest/userguide/metrics-server.html\" target=\"_blank\" rel=\"noopener\">https://docs.aws.amazon.com/eks/latest/userguide/metrics-server.html</a><br>- <a href=\"https://github.com/kubernetes-sigs/metrics-server\" target=\"_blank\" rel=\"noopener\">https://github.com/kubernetes-sigs/metrics-server</a></p>",
+            "author": {
+                "name": "Guto Carvalho"
+            },
+            "tags": [
+                   "Tips",
+                   "Projetos",
+                   "MindNotes"
+            ],
+            "date_published": "2021-09-23T15:43:50-03:00",
+            "date_modified": "2021-09-23T15:44:25-03:00"
+        },
+        {
             "id": "https://gutocarvalho.net/aerial-screensaver-opensource/",
             "url": "https://gutocarvalho.net/aerial-screensaver-opensource/",
             "title": "Aerial Screensaver",
@@ -149,21 +166,6 @@
             ],
             "date_published": "2021-06-26T17:50:09-03:00",
             "date_modified": "2021-06-26T18:26:30-03:00"
-        },
-        {
-            "id": "https://gutocarvalho.net/respeito-nao-se-discute-se-tem/",
-            "url": "https://gutocarvalho.net/respeito-nao-se-discute-se-tem/",
-            "title": "Respeito não se discute",
-            "summary": "<p>Ontem eu demiti um cliente, e o faria hoje novamente</p>\n",
-            "content_html": "<p>Ontem eu demiti um cliente, e o faria hoje novamente</p>\n\n<p>Demiti pois ele não tinha respeito com nossa equipe, com nossa empresa e com a nossa história<br><br>Demiti pois ele não tinha respeito pelo próximo<br><br>Demiti pois ele não tinha respeito por si mesmo<br><br>O fiz, mas não fiquei feliz com isso<br><br>Não estou feliz pois estamos em 2021 e ainda temos que fazer isso<br><br>Não estou feliz pois ainda tem gente que defende tal comportamento alegando ser o \"jeito\" da pessoa<br><br>Jeito? <br><br>Que jeito?<br><br>Arrogância é jeito?<br><br>Falta de respeito é jeito?<br><br>Intimidação é jeito?<br><br>Assediar é jeito?<br><br>Coagir é jeito?<br><br>Humilhar é jeito?<br><br>Não, eu afirmo que não é.<br><br>Parem de proteger esse tipo comportamento e esse tipo de pessoa, parem de alegar que esse é o jeito dele ou dela, isso não existe gente.<br><br>Isso não é jeito, o nome disse é <strong>ABUSO</strong>.<br><br>Eu vou dizer uma coisa para vocês sobre o meio profissional, na TI, ou fora dela.<br><br><strong>Respeito é um princípio que não dá para discutir.</strong><br><br><strong>Respeito é um princípio que não dá para abrir mão.</strong><br><br>Respeito se tem, e falta dele não é aceitável, não mais, aliás nunca foi, mas hoje, especialmente em 2021, não mais.<br><br>Quem não sabe exercitar e praticar o respeito não deveria ter o direito sequer de dialogar com outro ser humano.<br><br>Não aceite abuso, nao aceite falta de respeito, não importa se é seu cliente, gestor, aluno, fornecedor, vizinho, amigo ou familiar.<br><br>NÃO ACEITE!</p>",
-            "author": {
-                "name": "Guto Carvalho"
-            },
-            "tags": [
-                   "FalaGutera"
-            ],
-            "date_published": "2021-06-26T00:01:57-03:00",
-            "date_modified": "2021-06-26T16:25:41-03:00"
         }
     ]
 }

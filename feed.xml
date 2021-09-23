@@ -3,12 +3,38 @@
     <title>Guto@Site</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2021-08-30T13:41:27-03:00</updated>
+    <updated>2021-09-23T15:44:25-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
     <id>https://gutocarvalho.net</id>
 
+    <entry>
+        <title>Instalando o metric server no k8s</title>
+        <author>
+            <name>Guto Carvalho</name>
+        </author>
+        <link href="https://gutocarvalho.net/instalando-metric-server-2/"/>
+        <id>https://gutocarvalho.net/instalando-metric-server-2/</id>
+            <category term="Tips"/>
+            <category term="Projetos"/>
+            <category term="MindNotes"/>
+
+        <updated>2021-09-23T15:44:25-03:00</updated>
+            <summary>
+                <![CDATA[
+                    <p>Aprenda a instalar o agregador de métricas em seu cluster.</p>
+
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p>Aprenda a instalar o agregador de métricas em seu cluster.</p>
+
+<p><strong>Para que serve?</strong><br><br>O Metric server é um agregador de informações sobre os recursos utilizados em seu cluster. Uma vez instalado ele ai expor essas informações via APIServer.<br><br>O Metric server é em especial importante para usar recursos de escalabilidade horizontal e vertical de PODs dentro do seu cluster K8S, tal como HPA e VPA.<br><br>Em alguns provedores como AWS EKS ele não é instalado por padrão.<br><br><strong>Como eu instalo em meu cluster?<br><br></strong><code>$ kubectl apply -f https://github.com/kubernetes-sigs/metrics-server/releases/latest/download/components.yaml</code><br><br><strong>Verificando se está instalado<br></strong><br><code>$ kubectl get deployment metrics-server -n kube-system</code><br><br><strong>Refs </strong><br><br>- <a href="https://docs.aws.amazon.com/eks/latest/userguide/metrics-server.html" target="_blank" rel="noopener">https://docs.aws.amazon.com/eks/latest/userguide/metrics-server.html</a><br>- <a href="https://github.com/kubernetes-sigs/metrics-server" target="_blank" rel="noopener">https://github.com/kubernetes-sigs/metrics-server</a></p>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>Aerial Screensaver</title>
         <author>
@@ -279,30 +305,6 @@
 <p>Hoje vivemos mais tempo, mas quebramos bem antes, basta ver as pandemias silenciosas que assolam nosso mundo hoje.</p>
 <p>A OMS disse em 2020 que mais de 300 milhões de pessoas no mundo sofrem algum tipo de depressão e transtorno, e mais de 800 mil que sofrem com isso enceraram suas vidas todo ano. E essa silenciosa e dolorosa pandemia mata mais pessoas de 15 a 29 anos.<br><br>Então se você tem 40, celebre! <br><br>Se permita sentir esse milestone<br><br>Se permita respeitar suas experiências adquiridas<br><br>Se permita sentir o tempo de vida que alcançou e se respeitar.<br><br>Se você acha que está velho, tudo bem.</p>
 <p>Se se acha novo, tudo bem também, melhor ainda.<br><br>Só lembre-se de respeitar tudo o que você adquiriu, afinal, isso tem muito valor.<br><br>O importante é entender que independente do que você esteja sentindo, sinta pelo menos que a vida vale a pena!<br><br>[s]</p>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>Respeito não se discute</title>
-        <author>
-            <name>Guto Carvalho</name>
-        </author>
-        <link href="https://gutocarvalho.net/respeito-nao-se-discute-se-tem/"/>
-        <id>https://gutocarvalho.net/respeito-nao-se-discute-se-tem/</id>
-            <category term="FalaGutera"/>
-
-        <updated>2021-06-26T16:25:41-03:00</updated>
-            <summary>
-                <![CDATA[
-                    <p>Ontem eu demiti um cliente, e o faria hoje novamente</p>
-
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                <p>Ontem eu demiti um cliente, e o faria hoje novamente</p>
-
-<p>Demiti pois ele não tinha respeito com nossa equipe, com nossa empresa e com a nossa história<br><br>Demiti pois ele não tinha respeito pelo próximo<br><br>Demiti pois ele não tinha respeito por si mesmo<br><br>O fiz, mas não fiquei feliz com isso<br><br>Não estou feliz pois estamos em 2021 e ainda temos que fazer isso<br><br>Não estou feliz pois ainda tem gente que defende tal comportamento alegando ser o "jeito" da pessoa<br><br>Jeito? <br><br>Que jeito?<br><br>Arrogância é jeito?<br><br>Falta de respeito é jeito?<br><br>Intimidação é jeito?<br><br>Assediar é jeito?<br><br>Coagir é jeito?<br><br>Humilhar é jeito?<br><br>Não, eu afirmo que não é.<br><br>Parem de proteger esse tipo comportamento e esse tipo de pessoa, parem de alegar que esse é o jeito dele ou dela, isso não existe gente.<br><br>Isso não é jeito, o nome disse é <strong>ABUSO</strong>.<br><br>Eu vou dizer uma coisa para vocês sobre o meio profissional, na TI, ou fora dela.<br><br><strong>Respeito é um princípio que não dá para discutir.</strong><br><br><strong>Respeito é um princípio que não dá para abrir mão.</strong><br><br>Respeito se tem, e falta dele não é aceitável, não mais, aliás nunca foi, mas hoje, especialmente em 2021, não mais.<br><br>Quem não sabe exercitar e praticar o respeito não deveria ter o direito sequer de dialogar com outro ser humano.<br><br>Não aceite abuso, nao aceite falta de respeito, não importa se é seu cliente, gestor, aluno, fornecedor, vizinho, amigo ou familiar.<br><br>NÃO ACEITE!</p>
             ]]>
         </content>
     </entry>
