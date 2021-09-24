@@ -3,7 +3,7 @@
     <title>Guto@Site</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2021-09-23T16:26:52-03:00</updated>
+    <updated>2021-09-24T09:25:43-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
@@ -16,11 +16,11 @@
         </author>
         <link href="https://gutocarvalho.net/instalando-metricserver/"/>
         <id>https://gutocarvalho.net/instalando-metricserver/</id>
-            <category term="Tips"/>
             <category term="Projetos"/>
             <category term="MindNotes"/>
+            <category term="K8S"/>
 
-        <updated>2021-09-23T16:26:52-03:00</updated>
+        <updated>2021-09-24T09:25:43-03:00</updated>
             <summary>
                 <![CDATA[
                     <p>Aprenda a instalar o agregador de métricas em seu cluster.</p>
