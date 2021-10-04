@@ -3,7 +3,7 @@
     <title>Guto@Site</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2021-10-04T10:20:14-03:00</updated>
+    <updated>2021-10-04T10:21:12-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
@@ -16,8 +16,10 @@
         </author>
         <link href="https://gutocarvalho.net/wiki-open-source-moderna/"/>
         <id>https://gutocarvalho.net/wiki-open-source-moderna/</id>
+            <category term="Tips"/>
+            <category term="Projetos"/>
 
-        <updated>2021-10-04T10:20:14-03:00</updated>
+        <updated>2021-10-04T10:21:12-03:00</updated>
             <summary>
                 <![CDATA[
                     <p>Conheça uma wiki open source <strong>modernosa</strong> que vai te surpreender!</p>
@@ -39,8 +41,10 @@
         </author>
         <link href="https://gutocarvalho.net/chats-open-source/"/>
         <id>https://gutocarvalho.net/chats-open-source/</id>
+            <category term="Tips"/>
+            <category term="Projetos"/>
 
-        <updated>2021-10-04T09:49:49-03:00</updated>
+        <updated>2021-10-04T10:21:04-03:00</updated>
             <summary>
                 <![CDATA[
                     <p>Lista de projetos open source para chat corporativo.</p>
@@ -65,8 +69,10 @@
         </author>
         <link href="https://gutocarvalho.net/gerenciadores-de-senha-open-source/"/>
         <id>https://gutocarvalho.net/gerenciadores-de-senha-open-source/</id>
+            <category term="Tips"/>
+            <category term="Projetos"/>
 
-        <updated>2021-10-04T09:30:42-03:00</updated>
+        <updated>2021-10-04T10:20:56-03:00</updated>
             <summary>
                 <![CDATA[
                     <p>Lista de projetos open source para gerenciar suas senhas!</p>
