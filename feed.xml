@@ -3,12 +3,38 @@
     <title>Guto@Site</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2021-10-04T09:30:42-03:00</updated>
+    <updated>2021-10-04T09:49:49-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
     <id>https://gutocarvalho.net</id>
 
+    <entry>
+        <title>Chats open source e self-hosted</title>
+        <author>
+            <name>Guto Carvalho</name>
+        </author>
+        <link href="https://gutocarvalho.net/chats-open-source/"/>
+        <id>https://gutocarvalho.net/chats-open-source/</id>
+
+        <updated>2021-10-04T09:49:49-03:00</updated>
+            <summary>
+                <![CDATA[
+                    <p>Lista de projetos open source para chat corporativo.</p>
+
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p>Lista de projetos open source para chat corporativo.</p>
+
+<p>Novamente buscando novas tecnologias para minha stack, quero sair das – já batidas – opções existentes.</p>
+<p>Hoje temos os open source mais famosinhos, criados como alternativa ao closed source <strong>slack</strong>.<br><br>- <a href="https://mattermost.com">https://mattermost.com</a> ( usei por anos, até a semana passada )<br>- <a href="https://rocket.chat">https://rocket.chat</a> ( projeto brazuca bem legal )</p>
+<p>Recentemente pesquisando pelo RIOT, app que usava o protocolo Matrix, descobri que ele foi rebatizado como Element, vale a pena conhecer!<br><br>- <a href="https://element.io/">https://element.io</a><br><br>Outra que vale a menção é o Corteza, que é um framework maior, mas tem um módulo de chat.<br><br>- <a href="https://cortezaproject.org/technology/core/corteza-messaging/">https://cortezaproject.org/technology/core/corteza-messaging/</a></p>
+<p>Esses dois estão na minha fila para testar, quando entender como funcionam eu posto aqui.<br><br>Ah, e caso não conheça o projeto <a href="https://matrix.org/" target="_blank" rel="noopener noreferrer">Matrix.org</a>, vai lá visitar.<br><br>[s]<br>Guto<br><br>P.s: Conhece algum outro open source e self hosted? Manda aí nos comentários :)<br><br></p>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>Gerenciadores de senha open source</title>
         <author>
@@ -256,33 +282,6 @@
 <p><code>$ br</code></p>
 <p>:)</p>
 <p> </p>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>Vídeos CDCON</title>
-        <author>
-            <name>Guto Carvalho</name>
-        </author>
-        <link href="https://gutocarvalho.net/videos-cdcon/"/>
-        <id>https://gutocarvalho.net/videos-cdcon/</id>
-            <category term="Eventos"/>
-
-        <updated>2021-07-15T22:14:57-03:00</updated>
-            <summary>
-                <![CDATA[
-                    <p>Os vídeos da CDCON e GitOps Summit já estão no ar!</p>
-
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                <p>Os vídeos da CDCON e GitOps Summit já estão no ar!</p>
-
-<p>#cdCon <a href="https://hubs.la/H0SmGky0">https://hubs.la/H0SmGky0</a></p>
-<p>#GitOpsSummit <a href="https://hubs.la/H0SmG7z0">https://hubs.la/H0SmG7z0</a></p>
-<p> </p>
-<p>[s]<br>Guto</p>
             ]]>
         </content>
     </entry>

@@ -10,6 +10,20 @@
     },
     "items": [
         {
+            "id": "https://gutocarvalho.net/chats-open-source/",
+            "url": "https://gutocarvalho.net/chats-open-source/",
+            "title": "Chats open source e self-hosted",
+            "summary": "<p>Lista de projetos open source para chat corporativo.</p>\n",
+            "content_html": "<p>Lista de projetos open source para chat corporativo.</p>\n\n<p>Novamente buscando novas tecnologias para minha stack, quero sair das – já batidas – opções existentes.</p>\n<p>Hoje temos os open source mais famosinhos, criados como alternativa ao closed source <strong>slack</strong>.<br><br>- <a href=\"https://mattermost.com\">https://mattermost.com</a> ( usei por anos, até a semana passada )<br>- <a href=\"https://rocket.chat\">https://rocket.chat</a> ( projeto brazuca bem legal )</p>\n<p>Recentemente pesquisando pelo RIOT, app que usava o protocolo Matrix, descobri que ele foi rebatizado como Element, vale a pena conhecer!<br><br>- <a href=\"https://element.io/\">https://element.io</a><br><br>Outra que vale a menção é o Corteza, que é um framework maior, mas tem um módulo de chat.<br><br>- <a href=\"https://cortezaproject.org/technology/core/corteza-messaging/\">https://cortezaproject.org/technology/core/corteza-messaging/</a></p>\n<p>Esses dois estão na minha fila para testar, quando entender como funcionam eu posto aqui.<br><br>Ah, e caso não conheça o projeto <a href=\"https://matrix.org/\" target=\"_blank\" rel=\"noopener noreferrer\">Matrix.org</a>, vai lá visitar.<br><br>[s]<br>Guto<br><br>P.s: Conhece algum outro open source e self hosted? Manda aí nos comentários :)<br><br></p>",
+            "author": {
+                "name": "Guto Carvalho"
+            },
+            "tags": [
+            ],
+            "date_published": "2021-10-04T09:49:49-03:00",
+            "date_modified": "2021-10-04T09:49:49-03:00"
+        },
+        {
             "id": "https://gutocarvalho.net/gerenciadores-de-senha-open-source/",
             "url": "https://gutocarvalho.net/gerenciadores-de-senha-open-source/",
             "title": "Gerenciadores de senha open source",
@@ -150,21 +164,6 @@
             ],
             "date_published": "2021-07-31T14:55:54-03:00",
             "date_modified": "2021-08-30T13:33:41-03:00"
-        },
-        {
-            "id": "https://gutocarvalho.net/videos-cdcon/",
-            "url": "https://gutocarvalho.net/videos-cdcon/",
-            "title": "Vídeos CDCON",
-            "summary": "<p>Os vídeos da CDCON e GitOps Summit já estão no ar!</p>\n",
-            "content_html": "<p>Os vídeos da CDCON e GitOps Summit já estão no ar!</p>\n\n<p>#cdCon <a href=\"https://hubs.la/H0SmGky0\">https://hubs.la/H0SmGky0</a></p>\n<p>#GitOpsSummit <a href=\"https://hubs.la/H0SmG7z0\">https://hubs.la/H0SmG7z0</a></p>\n<p> </p>\n<p>[s]<br>Guto</p>",
-            "author": {
-                "name": "Guto Carvalho"
-            },
-            "tags": [
-                   "Eventos"
-            ],
-            "date_published": "2021-07-15T22:13:27-03:00",
-            "date_modified": "2021-07-15T22:14:57-03:00"
         }
     ]
 }
