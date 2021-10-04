@@ -10,6 +10,20 @@
     },
     "items": [
         {
+            "id": "https://gutocarvalho.net/gerenciadores-de-senha-open-source/",
+            "url": "https://gutocarvalho.net/gerenciadores-de-senha-open-source/",
+            "title": "Gerenciadores de senha open source",
+            "summary": "<p>Lista de projetos open source para gerenciar suas senhas!</p>\n",
+            "content_html": "<p>Lista de projetos open source para gerenciar suas senhas!</p>\n\n<p>Eu normalmente utilizo o <strong>Passbolt</strong> em meus projetos, mas estou em um fase de renovar minha stack, sendo assim segue uma listinha de algumas que ainda quero testar:</p>\n<p>- <a href=\"https://padloc.app\">https://padloc.app</a><br>- <a href=\"https://bitwarden.com\">https://bitwarden.com</a><br>- <a href=\"https://lesspass.com/#/\">https://lesspass.com</a><br>- <a href=\"https://passit.io\">https://passit.io</a><br>- <a href=\"http://syspass.org/en\">http://syspass.org/en</a><br><br>E quem não conhece o Passbolt, segue:<br><br>- <a href=\"https://www.passbolt.com\">https://www.passbolt.com</a><br><br>[s]<br>Guto</p>",
+            "author": {
+                "name": "Guto Carvalho"
+            },
+            "tags": [
+            ],
+            "date_published": "2021-10-04T09:19:57-03:00",
+            "date_modified": "2021-10-04T09:20:54-03:00"
+        },
+        {
             "id": "https://gutocarvalho.net/reparando-disco-no-mac/",
             "url": "https://gutocarvalho.net/reparando-disco-no-mac/",
             "title": "Reparando disco no mac",
@@ -151,21 +165,6 @@
             ],
             "date_published": "2021-07-15T22:13:27-03:00",
             "date_modified": "2021-07-15T22:14:57-03:00"
-        },
-        {
-            "id": "https://gutocarvalho.net/nao-celebre-mortes/",
-            "url": "https://gutocarvalho.net/nao-celebre-mortes/",
-            "title": "Não celebre mortes!",
-            "summary": "<p>A morte de alguém pelas mão dos <strong>Estado</strong> não deve ser aplaudida.</p>\n",
-            "content_html": "<p>A morte de alguém pelas mão dos <strong>Estado</strong> não deve ser aplaudida.</p>\n\n<p>O <strong>Estado</strong> deveria amparar;</p>\n<p>O <strong>Estado</strong> deveria dar condições dignas de vida;<br><br>O <strong>Estado</strong> deveria oferecer justiça e igualdade a todos;</p>\n<p>O <strong>Estado</strong> deveria acolher e gerar oportunidades;<br><br>O <strong>Estado</strong> deveria acabar com a miséria, pobreza e resolver conflitos;</p>\n<p>O <strong>Estado</strong> <strong>não</strong> deveria matar;</p>\n<p>A autoridade policial <strong>não</strong> deveria matar;<br><br>A Polícia deveria servir e proteger;<br><br>A Polícia deveria apoiar na educação dos direitos e deveres;<br><br>E mesmo um indivíduo doente deveria ser amparado e tratado pelo Estado;</p>\n<p>Em especial em um Estado em que isso tudo está em sua Constituição;<br><br>E por tudo isso, repito, uma pessoa não deveria morrer pelas mãos do Estado, jamais, independente do crime;<br><br>E digo isso com a certeza de que ela foi a primeira <strong>vítima</strong> de uma sociedade que não a acolheu, não  a tratou e que não lhe proveu as garantias – <strong>mínimas</strong> – de sua própria Constituição Federal;<br><br>Por isso eu peço, não celebre a morte, ao contrário, reflita sobre as falhas e as injustiças da sociedade que criaram aquele que foi morto;</p>\n<p>Ninguém nasce bom ou mal, ninguém nasce engenheiro, juiz, médico ou assassino, essas pessoas são fruto da sociedade em que vivemos, você pode ser o médico ou o assassino, só depende das oportunidades, ou neste caso na falta delas;<br><br>Toda a força as famílias que foram maculadas, ainda assim, o Estado não deveria matar, deveria educar, proteger, tratar e prover;<br><br>Tirar uma vida não restaura outra.</p>\n<p>Reflita!</p>",
-            "author": {
-                "name": "Guto Carvalho"
-            },
-            "tags": [
-                   "FalaGutera"
-            ],
-            "date_published": "2021-06-29T19:14:48-03:00",
-            "date_modified": "2021-06-29T21:13:23-03:00"
         }
     ]
 }
