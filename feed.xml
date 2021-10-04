@@ -3,12 +3,33 @@
     <title>Guto@Site</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2021-10-04T09:49:49-03:00</updated>
+    <updated>2021-10-04T10:16:27-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
     <id>https://gutocarvalho.net</id>
 
+    <entry>
+        <title>Wiki open source moderna</title>
+        <author>
+            <name>Guto Carvalho</name>
+        </author>
+        <link href="https://gutocarvalho.net/wiki-open-source-moderna/"/>
+        <id>https://gutocarvalho.net/wiki-open-source-moderna/</id>
+
+        <updated>2021-10-04T10:16:27-03:00</updated>
+            <summary>
+                <![CDATA[
+                    Conheça uma wiki open source modernosa que vai te surpreender! Depois de muitos anos usando o dokuwiki como ferramenta principal&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p>Conheça uma wiki open source <strong>modernosa</strong> que vai te surpreender!</p>
+<p>Depois de muitos anos usando o <strong>dokuwiki</strong> como ferramenta principal e <strong>GitLab Wiki</strong> para alguns projetos pontuais, eu finalmente encontrei algo que mexeu comigo, a ponto de me fazer mudar a ferramenta wiki referência em minha stack de trabalho.<br><br>O projeto em questão é o <strong>WIKI.JS</strong>, ele veio desafiar minha escolha de uma wiki – <strong>flat file storage </strong>– e ainda assim conseguiu preencher um espaço até então já dominado.<br><br>Desde 2020 eu uso ela, e agora posso dizer que recomendo com todas as forças :)<br><br>Vai lá, dá uma chance!<br><br><a href="https://js.wiki/">https://js.wiki/</a><br><br>[s]<br><br>P.s: Já usa ela? Me conta ai suas impressões, mas faz com carinho tá :)</p>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>Chats open source e self-hosted</title>
         <author>
@@ -245,43 +266,6 @@
 <script id="asciicast-428197" src="https://asciinema.org/a/428197.js" async=""></script>
 </p>
 <p>:)</p>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>brew&gt; broot</title>
-        <author>
-            <name>Guto Carvalho</name>
-        </author>
-        <link href="https://gutocarvalho.net/brew-tipsgreater-broot/"/>
-        <id>https://gutocarvalho.net/brew-tipsgreater-broot/</id>
-            <category term="Tips"/>
-            <category term="Projetos"/>
-
-        <updated>2021-08-30T13:33:41-03:00</updated>
-            <summary>
-                <![CDATA[
-                    <p>Navegue em seus diretórios pelo terminal com o broot</p>
-
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                <p>Navegue em seus diretórios pelo terminal com o broot</p>
-
-<p>Conhece o projeto broot?</p>
-<ul>
-<li><a href="https://github.com/Canop/broot">https://github.com/Canop/broot</a></li>
-<li>https://dystroy.org/broot/</li>
-</ul>
-<p>Esse projeto prove uma forma bem bacana de navegar em diretórios do seu mac/linux.</p>
-<p>Para instalar via brew é simples</p>
-<p><code>$ brew install broot</code></p>
-<p>Para ativar  </p>
-<p><code>$ broot</code><br><br>Para usar</p>
-<p><code>$ br</code></p>
-<p>:)</p>
-<p> </p>
             ]]>
         </content>
     </entry>

@@ -10,6 +10,20 @@
     },
     "items": [
         {
+            "id": "https://gutocarvalho.net/wiki-open-source-moderna/",
+            "url": "https://gutocarvalho.net/wiki-open-source-moderna/",
+            "title": "Wiki open source moderna",
+            "summary": "Conheça uma wiki open source modernosa que vai te surpreender! Depois de muitos anos usando o dokuwiki como ferramenta principal&hellip;",
+            "content_html": "<p>Conheça uma wiki open source <strong>modernosa</strong> que vai te surpreender!</p>\n<p>Depois de muitos anos usando o <strong>dokuwiki</strong> como ferramenta principal e <strong>GitLab Wiki</strong> para alguns projetos pontuais, eu finalmente encontrei algo que mexeu comigo, a ponto de me fazer mudar a ferramenta wiki referência em minha stack de trabalho.<br><br>O projeto em questão é o <strong>WIKI.JS</strong>, ele veio desafiar minha escolha de uma wiki – <strong>flat file storage </strong>– e ainda assim conseguiu preencher um espaço até então já dominado.<br><br>Desde 2020 eu uso ela, e agora posso dizer que recomendo com todas as forças :)<br><br>Vai lá, dá uma chance!<br><br><a href=\"https://js.wiki/\">https://js.wiki/</a><br><br>[s]<br><br>P.s: Já usa ela? Me conta ai suas impressões, mas faz com carinho tá :)</p>",
+            "author": {
+                "name": "Guto Carvalho"
+            },
+            "tags": [
+            ],
+            "date_published": "2021-10-04T10:13:34-03:00",
+            "date_modified": "2021-10-04T10:16:27-03:00"
+        },
+        {
             "id": "https://gutocarvalho.net/chats-open-source/",
             "url": "https://gutocarvalho.net/chats-open-source/",
             "title": "Chats open source e self-hosted",
@@ -148,22 +162,6 @@
             ],
             "date_published": "2021-07-31T16:37:25-03:00",
             "date_modified": "2021-08-30T13:33:36-03:00"
-        },
-        {
-            "id": "https://gutocarvalho.net/brew-tipsgreater-broot/",
-            "url": "https://gutocarvalho.net/brew-tipsgreater-broot/",
-            "title": "brew&gt; broot",
-            "summary": "<p>Navegue em seus diretórios pelo terminal com o broot</p>\n",
-            "content_html": "<p>Navegue em seus diretórios pelo terminal com o broot</p>\n\n<p>Conhece o projeto broot?</p>\n<ul>\n<li><a href=\"https://github.com/Canop/broot\">https://github.com/Canop/broot</a></li>\n<li>https://dystroy.org/broot/</li>\n</ul>\n<p>Esse projeto prove uma forma bem bacana de navegar em diretórios do seu mac/linux.</p>\n<p>Para instalar via brew é simples</p>\n<p><code>$ brew install broot</code></p>\n<p>Para ativar  </p>\n<p><code>$ broot</code><br><br>Para usar</p>\n<p><code>$ br</code></p>\n<p>:)</p>\n<p> </p>",
-            "author": {
-                "name": "Guto Carvalho"
-            },
-            "tags": [
-                   "Tips",
-                   "Projetos"
-            ],
-            "date_published": "2021-07-31T14:55:54-03:00",
-            "date_modified": "2021-08-30T13:33:41-03:00"
         }
     ]
 }
