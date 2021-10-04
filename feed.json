@@ -13,15 +13,15 @@
             "id": "https://gutocarvalho.net/wiki-open-source-moderna/",
             "url": "https://gutocarvalho.net/wiki-open-source-moderna/",
             "title": "Wiki open source moderna",
-            "summary": "Conheça uma wiki open source modernosa que vai te surpreender! Depois de muitos anos usando o dokuwiki como ferramenta principal&hellip;",
-            "content_html": "<p>Conheça uma wiki open source <strong>modernosa</strong> que vai te surpreender!</p>\n<p>Depois de muitos anos usando o <strong>dokuwiki</strong> como ferramenta principal e <strong>GitLab Wiki</strong> para alguns projetos pontuais, eu finalmente encontrei algo que mexeu comigo, a ponto de me fazer mudar a ferramenta wiki referência em minha stack de trabalho.<br><br>O projeto em questão é o <strong>WIKI.JS</strong>, ele veio desafiar minha escolha de uma wiki – <strong>flat file storage </strong>– e ainda assim conseguiu preencher um espaço até então já dominado.<br><br>Desde 2020 eu uso ela, e agora posso dizer que recomendo com todas as forças :)<br><br>Vai lá, dá uma chance!<br><br><a href=\"https://js.wiki/\">https://js.wiki/</a><br><br>[s]<br><br>P.s: Já usa ela? Me conta ai suas impressões, mas faz com carinho tá :)</p>",
+            "summary": "<p>Conheça uma wiki open source <strong>modernosa</strong> que vai te surpreender!</p>\n",
+            "content_html": "<p>Conheça uma wiki open source <strong>modernosa</strong> que vai te surpreender!</p>\n\n<p>Depois de muitos anos usando o <strong>dokuwiki</strong> como ferramenta principal e <strong>GitLab Wiki</strong> para alguns projetos pontuais, eu finalmente encontrei algo que mexeu comigo, a ponto de me fazer mudar a ferramenta wiki referência em minha stack de trabalho.<br><br>O projeto em questão é o <strong>WIKI.JS</strong>, ele veio desafiar minha escolha de uma wiki – <strong>flat file storage </strong>– e ainda assim conseguiu preencher um espaço até então já dominado.<br><br>Desde 2020 eu uso ela, e agora posso dizer que recomendo com todas as forças :)<br><br>Vai lá, dá uma chance!<br><br><a href=\"https://js.wiki/\">https://js.wiki/</a><br><br>[s]<br><br>P.s: Já usa ela? Me conta ai suas impressões, mas faz com carinho tá :)</p>",
             "author": {
                 "name": "Guto Carvalho"
             },
             "tags": [
             ],
             "date_published": "2021-10-04T10:13:34-03:00",
-            "date_modified": "2021-10-04T10:16:27-03:00"
+            "date_modified": "2021-10-04T10:20:14-03:00"
         },
         {
             "id": "https://gutocarvalho.net/chats-open-source/",
