@@ -3,7 +3,7 @@
     <title>Guto@Site</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2021-10-04T09:22:32-03:00</updated>
+    <updated>2021-10-04T09:25:28-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
@@ -17,7 +17,7 @@
         <link href="https://gutocarvalho.net/gerenciadores-de-senha-open-source/"/>
         <id>https://gutocarvalho.net/gerenciadores-de-senha-open-source/</id>
 
-        <updated>2021-10-04T09:22:32-03:00</updated>
+        <updated>2021-10-04T09:25:28-03:00</updated>
             <summary>
                 <![CDATA[
                     <p>Lista de projetos open source para gerenciar suas senhas!</p>
@@ -29,7 +29,7 @@
                 <p>Lista de projetos open source para gerenciar suas senhas!</p>
 
 <p>Eu normalmente utilizo o <strong>Passbolt</strong> em meus projetos, mas estou em um fase de renovar minha stack, sendo assim segue uma listinha de algumas das ferramentas que eu ainda quero testar:</p>
-<p>- <a href="https://padloc.app">https://padloc.app</a><br>- <a href="https://bitwarden.com">https://bitwarden.com</a><br>- <a href="https://lesspass.com/#/">https://lesspass.com</a><br>- <a href="https://passit.io">https://passit.io</a><br>- <a href="http://syspass.org/en">http://syspass.org/en</a><br><br>E quem não conhece o Passbolt, segue:<br><br>- <a href="https://www.passbolt.com">https://www.passbolt.com</a><br><br>[s]<br>Guto</p>
+<p>- <a href="https://padloc.app">https://padloc.app</a><br>- <a href="https://bitwarden.com">https://bitwarden.com</a><br>- <a href="https://lesspass.com/#/">https://lesspass.com</a><br>- <a href="https://passit.io">https://passit.io</a><br>- <a href="http://syspass.org/en">http://syspass.org/en</a><br><br>Vale lembrar que todos são <strong>open source</strong> e <strong>self-hosted</strong>.<br><br>E quem não conhece o <strong>Passbolt</strong>, segue:<br><br>- <a href="https://www.passbolt.com">https://www.passbolt.com</a><br><br>[s]<br>Guto</p>
             ]]>
         </content>
     </entry>
