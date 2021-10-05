@@ -3,12 +3,38 @@
     <title>Guto@Site</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2021-10-05T19:58:00-03:00</updated>
+    <updated>2021-10-05T20:02:00-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
     <id>https://gutocarvalho.net</id>
 
+    <entry>
+        <title>Instalando ingress AWS no K8S EKS</title>
+        <author>
+            <name>Guto Carvalho</name>
+        </author>
+        <link href="https://gutocarvalho.net/instalando-ingress-aws-no-k8s-eks/"/>
+        <id>https://gutocarvalho.net/instalando-ingress-aws-no-k8s-eks/</id>
+            <category term="Tips"/>
+            <category term="Projetos"/>
+            <category term="K8S"/>
+
+        <updated>2021-10-05T20:02:00-03:00</updated>
+            <summary>
+                <![CDATA[
+                    <p>Aprenda a instalar o ingress-aws no EKS de forma rápida e pontual</p>
+
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p>Aprenda a instalar o ingress-aws no EKS de forma rápida e pontual</p>
+
+<p>É importante saber que o cluster EKS não vem com ingress instalado por padrão, então vamos aprender como instalar o INGRESS oficial do projeto do K8S com suporte a ELB e NLB da AWS.<br><br><strong>Instalando Ingress no EKS</strong><br><br>Aqui nesta página teremos a documentação para instalar o ingress<br><br><code>https://kubernetes.github.io/ingress-nginx/deploy/#aws</code><br><br>Instale a última versão estável<br><br><code>$ kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v1.0.3/deploy/static/provider/aws/deploy.yaml</code><br><br>A saída esperada é essa:<br><br><code>namespace/ingress-nginx created</code><br><code>serviceaccount/ingress-nginx created</code><br><code>configmap/ingress-nginx-controller created</code><br><code>clusterrole.rbac.authorization.k8s.io/ingress-nginx created</code><br><code>clusterrolebinding.rbac.authorization.k8s.io/ingress-nginx created</code><br><code>role.rbac.authorization.k8s.io/ingress-nginx created</code><br><code>rolebinding.rbac.authorization.k8s.io/ingress-nginx created</code><br><code>service/ingress-nginx-controller-admission created</code><br><code>service/ingress-nginx-controller created</code><br><code>deployment.apps/ingress-nginx-controller created</code><br><code>ingressclass.networking.k8s.io/nginx created</code><br><code>validatingwebhookconfiguration.admissionregistration.k8s.io/ingress-nginx-admission created</code><br><code>serviceaccount/ingress-nginx-admission created</code><br><code>clusterrole.rbac.authorization.k8s.io/ingress-nginx-admission created</code><br><code>clusterrolebinding.rbac.authorization.k8s.io/ingress-nginx-admission created</code><br><code>role.rbac.authorization.k8s.io/ingress-nginx-admission created</code><br><code>rolebinding.rbac.authorization.k8s.io/ingress-nginx-admission created</code><br><code>job.batch/ingress-nginx-admission-create created</code><br><code>job.batch/ingress-nginx-admission-patch created</code><br><br>Prontinho!</p>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>Instalando cert-manager no K8S</title>
         <author>
@@ -244,31 +270,6 @@
 <p>
 <script id="asciicast-xuwkzyAGvCztUsLH45g12WdUW" src="https://asciinema.org/a/xuwkzyAGvCztUsLH45g12WdUW.js" async=""></script>
 </p>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>Live Rancher 2.6</title>
-        <author>
-            <name>Guto Carvalho</name>
-        </author>
-        <link href="https://gutocarvalho.net/live-rancher-26/"/>
-        <id>https://gutocarvalho.net/live-rancher-26/</id>
-            <category term="Projetos"/>
-
-        <updated>2021-08-30T13:33:23-03:00</updated>
-            <summary>
-                <![CDATA[
-                    <p>Live de lançamento do Rancher 2.6 no dia 15 de Setembro, bora!</p>
-
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                <p>Live de lançamento do Rancher 2.6 no dia 15 de Setembro, bora!</p>
-
-<p><a href="https://more.suse.com/RancherSept2021OnlineMeetup.html">https://more.suse.com/RancherSept2021OnlineMeetup.html</a></p>
-<p>Se inscreva!<br><br>[s]</p>
             ]]>
         </content>
     </entry>

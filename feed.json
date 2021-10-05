@@ -10,6 +10,23 @@
     },
     "items": [
         {
+            "id": "https://gutocarvalho.net/instalando-ingress-aws-no-k8s-eks/",
+            "url": "https://gutocarvalho.net/instalando-ingress-aws-no-k8s-eks/",
+            "title": "Instalando ingress AWS no K8S EKS",
+            "summary": "<p>Aprenda a instalar o ingress-aws no EKS de forma rápida e pontual</p>\n",
+            "content_html": "<p>Aprenda a instalar o ingress-aws no EKS de forma rápida e pontual</p>\n\n<p>É importante saber que o cluster EKS não vem com ingress instalado por padrão, então vamos aprender como instalar o INGRESS oficial do projeto do K8S com suporte a ELB e NLB da AWS.<br><br><strong>Instalando Ingress no EKS</strong><br><br>Aqui nesta página teremos a documentação para instalar o ingress<br><br><code>https://kubernetes.github.io/ingress-nginx/deploy/#aws</code><br><br>Instale a última versão estável<br><br><code>$ kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v1.0.3/deploy/static/provider/aws/deploy.yaml</code><br><br>A saída esperada é essa:<br><br><code>namespace/ingress-nginx created</code><br><code>serviceaccount/ingress-nginx created</code><br><code>configmap/ingress-nginx-controller created</code><br><code>clusterrole.rbac.authorization.k8s.io/ingress-nginx created</code><br><code>clusterrolebinding.rbac.authorization.k8s.io/ingress-nginx created</code><br><code>role.rbac.authorization.k8s.io/ingress-nginx created</code><br><code>rolebinding.rbac.authorization.k8s.io/ingress-nginx created</code><br><code>service/ingress-nginx-controller-admission created</code><br><code>service/ingress-nginx-controller created</code><br><code>deployment.apps/ingress-nginx-controller created</code><br><code>ingressclass.networking.k8s.io/nginx created</code><br><code>validatingwebhookconfiguration.admissionregistration.k8s.io/ingress-nginx-admission created</code><br><code>serviceaccount/ingress-nginx-admission created</code><br><code>clusterrole.rbac.authorization.k8s.io/ingress-nginx-admission created</code><br><code>clusterrolebinding.rbac.authorization.k8s.io/ingress-nginx-admission created</code><br><code>role.rbac.authorization.k8s.io/ingress-nginx-admission created</code><br><code>rolebinding.rbac.authorization.k8s.io/ingress-nginx-admission created</code><br><code>job.batch/ingress-nginx-admission-create created</code><br><code>job.batch/ingress-nginx-admission-patch created</code><br><br>Prontinho!</p>",
+            "author": {
+                "name": "Guto Carvalho"
+            },
+            "tags": [
+                   "Tips",
+                   "Projetos",
+                   "K8S"
+            ],
+            "date_published": "2021-10-05T20:01:27-03:00",
+            "date_modified": "2021-10-05T20:02:00-03:00"
+        },
+        {
             "id": "https://gutocarvalho.net/instalando-cert-manager-no-k8s/",
             "url": "https://gutocarvalho.net/instalando-cert-manager-no-k8s/",
             "title": "Instalando cert-manager no K8S",
@@ -151,21 +168,6 @@
             ],
             "date_published": "2021-08-29T23:13:11-03:00",
             "date_modified": "2021-08-30T13:33:14-03:00"
-        },
-        {
-            "id": "https://gutocarvalho.net/live-rancher-26/",
-            "url": "https://gutocarvalho.net/live-rancher-26/",
-            "title": "Live Rancher 2.6",
-            "summary": "<p>Live de lançamento do Rancher 2.6 no dia 15 de Setembro, bora!</p>\n",
-            "content_html": "<p>Live de lançamento do Rancher 2.6 no dia 15 de Setembro, bora!</p>\n\n<p><a href=\"https://more.suse.com/RancherSept2021OnlineMeetup.html\">https://more.suse.com/RancherSept2021OnlineMeetup.html</a></p>\n<p>Se inscreva!<br><br>[s]</p>",
-            "author": {
-                "name": "Guto Carvalho"
-            },
-            "tags": [
-                   "Projetos"
-            ],
-            "date_published": "2021-08-29T22:44:38-03:00",
-            "date_modified": "2021-08-30T13:33:23-03:00"
         }
     ]
 }
