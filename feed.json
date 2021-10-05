@@ -10,11 +10,25 @@
     },
     "items": [
         {
+            "id": "https://gutocarvalho.net/kubeconf-north-america-2021/",
+            "url": "https://gutocarvalho.net/kubeconf-north-america-2021/",
+            "title": "Kubeconf North America 2021",
+            "summary": "<p>Esse mês tem, vamo nessa, nos vemos lá!</p>\n",
+            "content_html": "<p>Esse mês tem, vamo nessa, nos vemos lá!</p>\n\n<p>De 11 a 15 de Outubro teremos <a href=\"https://events.linuxfoundation.org/kubecon-cloudnativecon-north-america/?utm_source=Google&amp;utm_medium=Search&amp;utm_campaign=KubeConNA2021\">Kubecon</a> North America.</p>\n<p>Veja a <a href=\"https://events.linuxfoundation.org/kubecon-cloudnativecon-north-america/program/schedule\">agenda</a> e participe!<br><br>[s]<br>Guto</p>",
+            "author": {
+                "name": "Guto Carvalho"
+            },
+            "tags": [
+            ],
+            "date_published": "2021-10-05T15:14:23-03:00",
+            "date_modified": "2021-10-05T15:14:23-03:00"
+        },
+        {
             "id": "https://gutocarvalho.net/wiki-open-source-moderna/",
             "url": "https://gutocarvalho.net/wiki-open-source-moderna/",
             "title": "Wiki open source moderna",
             "summary": "<p>Conheça uma wiki open source <strong>modernosa</strong> que vai te surpreender!</p>\n",
-            "content_html": "<p>Conheça uma wiki open source <strong>modernosa</strong> que vai te surpreender!</p>\n\n<p>Depois de muitos anos usando o <strong>dokuwiki</strong> como ferramenta principal e <strong>GitLab Wiki</strong> para alguns projetos pontuais, eu finalmente encontrei algo que mexeu comigo, a ponto de me fazer mudar a ferramenta wiki referência em minha stack de trabalho.<br><br>O projeto em questão é o <strong>WIKI.JS</strong>, ele veio desafiar minha escolha de uma wiki – <strong>flat file storage </strong>– e ainda assim conseguiu preencher um espaço até então já dominado.<br><br>Desde 2020 eu uso ela, e agora posso dizer que recomendo com todas as forças :)<br><br>Vai lá, dá uma chance!<br><br><a href=\"https://js.wiki/\">https://js.wiki/</a><br><br>[s]<br><br>P.s: Já usa ela? Me conta ai suas impressões, mas faz com carinho tá :)</p>",
+            "content_html": "<p>Conheça uma wiki open source <strong>modernosa</strong> que vai te surpreender!</p>\n\n<p>Depois de muitos anos usando o <strong>dokuwiki</strong> como ferramenta principal e <strong>GitLab Wiki</strong> para alguns projetos pontuais, eu finalmente encontrei algo que mexeu comigo, a ponto de me fazer mudar a ferramenta wiki referência em minha <strong>stack</strong> de trabalho.<br><br>O projeto em questão é o <strong>WIKI.JS</strong>, ele veio desafiar minha escolha de uma wiki – <strong>flat file storage </strong>– e ainda assim conseguiu preencher um espaço até então já dominado.<br><br>Desde 2020 eu uso ela, e agora posso dizer que recomendo com todas as forças :)<br><br>Vai lá, dá uma chance!<br><br><strong><a href=\"https://js.wiki/\">https://js.wiki/</a></strong><br><br>[s]<br><br>P.s: Já usa ela? Me conta ai suas impressões, mas faz com carinho tá :)</p>",
             "author": {
                 "name": "Guto Carvalho"
             },
@@ -23,7 +37,7 @@
                    "Projetos"
             ],
             "date_published": "2021-10-04T10:13:34-03:00",
-            "date_modified": "2021-10-04T10:21:12-03:00"
+            "date_modified": "2021-10-04T15:47:50-03:00"
         },
         {
             "id": "https://gutocarvalho.net/chats-open-source/",
@@ -152,22 +166,6 @@
             ],
             "date_published": "2021-08-29T14:25:49-03:00",
             "date_modified": "2021-08-29T14:51:25-03:00"
-        },
-        {
-            "id": "https://gutocarvalho.net/brewgreater-speedtest/",
-            "url": "https://gutocarvalho.net/brewgreater-speedtest/",
-            "title": "brew&gt; speedtest",
-            "summary": "<p>Rode o speedtest pelo terminal ;)</p>\n",
-            "content_html": "<p>Rode o speedtest pelo terminal ;)</p>\n\n<p>É bem fácil usando o brew</p>\n<p><code>$ brew install speedtest-cli</code></p>\n<p>Executando</p>\n<p><code>$ speedtest-cli</code><br><br>Veja o exemplo:\n<script id=\"asciicast-428197\" src=\"https://asciinema.org/a/428197.js\" async=\"\"></script>\n</p>\n<p>:)</p>",
-            "author": {
-                "name": "Guto Carvalho"
-            },
-            "tags": [
-                   "Tips",
-                   "Projetos"
-            ],
-            "date_published": "2021-07-31T16:37:25-03:00",
-            "date_modified": "2021-08-30T13:33:36-03:00"
         }
     ]
 }
