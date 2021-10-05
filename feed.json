@@ -10,6 +10,23 @@
     },
     "items": [
         {
+            "id": "https://gutocarvalho.net/instalando-cert-manager-no-k8s/",
+            "url": "https://gutocarvalho.net/instalando-cert-manager-no-k8s/",
+            "title": "Instalando cert-manager no K8S",
+            "summary": "<p>Aprenda a instalar ao cert-manager no k8s de forma objetiva e rápida!</p>\n",
+            "content_html": "<p>Aprenda a instalar ao cert-manager no k8s de forma objetiva e rápida!</p>\n\n<p><strong>Instalando CertManager</strong><br><br>Instale o CustomResourceDefinition separadamente<br><br><code>$ kubectl apply --validate=false -f https://github.com/jetstack/cert-manager/releases/download/v1.5.4/cert-manager.crds.yaml</code><br><br>Crie o namespace para o cert-manager<br><br><code>$ kubectl create namespace cert-manager</code><br><br>Adicione o repositório helm<br><br><code>$ helm repo add jetstack https://charts.jetstack.io</code><br><br>Atualize os indices do helm<br><br><code>$ helm repo update</code><br><br>Instale o cert-manager via helm<br><br><code>$ helm install \\</code><br><code>  cert-manager jetstack/cert-manager \\</code><br><code>  --namespace cert-manager \\</code><br><code>  --version v1.5.4</code><br><br>Crie o issuer para letsencrypt production<br><br><code>$ vim issuer-prod.yaml</code><br><br>Insira o conteúdo<br><br><code>apiVersion: cert-manager.io/v1</code><br><code>kind: ClusterIssuer</code><br><code>metadata:</code><br><code>  name: letsencrypt-prod</code><br><code>spec:</code><br><code>  acme:</code><br><code>    # You must replace this email address with your own.</code><br><code>    # Let's Encrypt will use this to contact you about expiring</code><br><code>    # certificates, and issues related to your account.</code><br><code>    email: certmanager@gutocarvalho.net</code><br><code>    server: https://acme-v02.api.letsencrypt.org/directory</code><br><code>    privateKeySecretRef:</code><br><code>      # Secret resource that will be used to store the account's private key.</code><br><code>      name: letsencrypt-production</code><br><code>    # Add a single challenge solver, HTTP01 using nginx</code><br><code>    solvers:</code><br><code>    - http01:</code><br><code>        ingress:</code><br><code>          class: nginx</code><br><br>Aplicando<br><br><code>$ kubectl create -f issuer-prod.yaml</code><br><br>Criando o issuer para letsencrypt staging<br><br><code>vim issuer-staging.yaml</code><br><br>Insira o conteúdo<br><br><code>apiVersion: cert-manager.io/v1</code><br><code>kind: ClusterIssuer</code><br><code>metadata:</code><br><code>  name: letsencrypt-staging</code><br><code>spec:</code><br><code>  acme:</code><br><code>    # You must replace this email address with your own.</code><br><code>    # Let's Encrypt will use this to contact you about expiring</code><br><code>    # certificates, and issues related to your account.</code><br><code>    email: nativetrail@gutocarvalho.net</code><br><code>    server: https://acme-staging-v02.api.letsencrypt.org/directory</code><br><code>    privateKeySecretRef:</code><br><code>      # Secret resource that will be used to store the account's private key.</code><br><code>      name: letsencrypt-staging</code><br><code>    # Add a single challenge solver, HTTP01 using nginx</code><br><code>    solvers:</code><br><code>    - http01:</code><br><code>        ingress:</code><br><code>          class: nginx</code><br><br>Aplicando<br><br><code>$ kubectl create -f issuer-staging.yaml</code><br><br>Prontinho!<br><br><strong>Annotations</strong><br><br>Para production<br><br><code>cert-manager.io/cluster-issuer=letsencrypt-prod</code><br><code>kubernetes.io/ingress.class=nginx</code><br><br>Para staging<br><br><code>cert-manager.io/cluster-issuer=letsencrypt-staging</code><br><code>kubernetes.io/ingress.class=nginx</code><br><br><strong>Refs</strong><br><br><code>https://cert-manager.io/docs/configuration/acme/</code></p>",
+            "author": {
+                "name": "Guto Carvalho"
+            },
+            "tags": [
+                   "Tips",
+                   "Projetos",
+                   "K8S"
+            ],
+            "date_published": "2021-10-05T19:58:00-03:00",
+            "date_modified": "2021-10-05T19:58:00-03:00"
+        },
+        {
             "id": "https://gutocarvalho.net/kubeconf-north-america-2021/",
             "url": "https://gutocarvalho.net/kubeconf-north-america-2021/",
             "title": "Kubeconf North America 2021",
@@ -149,23 +166,6 @@
             ],
             "date_published": "2021-08-29T22:44:38-03:00",
             "date_modified": "2021-08-30T13:33:23-03:00"
-        },
-        {
-            "id": "https://gutocarvalho.net/sinto-sua-falta/",
-            "url": "https://gutocarvalho.net/sinto-sua-falta/",
-            "title": "Sinto falta",
-            "summary": "As vezes sinto falta do amor Do coração com aquela sensação de vida Sinto falta de amar, de ser amado&hellip;",
-            "content_html": "<p>As vezes sinto falta do amor<br>Do coração com aquela sensação de vida<br>Sinto falta de amar, de ser amado<br>De beijar, de ser beijado<br>Mas também<br>Do abraço<br>Do cheiro<br>Do calor<br>Da companhia<br><br>Do beijo quando saio<br>E quando eu chego<br>De cozinhar junto contigo<br>De comer com o mesmo garfo<br>E beber no mesmo copo<br><br>De chorar  as conquistas e as perdas<br>De sentir a falta<br>De sentir o medo da falta<br>De ficar acordado te esperando<br>De sentir sua força e presença<br><br>Sinto falta <br>De proteger e de ser protegido<br>Sinto falta dos pés cruzados embaixo da coberta<br>De deitar de conchinha<br>De ver você abrindo os olhos toda a manhã<br>Da sensação de nunca estar sozinho, mesmo se estiver<br><br>Sinto falta <br>De andar de mãos dadas pelos gramados<br>De pedalar pelas montanhas da vida<br>De dirigir pelo mundo<br>De dividir a vida contigo<br><br>Sinto falta<br>De te dar força quando era preciso<br>De receber força quando era necessário<br><br>De tomar um carão da vida<br>E de encarar ela de volta – com a lingua de fora<br>Juntos<br>Com medo<br>Com força<br>E com vontade de seguir em frente<br><br>Sinto falta <br>De me sentir vivo<br>Do cansaço de fazer tudo que a vida exige<br>Do prazer de entender que é preciso<br>Do amadurecimento de lidar com os erros cometidos<br>Do mútuo êxtase quando fazíamos alguma coisa certa<br><br>Sinto falta<br>Das brigas<br>Dos desentendimentos<br>Mesmo que poucos<br>E da cumplicidade apesar de tudo<br><br>Sinto falta<br>Dos desvios e percalços<br>Dos reencontros<br>Da confiança de ser e de estar<br>Em ambas direções<br>E principalmente<br>Sinto falta da parceria<br><br>E mesmo sentido falta<br>Sua falta<br>EU PRECISO<br>Aprender a seguir sem você<br>Mesmo não desejando isso<br>Mesmo não querendo isso<br>Mesmo não aceitando isso - ainda que soe de forma egoísta<br><br>Mas EU preciso<br>Respeitar<br>Respirar<br>Entender<br>E acima de tudo aceitar<br><br>Eu preciso<br>Saber viver<br>Sozinho<br>E aprender a ser feliz assim<br><br>Eu preciso descobrir sentido<br>Mesmo onde aparentemente não exista<br><br>Eu preciso levantar<br>Mesmo quando desejo dormir eternamente<br><br>Eu preciso ser forte<br>Pois sou exemplo para eles<br>E sou espelho<br>E não tenho a opção de desistir<br><br>Eu preciso ser forte<br>Pois o dever é maior<br><br>E mesmo que doa<br>Que sinta sua falta <br>Que as lágrimas escorram todas manhãs<br>Que o coração acelere de dor e desespero<br><br>Mesmo assim<br>Não devo esmorecer<br>Ao contrário<br>Preciso encontrar forças em tudo que vivi e aprendi<br>Preciso encontrar paz no sentimentos que me acometem<br><br>Eu preciso usar isso<br>Para crescer<br>Amadurecer<br>Evoluir<br><br>Acho que nós dois precisamos<br>Pois sabemos que a felicidade não é desse mundo<br>Desse mundo só temos a chance de fazer um novo fim<br>Reavaliando e aprendendo com nossas escolhas<br>Mesmo que não gostemos de nossos começos<br><br>Sinto falta<br>Mas preciso muito<br>Saber viver uma vida sem arrependimentos<br><br>Por mim<br>E por eles<br>É essa força me fará seguir em frente<br><br>Hoje essa é a minha escolha<br>E luto que seja também amanhã<br>E sempre<br>Por mim<br>Por eles<br>E por nossa história</p>",
-            "image": "https://gutocarvalho.net/media/posts/41/andrew-neel-NsI0IffS1jo-unsplash.jpg",
-            "author": {
-                "name": "Guto Carvalho"
-            },
-            "tags": [
-                   "Poesia",
-                   "Alma"
-            ],
-            "date_published": "2021-08-29T14:25:49-03:00",
-            "date_modified": "2021-08-29T14:51:25-03:00"
         }
     ]
 }
