@@ -10,6 +10,22 @@
     },
     "items": [
         {
+            "id": "https://gutocarvalho.net/gerando-kubeconfig-para-aws-eks/",
+            "url": "https://gutocarvalho.net/gerando-kubeconfig-para-aws-eks/",
+            "title": "Gerando Kubeconfig para AWS EKS",
+            "summary": "<p>Aprenda a gerar o kubeconfig para um cluster EKS</p>\n",
+            "content_html": "<p>Aprenda a gerar o kubeconfig para um cluster EKS</p>\n\n<p><strong>Gerando Kubeconfig para AWS EKS</strong><br><br>configurando aws-cli<br><br><code>$ aws configure</code><br>    <br>preencha os dados pedidos<br><br><code>AWS Access Key ID [None]: ACCESS_KEY</code><br><code>AWS Secret Access Key [None]: SECRET_KEY</code><br><code>Default region name [None]: us-east-1</code><br><code>Default output format [None]: json</code><br><br>listando clusters<br><br><code>$ aws eks cluster-list --output table</code><br><br>saída<br><br><code>-----------------------</code><br><code>|    ListClusters     |</code><br><code>+---------------------+</code><br><code>||     clusters      ||</code><br><code>|+-------------------+|</code><br><code>||  homologacao      ||</code><br><code>||  producao         ||</code><br><code>||  desenvolvimento  ||</code><br><code>||  sandbox          ||</code><br><code>|+-------------------+|</code><br><br><br>gerando</p>\n<p><code>$ aws eks update-kubeconfig --name labs</code><br><br>saída<br><br><code>Added new context arn:aws:eks:us-east-1:xxxx:cluster/gr1d-labs to /Users/gutocarvalho/projetos/nativetrail/k8s/labs/config</code><br><br>listando clusters<br><br><code>$ export KUBECONFIG=/Users/gutocarvalho/projetos/nativetrail/k8s/labs/config</code><br><code>$ kubectl get nodes</code><br><br>saída<br><br><code>NAME                            STATUS   ROLES    AGE   VERSION</code><br><code>ip-172-xx-xx-11.ec2.internal     Ready    &lt;none&gt;   24m   v1.21.2-eks-55daa9d</code><br><code>ip-172-xx-xx-168.ec2.internal    Ready    &lt;none&gt;   24m   v1.21.2-eks-55daa9d</code><br><code>ip-172-xx-xx-198.ec2.internal    Ready    &lt;none&gt;   24m   v1.21.2-eks-55daa9d</code><br><br>prontinho!</p>",
+            "author": {
+                "name": "Guto Carvalho"
+            },
+            "tags": [
+                   "Tips",
+                   "K8S"
+            ],
+            "date_published": "2021-10-06T12:05:34-03:00",
+            "date_modified": "2021-10-06T12:05:52-03:00"
+        },
+        {
             "id": "https://gutocarvalho.net/instalando-ingress-aws-no-k8s-eks/",
             "url": "https://gutocarvalho.net/instalando-ingress-aws-no-k8s-eks/",
             "title": "Instalando ingress AWS no K8S EKS",
@@ -53,9 +69,11 @@
                 "name": "Guto Carvalho"
             },
             "tags": [
+                   "Tips",
+                   "Eventos"
             ],
             "date_published": "2021-10-05T15:14:23-03:00",
-            "date_modified": "2021-10-05T15:14:23-03:00"
+            "date_modified": "2021-10-05T20:03:50-03:00"
         },
         {
             "id": "https://gutocarvalho.net/wiki-open-source-moderna/",
@@ -152,22 +170,6 @@
             ],
             "date_published": "2021-08-30T13:38:49-03:00",
             "date_modified": "2021-08-30T13:41:27-03:00"
-        },
-        {
-            "id": "https://gutocarvalho.net/brewgreater-ncdu/",
-            "url": "https://gutocarvalho.net/brewgreater-ncdu/",
-            "title": "brew&gt; ncdu",
-            "summary": "<p>Bora visualizar o espaço em disco de um jeitinho visual no terminal?<br><br></p>\n",
-            "content_html": "<p>Bora visualizar o espaço em disco de um jeitinho visual no terminal?<br><br></p>\n\n<p>Instalando via brew</p>\n<p><code>$ brew install ncdu</code><br><br>Executando</p>\n<p><code>$ ncdu</code><br><br>Veja a saída </p>\n<p>\n<script id=\"asciicast-xuwkzyAGvCztUsLH45g12WdUW\" src=\"https://asciinema.org/a/xuwkzyAGvCztUsLH45g12WdUW.js\" async=\"\"></script>\n</p>",
-            "author": {
-                "name": "Guto Carvalho"
-            },
-            "tags": [
-                   "Tips",
-                   "Projetos"
-            ],
-            "date_published": "2021-08-29T23:13:11-03:00",
-            "date_modified": "2021-08-30T13:33:14-03:00"
         }
     ]
 }
