@@ -14,7 +14,7 @@
             "url": "https://gutocarvalho.net/instalando-rancher-single-node/",
             "title": "Instalando Rancher Single Node",
             "summary": "<p>Aprenda a instalar o Rancher Single Node para testes e avaliações.</p>\n",
-            "content_html": "<p>Aprenda a instalar o Rancher Single Node para testes e avaliações.</p>\n\n<p>Instale o docker<br><br><code>curl https://releases.rancher.com/install-docker/19.03.sh | sh</code></p>\n<p>crie o diretório de dados para o rancher<br><br><code>mkdir /opt/rabcher-data</code><br><br>instale o docker</p>\n<p><code>docker run -d --restart=unless-stopped \\</code><br><code>  -p 80:80 -p 443:443 \\</code><br><code>  --privileged \\</code><br><code>  -v /opt/rancher-data:/var/lib/rancher \\<br>   rancher/rancher:latest \\</code><br><code>  --acme-domain rancher.nativetrail.io</code></p>\n<p>acesse</p>\n<p><code><a href=\"https://rancher.nativetrail.io\">https://rancher.nativetrail.io</a></code></p>\n<p>Prontinho!</p>",
+            "content_html": "<p>Aprenda a instalar o Rancher Single Node para testes e avaliações.</p>\n\n<p>Instale o docker<br><br><code>curl https://releases.rancher.com/install-docker/19.03.sh | sh</code></p>\n<p>Crie o diretório de dados para o rancher<br><br><code>mkdir /opt/rabcher-data</code><br><br>Instale o Rancher</p>\n<p><code>docker run -d --restart=unless-stopped \\</code><br><code>  -p 80:80 -p 443:443 \\</code><br><code>  --privileged \\</code><br><code>  -v /opt/rancher-data:/var/lib/rancher \\<br>   rancher/rancher:latest \\</code><br><code>  --acme-domain rancher.nativetrail.io</code></p>\n<p>Acesse</p>\n<p><code><a href=\"https://rancher.nativetrail.io\">https://rancher.nativetrail.io</a></code></p>\n<p>Prontinho!</p>",
             "author": {
                 "name": "Guto Carvalho"
             },
@@ -24,7 +24,7 @@
                    "K8S"
             ],
             "date_published": "2021-10-07T17:02:01-03:00",
-            "date_modified": "2021-10-07T17:55:11-03:00"
+            "date_modified": "2021-10-07T23:03:41-03:00"
         },
         {
             "id": "https://gutocarvalho.net/gerando-kubeconfig-para-aws-eks/",

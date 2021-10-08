@@ -3,7 +3,7 @@
     <title>Guto@Site</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2021-10-07T17:55:11-03:00</updated>
+    <updated>2021-10-07T23:03:41-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
@@ -20,7 +20,7 @@
             <category term="Projetos"/>
             <category term="K8S"/>
 
-        <updated>2021-10-07T17:55:11-03:00</updated>
+        <updated>2021-10-07T23:03:41-03:00</updated>
             <summary>
                 <![CDATA[
                     <p>Aprenda a instalar o Rancher Single Node para testes e avaliações.</p>
@@ -32,9 +32,9 @@
                 <p>Aprenda a instalar o Rancher Single Node para testes e avaliações.</p>
 
 <p>Instale o docker<br><br><code>curl https://releases.rancher.com/install-docker/19.03.sh | sh</code></p>
-<p>crie o diretório de dados para o rancher<br><br><code>mkdir /opt/rabcher-data</code><br><br>instale o docker</p>
+<p>Crie o diretório de dados para o rancher<br><br><code>mkdir /opt/rabcher-data</code><br><br>Instale o Rancher</p>
 <p><code>docker run -d --restart=unless-stopped \</code><br><code>  -p 80:80 -p 443:443 \</code><br><code>  --privileged \</code><br><code>  -v /opt/rancher-data:/var/lib/rancher \<br>   rancher/rancher:latest \</code><br><code>  --acme-domain rancher.nativetrail.io</code></p>
-<p>acesse</p>
+<p>Acesse</p>
 <p><code><a href="https://rancher.nativetrail.io">https://rancher.nativetrail.io</a></code></p>
 <p>Prontinho!</p>
             ]]>
