@@ -10,9 +10,26 @@
     },
     "items": [
         {
+            "id": "https://gutocarvalho.net/instalando-rancher-single-node/",
+            "url": "https://gutocarvalho.net/instalando-rancher-single-node/",
+            "title": "Instalando Rancher Single Node",
+            "summary": "<p>Aprenda a instalar o Rancher Single Node para testes e avaliações.</p>\n",
+            "content_html": "<p>Aprenda a instalar o Rancher Single Node para testes e avaliações.</p>\n\n<p>Instale o docker<br><br><code>curl https://releases.rancher.com/install-docker/19.03.sh | sh</code></p>\n<p>crie o diretório de dados para o rancher<br><br><code>mkdir /opt/rabcher-data</code><br><br>instale o docker</p>\n<p><code>docker run -d --restart=unless-stopped \\</code><br><code>  -p 80:80 -p 443:443 \\</code><br><code>  --privileged \\</code><br><code>  -v /opt/rancher-data:/var/lib/rancher \\<br>   rancher/rancher:latest \\</code><br><code>  --acme-domain rancher.nativetrail.io</code></p>\n<p>acesse</p>\n<p><code><a href=\"https://rancher.nativetrail.io\">https://rancher.nativetrail.io</a></code></p>\n<p>Prontinho!</p>",
+            "author": {
+                "name": "Guto Carvalho"
+            },
+            "tags": [
+                   "Tips",
+                   "Projetos",
+                   "K8S"
+            ],
+            "date_published": "2021-10-07T17:02:01-03:00",
+            "date_modified": "2021-10-07T17:55:11-03:00"
+        },
+        {
             "id": "https://gutocarvalho.net/gerando-kubeconfig-para-aws-eks/",
             "url": "https://gutocarvalho.net/gerando-kubeconfig-para-aws-eks/",
-            "title": "Gerando Kubeconfig para AWS EKS",
+            "title": "K8S: Gerando Kubeconfig para AWS EKS",
             "summary": "<p>Aprenda a gerar o kubeconfig para um cluster EKS</p>\n",
             "content_html": "<p>Aprenda a gerar o kubeconfig para um cluster EKS</p>\n\n<p><strong>Gerando Kubeconfig para AWS EKS</strong><br><br>configurando aws-cli<br><br><code>$ aws configure</code><br>    <br>preencha os dados pedidos<br><br><code>AWS Access Key ID [None]: ACCESS_KEY</code><br><code>AWS Secret Access Key [None]: SECRET_KEY</code><br><code>Default region name [None]: us-east-1</code><br><code>Default output format [None]: json</code><br><br>listando clusters<br><br><code>$ aws eks cluster-list --output table</code><br><br>saída<br><br><code>-----------------------</code><br><code>|    ListClusters     |</code><br><code>+---------------------+</code><br><code>||     clusters      ||</code><br><code>|+-------------------+|</code><br><code>||  homologacao      ||</code><br><code>||  producao         ||</code><br><code>||  desenvolvimento  ||</code><br><code>||  sandbox          ||</code><br><code>|+-------------------+|</code><br><br><br>gerando</p>\n<p><code>$ aws eks update-kubeconfig --name labs</code><br><br>saída<br><br><code>Added new context arn:aws:eks:us-east-1:xxxx:cluster/gr1d-labs to /Users/gutocarvalho/projetos/nativetrail/k8s/labs/config</code><br><br>listando clusters<br><br><code>$ export KUBECONFIG=/Users/gutocarvalho/projetos/nativetrail/k8s/labs/config</code><br><code>$ kubectl get nodes</code><br><br>saída<br><br><code>NAME                            STATUS   ROLES    AGE   VERSION</code><br><code>ip-172-xx-xx-11.ec2.internal     Ready    &lt;none&gt;   24m   v1.21.2-eks-55daa9d</code><br><code>ip-172-xx-xx-168.ec2.internal    Ready    &lt;none&gt;   24m   v1.21.2-eks-55daa9d</code><br><code>ip-172-xx-xx-198.ec2.internal    Ready    &lt;none&gt;   24m   v1.21.2-eks-55daa9d</code><br><br>prontinho!</p>",
             "author": {
@@ -23,12 +40,12 @@
                    "K8S"
             ],
             "date_published": "2021-10-06T12:05:34-03:00",
-            "date_modified": "2021-10-06T12:05:52-03:00"
+            "date_modified": "2021-10-06T15:22:21-03:00"
         },
         {
             "id": "https://gutocarvalho.net/instalando-ingress-aws-no-k8s-eks/",
             "url": "https://gutocarvalho.net/instalando-ingress-aws-no-k8s-eks/",
-            "title": "Instalando ingress AWS no K8S EKS",
+            "title": "K8S: Instalando ingress AWS no EKS",
             "summary": "<p>Aprenda a instalar o ingress-aws no EKS de forma rápida e pontual</p>\n",
             "content_html": "<p>Aprenda a instalar o ingress-aws no EKS de forma rápida e pontual</p>\n\n<p>É importante saber que o cluster EKS não vem com ingress instalado por padrão, então vamos aprender como instalar o INGRESS oficial do projeto do K8S com suporte a ELB e NLB da AWS.<br><br><strong>Instalando Ingress no EKS</strong><br><br>Aqui nesta página teremos a documentação para instalar o ingress<br><br><code>https://kubernetes.github.io/ingress-nginx/deploy/#aws</code><br><br>Instale a última versão estável<br><br><code>$ kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v1.0.3/deploy/static/provider/aws/deploy.yaml</code><br><br>A saída esperada é essa:<br><br><code>namespace/ingress-nginx created</code><br><code>serviceaccount/ingress-nginx created</code><br><code>configmap/ingress-nginx-controller created</code><br><code>clusterrole.rbac.authorization.k8s.io/ingress-nginx created</code><br><code>clusterrolebinding.rbac.authorization.k8s.io/ingress-nginx created</code><br><code>role.rbac.authorization.k8s.io/ingress-nginx created</code><br><code>rolebinding.rbac.authorization.k8s.io/ingress-nginx created</code><br><code>service/ingress-nginx-controller-admission created</code><br><code>service/ingress-nginx-controller created</code><br><code>deployment.apps/ingress-nginx-controller created</code><br><code>ingressclass.networking.k8s.io/nginx created</code><br><code>validatingwebhookconfiguration.admissionregistration.k8s.io/ingress-nginx-admission created</code><br><code>serviceaccount/ingress-nginx-admission created</code><br><code>clusterrole.rbac.authorization.k8s.io/ingress-nginx-admission created</code><br><code>clusterrolebinding.rbac.authorization.k8s.io/ingress-nginx-admission created</code><br><code>role.rbac.authorization.k8s.io/ingress-nginx-admission created</code><br><code>rolebinding.rbac.authorization.k8s.io/ingress-nginx-admission created</code><br><code>job.batch/ingress-nginx-admission-create created</code><br><code>job.batch/ingress-nginx-admission-patch created</code><br><br>Prontinho!</p>",
             "author": {
@@ -40,12 +57,12 @@
                    "K8S"
             ],
             "date_published": "2021-10-05T20:01:27-03:00",
-            "date_modified": "2021-10-05T20:02:00-03:00"
+            "date_modified": "2021-10-06T15:22:35-03:00"
         },
         {
             "id": "https://gutocarvalho.net/instalando-cert-manager-no-k8s/",
             "url": "https://gutocarvalho.net/instalando-cert-manager-no-k8s/",
-            "title": "Instalando cert-manager no K8S",
+            "title": "K8S: Instalando Cert-Manager e issuers LetsEncrypt",
             "summary": "<p>Aprenda a instalar ao cert-manager no k8s de forma objetiva e rápida!</p>\n",
             "content_html": "<p>Aprenda a instalar ao cert-manager no k8s de forma objetiva e rápida!</p>\n\n<p><strong>Instalando CertManager</strong><br><br>Instale o CustomResourceDefinition separadamente<br><br><code>$ kubectl apply --validate=false -f https://github.com/jetstack/cert-manager/releases/download/v1.5.4/cert-manager.crds.yaml</code><br><br>Crie o namespace para o cert-manager<br><br><code>$ kubectl create namespace cert-manager</code><br><br>Adicione o repositório helm<br><br><code>$ helm repo add jetstack https://charts.jetstack.io</code><br><br>Atualize os indices do helm<br><br><code>$ helm repo update</code><br><br>Instale o cert-manager via helm<br><br><code>$ helm install \\</code><br><code>  cert-manager jetstack/cert-manager \\</code><br><code>  --namespace cert-manager \\</code><br><code>  --version v1.5.4</code><br><br>Crie o issuer para letsencrypt production<br><br><code>$ vim issuer-prod.yaml</code><br><br>Insira o conteúdo<br><br><code>apiVersion: cert-manager.io/v1</code><br><code>kind: ClusterIssuer</code><br><code>metadata:</code><br><code>  name: letsencrypt-prod</code><br><code>spec:</code><br><code>  acme:</code><br><code>    # You must replace this email address with your own.</code><br><code>    # Let's Encrypt will use this to contact you about expiring</code><br><code>    # certificates, and issues related to your account.</code><br><code>    email: certmanager@gutocarvalho.net</code><br><code>    server: https://acme-v02.api.letsencrypt.org/directory</code><br><code>    privateKeySecretRef:</code><br><code>      # Secret resource that will be used to store the account's private key.</code><br><code>      name: letsencrypt-production</code><br><code>    # Add a single challenge solver, HTTP01 using nginx</code><br><code>    solvers:</code><br><code>    - http01:</code><br><code>        ingress:</code><br><code>          class: nginx</code><br><br>Aplicando<br><br><code>$ kubectl create -f issuer-prod.yaml</code><br><br>Criando o issuer para letsencrypt staging<br><br><code>vim issuer-staging.yaml</code><br><br>Insira o conteúdo<br><br><code>apiVersion: cert-manager.io/v1</code><br><code>kind: ClusterIssuer</code><br><code>metadata:</code><br><code>  name: letsencrypt-staging</code><br><code>spec:</code><br><code>  acme:</code><br><code>    # You must replace this email address with your own.</code><br><code>    # Let's Encrypt will use this to contact you about expiring</code><br><code>    # certificates, and issues related to your account.</code><br><code>    email: nativetrail@gutocarvalho.net</code><br><code>    server: https://acme-staging-v02.api.letsencrypt.org/directory</code><br><code>    privateKeySecretRef:</code><br><code>      # Secret resource that will be used to store the account's private key.</code><br><code>      name: letsencrypt-staging</code><br><code>    # Add a single challenge solver, HTTP01 using nginx</code><br><code>    solvers:</code><br><code>    - http01:</code><br><code>        ingress:</code><br><code>          class: nginx</code><br><br>Aplicando<br><br><code>$ kubectl create -f issuer-staging.yaml</code><br><br>Prontinho!<br><br><strong>Annotations</strong><br><br>Para production<br><br><code>cert-manager.io/cluster-issuer=letsencrypt-prod</code><br><code>kubernetes.io/ingress.class=nginx</code><br><br>Para staging<br><br><code>cert-manager.io/cluster-issuer=letsencrypt-staging</code><br><code>kubernetes.io/ingress.class=nginx</code><br><br><strong>Refs</strong><br><br><code>https://cert-manager.io/docs/configuration/acme/</code></p>",
             "author": {
@@ -57,7 +74,7 @@
                    "K8S"
             ],
             "date_published": "2021-10-05T19:58:00-03:00",
-            "date_modified": "2021-10-05T19:58:00-03:00"
+            "date_modified": "2021-10-06T15:23:53-03:00"
         },
         {
             "id": "https://gutocarvalho.net/kubeconf-north-america-2021/",
@@ -141,7 +158,7 @@
         {
             "id": "https://gutocarvalho.net/instalando-metricserver/",
             "url": "https://gutocarvalho.net/instalando-metricserver/",
-            "title": "Instalando o metric server no k8s",
+            "title": "K8S: Instalando o metric server no EKS",
             "summary": "<p>Aprenda a instalar o agregador de métricas em seu cluster.</p>\n",
             "content_html": "<p>Aprenda a instalar o agregador de métricas em seu cluster.</p>\n\n<p><strong>Para que serve?</strong><br><br>O Metric server é um agregador de informações sobre os recursos utilizados em seu cluster. Uma vez instalado ele ai expor essas informações via APIServer.<br><br>O Metric server é em especial importante para usar recursos de escalabilidade horizontal e vertical de PODs dentro do seu cluster K8S, tal como HPA e VPA.<br><br>Em alguns provedores como AWS EKS ele não é instalado por padrão.<br><br><strong>Como eu instalo em meu cluster?<br><br></strong><code>$ kubectl apply -f https://github.com/kubernetes-sigs/metrics-server/releases/latest/download/components.yaml</code><br><br><strong>Verificando se está instalado<br></strong><br><code>$ kubectl get deployment metrics-server -n kube-system</code><br><br><strong>Refs </strong><br><br>- <a href=\"https://docs.aws.amazon.com/eks/latest/userguide/metrics-server.html\" target=\"_blank\" rel=\"noopener\">https://docs.aws.amazon.com/eks/latest/userguide/metrics-server.html</a><br>- <a href=\"https://github.com/kubernetes-sigs/metrics-server\" target=\"_blank\" rel=\"noopener\">https://github.com/kubernetes-sigs/metrics-server</a></p>",
             "author": {
@@ -153,23 +170,7 @@
                    "K8S"
             ],
             "date_published": "2021-09-23T15:43:50-03:00",
-            "date_modified": "2021-09-24T09:25:43-03:00"
-        },
-        {
-            "id": "https://gutocarvalho.net/aerial-screensaver-opensource/",
-            "url": "https://gutocarvalho.net/aerial-screensaver-opensource/",
-            "title": "Aerial Screensaver",
-            "summary": "<p>Quer um screensaver maneiro pro Mac? Vai de Aerial!</p>\n",
-            "content_html": "<p>Quer um screensaver maneiro pro Mac? Vai de Aerial!</p>\n\n<p>O Aerial é baseado no conceito do AppleTV Screensaver, aquele esquema que mostra as localidades com um visual maravilhoso feito por drones ou voos de helicópteros.<br><br>O projeto é opensource e pode se encontrado nas URLs abaixo:<br><br>- <a href=\"#INTERNAL_LINK#/post/NaN\" target=\"_blank\" rel=\"noopener noreferrer\">https://aerialscreensaver.github.io/</a><br>- <a href=\"#INTERNAL_LINK#/post/NaN\" target=\"_blank\" rel=\"noopener noreferrer\">https://github.com/JohnCoates/Aerial</a><br><br>Dá uma olhadinha<br><br><div class=\"post__iframe\"><iframe loading=\"lazy\" width=\"640\" height=\"360\" src=\"https://player.vimeo.com/video/449330833?h=36becf3668&amp;title=0&amp;byline=0&amp;portrait=0\" frameborder=\"0\" allow=\"autoplay; fullscreen; picture-in-picture\" allowfullscreen=\"allowfullscreen\" data-mce-fragment=\"1\"></iframe></div>\n<p><br><br>Como instalo no MAC?<br><br><code>brew install --cask aerial</code><br><br>Dali pra frente é só usar e escolher os lindos lugares para seu screensaver.<br><br>O mais legal é que funciona com múltiplos monitores, isso significa que você pode ter diferentes visões em cada monitor.<br><br>Não usa mac? Não tem problema, seguem projetos similares</p>\n<p>Para windows =&gt; <a href=\"#INTERNAL_LINK#/post/null\" target=\"_blank\" rel=\"noopener noreferrer\">https://github.com/OrangeJedi/Aerial</a><br>Para linux =&gt; <a href=\"#INTERNAL_LINK#/post/null\" target=\"_blank\" rel=\"noopener noreferrer\">https://github.com/graysky2/xscreensaver-aerial/</a><br><br>[s]<br>Guto<br><br></p>",
-            "author": {
-                "name": "Guto Carvalho"
-            },
-            "tags": [
-                   "Tips",
-                   "Projetos"
-            ],
-            "date_published": "2021-08-30T13:38:49-03:00",
-            "date_modified": "2021-08-30T13:41:27-03:00"
+            "date_modified": "2021-10-06T15:23:30-03:00"
         }
     ]
 }
