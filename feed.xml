@@ -3,7 +3,7 @@
     <title>Guto@Site</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2021-10-09T19:10:44-03:00</updated>
+    <updated>2021-10-09T19:18:43-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
@@ -19,7 +19,7 @@
             <category term="Tips"/>
             <category term="MindNotes"/>
 
-        <updated>2021-10-09T19:10:44-03:00</updated>
+        <updated>2021-10-09T19:18:43-03:00</updated>
             <summary>
                 <![CDATA[
                     <p>Aprenda a instalar o gitlab-runner para rodar docker DIND.</p>
@@ -30,7 +30,7 @@
             <![CDATA[
                 <p>Aprenda a instalar o gitlab-runner para rodar docker DIND.</p>
 
-<p><strong>Instalando docker no Ubuntu</strong><br><br><code>curl https://releases.rancher.com/install-docker/19.03.sh | sh</code><br><code>systemctl enable docker</code><br><code>systemctl start docker</code><br><br><strong>Instalando o GitLab Runner no Ubuntu</strong><br><br><code>curl -LJO "https://gitlab-runner-downloads.s3.amazonaws.com/latest/deb/gitlab-runner_amd64.deb"</code><br><code>dpkg -i gitlab-runner_amd64.deb</code><br><code>systemctl enable gitlab-runner</code><br><code>systemctl start gitlab-runner</code><br><br><strong>Registrando um Runner Docker-in-Docker</strong><br><br><code>gitlab-runner register -n \</code><br><code>  --url https://gitlab.com/ \</code><br><code>  --registration-token REGISTRATION_TOKEN \</code><br><code>  --executor docker \</code><br><code>  --privileged true \</code><br><code>  --description "Docker Runner  1" \</code><br><code>  --docker-image "docker:19.03.12" \</code><br><code>  --docker-volumes /var/run/docker.sock:/var/run/docker.sock</code><code></code> <br><strong><br></strong>Crie quantos runners achar necessário, eu costumo reservar 1 vCPU e 1 GB de RAM para cada Runner.</p>
+<p><strong>Instalando docker no Ubuntu</strong><br><br><code>curl https://releases.rancher.com/install-docker/19.03.sh | sh</code><br><code>systemctl enable docker</code><br><code>systemctl start docker</code><br><br><strong>Instalando o GitLab Runner no Ubuntu</strong><br><br><code>curl -LJO "https://gitlab-runner-downloads.s3.amazonaws.com/latest/deb/gitlab-runner_amd64.deb"</code><br><code>dpkg -i gitlab-runner_amd64.deb</code><br><code>systemctl enable gitlab-runner</code><br><code>systemctl start gitlab-runner</code><br><br><strong>Registrando um Runner Docker-in-Docker</strong><br><br><code>gitlab-runner register -n \</code><br><code>  --url https://gitlab.com/ \</code><br><code>  --registration-token TOKEN \</code><br><code>  --description "Runner Guto 1" \</code><br><code>  --tag-list docker \</code><br><code>  --executor docker \</code><br><code>  --docker-image "docker:19.03.12" \</code><br><code>  --docker-privileged true \</code><br><code>  --docker-volumes /var/run/docker.sock:/var/run/docker.sock </code><br><strong><br></strong>Crie quantos runners achar necessário, eu costumo reservar 1 vCPU e 1 GB de RAM para cada Runner.</p>
 <p><strong>Configurando a concorrência do gitlab-runner</strong><br><br>edite o arquivo<br><br><code>vim  /etc/gitlab-runner/config.toml</code><br><br>altere o número de runners concorrentes para a quantidade que você criou.<br><br><code>concurrent = 4</code><br><br>reinicie o runner</p>
 <p><code>systemctl restart gitlab-runner</code></p>
 <p>ah, tenha certeza que a instância tem recursos que aguentam a demanda de concorrência, tanto do ponto de vista de memória, quanto de processamento e disco.</p>
