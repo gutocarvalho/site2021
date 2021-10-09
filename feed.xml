@@ -3,14 +3,14 @@
     <title>Guto@Site</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2021-10-09T07:42:06-03:00</updated>
+    <updated>2021-10-09T18:43:54-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
     <id>https://gutocarvalho.net</id>
 
     <entry>
-        <title>Mesa com regulagem de altura</title>
+        <title>Mesa com regulagem de altura elétrica</title>
         <author>
             <name>Guto Carvalho</name>
         </author>
@@ -18,23 +18,24 @@
         <id>https://gutocarvalho.net/mesa-com-regulagem-de-altura-eletrica-brasil/</id>
             <category term="MindNotes"/>
 
-        <updated>2021-10-09T07:42:06-03:00</updated>
+        <updated>2021-10-09T18:43:08-03:00</updated>
             <summary>
                 <![CDATA[
-                    Seguem as opções que eu encontrei no Brasil. https://slik.com.br/ https://www.geniodesks.com.br https://baherstore.com.br/produto/mesa-reta [s]
+                    <p>Seguem as opções de standing desk que eu encontrei no Brasil.</p>
+
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                <p>Seguem as opções que eu encontrei no Brasil.</p>
+                <p>Seguem as opções de standing desk que eu encontrei no Brasil.</p>
+
 <p><br><a href="https://slik.com.br/">https://slik.com.br/</a></p>
-<p><a href="https://www.geniodesks.com.br">https://www.geniodesks.com.br</a><br><br><a href="https://baherstore.com.br/produto/mesa-reta">https://baherstore.com.br/produto/mesa-reta</a></p>
-<p>[s]</p>
+<p><a href="https://www.geniodesks.com.br">https://www.geniodesks.com.br</a><br><br><a href="https://baherstore.com.br/produto/mesa-reta">https://baherstore.com.br/produto/mesa-reta</a><br><br>Melhor custo/beneficio até agora é a Baherstore.<br><br>[s]<br>Guto</p>
             ]]>
         </content>
     </entry>
     <entry>
-        <title>Iniciando novo projeto!</title>
+        <title>Iniciando novo projeto solo!</title>
         <author>
             <name>Guto Carvalho</name>
         </author>
@@ -42,15 +43,18 @@
         <id>https://gutocarvalho.net/iniciando-novo-projeto-nativetrail/</id>
             <category term="Tips"/>
 
-        <updated>2021-10-09T07:25:37-03:00</updated>
+        <updated>2021-10-09T18:43:54-03:00</updated>
             <summary>
                 <![CDATA[
-                    Pessoal, apenas para informa que estou iniciando um novo projeto chamado NativeTrail.io,&hellip;
+                    <p>Conheça o novo projeto "solo" que estou iniciando.</p>
+
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                <p>Pessoal, apenas para informa que estou iniciando um novo projeto chamado <a href="https://nativetrail.io" target="_blank" rel="noopener noreferrer">NativeTrail.io</a>, visite o site e conheça os serviços dessa nova consultoria ;)<br><br>[s]<br>Guto</p>
+                <p>Conheça o novo projeto "solo" que estou iniciando.</p>
+
+<p>Pessoal, passando aqui apenas para informar que estou iniciando um novo projeto chamado <a href="https://nativetrail.io" target="_blank" rel="noopener noreferrer">NativeTrail.io</a>, visite o site e conheça os serviços dessa nova consultoria ;)<br><br>[s]<br>Guto</p>
             ]]>
         </content>
     </entry>
