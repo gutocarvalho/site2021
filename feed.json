@@ -10,6 +10,36 @@
     },
     "items": [
         {
+            "id": "https://gutocarvalho.net/mesa-com-regulagem-de-altura-eletrica-brasil/",
+            "url": "https://gutocarvalho.net/mesa-com-regulagem-de-altura-eletrica-brasil/",
+            "title": "Mesa com regulagem de altura",
+            "summary": "Seguem as opções que eu encontrei no Brasil. https://slik.com.br/ https://www.geniodesks.com.br https://baherstore.com.br/produto/mesa-reta [s]",
+            "content_html": "<p>Seguem as opções que eu encontrei no Brasil.</p>\n<p><br><a href=\"https://slik.com.br/\">https://slik.com.br/</a></p>\n<p><a href=\"https://www.geniodesks.com.br\">https://www.geniodesks.com.br</a><br><br><a href=\"https://baherstore.com.br/produto/mesa-reta\">https://baherstore.com.br/produto/mesa-reta</a></p>\n<p>[s]</p>",
+            "author": {
+                "name": "Guto Carvalho"
+            },
+            "tags": [
+                   "MindNotes"
+            ],
+            "date_published": "2021-10-09T07:42:06-03:00",
+            "date_modified": "2021-10-09T07:42:06-03:00"
+        },
+        {
+            "id": "https://gutocarvalho.net/iniciando-novo-projeto-nativetrail/",
+            "url": "https://gutocarvalho.net/iniciando-novo-projeto-nativetrail/",
+            "title": "Iniciando novo projeto!",
+            "summary": "Pessoal, apenas para informa que estou iniciando um novo projeto chamado NativeTrail.io,&hellip;",
+            "content_html": "<p>Pessoal, apenas para informa que estou iniciando um novo projeto chamado <a href=\"https://nativetrail.io\" target=\"_blank\" rel=\"noopener noreferrer\">NativeTrail.io</a>, visite o site e conheça os serviços dessa nova consultoria ;)<br><br>[s]<br>Guto</p>",
+            "author": {
+                "name": "Guto Carvalho"
+            },
+            "tags": [
+                   "Tips"
+            ],
+            "date_published": "2021-10-09T07:25:21-03:00",
+            "date_modified": "2021-10-09T07:25:37-03:00"
+        },
+        {
             "id": "https://gutocarvalho.net/instalando-rancher-single-node/",
             "url": "https://gutocarvalho.net/instalando-rancher-single-node/",
             "title": "Instalando Rancher Single Node",
@@ -139,38 +169,6 @@
             ],
             "date_published": "2021-10-04T09:19:57-03:00",
             "date_modified": "2021-10-04T10:20:56-03:00"
-        },
-        {
-            "id": "https://gutocarvalho.net/reparando-disco-no-mac/",
-            "url": "https://gutocarvalho.net/reparando-disco-no-mac/",
-            "title": "Reparando disco no mac",
-            "summary": "<p>Meu disco USB não montava mais no mac, veja como resolvi.</p>\n",
-            "content_html": "<p>Meu disco USB não montava mais no mac, veja como resolvi.</p>\n\n<p>Meu disco não montava mais, e quando tentava reparar pela UI do Diskutil eu recebia o erro.<br><br><code>File system verify or repair failed. : (-69845)</code></p>\n<p>Pelo UI do Diskutil não teve jeito, então fui para o terminal e rodei</p>\n<p><code>$ diskutil repairDisk disk3</code><br><br>E tive a seguinte saída <br><br><code>Repairing the partition map might erase disk3s1, proceed? (y/N) y</code><br><code>Started partition map repair on disk3</code><br><code>Checking prerequisites</code><br><code>Checking the partition list</code><br><code>Adjusting partition map to fit whole disk as required</code><br><code>Checking for an EFI system partition</code><br><code>Checking the EFI system partition's size</code><br><code>Checking the EFI system partition's file system</code><br><code>Checking the EFI system partition's folder content</code><br><code>Checking all HFS data partition loader spaces</code><br><code>Checking booter partitions</code><br><code>Reviewing boot support loaders</code><br><code>Checking Core Storage Physical Volume partitions</code><br><code>The partition map appears to be OK</code><br><code>Finished partition map repair on disk3</code><br><br>Com isso o disco voltou a funcionar.<br><br>Substitua <strong>disk3</strong> pelo valor correto do device.<br><br>[s]<br>Guto</p>",
-            "author": {
-                "name": "Guto Carvalho"
-            },
-            "tags": [
-                   "Tips"
-            ],
-            "date_published": "2021-09-30T20:02:23-03:00",
-            "date_modified": "2021-09-30T20:02:23-03:00"
-        },
-        {
-            "id": "https://gutocarvalho.net/instalando-metricserver/",
-            "url": "https://gutocarvalho.net/instalando-metricserver/",
-            "title": "K8S: Instalando o metric server no EKS",
-            "summary": "<p>Aprenda a instalar o agregador de métricas em seu cluster.</p>\n",
-            "content_html": "<p>Aprenda a instalar o agregador de métricas em seu cluster.</p>\n\n<p><strong>Para que serve?</strong><br><br>O Metric server é um agregador de informações sobre os recursos utilizados em seu cluster. Uma vez instalado ele ai expor essas informações via APIServer.<br><br>O Metric server é em especial importante para usar recursos de escalabilidade horizontal e vertical de PODs dentro do seu cluster K8S, tal como HPA e VPA.<br><br>Em alguns provedores como AWS EKS ele não é instalado por padrão.<br><br><strong>Como eu instalo em meu cluster?<br><br></strong><code>$ kubectl apply -f https://github.com/kubernetes-sigs/metrics-server/releases/latest/download/components.yaml</code><br><br><strong>Verificando se está instalado<br></strong><br><code>$ kubectl get deployment metrics-server -n kube-system</code><br><br><strong>Refs </strong><br><br>- <a href=\"https://docs.aws.amazon.com/eks/latest/userguide/metrics-server.html\" target=\"_blank\" rel=\"noopener\">https://docs.aws.amazon.com/eks/latest/userguide/metrics-server.html</a><br>- <a href=\"https://github.com/kubernetes-sigs/metrics-server\" target=\"_blank\" rel=\"noopener\">https://github.com/kubernetes-sigs/metrics-server</a></p>",
-            "author": {
-                "name": "Guto Carvalho"
-            },
-            "tags": [
-                   "Projetos",
-                   "MindNotes",
-                   "K8S"
-            ],
-            "date_published": "2021-09-23T15:43:50-03:00",
-            "date_modified": "2021-10-06T15:23:30-03:00"
         }
     ]
 }

@@ -3,12 +3,57 @@
     <title>Guto@Site</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2021-10-07T23:03:41-03:00</updated>
+    <updated>2021-10-09T07:42:06-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
     <id>https://gutocarvalho.net</id>
 
+    <entry>
+        <title>Mesa com regulagem de altura</title>
+        <author>
+            <name>Guto Carvalho</name>
+        </author>
+        <link href="https://gutocarvalho.net/mesa-com-regulagem-de-altura-eletrica-brasil/"/>
+        <id>https://gutocarvalho.net/mesa-com-regulagem-de-altura-eletrica-brasil/</id>
+            <category term="MindNotes"/>
+
+        <updated>2021-10-09T07:42:06-03:00</updated>
+            <summary>
+                <![CDATA[
+                    Seguem as opções que eu encontrei no Brasil. https://slik.com.br/ https://www.geniodesks.com.br https://baherstore.com.br/produto/mesa-reta [s]
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p>Seguem as opções que eu encontrei no Brasil.</p>
+<p><br><a href="https://slik.com.br/">https://slik.com.br/</a></p>
+<p><a href="https://www.geniodesks.com.br">https://www.geniodesks.com.br</a><br><br><a href="https://baherstore.com.br/produto/mesa-reta">https://baherstore.com.br/produto/mesa-reta</a></p>
+<p>[s]</p>
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>Iniciando novo projeto!</title>
+        <author>
+            <name>Guto Carvalho</name>
+        </author>
+        <link href="https://gutocarvalho.net/iniciando-novo-projeto-nativetrail/"/>
+        <id>https://gutocarvalho.net/iniciando-novo-projeto-nativetrail/</id>
+            <category term="Tips"/>
+
+        <updated>2021-10-09T07:25:37-03:00</updated>
+            <summary>
+                <![CDATA[
+                    Pessoal, apenas para informa que estou iniciando um novo projeto chamado NativeTrail.io,&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p>Pessoal, apenas para informa que estou iniciando um novo projeto chamado <a href="https://nativetrail.io" target="_blank" rel="noopener noreferrer">NativeTrail.io</a>, visite o site e conheça os serviços dessa nova consultoria ;)<br><br>[s]<br>Guto</p>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>Instalando Rancher Single Node</title>
         <author>
@@ -220,58 +265,6 @@
 
 <p>Eu normalmente utilizo o <strong>Passbolt</strong> em meus projetos, mas estou em um fase de renovar minha stack, sendo assim segue uma listinha de algumas das ferramentas que eu ainda quero testar:</p>
 <p>- <a href="https://padloc.app">https://padloc.app</a><br>- <a href="https://bitwarden.com">https://bitwarden.com</a><br>- <a href="https://lesspass.com/#/">https://lesspass.com</a><br>- <a href="https://passit.io">https://passit.io</a><br>- <a href="http://syspass.org/en">http://syspass.org/en</a><br>- <a href="https://psono.com">https://psono.com</a><br><br>Vale lembrar que todos são <strong>open source</strong> e <strong>self-hosted</strong>.<br><br>E quem não conhece o <strong>Passbolt</strong>, segue:<br><br>- <a href="https://www.passbolt.com">https://www.passbolt.com</a><br><br>[s]<br>Guto</p>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>Reparando disco no mac</title>
-        <author>
-            <name>Guto Carvalho</name>
-        </author>
-        <link href="https://gutocarvalho.net/reparando-disco-no-mac/"/>
-        <id>https://gutocarvalho.net/reparando-disco-no-mac/</id>
-            <category term="Tips"/>
-
-        <updated>2021-09-30T20:02:23-03:00</updated>
-            <summary>
-                <![CDATA[
-                    <p>Meu disco USB não montava mais no mac, veja como resolvi.</p>
-
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                <p>Meu disco USB não montava mais no mac, veja como resolvi.</p>
-
-<p>Meu disco não montava mais, e quando tentava reparar pela UI do Diskutil eu recebia o erro.<br><br><code>File system verify or repair failed. : (-69845)</code></p>
-<p>Pelo UI do Diskutil não teve jeito, então fui para o terminal e rodei</p>
-<p><code>$ diskutil repairDisk disk3</code><br><br>E tive a seguinte saída <br><br><code>Repairing the partition map might erase disk3s1, proceed? (y/N) y</code><br><code>Started partition map repair on disk3</code><br><code>Checking prerequisites</code><br><code>Checking the partition list</code><br><code>Adjusting partition map to fit whole disk as required</code><br><code>Checking for an EFI system partition</code><br><code>Checking the EFI system partition's size</code><br><code>Checking the EFI system partition's file system</code><br><code>Checking the EFI system partition's folder content</code><br><code>Checking all HFS data partition loader spaces</code><br><code>Checking booter partitions</code><br><code>Reviewing boot support loaders</code><br><code>Checking Core Storage Physical Volume partitions</code><br><code>The partition map appears to be OK</code><br><code>Finished partition map repair on disk3</code><br><br>Com isso o disco voltou a funcionar.<br><br>Substitua <strong>disk3</strong> pelo valor correto do device.<br><br>[s]<br>Guto</p>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>K8S: Instalando o metric server no EKS</title>
-        <author>
-            <name>Guto Carvalho</name>
-        </author>
-        <link href="https://gutocarvalho.net/instalando-metricserver/"/>
-        <id>https://gutocarvalho.net/instalando-metricserver/</id>
-            <category term="Projetos"/>
-            <category term="MindNotes"/>
-            <category term="K8S"/>
-
-        <updated>2021-10-06T15:23:30-03:00</updated>
-            <summary>
-                <![CDATA[
-                    <p>Aprenda a instalar o agregador de métricas em seu cluster.</p>
-
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                <p>Aprenda a instalar o agregador de métricas em seu cluster.</p>
-
-<p><strong>Para que serve?</strong><br><br>O Metric server é um agregador de informações sobre os recursos utilizados em seu cluster. Uma vez instalado ele ai expor essas informações via APIServer.<br><br>O Metric server é em especial importante para usar recursos de escalabilidade horizontal e vertical de PODs dentro do seu cluster K8S, tal como HPA e VPA.<br><br>Em alguns provedores como AWS EKS ele não é instalado por padrão.<br><br><strong>Como eu instalo em meu cluster?<br><br></strong><code>$ kubectl apply -f https://github.com/kubernetes-sigs/metrics-server/releases/latest/download/components.yaml</code><br><br><strong>Verificando se está instalado<br></strong><br><code>$ kubectl get deployment metrics-server -n kube-system</code><br><br><strong>Refs </strong><br><br>- <a href="https://docs.aws.amazon.com/eks/latest/userguide/metrics-server.html" target="_blank" rel="noopener">https://docs.aws.amazon.com/eks/latest/userguide/metrics-server.html</a><br>- <a href="https://github.com/kubernetes-sigs/metrics-server" target="_blank" rel="noopener">https://github.com/kubernetes-sigs/metrics-server</a></p>
             ]]>
         </content>
     </entry>
