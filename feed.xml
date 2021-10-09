@@ -3,7 +3,7 @@
     <title>Guto@Site</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2021-10-09T19:24:18-03:00</updated>
+    <updated>2021-10-09T19:25:29-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
@@ -64,7 +64,7 @@
         </content>
     </entry>
     <entry>
-        <title>Iniciando novo projeto solo!</title>
+        <title>Iniciando novo projeto solo! </title>
         <author>
             <name>Guto Carvalho</name>
         </author>
@@ -72,16 +72,16 @@
         <id>https://gutocarvalho.net/iniciando-novo-projeto-nativetrail/</id>
             <category term="Drops"/>
 
-        <updated>2021-10-09T18:43:54-03:00</updated>
+        <updated>2021-10-09T19:25:29-03:00</updated>
             <summary>
                 <![CDATA[
-                    <p>Conheça o novo projeto "solo" que estou iniciando.</p>
+                    <p>Conheça a NativeTrail, novo projeto "solo" que estou iniciando.</p>
 
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                <p>Conheça o novo projeto "solo" que estou iniciando.</p>
+                <p>Conheça a NativeTrail, novo projeto "solo" que estou iniciando.</p>
 
 <p>Pessoal, passando aqui apenas para informar que estou iniciando um novo projeto chamado <a href="https://nativetrail.io" target="_blank" rel="noopener noreferrer">NativeTrail.io</a>, visite o site e conheça os serviços dessa nova consultoria ;)<br><br>[s]<br>Guto</p>
             ]]>
