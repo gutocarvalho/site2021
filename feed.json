@@ -10,6 +10,22 @@
     },
     "items": [
         {
+            "id": "https://gutocarvalho.net/instalando-gitlab-runner-no-ubuntu/",
+            "url": "https://gutocarvalho.net/instalando-gitlab-runner-no-ubuntu/",
+            "title": "Instalando GitLab Runner Dind no Ubuntu",
+            "summary": "<p>Aprenda a instalar o gitlab-runner para rodar docker DIND.</p>\n",
+            "content_html": "<p>Aprenda a instalar o gitlab-runner para rodar docker DIND.</p>\n\n<p><strong>Instalando docker no Ubuntu</strong><br><br><code>curl https://releases.rancher.com/install-docker/19.03.sh | sh</code><br><code>systemctl enable docker</code><br><code>systemctl start docker</code><br><br><strong>Instalando o GitLab Runner no Ubuntu</strong><br><br><code>curl -LJO \"https://gitlab-runner-downloads.s3.amazonaws.com/latest/deb/gitlab-runner_amd64.deb\"</code><br><code>dpkg -i gitlab-runner_amd64.deb</code><br><code>systemctl enable gitlab-runner</code><br><code>systemctl start gitlab-runner</code><br><br><strong>Registrando um Runner Docker-in-Docker</strong><br><br><code>gitlab-runner register -n \\</code><br><code>  --url https://gitlab.com/ \\</code><br><code>  --registration-token REGISTRATION_TOKEN \\</code><br><code>  --executor docker \\</code><br><code>  --privileged true \\</code><br><code>  --description \"Docker Runner  1\" \\</code><br><code>  --docker-image \"docker:19.03.12\" \\</code><br><code>  --docker-volumes /var/run/docker.sock:/var/run/docker.sock</code><code></code> <br><strong><br></strong>Crie quantos runners achar necessário, eu procure reservar 1 vCPU e 1 GB de RAM para cada Runner.</p>\n<p><strong>Configurando a concorrência do gitlab-runner</strong><br><br>edite o arquivo<br><br><code>vim  /etc/gitlab-runner/config.toml</code><br><br>altere o número de runners concorrentes para a quantidade que você criou.<br><br><code>concurrent = 4</code><br><br>reinicie o runner</p>\n<p><code>systemctl restart gitlab-runner</code></p>\n<p>ah, tenha certeza que a instância tem recursos que aguentam a demanda de concorrência, tanto do ponto de vista de memória, quanto de processamento e disco.</p>\n<p>[s]<br>Guto</p>",
+            "author": {
+                "name": "Guto Carvalho"
+            },
+            "tags": [
+                   "Tips",
+                   "MindNotes"
+            ],
+            "date_published": "2021-10-09T18:40:29-03:00",
+            "date_modified": "2021-10-09T19:09:24-03:00"
+        },
+        {
             "id": "https://gutocarvalho.net/mesa-com-regulagem-de-altura-eletrica-brasil/",
             "url": "https://gutocarvalho.net/mesa-com-regulagem-de-altura-eletrica-brasil/",
             "title": "Mesa com regulagem de altura elétrica",
@@ -153,22 +169,6 @@
             ],
             "date_published": "2021-10-04T09:49:49-03:00",
             "date_modified": "2021-10-04T10:21:04-03:00"
-        },
-        {
-            "id": "https://gutocarvalho.net/gerenciadores-de-senha-open-source/",
-            "url": "https://gutocarvalho.net/gerenciadores-de-senha-open-source/",
-            "title": "Gerenciadores de senha open source",
-            "summary": "<p>Lista de projetos open source para gerenciar suas senhas!</p>\n",
-            "content_html": "<p>Lista de projetos open source para gerenciar suas senhas!</p>\n\n<p>Eu normalmente utilizo o <strong>Passbolt</strong> em meus projetos, mas estou em um fase de renovar minha stack, sendo assim segue uma listinha de algumas das ferramentas que eu ainda quero testar:</p>\n<p>- <a href=\"https://padloc.app\">https://padloc.app</a><br>- <a href=\"https://bitwarden.com\">https://bitwarden.com</a><br>- <a href=\"https://lesspass.com/#/\">https://lesspass.com</a><br>- <a href=\"https://passit.io\">https://passit.io</a><br>- <a href=\"http://syspass.org/en\">http://syspass.org/en</a><br>- <a href=\"https://psono.com\">https://psono.com</a><br><br>Vale lembrar que todos são <strong>open source</strong> e <strong>self-hosted</strong>.<br><br>E quem não conhece o <strong>Passbolt</strong>, segue:<br><br>- <a href=\"https://www.passbolt.com\">https://www.passbolt.com</a><br><br>[s]<br>Guto</p>",
-            "author": {
-                "name": "Guto Carvalho"
-            },
-            "tags": [
-                   "Tips",
-                   "Projetos"
-            ],
-            "date_published": "2021-10-04T09:19:57-03:00",
-            "date_modified": "2021-10-04T10:20:56-03:00"
         }
     ]
 }
