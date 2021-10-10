@@ -3,7 +3,7 @@
     <title>Guto@Site</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2021-10-10T14:06:45-03:00</updated>
+    <updated>2021-10-10T16:34:28-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
@@ -18,7 +18,7 @@
         <id>https://gutocarvalho.net/drops-criando-um-eks-basico-via-terraform/</id>
             <category term="Drops"/>
 
-        <updated>2021-10-10T14:06:45-03:00</updated>
+        <updated>2021-10-10T16:34:28-03:00</updated>
             <summary>
                 <![CDATA[
                     Aprenda a criar um cluster EKS básico via Terraform! Só vem :”)&hellip;
@@ -28,7 +28,7 @@
             <![CDATA[
                 <p>Aprenda a criar um cluster EKS básico via Terraform! Só vem :”)</p>
 <h3 id="o-que-são-drops">O que são drops?</h3>
-<p>São DUMPs mentais rápidos e rasteiros, simples e objetivos – que funcionam – geralmente é algo que eu acabei de usar e escrevi a doc em markdown. Contudo, considere um rascunho, depois eu volto para detalhar um pouco mais, comenta ai qquer coisa – os comentários estão ligados nos posts da categoria DROPS ;)</p>
+<p>Esse é um DUMP mental rápido e rasteiro, simples e objetivo – que funciona – depois eu volto para detalhar mais cada passo, comenta ai qquer coisa, os comentários estão ligados nos DROPS ;)</p>
 <h3 id="requisitos">requisitos</h3>
 <p>Tenha kubeclt e helm instalados.</p>
 <p>Tenha o awscli e aws-iam-authenticator instalados.</p>
@@ -108,7 +108,7 @@ node_group_instance_type = &quot;t3.large&quot;
 <pre><code>vim vpc.tl
 </code></pre>
 <p>insira o conteúdo abaixo</p>
-<pre><code># declarando variaveis
+<pre><code># Declarando variaveis
 
 variable &quot;cluster_name&quot; {
   type        = string
@@ -135,17 +135,10 @@ variable &quot;zone_offset&quot; {
   description = &quot;Offset de extensao dos bits CIDR para calculo e subnets, para evitar colisoes entre redes publicas e privadas&quot;
 }
 
-# buscando zonas disponiveis na regiao selecionada
-
-data &quot;aws_availability_zones&quot; &quot;available_azs&quot; {
-  state = &quot;available&quot;
-}
-
 # Fixando o IP do Nat Gateway
 
 resource &quot;aws_eip&quot; &quot;nat_gw_elastic_ip&quot; {
   vpc = true
-
   tags = {
     Name            = &quot;${var.cluster_name}-nat-eip&quot;
   }
@@ -158,23 +151,10 @@ module &quot;vpc&quot; {
 
   name = &quot;${var.name_prefix}-vpc&quot;
   cidr = var.main_network_block
-  #azs  = data.aws_availability_zones.available_azs.names
-  azs = [ &quot;us-east-1a&quot;, &quot;us-east-1b&quot;, &quot;us-east-1c&quot;, &quot;us-east-1d&quot; ]
+  azs  = [ &quot;us-east-1a&quot;, &quot;us-east-1b&quot;, &quot;us-east-1c&quot;, &quot;us-east-1d&quot; ]
 
-  private_subnets = [
-    # esse loop vai criar uma lista de redes privadas [&quot;10.0.0.0/20&quot;, &quot;10.0.16.0/20&quot;, &quot;10.0.32.0/20&quot;, ...]
-    # com tamanho que vai depender das zonas de disponibilidades
-    for zone_id in data.aws_availability_zones.available_azs.zone_ids :
-    cidrsubnet(var.main_network_block, var.subnet_prefix_extension, tonumber(substr(zone_id, length(zone_id) - 1, 1)) - 1)
-  ]
-
-  public_subnets = [
-    # esse loop vai criar um lista de redes publicas [&quot;10.0.128.0/20&quot;, &quot;10.0.144.0/20&quot;, &quot;10.0.160.0/20&quot;, ...]
-    # com tamanho que vai depender das zonas de disponibilidades
-    # é adicionado um offset para evitar colisoes 
-    for zone_id in data.aws_availability_zones.available_azs.zone_ids :
-    cidrsubnet(var.main_network_block, var.subnet_prefix_extension, tonumber(substr(zone_id, length(zone_id) - 1, 1)) + var.zone_offset - 1)
-  ]
+  private_subnets      = [&quot;10.0.1.0/24&quot;, &quot;10.0.2.0/24&quot;, &quot;10.0.3.0/24&quot;, &quot;10.0.4.0/24&quot; ]
+  public_subnets       = [&quot;10.0.5.0/24&quot;, &quot;10.0.6.0/24&quot;, &quot;10.0.7.0/24&quot;, &quot;10.0.8.0/24&quot; ]
 
   enable_nat_gateway     = true
   single_nat_gateway     = true
@@ -183,7 +163,8 @@ module &quot;vpc&quot; {
   reuse_nat_ips          = true
   external_nat_ip_ids    = [aws_eip.nat_gw_elastic_ip.id]
 
-  # adiciona VPC/Subnet tags necessarias para o EKS
+  # Adicionando tags necessarias para o EKS
+
   tags = {
     &quot;kubernetes.io/cluster/${var.cluster_name}&quot; = &quot;shared&quot;
   }
@@ -326,8 +307,7 @@ Apply complete! Resources: 54 added, 0 changed, 0 destroyed.
 </code></pre>
 <h3 id="validando-o-acesso-ao-cluster">validando o acesso ao cluster</h3>
 <p>carregue o kubconfig</p>
-<pre><code>export KUBECONFIG=kubeconfig_hackaton
-
+<pre><code>export KUBECONFIG=kubeconfig
 kubectl cluster-info
 </code></pre>
 <p>saída esperada</p>
@@ -346,7 +326,7 @@ ip-10-xx-xx-xx.ec2.internal   Ready    &lt;none&gt;   3m11s   v1.21.2-eks-55daa9
 <p>Parece tudo ok!</p>
 <p>Agora vai na AWS e confere VPC, EKS e o restante ;)    </p>
 <h3 id="post-install">post-install</h3>
-<p>Agora precisamos instalar o ingress e o cert-manager e validar, vai lá.</p>
+<p>Agora precisamos instalar o ingress e o cert-manager, vai lá!</p>
 <ol>
 <li><a href="https://gutocarvalho.net/instalando-ingress-aws-no-k8s-eks/">https://gutocarvalho.net/instalando-ingress-aws-no-k8s-eks/</a></li>
 <li><a href="https://gutocarvalho.net/instalando-cert-manager-no-k8s/">https://gutocarvalho.net/instalando-cert-manager-no-k8s/</a></li>
@@ -355,13 +335,14 @@ ip-10-xx-xx-xx.ec2.internal   Ready    &lt;none&gt;   3m11s   v1.21.2-eks-55daa9
 <ul>
 <li><a href="https://gutocarvalho.net/gerando-kubeconfig-para-aws-eks/">https://gutocarvalho.net/gerando-kubeconfig-para-aws-eks/</a></li>
 </ul>
-<p>Bons estudos testes!</p>
+<p>Bons estudos!</p>
 <h3 id="refs">refs</h3>
 <ul>
 <li><a href="https://registry.terraform.io/modules/terraform-aws-modules/eks/aws/latest">https://registry.terraform.io/modules/terraform-aws-modules/eks/aws/latest</a></li>
 <li><a href="https://github.com/terraform-aws-modules/terraform-aws-eks">https://github.com/terraform-aws-modules/terraform-aws-eks</a></li>
 <li><a href="https://itnext.io/build-an-eks-cluster-with-terraform-d35db8005963">https://itnext.io/build-an-eks-cluster-with-terraform-d35db8005963</a></li>
 <li><a href="https://adamtheautomator.com/terraform-eks-module/">https://adamtheautomator.com/terraform-eks-module/</a></li>
+<li><a href="https://github.com/terraform-aws-modules/terraform-aws-eks/blob/master/docs/iam-permissions.md">https://github.com/terraform-aws-modules/terraform-aws-eks/blob/master/docs/iam-permissions.md</a></li>
 </ul>
 
             ]]>
