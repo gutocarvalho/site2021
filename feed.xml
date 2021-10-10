@@ -3,12 +3,370 @@
     <title>Guto@Site</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2021-10-09T19:25:29-03:00</updated>
+    <updated>2021-10-10T14:02:01-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
     <id>https://gutocarvalho.net</id>
 
+    <entry>
+        <title>DROPS: Criando um eks básico via terraform</title>
+        <author>
+            <name>Guto Carvalho</name>
+        </author>
+        <link href="https://gutocarvalho.net/drops-criando-um-eks-basico-via-terraform/"/>
+        <id>https://gutocarvalho.net/drops-criando-um-eks-basico-via-terraform/</id>
+            <category term="Drops"/>
+
+        <updated>2021-10-10T14:02:01-03:00</updated>
+            <summary>
+                <![CDATA[
+                    Aprenda a criar um cluster EKS básico via Terraform! Só vem :”)&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p>Aprenda a criar um cluster EKS básico via Terraform! Só vem :”)</p>
+<h3 id="o-que-são-drops">O que são drops?</h3>
+<p>Esse é um DUMP mental rápido e rasteiro, simples e objetivo – que funciona – depois eu volto para detalhar mais cada passado, comenta ai qquer coisa, os comentários estão ligados nos DROPS ;)</p>
+<h3 id="requisitos">requisitos</h3>
+<p>Tenha kubeclt e helm instalados.</p>
+<p>Tenha o awscli e aws-iam-authenticator instalados.</p>
+<p>Esteja logado com aws-cli na conta correta com permissoes para criar as coisas.</p>
+<h3 id="crie-um-diretório-para-seu-projeto">crie um diretório para seu projeto</h3>
+<pre><code>mkdir -p terraform/eks/meucluster
+cd terraform/eks/meucluster
+</code></pre>
+<h3 id="crie-o-arquivo-para-definir-as-versões-dos-módulos">crie o arquivo para definir as versões dos módulos</h3>
+<p>edite o arquiovo</p>
+<pre><code>vim defaults.tf
+</code></pre>
+<p>insira o conteúdo abaixo para definir der forma clara as versões que vamos usar</p>
+<pre><code>terraform {
+  required_version = &quot;&gt;= 0.13.1&quot;
+
+  required_providers {
+    aws        = &quot;&gt;= 3.62.0&quot;
+    local      = &quot;&gt;= 2.1.0&quot;
+    kubernetes = &quot;&gt;= 2.5.0&quot;
+    cloudinit  = &quot;&gt;= 2.2.0&quot;
+    http = {
+      source  = &quot;terraform-aws-modules/http&quot;
+      version = &quot;&gt;= 2.4.1&quot;
+    }
+  }
+}
+
+provider &quot;aws&quot; {
+  region  = &quot;us-east-1&quot;
+}
+
+data &quot;aws_caller_identity&quot; &quot;current&quot; {} # used for accesing Account ID and ARN
+</code></pre>
+<p>valide</p>
+<pre><code>terraform validate
+</code></pre>
+<p>saída esperada</p>
+<pre><code>Success! The configuration is valid.
+</code></pre>
+<h3 id="crie-o-arquivo-com-as-variáveis-que-vão-configurar-a-vpc-e-o-eks">crie o arquivo com as variáveis que vão configurar a vpc e o eks</h3>
+<p>crie o arquivo</p>
+<pre><code>vim configs.tfvars
+</code></pre>
+<p>coloque o conteúdo</p>
+<pre><code>## configuracoes para vpc
+
+cluster_name            = &quot;hackathon&quot;
+name_prefix             = &quot;hackathon&quot;
+main_network_block      = &quot;10.0.0.0/16&quot;
+subnet_prefix_extension = 4
+zone_offset             = 8
+
+## configuracoes para eks
+
+eks_cluster_version = &quot;1.21&quot;
+
+node_group_default_disk_size = 30
+node_group_default_ami_type = &quot;AL2_x86_64&quot;
+    
+node_group_desired_capacity = 1
+node_group_max_capacity = 8
+node_group_min_capacity = 1
+node_group_max_unavailable_percentage = 50
+    
+node_group_capacity_type = &quot;ON_DEMAND&quot;
+node_group_instance_type = &quot;t3.large&quot;
+</code></pre>
+<p>valide</p>
+<pre><code>terraform validate
+</code></pre>
+<p>saída esperada</p>
+<pre><code>Success! The configuration is valid.
+</code></pre>
+<h3 id="crie-o-manifesto-que-vai-criar-e-configurar-a-vpc">crie o manifesto que vai criar e configurar a VPC</h3>
+<p>vamos criar agora a vpc</p>
+<pre><code>vim vpc.tl
+</code></pre>
+<p>insira o conteúdo abaixo</p>
+<pre><code># declarando variaveis
+
+variable &quot;cluster_name&quot; {
+  type        = string
+  description = &quot;Nome do Cluster&quot;
+}
+
+variable &quot;name_prefix&quot; {
+  type        = string
+  description = &quot;Prefixo que será utilizado nos nomes dos objetos de infraestrutura criados na AWS&quot;
+}
+
+variable &quot;main_network_block&quot; {
+  type        = string
+  description = &quot;Bloco CIDR base que sera usado em sua VPC&quot;
+}
+
+variable &quot;subnet_prefix_extension&quot; {
+  type        = number
+  description = &quot;Bits de extensao do seu bloco CIDR que sera usado para calcular as suberedes&quot;
+}
+
+variable &quot;zone_offset&quot; {
+  type        = number
+  description = &quot;Offset de extensao dos bits CIDR para calculo e subnets, para evitar colisoes entre redes publicas e privadas&quot;
+}
+
+# buscando zonas disponiveis na regiao selecionada
+
+data &quot;aws_availability_zones&quot; &quot;available_azs&quot; {
+  state = &quot;available&quot;
+}
+
+# Fixando o IP do Nat Gateway
+
+resource &quot;aws_eip&quot; &quot;nat_gw_elastic_ip&quot; {
+  vpc = true
+
+  tags = {
+    Name            = &quot;${var.cluster_name}-nat-eip&quot;
+  }
+}
+
+# Criando a VPC usando configs do modulo oficial AWS
+
+module &quot;vpc&quot; {
+  source  = &quot;terraform-aws-modules/vpc/aws&quot;
+
+  name = &quot;${var.name_prefix}-vpc&quot;
+  cidr = var.main_network_block
+  #azs  = data.aws_availability_zones.available_azs.names
+  azs = [ &quot;us-east-1a&quot;, &quot;us-east-1b&quot;, &quot;us-east-1c&quot;, &quot;us-east-1d&quot; ]
+
+  private_subnets = [
+    # esse loop vai criar uma lista de redes privadas [&quot;10.0.0.0/20&quot;, &quot;10.0.16.0/20&quot;, &quot;10.0.32.0/20&quot;, ...]
+    # com tamanho que vai depender das zonas de disponibilidades
+    for zone_id in data.aws_availability_zones.available_azs.zone_ids :
+    cidrsubnet(var.main_network_block, var.subnet_prefix_extension, tonumber(substr(zone_id, length(zone_id) - 1, 1)) - 1)
+  ]
+
+  public_subnets = [
+    # esse loop vai criar um lista de redes publicas [&quot;10.0.128.0/20&quot;, &quot;10.0.144.0/20&quot;, &quot;10.0.160.0/20&quot;, ...]
+    # com tamanho que vai depender das zonas de disponibilidades
+    # é adicionado um offset para evitar colisoes 
+    for zone_id in data.aws_availability_zones.available_azs.zone_ids :
+    cidrsubnet(var.main_network_block, var.subnet_prefix_extension, tonumber(substr(zone_id, length(zone_id) - 1, 1)) + var.zone_offset - 1)
+  ]
+
+  enable_nat_gateway     = true
+  single_nat_gateway     = true
+  one_nat_gateway_per_az = false
+  enable_dns_hostnames   = true
+  reuse_nat_ips          = true
+  external_nat_ip_ids    = [aws_eip.nat_gw_elastic_ip.id]
+
+  # adiciona VPC/Subnet tags necessarias para o EKS
+  tags = {
+    &quot;kubernetes.io/cluster/${var.cluster_name}&quot; = &quot;shared&quot;
+  }
+  public_subnet_tags = {
+    &quot;kubernetes.io/cluster/${var.cluster_name}&quot; = &quot;shared&quot;
+    &quot;kubernetes.io/role/elb&quot;                    = &quot;1&quot;
+  }
+  private_subnet_tags = {
+    &quot;kubernetes.io/cluster/${var.cluster_name}&quot; = &quot;shared&quot;
+    &quot;kubernetes.io/role/internal-elb&quot;           = &quot;1&quot;
+  }
+}
+</code></pre>
+<p>valide</p>
+<pre><code>terraform validate
+</code></pre>
+<p>saída esperada</p>
+<pre><code>Success! The configuration is valid.
+</code></pre>
+<h3 id="crie-o-manifesto-que-vai-configurar-o-eks">crie o manifesto que vai configurar o eks</h3>
+<p>crie o arquivo</p>
+<pre><code>vim eks.tf
+</code></pre>
+<p>coloque o conteúdo</p>
+<pre><code># declarando variáveis
+
+variable &quot;eks_cluster_version&quot; {
+  type        = string
+}
+
+variable &quot;node_group_default_disk_size&quot; {
+  type        = number
+}
+
+variable &quot;node_group_default_ami_type&quot; {
+  type        = string
+}
+
+variable &quot;node_group_desired_capacity&quot; {
+  type        = number
+}
+
+variable &quot;node_group_max_capacity&quot; {
+  type        = number
+}
+
+variable &quot;node_group_min_capacity&quot; {
+  type        = number
+}
+
+variable &quot;node_group_max_unavailable_percentage&quot; {
+  type        = number
+}
+
+variable &quot;node_group_capacity_type&quot; {
+  type        = string
+}
+
+variable &quot;node_group_instance_type&quot; {
+  type        = string
+}
+
+
+# dados para configuracao
+
+data &quot;aws_eks_cluster&quot; &quot;eks&quot; {
+  name = module.eks.cluster_id
+}
+
+data &quot;aws_eks_cluster_auth&quot; &quot;eks&quot; {
+  name = module.eks.cluster_id
+}
+
+# configurando provider kubernetes
+
+provider &quot;kubernetes&quot; {
+  host                   = data.aws_eks_cluster.eks.endpoint
+  cluster_ca_certificate = base64decode(data.aws_eks_cluster.eks.certificate_authority[0].data)
+  token                  = data.aws_eks_cluster_auth.eks.token
+}
+
+# configurando eks
+
+module &quot;eks&quot; {
+  source          = &quot;terraform-aws-modules/eks/aws&quot;
+
+  cluster_version = var.eks_cluster_version
+  cluster_name    = &quot;${var.cluster_name}&quot;
+
+  subnets = module.vpc.private_subnets
+  vpc_id  = module.vpc.vpc_id
+
+ node_groups_defaults = {
+    ami_type  = var.node_group_default_ami_type
+    disk_size = var.node_group_default_disk_size
+  }
+
+  node_groups = {
+    hacka_node_group = {
+      desired_capacity = var.node_group_desired_capacity
+      max_capacity     = var.node_group_max_capacity
+      min_capacity     = var.node_group_min_capacity
+
+      instance_types = [ var.node_group_instance_type ]
+      capacity_type  = var.node_group_capacity_type
+      update_config = {
+        max_unavailable_percentage = var.node_group_max_unavailable_percentage
+      }
+    }
+  }
+
+}
+</code></pre>
+<p>valide</p>
+<pre><code>terraform validate
+</code></pre>
+<p>saída esperada</p>
+<pre><code>Success! The configuration is valid.
+</code></pre>
+<h3 id="crie-o-plano-de-instalação">crie o plano de instalação</h3>
+<p>Use o arquivo configs.tfvars para construir o plano</p>
+<pre><code>terraform plan -out=plan -var-file=configs.tfvars;
+</code></pre>
+<p>saída esperada</p>
+<pre><code>.
+.
+.
+
+Plan: 54 to add, 0 to change, 0 to destroy.
+</code></pre>
+<h3 id="aplique-o-plano-criado">aplique o plano criado</h3>
+<p>vamos aplicar agora</p>
+<pre><code>terraform apply plan
+</code></pre>
+<p>saída esperada</p>
+<pre><code>.
+.
+.
+Apply complete! Resources: 54 added, 0 changed, 0 destroyed.
+</code></pre>
+<h3 id="validando-o-acesso-ao-cluster">validando o acesso ao cluster</h3>
+<p>carregue o kubconfig</p>
+<pre><code>export KUBECONFIG=kubeconfig_hackaton
+
+kubectl cluster-info
+</code></pre>
+<p>saída esperada</p>
+<pre><code>Kubernetes control plane is running at https://xxxx.gr7.us-east-1.eks.amazonaws.com
+CoreDNS is running at https://xxx.gr7.us-east-1.eks.amazonaws.com/api/v1/namespaces/kube-system/services/kube-dns:dns/proxy
+
+To further debug and diagnose cluster problems, use &#39;kubectl cluster-info dump&#39;.
+</code></pre>
+<p>verifique os nodes</p>
+<pre><code>kubectl get nodes
+</code></pre>
+<p>saída esperada</p>
+<pre><code>NAME                        STATUS   ROLES    AGE     VERSION
+ip-10-xx-xx-xx.ec2.internal   Ready    &lt;none&gt;   3m11s   v1.21.2-eks-55daa9d
+</code></pre>
+<p>Parece tudo ok!</p>
+<p>Agora vai na AWS e confere VPC, EKS e o restante ;)    </p>
+<h3 id="post-install">post-install</h3>
+<p>Agora precisamos instalar o ingress e o cert-manager e validar, vai lá.</p>
+<ol>
+<li><a href="https://gutocarvalho.net/instalando-ingress-aws-no-k8s-eks/">https://gutocarvalho.net/instalando-ingress-aws-no-k8s-eks/</a></li>
+<li><a href="https://gutocarvalho.net/instalando-cert-manager-no-k8s/">https://gutocarvalho.net/instalando-cert-manager-no-k8s/</a></li>
+</ol>
+<p>Caso precise regerar o kubeconfig</p>
+<ul>
+<li><a href="https://gutocarvalho.net/gerando-kubeconfig-para-aws-eks/">https://gutocarvalho.net/gerando-kubeconfig-para-aws-eks/</a></li>
+</ul>
+<p>Bons estudos testes!</p>
+<h3 id="refs">refs</h3>
+<ul>
+<li><a href="https://registry.terraform.io/modules/terraform-aws-modules/eks/aws/latest">https://registry.terraform.io/modules/terraform-aws-modules/eks/aws/latest</a></li>
+<li><a href="https://github.com/terraform-aws-modules/terraform-aws-eks">https://github.com/terraform-aws-modules/terraform-aws-eks</a></li>
+<li><a href="https://itnext.io/build-an-eks-cluster-with-terraform-d35db8005963">https://itnext.io/build-an-eks-cluster-with-terraform-d35db8005963</a></li>
+<li><a href="https://adamtheautomator.com/terraform-eks-module/">https://adamtheautomator.com/terraform-eks-module/</a></li>
+</ul>
+
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>Instalando GitLab Runner Dind no Ubuntu</title>
         <author>
@@ -244,34 +602,6 @@
                 <p>Conheça uma wiki open source <strong>modernosa</strong> que vai te surpreender!</p>
 
 <p>Depois de muitos anos usando o <strong>dokuwiki</strong> como ferramenta principal e <strong>GitLab Wiki</strong> para alguns projetos pontuais, eu finalmente encontrei algo que mexeu comigo, a ponto de me fazer mudar a ferramenta wiki referência em minha <strong>stack</strong> de trabalho.<br><br>O projeto em questão é o <strong>WIKI.JS</strong>, ele veio desafiar minha escolha de uma wiki – <strong>flat file storage </strong>– e ainda assim conseguiu preencher um espaço até então já dominado.<br><br>Desde 2020 eu uso ela, e agora posso dizer que recomendo com todas as forças :)<br><br>Vai lá, dá uma chance!<br><br><strong><a href="https://js.wiki/">https://js.wiki/</a></strong><br><br>[s]<br><br>P.s: Já usa ela? Me conta ai suas impressões, mas faz com carinho tá :)</p>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>Chats open source e self-hosted</title>
-        <author>
-            <name>Guto Carvalho</name>
-        </author>
-        <link href="https://gutocarvalho.net/chats-open-source/"/>
-        <id>https://gutocarvalho.net/chats-open-source/</id>
-            <category term="Projetos"/>
-            <category term="Drops"/>
-
-        <updated>2021-10-04T10:21:04-03:00</updated>
-            <summary>
-                <![CDATA[
-                    <p>Lista de projetos open source para chat corporativo.</p>
-
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                <p>Lista de projetos open source para chat corporativo.</p>
-
-<p>Novamente buscando novas tecnologias para minha stack, quero sair das – já batidas – opções existentes.</p>
-<p>Hoje temos os open source mais famosinhos, criados como alternativa ao closed source <strong>slack</strong>.<br><br>- <a href="https://mattermost.com">https://mattermost.com</a> ( usei por anos, até a semana passada )<br>- <a href="https://rocket.chat">https://rocket.chat</a> ( projeto brazuca bem legal )</p>
-<p>Recentemente pesquisando pelo RIOT, app que usava o protocolo Matrix, descobri que ele foi rebatizado como Element, vale a pena conhecer!<br><br>- <a href="https://element.io/">https://element.io</a><br><br>Outra que vale a menção é o Corteza, que é um framework maior, mas tem um módulo de chat.<br><br>- <a href="https://cortezaproject.org/technology/core/corteza-messaging/">https://cortezaproject.org/technology/core/corteza-messaging/</a></p>
-<p>Esses dois estão na minha fila para testar, quando entender como funcionam eu posto aqui.<br><br>Ah, e caso não conheça o projeto <a href="https://matrix.org/" target="_blank" rel="noopener noreferrer">Matrix.org</a>, vai lá visitar.<br><br>[s]<br>Guto<br><br>P.s: Conhece algum outro open source e self hosted? Manda aí nos comentários :)<br><br></p>
             ]]>
         </content>
     </entry>
