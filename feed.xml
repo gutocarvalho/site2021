@@ -3,7 +3,7 @@
     <title>Guto@Site</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2021-10-10T14:02:01-03:00</updated>
+    <updated>2021-10-10T14:06:45-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
@@ -18,7 +18,7 @@
         <id>https://gutocarvalho.net/drops-criando-um-eks-basico-via-terraform/</id>
             <category term="Drops"/>
 
-        <updated>2021-10-10T14:02:01-03:00</updated>
+        <updated>2021-10-10T14:06:45-03:00</updated>
             <summary>
                 <![CDATA[
                     Aprenda a criar um cluster EKS básico via Terraform! Só vem :”)&hellip;
@@ -28,7 +28,7 @@
             <![CDATA[
                 <p>Aprenda a criar um cluster EKS básico via Terraform! Só vem :”)</p>
 <h3 id="o-que-são-drops">O que são drops?</h3>
-<p>Esse é um DUMP mental rápido e rasteiro, simples e objetivo – que funciona – depois eu volto para detalhar mais cada passado, comenta ai qquer coisa, os comentários estão ligados nos DROPS ;)</p>
+<p>São DUMPs mentais rápidos e rasteiros, simples e objetivos – que funcionam – geralmente é algo que eu acabei de usar e escrevi a doc em markdown. Contudo, considere um rascunho, depois eu volto para detalhar um pouco mais, comenta ai qquer coisa – os comentários estão ligados nos posts da categoria DROPS ;)</p>
 <h3 id="requisitos">requisitos</h3>
 <p>Tenha kubeclt e helm instalados.</p>
 <p>Tenha o awscli e aws-iam-authenticator instalados.</p>
