@@ -3,7 +3,7 @@
     <title>Guto@Site</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2021-10-10T16:49:23-03:00</updated>
+    <updated>2021-10-11T07:42:41-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
@@ -18,7 +18,7 @@
         <id>https://gutocarvalho.net/drops-criando-um-eks-basico-via-terraform/</id>
             <category term="Drops"/>
 
-        <updated>2021-10-10T16:49:23-03:00</updated>
+        <updated>2021-10-11T07:42:41-03:00</updated>
             <summary>
                 <![CDATA[
                     Aprenda a criar um cluster EKS básico via Terraform! Só vem :”)&hellip;
@@ -32,10 +32,15 @@
 <p>Geralmente eu volto para detalhar mais cada passo – com o devido tempo.</p>
 <p>Considere com a mesma qualidade de um rascunho ou uma anotação rápida.</p>
 <p>De qualquer forma comenta ai qquer coisa, os comentários estão ligados nos DROPS ;)</p>
+<hr>
 <h3 id="requisitos">requisitos</h3>
 <p>Tenha kubeclt e helm instalados.</p>
 <p>Tenha o awscli e aws-iam-authenticator instalados.</p>
-<p>Esteja logado com aws-cli na conta correta com permissoes para criar as coisas.</p>
+<p>Esteja logado com aws-cli na conta correta com permissoes para criar o EKS.</p>
+<p>Quais permissões?</p>
+<ul>
+<li><a href="https://github.com/terraform-aws-modules/terraform-aws-eks/blob/master/docs/iam-permissions.md">https://github.com/terraform-aws-modules/terraform-aws-eks/blob/master/docs/iam-permissions.md</a></li>
+</ul>
 <h3 id="crie-um-diretório-para-seu-projeto">crie um diretório para seu projeto</h3>
 <pre><code>mkdir -p terraform/eks/meucluster
 cd terraform/eks/meucluster
@@ -352,16 +357,15 @@ ip-10-xx-xx-xx.ec2.internal   Ready    &lt;none&gt;   3m11s   v1.21.2-eks-55daa9
         </content>
     </entry>
     <entry>
-        <title>Instalando GitLab Runner Dind no Ubuntu</title>
+        <title>DROPS: Instalando GitLab Runner Dind no Ubuntu</title>
         <author>
             <name>Guto Carvalho</name>
         </author>
         <link href="https://gutocarvalho.net/instalando-gitlab-runner-no-ubuntu/"/>
         <id>https://gutocarvalho.net/instalando-gitlab-runner-no-ubuntu/</id>
-            <category term="MindNotes"/>
             <category term="Drops"/>
 
-        <updated>2021-10-09T19:24:18-03:00</updated>
+        <updated>2021-10-11T07:42:11-03:00</updated>
             <summary>
                 <![CDATA[
                     <p>Aprenda a instalar o gitlab-runner para rodar docker DIND.</p>
@@ -372,6 +376,8 @@ ip-10-xx-xx-xx.ec2.internal   Ready    &lt;none&gt;   3m11s   v1.21.2-eks-55daa9
             <![CDATA[
                 <p>Aprenda a instalar o gitlab-runner para rodar docker DIND.</p>
 
+<p><strong>O que são drops?<br><br></strong>São DUMPs mentais rápidos e rasteiros, simples e objetivos – que funcionam. <br><br>Geralmente eu volto para detalhar mais cada passo – com o devido tempo.<br><br>Considere com a mesma qualidade de um rascunho ou uma anotação rápida.<br><br>De qualquer forma comenta ai qquer coisa, os comentários estão ligados nos DROPS ;)</p>
+<hr>
 <p><strong>Instalando docker no Ubuntu</strong><br><br><code>curl https://releases.rancher.com/install-docker/19.03.sh | sh</code><br><code>systemctl enable docker</code><br><code>systemctl start docker</code><br><br><strong>Instalando o GitLab Runner no Ubuntu</strong><br><br><code>curl -LJO "https://gitlab-runner-downloads.s3.amazonaws.com/latest/deb/gitlab-runner_amd64.deb"</code><br><code>dpkg -i gitlab-runner_amd64.deb</code><br><code>systemctl enable gitlab-runner</code><br><code>systemctl start gitlab-runner</code><br><br><strong>Registrando um Runner Docker-in-Docker</strong><br><br><code>gitlab-runner register -n \</code><br><code>  --url https://gitlab.com/ \</code><br><code>  --registration-token TOKEN \</code><br><code>  --description "Runner Guto 1" \</code><br><code>  --tag-list docker \</code><br><code>  --executor docker \</code><br><code>  --docker-image "docker:19.03.12" \</code><br><code>  --docker-privileged true \</code><br><code>  --docker-volumes /var/run/docker.sock:/var/run/docker.sock </code><br><strong><br></strong>Crie quantos runners achar necessário, eu costumo reservar 1 vCPU e 1 GB de RAM para cada Runner.<br><br>Um exemplo, se eu subir 4 runners, a VM vai ter 4 vCPUs + 4 GB de RAM só para os Runners, normalmente deixo mais 1 vCPU + 1 GB pro OS e assim fica tranquilo para cenários bem básicos.</p>
 <p><strong>Configurando a concorrência do gitlab-runner</strong><br><br>edite o arquivo<br><br><code>vim  /etc/gitlab-runner/config.toml</code><br><br>altere o número de runners concorrentes para a quantidade que você criou.<br><br><code>concurrent = 4</code><br><br>reinicie o runner</p>
 <p><code>systemctl restart gitlab-runner</code></p>
