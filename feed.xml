@@ -3,7 +3,7 @@
     <title>Guto@Site</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2021-10-14T12:40:21-03:00</updated>
+    <updated>2021-10-14T12:52:10-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
@@ -19,7 +19,7 @@
             <category term="K8S"/>
             <category term="Drops"/>
 
-        <updated>2021-10-14T12:40:21-03:00</updated>
+        <updated>2021-10-14T12:52:10-03:00</updated>
             <summary>
                 <![CDATA[
                     Aprenda a pegar imagens de registry ECR privado em seu cluster K8S.
@@ -45,21 +45,43 @@
 <pre><code>aws ecr get-login-password --region us-east-1
 </code></pre>
 <p>agora vamos no K8S criar o secret</p>
-<pre><code>kubectl create secret docker-registry gr1d-ecr \
+<pre><code>kubectl create secret docker-registry ecr-nativetrail \
   --docker-server=ID.dkr.ecr.us-east-1.amazonaws.com/ \
   --docker-username=AWS \
   --docker-password=SEU_TOKEN_GERADO_VIA_AWS_CLI \
-  --namespace=ecr-nativetrail
+  --namespace=SEU_NAMESPACE
 </code></pre>
 <p>verifique</p>
-<pre><code>kubectl get secrets -n gr1d|grep ecr
+<pre><code>kubectl get secrets -n SEU_NAMESPACE|grep ecr
 </code></pre>
 <p>saída</p>
 <pre><code>ecr-nativetrail kubernetes.io/dockerconfigjson        1      15h
 </code></pre>
-<p>Nao se esqueça de setar nos eu deployment, dentro de “spec” o secret</p>
-<pre><code>imagePullSecrets:
-- name: ecr-nativetrail
+<p>Nao se esqueça de setar o secret no seu manifesto de deployment, dentro de “spec” </p>
+<pre><code>      spec:
+        imagePullSecrets:
+        - name: ecr-nativetrail
+</code></pre>
+<p>Exemplo</p>
+<pre><code>  apiVersion: apps/v1
+  kind: Deployment
+  metadata:
+    name: app-example
+  spec:
+    replicas: 1
+    selector:
+      matchLabels:
+        app: app-example
+    template:
+      metadata:
+        labels:
+          app: nativetrail
+      spec:
+        imagePullSecrets:
+        - name: ecr-nativetrail
+        containers:
+        - name: app-examp;e
+          image:  ID.dkr.ecr.us-east-1.amazonaws.com/app:latest
 </code></pre>
 <p>Prontinho!</p>
 
