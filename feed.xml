@@ -3,12 +3,69 @@
     <title>Guto@Site</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2021-10-14T09:42:53-03:00</updated>
+    <updated>2021-10-14T12:40:21-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
     <id>https://gutocarvalho.net</id>
 
+    <entry>
+        <title>DROPS: Baixando imagens de ECR Privado no K8S</title>
+        <author>
+            <name>Guto Carvalho</name>
+        </author>
+        <link href="https://gutocarvalho.net/baixando-imagens-de-ecr-privado-no-k8s/"/>
+        <id>https://gutocarvalho.net/baixando-imagens-de-ecr-privado-no-k8s/</id>
+            <category term="K8S"/>
+            <category term="Drops"/>
+
+        <updated>2021-10-14T12:40:21-03:00</updated>
+            <summary>
+                <![CDATA[
+                    Aprenda a pegar imagens de registry ECR privado em seu cluster K8S.
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p>Aprenda a pegar imagens de registry ECR privado em seu cluster K8S.</p>
+<hr>
+<h3 id="o-que-são-drops">O que são drops?</h3>
+<p>São DUMPs mentais rápidos e rasteiros, simples e objetivos – que funcionam. </p>
+<p>Geralmente de algo que eu acabei de fazer.</p>
+<p>Eu – quase sempre – volto para detalhar mais cada passo.</p>
+<p>Considere com a mesma qualidade de um rascunho ou uma anotação rápida.</p>
+<p>De qualquer forma comenta ai qquer coisa, os comentários estão ligados nos DROPS ;)</p>
+<h3 id="demanda">Demanda!</h3>
+<p>Precisamos cadastrar um secret para pegar imagens de um ECR privado</p>
+<h3 id="comofaz">ComoFaz?</h3>
+<p>Primeiro vamos gerar o TOKEN, você precisa do AWS CLI para isso,</p>
+<pre><code>aws configure
+</code></pre>
+<p>depois de configurado gere o TOKEN</p>
+<pre><code>aws ecr get-login-password --region us-east-1
+</code></pre>
+<p>agora vamos no K8S criar o secret</p>
+<pre><code>kubectl create secret docker-registry gr1d-ecr \
+  --docker-server=ID.dkr.ecr.us-east-1.amazonaws.com/ \
+  --docker-username=AWS \
+  --docker-password=SEU_TOKEN_GERADO_VIA_AWS_CLI \
+  --namespace=ecr-nativetrail
+</code></pre>
+<p>verifique</p>
+<pre><code>kubectl get secrets -n gr1d|grep ecr
+</code></pre>
+<p>saída</p>
+<pre><code>ecr-nativetrail kubernetes.io/dockerconfigjson        1      15h
+</code></pre>
+<p>Nao se esqueça de setar nos eu deployment, dentro de “spec” o secret</p>
+<pre><code>imagePullSecrets:
+- name: ecr-nativetrail
+</code></pre>
+<p>Prontinho!</p>
+
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>DROPS: Storage EBS em seu Cluster K8S EC2</title>
         <author>
@@ -19,7 +76,7 @@
             <category term="K8S"/>
             <category term="Drops"/>
 
-        <updated>2021-10-14T09:42:53-03:00</updated>
+        <updated>2021-10-14T12:39:36-03:00</updated>
             <summary>
                 <![CDATA[
                     Aprenda a usar o storage EBS como SC em seu cluster EC2!&hellip;
@@ -34,7 +91,7 @@
 <p>Geralmente de algo que eu acabei de fazer.</p>
 <p>Eu – quase sempre – volto para detalhar mais cada passo.</p>
 <p>Considere com a mesma qualidade de um rascunho ou uma anotação rápida.</p>
-<p>De qualquer forma comenta ai qquer coisa, os comentários estão ligados nos DROPS ;)ß</p>
+<p>De qualquer forma comenta ai qquer coisa, os comentários estão ligados nos DROPS ;)</p>
 <h3 id="vamos-lá">Vamos lá!</h3>
 <p>crie o arquivo aws-ebs-secrets.yaml</p>
 <pre><code>vim ws-ebs-secrets.yaml
@@ -646,32 +703,6 @@ ip-10-xx-xx-xx.ec2.internal   Ready    &lt;none&gt;   3m11s   v1.21.2-eks-55daa9
                 <p>Aprenda a instalar ao cert-manager no k8s de forma objetiva e rápida!</p>
 
 <p><strong>Instalando CertManager</strong><br><br>Instale o CustomResourceDefinition separadamente<br><br><code>$ kubectl apply --validate=false -f https://github.com/jetstack/cert-manager/releases/download/v1.5.4/cert-manager.crds.yaml</code><br><br>Crie o namespace para o cert-manager<br><br><code>$ kubectl create namespace cert-manager</code><br><br>Adicione o repositório helm<br><br><code>$ helm repo add jetstack https://charts.jetstack.io</code><br><br>Atualize os indices do helm<br><br><code>$ helm repo update</code><br><br>Instale o cert-manager via helm<br><br><code>$ helm install \</code><br><code>  cert-manager jetstack/cert-manager \</code><br><code>  --namespace cert-manager \</code><br><code>  --version v1.5.4</code><br><br>Crie o issuer para letsencrypt production<br><br><code>$ vim issuer-prod.yaml</code><br><br>Insira o conteúdo<br><br><code>apiVersion: cert-manager.io/v1</code><br><code>kind: ClusterIssuer</code><br><code>metadata:</code><br><code>  name: letsencrypt-prod</code><br><code>spec:</code><br><code>  acme:</code><br><code>    # You must replace this email address with your own.</code><br><code>    # Let's Encrypt will use this to contact you about expiring</code><br><code>    # certificates, and issues related to your account.</code><br><code>    email: certmanager@gutocarvalho.net</code><br><code>    server: https://acme-v02.api.letsencrypt.org/directory</code><br><code>    privateKeySecretRef:</code><br><code>      # Secret resource that will be used to store the account's private key.</code><br><code>      name: letsencrypt-production</code><br><code>    # Add a single challenge solver, HTTP01 using nginx</code><br><code>    solvers:</code><br><code>    - http01:</code><br><code>        ingress:</code><br><code>          class: nginx</code><br><br>Aplicando<br><br><code>$ kubectl create -f issuer-prod.yaml</code><br><br>Criando o issuer para letsencrypt staging<br><br><code>vim issuer-staging.yaml</code><br><br>Insira o conteúdo<br><br><code>apiVersion: cert-manager.io/v1</code><br><code>kind: ClusterIssuer</code><br><code>metadata:</code><br><code>  name: letsencrypt-staging</code><br><code>spec:</code><br><code>  acme:</code><br><code>    # You must replace this email address with your own.</code><br><code>    # Let's Encrypt will use this to contact you about expiring</code><br><code>    # certificates, and issues related to your account.</code><br><code>    email: nativetrail@gutocarvalho.net</code><br><code>    server: https://acme-staging-v02.api.letsencrypt.org/directory</code><br><code>    privateKeySecretRef:</code><br><code>      # Secret resource that will be used to store the account's private key.</code><br><code>      name: letsencrypt-staging</code><br><code>    # Add a single challenge solver, HTTP01 using nginx</code><br><code>    solvers:</code><br><code>    - http01:</code><br><code>        ingress:</code><br><code>          class: nginx</code><br><br>Aplicando<br><br><code>$ kubectl create -f issuer-staging.yaml</code><br><br>Prontinho!<br><br><strong>Annotations</strong><br><br>Para production<br><br><code>cert-manager.io/cluster-issuer=letsencrypt-prod</code><br><code>kubernetes.io/ingress.class=nginx</code><br><br>Para staging<br><br><code>cert-manager.io/cluster-issuer=letsencrypt-staging</code><br><code>kubernetes.io/ingress.class=nginx</code><br><br><strong>Refs</strong><br><br><code>https://cert-manager.io/docs/configuration/acme/</code></p>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>Kubeconf North America 2021</title>
-        <author>
-            <name>Guto Carvalho</name>
-        </author>
-        <link href="https://gutocarvalho.net/kubeconf-north-america-2021/"/>
-        <id>https://gutocarvalho.net/kubeconf-north-america-2021/</id>
-            <category term="Eventos"/>
-            <category term="Drops"/>
-
-        <updated>2021-10-05T20:03:50-03:00</updated>
-            <summary>
-                <![CDATA[
-                    <p>Esse mês tem, vamo nessa, nos vemos lá!</p>
-
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                <p>Esse mês tem, vamo nessa, nos vemos lá!</p>
-
-<p>De 11 a 15 de Outubro teremos <a href="https://events.linuxfoundation.org/kubecon-cloudnativecon-north-america/?utm_source=Google&amp;utm_medium=Search&amp;utm_campaign=KubeConNA2021">Kubecon</a> North America.</p>
-<p>Veja a <a href="https://events.linuxfoundation.org/kubecon-cloudnativecon-north-america/program/schedule">agenda</a> e participe!<br><br>[s]<br>Guto</p>
             ]]>
         </content>
     </entry>

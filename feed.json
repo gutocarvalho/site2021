@@ -10,11 +10,27 @@
     },
     "items": [
         {
+            "id": "https://gutocarvalho.net/baixando-imagens-de-ecr-privado-no-k8s/",
+            "url": "https://gutocarvalho.net/baixando-imagens-de-ecr-privado-no-k8s/",
+            "title": "DROPS: Baixando imagens de ECR Privado no K8S",
+            "summary": "Aprenda a pegar imagens de registry ECR privado em seu cluster K8S.",
+            "content_html": "<p>Aprenda a pegar imagens de registry ECR privado em seu cluster K8S.</p>\n<hr>\n<h3 id=\"o-que-são-drops\">O que são drops?</h3>\n<p>São DUMPs mentais rápidos e rasteiros, simples e objetivos – que funcionam. </p>\n<p>Geralmente de algo que eu acabei de fazer.</p>\n<p>Eu – quase sempre – volto para detalhar mais cada passo.</p>\n<p>Considere com a mesma qualidade de um rascunho ou uma anotação rápida.</p>\n<p>De qualquer forma comenta ai qquer coisa, os comentários estão ligados nos DROPS ;)</p>\n<h3 id=\"demanda\">Demanda!</h3>\n<p>Precisamos cadastrar um secret para pegar imagens de um ECR privado</p>\n<h3 id=\"comofaz\">ComoFaz?</h3>\n<p>Primeiro vamos gerar o TOKEN, você precisa do AWS CLI para isso,</p>\n<pre><code>aws configure\n</code></pre>\n<p>depois de configurado gere o TOKEN</p>\n<pre><code>aws ecr get-login-password --region us-east-1\n</code></pre>\n<p>agora vamos no K8S criar o secret</p>\n<pre><code>kubectl create secret docker-registry gr1d-ecr \\\n  --docker-server=ID.dkr.ecr.us-east-1.amazonaws.com/ \\\n  --docker-username=AWS \\\n  --docker-password=SEU_TOKEN_GERADO_VIA_AWS_CLI \\\n  --namespace=ecr-nativetrail\n</code></pre>\n<p>verifique</p>\n<pre><code>kubectl get secrets -n gr1d|grep ecr\n</code></pre>\n<p>saída</p>\n<pre><code>ecr-nativetrail kubernetes.io/dockerconfigjson        1      15h\n</code></pre>\n<p>Nao se esqueça de setar nos eu deployment, dentro de “spec” o secret</p>\n<pre><code>imagePullSecrets:\n- name: ecr-nativetrail\n</code></pre>\n<p>Prontinho!</p>\n",
+            "author": {
+                "name": "Guto Carvalho"
+            },
+            "tags": [
+                   "K8S",
+                   "Drops"
+            ],
+            "date_published": "2021-10-14T12:39:31-03:00",
+            "date_modified": "2021-10-14T12:40:21-03:00"
+        },
+        {
             "id": "https://gutocarvalho.net/storageclass-ebs-em-seu-cluster-k8s-ec2/",
             "url": "https://gutocarvalho.net/storageclass-ebs-em-seu-cluster-k8s-ec2/",
             "title": "DROPS: Storage EBS em seu Cluster K8S EC2",
             "summary": "Aprenda a usar o storage EBS como SC em seu cluster EC2!&hellip;",
-            "content_html": "<p>Aprenda a usar o storage EBS como SC em seu cluster EC2!</p>\n<hr>\n<h3 id=\"o-que-são-drops\">O que são drops?</h3>\n<p>São DUMPs mentais rápidos e rasteiros, simples e objetivos – que funcionam. </p>\n<p>Geralmente de algo que eu acabei de fazer.</p>\n<p>Eu – quase sempre – volto para detalhar mais cada passo.</p>\n<p>Considere com a mesma qualidade de um rascunho ou uma anotação rápida.</p>\n<p>De qualquer forma comenta ai qquer coisa, os comentários estão ligados nos DROPS ;)ß</p>\n<h3 id=\"vamos-lá\">Vamos lá!</h3>\n<p>crie o arquivo aws-ebs-secrets.yaml</p>\n<pre><code>vim ws-ebs-secrets.yaml\n</code></pre>\n<p>insira o conteúdo abaixo, e ajuste suas credenciais</p>\n<pre><code>apiVersion: v1\nkind: Secret\nmetadata:\n  name: aws-secret\n  namespace: kube-system\nstringData:\n  key_id: &quot;SUA_ACCESS_KEY&quot;\n  access_key: &quot;SUA_SECRET_KEY&quot;\n</code></pre>\n<p>aplique o manifesto</p>\n<pre><code>kubectl apply -f aws-ebs-secrets.yaml\n</code></pre>\n<p>agora instale o driver ebs</p>\n<pre><code>kubectl apply -k &quot;github.com/kubernetes-sigs/aws-ebs-csi-driver/deploy/kubernetes/overlays/stable/?ref=release-1.4&quot;\n</code></pre>\n<p>saída esperada</p>\n<pre><code>serviceaccount/ebs-csi-controller-sa created\nserviceaccount/ebs-csi-node-sa created\nclusterrole.rbac.authorization.k8s.io/ebs-csi-node-role created\nclusterrole.rbac.authorization.k8s.io/ebs-external-attacher-role created\nclusterrole.rbac.authorization.k8s.io/ebs-external-provisioner-role created\nclusterrole.rbac.authorization.k8s.io/ebs-external-resizer-role created\nclusterrole.rbac.authorization.k8s.io/ebs-external-snapshotter-role created\nclusterrolebinding.rbac.authorization.k8s.io/ebs-csi-attacher-binding created\nclusterrolebinding.rbac.authorization.k8s.io/ebs-csi-node-getter-binding created\nclusterrolebinding.rbac.authorization.k8s.io/ebs-csi-provisioner-binding created\nclusterrolebinding.rbac.authorization.k8s.io/ebs-csi-resizer-binding created\nclusterrolebinding.rbac.authorization.k8s.io/ebs-csi-snapshotter-binding created\ndeployment.apps/ebs-csi-controller created\npoddisruptionbudget.policy/ebs-csi-controller created\ndaemonset.apps/ebs-csi-node created\ncsidriver.storage.k8s.io/ebs.csi.aws.com created\n</code></pre>\n<p>verifique se tá tudo bem</p>\n<pre><code>kubectl get pods -n kube-system|grep ebs\n</code></pre>\n<p>saída esperada</p>\n<pre><code>ebs-csi-controller-7c486f7676-826ph        6/6     Running     0          110s\nebs-csi-controller-7c486f7676-l5wsg        6/6     Running     0          110s\nebs-csi-node-5q7lk                         3/3     Running     0          108s\nebs-csi-node-cxv4p                         3/3     Running     0          109s\nebs-csi-node-fskfw                         3/3     Running     0          108s\n</code></pre>\n<p>tá tudo bem, agora crie o manifesto do storageclass</p>\n<pre><code>vim ebs-storageclass.yaml\n</code></pre>\n<p>insira o conteúdo abaixo</p>\n<pre><code>kind: StorageClass\napiVersion: storage.k8s.io/v1\nmetadata:\n  name: ebs-storageclass\nparameters:\n  type: gp2\nprovisioner: ebs.csi.aws.com\nvolumeBindingMode: WaitForFirstConsumer\n</code></pre>\n<p>aplique o manifesto</p>\n<pre><code>kubectl apply -f ebs-storageclass.yaml\n</code></pre>\n<p>verifique se criou o sc</p>\n<pre><code>kubectl get sc\n</code></pre>\n<p>saída esperada</p>\n<pre><code>NAME                         PROVISIONER       RECLAIMPOLICY   VOLUMEBINDINGMODE      ALLOWVOLUMEEXPANSION   AGE\nebs-storageclass             ebs.csi.aws.com   Delete          WaitForFirstConsumer   false                  3m24s\n</code></pre>\n<p>caso queira, defina este sc como default</p>\n<pre><code>  kubectl patch storageclass ebs-storageclass -p &#39;{&quot;metadata&quot;: {&quot;annotations&quot;:{&quot;storageclass.kubernetes.io/is-default-class&quot;:&quot;true&quot;}}}\n</code></pre>\n<p>prontinho! :)</p>\n",
+            "content_html": "<p>Aprenda a usar o storage EBS como SC em seu cluster EC2!</p>\n<hr>\n<h3 id=\"o-que-são-drops\">O que são drops?</h3>\n<p>São DUMPs mentais rápidos e rasteiros, simples e objetivos – que funcionam. </p>\n<p>Geralmente de algo que eu acabei de fazer.</p>\n<p>Eu – quase sempre – volto para detalhar mais cada passo.</p>\n<p>Considere com a mesma qualidade de um rascunho ou uma anotação rápida.</p>\n<p>De qualquer forma comenta ai qquer coisa, os comentários estão ligados nos DROPS ;)</p>\n<h3 id=\"vamos-lá\">Vamos lá!</h3>\n<p>crie o arquivo aws-ebs-secrets.yaml</p>\n<pre><code>vim ws-ebs-secrets.yaml\n</code></pre>\n<p>insira o conteúdo abaixo, e ajuste suas credenciais</p>\n<pre><code>apiVersion: v1\nkind: Secret\nmetadata:\n  name: aws-secret\n  namespace: kube-system\nstringData:\n  key_id: &quot;SUA_ACCESS_KEY&quot;\n  access_key: &quot;SUA_SECRET_KEY&quot;\n</code></pre>\n<p>aplique o manifesto</p>\n<pre><code>kubectl apply -f aws-ebs-secrets.yaml\n</code></pre>\n<p>agora instale o driver ebs</p>\n<pre><code>kubectl apply -k &quot;github.com/kubernetes-sigs/aws-ebs-csi-driver/deploy/kubernetes/overlays/stable/?ref=release-1.4&quot;\n</code></pre>\n<p>saída esperada</p>\n<pre><code>serviceaccount/ebs-csi-controller-sa created\nserviceaccount/ebs-csi-node-sa created\nclusterrole.rbac.authorization.k8s.io/ebs-csi-node-role created\nclusterrole.rbac.authorization.k8s.io/ebs-external-attacher-role created\nclusterrole.rbac.authorization.k8s.io/ebs-external-provisioner-role created\nclusterrole.rbac.authorization.k8s.io/ebs-external-resizer-role created\nclusterrole.rbac.authorization.k8s.io/ebs-external-snapshotter-role created\nclusterrolebinding.rbac.authorization.k8s.io/ebs-csi-attacher-binding created\nclusterrolebinding.rbac.authorization.k8s.io/ebs-csi-node-getter-binding created\nclusterrolebinding.rbac.authorization.k8s.io/ebs-csi-provisioner-binding created\nclusterrolebinding.rbac.authorization.k8s.io/ebs-csi-resizer-binding created\nclusterrolebinding.rbac.authorization.k8s.io/ebs-csi-snapshotter-binding created\ndeployment.apps/ebs-csi-controller created\npoddisruptionbudget.policy/ebs-csi-controller created\ndaemonset.apps/ebs-csi-node created\ncsidriver.storage.k8s.io/ebs.csi.aws.com created\n</code></pre>\n<p>verifique se tá tudo bem</p>\n<pre><code>kubectl get pods -n kube-system|grep ebs\n</code></pre>\n<p>saída esperada</p>\n<pre><code>ebs-csi-controller-7c486f7676-826ph        6/6     Running     0          110s\nebs-csi-controller-7c486f7676-l5wsg        6/6     Running     0          110s\nebs-csi-node-5q7lk                         3/3     Running     0          108s\nebs-csi-node-cxv4p                         3/3     Running     0          109s\nebs-csi-node-fskfw                         3/3     Running     0          108s\n</code></pre>\n<p>tá tudo bem, agora crie o manifesto do storageclass</p>\n<pre><code>vim ebs-storageclass.yaml\n</code></pre>\n<p>insira o conteúdo abaixo</p>\n<pre><code>kind: StorageClass\napiVersion: storage.k8s.io/v1\nmetadata:\n  name: ebs-storageclass\nparameters:\n  type: gp2\nprovisioner: ebs.csi.aws.com\nvolumeBindingMode: WaitForFirstConsumer\n</code></pre>\n<p>aplique o manifesto</p>\n<pre><code>kubectl apply -f ebs-storageclass.yaml\n</code></pre>\n<p>verifique se criou o sc</p>\n<pre><code>kubectl get sc\n</code></pre>\n<p>saída esperada</p>\n<pre><code>NAME                         PROVISIONER       RECLAIMPOLICY   VOLUMEBINDINGMODE      ALLOWVOLUMEEXPANSION   AGE\nebs-storageclass             ebs.csi.aws.com   Delete          WaitForFirstConsumer   false                  3m24s\n</code></pre>\n<p>caso queira, defina este sc como default</p>\n<pre><code>  kubectl patch storageclass ebs-storageclass -p &#39;{&quot;metadata&quot;: {&quot;annotations&quot;:{&quot;storageclass.kubernetes.io/is-default-class&quot;:&quot;true&quot;}}}\n</code></pre>\n<p>prontinho! :)</p>\n",
             "author": {
                 "name": "Guto Carvalho"
             },
@@ -23,7 +39,7 @@
                    "Drops"
             ],
             "date_published": "2021-10-13T18:45:57-03:00",
-            "date_modified": "2021-10-14T09:42:53-03:00"
+            "date_modified": "2021-10-14T12:39:36-03:00"
         },
         {
             "id": "https://gutocarvalho.net/drops-criando-um-eks-basico-via-terraform/",
@@ -151,22 +167,6 @@
             ],
             "date_published": "2021-10-05T19:58:00-03:00",
             "date_modified": "2021-10-06T15:23:53-03:00"
-        },
-        {
-            "id": "https://gutocarvalho.net/kubeconf-north-america-2021/",
-            "url": "https://gutocarvalho.net/kubeconf-north-america-2021/",
-            "title": "Kubeconf North America 2021",
-            "summary": "<p>Esse mês tem, vamo nessa, nos vemos lá!</p>\n",
-            "content_html": "<p>Esse mês tem, vamo nessa, nos vemos lá!</p>\n\n<p>De 11 a 15 de Outubro teremos <a href=\"https://events.linuxfoundation.org/kubecon-cloudnativecon-north-america/?utm_source=Google&amp;utm_medium=Search&amp;utm_campaign=KubeConNA2021\">Kubecon</a> North America.</p>\n<p>Veja a <a href=\"https://events.linuxfoundation.org/kubecon-cloudnativecon-north-america/program/schedule\">agenda</a> e participe!<br><br>[s]<br>Guto</p>",
-            "author": {
-                "name": "Guto Carvalho"
-            },
-            "tags": [
-                   "Eventos",
-                   "Drops"
-            ],
-            "date_published": "2021-10-05T15:14:23-03:00",
-            "date_modified": "2021-10-05T20:03:50-03:00"
         }
     ]
 }
