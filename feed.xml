@@ -3,7 +3,7 @@
     <title>Guto@Site</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2021-10-14T08:07:02-03:00</updated>
+    <updated>2021-10-14T09:42:53-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
@@ -19,16 +19,23 @@
             <category term="K8S"/>
             <category term="Drops"/>
 
-        <updated>2021-10-14T08:07:02-03:00</updated>
+        <updated>2021-10-14T09:42:53-03:00</updated>
             <summary>
                 <![CDATA[
-                    Aprenda a usar o storage EBS como SC em seus cluster EC2!&hellip;
+                    Aprenda a usar o storage EBS como SC em seu cluster EC2!&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                <p>Aprenda a usar o storage EBS como SC em seus cluster EC2!</p>
+                <p>Aprenda a usar o storage EBS como SC em seu cluster EC2!</p>
 <hr>
+<h3 id="o-que-são-drops">O que são drops?</h3>
+<p>São DUMPs mentais rápidos e rasteiros, simples e objetivos – que funcionam. </p>
+<p>Geralmente de algo que eu acabei de fazer.</p>
+<p>Eu – quase sempre – volto para detalhar mais cada passo.</p>
+<p>Considere com a mesma qualidade de um rascunho ou uma anotação rápida.</p>
+<p>De qualquer forma comenta ai qquer coisa, os comentários estão ligados nos DROPS ;)ß</p>
+<h3 id="vamos-lá">Vamos lá!</h3>
 <p>crie o arquivo aws-ebs-secrets.yaml</p>
 <pre><code>vim ws-ebs-secrets.yaml
 </code></pre>
