@@ -3,7 +3,7 @@
     <title>Guto@Site</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2021-10-13T18:46:50-03:00</updated>
+    <updated>2021-10-14T08:07:02-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
@@ -19,15 +19,15 @@
             <category term="K8S"/>
             <category term="Drops"/>
 
-        <updated>2021-10-13T18:46:50-03:00</updated>
+        <updated>2021-10-14T08:07:02-03:00</updated>
             <summary>
                 <![CDATA[
-                    Aprenda a usar o storage EBS como SC em seus cluster! crie&hellip;
+                    Aprenda a usar o storage EBS como SC em seus cluster EC2!&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                <p>Aprenda a usar o storage EBS como SC em seus cluster!</p>
+                <p>Aprenda a usar o storage EBS como SC em seus cluster EC2!</p>
 <hr>
 <p>crie o arquivo aws-ebs-secrets.yaml</p>
 <pre><code>vim ws-ebs-secrets.yaml
@@ -48,7 +48,7 @@ stringData:
 <p>agora instale o driver ebs</p>
 <pre><code>kubectl apply -k &quot;github.com/kubernetes-sigs/aws-ebs-csi-driver/deploy/kubernetes/overlays/stable/?ref=release-1.4&quot;
 </code></pre>
-<p>saída exemplo</p>
+<p>saída esperada</p>
 <pre><code>serviceaccount/ebs-csi-controller-sa created
 serviceaccount/ebs-csi-node-sa created
 clusterrole.rbac.authorization.k8s.io/ebs-csi-node-role created
@@ -69,14 +69,14 @@ csidriver.storage.k8s.io/ebs.csi.aws.com created
 <p>verifique se tá tudo bem</p>
 <pre><code>kubectl get pods -n kube-system|grep ebs
 </code></pre>
-<p>saída exemplo</p>
+<p>saída esperada</p>
 <pre><code>ebs-csi-controller-7c486f7676-826ph        6/6     Running     0          110s
 ebs-csi-controller-7c486f7676-l5wsg        6/6     Running     0          110s
 ebs-csi-node-5q7lk                         3/3     Running     0          108s
 ebs-csi-node-cxv4p                         3/3     Running     0          109s
 ebs-csi-node-fskfw                         3/3     Running     0          108s
 </code></pre>
-<p>agora crie o manifesto do storageclass</p>
+<p>tá tudo bem, agora crie o manifesto do storageclass</p>
 <pre><code>vim ebs-storageclass.yaml
 </code></pre>
 <p>insira o conteúdo abaixo</p>
@@ -95,14 +95,14 @@ volumeBindingMode: WaitForFirstConsumer
 <p>verifique se criou o sc</p>
 <pre><code>kubectl get sc
 </code></pre>
-<p>saída exemplo</p>
+<p>saída esperada</p>
 <pre><code>NAME                         PROVISIONER       RECLAIMPOLICY   VOLUMEBINDINGMODE      ALLOWVOLUMEEXPANSION   AGE
 ebs-storageclass             ebs.csi.aws.com   Delete          WaitForFirstConsumer   false                  3m24s
 </code></pre>
 <p>caso queira, defina este sc como default</p>
 <pre><code>  kubectl patch storageclass ebs-storageclass -p &#39;{&quot;metadata&quot;: {&quot;annotations&quot;:{&quot;storageclass.kubernetes.io/is-default-class&quot;:&quot;true&quot;}}}
 </code></pre>
-<p>prontinho!</p>
+<p>prontinho! :)</p>
 
             ]]>
         </content>
