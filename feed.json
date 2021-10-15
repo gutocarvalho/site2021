@@ -12,7 +12,7 @@
         {
             "id": "https://gutocarvalho.net/k8s-port-forward-facil/",
             "url": "https://gutocarvalho.net/k8s-port-forward-facil/",
-            "title": "DROPS: Port forward é fácil!",
+            "title": "DROPS: Fazer Port Forward no K8S é fácil :)",
             "summary": "Aprenda a se conectar em um serviço K8S sem exposição! São DUMPs&hellip;",
             "content_html": "<p>Aprenda a se conectar em um serviço K8S sem exposição!</p>\n<h3 id=\"o-que-são-drops\">O que são drops?</h3>\n<p>São DUMPs mentais rápidos e rasteiros, simples e objetivos – que funcionam. </p>\n<p>Geralmente de algo que eu acabei de fazer.</p>\n<p>Eu – quase sempre – volto para detalhar mais cada passo.</p>\n<p>Considere com a mesma qualidade de um rascunho ou uma anotação rápida.</p>\n<p>De qualquer forma comenta ai qquer coisa, os comentários estão ligados nos DROPS ;)</p>\n<h3 id=\"demanda\">Demanda!</h3>\n<p>Preciso me conectar em um Mongo no cluster sem expor ele para o mundo?</p>\n<h3 id=\"comofaz\">Comofaz?</h3>\n<p>Vamos usar o port-forward, veja como a sintaxe é simples</p>\n<pre><code>kubectl nome_do_pod porta_local:portal_cluster -n seuname_space\n</code></pre>\n<p>Exemplo!</p>\n<pre><code>kubectl mongodb-replicaset-0 28015:27017 -n seuname_space\n</code></pre>\n<p>Prontinho!</p>\n<h3 id=\"refs\">Refs</h3>\n<ul>\n<li><a href=\"https://kubernetes.io/docs/tasks/access-application-cluster/port-forward-access-application-cluster/\">https://kubernetes.io/docs/tasks/access-application-cluster/port-forward-access-application-cluster/</a></li>\n</ul>\n",
             "author": {
@@ -23,7 +23,7 @@
                    "Drops"
             ],
             "date_published": "2021-10-15T05:43:22-03:00",
-            "date_modified": "2021-10-15T05:46:37-03:00"
+            "date_modified": "2021-10-15T05:48:03-03:00"
         },
         {
             "id": "https://gutocarvalho.net/baixando-imagens-de-ecr-privado-no-k8s/",
