@@ -3,7 +3,7 @@
     <title>Guto@Site</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2021-10-15T05:51:18-03:00</updated>
+    <updated>2021-10-15T05:56:12-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
@@ -19,7 +19,7 @@
             <category term="K8S"/>
             <category term="Drops"/>
 
-        <updated>2021-10-15T05:50:34-03:00</updated>
+        <updated>2021-10-15T05:55:53-03:00</updated>
             <summary>
                 <![CDATA[
                     Aprenda a se conectar em um serviço K8S sem exposição! São DUMPs&hellip;
@@ -28,6 +28,7 @@
         <content type="html">
             <![CDATA[
                 <p>Aprenda a se conectar em um serviço K8S sem exposição!</p>
+<hr>
 <h3 id="o-que-são-drops">O que são drops?</h3>
 <p>São DUMPs mentais rápidos e rasteiros, simples e objetivos – que funcionam. </p>
 <p>Geralmente de algo que eu acabei de fazer.</p>
@@ -62,7 +63,7 @@
             <category term="K8S"/>
             <category term="Drops"/>
 
-        <updated>2021-10-14T12:52:10-03:00</updated>
+        <updated>2021-10-15T05:55:59-03:00</updated>
             <summary>
                 <![CDATA[
                     Aprenda a pegar imagens de registry ECR privado em seu cluster K8S.
@@ -141,7 +142,7 @@
             <category term="K8S"/>
             <category term="Drops"/>
 
-        <updated>2021-10-15T05:51:18-03:00</updated>
+        <updated>2021-10-15T05:56:03-03:00</updated>
             <summary>
                 <![CDATA[
                     Aprenda a usar o storage EBS como SC em seu cluster EC2!&hellip;
@@ -247,7 +248,7 @@ ebs-storageclass             ebs.csi.aws.com   Delete          WaitForFirstConsu
         <id>https://gutocarvalho.net/drops-criando-um-eks-basico-via-terraform/</id>
             <category term="Drops"/>
 
-        <updated>2021-10-11T07:47:30-03:00</updated>
+        <updated>2021-10-15T05:56:08-03:00</updated>
             <summary>
                 <![CDATA[
                     Aprenda a criar um cluster EKS básico via Terraform! Só vem :”)&hellip;
@@ -594,7 +595,7 @@ ip-10-xx-xx-xx.ec2.internal   Ready    &lt;none&gt;   3m11s   v1.21.2-eks-55daa9
         <id>https://gutocarvalho.net/instalando-gitlab-runner-no-ubuntu/</id>
             <category term="Drops"/>
 
-        <updated>2021-10-11T07:42:11-03:00</updated>
+        <updated>2021-10-15T05:56:12-03:00</updated>
             <summary>
                 <![CDATA[
                     <p>Aprenda a instalar o gitlab-runner para rodar docker DIND.</p>
