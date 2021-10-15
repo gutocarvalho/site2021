@@ -3,7 +3,7 @@
     <title>Guto@Site</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2021-10-15T05:48:03-03:00</updated>
+    <updated>2021-10-15T05:49:12-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
@@ -19,7 +19,7 @@
             <category term="K8S"/>
             <category term="Drops"/>
 
-        <updated>2021-10-15T05:48:03-03:00</updated>
+        <updated>2021-10-15T05:49:12-03:00</updated>
             <summary>
                 <![CDATA[
                     Aprenda a se conectar em um serviço K8S sem exposição! São DUMPs&hellip;
@@ -35,7 +35,7 @@
 <p>Considere com a mesma qualidade de um rascunho ou uma anotação rápida.</p>
 <p>De qualquer forma comenta ai qquer coisa, os comentários estão ligados nos DROPS ;)</p>
 <h3 id="demanda">Demanda!</h3>
-<p>Preciso me conectar em um Mongo no cluster sem expor ele para o mundo?</p>
+<p>Preciso me conectar em um Mongo no cluster sem expor ele para o mundo.</p>
 <h3 id="comofaz">Comofaz?</h3>
 <p>Vamos usar o port-forward, veja como a sintaxe é simples</p>
 <pre><code>kubectl nome_do_pod porta_local:portal_cluster -n seuname_space
