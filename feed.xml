@@ -3,12 +3,104 @@
     <title>Guto@Site</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2021-10-15T05:56:12-03:00</updated>
+    <updated>2021-10-17T16:30:45-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
     <id>https://gutocarvalho.net</id>
 
+    <entry>
+        <title>Ferramentas APM Open Source Self-Hosted</title>
+        <author>
+            <name>Guto Carvalho</name>
+        </author>
+        <link href="https://gutocarvalho.net/ferramentas-open-source-apm/"/>
+        <id>https://gutocarvalho.net/ferramentas-open-source-apm/</id>
+            <category term="Projetos"/>
+
+        <updated>2021-10-17T16:30:45-03:00</updated>
+            <summary>
+                <![CDATA[
+                    Aqui eu listo algumas ferramentas open source para APM que você pode&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p>Aqui eu listo algumas ferramentas open source para APM que você pode usar em seu projeto e infraestrutura.</p>
+<h2 id="apache-skywalking">Apache Skywalking</h2>
+<p>Site do projeto: <a href="https://skywalking.apache.org/">https://skywalking.apache.org/</a></p>
+<p>GitHub do projeto: 14.7k stars e 250+ contributors</p>
+<p>Recomendado para APPs rodando em Cloud e API.</p>
+<p>Se você está imerso no universo de API, microserviços, kubernetes e cloud native esse é o projeto para você, ele foi desenhado para Cloud e API sendo hoje um dos maiores, mais respeitados e ativos do GitHub.</p>
+<p>Há quem diga que é o melhor nesse segmento hoje.</p>
+<h2 id="pinpoint">PinPoint</h2>
+<p>Site do projeto: <a href="https://github.com/naver/pinpoint">https://github.com/naver/pinpoint</a></p>
+<p>GitHub 10.8k stars e 90+ contributors</p>
+<p>Acho que o PinPoint é o preferido da galera de JAVA em 2021, é bem conhecido e vastamente utilizado.</p>
+<p>Recomendado para APPs JAVA ou Python</p>
+<p>Baseado no Google’s Dapper.</p>
+<h2 id="stagemonitor">StageMonitor</h2>
+<p>Site do projeto <a href="https://www.stagemonitor.org">https://www.stagemonitor.org</a></p>
+<p>GitHub 1.6k stars e 24+ contributors</p>
+<p>Recomendado para JAVA, tem compatibilidade e integração com OpenTracing.</p>
+<h2 id="scouter">Scouter</h2>
+<p>Site do projeto <a href="https://github.com/scouter-project/scouter">https://github.com/scouter-project/scouter</a></p>
+<p>GitHub 1.8k starts e 40+ contributors.</p>
+<p>Inspirado no New Relic e APP Dynamics, é uma aplicação modular e bastante extensível.</p>
+<p>Oferece interações nativas com Telegraf e Zipkin.</p>
+<p>Tem agente nativo para java, linux, unix e até windows.</p>
+<p>Monitora nativamente (usando telegraph)</p>
+<ul>
+<li>Redis</li>
+<li>Nginx</li>
+<li>Apache HTTPd</li>
+<li>HAProxy</li>
+<li>Kafka</li>
+<li>MySQL</li>
+<li>MongoDB</li>
+<li>RabbitMQ</li>
+<li>ElasticSearch</li>
+<li>Kubernetes</li>
+<li>Mesos</li>
+</ul>
+<p>Instrumenta nativamente:</p>
+<ul>
+<li>C#</li>
+<li>GO</li>
+<li>Java</li>
+<li>JavaScript</li>
+<li>Ruby</li>
+<li>Scala</li>
+<li>PHP</li>
+</ul>
+<p>Instrumentação extendida via código da comunidade</p>
+<ul>
+<li>C++</li>
+<li>Python</li>
+<li>Clojure</li>
+<li>Elixir</li>
+<li>Lua</li>
+</ul>
+<p>Veja dados completos da instrumentação</p>
+<ul>
+<li><a href="https://zipkin.io/pages/tracers_instrumentation.html">https://zipkin.io/pages/tracers_instrumentation.html</a> </li>
+</ul>
+<h2 id="app-metrics">APP Metrics</h2>
+<p>Site do projeto <a href="https://www.app-metrics.io/">https://www.app-metrics.io/</a></p>
+<p>GitHub 2k starts e 40+ contributors</p>
+<p>Recomendado para APPs .Net.</p>
+<p>Se o seu negócio é .NET o APP Metrics é a ferramenta pra você e seu time.</p>
+<h2 id="inspectit-ocelot">InspectIT Ocelot</h2>
+<p>Site do projeto: <a href="https://github.com/inspectIT/inspectit-ocelot">https://github.com/inspectIT/inspectit-ocelot</a></p>
+<p>GitHub 158 starts e 25+ contributors</p>
+<p>Esse é um projeto novo, o caçula da turma, mas tem muito potencial.</p>
+<p>Ele tem uma pegada na fácil configuração, aliás zero configuração e uma boa oferta nativa de métricas.</p>
+<p>E isso, bons estudos!</p>
+<p>[s]</p>
+
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>DROPS: Fazer Port Forward no K8S é fácil :)</title>
         <author>
@@ -719,32 +811,6 @@ ip-10-xx-xx-xx.ec2.internal   Ready    &lt;none&gt;   3m11s   v1.21.2-eks-55daa9
 
 <p><strong>Gerando Kubeconfig para AWS EKS</strong><br><br>configurando aws-cli<br><br><code>$ aws configure</code><br>    <br>preencha os dados pedidos<br><br><code>AWS Access Key ID [None]: ACCESS_KEY</code><br><code>AWS Secret Access Key [None]: SECRET_KEY</code><br><code>Default region name [None]: us-east-1</code><br><code>Default output format [None]: json</code><br><br>listando clusters<br><br><code>$ aws eks cluster-list --output table</code><br><br>saída<br><br><code>-----------------------</code><br><code>|    ListClusters     |</code><br><code>+---------------------+</code><br><code>||     clusters      ||</code><br><code>|+-------------------+|</code><br><code>||  homologacao      ||</code><br><code>||  producao         ||</code><br><code>||  desenvolvimento  ||</code><br><code>||  sandbox          ||</code><br><code>|+-------------------+|</code><br><br><br>gerando</p>
 <p><code>$ aws eks update-kubeconfig --name labs</code><br><br>saída<br><br><code>Added new context arn:aws:eks:us-east-1:xxxx:cluster/gr1d-labs to /Users/gutocarvalho/projetos/nativetrail/k8s/labs/config</code><br><br>listando clusters<br><br><code>$ export KUBECONFIG=/Users/gutocarvalho/projetos/nativetrail/k8s/labs/config</code><br><code>$ kubectl get nodes</code><br><br>saída<br><br><code>NAME                            STATUS   ROLES    AGE   VERSION</code><br><code>ip-172-xx-xx-11.ec2.internal     Ready    &lt;none&gt;   24m   v1.21.2-eks-55daa9d</code><br><code>ip-172-xx-xx-168.ec2.internal    Ready    &lt;none&gt;   24m   v1.21.2-eks-55daa9d</code><br><code>ip-172-xx-xx-198.ec2.internal    Ready    &lt;none&gt;   24m   v1.21.2-eks-55daa9d</code><br><br>prontinho!</p>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>K8S: Instalando ingress AWS no EKS</title>
-        <author>
-            <name>Guto Carvalho</name>
-        </author>
-        <link href="https://gutocarvalho.net/instalando-ingress-aws-no-k8s-eks/"/>
-        <id>https://gutocarvalho.net/instalando-ingress-aws-no-k8s-eks/</id>
-            <category term="Projetos"/>
-            <category term="K8S"/>
-            <category term="Drops"/>
-
-        <updated>2021-10-06T15:22:35-03:00</updated>
-            <summary>
-                <![CDATA[
-                    <p>Aprenda a instalar o ingress-aws no EKS de forma rápida e pontual</p>
-
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                <p>Aprenda a instalar o ingress-aws no EKS de forma rápida e pontual</p>
-
-<p>É importante saber que o cluster EKS não vem com ingress instalado por padrão, então vamos aprender como instalar o INGRESS oficial do projeto do K8S com suporte a ELB e NLB da AWS.<br><br><strong>Instalando Ingress no EKS</strong><br><br>Aqui nesta página teremos a documentação para instalar o ingress<br><br><code>https://kubernetes.github.io/ingress-nginx/deploy/#aws</code><br><br>Instale a última versão estável<br><br><code>$ kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v1.0.3/deploy/static/provider/aws/deploy.yaml</code><br><br>A saída esperada é essa:<br><br><code>namespace/ingress-nginx created</code><br><code>serviceaccount/ingress-nginx created</code><br><code>configmap/ingress-nginx-controller created</code><br><code>clusterrole.rbac.authorization.k8s.io/ingress-nginx created</code><br><code>clusterrolebinding.rbac.authorization.k8s.io/ingress-nginx created</code><br><code>role.rbac.authorization.k8s.io/ingress-nginx created</code><br><code>rolebinding.rbac.authorization.k8s.io/ingress-nginx created</code><br><code>service/ingress-nginx-controller-admission created</code><br><code>service/ingress-nginx-controller created</code><br><code>deployment.apps/ingress-nginx-controller created</code><br><code>ingressclass.networking.k8s.io/nginx created</code><br><code>validatingwebhookconfiguration.admissionregistration.k8s.io/ingress-nginx-admission created</code><br><code>serviceaccount/ingress-nginx-admission created</code><br><code>clusterrole.rbac.authorization.k8s.io/ingress-nginx-admission created</code><br><code>clusterrolebinding.rbac.authorization.k8s.io/ingress-nginx-admission created</code><br><code>role.rbac.authorization.k8s.io/ingress-nginx-admission created</code><br><code>rolebinding.rbac.authorization.k8s.io/ingress-nginx-admission created</code><br><code>job.batch/ingress-nginx-admission-create created</code><br><code>job.batch/ingress-nginx-admission-patch created</code><br><br>Prontinho!</p>
             ]]>
         </content>
     </entry>
