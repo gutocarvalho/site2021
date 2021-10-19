@@ -3,14 +3,14 @@
     <title>Guto@Site</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2021-10-17T16:30:45-03:00</updated>
+    <updated>2021-10-17T16:34:29-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
     <id>https://gutocarvalho.net</id>
 
     <entry>
-        <title>Ferramentas APM Open Source Self-Hosted</title>
+        <title>Ferramentas APM open source Self-Hosted</title>
         <author>
             <name>Guto Carvalho</name>
         </author>
@@ -18,15 +18,17 @@
         <id>https://gutocarvalho.net/ferramentas-open-source-apm/</id>
             <category term="Projetos"/>
 
-        <updated>2021-10-17T16:30:45-03:00</updated>
+        <updated>2021-10-17T16:34:29-03:00</updated>
             <summary>
                 <![CDATA[
-                    Aqui eu listo algumas ferramentas open source para APM que você pode&hellip;
+                    Conheça algumas ferramentas open source para APM para seus projetos Estude e&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                <p>Aqui eu listo algumas ferramentas open source para APM que você pode usar em seu projeto e infraestrutura.</p>
+                <p>Conheça algumas ferramentas open source para APM para seus projetos</p>
+<hr>
+<p>Estude e avalie essas boas ferramentas que você pode usar em seu projeto e infraestrutura.</p>
 <h2 id="apache-skywalking">Apache Skywalking</h2>
 <p>Site do projeto: <a href="https://skywalking.apache.org/">https://skywalking.apache.org/</a></p>
 <p>GitHub do projeto: 14.7k stars e 250+ contributors</p>
