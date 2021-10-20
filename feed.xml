@@ -3,7 +3,7 @@
     <title>Guto@Site</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2021-10-17T16:34:29-03:00</updated>
+    <updated>2021-10-20T16:49:46-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
@@ -236,7 +236,7 @@
             <category term="K8S"/>
             <category term="Drops"/>
 
-        <updated>2021-10-15T05:56:03-03:00</updated>
+        <updated>2021-10-20T16:49:46-03:00</updated>
             <summary>
                 <![CDATA[
                     Aprenda a usar o storage EBS como SC em seu cluster EC2!&hellip;
@@ -313,7 +313,7 @@ metadata:
 parameters:
   type: gp2
 provisioner: ebs.csi.aws.com
-volumeBindingMode: WaitForFirstConsumer
+volumeBindingMode: Immediate
 </code></pre>
 <p>aplique o manifesto</p>
 <pre><code>kubectl apply -f ebs-storageclass.yaml
@@ -323,7 +323,7 @@ volumeBindingMode: WaitForFirstConsumer
 </code></pre>
 <p>saída esperada</p>
 <pre><code>NAME                         PROVISIONER       RECLAIMPOLICY   VOLUMEBINDINGMODE      ALLOWVOLUMEEXPANSION   AGE
-ebs-storageclass             ebs.csi.aws.com   Delete          WaitForFirstConsumer   false                  3m24s
+ebs-storageclass             ebs.csi.aws.com   Delete          Immediate   false                  3m24s
 </code></pre>
 <p>caso queira, defina este sc como default</p>
 <pre><code>  kubectl patch storageclass ebs-storageclass -p &#39;{&quot;metadata&quot;: {&quot;annotations&quot;:{&quot;storageclass.kubernetes.io/is-default-class&quot;:&quot;true&quot;}}}
