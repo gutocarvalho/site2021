@@ -3,14 +3,14 @@
     <title>Guto@Site</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2021-10-22T09:44:42-03:00</updated>
+    <updated>2021-10-22T09:47:50-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
     <id>https://gutocarvalho.net</id>
 
     <entry>
-        <title>Centralizando Logs do K8S com o Loki</title>
+        <title>DROPS: Centralizando Logs do K8S com o Loki</title>
         <author>
             <name>Guto Carvalho</name>
         </author>
@@ -19,7 +19,7 @@
             <category term="Projetos"/>
             <category term="Drops"/>
 
-        <updated>2021-10-22T09:44:42-03:00</updated>
+        <updated>2021-10-22T09:47:50-03:00</updated>
             <summary>
                 <![CDATA[
                     Aprenda a instalar o LOKI da GrafanaLabs para centralizar Logs do K8S.
@@ -47,8 +47,9 @@
 <li><a href="https://grafana.com/docs/loki/latest/overview/">https://grafana.com/docs/loki/latest/overview/</a></li>
 <li><a href="https://grafana.com/docs/loki/latest/overview/comparisons/">https://grafana.com/docs/loki/latest/overview/comparisons/</a></li>
 </ul>
-<h3 id="requisitos">Requisitos</h3>
+<h3 id="antes-de-começar">Antes de começar</h3>
 <p>Estou partindo do pressuposto de que você não tem o grafana instalado!</p>
+<p>Precisa ter o Helm instalado e um cluster k8s funcional.</p>
 <h3 id="então-comofaz">Então ComoFaz?</h3>
 <p>adicione o repositorio e atualize os índices</p>
 <pre><code>helm repo add grafana https://grafana.github.io/helm-charts
