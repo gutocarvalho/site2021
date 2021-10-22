@@ -3,12 +3,478 @@
     <title>Guto@Site</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2021-10-20T16:49:46-03:00</updated>
+    <updated>2021-10-22T09:14:26-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
     <id>https://gutocarvalho.net</id>
 
+    <entry>
+        <title>DROPS: Instalando Rancher 2.6 em HA</title>
+        <author>
+            <name>Guto Carvalho</name>
+        </author>
+        <link href="https://gutocarvalho.net/drops-instalando-rancher-26-em-ha/"/>
+        <id>https://gutocarvalho.net/drops-instalando-rancher-26-em-ha/</id>
+            <category term="Projetos"/>
+            <category term="Drops"/>
+
+        <updated>2021-10-22T09:14:26-03:00</updated>
+            <summary>
+                <![CDATA[
+                    Aprenda a instalar o novíssimo Rancher 2.6 em modo HA. São DUMPs&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p>Aprenda a instalar o novíssimo Rancher 2.6 em modo HA.</p>
+<hr>
+<h3 id="o-que-são-drops">O que são drops?</h3>
+<p>São DUMPs mentais rápidos e rasteiros, simples e objetivos – que funcionam. </p>
+<p>Geralmente de algo que eu acabei de fazer.</p>
+<p>Eu – quase sempre – volto para detalhar mais cada passo.</p>
+<p>Considere com a mesma qualidade de um rascunho ou uma anotação rápida.</p>
+<p>De qualquer forma comenta ai qquer coisa, os comentários estão ligados nos DROPS ;)</p>
+<h2 id="demanda">Demanda!</h2>
+<p>A ideia é instalar um Rancher em HA, cluster de 3 nodes, usando instâncias AWS EC2.</p>
+<h2 id="comofaz">ComoFaz?</h2>
+<h3 id="antes-de-começar">antes de começar</h3>
+<p>Confere aí :)</p>
+<ol>
+<li>Tenha o Kubectl instalado</li>
+<li>Tenha o RKE instalado</li>
+<li>Tenha o Helm instalado</li>
+<li>Tenha Conta na AWS</li>
+<li>Internet é de bom tom :)</li>
+</ol>
+<h3 id="instâncias-ec2">instâncias ec2</h3>
+<p>Vamos lá!</p>
+<ol>
+<li>crie um chave ssh no ec2</li>
+<li>crie 3 instâncias EC2 em sua conta AWS com essa chave ssh</li>
+<li>crie 2 target groups rancher-80 e rancher-443 apontando para as máquinas do cluster</li>
+<li>crie o load balancer NLB com dois listeners apontando para os target groups rancher-80 e rancher-443</li>
+<li>crie uma entrada de dns <strong>rancher.seudominio.tld</strong> apontando para o CNAME do Load Balancer</li>
+<li>crie um security group para liberar acesso a porta 80 e 443 as máquinas do cluster</li>
+<li>crie um security group para que voce possa instalar o cluster a partir do seu IP via rke (all ports).</li>
+</ol>
+<h3 id="preparando-instâncias">preparando instâncias</h3>
+<p>instale docker nas 3 maquinas</p>
+<pre><code>curl https://releases.rancher.com/install-docker/20.10.sh | sh
+</code></pre>
+<p>habilite e inicie</p>
+<pre><code>systemctl enable docker &amp;&amp; systemctl start docker
+</code></pre>
+<p>coloque o ubuntu no grupo docker</p>
+<pre><code>gpasswd -a ubuntu docker
+</code></pre>
+<h3 id="preparando-e-instalando-o-cluster-da-sua-máquina">preparando e instalando o cluster (da sua máquina)</h3>
+<p>criando configuracao</p>
+<pre><code>rke config
+</code></pre>
+<p>ele vai te fazer umas perguntinhas, cadastre apenas 1 node para facilitar, eu usei 1.1.1.1 como exemplo, aponte o local da sua chave ssh, a mesma que usou nos EC2.</p>
+<pre><code>[+] Cluster Level SSH Private Key Path [~/.ssh/id_rsa]:
+[+] Number of Hosts [1]:
+[+] SSH Address of host (1) [none]: 1.1.1.1
+[+] SSH Port of host (1) [22]:
+[+] SSH Private Key Path of host (1.1.1.1) [none]:
+[-] You have entered empty SSH key path, trying fetch from SSH key parameter
+[+] SSH Private Key of host (1.1.1.1) [none]:
+[-] You have entered empty SSH key, defaulting to cluster level SSH key: ~/.ssh/id_rsa
+[+] SSH User of host (1.1.1.1) [ubuntu]:
+[+] Is host (1.1.1.1) a Control Plane host (y/n)? [y]: y
+[+] Is host (1.1.1.1) a Worker host (y/n)? [n]: y
+[+] Is host (1.1.1.1) an etcd host (y/n)? [n]: y
+[+] Override Hostname of host (1.1.1.1) [none]:
+[+] Internal IP of host (1.1.1.1) [none]:
+[+] Docker socket path on host (1.1.1.1) [/var/run/docker.sock]:
+[+] Network Plugin Type (flannel, calico, weave, canal, aci) [canal]:
+[+] Authentication Strategy [x509]:
+[+] Authorization Mode (rbac, none) [rbac]:
+[+] Kubernetes Docker image [rancher/hyperkube:v1.21.5-rancher1]:
+[+] Cluster domain [cluster.local]:
+[+] Service Cluster IP Range [10.43.0.0/16]:
+[+] Enable PodSecurityPolicy [n]:
+[+] Cluster Network CIDR [10.42.0.0/16]:
+[+] Cluster DNS Service IP [10.43.0.10]:
+[+] Add addon manifest URLs or YAML files [no]:
+</code></pre>
+<p>abra o arquivo e coloque os demais nodos, não se esqueça de cadastrar o ip privado também, depois que finalizar com os nodos, personalize o que for necessário para seu ambiente k8s, o rke é beeem flexível quanto a isso, além de ser o instalador de k8s mais fácil que eu conheço.</p>
+<pre><code>nodes:
+- address: 1.1.1.1
+  port: &quot;22&quot;
+  internal_address: &quot;172.31.1.1&quot;
+  role:
+  - controlplane
+  - worker
+  - etcd
+  hostname_override: &quot;rancher_a&quot;
+  user: ubuntu
+  docker_socket: /var/run/docker.sock
+  ssh_key: &quot;&quot;
+  ssh_key_path: ~/.ssh/id_rsa
+  ssh_cert: &quot;&quot;
+  ssh_cert_path: &quot;&quot;
+  labels: {}
+  taints: []
+- address: 2.2.2.2
+  port: &quot;22&quot;
+  internal_address: &quot;172.31.1.2&quot;
+  role:
+  - controlplane
+  - worker
+  - etcd
+  hostname_override: &quot;rancher_b&quot;
+  user: ubuntu
+  docker_socket: /var/run/docker.sock
+  ssh_key: &quot;&quot;
+  ssh_key_path: ~/.ssh/id_rsa
+  ssh_cert: &quot;&quot;
+  ssh_cert_path: &quot;&quot;
+  labels: {}
+  taints: []
+- address: 3.3.3.3
+  port: &quot;22&quot;
+  internal_address: &quot;172.31.1.3&quot;
+  role:
+  - controlplane
+  - worker
+  - etcd
+  hostname_override: &quot;rancher_c&quot;
+  user: ubuntu
+  docker_socket: /var/run/docker.sock
+  ssh_key: &quot;&quot;
+  ssh_key_path: ~/.ssh/id_rsa
+  ssh_cert: &quot;&quot;
+  ssh_cert_path: &quot;&quot;
+  labels: {}
+  taints: []
+services:
+  etcd:
+    image: &quot;&quot;
+    extra_args: {}
+    extra_binds: []
+    extra_env: []
+    win_extra_args: {}
+    win_extra_binds: []
+    win_extra_env: []
+    external_urls: []
+    ca_cert: &quot;&quot;
+    cert: &quot;&quot;
+    key: &quot;&quot;
+    path: &quot;&quot;
+    uid: 0
+    gid: 0
+    snapshot: null
+    retention: &quot;&quot;
+    creation: &quot;&quot;
+    backup_config: null
+  kube-api:
+    image: &quot;&quot;
+    extra_args: {}
+    extra_binds: []
+    extra_env: []
+    win_extra_args: {}
+    win_extra_binds: []
+    win_extra_env: []
+    service_cluster_ip_range: 10.43.0.0/16
+    service_node_port_range: &quot;&quot;
+    pod_security_policy: false
+    always_pull_images: false
+    secrets_encryption_config: null
+    audit_log: null
+    admission_configuration: null
+    event_rate_limit: null
+  kube-controller:
+    image: &quot;&quot;
+    extra_args: {}
+    extra_binds: []
+    extra_env: []
+    win_extra_args: {}
+    win_extra_binds: []
+    win_extra_env: []
+    cluster_cidr: 10.42.0.0/16
+    service_cluster_ip_range: 10.43.0.0/16
+  scheduler:
+    image: &quot;&quot;
+    extra_args: {}
+    extra_binds: []
+    extra_env: []
+    win_extra_args: {}
+    win_extra_binds: []
+    win_extra_env: []
+  kubelet:
+    image: &quot;&quot;
+    extra_args: {}
+    extra_binds: []
+    extra_env: []
+    win_extra_args: {}
+    win_extra_binds: []
+    win_extra_env: []
+    cluster_domain: cluster.local
+    infra_container_image: &quot;&quot;
+    cluster_dns_server: 10.43.0.10
+    fail_swap_on: false
+    generate_serving_certificate: false
+  kubeproxy:
+    image: &quot;&quot;
+    extra_args: {}
+    extra_binds: []
+    extra_env: []
+    win_extra_args: {}
+    win_extra_binds: []
+    win_extra_env: []
+network:
+  plugin: canal
+  options: {}
+  mtu: 0
+  node_selector: {}
+  update_strategy: null
+  tolerations: []
+authentication:
+  strategy: x509
+  sans: []
+  webhook: null
+addons: &quot;&quot;
+addons_include: []
+system_images:
+  etcd: rancher/mirrored-coreos-etcd:v3.4.16-rancher1
+  alpine: rancher/rke-tools:v0.1.78
+  nginx_proxy: rancher/rke-tools:v0.1.78
+  cert_downloader: rancher/rke-tools:v0.1.78
+  kubernetes_services_sidecar: rancher/rke-tools:v0.1.78
+  kubedns: rancher/mirrored-k8s-dns-kube-dns:1.17.4
+  dnsmasq: rancher/mirrored-k8s-dns-dnsmasq-nanny:1.17.4
+  kubedns_sidecar: rancher/mirrored-k8s-dns-sidecar:1.17.4
+  kubedns_autoscaler: rancher/mirrored-cluster-proportional-autoscaler:1.8.3
+  coredns: rancher/mirrored-coredns-coredns:1.8.4
+  coredns_autoscaler: rancher/mirrored-cluster-proportional-autoscaler:1.8.3
+  nodelocal: rancher/mirrored-k8s-dns-node-cache:1.18.0
+  kubernetes: rancher/hyperkube:v1.21.5-rancher1
+  flannel: rancher/mirrored-coreos-flannel:v0.14.0
+  flannel_cni: rancher/flannel-cni:v0.3.0-rancher6
+  calico_node: rancher/mirrored-calico-node:v3.19.2
+  calico_cni: rancher/mirrored-calico-cni:v3.19.2
+  calico_controllers: rancher/mirrored-calico-kube-controllers:v3.19.2
+  calico_ctl: rancher/mirrored-calico-ctl:v3.19.2
+  calico_flexvol: rancher/mirrored-calico-pod2daemon-flexvol:v3.19.2
+  canal_node: rancher/mirrored-calico-node:v3.19.2
+  canal_cni: rancher/mirrored-calico-cni:v3.19.2
+  canal_controllers: rancher/mirrored-calico-kube-controllers:v3.19.2
+  canal_flannel: rancher/mirrored-coreos-flannel:v0.14.0
+  canal_flexvol: rancher/mirrored-calico-pod2daemon-flexvol:v3.19.2
+  weave_node: weaveworks/weave-kube:2.8.1
+  weave_cni: weaveworks/weave-npc:2.8.1
+  pod_infra_container: rancher/mirrored-pause:3.4.1
+  ingress: rancher/nginx-ingress-controller:nginx-0.48.1-rancher1
+  ingress_backend: rancher/mirrored-nginx-ingress-controller-defaultbackend:1.5-rancher1
+  ingress_webhook: rancher/mirrored-jettech-kube-webhook-certgen:v1.5.1
+  metrics_server: rancher/mirrored-metrics-server:v0.5.0
+  windows_pod_infra_container: rancher/kubelet-pause:v0.1.6
+  aci_cni_deploy_container: noiro/cnideploy:5.1.1.0.1ae238a
+  aci_host_container: noiro/aci-containers-host:5.1.1.0.1ae238a
+  aci_opflex_container: noiro/opflex:5.1.1.0.1ae238a
+  aci_mcast_container: noiro/opflex:5.1.1.0.1ae238a
+  aci_ovs_container: noiro/openvswitch:5.1.1.0.1ae238a
+  aci_controller_container: noiro/aci-containers-controller:5.1.1.0.1ae238a
+  aci_gbp_server_container: noiro/gbp-server:5.1.1.0.1ae238a
+  aci_opflex_server_container: noiro/opflex-server:5.1.1.0.1ae238a
+ssh_key_path: ~/.ssh/id_rsa
+ssh_cert_path: &quot;&quot;
+ssh_agent_auth: false
+authorization:
+  mode: rbac
+  options: {}
+ignore_docker_version: null
+enable_cri_dockerd: null
+kubernetes_version: &quot;&quot;
+private_registries: []
+ingress:
+  provider: &quot;&quot;
+  options: {}
+  node_selector: {}
+  extra_args: {}
+  dns_policy: &quot;&quot;
+  extra_envs: []
+  extra_volumes: []
+  extra_volume_mounts: []
+  update_strategy: null
+  http_port: 0
+  https_port: 0
+  network_mode: &quot;&quot;
+  tolerations: []
+  default_backend: null
+  default_http_backend_priority_class_name: &quot;&quot;
+  nginx_ingress_controller_priority_class_name: &quot;&quot;
+cluster_name: &quot;&quot;
+cloud_provider:
+  name: &quot;&quot;
+prefix_path: &quot;&quot;
+win_prefix_path: &quot;&quot;
+addon_job_timeout: 0
+bastion_host:
+  address: &quot;&quot;
+  port: &quot;&quot;
+  user: &quot;&quot;
+  ssh_key: &quot;&quot;
+  ssh_key_path: &quot;&quot;
+  ssh_cert: &quot;&quot;
+  ssh_cert_path: &quot;&quot;
+  ignore_proxy_env_vars: false
+monitoring:
+  provider: &quot;&quot;
+  options: {}
+  node_selector: {}
+  update_strategy: null
+  replicas: null
+  tolerations: []
+  metrics_server_priority_class_name: &quot;&quot;
+restore:
+  restore: false
+  snapshot_name: &quot;&quot;
+rotate_encryption_key: false
+dns: null
+</code></pre>
+<p>depois de cadastrar os nodos, vamos começar o provisionamento</p>
+<pre><code>rke up —config cluster.yaml
+</code></pre>
+<p>após instalar verá a seguinte mensagem ( se tudo der certo )</p>
+<pre><code>INFO[0255] Finished building Kubernetes cluster successfully
+</code></pre>
+<p>configure o kubectl</p>
+<pre><code>export KUBECONFIG=kube_config_cluster.yml
+</code></pre>
+<p>verifique se o cluster está funcionando</p>
+<pre><code>kubctl get nodes
+</code></pre>
+<p>saída exemplo</p>
+<pre><code>NAME             STATUS   ROLES                      AGE   VERSION
+54.225.184.xxx   Ready    controlplane,etcd,worker   12m   v1.21.5
+54.243.65.xxx    Ready    controlplane,etcd,worker   12m   v1.21.5
+72.44.32.xxx     Ready    controlplane,etcd,worker   12m   v1.21.5
+</code></pre>
+<p>cluster instalado, agora verifique a saúde de seu cluster</p>
+<pre><code>kubectl get pods --all-namespaces
+</code></pre>
+<p>saída exemplo</p>
+<pre><code>NAMESPACE       NAME                                       READY   STATUS      RESTARTS   AGE
+ingress-nginx   default-http-backend-6977475d9b-z64cj      1/1     Running     0          17m
+ingress-nginx   nginx-ingress-controller-h4c67             1/1     Running     0          17m
+ingress-nginx   nginx-ingress-controller-kjd8r             1/1     Running     0          17m
+ingress-nginx   nginx-ingress-controller-q4lp2             1/1     Running     0          17m
+kube-system     calico-kube-controllers-7d5d95c8c9-mcfj6   1/1     Running     0          18m
+kube-system     canal-lsbkv                                2/2     Running     0          18m
+kube-system     canal-lwtq9                                2/2     Running     0          18m
+kube-system     canal-wm7c8                                2/2     Running     0          18m
+kube-system     coredns-55b58f978-jnfsq                    1/1     Running     0          17m
+kube-system     coredns-55b58f978-wr4w7                    1/1     Running     0          18m
+kube-system     coredns-autoscaler-76f8869cc9-lz44p        1/1     Running     0          18m
+kube-system     metrics-server-55fdd84cd4-rjk7w            1/1     Running     0          18m
+kube-system     rke-coredns-addon-deploy-job-th472         0/1     Completed   0          18m
+kube-system     rke-ingress-controller-deploy-job-59cm4    0/1     Completed   0          17m
+kube-system     rke-metrics-addon-deploy-job-94b8t         0/1     Completed   0          18m
+kube-system     rke-network-plugin-deploy-job-q5nts        0/1     Completed   0          18m
+</code></pre>
+<p>aparentemente tudo bem :)</p>
+<h3 id="preparando-e-instalando-o-cert-manager-neste-cluster-sua-máquina">preparando e instalando o cert-manager neste cluster (sua máquina)</h3>
+<p>instale os crds do cert-manager</p>
+<pre><code>kubectl apply -f https://github.com/jetstack/cert-manager/releases/download/v1.5.1/cert-manager.crds.yaml
+</code></pre>
+<p>adicione o repo e atualize o índices</p>
+<pre><code>helm repo add jetstack https://charts.jetstack.io. 
+helm repo update
+</code></pre>
+<p>crie o namespace</p>
+<pre><code>kubectl create namespace cert-manager
+</code></pre>
+<p>instale o cert-mamanger</p>
+<pre><code>helm install cert-manager jetstack/cert-manager \
+  --namespace cert-manager \
+  --create-namespace \
+  --version v1.5.1
+</code></pre>
+<p>crie o cluster issuer, sem isso ele não gera os certs via lets</p>
+<pre><code>apiVersion: cert-manager.io/v1
+kind: ClusterIssuer
+metadata:
+  name: letsencrypt-prod
+  namespace: cert-manager
+spec:
+  acme:
+    # The ACME server URL
+    server: https://acme-v02.api.letsencrypt.org/directory
+    # Email address used for ACME registration
+    email: certmanager@nativetrail.io
+    # Name of a secret used to store the ACME account private key
+    privateKeySecretRef:
+      name: letsencrypt-prod
+    # Enable the HTTP-01 challenge provider
+    solvers:
+    - http01:
+        ingress:
+          class: nginx
+</code></pre>
+<p>aplique o issuer</p>
+<pre><code>kubectl apply -f issuer.yml
+</code></pre>
+<p>saída esperada</p>
+<pre><code> clusterissuer.cert-manager.io/letsencrypt-prod created
+</code></pre>
+<p>verifique se está ok</p>
+<pre><code>kubectl get clusterissuer 
+</code></pre>
+<p>saída esperada</p>
+<pre><code>NAME               READY   AGE
+letsencrypt-prod   True    48s
+</code></pre>
+<p>se estiver mostrando “True” deu certo!</p>
+<h3 id="preparando-e-instalando-o-rancher-neste-cluster-na-sua-máquina">preparando e instalando o rancher neste cluster (na sua máquina)</h3>
+<p>adicione o repo e atualize os índices</p>
+<pre><code>helm repo add rancher-latest https://releases.rancher.com/server-charts/latest
+helm repo update
+</code></pre>
+<p>crie o namespace cattle-system</p>
+<pre><code>kubectl create namespace cattle-system
+</code></pre>
+<p>instale o rancher</p>
+<pre><code>helm install rancher rancher-latest/rancher \
+  --namespace cattle-system \
+  --set hostname=kloud.gr1d.io \
+  --set replicas=3 \
+  --set ingress.tls.source=letsEncrypt \
+  --set letsEncrypt.email=certmanager@nativetrail.io
+</code></pre>
+<p>verifique</p>
+<pre><code>kubectl get pods -n cattle-system
+</code></pre>
+<p>saída esperada, estará criando na primeira vez que rodar o comando</p>
+<pre><code>NAME                       READY   STATUS              RESTARTS   AGE
+rancher-58b56d54df-7mv7d   0/1     ContainerCreating   0          29s
+rancher-58b56d54df-csmpl   0/1     ContainerCreating   0          29s
+rancher-58b56d54df-pkpz6   0/1     ContainerCreating   0          29s
+</code></pre>
+<p>aguarde e verifique novamente, use o mesmo comando</p>
+<pre><code>kubectl get pods -n cattle-system
+</code></pre>
+<p>saída</p>
+<pre><code>NAME                       READY   STATUS    RESTARTS   AGE
+rancher-58b56d54df-7mv7d   0/1     Running   0          41s
+rancher-58b56d54df-csmpl   0/1     Running   0          41s
+rancher-58b56d54df-pkpz6   0/1     Running   0          41s
+</code></pre>
+<p>rancher instalado e rodando!</p>
+<h3 id="pós-instalação">pós instalação</h3>
+<p>observe a saída do comando helm, ele vai te dizer como pegar a senha gerada para o primeiro acesso, depois disso, acesse o rancher via web através da URL definida e siga as os procedimentos para trocar a senha e iniciar o uso do seu rancher.</p>
+<h3 id="refs">refs</h3>
+<ul>
+<li><a href="https://rancher.com/docs/rancher/v2.6/en/installation/install-rancher-on-k8s/">https://rancher.com/docs/rancher/v2.6/en/installation/install-rancher-on-k8s/</a></li>
+<li><a href="https://rancher.com/docs/rancher/v2.6/en/installation/resources/k8s-tutorials/infrastructure-tutorials/infra-for-ha/">https://rancher.com/docs/rancher/v2.6/en/installation/resources/k8s-tutorials/infrastructure-tutorials/infra-for-ha/</a></li>
+</ul>
+<p>:)</p>
+
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>Ferramentas APM open source Self-Hosted</title>
         <author>
@@ -113,7 +579,7 @@
             <category term="K8S"/>
             <category term="Drops"/>
 
-        <updated>2021-10-15T05:55:53-03:00</updated>
+        <updated>2021-10-22T09:09:30-03:00</updated>
             <summary>
                 <![CDATA[
                     Aprenda a se conectar em um serviço K8S sem exposição! São DUMPs&hellip;
@@ -787,32 +1253,6 @@ ip-10-xx-xx-xx.ec2.internal   Ready    &lt;none&gt;   3m11s   v1.21.2-eks-55daa9
 <p>Acesse</p>
 <p><code><a href="https://rancher.nativetrail.io">https://rancher.nativetrail.io</a></code></p>
 <p>Prontinho!</p>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>K8S: Gerando Kubeconfig para AWS EKS</title>
-        <author>
-            <name>Guto Carvalho</name>
-        </author>
-        <link href="https://gutocarvalho.net/gerando-kubeconfig-para-aws-eks/"/>
-        <id>https://gutocarvalho.net/gerando-kubeconfig-para-aws-eks/</id>
-            <category term="K8S"/>
-            <category term="Drops"/>
-
-        <updated>2021-10-06T15:22:21-03:00</updated>
-            <summary>
-                <![CDATA[
-                    <p>Aprenda a gerar o kubeconfig para um cluster EKS</p>
-
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                <p>Aprenda a gerar o kubeconfig para um cluster EKS</p>
-
-<p><strong>Gerando Kubeconfig para AWS EKS</strong><br><br>configurando aws-cli<br><br><code>$ aws configure</code><br>    <br>preencha os dados pedidos<br><br><code>AWS Access Key ID [None]: ACCESS_KEY</code><br><code>AWS Secret Access Key [None]: SECRET_KEY</code><br><code>Default region name [None]: us-east-1</code><br><code>Default output format [None]: json</code><br><br>listando clusters<br><br><code>$ aws eks cluster-list --output table</code><br><br>saída<br><br><code>-----------------------</code><br><code>|    ListClusters     |</code><br><code>+---------------------+</code><br><code>||     clusters      ||</code><br><code>|+-------------------+|</code><br><code>||  homologacao      ||</code><br><code>||  producao         ||</code><br><code>||  desenvolvimento  ||</code><br><code>||  sandbox          ||</code><br><code>|+-------------------+|</code><br><br><br>gerando</p>
-<p><code>$ aws eks update-kubeconfig --name labs</code><br><br>saída<br><br><code>Added new context arn:aws:eks:us-east-1:xxxx:cluster/gr1d-labs to /Users/gutocarvalho/projetos/nativetrail/k8s/labs/config</code><br><br>listando clusters<br><br><code>$ export KUBECONFIG=/Users/gutocarvalho/projetos/nativetrail/k8s/labs/config</code><br><code>$ kubectl get nodes</code><br><br>saída<br><br><code>NAME                            STATUS   ROLES    AGE   VERSION</code><br><code>ip-172-xx-xx-11.ec2.internal     Ready    &lt;none&gt;   24m   v1.21.2-eks-55daa9d</code><br><code>ip-172-xx-xx-168.ec2.internal    Ready    &lt;none&gt;   24m   v1.21.2-eks-55daa9d</code><br><code>ip-172-xx-xx-198.ec2.internal    Ready    &lt;none&gt;   24m   v1.21.2-eks-55daa9d</code><br><br>prontinho!</p>
             ]]>
         </content>
     </entry>
