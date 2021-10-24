@@ -1,0 +1,279 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>DROPS: Usando EFS em um Cluster K8S EC2 - Guto@Site</title><meta name="description" content="Aprenda a usar o EFS Provisioner em um Cluster K8S EC2/RKE. São&hellip;"><meta name="generator" content="Publii Open-Source CMS for Static Site"><link rel="canonical" href="https://gutocarvalho.net/usando-efs-em-um-cluster-k8s-ec2/"><link rel="amphtml" href="https://gutocarvalho.net/amp/usando-efs-em-um-cluster-k8s-ec2/"><link rel="alternate" type="application/atom+xml" href="https://gutocarvalho.net/feed.xml"><link rel="alternate" type="application/json" href="https://gutocarvalho.net/feed.json"><meta property="og:title" content="DROPS: Usando EFS em um Cluster K8S EC2"><meta property="og:site_name" content="Guto@Site"><meta property="og:description" content="Aprenda a usar o EFS Provisioner em um Cluster K8S EC2/RKE. São&hellip;"><meta property="og:url" content="https://gutocarvalho.net/usando-efs-em-um-cluster-k8s-ec2/"><meta property="og:type" content="article"><meta name="twitter:card" content="summary"><meta name="twitter:site" content="@gutocarvalho"><meta name="twitter:title" content="DROPS: Usando EFS em um Cluster K8S EC2"><meta name="twitter:description" content="Aprenda a usar o EFS Provisioner em um Cluster K8S EC2/RKE. São&hellip;"><link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin><link href="https://fonts.googleapis.com/css?family=Asap:400,600,700&amp;display=swap" rel="stylesheet"><style>:root{--body-font:'Asap',sans-serif;--heading-font:var(--body-font);--logo-font:var(--body-font);--menu-font:var(--body-font)}</style><link rel="stylesheet" href="https://gutocarvalho.net/assets/css/style.css?v=47aad078e314013c1a1ca6569eaa9f2f"><script type="application/ld+json">{"@context":"http://schema.org","@type":"Article","mainEntityOfPage":{"@type":"WebPage","@id":"https://gutocarvalho.net/usando-efs-em-um-cluster-k8s-ec2/"},"headline":"DROPS: Usando EFS em um Cluster K8S EC2","datePublished":"2021-10-24T11:06","dateModified":"2021-10-24T11:06","description":"Aprenda a usar o EFS Provisioner em um Cluster K8S EC2/RKE. São&hellip;","author":{"@type":"Person","name":"Guto Carvalho"},"publisher":{"@type":"Organization","name":"Guto Carvalho"}}</script></head><body><div class="container js-container"><nav class="menu"><ul class="navbar__menu"><li><a href="https://gutocarvalho.net/quem-sou/" target="_self">Me conheça</a></li><li><a href="https://curriculo.gutocarvalho.net" target="_blank">Meu Currículo</a></li><li class="has-submenu"><span>Posts</span><ul class="navbar__submenu"><li><a href="https://gutocarvalho.net/" target="_self">BLOG</a></li><li><a href="https://twitter.com/gutocarvalho" target="_self">TWITTER</a></li></ul></li><li class="has-submenu"><span>Eu recomendo</span><ul class="navbar__submenu"><li><a href="https://gutocarvalho.net/comunidades/" target="_self">COMUNIDADES</a></li><li><a href="https://gutocarvalho.net/siga-o-pessoal-do-bem/" target="_self">PESSOAS</a></li></ul></li><li class="has-submenu"><span>TECH</span><ul class="navbar__submenu"><li><a href="https://gutocarvalho.net/tags/lives/" target="_self">LIVES</a></li><li><a href="https://gutocarvalho.net/tags/eventos/" target="_self">CONFS</a></li><li><a href="https://gutocarvalho.net/tags/projetos/" target="_self">PROJETOS</a></li><li><a href="https://gutocarvalho.net/tags/mindnotes/" target="_self">MIND NOTES</a></li><li><a href="https://gutocarvalho.net/tags/k8s/" target="_self">K8S</a></li><li><a href="https://gutocarvalho.net/tags/tips/" target="_self">TIPS</a></li></ul></li><li class="has-submenu"><span>Vitae</span><ul class="navbar__submenu"><li><a href="https://gutocarvalho.net/tags/mente/" target="_self">FALA GUTERA</a></li><li><a href="https://gutocarvalho.net/tags/alma/" target="_self">ALMA</a></li><li><a href="https://gutocarvalho.net/tags/poesia/" target="_self">POESIA</a></li></ul></li><li><a href="https://gutocarvalho.net/archives/" target="_self">Archives</a></li><li><a href="https://www.google.com/search?q&#x3D;site%3Agutocarvalho.net" target="_blank">Busca</a></li><li><a href="https://gutocarvalho.net/contato/" target="_self">Contato</a></li></ul></nav><div class="content"><header class="top"><div class="top__item"><a class="logo" href="https://gutocarvalho.net/">Guto@Site</a></div><div class="top__item top__item--right"><button class="menu-toggle js-menu-toggle" aria-label="Menu" aria-expanded="false"><span class="menu-toggle-box"><span class="menu-toggle-inner">Menu</span></span></button></div></header><main class="main"><article class="post"><div class="main__left"><figure class="hero"><img src="https://gutocarvalho.net/media/website/Photo-on-07-10-21-at-11.37-2-2.jpg" srcset="https://gutocarvalho.net/media/website/responsive/Photo-on-07-10-21-at-11.37-2-2-xs.jpg 300w, https://gutocarvalho.net/media/website/responsive/Photo-on-07-10-21-at-11.37-2-2-sm.jpg 480w, https://gutocarvalho.net/media/website/responsive/Photo-on-07-10-21-at-11.37-2-2-md.jpg 768w, https://gutocarvalho.net/media/website/responsive/Photo-on-07-10-21-at-11.37-2-2-lg.jpg 1024w, https://gutocarvalho.net/media/website/responsive/Photo-on-07-10-21-at-11.37-2-2-xl.jpg 1280w, https://gutocarvalho.net/media/website/responsive/Photo-on-07-10-21-at-11.37-2-2-2xl.jpg 1600w" sizes="(min-width: 61.3125em) 50vw, 100vw" loading="eager" width="1036" height="1070" alt="Guto Carvalho # 2021-10-06 @ BSB"><figcaption class="hero__caption">Guto Carvalho # 2021-10-06 @ BSB</figcaption></figure><header><h1>DROPS: Usando EFS em um Cluster K8S EC2</h1><p><time datetime="2021-10-24T11:06">October 24, 2021 </time>by <a href="https://gutocarvalho.net/authors/gutocarvalho/" rel="author" title="Guto Carvalho">Guto Carvalho</a></p></header></div><div class="main__right"><div class="post__entry"><p>Aprenda a usar o EFS Provisioner em um Cluster K8S EC2/RKE.</p><hr><h3 id="o-que-são-drops">O que são drops?</h3><p>São DUMPs mentais rápidos e rasteiros, simples e objetivos – que funcionam.</p><p>Geralmente de algo que eu acabei de fazer.</p><p>Eu – quase sempre – volto para detalhar mais cada passo.</p><p>Considere com a mesma qualidade de um rascunho ou uma anotação rápida.</p><p>De qualquer forma comenta ai qquer coisa, os comentários estão ligados nos DROPS ;)</p><h3 id="demanda">Demanda!</h3><p>A ideia é instalar um EFS para pode subir APPS que montam o mesmo volume em diferentes PODs.</p><h3 id="então-comofaz">Então ComoFaz?</h3><p>Crie o arquivo instala_efs_provisioner.yaml</p><pre><code>vim aplica.yaml
+</code></pre><p>Insira o conteúdo abaixo</p><pre><code>---
+kind: ClusterRole
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: efs-provisioner-runner
+rules:
+  - apiGroups: [&quot;&quot;]
+    resources: [&quot;persistentvolumes&quot;]
+    verbs: [&quot;get&quot;, &quot;list&quot;, &quot;watch&quot;, &quot;create&quot;, &quot;delete&quot;]
+  - apiGroups: [&quot;&quot;]
+    resources: [&quot;persistentvolumeclaims&quot;]
+    verbs: [&quot;get&quot;, &quot;list&quot;, &quot;watch&quot;, &quot;update&quot;]
+  - apiGroups: [&quot;storage.k8s.io&quot;]
+    resources: [&quot;storageclasses&quot;]
+    verbs: [&quot;get&quot;, &quot;list&quot;, &quot;watch&quot;]
+  - apiGroups: [&quot;&quot;]
+    resources: [&quot;events&quot;]
+    verbs: [&quot;create&quot;, &quot;update&quot;, &quot;patch&quot;]
+---
+kind: ClusterRoleBinding
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: run-efs-provisioner
+subjects:
+  - kind: ServiceAccount
+    name: efs-provisioner
+    namespace: kube-system
+roleRef:
+  kind: ClusterRole
+  name: efs-provisioner-runner
+  apiGroup: rbac.authorization.k8s.io
+---
+kind: Role
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: leader-locking-efs-provisioner
+rules:
+  - apiGroups: [&quot;&quot;]
+    resources: [&quot;endpoints&quot;]
+    verbs: [&quot;get&quot;, &quot;list&quot;, &quot;watch&quot;, &quot;create&quot;, &quot;update&quot;, &quot;patch&quot;]
+---
+kind: RoleBinding
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: leader-locking-efs-provisioner
+subjects:
+  - kind: ServiceAccount
+    name: efs-provisioner
+    namespace: kube-system
+roleRef:
+  kind: Role
+  name: leader-locking-efs-provisioner
+  apiGroup: rbac.authorization.k8s.io
+---
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: efs-provisioner
+---
+kind: Deployment
+apiVersion: apps/v1
+metadata:
+  name: efs-provisioner
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: efs-provisioner
+  strategy:
+    type: Recreate
+  template:
+    metadata:
+      labels:
+        app: efs-provisioner
+    spec:
+      serviceAccount: efs-provisioner
+      containers:
+        - name: efs-provisioner
+          image: quay.io/external_storage/efs-provisioner:latest
+          env:
+            - name: FILE_SYSTEM_ID
+              valueFrom:
+                configMapKeyRef:
+                  name: efs-provisioner
+                  key: file.system.id
+            - name: AWS_REGION
+              valueFrom:
+                configMapKeyRef:
+                  name: efs-provisioner
+                  key: aws.region
+            - name: DNS_NAME
+              valueFrom:
+                configMapKeyRef:
+                  name: efs-provisioner
+                  key: dns.name
+                  optional: true
+            - name: PROVISIONER_NAME
+              valueFrom:
+                configMapKeyRef:
+                  name: efs-provisioner
+                  key: provisioner.name
+          volumeMounts:
+            - name: pv-volume
+              mountPath: /persistentvolumes
+      volumes:
+        - name: pv-volume
+          nfs:
+            server: fs-&lt;ID DO SEU EFS&gt;.efs.&lt;REGIAO AWS&gt;.amazonaws.com
+            path: /
+---
+kind: StorageClass
+apiVersion: storage.k8s.io/v1
+metadata:
+  name: aws-efs
+provisioner: nativetrail.io/aws-efs
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: efs-provisioner
+data:
+  file.system.id: fs-&lt;ID DO SEU EFS&gt;
+  aws.region: &lt;REGIAO AWS&gt;
+  provisioner.name: nativetrail.io/aws-efs
+  dns.name: &quot;&quot;
+</code></pre><p>Ajuste o ID do seu EFS e região da AWS no manifesto acima, e prestenção, tem que o usar o namespace <strong>kube-system</strong> pois ele é especificado nas <strong>roles</strong> e <strong>serviceaccount</strong>, se instalar o deployment em outro namespace não vai funcionar.</p><pre><code>kubectl apply -f instala_efs_provisioner.yaml -n kube-system
+    
+</code></pre><p>Pronto, vamos verificar</p><pre><code>kubectl get sc
+</code></pre><p>Saída esperada</p><pre><code>NAME                PROVISIONER              RECLAIMPOLICY   VOLUMEBINDINGMODE   ALLOWVOLUMEEXPANSION   AGE
+aws-efs             nativetrail.io/aws-efs   Delete          Immediate           false                  43m
+aws-ebs (default)   ebs.csi.aws.com          Delete          Immediate           false                  3d16h
+</code></pre><p>agora vamos testar, crie o manifesto valida-pod-efs.ym com o conteúdo abaixo</p><pre><code>---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: valida-aws-efs
+spec:
+  accessModes:
+    - ReadWriteMany
+  storageClassName: aws-efs
+  resources:
+    requests:
+      storage: 1Gi
+</code></pre><p>aplique</p><pre><code>kubectl apply -f pod-efs.yaml
+</code></pre><p>saída</p><pre><code>persistentvolumeclaim/valida-aws-efs created
+</code></pre><p>vamos ver</p><pre><code>kubectl get pvc valida-aws-efs
+</code></pre><p>saída</p><pre><code>NAME             STATUS   VOLUME                                     CAPACITY   ACCESS MODES   STORAGECLASS   AGE
+valida-aws-efs   Bound    pvc-c524234f-4b07-4248-b328-c6c164dddbc2   1Gi        RWX            aws-efs        3m42s
+</code></pre><p>agora com mais detalhes</p><pre><code>kubectl describe pvc valida-aws-efs
+</code></pre><p>saída</p><pre><code>Name:          valida-aws-efs
+Namespace:     default
+StorageClass:  aws-efs
+Status:        Bound
+Volume:        pvc-c524234f-4b07-4248-b328-c6c164dddbc2
+Labels:        &lt;none&gt;
+Annotations:   pv.kubernetes.io/bind-completed: yes
+               pv.kubernetes.io/bound-by-controller: yes
+               volume.beta.kubernetes.io/storage-provisioner: nativetrail.io/aws-efs
+Finalizers:    [kubernetes.io/pvc-protection]
+Capacity:      1Gi
+Access Modes:  RWX
+VolumeMode:    Filesystem
+Used By:       &lt;none&gt;
+Events:
+  Type    Reason                 Age                    From                                                                                   Message
+  ----    ------                 ----                   ----                                                                                   -------
+  Normal  Provisioning           3m49s                  nativetrail.io/aws-efs_efs-provisioner-644f9f8c8c-n6n48_be97e87c-7e5b-4b42-8756-2adb23a5a105  External provisioner is provisioning volume for claim &quot;default/valida-aws-efs&quot;
+  Normal  ProvisioningSucceeded  3m49s                  nativetrail.io/aws-efs_efs-provisioner-644f9f8c8c-n6n48_be97e87c-7e5b-4b42-8756-2adb23a5a105  Successfully provisioned volume pvc-c524234f-4b07-4248-b328-c6c164dddbc2
+</code></pre><p>Perfeito, tudo funcionando, agora é só usar!</p><p>:)</p><footer><div class="post__tag-share"><ul class="post__tag"><li><a href="https://gutocarvalho.net/tags/tips/">Drops</a></li><li><a href="https://gutocarvalho.net/tags/k8s/">K8S</a></li></ul><div class="post__share"><a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgutocarvalho.net%2Fusando-efs-em-um-cluster-k8s-ec2%2F" class="js-share facebook" aria-label="Share with Facebook" rel="nofollow noopener noreferrer"><svg class="icon"><use xlink:href="https://gutocarvalho.net/assets/svg/svg-map.svg#facebook"/></svg> </a><a href="https://twitter.com/share?url=https%3A%2F%2Fgutocarvalho.net%2Fusando-efs-em-um-cluster-k8s-ec2%2F&amp;via=gutocarvalho&amp;text=DROPS%3A%20Usando%20EFS%20em%20um%20Cluster%20K8S%20EC2" class="js-share twitter" aria-label="Share with Twitter" rel="nofollow noopener noreferrer"><svg class="icon"><use xlink:href="https://gutocarvalho.net/assets/svg/svg-map.svg#twitter"/></svg> </a><a href="http://www.linkedin.com/shareArticle?url=https%3A%2F%2Fgutocarvalho.net%2Fusando-efs-em-um-cluster-k8s-ec2%2F&amp;title=DROPS%3A%20Usando%20EFS%20em%20um%20Cluster%20K8S%20EC2" class="js-share linkedin" aria-label="[MISSING TRANSLATION] Share with LinkedIn" rel="nofollow noopener noreferrer"><svg class="icon"><use xlink:href="https://gutocarvalho.net/assets/svg/svg-map.svg#linkedin"/></svg> </a><a href="https://api.whatsapp.com/send?text=DROPS%3A%20Usando%20EFS%20em%20um%20Cluster%20K8S%20EC2 https%3A%2F%2Fgutocarvalho.net%2Fusando-efs-em-um-cluster-k8s-ec2%2F" class="js-share whatsapp" title="[MISSING TRANSLATION] Share with LinkedIn" rel="nofollow noopener noreferrer"><svg class="icon"><use xlink:href="https://gutocarvalho.net/assets/svg/svg-map.svg#whatsapp"/></svg></a></div></div><div class="post__bio"><img src="https://gutocarvalho.net/media/website/foto-2021.jpg" loading="lazy" alt="Guto Carvalho"><h3><a href="https://gutocarvalho.net/authors/gutocarvalho/" title="Guto Carvalho">Guto Carvalho</a></h3><p>Navegando pelas nuvens nativas e pipelines infinitas.</p></div></footer></div></div></article></main><footer class="footer"><div class="footer__social"><a href="falagutera" class="facebook" aria-label="Facebook"><svg class="icon"><use xlink:href="https://gutocarvalho.net/assets/svg/svg-map.svg#facebook"/></svg> </a><a href="gutocarvalho" class="twitter" aria-label="Twitter"><svg class="icon"><use xlink:href="https://gutocarvalho.net/assets/svg/svg-map.svg#twitter"/></svg> </a><a href="falagutera" class="instagram" aria-label="Instagram"><svg class="icon"><use xlink:href="https://gutocarvalho.net/assets/svg/svg-map.svg#instagram"/></svg> </a><a href="falagutera" class="linkedin" aria-label="LinkedIn"><svg class="icon"><use xlink:href="https://gutocarvalho.net/assets/svg/svg-map.svg#linkedin"/></svg></a></div><div class="footer__copyright">License<br>Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.<br>Powered by <a href="https://getpublii.com" target="_blank" rel="nofollow noopener">Publii</a></div></footer></div></div><script defer="defer" src="https://gutocarvalho.net/assets/js/scripts.min.js?v=babd20e2a0a25821e63a0529c9feaae0"></script><script>var images = document.querySelectorAll('img[loading]');
+   
+           for (var i = 0; i < images.length; i++) {
+               if (images[i].complete) {
+                   images[i].classList.add('is-loaded');
+               } else {
+                   images[i].addEventListener('load', function () {
+                       this.classList.add('is-loaded');
+                   }, false);
+               }
+           }</script><div class="cookie-popup js-cookie-popup cookie-popup--uses-badge"><h2>Esse site usa cookies</h2><p>Esse site usa cookies apenas para verificar suas configurações de browser e melhorar sua experiência na navegação. Não guardaremos seus dados. <a href="#not-specified"></a></p><form><input id="gdpr-necessary" name="gdpr-necessary" checked="checked" disabled="disabled" type="checkbox"> <label for="gdpr-necessary">Experiência do usuário</label><p class="cookie-popup__save-wrapper"><button type="submit" class="cookie-popup__save">Save</button></p></form><span class="cookie-popup-label">Cookies Policy</span></div><script>(function() {
+                   function addScript (src, inline) {
+                       var newScript = document.createElement('script');
+   
+                       if (src) {
+                           newScript.setAttribute('src', src);
+                       }
+   
+                       if (inline) {
+                           newScript.text = inline;
+                       }
+   
+                       document.body.appendChild(newScript);
+                   }
+   
+                   var popup = document.querySelector('.js-cookie-popup');
+                   var checkboxes = popup.querySelectorAll('input[type="checkbox"]');
+                   var save = popup.querySelector('button');
+                   var currentConfig = localStorage.getItem('publii-gdpr-allowed-cookies');
+                   var blockedScripts = document.querySelectorAll('script[type^="gdpr-blocker/"]');
+                   
+   
+                   popup.addEventListener('click', function() {
+                       if (!popup.classList.contains('cookie-popup--is-sticky')) {
+                           popup.classList.add('cookie-popup--is-sticky');
+                       }
+                   });
+   
+                   save.addEventListener('click', function(e) {
+                       e.preventDefault();
+                       e.stopPropagation();
+                       popup.classList.remove('cookie-popup--is-sticky');
+                       var allowedGroups = [];
+   
+                       for (var i = 0; i < checkboxes.length; i++) {
+                           if (checkboxes[i].checked) {
+                               var groupName = checkboxes[i].getAttribute('name').replace('gdpr-', '');
+                               var scripts = document.querySelectorAll('script[type="gdpr-blocker/' + groupName + '"]');
+   
+                               for (var j = 0; j < scripts.length; j++) {
+                                   addScript(scripts[j].src, scripts[j].text);
+                               }
+   
+                               allowedGroups.push(groupName);
+                           }
+                       }
+   
+                       localStorage.setItem('publii-gdpr-allowed-cookies', allowedGroups.join(','));
+                       popup.classList.remove('cookie-popup--is-sticky');
+   
+                       setTimeout(function () {
+                           if (currentConfig !== null) {
+                               window.location.reload();
+                           }
+                       }, 250);
+                   });
+   
+                   if (currentConfig === null) {
+                       popup.classList.add('cookie-popup--is-sticky');
+                       var checkedGroups = popup.querySelectorAll('input[type="checkbox"]:checked');
+   
+                       for (var i = 0; i < checkedGroups.length; i++) {
+                           var allowedGroup = checkedGroups[i].name.replace('gdpr-', '');
+   
+                           if (allowedGroup !== '-' && allowedGroup !== '') {
+                               var scripts = document.querySelectorAll('script[type="gdpr-blocker/' + allowedGroup + '"]');
+   
+                               for (var j = 0; j < scripts.length; j++) {
+                                   addScript(scripts[j].src, scripts[j].text);
+                               }
+                           }
+                       }
+                   } else {
+                       if (currentConfig !== '') {
+                           var allowedGroups = currentConfig.split(',');
+                           var checkedCheckboxes = popup.querySelectorAll('input[type="checkbox"]:checked');
+   
+                           for (var j = 0; j < checkedCheckboxes.length; j++) {
+                               var name = checkedCheckboxes[j].name.replace('gdpr-', '');
+   
+                               if (allowedGroups.indexOf(name) === -1) {
+                                   checkedCheckboxes[j].checked = false;
+                               }
+                           }
+   
+                           for (var i = 0; i < allowedGroups.length; i++) {
+                               var scripts = document.querySelectorAll('script[type="gdpr-blocker/' + allowedGroups[i] + '"]');
+                               var checkbox = popup.querySelector('input[type="checkbox"][name="gdpr-' + allowedGroups[i] + '"]');
+   
+                               if (checkbox) {
+                                   checkbox.checked = true;
+                               }
+   
+                               for (var j = 0; j < scripts.length; j++) {
+                                   addScript(scripts[j].src, scripts[j].text);
+                               }
+                           }
+                       }
+                   }
+               })();</script></body></html>

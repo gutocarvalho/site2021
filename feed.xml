@@ -3,12 +3,240 @@
     <title>Guto@Site</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2021-10-22T09:47:50-03:00</updated>
+    <updated>2021-10-24T11:06:35-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
     <id>https://gutocarvalho.net</id>
 
+    <entry>
+        <title>DROPS: Usando EFS em um Cluster K8S EC2</title>
+        <author>
+            <name>Guto Carvalho</name>
+        </author>
+        <link href="https://gutocarvalho.net/usando-efs-em-um-cluster-k8s-ec2/"/>
+        <id>https://gutocarvalho.net/usando-efs-em-um-cluster-k8s-ec2/</id>
+            <category term="K8S"/>
+            <category term="Drops"/>
+
+        <updated>2021-10-24T11:06:35-03:00</updated>
+            <summary>
+                <![CDATA[
+                    Aprenda a usar o EFS Provisioner em um Cluster K8S EC2/RKE. São&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p>Aprenda a usar o EFS Provisioner em um Cluster K8S EC2/RKE.</p>
+<hr>
+<h3 id="o-que-são-drops">O que são drops?</h3>
+<p>São DUMPs mentais rápidos e rasteiros, simples e objetivos – que funcionam. </p>
+<p>Geralmente de algo que eu acabei de fazer.</p>
+<p>Eu – quase sempre – volto para detalhar mais cada passo.</p>
+<p>Considere com a mesma qualidade de um rascunho ou uma anotação rápida.</p>
+<p>De qualquer forma comenta ai qquer coisa, os comentários estão ligados nos DROPS ;)</p>
+<h3 id="demanda">Demanda!</h3>
+<p>A ideia é instalar um EFS para pode subir APPS que montam o mesmo volume em diferentes PODs.</p>
+<h3 id="então-comofaz">Então ComoFaz?</h3>
+<p>Crie o arquivo instala_efs_provisioner.yaml</p>
+<pre><code>vim aplica.yaml
+</code></pre>
+<p>Insira o conteúdo abaixo</p>
+<pre><code>---
+kind: ClusterRole
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: efs-provisioner-runner
+rules:
+  - apiGroups: [&quot;&quot;]
+    resources: [&quot;persistentvolumes&quot;]
+    verbs: [&quot;get&quot;, &quot;list&quot;, &quot;watch&quot;, &quot;create&quot;, &quot;delete&quot;]
+  - apiGroups: [&quot;&quot;]
+    resources: [&quot;persistentvolumeclaims&quot;]
+    verbs: [&quot;get&quot;, &quot;list&quot;, &quot;watch&quot;, &quot;update&quot;]
+  - apiGroups: [&quot;storage.k8s.io&quot;]
+    resources: [&quot;storageclasses&quot;]
+    verbs: [&quot;get&quot;, &quot;list&quot;, &quot;watch&quot;]
+  - apiGroups: [&quot;&quot;]
+    resources: [&quot;events&quot;]
+    verbs: [&quot;create&quot;, &quot;update&quot;, &quot;patch&quot;]
+---
+kind: ClusterRoleBinding
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: run-efs-provisioner
+subjects:
+  - kind: ServiceAccount
+    name: efs-provisioner
+    namespace: kube-system
+roleRef:
+  kind: ClusterRole
+  name: efs-provisioner-runner
+  apiGroup: rbac.authorization.k8s.io
+---
+kind: Role
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: leader-locking-efs-provisioner
+rules:
+  - apiGroups: [&quot;&quot;]
+    resources: [&quot;endpoints&quot;]
+    verbs: [&quot;get&quot;, &quot;list&quot;, &quot;watch&quot;, &quot;create&quot;, &quot;update&quot;, &quot;patch&quot;]
+---
+kind: RoleBinding
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: leader-locking-efs-provisioner
+subjects:
+  - kind: ServiceAccount
+    name: efs-provisioner
+    namespace: kube-system
+roleRef:
+  kind: Role
+  name: leader-locking-efs-provisioner
+  apiGroup: rbac.authorization.k8s.io
+---
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: efs-provisioner
+---
+kind: Deployment
+apiVersion: apps/v1
+metadata:
+  name: efs-provisioner
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: efs-provisioner
+  strategy:
+    type: Recreate
+  template:
+    metadata:
+      labels:
+        app: efs-provisioner
+    spec:
+      serviceAccount: efs-provisioner
+      containers:
+        - name: efs-provisioner
+          image: quay.io/external_storage/efs-provisioner:latest
+          env:
+            - name: FILE_SYSTEM_ID
+              valueFrom:
+                configMapKeyRef:
+                  name: efs-provisioner
+                  key: file.system.id
+            - name: AWS_REGION
+              valueFrom:
+                configMapKeyRef:
+                  name: efs-provisioner
+                  key: aws.region
+            - name: DNS_NAME
+              valueFrom:
+                configMapKeyRef:
+                  name: efs-provisioner
+                  key: dns.name
+                  optional: true
+            - name: PROVISIONER_NAME
+              valueFrom:
+                configMapKeyRef:
+                  name: efs-provisioner
+                  key: provisioner.name
+          volumeMounts:
+            - name: pv-volume
+              mountPath: /persistentvolumes
+      volumes:
+        - name: pv-volume
+          nfs:
+            server: fs-&lt;ID DO SEU EFS&gt;.efs.&lt;REGIAO AWS&gt;.amazonaws.com
+            path: /
+---
+kind: StorageClass
+apiVersion: storage.k8s.io/v1
+metadata:
+  name: aws-efs
+provisioner: nativetrail.io/aws-efs
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: efs-provisioner
+data:
+  file.system.id: fs-&lt;ID DO SEU EFS&gt;
+  aws.region: &lt;REGIAO AWS&gt;
+  provisioner.name: nativetrail.io/aws-efs
+  dns.name: &quot;&quot;
+</code></pre>
+<p>Ajuste o ID do seu EFS e região da AWS no manifesto acima, e prestenção, tem que o usar o namespace <strong>kube-system</strong> pois ele é especificado nas <strong>roles</strong> e <strong>serviceaccount</strong>, se instalar o deployment em outro namespace não vai funcionar.</p>
+<pre><code>kubectl apply -f instala_efs_provisioner.yaml -n kube-system
+    
+</code></pre>
+<p>Pronto, vamos verificar</p>
+<pre><code>kubectl get sc
+</code></pre>
+<p>Saída esperada</p>
+<pre><code>NAME                PROVISIONER              RECLAIMPOLICY   VOLUMEBINDINGMODE   ALLOWVOLUMEEXPANSION   AGE
+aws-efs             nativetrail.io/aws-efs   Delete          Immediate           false                  43m
+aws-ebs (default)   ebs.csi.aws.com          Delete          Immediate           false                  3d16h
+</code></pre>
+<p>agora vamos testar, crie o manifesto valida-pod-efs.ym com o conteúdo abaixo</p>
+<pre><code>---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: valida-aws-efs
+spec:
+  accessModes:
+    - ReadWriteMany
+  storageClassName: aws-efs
+  resources:
+    requests:
+      storage: 1Gi
+</code></pre>
+<p>aplique</p>
+<pre><code>kubectl apply -f pod-efs.yaml
+</code></pre>
+<p>saída</p>
+<pre><code>persistentvolumeclaim/valida-aws-efs created
+</code></pre>
+<p>vamos ver</p>
+<pre><code>kubectl get pvc valida-aws-efs
+</code></pre>
+<p>saída</p>
+<pre><code>NAME             STATUS   VOLUME                                     CAPACITY   ACCESS MODES   STORAGECLASS   AGE
+valida-aws-efs   Bound    pvc-c524234f-4b07-4248-b328-c6c164dddbc2   1Gi        RWX            aws-efs        3m42s
+</code></pre>
+<p>agora com mais detalhes</p>
+<pre><code>kubectl describe pvc valida-aws-efs
+</code></pre>
+<p>saída</p>
+<pre><code>Name:          valida-aws-efs
+Namespace:     default
+StorageClass:  aws-efs
+Status:        Bound
+Volume:        pvc-c524234f-4b07-4248-b328-c6c164dddbc2
+Labels:        &lt;none&gt;
+Annotations:   pv.kubernetes.io/bind-completed: yes
+               pv.kubernetes.io/bound-by-controller: yes
+               volume.beta.kubernetes.io/storage-provisioner: nativetrail.io/aws-efs
+Finalizers:    [kubernetes.io/pvc-protection]
+Capacity:      1Gi
+Access Modes:  RWX
+VolumeMode:    Filesystem
+Used By:       &lt;none&gt;
+Events:
+  Type    Reason                 Age                    From                                                                                   Message
+  ----    ------                 ----                   ----                                                                                   -------
+  Normal  Provisioning           3m49s                  nativetrail.io/aws-efs_efs-provisioner-644f9f8c8c-n6n48_be97e87c-7e5b-4b42-8756-2adb23a5a105  External provisioner is provisioning volume for claim &quot;default/valida-aws-efs&quot;
+  Normal  ProvisioningSucceeded  3m49s                  nativetrail.io/aws-efs_efs-provisioner-644f9f8c8c-n6n48_be97e87c-7e5b-4b42-8756-2adb23a5a105  Successfully provisioned volume pvc-c524234f-4b07-4248-b328-c6c164dddbc2
+</code></pre>
+<p>Perfeito, tudo funcionando, agora é só usar!</p>
+<p>:)</p>
+
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>DROPS: Centralizando Logs do K8S com o Loki</title>
         <author>
@@ -1274,30 +1502,6 @@ ip-10-xx-xx-xx.ec2.internal   Ready    &lt;none&gt;   3m11s   v1.21.2-eks-55daa9
 
 <p><br><a href="https://slik.com.br/">https://slik.com.br/</a></p>
 <p><a href="https://www.geniodesks.com.br">https://www.geniodesks.com.br</a><br><br><a href="https://baherstore.com.br/produto/mesa-reta">https://baherstore.com.br/produto/mesa-reta</a><br><br>Melhor custo/beneficio até agora é a Baherstore.<br><br>[s]<br>Guto</p>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>Iniciando novo projeto solo! </title>
-        <author>
-            <name>Guto Carvalho</name>
-        </author>
-        <link href="https://gutocarvalho.net/iniciando-novo-projeto-nativetrail/"/>
-        <id>https://gutocarvalho.net/iniciando-novo-projeto-nativetrail/</id>
-            <category term="Drops"/>
-
-        <updated>2021-10-09T19:25:29-03:00</updated>
-            <summary>
-                <![CDATA[
-                    <p>Conheça a NativeTrail, novo projeto "solo" que estou iniciando.</p>
-
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                <p>Conheça a NativeTrail, novo projeto "solo" que estou iniciando.</p>
-
-<p>Pessoal, passando aqui apenas para informar que estou iniciando um novo projeto chamado <a href="https://nativetrail.io" target="_blank" rel="noopener noreferrer">NativeTrail.io</a>, visite o site e conheça os serviços dessa nova consultoria ;)<br><br>[s]<br>Guto</p>
             ]]>
         </content>
     </entry>
