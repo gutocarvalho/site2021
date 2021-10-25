@@ -3,7 +3,7 @@
     <title>Guto@Site</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2021-10-24T22:59:44-03:00</updated>
+    <updated>2021-10-25T08:00:47-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
@@ -19,7 +19,7 @@
             <category term="K8S"/>
             <category term="Drops"/>
 
-        <updated>2021-10-24T22:59:44-03:00</updated>
+        <updated>2021-10-25T08:00:47-03:00</updated>
             <summary>
                 <![CDATA[
                     Aprenda a usar o EFS Provisioner em um Cluster K8S EC2/RKE. São&hellip;
@@ -233,6 +233,14 @@ Events:
 </code></pre>
 <p>Perfeito, tudo funcionando, agora é só usar!</p>
 <p>:)</p>
+<h3 id="refs">refs</h3>
+<ul>
+<li><a href="https://github.com/rancher/rke">https://github.com/rancher/rke</a></li>
+<li><a href="https://kubernetes.io/pt-br/">https://kubernetes.io/pt-br/</a></li>
+<li><a href="https://aws.amazon.com/efs/">https://aws.amazon.com/efs/</a></li>
+<li><a href="https://github.com/kubernetes-retired/external-storage/tree/master/aws/efs">https://github.com/kubernetes-retired/external-storage/tree/master/aws/efs</a></li>
+<li><a href="https://icicimov.github.io/blog/virtualization/Kubernetes-NFS-shared-storage-in-AWS-with-EFS/">https://icicimov.github.io/blog/virtualization/Kubernetes-NFS-shared-storage-in-AWS-with-EFS/</a></li>
+</ul>
 
             ]]>
         </content>
