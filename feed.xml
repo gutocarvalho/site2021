@@ -3,7 +3,7 @@
     <title>Guto@Site</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2021-10-24T11:06:35-03:00</updated>
+    <updated>2021-10-24T22:59:44-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
@@ -19,7 +19,7 @@
             <category term="K8S"/>
             <category term="Drops"/>
 
-        <updated>2021-10-24T11:06:35-03:00</updated>
+        <updated>2021-10-24T22:59:44-03:00</updated>
             <summary>
                 <![CDATA[
                     Aprenda a usar o EFS Provisioner em um Cluster K8S EC2/RKE. São&hellip;
@@ -36,7 +36,7 @@
 <p>Considere com a mesma qualidade de um rascunho ou uma anotação rápida.</p>
 <p>De qualquer forma comenta ai qquer coisa, os comentários estão ligados nos DROPS ;)</p>
 <h3 id="demanda">Demanda!</h3>
-<p>A ideia é instalar um EFS para pode subir APPS que montam o mesmo volume em diferentes PODs.</p>
+<p>A ideia é instalar um EFS Provisioner no cluster para poder subir APPS que montam o mesmo volume em diferentes PODs.</p>
 <h3 id="então-comofaz">Então ComoFaz?</h3>
 <p>Crie o arquivo instala_efs_provisioner.yaml</p>
 <pre><code>vim aplica.yaml
