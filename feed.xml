@@ -3,12 +3,56 @@
     <title>Guto@Site</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2021-10-25T08:03:34-03:00</updated>
+    <updated>2021-11-02T10:32:16-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
     <id>https://gutocarvalho.net</id>
 
+    <entry>
+        <title>DROPS: Criando um cluster k8s com eksctl rapidão</title>
+        <author>
+            <name>Guto Carvalho</name>
+        </author>
+        <link href="https://gutocarvalho.net/criando-um-cluster-k8s-com-eksctl/"/>
+        <id>https://gutocarvalho.net/criando-um-cluster-k8s-com-eksctl/</id>
+            <category term="K8S"/>
+            <category term="Drops"/>
+
+        <updated>2021-11-02T10:32:16-03:00</updated>
+            <summary>
+                <![CDATA[
+                    Aprende aí como fazer isso com uma mão nas costas! Criando um&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p>Aprende aí como fazer isso com uma mão nas costas!</p>
+<hr>
+<p>Criando um cluster para testes de forma rápida e rasteira, vamo nessa!</p>
+<pre><code>$ eksctl create cluster \
+    --region us-east-1 \
+    --name falagutera \
+    --version 1.21 \
+    --node-type t3.xlarge \
+    --nodes 3 \
+    --ssh-public-key &quot;~/nativetrail.pub&quot;
+</code></pre>
+<p>gerando o kubeconfig</p>
+<pre><code>$ aws eks --region us-east-1 update-kubeconfig --name falagutera
+$ export KUBECONFIG=config
+</code></pre>
+<p>checando o cluster baby</p>
+<pre><code>$ kubectl get nodes
+</code></pre>
+<p>terminou o teste? bora derrubar tudo!</p>
+<pre><code>$ eksctl delete cluster falagutera
+</code></pre>
+<p>pronto!</p>
+
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>DROPS: Usando EFS em um Cluster K8S EC2</title>
         <author>
@@ -1485,31 +1529,6 @@ ip-10-xx-xx-xx.ec2.internal   Ready    &lt;none&gt;   3m11s   v1.21.2-eks-55daa9
 <p><code>systemctl restart gitlab-runner</code></p>
 <p>ah, tenha certeza que a instância tem recursos que aguentam a demanda de concorrência, tanto do ponto de vista de memória, quanto de processamento e disco.</p>
 <p>[s]<br>Guto</p>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>Mesa com regulagem de altura elétrica</title>
-        <author>
-            <name>Guto Carvalho</name>
-        </author>
-        <link href="https://gutocarvalho.net/mesa-com-regulagem-de-altura-eletrica-brasil/"/>
-        <id>https://gutocarvalho.net/mesa-com-regulagem-de-altura-eletrica-brasil/</id>
-            <category term="MindNotes"/>
-
-        <updated>2021-10-09T18:43:08-03:00</updated>
-            <summary>
-                <![CDATA[
-                    <p>Seguem as opções de standing desk que eu encontrei no Brasil.</p>
-
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                <p>Seguem as opções de standing desk que eu encontrei no Brasil.</p>
-
-<p><br><a href="https://slik.com.br/">https://slik.com.br/</a></p>
-<p><a href="https://www.geniodesks.com.br">https://www.geniodesks.com.br</a><br><br><a href="https://baherstore.com.br/produto/mesa-reta">https://baherstore.com.br/produto/mesa-reta</a><br><br>Melhor custo/beneficio até agora é a Baherstore.<br><br>[s]<br>Guto</p>
             ]]>
         </content>
     </entry>

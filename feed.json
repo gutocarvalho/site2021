@@ -10,6 +10,22 @@
     },
     "items": [
         {
+            "id": "https://gutocarvalho.net/criando-um-cluster-k8s-com-eksctl/",
+            "url": "https://gutocarvalho.net/criando-um-cluster-k8s-com-eksctl/",
+            "title": "DROPS: Criando um cluster k8s com eksctl rapidão",
+            "summary": "Aprende aí como fazer isso com uma mão nas costas! Criando um&hellip;",
+            "content_html": "<p>Aprende aí como fazer isso com uma mão nas costas!</p>\n<hr>\n<p>Criando um cluster para testes de forma rápida e rasteira, vamo nessa!</p>\n<pre><code>$ eksctl create cluster \\\n    --region us-east-1 \\\n    --name falagutera \\\n    --version 1.21 \\\n    --node-type t3.xlarge \\\n    --nodes 3 \\\n    --ssh-public-key &quot;~/nativetrail.pub&quot;\n</code></pre>\n<p>gerando o kubeconfig</p>\n<pre><code>$ aws eks --region us-east-1 update-kubeconfig --name falagutera\n$ export KUBECONFIG=config\n</code></pre>\n<p>checando o cluster baby</p>\n<pre><code>$ kubectl get nodes\n</code></pre>\n<p>terminou o teste? bora derrubar tudo!</p>\n<pre><code>$ eksctl delete cluster falagutera\n</code></pre>\n<p>pronto!</p>\n",
+            "author": {
+                "name": "Guto Carvalho"
+            },
+            "tags": [
+                   "K8S",
+                   "Drops"
+            ],
+            "date_published": "2021-11-02T09:48:13-03:00",
+            "date_modified": "2021-11-02T10:32:16-03:00"
+        },
+        {
             "id": "https://gutocarvalho.net/usando-efs-em-um-cluster-k8s-ec2/",
             "url": "https://gutocarvalho.net/usando-efs-em-um-cluster-k8s-ec2/",
             "title": "DROPS: Usando EFS em um Cluster K8S EC2",
@@ -149,21 +165,6 @@
             ],
             "date_published": "2021-10-09T18:40:29-03:00",
             "date_modified": "2021-10-15T05:56:12-03:00"
-        },
-        {
-            "id": "https://gutocarvalho.net/mesa-com-regulagem-de-altura-eletrica-brasil/",
-            "url": "https://gutocarvalho.net/mesa-com-regulagem-de-altura-eletrica-brasil/",
-            "title": "Mesa com regulagem de altura elétrica",
-            "summary": "<p>Seguem as opções de standing desk que eu encontrei no Brasil.</p>\n",
-            "content_html": "<p>Seguem as opções de standing desk que eu encontrei no Brasil.</p>\n\n<p><br><a href=\"https://slik.com.br/\">https://slik.com.br/</a></p>\n<p><a href=\"https://www.geniodesks.com.br\">https://www.geniodesks.com.br</a><br><br><a href=\"https://baherstore.com.br/produto/mesa-reta\">https://baherstore.com.br/produto/mesa-reta</a><br><br>Melhor custo/beneficio até agora é a Baherstore.<br><br>[s]<br>Guto</p>",
-            "author": {
-                "name": "Guto Carvalho"
-            },
-            "tags": [
-                   "MindNotes"
-            ],
-            "date_published": "2021-10-09T07:42:06-03:00",
-            "date_modified": "2021-10-09T18:43:08-03:00"
         }
     ]
 }
