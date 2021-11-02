@@ -3,14 +3,14 @@
     <title>Guto@Site</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2021-11-02T10:32:16-03:00</updated>
+    <updated>2021-11-02T11:37:55-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
     <id>https://gutocarvalho.net</id>
 
     <entry>
-        <title>DROPS: Criando um cluster k8s com eksctl rapidão</title>
+        <title>DROPS: Criando um Cluster K8S com EKSCTL</title>
         <author>
             <name>Guto Carvalho</name>
         </author>
@@ -19,7 +19,7 @@
             <category term="K8S"/>
             <category term="Drops"/>
 
-        <updated>2021-11-02T10:32:16-03:00</updated>
+        <updated>2021-11-02T11:37:55-03:00</updated>
             <summary>
                 <![CDATA[
                     Aprende aí como fazer isso com uma mão nas costas! Criando um&hellip;

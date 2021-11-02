@@ -12,7 +12,7 @@
         {
             "id": "https://gutocarvalho.net/criando-um-cluster-k8s-com-eksctl/",
             "url": "https://gutocarvalho.net/criando-um-cluster-k8s-com-eksctl/",
-            "title": "DROPS: Criando um cluster k8s com eksctl rapidão",
+            "title": "DROPS: Criando um Cluster K8S com EKSCTL",
             "summary": "Aprende aí como fazer isso com uma mão nas costas! Criando um&hellip;",
             "content_html": "<p>Aprende aí como fazer isso com uma mão nas costas!</p>\n<hr>\n<p>Criando um cluster para testes de forma rápida e rasteira, vamo nessa!</p>\n<pre><code>$ eksctl create cluster \\\n    --region us-east-1 \\\n    --name falagutera \\\n    --version 1.21 \\\n    --node-type t3.xlarge \\\n    --nodes 3 \\\n    --ssh-public-key &quot;~/nativetrail.pub&quot;\n</code></pre>\n<p>gerando o kubeconfig</p>\n<pre><code>$ aws eks --region us-east-1 update-kubeconfig --name falagutera\n$ export KUBECONFIG=config\n</code></pre>\n<p>checando o cluster baby</p>\n<pre><code>$ kubectl get nodes\n</code></pre>\n<p>terminou o teste? bora derrubar tudo!</p>\n<pre><code>$ eksctl delete cluster falagutera\n</code></pre>\n<p>pronto!</p>\n",
             "author": {
@@ -23,7 +23,7 @@
                    "Drops"
             ],
             "date_published": "2021-11-02T09:48:13-03:00",
-            "date_modified": "2021-11-02T10:32:16-03:00"
+            "date_modified": "2021-11-02T11:37:55-03:00"
         },
         {
             "id": "https://gutocarvalho.net/usando-efs-em-um-cluster-k8s-ec2/",
