@@ -3,7 +3,7 @@
     <title>Guto@Site</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2021-11-02T11:37:55-03:00</updated>
+    <updated>2021-11-04T09:51:39-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
@@ -935,7 +935,7 @@ rancher-58b56d54df-pkpz6   0/1     Running   0          41s
             <category term="K8S"/>
             <category term="Drops"/>
 
-        <updated>2021-10-22T09:09:30-03:00</updated>
+        <updated>2021-11-04T09:51:39-03:00</updated>
             <summary>
                 <![CDATA[
                     Aprenda a se conectar em um serviço K8S sem exposição! São DUMPs&hellip;
@@ -955,10 +955,13 @@ rancher-58b56d54df-pkpz6   0/1     Running   0          41s
 <p>Preciso me conectar em um Mongo no cluster sem expor ele para o mundo.</p>
 <h3 id="comofaz">ComoFaz?</h3>
 <p>Vamos usar o port-forward, veja como a sintaxe é simples</p>
-<pre><code>kubectl nome_do_pod porta_local:portal_cluster -n seuname_space
+<pre><code>kubectl port-forward nome_do_pod porta_local:portal_cluster -n seu_namespace
 </code></pre>
 <p>Exemplo!</p>
-<pre><code>kubectl mongodb-replicaset-0 28015:27017 -n seuname_space
+<pre><code>kubectl port-forward mongodb-replicaset-0 28015:27017 -n seu_namespace
+</code></pre>
+<p>E como eu acho a porta certa</p>
+<pre><code>kubectl get pod mongodb-replicaset-0 --template=&#39;{{(index (index .spec.containers 0).ports 0).containerPort}}{{&quot;\n&quot;}}&#39; -n seu_namespace
 </code></pre>
 <p>Prontinho!</p>
 <h3 id="refs">Refs</h3>

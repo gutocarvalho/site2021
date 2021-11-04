@@ -93,7 +93,7 @@
             "url": "https://gutocarvalho.net/k8s-port-forward-facil/",
             "title": "DROPS: Fazer Port Forward no K8S é fácil :)",
             "summary": "Aprenda a se conectar em um serviço K8S sem exposição! São DUMPs&hellip;",
-            "content_html": "<p>Aprenda a se conectar em um serviço K8S sem exposição!</p>\n<hr>\n<h3 id=\"o-que-são-drops\">O que são drops?</h3>\n<p>São DUMPs mentais rápidos e rasteiros, simples e objetivos – que funcionam. </p>\n<p>Geralmente de algo que eu acabei de fazer.</p>\n<p>Eu – quase sempre – volto para detalhar mais cada passo.</p>\n<p>Considere com a mesma qualidade de um rascunho ou uma anotação rápida.</p>\n<p>De qualquer forma comenta ai qquer coisa, os comentários estão ligados nos DROPS ;)</p>\n<h3 id=\"demanda\">Demanda!</h3>\n<p>Preciso me conectar em um Mongo no cluster sem expor ele para o mundo.</p>\n<h3 id=\"comofaz\">ComoFaz?</h3>\n<p>Vamos usar o port-forward, veja como a sintaxe é simples</p>\n<pre><code>kubectl nome_do_pod porta_local:portal_cluster -n seuname_space\n</code></pre>\n<p>Exemplo!</p>\n<pre><code>kubectl mongodb-replicaset-0 28015:27017 -n seuname_space\n</code></pre>\n<p>Prontinho!</p>\n<h3 id=\"refs\">Refs</h3>\n<ul>\n<li><a href=\"https://kubernetes.io/docs/tasks/access-application-cluster/port-forward-access-application-cluster/\">https://kubernetes.io/docs/tasks/access-application-cluster/port-forward-access-application-cluster/</a></li>\n</ul>\n",
+            "content_html": "<p>Aprenda a se conectar em um serviço K8S sem exposição!</p>\n<hr>\n<h3 id=\"o-que-são-drops\">O que são drops?</h3>\n<p>São DUMPs mentais rápidos e rasteiros, simples e objetivos – que funcionam. </p>\n<p>Geralmente de algo que eu acabei de fazer.</p>\n<p>Eu – quase sempre – volto para detalhar mais cada passo.</p>\n<p>Considere com a mesma qualidade de um rascunho ou uma anotação rápida.</p>\n<p>De qualquer forma comenta ai qquer coisa, os comentários estão ligados nos DROPS ;)</p>\n<h3 id=\"demanda\">Demanda!</h3>\n<p>Preciso me conectar em um Mongo no cluster sem expor ele para o mundo.</p>\n<h3 id=\"comofaz\">ComoFaz?</h3>\n<p>Vamos usar o port-forward, veja como a sintaxe é simples</p>\n<pre><code>kubectl port-forward nome_do_pod porta_local:portal_cluster -n seu_namespace\n</code></pre>\n<p>Exemplo!</p>\n<pre><code>kubectl port-forward mongodb-replicaset-0 28015:27017 -n seu_namespace\n</code></pre>\n<p>E como eu acho a porta certa</p>\n<pre><code>kubectl get pod mongodb-replicaset-0 --template=&#39;{{(index (index .spec.containers 0).ports 0).containerPort}}{{&quot;\\n&quot;}}&#39; -n seu_namespace\n</code></pre>\n<p>Prontinho!</p>\n<h3 id=\"refs\">Refs</h3>\n<ul>\n<li><a href=\"https://kubernetes.io/docs/tasks/access-application-cluster/port-forward-access-application-cluster/\">https://kubernetes.io/docs/tasks/access-application-cluster/port-forward-access-application-cluster/</a></li>\n</ul>\n",
             "author": {
                 "name": "Guto Carvalho"
             },
@@ -102,7 +102,7 @@
                    "Drops"
             ],
             "date_published": "2021-10-15T05:43:22-03:00",
-            "date_modified": "2021-10-22T09:09:30-03:00"
+            "date_modified": "2021-11-04T09:51:39-03:00"
         },
         {
             "id": "https://gutocarvalho.net/baixando-imagens-de-ecr-privado-no-k8s/",
