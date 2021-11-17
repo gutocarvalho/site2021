@@ -121,6 +121,10 @@
 <lastmod>2021-10-22T09:14:26-03:00</lastmod>
 </url>
 <url>
+<loc>https://gutocarvalho.net/entendendo-service-mesh/</loc>
+<lastmod>2021-11-08T16:44:55-03:00</lastmod>
+</url>
+<url>
 <loc>https://gutocarvalho.net/eventos/</loc>
 <lastmod>2021-05-30T01:45:07-03:00</lastmod>
 <image:image>
@@ -171,6 +175,10 @@
 <url>
 <loc>https://gutocarvalho.net/instalando-ingress-aws-no-k8s-eks/</loc>
 <lastmod>2021-10-06T15:22:35-03:00</lastmod>
+</url>
+<url>
+<loc>https://gutocarvalho.net/instalando-istio-via-helm-para-testes/</loc>
+<lastmod>2021-11-08T16:32:24-03:00</lastmod>
 </url>
 <url>
 <loc>https://gutocarvalho.net/instalando-metricserver/</loc>
