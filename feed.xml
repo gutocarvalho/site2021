@@ -3,7 +3,7 @@
     <title>Guto@Site</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2021-11-18T10:51:45-03:00</updated>
+    <updated>2021-11-18T10:54:36-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
@@ -18,7 +18,7 @@
         <id>https://gutocarvalho.net/dashboards-para-k8s/</id>
             <category term="MindNotes"/>
 
-        <updated>2021-11-18T10:51:45-03:00</updated>
+        <updated>2021-11-18T10:54:36-03:00</updated>
             <summary>
                 <![CDATA[
                     Quer usar Dashboards para o Kubernetes? Bora! Algumas opções bastante conhecidas Projetos&hellip;
@@ -39,7 +39,6 @@
 <li><a href="https://octant.dev">https://octant.dev</a></li>
 <li><a href="https://github.com/skooner-k8s/skooner">https://github.com/skooner-k8s/skooner</a></li>
 <li><a href="https://kubevious.io">https://kubevious.io</a> (esse é bem interessante)</li>
-<li><a href="https://github.com/jeremykross/konstellate">https://github.com/jeremykross/konstellate</a></li>
 </ul>
 <p>Para terminal</p>
 <ul>
@@ -50,6 +49,12 @@
 <ul>
 <li><a href="https://k8slens.dev">https://k8slens.dev</a></li>
 <li><a href="https://kubenav.io">https://kubenav.io</a></li>
+</ul>
+<p>Para conhecer e testar</p>
+<ul>
+<li><a href="https://github.com/jeremykross/konstellate">https://github.com/jeremykross/konstellate</a></li>
+<li><a href="https://github.com/smpio/kubernator">https://github.com/smpio/kubernator</a></li>
+<li><a href="https://github.com/kubricksllc/Kubricks">https://github.com/kubricksllc/Kubricks</a></li>
 </ul>
 <p>Gerador de relatórios de custos para AWS e GCP</p>
 <ul>
