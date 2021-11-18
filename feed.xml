@@ -3,12 +3,67 @@
     <title>Guto@Site</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2021-11-08T16:32:24-03:00</updated>
+    <updated>2021-11-18T10:28:11-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
     <id>https://gutocarvalho.net</id>
 
+    <entry>
+        <title>Dashboards para K8S</title>
+        <author>
+            <name>Guto Carvalho</name>
+        </author>
+        <link href="https://gutocarvalho.net/dashboards-para-k8s/"/>
+        <id>https://gutocarvalho.net/dashboards-para-k8s/</id>
+            <category term="MindNotes"/>
+
+        <updated>2021-11-18T10:28:11-03:00</updated>
+            <summary>
+                <![CDATA[
+                    Quer usar Dashboards para o Kubernetes? Bora! Algumas opções bastante conhecidas Projetos&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p>Quer usar Dashboards para o Kubernetes? Bora!</p>
+<p>Algumas opções bastante conhecidas</p>
+<ul>
+<li><a href="https://rancher.com/docs/rancher/v2.6/en/">https://rancher.com/docs/rancher/v2.6/en/</a></li>
+<li><a href="https://github.com/kubernetes/dashboard">https://github.com/kubernetes/dashboard</a></li>
+<li><a href="https://www.portainer.io">https://www.portainer.io</a></li>
+<li><a href="https://www.weave.works/oss/scope">https://www.weave.works/oss/scope</a></li>
+</ul>
+<p>Projetos promissores</p>
+<ul>
+<li><a href="https://octant.dev">https://octant.dev</a></li>
+<li><a href="https://github.com/skooner-k8s/skooner">https://github.com/skooner-k8s/skooner</a></li>
+<li><a href="https://kubevious.io">https://kubevious.io</a> (esse é bem interessante)</li>
+</ul>
+<p>Para terminal</p>
+<ul>
+<li><a href="https://codeberg.org/hjacobs/kube-ops-view">https://codeberg.org/hjacobs/kube-ops-view</a></li>
+<li><a href="https://k9scli.io">https://k9scli.io</a></li>
+</ul>
+<p>Para seu desktop</p>
+<ul>
+<li><a href="https://k8slens.dev">https://k8slens.dev</a></li>
+<li><a href="https://kubenav.io">https://kubenav.io</a></li>
+</ul>
+<p>Para testar</p>
+<ul>
+<li><a href="https://github.com/smpio/kubernator">https://github.com/smpio/kubernator</a></li>
+<li><a href="https://jeremykross.github.io/konstellate">https://jeremykross.github.io/konstellate</a></li>
+</ul>
+<p>Gerador de relatórios de custos para AWS e GCP</p>
+<ul>
+<li><a href="https://codeberg.org/hjacobs/kube-resource-report">https://codeberg.org/hjacobs/kube-resource-report</a></li>
+</ul>
+<p>[s]</p>
+
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>DROPS: Instalando ISTIO via helm para testes</title>
         <author>
@@ -1232,113 +1287,6 @@ rancher-58b56d54df-pkpz6   0/1     Running   0          41s
           image:  ID.dkr.ecr.us-east-1.amazonaws.com/app:latest
 </code></pre>
 <p>Prontinho!</p>
-
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>DROPS: Storage EBS em seu Cluster K8S EC2</title>
-        <author>
-            <name>Guto Carvalho</name>
-        </author>
-        <link href="https://gutocarvalho.net/storageclass-ebs-em-seu-cluster-k8s-ec2/"/>
-        <id>https://gutocarvalho.net/storageclass-ebs-em-seu-cluster-k8s-ec2/</id>
-            <category term="K8S"/>
-            <category term="Drops"/>
-
-        <updated>2021-10-20T16:49:46-03:00</updated>
-            <summary>
-                <![CDATA[
-                    Aprenda a usar o storage EBS como SC em seu cluster EC2!&hellip;
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                <p>Aprenda a usar o storage EBS como SC em seu cluster EC2!</p>
-<hr>
-<h3 id="o-que-são-drops">O que são drops?</h3>
-<p>São DUMPs mentais rápidos e rasteiros, simples e objetivos – que funcionam. </p>
-<p>Geralmente de algo que eu acabei de fazer.</p>
-<p>Eu – quase sempre – volto para detalhar mais cada passo.</p>
-<p>Considere com a mesma qualidade de um rascunho ou uma anotação rápida.</p>
-<p>De qualquer forma comenta ai qquer coisa, os comentários estão ligados nos DROPS ;)</p>
-<h3 id="demanda">Demanda</h3>
-<p>Configurar um storageclass EBS em um cluster K8S rodando via EC2.</p>
-<h3 id="comofaz">ComoFaz?</h3>
-<p>crie o arquivo aws-ebs-secrets.yaml</p>
-<pre><code>vim ws-ebs-secrets.yaml
-</code></pre>
-<p>insira o conteúdo abaixo, e ajuste suas credenciais</p>
-<pre><code>apiVersion: v1
-kind: Secret
-metadata:
-  name: aws-secret
-  namespace: kube-system
-stringData:
-  key_id: &quot;SUA_ACCESS_KEY&quot;
-  access_key: &quot;SUA_SECRET_KEY&quot;
-</code></pre>
-<p>aplique o manifesto</p>
-<pre><code>kubectl apply -f aws-ebs-secrets.yaml
-</code></pre>
-<p>agora instale o driver ebs</p>
-<pre><code>kubectl apply -k &quot;github.com/kubernetes-sigs/aws-ebs-csi-driver/deploy/kubernetes/overlays/stable/?ref=release-1.4&quot;
-</code></pre>
-<p>saída esperada</p>
-<pre><code>serviceaccount/ebs-csi-controller-sa created
-serviceaccount/ebs-csi-node-sa created
-clusterrole.rbac.authorization.k8s.io/ebs-csi-node-role created
-clusterrole.rbac.authorization.k8s.io/ebs-external-attacher-role created
-clusterrole.rbac.authorization.k8s.io/ebs-external-provisioner-role created
-clusterrole.rbac.authorization.k8s.io/ebs-external-resizer-role created
-clusterrole.rbac.authorization.k8s.io/ebs-external-snapshotter-role created
-clusterrolebinding.rbac.authorization.k8s.io/ebs-csi-attacher-binding created
-clusterrolebinding.rbac.authorization.k8s.io/ebs-csi-node-getter-binding created
-clusterrolebinding.rbac.authorization.k8s.io/ebs-csi-provisioner-binding created
-clusterrolebinding.rbac.authorization.k8s.io/ebs-csi-resizer-binding created
-clusterrolebinding.rbac.authorization.k8s.io/ebs-csi-snapshotter-binding created
-deployment.apps/ebs-csi-controller created
-poddisruptionbudget.policy/ebs-csi-controller created
-daemonset.apps/ebs-csi-node created
-csidriver.storage.k8s.io/ebs.csi.aws.com created
-</code></pre>
-<p>verifique se tá tudo bem</p>
-<pre><code>kubectl get pods -n kube-system|grep ebs
-</code></pre>
-<p>saída esperada</p>
-<pre><code>ebs-csi-controller-7c486f7676-826ph        6/6     Running     0          110s
-ebs-csi-controller-7c486f7676-l5wsg        6/6     Running     0          110s
-ebs-csi-node-5q7lk                         3/3     Running     0          108s
-ebs-csi-node-cxv4p                         3/3     Running     0          109s
-ebs-csi-node-fskfw                         3/3     Running     0          108s
-</code></pre>
-<p>tá tudo bem, agora crie o manifesto do storageclass</p>
-<pre><code>vim ebs-storageclass.yaml
-</code></pre>
-<p>insira o conteúdo abaixo</p>
-<pre><code>kind: StorageClass
-apiVersion: storage.k8s.io/v1
-metadata:
-  name: ebs-storageclass
-parameters:
-  type: gp2
-provisioner: ebs.csi.aws.com
-volumeBindingMode: Immediate
-</code></pre>
-<p>aplique o manifesto</p>
-<pre><code>kubectl apply -f ebs-storageclass.yaml
-</code></pre>
-<p>verifique se criou o sc</p>
-<pre><code>kubectl get sc
-</code></pre>
-<p>saída esperada</p>
-<pre><code>NAME                         PROVISIONER       RECLAIMPOLICY   VOLUMEBINDINGMODE      ALLOWVOLUMEEXPANSION   AGE
-ebs-storageclass             ebs.csi.aws.com   Delete          Immediate   false                  3m24s
-</code></pre>
-<p>caso queira, defina este sc como default</p>
-<pre><code>  kubectl patch storageclass ebs-storageclass -p &#39;{&quot;metadata&quot;: {&quot;annotations&quot;:{&quot;storageclass.kubernetes.io/is-default-class&quot;:&quot;true&quot;}}}
-</code></pre>
-<p>prontinho! :)</p>
 
             ]]>
         </content>
