@@ -20,8 +20,8 @@
             },
             "tags": [
             ],
-            "date_published": "2021-11-19T07:33:28-03:00",
-            "date_modified": "2021-11-19T07:53:03-03:00"
+            "date_published": "2021-11-19T06:33:28-04:00",
+            "date_modified": "2021-11-19T06:53:03-04:00"
         },
         {
             "id": "https://gutocarvalho.net/dashboards-para-k8s/",
@@ -35,8 +35,8 @@
             "tags": [
                    "MindNotes"
             ],
-            "date_published": "2021-11-18T10:28:11-03:00",
-            "date_modified": "2021-11-18T10:54:36-03:00"
+            "date_published": "2021-11-18T09:28:11-04:00",
+            "date_modified": "2021-11-18T09:54:36-04:00"
         },
         {
             "id": "https://gutocarvalho.net/instalando-istio-via-helm-para-testes/",
@@ -52,8 +52,8 @@
                    "K8S",
                    "Drops"
             ],
-            "date_published": "2021-11-08T16:29:04-03:00",
-            "date_modified": "2021-11-08T16:32:24-03:00"
+            "date_published": "2021-11-08T15:29:04-04:00",
+            "date_modified": "2021-11-08T15:32:24-04:00"
         },
         {
             "id": "https://gutocarvalho.net/dicas-sobre-quadros-e-canetas/",
@@ -67,8 +67,8 @@
             "tags": [
                    "Casa"
             ],
-            "date_published": "2021-11-05T14:04:25-03:00",
-            "date_modified": "2021-11-06T06:28:30-03:00"
+            "date_published": "2021-11-05T13:04:25-04:00",
+            "date_modified": "2021-11-06T05:28:30-04:00"
         },
         {
             "id": "https://gutocarvalho.net/criando-um-cluster-k8s-com-eksctl/",
@@ -83,8 +83,8 @@
                    "K8S",
                    "Drops"
             ],
-            "date_published": "2021-11-02T09:48:13-03:00",
-            "date_modified": "2021-11-02T11:37:55-03:00"
+            "date_published": "2021-11-02T08:48:13-04:00",
+            "date_modified": "2021-11-02T10:37:55-04:00"
         },
         {
             "id": "https://gutocarvalho.net/usando-efs-em-um-cluster-k8s-ec2/",
@@ -99,8 +99,8 @@
                    "K8S",
                    "Drops"
             ],
-            "date_published": "2021-10-24T11:06:27-03:00",
-            "date_modified": "2021-10-25T08:03:34-03:00"
+            "date_published": "2021-10-24T10:06:27-04:00",
+            "date_modified": "2021-10-25T07:03:34-04:00"
         },
         {
             "id": "https://gutocarvalho.net/centralizando-logs-do-k8s-com-o-loki/",
@@ -115,8 +115,8 @@
                    "Projetos",
                    "Drops"
             ],
-            "date_published": "2021-10-22T09:43:24-03:00",
-            "date_modified": "2021-10-22T09:47:50-03:00"
+            "date_published": "2021-10-22T08:43:24-04:00",
+            "date_modified": "2021-10-22T08:47:50-04:00"
         },
         {
             "id": "https://gutocarvalho.net/drops-instalando-rancher-26-em-ha/",
@@ -131,8 +131,8 @@
                    "Projetos",
                    "Drops"
             ],
-            "date_published": "2021-10-22T09:09:24-03:00",
-            "date_modified": "2021-10-22T09:14:26-03:00"
+            "date_published": "2021-10-22T08:09:24-04:00",
+            "date_modified": "2021-10-22T08:14:26-04:00"
         },
         {
             "id": "https://gutocarvalho.net/ferramentas-open-source-apm/",
@@ -146,8 +146,8 @@
             "tags": [
                    "Projetos"
             ],
-            "date_published": "2021-10-17T16:29:13-03:00",
-            "date_modified": "2021-10-17T16:34:29-03:00"
+            "date_published": "2021-10-17T15:29:13-04:00",
+            "date_modified": "2021-10-17T15:34:29-04:00"
         },
         {
             "id": "https://gutocarvalho.net/k8s-port-forward-facil/",
@@ -162,8 +162,8 @@
                    "K8S",
                    "Drops"
             ],
-            "date_published": "2021-10-15T05:43:22-03:00",
-            "date_modified": "2021-11-04T09:51:39-03:00"
+            "date_published": "2021-10-15T04:43:22-04:00",
+            "date_modified": "2021-11-04T08:51:39-04:00"
         }
     ]
 }
