@@ -3,12 +3,62 @@
     <title>Guto@Site</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2021-12-15T08:22:06-03:00</updated>
+    <updated>2021-12-15T08:54:16-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
     <id>https://gutocarvalho.net</id>
 
+    <entry>
+        <title>Keptn, outro projeto para ficar de olho!</title>
+        <author>
+            <name>Guto Carvalho</name>
+        </author>
+        <link href="https://gutocarvalho.net/keptn-outro-projeto-para-ficar-de-olho/"/>
+        <id>https://gutocarvalho.net/keptn-outro-projeto-para-ficar-de-olho/</id>
+            <category term="MindNotes"/>
+
+        <updated>2021-12-15T08:54:16-03:00</updated>
+            <summary>
+                <![CDATA[
+                    O Keptn (fala-se Captain) é um control-plane para automação com mindset devops&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p>O Keptn (fala-se Captain) é um control-plane para automação com mindset devops dentro do seu cluster. <br><br>Esse projeto promete – entre outras coisas – te ajudar a manter a qualidade das APPs em seu cluster usando o que eles chamam de quality gates (é o que chamou minha atenção). Os quality gates usam SLIs e SLOs de sua APP para cuidar de sua APP, isso significa que caso você publique algo está fora dos padrões que você indicou, o Keptn faz o rollback para a última versão que tem a performance dentro dos seus indicadores.</p>
+<p>Além disso temos recursos como:<br><br>- Multi-stage delivery<br>- Continuous Performance Verification<br>- Configuração declarativa<br>- Automação baseada em eventos<br>- Integração com projetos como Argo, GitHub Actions, Prometheus e +<br>- Observabilidade nativa para poder checar SLIs e SLOs<br><br>E tem muito mais, conheça <a href="https://keptn.sh">https://keptn.sh.</a></p>
+<figure class="post__video"><iframe loading="lazy" width="560" height="314" src="https://www.youtube.com/embed/fjfj97Vb4ds" allowfullscreen="allowfullscreen" data-mce-fragment="1"></iframe></figure>
+<p>É isso povo!<br><br>[s]<br><br></p>
+<p> </p>
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>Karpenter, novo autoscaler para k8s da AWS</title>
+        <author>
+            <name>Guto Carvalho</name>
+        </author>
+        <link href="https://gutocarvalho.net/karpenter-novo-autoscaler-para-k8s-da-aws/"/>
+        <id>https://gutocarvalho.net/karpenter-novo-autoscaler-para-k8s-da-aws/</id>
+            <category term="MindNotes"/>
+
+        <updated>2021-12-15T08:28:16-03:00</updated>
+            <summary>
+                <![CDATA[
+                    Se ainda não conhece se liga no Karpenter, um novo autoscaler desenvolvido&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p>Se ainda não conhece se liga no Karpenter, um novo autoscaler desenvolvido pelo time da AWS para te ajudar com seu cluster.</p>
+<p><a href="https://github.com/aws/karpenter">https://github.com/aws/karpenter</a></p>
+<figure class="post__video"><iframe loading="lazy" width="560" height="314" src="https://www.youtube.com/embed/3QsVRHVdOnM?feature=emb_title" allowfullscreen="allowfullscreen" data-mce-fragment="1"></iframe></figure>
+<figure class="post__video"><iframe loading="lazy" width="560" height="314" src="https://www.youtube.com/embed/qxWJRUF6JJc?feature=youtu" allowfullscreen="allowfullscreen" data-mce-fragment="1"></iframe></figure>
+<p>É só isso mesmo!<br><br>[s]</p>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>Teste de carga com ajuda do vegeta?</title>
         <author>
@@ -647,566 +697,6 @@ helm repo update
 <li><a href="https://grafana.com/go/webinar/loki-getting-started-emea">https://grafana.com/go/webinar/loki-getting-started-emea</a></li>
 <li><a href="https://grafana.com/blog/2020/10/28/loki-2.0-released-transform-logs-as-youre-querying-them-and-set-up-alerts-within-loki">https://grafana.com/blog/2020/10/28/loki-2.0-released-transform-logs-as-youre-querying-them-and-set-up-alerts-within-loki</a></li>
 </ul>
-
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>DROPS: Instalando Rancher 2.6 em HA</title>
-        <author>
-            <name>Guto Carvalho</name>
-        </author>
-        <link href="https://gutocarvalho.net/drops-instalando-rancher-26-em-ha/"/>
-        <id>https://gutocarvalho.net/drops-instalando-rancher-26-em-ha/</id>
-            <category term="Projetos"/>
-            <category term="Drops"/>
-
-        <updated>2021-10-22T09:14:26-03:00</updated>
-            <summary>
-                <![CDATA[
-                    Aprenda a instalar o novíssimo Rancher 2.6 em modo HA. São DUMPs&hellip;
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                <p>Aprenda a instalar o novíssimo Rancher 2.6 em modo HA.</p>
-<hr>
-<h3 id="o-que-são-drops">O que são drops?</h3>
-<p>São DUMPs mentais rápidos e rasteiros, simples e objetivos – que funcionam. </p>
-<p>Geralmente de algo que eu acabei de fazer.</p>
-<p>Eu – quase sempre – volto para detalhar mais cada passo.</p>
-<p>Considere com a mesma qualidade de um rascunho ou uma anotação rápida.</p>
-<p>De qualquer forma comenta ai qquer coisa, os comentários estão ligados nos DROPS ;)</p>
-<h2 id="demanda">Demanda!</h2>
-<p>A ideia é instalar um Rancher em HA, cluster de 3 nodes, usando instâncias AWS EC2.</p>
-<h2 id="comofaz">ComoFaz?</h2>
-<h3 id="antes-de-começar">antes de começar</h3>
-<p>Confere aí :)</p>
-<ol>
-<li>Tenha o Kubectl instalado</li>
-<li>Tenha o RKE instalado</li>
-<li>Tenha o Helm instalado</li>
-<li>Tenha Conta na AWS</li>
-<li>Internet é de bom tom :)</li>
-</ol>
-<h3 id="instâncias-ec2">instâncias ec2</h3>
-<p>Vamos lá!</p>
-<ol>
-<li>crie um chave ssh no ec2</li>
-<li>crie 3 instâncias EC2 em sua conta AWS com essa chave ssh</li>
-<li>crie 2 target groups rancher-80 e rancher-443 apontando para as máquinas do cluster</li>
-<li>crie o load balancer NLB com dois listeners apontando para os target groups rancher-80 e rancher-443</li>
-<li>crie uma entrada de dns <strong>rancher.seudominio.tld</strong> apontando para o CNAME do Load Balancer</li>
-<li>crie um security group para liberar acesso a porta 80 e 443 as máquinas do cluster</li>
-<li>crie um security group para que voce possa instalar o cluster a partir do seu IP via rke (all ports).</li>
-</ol>
-<h3 id="preparando-instâncias">preparando instâncias</h3>
-<p>instale docker nas 3 maquinas</p>
-<pre><code>curl https://releases.rancher.com/install-docker/20.10.sh | sh
-</code></pre>
-<p>habilite e inicie</p>
-<pre><code>systemctl enable docker &amp;&amp; systemctl start docker
-</code></pre>
-<p>coloque o ubuntu no grupo docker</p>
-<pre><code>gpasswd -a ubuntu docker
-</code></pre>
-<h3 id="preparando-e-instalando-o-cluster-da-sua-máquina">preparando e instalando o cluster (da sua máquina)</h3>
-<p>criando configuracao</p>
-<pre><code>rke config
-</code></pre>
-<p>ele vai te fazer umas perguntinhas, cadastre apenas 1 node para facilitar, eu usei 1.1.1.1 como exemplo, aponte o local da sua chave ssh, a mesma que usou nos EC2.</p>
-<pre><code>[+] Cluster Level SSH Private Key Path [~/.ssh/id_rsa]:
-[+] Number of Hosts [1]:
-[+] SSH Address of host (1) [none]: 1.1.1.1
-[+] SSH Port of host (1) [22]:
-[+] SSH Private Key Path of host (1.1.1.1) [none]:
-[-] You have entered empty SSH key path, trying fetch from SSH key parameter
-[+] SSH Private Key of host (1.1.1.1) [none]:
-[-] You have entered empty SSH key, defaulting to cluster level SSH key: ~/.ssh/id_rsa
-[+] SSH User of host (1.1.1.1) [ubuntu]:
-[+] Is host (1.1.1.1) a Control Plane host (y/n)? [y]: y
-[+] Is host (1.1.1.1) a Worker host (y/n)? [n]: y
-[+] Is host (1.1.1.1) an etcd host (y/n)? [n]: y
-[+] Override Hostname of host (1.1.1.1) [none]:
-[+] Internal IP of host (1.1.1.1) [none]:
-[+] Docker socket path on host (1.1.1.1) [/var/run/docker.sock]:
-[+] Network Plugin Type (flannel, calico, weave, canal, aci) [canal]:
-[+] Authentication Strategy [x509]:
-[+] Authorization Mode (rbac, none) [rbac]:
-[+] Kubernetes Docker image [rancher/hyperkube:v1.21.5-rancher1]:
-[+] Cluster domain [cluster.local]:
-[+] Service Cluster IP Range [10.43.0.0/16]:
-[+] Enable PodSecurityPolicy [n]:
-[+] Cluster Network CIDR [10.42.0.0/16]:
-[+] Cluster DNS Service IP [10.43.0.10]:
-[+] Add addon manifest URLs or YAML files [no]:
-</code></pre>
-<p>abra o arquivo e coloque os demais nodos, não se esqueça de cadastrar o ip privado também, depois que finalizar com os nodos, personalize o que for necessário para seu ambiente k8s, o rke é beeem flexível quanto a isso, além de ser o instalador de k8s mais fácil que eu conheço.</p>
-<pre><code>nodes:
-- address: 1.1.1.1
-  port: &quot;22&quot;
-  internal_address: &quot;172.31.1.1&quot;
-  role:
-  - controlplane
-  - worker
-  - etcd
-  hostname_override: &quot;rancher_a&quot;
-  user: ubuntu
-  docker_socket: /var/run/docker.sock
-  ssh_key: &quot;&quot;
-  ssh_key_path: ~/.ssh/id_rsa
-  ssh_cert: &quot;&quot;
-  ssh_cert_path: &quot;&quot;
-  labels: {}
-  taints: []
-- address: 2.2.2.2
-  port: &quot;22&quot;
-  internal_address: &quot;172.31.1.2&quot;
-  role:
-  - controlplane
-  - worker
-  - etcd
-  hostname_override: &quot;rancher_b&quot;
-  user: ubuntu
-  docker_socket: /var/run/docker.sock
-  ssh_key: &quot;&quot;
-  ssh_key_path: ~/.ssh/id_rsa
-  ssh_cert: &quot;&quot;
-  ssh_cert_path: &quot;&quot;
-  labels: {}
-  taints: []
-- address: 3.3.3.3
-  port: &quot;22&quot;
-  internal_address: &quot;172.31.1.3&quot;
-  role:
-  - controlplane
-  - worker
-  - etcd
-  hostname_override: &quot;rancher_c&quot;
-  user: ubuntu
-  docker_socket: /var/run/docker.sock
-  ssh_key: &quot;&quot;
-  ssh_key_path: ~/.ssh/id_rsa
-  ssh_cert: &quot;&quot;
-  ssh_cert_path: &quot;&quot;
-  labels: {}
-  taints: []
-services:
-  etcd:
-    image: &quot;&quot;
-    extra_args: {}
-    extra_binds: []
-    extra_env: []
-    win_extra_args: {}
-    win_extra_binds: []
-    win_extra_env: []
-    external_urls: []
-    ca_cert: &quot;&quot;
-    cert: &quot;&quot;
-    key: &quot;&quot;
-    path: &quot;&quot;
-    uid: 0
-    gid: 0
-    snapshot: null
-    retention: &quot;&quot;
-    creation: &quot;&quot;
-    backup_config: null
-  kube-api:
-    image: &quot;&quot;
-    extra_args: {}
-    extra_binds: []
-    extra_env: []
-    win_extra_args: {}
-    win_extra_binds: []
-    win_extra_env: []
-    service_cluster_ip_range: 10.43.0.0/16
-    service_node_port_range: &quot;&quot;
-    pod_security_policy: false
-    always_pull_images: false
-    secrets_encryption_config: null
-    audit_log: null
-    admission_configuration: null
-    event_rate_limit: null
-  kube-controller:
-    image: &quot;&quot;
-    extra_args: {}
-    extra_binds: []
-    extra_env: []
-    win_extra_args: {}
-    win_extra_binds: []
-    win_extra_env: []
-    cluster_cidr: 10.42.0.0/16
-    service_cluster_ip_range: 10.43.0.0/16
-  scheduler:
-    image: &quot;&quot;
-    extra_args: {}
-    extra_binds: []
-    extra_env: []
-    win_extra_args: {}
-    win_extra_binds: []
-    win_extra_env: []
-  kubelet:
-    image: &quot;&quot;
-    extra_args: {}
-    extra_binds: []
-    extra_env: []
-    win_extra_args: {}
-    win_extra_binds: []
-    win_extra_env: []
-    cluster_domain: cluster.local
-    infra_container_image: &quot;&quot;
-    cluster_dns_server: 10.43.0.10
-    fail_swap_on: false
-    generate_serving_certificate: false
-  kubeproxy:
-    image: &quot;&quot;
-    extra_args: {}
-    extra_binds: []
-    extra_env: []
-    win_extra_args: {}
-    win_extra_binds: []
-    win_extra_env: []
-network:
-  plugin: canal
-  options: {}
-  mtu: 0
-  node_selector: {}
-  update_strategy: null
-  tolerations: []
-authentication:
-  strategy: x509
-  sans: []
-  webhook: null
-addons: &quot;&quot;
-addons_include: []
-system_images:
-  etcd: rancher/mirrored-coreos-etcd:v3.4.16-rancher1
-  alpine: rancher/rke-tools:v0.1.78
-  nginx_proxy: rancher/rke-tools:v0.1.78
-  cert_downloader: rancher/rke-tools:v0.1.78
-  kubernetes_services_sidecar: rancher/rke-tools:v0.1.78
-  kubedns: rancher/mirrored-k8s-dns-kube-dns:1.17.4
-  dnsmasq: rancher/mirrored-k8s-dns-dnsmasq-nanny:1.17.4
-  kubedns_sidecar: rancher/mirrored-k8s-dns-sidecar:1.17.4
-  kubedns_autoscaler: rancher/mirrored-cluster-proportional-autoscaler:1.8.3
-  coredns: rancher/mirrored-coredns-coredns:1.8.4
-  coredns_autoscaler: rancher/mirrored-cluster-proportional-autoscaler:1.8.3
-  nodelocal: rancher/mirrored-k8s-dns-node-cache:1.18.0
-  kubernetes: rancher/hyperkube:v1.21.5-rancher1
-  flannel: rancher/mirrored-coreos-flannel:v0.14.0
-  flannel_cni: rancher/flannel-cni:v0.3.0-rancher6
-  calico_node: rancher/mirrored-calico-node:v3.19.2
-  calico_cni: rancher/mirrored-calico-cni:v3.19.2
-  calico_controllers: rancher/mirrored-calico-kube-controllers:v3.19.2
-  calico_ctl: rancher/mirrored-calico-ctl:v3.19.2
-  calico_flexvol: rancher/mirrored-calico-pod2daemon-flexvol:v3.19.2
-  canal_node: rancher/mirrored-calico-node:v3.19.2
-  canal_cni: rancher/mirrored-calico-cni:v3.19.2
-  canal_controllers: rancher/mirrored-calico-kube-controllers:v3.19.2
-  canal_flannel: rancher/mirrored-coreos-flannel:v0.14.0
-  canal_flexvol: rancher/mirrored-calico-pod2daemon-flexvol:v3.19.2
-  weave_node: weaveworks/weave-kube:2.8.1
-  weave_cni: weaveworks/weave-npc:2.8.1
-  pod_infra_container: rancher/mirrored-pause:3.4.1
-  ingress: rancher/nginx-ingress-controller:nginx-0.48.1-rancher1
-  ingress_backend: rancher/mirrored-nginx-ingress-controller-defaultbackend:1.5-rancher1
-  ingress_webhook: rancher/mirrored-jettech-kube-webhook-certgen:v1.5.1
-  metrics_server: rancher/mirrored-metrics-server:v0.5.0
-  windows_pod_infra_container: rancher/kubelet-pause:v0.1.6
-  aci_cni_deploy_container: noiro/cnideploy:5.1.1.0.1ae238a
-  aci_host_container: noiro/aci-containers-host:5.1.1.0.1ae238a
-  aci_opflex_container: noiro/opflex:5.1.1.0.1ae238a
-  aci_mcast_container: noiro/opflex:5.1.1.0.1ae238a
-  aci_ovs_container: noiro/openvswitch:5.1.1.0.1ae238a
-  aci_controller_container: noiro/aci-containers-controller:5.1.1.0.1ae238a
-  aci_gbp_server_container: noiro/gbp-server:5.1.1.0.1ae238a
-  aci_opflex_server_container: noiro/opflex-server:5.1.1.0.1ae238a
-ssh_key_path: ~/.ssh/id_rsa
-ssh_cert_path: &quot;&quot;
-ssh_agent_auth: false
-authorization:
-  mode: rbac
-  options: {}
-ignore_docker_version: null
-enable_cri_dockerd: null
-kubernetes_version: &quot;&quot;
-private_registries: []
-ingress:
-  provider: &quot;&quot;
-  options: {}
-  node_selector: {}
-  extra_args: {}
-  dns_policy: &quot;&quot;
-  extra_envs: []
-  extra_volumes: []
-  extra_volume_mounts: []
-  update_strategy: null
-  http_port: 0
-  https_port: 0
-  network_mode: &quot;&quot;
-  tolerations: []
-  default_backend: null
-  default_http_backend_priority_class_name: &quot;&quot;
-  nginx_ingress_controller_priority_class_name: &quot;&quot;
-cluster_name: &quot;&quot;
-cloud_provider:
-  name: &quot;&quot;
-prefix_path: &quot;&quot;
-win_prefix_path: &quot;&quot;
-addon_job_timeout: 0
-bastion_host:
-  address: &quot;&quot;
-  port: &quot;&quot;
-  user: &quot;&quot;
-  ssh_key: &quot;&quot;
-  ssh_key_path: &quot;&quot;
-  ssh_cert: &quot;&quot;
-  ssh_cert_path: &quot;&quot;
-  ignore_proxy_env_vars: false
-monitoring:
-  provider: &quot;&quot;
-  options: {}
-  node_selector: {}
-  update_strategy: null
-  replicas: null
-  tolerations: []
-  metrics_server_priority_class_name: &quot;&quot;
-restore:
-  restore: false
-  snapshot_name: &quot;&quot;
-rotate_encryption_key: false
-dns: null
-</code></pre>
-<p>depois de cadastrar os nodos, vamos começar o provisionamento</p>
-<pre><code>rke up —config cluster.yaml
-</code></pre>
-<p>após instalar verá a seguinte mensagem ( se tudo der certo )</p>
-<pre><code>INFO[0255] Finished building Kubernetes cluster successfully
-</code></pre>
-<p>configure o kubectl</p>
-<pre><code>export KUBECONFIG=kube_config_cluster.yml
-</code></pre>
-<p>verifique se o cluster está funcionando</p>
-<pre><code>kubctl get nodes
-</code></pre>
-<p>saída exemplo</p>
-<pre><code>NAME             STATUS   ROLES                      AGE   VERSION
-54.225.184.xxx   Ready    controlplane,etcd,worker   12m   v1.21.5
-54.243.65.xxx    Ready    controlplane,etcd,worker   12m   v1.21.5
-72.44.32.xxx     Ready    controlplane,etcd,worker   12m   v1.21.5
-</code></pre>
-<p>cluster instalado, agora verifique a saúde de seu cluster</p>
-<pre><code>kubectl get pods --all-namespaces
-</code></pre>
-<p>saída exemplo</p>
-<pre><code>NAMESPACE       NAME                                       READY   STATUS      RESTARTS   AGE
-ingress-nginx   default-http-backend-6977475d9b-z64cj      1/1     Running     0          17m
-ingress-nginx   nginx-ingress-controller-h4c67             1/1     Running     0          17m
-ingress-nginx   nginx-ingress-controller-kjd8r             1/1     Running     0          17m
-ingress-nginx   nginx-ingress-controller-q4lp2             1/1     Running     0          17m
-kube-system     calico-kube-controllers-7d5d95c8c9-mcfj6   1/1     Running     0          18m
-kube-system     canal-lsbkv                                2/2     Running     0          18m
-kube-system     canal-lwtq9                                2/2     Running     0          18m
-kube-system     canal-wm7c8                                2/2     Running     0          18m
-kube-system     coredns-55b58f978-jnfsq                    1/1     Running     0          17m
-kube-system     coredns-55b58f978-wr4w7                    1/1     Running     0          18m
-kube-system     coredns-autoscaler-76f8869cc9-lz44p        1/1     Running     0          18m
-kube-system     metrics-server-55fdd84cd4-rjk7w            1/1     Running     0          18m
-kube-system     rke-coredns-addon-deploy-job-th472         0/1     Completed   0          18m
-kube-system     rke-ingress-controller-deploy-job-59cm4    0/1     Completed   0          17m
-kube-system     rke-metrics-addon-deploy-job-94b8t         0/1     Completed   0          18m
-kube-system     rke-network-plugin-deploy-job-q5nts        0/1     Completed   0          18m
-</code></pre>
-<p>aparentemente tudo bem :)</p>
-<h3 id="preparando-e-instalando-o-cert-manager-neste-cluster-sua-máquina">preparando e instalando o cert-manager neste cluster (sua máquina)</h3>
-<p>instale os crds do cert-manager</p>
-<pre><code>kubectl apply -f https://github.com/jetstack/cert-manager/releases/download/v1.5.1/cert-manager.crds.yaml
-</code></pre>
-<p>adicione o repo e atualize o índices</p>
-<pre><code>helm repo add jetstack https://charts.jetstack.io. 
-helm repo update
-</code></pre>
-<p>crie o namespace</p>
-<pre><code>kubectl create namespace cert-manager
-</code></pre>
-<p>instale o cert-mamanger</p>
-<pre><code>helm install cert-manager jetstack/cert-manager \
-  --namespace cert-manager \
-  --create-namespace \
-  --version v1.5.1
-</code></pre>
-<p>crie o cluster issuer, sem isso ele não gera os certs via lets</p>
-<pre><code>apiVersion: cert-manager.io/v1
-kind: ClusterIssuer
-metadata:
-  name: letsencrypt-prod
-  namespace: cert-manager
-spec:
-  acme:
-    # The ACME server URL
-    server: https://acme-v02.api.letsencrypt.org/directory
-    # Email address used for ACME registration
-    email: certmanager@nativetrail.io
-    # Name of a secret used to store the ACME account private key
-    privateKeySecretRef:
-      name: letsencrypt-prod
-    # Enable the HTTP-01 challenge provider
-    solvers:
-    - http01:
-        ingress:
-          class: nginx
-</code></pre>
-<p>aplique o issuer</p>
-<pre><code>kubectl apply -f issuer.yml
-</code></pre>
-<p>saída esperada</p>
-<pre><code> clusterissuer.cert-manager.io/letsencrypt-prod created
-</code></pre>
-<p>verifique se está ok</p>
-<pre><code>kubectl get clusterissuer 
-</code></pre>
-<p>saída esperada</p>
-<pre><code>NAME               READY   AGE
-letsencrypt-prod   True    48s
-</code></pre>
-<p>se estiver mostrando “True” deu certo!</p>
-<h3 id="preparando-e-instalando-o-rancher-neste-cluster-na-sua-máquina">preparando e instalando o rancher neste cluster (na sua máquina)</h3>
-<p>adicione o repo e atualize os índices</p>
-<pre><code>helm repo add rancher-latest https://releases.rancher.com/server-charts/latest
-helm repo update
-</code></pre>
-<p>crie o namespace cattle-system</p>
-<pre><code>kubectl create namespace cattle-system
-</code></pre>
-<p>instale o rancher</p>
-<pre><code>helm install rancher rancher-latest/rancher \
-  --namespace cattle-system \
-  --set hostname=kloud.gr1d.io \
-  --set replicas=3 \
-  --set ingress.tls.source=letsEncrypt \
-  --set letsEncrypt.email=certmanager@nativetrail.io
-</code></pre>
-<p>verifique</p>
-<pre><code>kubectl get pods -n cattle-system
-</code></pre>
-<p>saída esperada, estará criando na primeira vez que rodar o comando</p>
-<pre><code>NAME                       READY   STATUS              RESTARTS   AGE
-rancher-58b56d54df-7mv7d   0/1     ContainerCreating   0          29s
-rancher-58b56d54df-csmpl   0/1     ContainerCreating   0          29s
-rancher-58b56d54df-pkpz6   0/1     ContainerCreating   0          29s
-</code></pre>
-<p>aguarde e verifique novamente, use o mesmo comando</p>
-<pre><code>kubectl get pods -n cattle-system
-</code></pre>
-<p>saída</p>
-<pre><code>NAME                       READY   STATUS    RESTARTS   AGE
-rancher-58b56d54df-7mv7d   0/1     Running   0          41s
-rancher-58b56d54df-csmpl   0/1     Running   0          41s
-rancher-58b56d54df-pkpz6   0/1     Running   0          41s
-</code></pre>
-<p>rancher instalado e rodando!</p>
-<h3 id="pós-instalação">pós instalação</h3>
-<p>observe a saída do comando helm, ele vai te dizer como pegar a senha gerada para o primeiro acesso, depois disso, acesse o rancher via web através da URL definida e siga as os procedimentos para trocar a senha e iniciar o uso do seu rancher.</p>
-<h3 id="refs">refs</h3>
-<ul>
-<li><a href="https://rancher.com/docs/rancher/v2.6/en/installation/install-rancher-on-k8s/">https://rancher.com/docs/rancher/v2.6/en/installation/install-rancher-on-k8s/</a></li>
-<li><a href="https://rancher.com/docs/rancher/v2.6/en/installation/resources/k8s-tutorials/infrastructure-tutorials/infra-for-ha/">https://rancher.com/docs/rancher/v2.6/en/installation/resources/k8s-tutorials/infrastructure-tutorials/infra-for-ha/</a></li>
-</ul>
-<p>:)</p>
-
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>Ferramentas APM open source Self-Hosted</title>
-        <author>
-            <name>Guto Carvalho</name>
-        </author>
-        <link href="https://gutocarvalho.net/ferramentas-open-source-apm/"/>
-        <id>https://gutocarvalho.net/ferramentas-open-source-apm/</id>
-            <category term="Projetos"/>
-
-        <updated>2021-10-17T16:34:29-03:00</updated>
-            <summary>
-                <![CDATA[
-                    Conheça algumas ferramentas open source para APM para seus projetos Estude e&hellip;
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                <p>Conheça algumas ferramentas open source para APM para seus projetos</p>
-<hr>
-<p>Estude e avalie essas boas ferramentas que você pode usar em seu projeto e infraestrutura.</p>
-<h2 id="apache-skywalking">Apache Skywalking</h2>
-<p>Site do projeto: <a href="https://skywalking.apache.org/">https://skywalking.apache.org/</a></p>
-<p>GitHub do projeto: 14.7k stars e 250+ contributors</p>
-<p>Recomendado para APPs rodando em Cloud e API.</p>
-<p>Se você está imerso no universo de API, microserviços, kubernetes e cloud native esse é o projeto para você, ele foi desenhado para Cloud e API sendo hoje um dos maiores, mais respeitados e ativos do GitHub.</p>
-<p>Há quem diga que é o melhor nesse segmento hoje.</p>
-<h2 id="pinpoint">PinPoint</h2>
-<p>Site do projeto: <a href="https://github.com/naver/pinpoint">https://github.com/naver/pinpoint</a></p>
-<p>GitHub 10.8k stars e 90+ contributors</p>
-<p>Acho que o PinPoint é o preferido da galera de JAVA em 2021, é bem conhecido e vastamente utilizado.</p>
-<p>Recomendado para APPs JAVA ou Python</p>
-<p>Baseado no Google’s Dapper.</p>
-<h2 id="stagemonitor">StageMonitor</h2>
-<p>Site do projeto <a href="https://www.stagemonitor.org">https://www.stagemonitor.org</a></p>
-<p>GitHub 1.6k stars e 24+ contributors</p>
-<p>Recomendado para JAVA, tem compatibilidade e integração com OpenTracing.</p>
-<h2 id="scouter">Scouter</h2>
-<p>Site do projeto <a href="https://github.com/scouter-project/scouter">https://github.com/scouter-project/scouter</a></p>
-<p>GitHub 1.8k starts e 40+ contributors.</p>
-<p>Inspirado no New Relic e APP Dynamics, é uma aplicação modular e bastante extensível.</p>
-<p>Oferece interações nativas com Telegraf e Zipkin.</p>
-<p>Tem agente nativo para java, linux, unix e até windows.</p>
-<p>Monitora nativamente (usando telegraph)</p>
-<ul>
-<li>Redis</li>
-<li>Nginx</li>
-<li>Apache HTTPd</li>
-<li>HAProxy</li>
-<li>Kafka</li>
-<li>MySQL</li>
-<li>MongoDB</li>
-<li>RabbitMQ</li>
-<li>ElasticSearch</li>
-<li>Kubernetes</li>
-<li>Mesos</li>
-</ul>
-<p>Instrumenta nativamente:</p>
-<ul>
-<li>C#</li>
-<li>GO</li>
-<li>Java</li>
-<li>JavaScript</li>
-<li>Ruby</li>
-<li>Scala</li>
-<li>PHP</li>
-</ul>
-<p>Instrumentação extendida via código da comunidade</p>
-<ul>
-<li>C++</li>
-<li>Python</li>
-<li>Clojure</li>
-<li>Elixir</li>
-<li>Lua</li>
-</ul>
-<p>Veja dados completos da instrumentação</p>
-<ul>
-<li><a href="https://zipkin.io/pages/tracers_instrumentation.html">https://zipkin.io/pages/tracers_instrumentation.html</a> </li>
-</ul>
-<h2 id="app-metrics">APP Metrics</h2>
-<p>Site do projeto <a href="https://www.app-metrics.io/">https://www.app-metrics.io/</a></p>
-<p>GitHub 2k starts e 40+ contributors</p>
-<p>Recomendado para APPs .Net.</p>
-<p>Se o seu negócio é .NET o APP Metrics é a ferramenta pra você e seu time.</p>
-<h2 id="inspectit-ocelot">InspectIT Ocelot</h2>
-<p>Site do projeto: <a href="https://github.com/inspectIT/inspectit-ocelot">https://github.com/inspectIT/inspectit-ocelot</a></p>
-<p>GitHub 158 starts e 25+ contributors</p>
-<p>Esse é um projeto novo, o caçula da turma, mas tem muito potencial.</p>
-<p>Ele tem uma pegada na fácil configuração, aliás zero configuração e uma boa oferta nativa de métricas.</p>
-<p>E isso, bons estudos!</p>
-<p>[s]</p>
 
             ]]>
         </content>
