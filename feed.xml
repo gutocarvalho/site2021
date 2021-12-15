@@ -3,12 +3,33 @@
     <title>Guto@Site</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2021-11-19T06:53:03-04:00</updated>
+    <updated>2021-12-15T08:22:06-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
     <id>https://gutocarvalho.net</id>
 
+    <entry>
+        <title>Teste de carga com ajuda do vegeta?</title>
+        <author>
+            <name>Guto Carvalho</name>
+        </author>
+        <link href="https://gutocarvalho.net/teste-de-carga-com-ajuda-do-vegeta/"/>
+        <id>https://gutocarvalho.net/teste-de-carga-com-ajuda-do-vegeta/</id>
+            <category term="MindNotes"/>
+
+        <updated>2021-12-15T08:21:21-03:00</updated>
+            <summary>
+                <![CDATA[
+                    Quer fazer um teste de carga? Conheça o Vegeta! https://github.com/tsenart/vegeta É só&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <figure class="post__image">Quer fazer um teste de carga?<br><br>Conheça o Vegeta!<br><br><img loading="lazy"  src="https://camo.githubusercontent.com/faf9be097f4731212debdd24210c750b2dc276d0a17df19c6a8ac026427c09e9/687474703a2f2f666330392e64657669616e746172742e6e65742f667334392f692f323030392f3139382f632f632f73736a325f7665676574615f62795f7472756e6b7332342e6a7067" data-is-external-image="true"  alt="" width="600" height="852"></figure><br><br><a href="https://github.com/tsenart/vegeta">https://github.com/tsenart/vegeta</a><br><br>É só isso mesmo.<br><br>[s]</p>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>Entendendo service mesh</title>
         <author>
@@ -16,8 +37,9 @@
         </author>
         <link href="https://gutocarvalho.net/entendendo-o-service-mesh/"/>
         <id>https://gutocarvalho.net/entendendo-o-service-mesh/</id>
+            <category term="TLDR"/>
 
-        <updated>2021-11-19T06:53:03-04:00</updated>
+        <updated>2021-12-15T08:22:06-03:00</updated>
             <summary>
                 <![CDATA[
                     <p>Venha entender o que é service mesh!</p>
@@ -41,7 +63,7 @@
         <id>https://gutocarvalho.net/dashboards-para-k8s/</id>
             <category term="MindNotes"/>
 
-        <updated>2021-11-18T09:54:36-04:00</updated>
+        <updated>2021-11-18T10:54:36-03:00</updated>
             <summary>
                 <![CDATA[
                     Quer usar Dashboards para o Kubernetes? Bora! Algumas opções bastante conhecidas Projetos&hellip;
@@ -99,7 +121,7 @@
             <category term="K8S"/>
             <category term="Drops"/>
 
-        <updated>2021-11-08T15:32:24-04:00</updated>
+        <updated>2021-11-08T16:32:24-03:00</updated>
             <summary>
                 <![CDATA[
                     Aprendar a instalar o Istio via Helm em poucos passos. O Istio&hellip;
@@ -226,7 +248,7 @@ customresourcedefinition.apiextensions.k8s.io &quot;workloadgroups.networking.is
         <id>https://gutocarvalho.net/dicas-sobre-quadros-e-canetas/</id>
             <category term="Casa"/>
 
-        <updated>2021-11-06T05:28:30-04:00</updated>
+        <updated>2021-11-06T06:28:30-03:00</updated>
             <summary>
                 <![CDATA[
                     <p>Pessoal, seguem algumas dicas sobre quadros para escrever em casa.</p>
@@ -283,7 +305,7 @@ customresourcedefinition.apiextensions.k8s.io &quot;workloadgroups.networking.is
             <category term="K8S"/>
             <category term="Drops"/>
 
-        <updated>2021-11-02T10:37:55-04:00</updated>
+        <updated>2021-11-02T11:37:55-03:00</updated>
             <summary>
                 <![CDATA[
                     Aprende aí como fazer isso com uma mão nas costas! Criando um&hellip;
@@ -327,7 +349,7 @@ $ export KUBECONFIG=config
             <category term="K8S"/>
             <category term="Drops"/>
 
-        <updated>2021-10-25T07:03:34-04:00</updated>
+        <updated>2021-10-25T08:03:34-03:00</updated>
             <summary>
                 <![CDATA[
                     Aprenda a usar o EFS Provisioner em um Cluster K8S EC2/RKE. São&hellip;
@@ -563,7 +585,7 @@ Events:
             <category term="Projetos"/>
             <category term="Drops"/>
 
-        <updated>2021-10-22T08:47:50-04:00</updated>
+        <updated>2021-10-22T09:47:50-03:00</updated>
             <summary>
                 <![CDATA[
                     Aprenda a instalar o LOKI da GrafanaLabs para centralizar Logs do K8S.
@@ -639,7 +661,7 @@ helm repo update
             <category term="Projetos"/>
             <category term="Drops"/>
 
-        <updated>2021-10-22T08:14:26-04:00</updated>
+        <updated>2021-10-22T09:14:26-03:00</updated>
             <summary>
                 <![CDATA[
                     Aprenda a instalar o novíssimo Rancher 2.6 em modo HA. São DUMPs&hellip;
@@ -1104,7 +1126,7 @@ rancher-58b56d54df-pkpz6   0/1     Running   0          41s
         <id>https://gutocarvalho.net/ferramentas-open-source-apm/</id>
             <category term="Projetos"/>
 
-        <updated>2021-10-17T15:34:29-04:00</updated>
+        <updated>2021-10-17T16:34:29-03:00</updated>
             <summary>
                 <![CDATA[
                     Conheça algumas ferramentas open source para APM para seus projetos Estude e&hellip;
@@ -1185,53 +1207,6 @@ rancher-58b56d54df-pkpz6   0/1     Running   0          41s
 <p>Ele tem uma pegada na fácil configuração, aliás zero configuração e uma boa oferta nativa de métricas.</p>
 <p>E isso, bons estudos!</p>
 <p>[s]</p>
-
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>DROPS: Fazer Port Forward no K8S é fácil :)</title>
-        <author>
-            <name>Guto Carvalho</name>
-        </author>
-        <link href="https://gutocarvalho.net/k8s-port-forward-facil/"/>
-        <id>https://gutocarvalho.net/k8s-port-forward-facil/</id>
-            <category term="K8S"/>
-            <category term="Drops"/>
-
-        <updated>2021-11-04T08:51:39-04:00</updated>
-            <summary>
-                <![CDATA[
-                    Aprenda a se conectar em um serviço K8S sem exposição! São DUMPs&hellip;
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                <p>Aprenda a se conectar em um serviço K8S sem exposição!</p>
-<hr>
-<h3 id="o-que-são-drops">O que são drops?</h3>
-<p>São DUMPs mentais rápidos e rasteiros, simples e objetivos – que funcionam. </p>
-<p>Geralmente de algo que eu acabei de fazer.</p>
-<p>Eu – quase sempre – volto para detalhar mais cada passo.</p>
-<p>Considere com a mesma qualidade de um rascunho ou uma anotação rápida.</p>
-<p>De qualquer forma comenta ai qquer coisa, os comentários estão ligados nos DROPS ;)</p>
-<h3 id="demanda">Demanda!</h3>
-<p>Preciso me conectar em um Mongo no cluster sem expor ele para o mundo.</p>
-<h3 id="comofaz">ComoFaz?</h3>
-<p>Vamos usar o port-forward, veja como a sintaxe é simples</p>
-<pre><code>kubectl port-forward nome_do_pod porta_local:portal_cluster -n seu_namespace
-</code></pre>
-<p>Exemplo!</p>
-<pre><code>kubectl port-forward mongodb-replicaset-0 28015:27017 -n seu_namespace
-</code></pre>
-<p>E como eu acho a porta certa</p>
-<pre><code>kubectl get pod mongodb-replicaset-0 --template=&#39;{{(index (index .spec.containers 0).ports 0).containerPort}}{{&quot;\n&quot;}}&#39; -n seu_namespace
-</code></pre>
-<p>Prontinho!</p>
-<h3 id="refs">Refs</h3>
-<ul>
-<li><a href="https://kubernetes.io/docs/tasks/access-application-cluster/port-forward-access-application-cluster/">https://kubernetes.io/docs/tasks/access-application-cluster/port-forward-access-application-cluster/</a></li>
-</ul>
 
             ]]>
         </content>

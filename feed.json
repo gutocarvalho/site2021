@@ -10,6 +10,21 @@
     },
     "items": [
         {
+            "id": "https://gutocarvalho.net/teste-de-carga-com-ajuda-do-vegeta/",
+            "url": "https://gutocarvalho.net/teste-de-carga-com-ajuda-do-vegeta/",
+            "title": "Teste de carga com ajuda do vegeta?",
+            "summary": "Quer fazer um teste de carga? Conheça o Vegeta! https://github.com/tsenart/vegeta É só&hellip;",
+            "content_html": "<figure class=\"post__image\">Quer fazer um teste de carga?<br><br>Conheça o Vegeta!<br><br><img loading=\"lazy\"  src=\"https://camo.githubusercontent.com/faf9be097f4731212debdd24210c750b2dc276d0a17df19c6a8ac026427c09e9/687474703a2f2f666330392e64657669616e746172742e6e65742f667334392f692f323030392f3139382f632f632f73736a325f7665676574615f62795f7472756e6b7332342e6a7067\" data-is-external-image=\"true\"  alt=\"\" width=\"600\" height=\"852\"></figure><br><br><a href=\"https://github.com/tsenart/vegeta\">https://github.com/tsenart/vegeta</a><br><br>É só isso mesmo.<br><br>[s]</p>",
+            "author": {
+                "name": "Guto Carvalho"
+            },
+            "tags": [
+                   "MindNotes"
+            ],
+            "date_published": "2021-12-15T08:20:31-03:00",
+            "date_modified": "2021-12-15T08:21:21-03:00"
+        },
+        {
             "id": "https://gutocarvalho.net/entendendo-o-service-mesh/",
             "url": "https://gutocarvalho.net/entendendo-o-service-mesh/",
             "title": "Entendendo service mesh",
@@ -19,9 +34,10 @@
                 "name": "Guto Carvalho"
             },
             "tags": [
+                   "TLDR"
             ],
-            "date_published": "2021-11-19T06:33:28-04:00",
-            "date_modified": "2021-11-19T06:53:03-04:00"
+            "date_published": "2021-11-19T07:33:28-03:00",
+            "date_modified": "2021-12-15T08:22:06-03:00"
         },
         {
             "id": "https://gutocarvalho.net/dashboards-para-k8s/",
@@ -35,8 +51,8 @@
             "tags": [
                    "MindNotes"
             ],
-            "date_published": "2021-11-18T09:28:11-04:00",
-            "date_modified": "2021-11-18T09:54:36-04:00"
+            "date_published": "2021-11-18T10:28:11-03:00",
+            "date_modified": "2021-11-18T10:54:36-03:00"
         },
         {
             "id": "https://gutocarvalho.net/instalando-istio-via-helm-para-testes/",
@@ -52,8 +68,8 @@
                    "K8S",
                    "Drops"
             ],
-            "date_published": "2021-11-08T15:29:04-04:00",
-            "date_modified": "2021-11-08T15:32:24-04:00"
+            "date_published": "2021-11-08T16:29:04-03:00",
+            "date_modified": "2021-11-08T16:32:24-03:00"
         },
         {
             "id": "https://gutocarvalho.net/dicas-sobre-quadros-e-canetas/",
@@ -67,8 +83,8 @@
             "tags": [
                    "Casa"
             ],
-            "date_published": "2021-11-05T13:04:25-04:00",
-            "date_modified": "2021-11-06T05:28:30-04:00"
+            "date_published": "2021-11-05T14:04:25-03:00",
+            "date_modified": "2021-11-06T06:28:30-03:00"
         },
         {
             "id": "https://gutocarvalho.net/criando-um-cluster-k8s-com-eksctl/",
@@ -83,8 +99,8 @@
                    "K8S",
                    "Drops"
             ],
-            "date_published": "2021-11-02T08:48:13-04:00",
-            "date_modified": "2021-11-02T10:37:55-04:00"
+            "date_published": "2021-11-02T09:48:13-03:00",
+            "date_modified": "2021-11-02T11:37:55-03:00"
         },
         {
             "id": "https://gutocarvalho.net/usando-efs-em-um-cluster-k8s-ec2/",
@@ -99,8 +115,8 @@
                    "K8S",
                    "Drops"
             ],
-            "date_published": "2021-10-24T10:06:27-04:00",
-            "date_modified": "2021-10-25T07:03:34-04:00"
+            "date_published": "2021-10-24T11:06:27-03:00",
+            "date_modified": "2021-10-25T08:03:34-03:00"
         },
         {
             "id": "https://gutocarvalho.net/centralizando-logs-do-k8s-com-o-loki/",
@@ -115,8 +131,8 @@
                    "Projetos",
                    "Drops"
             ],
-            "date_published": "2021-10-22T08:43:24-04:00",
-            "date_modified": "2021-10-22T08:47:50-04:00"
+            "date_published": "2021-10-22T09:43:24-03:00",
+            "date_modified": "2021-10-22T09:47:50-03:00"
         },
         {
             "id": "https://gutocarvalho.net/drops-instalando-rancher-26-em-ha/",
@@ -131,8 +147,8 @@
                    "Projetos",
                    "Drops"
             ],
-            "date_published": "2021-10-22T08:09:24-04:00",
-            "date_modified": "2021-10-22T08:14:26-04:00"
+            "date_published": "2021-10-22T09:09:24-03:00",
+            "date_modified": "2021-10-22T09:14:26-03:00"
         },
         {
             "id": "https://gutocarvalho.net/ferramentas-open-source-apm/",
@@ -146,24 +162,8 @@
             "tags": [
                    "Projetos"
             ],
-            "date_published": "2021-10-17T15:29:13-04:00",
-            "date_modified": "2021-10-17T15:34:29-04:00"
-        },
-        {
-            "id": "https://gutocarvalho.net/k8s-port-forward-facil/",
-            "url": "https://gutocarvalho.net/k8s-port-forward-facil/",
-            "title": "DROPS: Fazer Port Forward no K8S é fácil :)",
-            "summary": "Aprenda a se conectar em um serviço K8S sem exposição! São DUMPs&hellip;",
-            "content_html": "<p>Aprenda a se conectar em um serviço K8S sem exposição!</p>\n<hr>\n<h3 id=\"o-que-são-drops\">O que são drops?</h3>\n<p>São DUMPs mentais rápidos e rasteiros, simples e objetivos – que funcionam. </p>\n<p>Geralmente de algo que eu acabei de fazer.</p>\n<p>Eu – quase sempre – volto para detalhar mais cada passo.</p>\n<p>Considere com a mesma qualidade de um rascunho ou uma anotação rápida.</p>\n<p>De qualquer forma comenta ai qquer coisa, os comentários estão ligados nos DROPS ;)</p>\n<h3 id=\"demanda\">Demanda!</h3>\n<p>Preciso me conectar em um Mongo no cluster sem expor ele para o mundo.</p>\n<h3 id=\"comofaz\">ComoFaz?</h3>\n<p>Vamos usar o port-forward, veja como a sintaxe é simples</p>\n<pre><code>kubectl port-forward nome_do_pod porta_local:portal_cluster -n seu_namespace\n</code></pre>\n<p>Exemplo!</p>\n<pre><code>kubectl port-forward mongodb-replicaset-0 28015:27017 -n seu_namespace\n</code></pre>\n<p>E como eu acho a porta certa</p>\n<pre><code>kubectl get pod mongodb-replicaset-0 --template=&#39;{{(index (index .spec.containers 0).ports 0).containerPort}}{{&quot;\\n&quot;}}&#39; -n seu_namespace\n</code></pre>\n<p>Prontinho!</p>\n<h3 id=\"refs\">Refs</h3>\n<ul>\n<li><a href=\"https://kubernetes.io/docs/tasks/access-application-cluster/port-forward-access-application-cluster/\">https://kubernetes.io/docs/tasks/access-application-cluster/port-forward-access-application-cluster/</a></li>\n</ul>\n",
-            "author": {
-                "name": "Guto Carvalho"
-            },
-            "tags": [
-                   "K8S",
-                   "Drops"
-            ],
-            "date_published": "2021-10-15T04:43:22-04:00",
-            "date_modified": "2021-11-04T08:51:39-04:00"
+            "date_published": "2021-10-17T16:29:13-03:00",
+            "date_modified": "2021-10-17T16:34:29-03:00"
         }
     ]
 }
