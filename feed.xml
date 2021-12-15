@@ -3,12 +3,35 @@
     <title>Guto@Site</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2021-12-15T08:54:16-03:00</updated>
+    <updated>2021-12-15T08:59:53-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
     <id>https://gutocarvalho.net</id>
 
+    <entry>
+        <title>Kubestack, terraform gitops framework for k8s</title>
+        <author>
+            <name>Guto Carvalho</name>
+        </author>
+        <link href="https://gutocarvalho.net/kubestack-preciso-testar/"/>
+        <id>https://gutocarvalho.net/kubestack-preciso-testar/</id>
+            <category term="MindNotes"/>
+
+        <updated>2021-12-15T08:59:53-03:00</updated>
+            <summary>
+                <![CDATA[
+                    O kubestack é um projeto open source que traz um framework gitops&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p>O kubestack é um projeto open source que traz um framework gitops para você gerenciar seu kubernetes, tudo usando Terraform.</p>
+<p>Já testei? Não<br><br>Quero testar? Sim<br><br>Vai lá conhecer =&gt; <a href="https://www.kubestack.com/">https://www.kubestack.com/</a></p>
+<p>[s]</p>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>Keptn, outro projeto para ficar de olho!</title>
         <author>
@@ -18,7 +41,7 @@
         <id>https://gutocarvalho.net/keptn-outro-projeto-para-ficar-de-olho/</id>
             <category term="MindNotes"/>
 
-        <updated>2021-12-15T08:54:16-03:00</updated>
+        <updated>2021-12-15T08:55:54-03:00</updated>
             <summary>
                 <![CDATA[
                     O Keptn (fala-se Captain) é um control-plane para automação com mindset devops&hellip;
@@ -620,82 +643,6 @@ Events:
 <li><a href="https://aws.amazon.com/efs/">https://aws.amazon.com/efs/</a></li>
 <li><a href="https://github.com/kubernetes-retired/external-storage/tree/master/aws/efs">https://github.com/kubernetes-retired/external-storage/tree/master/aws/efs</a></li>
 <li><a href="https://icicimov.github.io/blog/virtualization/Kubernetes-NFS-shared-storage-in-AWS-with-EFS/">https://icicimov.github.io/blog/virtualization/Kubernetes-NFS-shared-storage-in-AWS-with-EFS/</a></li>
-</ul>
-
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>DROPS: Centralizando Logs do K8S com o Loki</title>
-        <author>
-            <name>Guto Carvalho</name>
-        </author>
-        <link href="https://gutocarvalho.net/centralizando-logs-do-k8s-com-o-loki/"/>
-        <id>https://gutocarvalho.net/centralizando-logs-do-k8s-com-o-loki/</id>
-            <category term="Projetos"/>
-            <category term="Drops"/>
-
-        <updated>2021-10-22T09:47:50-03:00</updated>
-            <summary>
-                <![CDATA[
-                    Aprenda a instalar o LOKI da GrafanaLabs para centralizar Logs do K8S.
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                <p>Aprenda a instalar o LOKI da GrafanaLabs para centralizar Logs do K8S.</p>
-<hr>
-<h3 id="o-que-são-drops">O que são drops?</h3>
-<p>São DUMPs mentais rápidos e rasteiros, simples e objetivos – que funcionam. </p>
-<p>Geralmente de algo que eu acabei de fazer.</p>
-<p>Eu – quase sempre – volto para detalhar mais cada passo.</p>
-<p>Considere com a mesma qualidade de um rascunho ou uma anotação rápida.</p>
-<p>De qualquer forma comenta ai qquer coisa, os comentários estão ligados nos DROPS ;)</p>
-<h3 id="demanda">Demanda!</h3>
-<p>A ideia é instalar um Loki no cluster K8S e começar a centralizar e consumir os logs via dashboard do grafana.</p>
-<h3 id="por-que-o-loki">Por que o Loki?</h3>
-<p>O Loki é leve – em resumo esse é o maior e melhor motivo para usar ele.</p>
-<p>Comparando com outras STACKS, ele nao leva 1/3 ou 2/3 do seu cluster só para centralizar logs.</p>
-<p>Você acompanha os logs pelo Grafana Dashboard, simples e direto.</p>
-<p>Além disso o projeto tem 14 mil estrelas no GitHub e mais de 400 contribuidores :)</p>
-<p>Conheça mais do projeto, dá um chance vai :)</p>
-<ul>
-<li><a href="https://grafana.com/docs/loki/latest/overview/">https://grafana.com/docs/loki/latest/overview/</a></li>
-<li><a href="https://grafana.com/docs/loki/latest/overview/comparisons/">https://grafana.com/docs/loki/latest/overview/comparisons/</a></li>
-</ul>
-<h3 id="antes-de-começar">Antes de começar</h3>
-<p>Estou partindo do pressuposto de que você não tem o grafana instalado!</p>
-<p>Precisa ter o Helm instalado e um cluster k8s funcional.</p>
-<h3 id="então-comofaz">Então ComoFaz?</h3>
-<p>adicione o repositorio e atualize os índices</p>
-<pre><code>helm repo add grafana https://grafana.github.io/helm-charts
-helm repo update
-</code></pre>
-<p>instale o loki</p>
-<pre><code>helm upgrade --install loki --namespace=loki grafana/loki alertmanager.persistentVolume.enabled=true
-</code></pre>
-<p>instale o grafana</p>
-<pre><code>helm install loki-grafana grafana/grafana
-</code></pre>
-<p>pegue a senha de admin do grafana</p>
-<pre><code>kubectl get secret --namespace &lt;YOUR-NAMESPACE&gt; loki-grafana -o jsonpath=&quot;{.data.admin-password}&quot; | base64 --decode ; echo
-</code></pre>
-<p>crie um port-forward para acessar o grafana</p>
-<pre><code>kubectl port-forward --namespace &lt;YOUR-NAMESPACE&gt; service/loki-grafana 3000:80
-</code></pre>
-<p>acesse o grafana</p>
-<pre><code>http://localhost:3000
-</code></pre>
-<p>adicione o datasource conforme a doc abaixo</p>
-<ul>
-<li><a href="https://grafana.com/docs/loki/latest/getting-started/grafana/">https://grafana.com/docs/loki/latest/getting-started/grafana/</a></li>
-</ul>
-<p>Pronto, divirta-se!</p>
-<h3 id="refs">Refs</h3>
-<ul>
-<li><a href="https://grafana.com/docs/loki/latest/installation/helm/">https://grafana.com/docs/loki/latest/installation/helm/</a></li>
-<li><a href="https://grafana.com/go/webinar/loki-getting-started-emea">https://grafana.com/go/webinar/loki-getting-started-emea</a></li>
-<li><a href="https://grafana.com/blog/2020/10/28/loki-2.0-released-transform-logs-as-youre-querying-them-and-set-up-alerts-within-loki">https://grafana.com/blog/2020/10/28/loki-2.0-released-transform-logs-as-youre-querying-them-and-set-up-alerts-within-loki</a></li>
 </ul>
 
             ]]>
