@@ -3,12 +3,37 @@
     <title>Guto@Site</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2021-12-15T08:59:53-03:00</updated>
+    <updated>2021-12-15T09:10:00-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
     <id>https://gutocarvalho.net</id>
 
+    <entry>
+        <title>Gracefully shutdown pods</title>
+        <author>
+            <name>Guto Carvalho</name>
+        </author>
+        <link href="https://gutocarvalho.net/gracefully-shutdown-pods/"/>
+        <id>https://gutocarvalho.net/gracefully-shutdown-pods/</id>
+            <category term="MindNotes"/>
+
+        <updated>2021-12-15T09:07:05-03:00</updated>
+            <summary>
+                <![CDATA[
+                    <p>Olha esse post aqui explica direitinho, lê aí.</p>
+
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p>Olha esse post aqui explica direitinho, lê aí.</p>
+
+<p>Post!<br><br><a href="https://blog.gruntwork.io/gracefully-shutting-down-pods-in-a-kubernetes-cluster-328aecec90d">https://blog.gruntwork.io/gracefully-shutting-down-pods-in-a-kubernetes-cluster-328aecec90d</a></p>
+<p>[s]</p>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>Kubestack, terraform gitops framework for k8s</title>
         <author>
@@ -18,15 +43,18 @@
         <id>https://gutocarvalho.net/kubestack-preciso-testar/</id>
             <category term="MindNotes"/>
 
-        <updated>2021-12-15T08:59:53-03:00</updated>
+        <updated>2021-12-15T09:08:30-03:00</updated>
             <summary>
                 <![CDATA[
-                    O kubestack é um projeto open source que traz um framework gitops&hellip;
+                    <p>Bora conhecer o kubestack framework, só vem!<br><br></p>
+
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                <p>O kubestack é um projeto open source que traz um framework gitops para você gerenciar seu kubernetes, tudo usando Terraform.</p>
+                <p>Bora conhecer o kubestack framework, só vem!<br><br></p>
+
+<p>O kubestack é um projeto open source que traz um framework gitops para você gerenciar seu kubernetes, tudo usando Terraform.</p>
 <p>Já testei? Não<br><br>Quero testar? Sim<br><br>Vai lá conhecer =&gt; <a href="https://www.kubestack.com/">https://www.kubestack.com/</a></p>
 <p>[s]</p>
             ]]>
@@ -41,15 +69,18 @@
         <id>https://gutocarvalho.net/keptn-outro-projeto-para-ficar-de-olho/</id>
             <category term="MindNotes"/>
 
-        <updated>2021-12-15T08:55:54-03:00</updated>
+        <updated>2021-12-15T09:09:19-03:00</updated>
             <summary>
                 <![CDATA[
-                    O Keptn (fala-se Captain) é um control-plane para automação com mindset devops&hellip;
+                    <p>Venha conhecer um control-plane devops para K8s!</p>
+
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                <p>O Keptn (fala-se Captain) é um control-plane para automação com mindset devops dentro do seu cluster. <br><br>Esse projeto promete – entre outras coisas – te ajudar a manter a qualidade das APPs em seu cluster usando o que eles chamam de quality gates (é o que chamou minha atenção). Os quality gates usam SLIs e SLOs de sua APP para cuidar de sua APP, isso significa que caso você publique algo está fora dos padrões que você indicou, o Keptn faz o rollback para a última versão que tem a performance dentro dos seus indicadores.</p>
+                <p>Venha conhecer um control-plane devops para K8s!</p>
+
+<p>O Keptn (fala-se Captain) é um control-plane para automação com mindset devops dentro do seu cluster. <br><br>Esse projeto promete – entre outras coisas – te ajudar a manter a qualidade das APPs em seu cluster usando o que eles chamam de quality gates (é o que chamou minha atenção). Os quality gates usam SLIs e SLOs de sua APP para cuidar de sua APP, isso significa que caso você publique algo está fora dos padrões que você indicou, o Keptn faz o rollback para a última versão que tem a performance dentro dos seus indicadores.</p>
 <p>Além disso temos recursos como:<br><br>- Multi-stage delivery<br>- Continuous Performance Verification<br>- Configuração declarativa<br>- Automação baseada em eventos<br>- Integração com projetos como Argo, GitHub Actions, Prometheus e +<br>- Observabilidade nativa para poder checar SLIs e SLOs<br><br>E tem muito mais, conheça <a href="https://keptn.sh">https://keptn.sh.</a></p>
 <figure class="post__video"><iframe loading="lazy" width="560" height="314" src="https://www.youtube.com/embed/fjfj97Vb4ds" allowfullscreen="allowfullscreen" data-mce-fragment="1"></iframe></figure>
 <p>É isso povo!<br><br>[s]<br><br></p>
@@ -91,15 +122,18 @@
         <id>https://gutocarvalho.net/teste-de-carga-com-ajuda-do-vegeta/</id>
             <category term="MindNotes"/>
 
-        <updated>2021-12-15T08:21:21-03:00</updated>
+        <updated>2021-12-15T09:09:55-03:00</updated>
             <summary>
                 <![CDATA[
-                    Quer fazer um teste de carga? Conheça o Vegeta! https://github.com/tsenart/vegeta É só&hellip;
+                    <p>Quer conhecer uma ferramente de testar de carga? Vem!<br><br></p>
+
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                <figure class="post__image">Quer fazer um teste de carga?<br><br>Conheça o Vegeta!<br><br><img loading="lazy"  src="https://camo.githubusercontent.com/faf9be097f4731212debdd24210c750b2dc276d0a17df19c6a8ac026427c09e9/687474703a2f2f666330392e64657669616e746172742e6e65742f667334392f692f323030392f3139382f632f632f73736a325f7665676574615f62795f7472756e6b7332342e6a7067" data-is-external-image="true"  alt="" width="600" height="852"></figure><br><br><a href="https://github.com/tsenart/vegeta">https://github.com/tsenart/vegeta</a><br><br>É só isso mesmo.<br><br>[s]</p>
+                <p>Quer conhecer uma ferramente de testar de carga? Vem!<br><br></p>
+
+<figure class="post__image">Conheça o Vegeta!<br><br><img loading="lazy"  src="https://camo.githubusercontent.com/faf9be097f4731212debdd24210c750b2dc276d0a17df19c6a8ac026427c09e9/687474703a2f2f666330392e64657669616e746172742e6e65742f667334392f692f323030392f3139382f632f632f73736a325f7665676574615f62795f7472756e6b7332342e6a7067" data-is-external-image="true"  alt="" width="600" height="852"></figure><br><br><a href="https://github.com/tsenart/vegeta">https://github.com/tsenart/vegeta</a><br><br>É só isso mesmo.<br><br>[s]</p>
             ]]>
         </content>
     </entry>
@@ -112,7 +146,7 @@
         <id>https://gutocarvalho.net/entendendo-o-service-mesh/</id>
             <category term="TLDR"/>
 
-        <updated>2021-12-15T08:22:06-03:00</updated>
+        <updated>2021-12-15T09:10:00-03:00</updated>
             <summary>
                 <![CDATA[
                     <p>Venha entender o que é service mesh!</p>
@@ -408,242 +442,6 @@ $ export KUBECONFIG=config
 <pre><code>$ eksctl delete cluster falagutera
 </code></pre>
 <p>pronto!</p>
-
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>DROPS: Usando EFS em um Cluster K8S EC2</title>
-        <author>
-            <name>Guto Carvalho</name>
-        </author>
-        <link href="https://gutocarvalho.net/usando-efs-em-um-cluster-k8s-ec2/"/>
-        <id>https://gutocarvalho.net/usando-efs-em-um-cluster-k8s-ec2/</id>
-            <category term="K8S"/>
-            <category term="Drops"/>
-
-        <updated>2021-10-25T08:03:34-03:00</updated>
-            <summary>
-                <![CDATA[
-                    Aprenda a usar o EFS Provisioner em um Cluster K8S EC2/RKE. São&hellip;
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                <p>Aprenda a usar o EFS Provisioner em um Cluster K8S EC2/RKE.</p>
-<hr>
-<h3 id="o-que-são-drops">O que são drops?</h3>
-<p>São DUMPs mentais rápidos e rasteiros, simples e objetivos – que funcionam. </p>
-<p>Geralmente de algo que eu acabei de fazer.</p>
-<p>Eu – quase sempre – volto para detalhar mais cada passo.</p>
-<p>Considere com a mesma qualidade de um rascunho ou uma anotação rápida.</p>
-<p>De qualquer forma comenta ai qquer coisa, os comentários estão ligados nos DROPS ;)</p>
-<h3 id="veio-a-demanda">Veio a Demanda!</h3>
-<p>A ideia é instalar um EFS Provisioner no cluster para poder subir APPS que montam o mesmo volume em diferentes PODs.</p>
-<h3 id="então-comofaz">Então ComoFaz?</h3>
-<p>Crie o arquivo instala_efs_provisioner.yaml</p>
-<pre><code>vim aplica.yaml
-</code></pre>
-<p>Insira o conteúdo abaixo</p>
-<pre><code>---
-kind: ClusterRole
-apiVersion: rbac.authorization.k8s.io/v1
-metadata:
-  name: efs-provisioner-runner
-rules:
-  - apiGroups: [&quot;&quot;]
-    resources: [&quot;persistentvolumes&quot;]
-    verbs: [&quot;get&quot;, &quot;list&quot;, &quot;watch&quot;, &quot;create&quot;, &quot;delete&quot;]
-  - apiGroups: [&quot;&quot;]
-    resources: [&quot;persistentvolumeclaims&quot;]
-    verbs: [&quot;get&quot;, &quot;list&quot;, &quot;watch&quot;, &quot;update&quot;]
-  - apiGroups: [&quot;storage.k8s.io&quot;]
-    resources: [&quot;storageclasses&quot;]
-    verbs: [&quot;get&quot;, &quot;list&quot;, &quot;watch&quot;]
-  - apiGroups: [&quot;&quot;]
-    resources: [&quot;events&quot;]
-    verbs: [&quot;create&quot;, &quot;update&quot;, &quot;patch&quot;]
----
-kind: ClusterRoleBinding
-apiVersion: rbac.authorization.k8s.io/v1
-metadata:
-  name: run-efs-provisioner
-subjects:
-  - kind: ServiceAccount
-    name: efs-provisioner
-    namespace: kube-system
-roleRef:
-  kind: ClusterRole
-  name: efs-provisioner-runner
-  apiGroup: rbac.authorization.k8s.io
----
-kind: Role
-apiVersion: rbac.authorization.k8s.io/v1
-metadata:
-  name: leader-locking-efs-provisioner
-rules:
-  - apiGroups: [&quot;&quot;]
-    resources: [&quot;endpoints&quot;]
-    verbs: [&quot;get&quot;, &quot;list&quot;, &quot;watch&quot;, &quot;create&quot;, &quot;update&quot;, &quot;patch&quot;]
----
-kind: RoleBinding
-apiVersion: rbac.authorization.k8s.io/v1
-metadata:
-  name: leader-locking-efs-provisioner
-subjects:
-  - kind: ServiceAccount
-    name: efs-provisioner
-    namespace: kube-system
-roleRef:
-  kind: Role
-  name: leader-locking-efs-provisioner
-  apiGroup: rbac.authorization.k8s.io
----
-apiVersion: v1
-kind: ServiceAccount
-metadata:
-  name: efs-provisioner
----
-kind: Deployment
-apiVersion: apps/v1
-metadata:
-  name: efs-provisioner
-spec:
-  replicas: 1
-  selector:
-    matchLabels:
-      app: efs-provisioner
-  strategy:
-    type: Recreate
-  template:
-    metadata:
-      labels:
-        app: efs-provisioner
-    spec:
-      serviceAccount: efs-provisioner
-      containers:
-        - name: efs-provisioner
-          image: quay.io/external_storage/efs-provisioner:latest
-          env:
-            - name: FILE_SYSTEM_ID
-              valueFrom:
-                configMapKeyRef:
-                  name: efs-provisioner
-                  key: file.system.id
-            - name: AWS_REGION
-              valueFrom:
-                configMapKeyRef:
-                  name: efs-provisioner
-                  key: aws.region
-            - name: DNS_NAME
-              valueFrom:
-                configMapKeyRef:
-                  name: efs-provisioner
-                  key: dns.name
-                  optional: true
-            - name: PROVISIONER_NAME
-              valueFrom:
-                configMapKeyRef:
-                  name: efs-provisioner
-                  key: provisioner.name
-          volumeMounts:
-            - name: pv-volume
-              mountPath: /persistentvolumes
-      volumes:
-        - name: pv-volume
-          nfs:
-            server: fs-&lt;ID DO SEU EFS&gt;.efs.&lt;REGIAO AWS&gt;.amazonaws.com
-            path: /
----
-kind: StorageClass
-apiVersion: storage.k8s.io/v1
-metadata:
-  name: aws-efs
-provisioner: nativetrail.io/aws-efs
----
-apiVersion: v1
-kind: ConfigMap
-metadata:
-  name: efs-provisioner
-data:
-  file.system.id: fs-&lt;ID DO SEU EFS&gt;
-  aws.region: &lt;REGIAO AWS&gt;
-  provisioner.name: nativetrail.io/aws-efs
-  dns.name: &quot;&quot;
-</code></pre>
-<p>Ajuste o ID do seu EFS e região da AWS no manifesto acima, e prestenção, tem que o usar o namespace <strong>kube-system</strong> pois ele é especificado nas <strong>roles</strong> e <strong>serviceaccount</strong>, se instalar o deployment em outro namespace não vai funcionar.</p>
-<pre><code>kubectl apply -f instala_efs_provisioner.yaml -n kube-system
-    
-</code></pre>
-<p>Pronto, vamos verificar</p>
-<pre><code>kubectl get sc
-</code></pre>
-<p>Saída esperada</p>
-<pre><code>NAME                PROVISIONER              RECLAIMPOLICY   VOLUMEBINDINGMODE   ALLOWVOLUMEEXPANSION   AGE
-aws-efs             nativetrail.io/aws-efs   Delete          Immediate           false                  43m
-aws-ebs (default)   ebs.csi.aws.com          Delete          Immediate           false                  3d16h
-</code></pre>
-<p>agora vamos testar, crie o manifesto valida-pod-efs.ym com o conteúdo abaixo</p>
-<pre><code>---
-apiVersion: v1
-kind: PersistentVolumeClaim
-metadata:
-  name: valida-aws-efs
-spec:
-  accessModes:
-    - ReadWriteMany
-  storageClassName: aws-efs
-  resources:
-    requests:
-      storage: 1Gi
-</code></pre>
-<p>aplique</p>
-<pre><code>kubectl apply -f pod-efs.yaml
-</code></pre>
-<p>saída</p>
-<pre><code>persistentvolumeclaim/valida-aws-efs created
-</code></pre>
-<p>vamos ver</p>
-<pre><code>kubectl get pvc valida-aws-efs
-</code></pre>
-<p>saída</p>
-<pre><code>NAME             STATUS   VOLUME                                     CAPACITY   ACCESS MODES   STORAGECLASS   AGE
-valida-aws-efs   Bound    pvc-c524234f-4b07-4248-b328-c6c164dddbc2   1Gi        RWX            aws-efs        3m42s
-</code></pre>
-<p>agora com mais detalhes</p>
-<pre><code>kubectl describe pvc valida-aws-efs
-</code></pre>
-<p>saída</p>
-<pre><code>Name:          valida-aws-efs
-Namespace:     default
-StorageClass:  aws-efs
-Status:        Bound
-Volume:        pvc-c524234f-4b07-4248-b328-c6c164dddbc2
-Labels:        &lt;none&gt;
-Annotations:   pv.kubernetes.io/bind-completed: yes
-               pv.kubernetes.io/bound-by-controller: yes
-               volume.beta.kubernetes.io/storage-provisioner: nativetrail.io/aws-efs
-Finalizers:    [kubernetes.io/pvc-protection]
-Capacity:      1Gi
-Access Modes:  RWX
-VolumeMode:    Filesystem
-Used By:       &lt;none&gt;
-Events:
-  Type    Reason                 Age                    From                                                                                   Message
-  ----    ------                 ----                   ----                                                                                   -------
-  Normal  Provisioning           3m49s                  nativetrail.io/aws-efs_efs-provisioner-644f9f8c8c-n6n48_be97e87c-7e5b-4b42-8756-2adb23a5a105  External provisioner is provisioning volume for claim &quot;default/valida-aws-efs&quot;
-  Normal  ProvisioningSucceeded  3m49s                  nativetrail.io/aws-efs_efs-provisioner-644f9f8c8c-n6n48_be97e87c-7e5b-4b42-8756-2adb23a5a105  Successfully provisioned volume pvc-c524234f-4b07-4248-b328-c6c164dddbc2
-</code></pre>
-<p>Perfeito, tudo funcionando, agora é só usar!</p>
-<p>:)</p>
-<h3 id="refs">refs</h3>
-<ul>
-<li><a href="https://github.com/rancher/rke">https://github.com/rancher/rke</a></li>
-<li><a href="https://kubernetes.io/pt-br/">https://kubernetes.io/pt-br/</a></li>
-<li><a href="https://aws.amazon.com/efs/">https://aws.amazon.com/efs/</a></li>
-<li><a href="https://github.com/kubernetes-retired/external-storage/tree/master/aws/efs">https://github.com/kubernetes-retired/external-storage/tree/master/aws/efs</a></li>
-<li><a href="https://icicimov.github.io/blog/virtualization/Kubernetes-NFS-shared-storage-in-AWS-with-EFS/">https://icicimov.github.io/blog/virtualization/Kubernetes-NFS-shared-storage-in-AWS-with-EFS/</a></li>
-</ul>
 
             ]]>
         </content>
