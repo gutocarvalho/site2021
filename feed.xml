@@ -3,7 +3,7 @@
     <title>Guto@Site</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2022-01-05T18:13:47-03:00</updated>
+    <updated>2022-01-05T18:16:23-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
@@ -18,16 +18,18 @@
         <id>https://gutocarvalho.net/sistemas-de-comentarios-open-source/</id>
             <category term="MindNotes"/>
 
-        <updated>2022-01-05T18:13:47-03:00</updated>
+        <updated>2022-01-05T18:16:23-03:00</updated>
             <summary>
                 <![CDATA[
-                    Eu uso o DISQUS, mas estou buscando alternativas opensource, eis algumas que&hellip;
+                    <p>Eu uso o DISQUS, mas estou buscando alternativas open source para substituir, eis algumas que eu descobri.</p>
+
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                <p>Eu uso o DISQUS, mas estou buscando alternativas opensource, eis algumas que eu descobri:</p>
-<p>Opções interessantes que eu encontrei:</p>
+                <p>Eu uso o DISQUS, mas estou buscando alternativas open source para substituir, eis algumas que eu descobri.</p>
+
+<p>Sistemas de comentários open source</p>
 <p><a href="https://commento.io/">https://commento.io/</a></p>
 <p><a href="https://remark42.com/">https://remark42.com/</a></p>
 <p><a href="https://posativ.org/isso/">https://posativ.org/isso/</a></p>
