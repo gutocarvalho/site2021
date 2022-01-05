@@ -3,7 +3,7 @@
     <title>Guto@Site</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2022-01-05T17:22:33-03:00</updated>
+    <updated>2022-01-05T17:33:59-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
@@ -20,7 +20,7 @@
             <category term="K8S"/>
             <category term="Drops"/>
 
-        <updated>2022-01-05T17:22:27-03:00</updated>
+        <updated>2022-01-05T17:33:53-03:00</updated>
             <summary>
                 <![CDATA[
                     As vezes queremos ver os logs de todos os pods de um&hellip;
@@ -91,7 +91,7 @@ database-v5-yhren      1/1       Running   0          2h</code></pre>
             <category term="K8S"/>
             <category term="Drops"/>
 
-        <updated>2022-01-05T17:22:33-03:00</updated>
+        <updated>2022-01-05T17:33:59-03:00</updated>
             <summary>
                 <![CDATA[
                     <p>Conhece o projeto ksd? Então vem conhecer!</p>
