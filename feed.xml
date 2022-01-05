@@ -3,7 +3,7 @@
     <title>Guto@Site</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2022-01-05T17:33:59-03:00</updated>
+    <updated>2022-01-05T17:35:38-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
@@ -20,7 +20,7 @@
             <category term="K8S"/>
             <category term="Drops"/>
 
-        <updated>2022-01-05T17:33:53-03:00</updated>
+        <updated>2022-01-05T17:35:38-03:00</updated>
             <summary>
                 <![CDATA[
                     As vezes queremos ver os logs de todos os pods de um&hellip;
@@ -53,23 +53,23 @@ database-v5-yhren      1/1       Running   0          2h</code></pre>
 <div>
 <pre class=" language-none"><code class=" language-none">$ kubetail api-backend -n project</code></pre>
 </div>
-<p>Fazendo tail nos logs do primeiro containers nos pods api-backend</p>
+<p>Fazendo tail nos logs do primeiro container nos pods api-backend</p>
 <div>
 <pre class=" language-none"><code class=" language-none">$ kubetail api-backend -c container1 -n project</code></pre>
 </div>
-<p>Fazendo tail nos logs do primeiro containers nos pods api-backend</p>
+<p>Fazendo tail nos logs do container 1 e 2 dos pods api-backend</p>
 <div>
 <pre class=" language-none"><code class=" language-none">$ kubetail api-backend -c container1 -c container2 -n project</code></pre>
 </div>
 <p>Fazendo tail dos logs dos pods api-backend e api-frontend</p>
 <div>
-<pre class=" language-none"><code class=" language-none">$ kubetail app1,app2 -n project</code></pre>
+<pre class=" language-none"><code class=" language-none">$ kubetail api-backend,api-frontend -n project</code></pre>
 </div>
 <p>Fazendo tail no que casar com a expressão regular abaixo</p>
 <div>
 <pre class=" language-none"><code class=" language-none">$ kubetail "^api|.*database.*" --regex -n project</code></pre>
 </div>
-<p>Fazendo tail dos logs do namesapce project</p>
+<p>Fazendo tail dos logs de todos os pods do namesapce project</p>
 <div>
 <pre class=" language-none"><code class=" language-none">$ kubetail -n project</code></pre>
 </div>
