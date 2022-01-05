@@ -3,12 +3,44 @@
     <title>Guto@Site</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2022-01-05T17:35:38-03:00</updated>
+    <updated>2022-01-05T18:13:47-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
     <id>https://gutocarvalho.net</id>
 
+    <entry>
+        <title>Sistemas de comentários open source</title>
+        <author>
+            <name>Guto Carvalho</name>
+        </author>
+        <link href="https://gutocarvalho.net/sistemas-de-comentarios-open-source/"/>
+        <id>https://gutocarvalho.net/sistemas-de-comentarios-open-source/</id>
+            <category term="MindNotes"/>
+
+        <updated>2022-01-05T18:13:47-03:00</updated>
+            <summary>
+                <![CDATA[
+                    Eu uso o DISQUS, mas estou buscando alternativas opensource, eis algumas que&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p>Eu uso o DISQUS, mas estou buscando alternativas opensource, eis algumas que eu descobri:</p>
+<p>Opções interessantes que eu encontrei:</p>
+<p><a href="https://commento.io/">https://commento.io/</a></p>
+<p><a href="https://remark42.com/">https://remark42.com/</a></p>
+<p><a href="https://posativ.org/isso/">https://posativ.org/isso/</a></p>
+<p><a href="https://github.com/phusion/juvia">https://github.com/phusion/juvia</a></p>
+<p><a href="https://github.com/jacobwb/hashover">https://github.com/jacobwb/hashover</a></p>
+<p><a href="https://github.com/schn4ck/schnack">https://github.com/schn4ck/schnack</a></p>
+<p><a href="https://github.com/xCss/Valine">https://github.com/xCss/Valine</a><br><br><a href="https://github.com/commentics/commentics">https://github.com/commentics/commentics</a><br><br><a href="https://github.com/vkuznecovas/mouthful">https://github.com/vkuznecovas/mouthful</a><br><br><a href="https://cusdis.com/">https://cusdis.com/</a><br><br><a href="https://github.com/gitalk/gitalk">https://github.com/gitalk/gitalk</a></p>
+<p>References</p>
+<p>- <a href="https://ourcodeworld.com/articles/read/1265/top-7-best-open-source-self-hosted-comment-system-alternatives-to-disqus">https://ourcodeworld.com/articles/read/1265/top-7-best-open-source-self-hosted-comment-system-alternatives-to-disqus</a><br>- <a href="https://lisakov.com/projects/open-source-comments/">https://lisakov.com/projects/open-source-comments/</a><br>- <a href="https://www.findbestopensource.com/tagged/commenting-engine">https://www.findbestopensource.com/tagged/commenting-engine</a><br>- <a href="https://nestify.io/blog/11-best-disqus-alternatives-you-should-try">https://nestify.io/blog/11-best-disqus-alternatives-you-should-try</a></p>
+<p>[s]<br>Guto</p>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>Usando o kubetail para ver logs no K8S</title>
         <author>
@@ -346,135 +378,6 @@ database-v5-yhren      1/1       Running   0          2h</code></pre>
 <li><a href="https://codeberg.org/hjacobs/kube-resource-report">https://codeberg.org/hjacobs/kube-resource-report</a></li>
 </ul>
 <p>[s]</p>
-
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>DROPS: Instalando ISTIO via helm para testes</title>
-        <author>
-            <name>Guto Carvalho</name>
-        </author>
-        <link href="https://gutocarvalho.net/instalando-istio-via-helm-para-testes/"/>
-        <id>https://gutocarvalho.net/instalando-istio-via-helm-para-testes/</id>
-            <category term="Projetos"/>
-            <category term="K8S"/>
-            <category term="Drops"/>
-
-        <updated>2021-11-08T16:32:24-03:00</updated>
-            <summary>
-                <![CDATA[
-                    Aprendar a instalar o Istio via Helm em poucos passos. O Istio&hellip;
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                <p>Aprendar a instalar o Istio via Helm em poucos passos.</p>
-<hr>
-<p>O Istio é uma implementação de service mesh, falaremos oq é isso em outro post!</p>
-<h2 id="instalando">Instalando</h2>
-<p>crie um diretório</p>
-<pre><code>$ mkdir istio &amp;&amp; cd istio
-</code></pre>
-<p>baixe o pacote</p>
-<pre><code>$ curl -L https://istio.io/downloadIstio | ISTIO_VERSION=1.11.4 TARGET_ARCH=x86_64 sh -
-</code></pre>
-<p>Crie o namespace</p>
-<pre><code>$ kubectl create namespace istio-system 
-</code></pre>
-<p>Instale o pacote base (CRD’s)</p>
-<pre><code>$ helm install istio-base istio-1.11.4/manifests/charts/base -n istio-system
-</code></pre>
-<p>Instale o istiod (Services)</p>
-<pre><code>$ helm install istiod istio-1.11.4/manifests/charts/istio-control/istio-discovery -n istio-system
-</code></pre>
-<p>Instale o istio ingress (opcional)</p>
-<pre><code>$ helm install istio-ingress istio-1.11.4/manifests/charts/gateways/istio-ingress -n istio-system
-</code></pre>
-<p>Instale o istio egress (opcional)</p>
-<pre><code>$ helm install istio-egress istio-1.11.4/manifests/charts/gateways/istio-egress -n istio-system
-</code></pre>
-<h2 id="validando">Validando</h2>
-<p>Verifique</p>
-<pre><code>$ kubectl get pods -n istio-system
-</code></pre>
-<p>Saída esperada</p>
-<pre><code>NAME                                    READY   STATUS    RESTARTS   AGE
-istio-egressgateway-6674469d89-zz4h8    1/1     Running   0          12m
-istio-ingressgateway-55cf46987b-5lcxj   1/1     Running   0          13m
-istiod-7556556fcc-7bcf8                 1/1     Running   0          13m
-</code></pre>
-<p>Verifique</p>
-<pre><code>$ kubectl get istio-io --all-namespaces
-</code></pre>
-<p>Saída esperada</p>
-<pre><code>NAMESPACE      NAME                                                         AGE
-istio-system   envoyfilter.networking.istio.io/metadata-exchange-1.10       13m
-istio-system   envoyfilter.networking.istio.io/metadata-exchange-1.11       13m
-istio-system   envoyfilter.networking.istio.io/metadata-exchange-1.9        13m
-istio-system   envoyfilter.networking.istio.io/stats-filter-1.10            13m
-istio-system   envoyfilter.networking.istio.io/stats-filter-1.11            13m
-istio-system   envoyfilter.networking.istio.io/stats-filter-1.9             13m
-istio-system   envoyfilter.networking.istio.io/tcp-metadata-exchange-1.10   13m
-istio-system   envoyfilter.networking.istio.io/tcp-metadata-exchange-1.11   13m
-istio-system   envoyfilter.networking.istio.io/tcp-metadata-exchange-1.9    13m
-istio-system   envoyfilter.networking.istio.io/tcp-stats-filter-1.10        13m
-istio-system   envoyfilter.networking.istio.io/tcp-stats-filter-1.11        13m
-istio-system   envoyfilter.networking.istio.io/tcp-stats-filter-1.9         13m
-</code></pre>
-<h2 id="removendo">Removendo</h2>
-<p>Numa tacada só</p>
-<pre><code>$ helm uninstall istio-base istio-egress istio-ingress istiod -n istio-system
-</code></pre>
-<p>Saída esperada</p>
-<pre><code>release &quot;istio-base&quot; uninstalled
-release &quot;istio-egress&quot; uninstalled
-release &quot;istio-ingress&quot; uninstalled
-release &quot;istiod&quot; uninstalled
-</code></pre>
-<p>Removendo o namespace</p>
-<pre><code>$ kubectl delete namespace istio-system
-</code></pre>
-<pre><code>namespace &quot;istio-system&quot; deleted
-</code></pre>
-<p>Removendo CRDs</p>
-<pre><code>$ kubectl get crd | grep --color=never &#39;istio.io&#39; | awk &#39;{print $1}&#39;| xargs -n1 kubectl delete crd
-</code></pre>
-<p>Saída esperada</p>
-<pre><code>customresourcedefinition.apiextensions.k8s.io &quot;adapters.config.istio.io&quot; deleted
-customresourcedefinition.apiextensions.k8s.io &quot;attributemanifests.config.istio.io&quot; deleted
-customresourcedefinition.apiextensions.k8s.io &quot;authorizationpolicies.security.istio.io&quot; deleted
-customresourcedefinition.apiextensions.k8s.io &quot;clusterrbacconfigs.rbac.istio.io&quot; deleted
-customresourcedefinition.apiextensions.k8s.io &quot;destinationrules.networking.istio.io&quot; deleted
-customresourcedefinition.apiextensions.k8s.io &quot;envoyfilters.networking.istio.io&quot; deleted
-customresourcedefinition.apiextensions.k8s.io &quot;gateways.networking.istio.io&quot; deleted
-customresourcedefinition.apiextensions.k8s.io &quot;handlers.config.istio.io&quot; deleted
-customresourcedefinition.apiextensions.k8s.io &quot;httpapispecbindings.config.istio.io&quot; deleted
-customresourcedefinition.apiextensions.k8s.io &quot;httpapispecs.config.istio.io&quot; deleted
-customresourcedefinition.apiextensions.k8s.io &quot;instances.config.istio.io&quot; deleted
-customresourcedefinition.apiextensions.k8s.io &quot;istiooperators.install.istio.io&quot; deleted
-customresourcedefinition.apiextensions.k8s.io &quot;peerauthentications.security.istio.io&quot; deleted
-customresourcedefinition.apiextensions.k8s.io &quot;quotaspecbindings.config.istio.io&quot; deleted
-customresourcedefinition.apiextensions.k8s.io &quot;quotaspecs.config.istio.io&quot; deleted
-customresourcedefinition.apiextensions.k8s.io &quot;rbacconfigs.rbac.istio.io&quot; deleted
-customresourcedefinition.apiextensions.k8s.io &quot;requestauthentications.security.istio.io&quot; deleted
-customresourcedefinition.apiextensions.k8s.io &quot;rules.config.istio.io&quot; deleted
-customresourcedefinition.apiextensions.k8s.io &quot;serviceentries.networking.istio.io&quot; deleted
-customresourcedefinition.apiextensions.k8s.io &quot;servicerolebindings.rbac.istio.io&quot; deleted
-customresourcedefinition.apiextensions.k8s.io &quot;serviceroles.rbac.istio.io&quot; deleted
-customresourcedefinition.apiextensions.k8s.io &quot;sidecars.networking.istio.io&quot; deleted
-customresourcedefinition.apiextensions.k8s.io &quot;telemetries.telemetry.istio.io&quot; deleted
-customresourcedefinition.apiextensions.k8s.io &quot;templates.config.istio.io&quot; deleted
-customresourcedefinition.apiextensions.k8s.io &quot;virtualservices.networking.istio.io&quot; deleted
-customresourcedefinition.apiextensions.k8s.io &quot;workloadentries.networking.istio.io&quot; deleted
-customresourcedefinition.apiextensions.k8s.io &quot;workloadgroups.networking.istio.io&quot; deleted
-</code></pre>
-<h2 id="refs">Refs</h2>
-<ul>
-<li><a href="https://istio.io/latest/docs/setup/getting-started/">https://istio.io/latest/docs/setup/getting-started/</a></li>
-<li><a href="https://istio.io/latest/docs/setup/install/">https://istio.io/latest/docs/setup/install/</a></li>
-<li><a href="https://istio.io/latest/docs/setup/install/helm/">https://istio.io/latest/docs/setup/install/helm/</a></li>
-</ul>
 
             ]]>
         </content>
