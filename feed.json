@@ -10,6 +10,22 @@
     },
     "items": [
         {
+            "id": "https://gutocarvalho.net/revelando-secrets-com-o-ksd/",
+            "url": "https://gutocarvalho.net/revelando-secrets-com-o-ksd/",
+            "title": "Revelando secrets com o ksd",
+            "summary": "<p>Conhece o projeto ksd? Então vem conhecer!</p>\n",
+            "content_html": "<p>Conhece o projeto ksd? Então vem conhecer!</p>\n\n<p>Repo do projeto<br><br>- <a href=\"#INTERNAL_LINK#/post/null\">https://github.com/mfuentesg/ksd</a></p>\n<p>Quando damos um get em um secret temos isso aqui</p>\n<pre>$ kubectl get secret &lt;secret name&gt; -o &lt;yaml|json&gt;</pre>\n<p>Saída</p>\n<pre>{\n    <span class=\"pl-ent\">\"apiVersion\"</span>: <span class=\"pl-s\"><span class=\"pl-pds\">\"</span>v1<span class=\"pl-pds\">\"</span></span>,\n    <span class=\"pl-ent\">\"data\"</span>: {\n        <span class=\"pl-ent\">\"password\"</span>: <span class=\"pl-s\"><span class=\"pl-pds\">\"</span>c2VjcmV0<span class=\"pl-pds\">\"</span></span>,\n        <span class=\"pl-ent\">\"app\"</span>: <span class=\"pl-s\"><span class=\"pl-pds\">\"</span>a3ViZXJuZXRlcyBzZWNyZXQgZGVjb2Rlcg==<span class=\"pl-pds\">\"</span></span>\n    },\n    <span class=\"pl-ent\">\"kind\"</span>: <span class=\"pl-s\"><span class=\"pl-pds\">\"</span>Secret<span class=\"pl-pds\">\"</span></span>,\n    <span class=\"pl-ent\">\"metadata\"</span>: {\n        <span class=\"pl-ent\">\"name\"</span>: <span class=\"pl-s\"><span class=\"pl-pds\">\"</span>kubernetes secret decoder<span class=\"pl-pds\">\"</span></span>,\n        <span class=\"pl-ent\">\"namespace\"</span>: <span class=\"pl-s\"><span class=\"pl-pds\">\"</span>ksd<span class=\"pl-pds\">\"</span></span>\n    },\n    <span class=\"pl-ent\">\"type\"</span>: <span class=\"pl-s\"><span class=\"pl-pds\">\"</span>Opaque<span class=\"pl-pds\">\"</span></span>\n}</pre>\n<p>Quando usamos o ksd ele vira texto puro</p>\n<pre>$ kubectl get secret &lt;secret name&gt; -o &lt;yaml|json&gt; | ksd</pre>\n<p>Saída</p>\n<pre>{\n    <span class=\"pl-ent\">\"apiVersion\"</span>: <span class=\"pl-s\"><span class=\"pl-pds\">\"</span>v1<span class=\"pl-pds\">\"</span></span>,\n    <span class=\"pl-ent\">\"data\"</span>: {\n        <span class=\"pl-ent\">\"password\"</span>: <span class=\"pl-s\"><span class=\"pl-pds\">\"</span>secret<span class=\"pl-pds\">\"</span></span>,\n        <span class=\"pl-ent\">\"app\"</span>: <span class=\"pl-s\"><span class=\"pl-pds\">\"</span>kubernetes secret decoder<span class=\"pl-pds\">\"</span></span>\n    },\n    <span class=\"pl-ent\">\"kind\"</span>: <span class=\"pl-s\"><span class=\"pl-pds\">\"</span>Secret<span class=\"pl-pds\">\"</span></span>,\n    <span class=\"pl-ent\">\"metadata\"</span>: {\n        <span class=\"pl-ent\">\"name\"</span>: <span class=\"pl-s\"><span class=\"pl-pds\">\"</span>kubernetes secret decoder<span class=\"pl-pds\">\"</span></span>,\n        <span class=\"pl-ent\">\"namespace\"</span>: <span class=\"pl-s\"><span class=\"pl-pds\">\"</span>ksd<span class=\"pl-pds\">\"</span></span>\n    },\n    <span class=\"pl-ent\">\"type\"</span>: <span class=\"pl-s\"><span class=\"pl-pds\">\"</span>Opaque<span class=\"pl-pds\">\"</span></span>\n}</pre>\n<p>Legal né?<br><br>[s]<br>Guto</p>",
+            "author": {
+                "name": "Guto Carvalho"
+            },
+            "tags": [
+                   "MindNotes",
+                   "Drops"
+            ],
+            "date_published": "2022-01-05T14:23:08-03:00",
+            "date_modified": "2022-01-05T14:23:31-03:00"
+        },
+        {
             "id": "https://gutocarvalho.net/gracefully-shutdown-pods/",
             "url": "https://gutocarvalho.net/gracefully-shutdown-pods/",
             "title": "Gracefully shutdown pods",
@@ -44,7 +60,7 @@
             "url": "https://gutocarvalho.net/keptn-outro-projeto-para-ficar-de-olho/",
             "title": "Keptn, outro projeto para ficar de olho!",
             "summary": "<p>Venha conhecer um control-plane devops para K8s!</p>\n",
-            "content_html": "<p>Venha conhecer um control-plane devops para K8s!</p>\n\n<p>O Keptn (fala-se Captain) é um control-plane para automação com mindset devops dentro do seu cluster. <br><br>Esse projeto promete – entre outras coisas – te ajudar a manter a qualidade das APPs em seu cluster usando o que eles chamam de quality gates (é o que chamou minha atenção). Os quality gates usam SLIs e SLOs de sua APP para cuidar de sua APP, isso significa que caso você publique algo está fora dos padrões que você indicou, o Keptn faz o rollback para a última versão que tem a performance dentro dos seus indicadores.</p>\n<p>Além disso temos recursos como:<br><br>- Multi-stage delivery<br>- Continuous Performance Verification<br>- Configuração declarativa<br>- Automação baseada em eventos<br>- Integração com projetos como Argo, GitHub Actions, Prometheus e +<br>- Observabilidade nativa para poder checar SLIs e SLOs<br><br>E tem muito mais, conheça <a href=\"https://keptn.sh\">https://keptn.sh.</a></p>\n<figure class=\"post__video\"><iframe loading=\"lazy\" width=\"560\" height=\"314\" src=\"https://www.youtube.com/embed/fjfj97Vb4ds\" allowfullscreen=\"allowfullscreen\" data-mce-fragment=\"1\"></iframe></figure>\n<p>É isso povo!<br><br>[s]<br><br></p>\n<p> </p>",
+            "content_html": "<p>Venha conhecer um control-plane devops para K8s!</p>\n\n<p>O Keptn (fala-se Captain) é um control-plane para automação com mindset devops dentro do seu cluster. <br><br>Esse projeto promete – entre outras coisas – te ajudar a manter a qualidade das APPs em seu cluster usando o que eles chamam de quality gates (é o que chamou minha atenção). Os quality gates usam SLIs e SLOs definidos por você para cuidar de sua APP, isso significa que caso você publique algo que esteja fora dos padrões que você indicou, o Keptn faz o rollback para a última versão que tem a performance dentro dos seus indicadores.</p>\n<p>Além disso temos recursos como:<br><br>- Multi-stage delivery<br>- Continuous Performance Verification<br>- Configuração declarativa<br>- Automação baseada em eventos<br>- Integração com projetos como Argo, GitHub Actions, Prometheus e +<br>- Observabilidade nativa para poder checar SLIs e SLOs<br><br>E tem muito mais, conheça <a href=\"https://keptn.sh\">https://keptn.sh.</a></p>\n<figure class=\"post__video\"><iframe loading=\"lazy\" width=\"560\" height=\"314\" src=\"https://www.youtube.com/embed/fjfj97Vb4ds\" allowfullscreen=\"allowfullscreen\" data-mce-fragment=\"1\"></iframe></figure>\n<p>É isso povo!<br><br>[s]<br><br></p>\n<p> </p>",
             "author": {
                 "name": "Guto Carvalho"
             },
@@ -52,7 +68,7 @@
                    "MindNotes"
             ],
             "date_published": "2021-12-15T08:35:41-03:00",
-            "date_modified": "2021-12-15T09:09:19-03:00"
+            "date_modified": "2021-12-16T07:01:17-03:00"
         },
         {
             "id": "https://gutocarvalho.net/karpenter-novo-autoscaler-para-k8s-da-aws/",
@@ -112,7 +128,7 @@
                    "MindNotes"
             ],
             "date_published": "2021-11-18T10:28:11-03:00",
-            "date_modified": "2021-11-18T10:54:36-03:00"
+            "date_modified": "2021-12-15T20:43:30-03:00"
         },
         {
             "id": "https://gutocarvalho.net/instalando-istio-via-helm-para-testes/",
@@ -145,22 +161,6 @@
             ],
             "date_published": "2021-11-05T14:04:25-03:00",
             "date_modified": "2021-11-06T06:28:30-03:00"
-        },
-        {
-            "id": "https://gutocarvalho.net/criando-um-cluster-k8s-com-eksctl/",
-            "url": "https://gutocarvalho.net/criando-um-cluster-k8s-com-eksctl/",
-            "title": "DROPS: Criando um Cluster K8S com EKSCTL",
-            "summary": "Aprende aí como fazer isso com uma mão nas costas! Criando um&hellip;",
-            "content_html": "<p>Aprende aí como fazer isso com uma mão nas costas!</p>\n<hr>\n<p>Criando um cluster para testes de forma rápida e rasteira, vamo nessa!</p>\n<pre><code>$ eksctl create cluster \\\n    --region us-east-1 \\\n    --name falagutera \\\n    --version 1.21 \\\n    --node-type t3.xlarge \\\n    --nodes 3 \\\n    --ssh-public-key &quot;~/nativetrail.pub&quot;\n</code></pre>\n<p>gerando o kubeconfig</p>\n<pre><code>$ aws eks --region us-east-1 update-kubeconfig --name falagutera\n$ export KUBECONFIG=config\n</code></pre>\n<p>checando o cluster baby</p>\n<pre><code>$ kubectl get nodes\n</code></pre>\n<p>terminou o teste? bora derrubar tudo!</p>\n<pre><code>$ eksctl delete cluster falagutera\n</code></pre>\n<p>pronto!</p>\n",
-            "author": {
-                "name": "Guto Carvalho"
-            },
-            "tags": [
-                   "K8S",
-                   "Drops"
-            ],
-            "date_published": "2021-11-02T09:48:13-03:00",
-            "date_modified": "2021-11-02T11:37:55-03:00"
         }
     ]
 }

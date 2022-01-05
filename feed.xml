@@ -3,12 +3,70 @@
     <title>Guto@Site</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2021-12-15T09:11:53-03:00</updated>
+    <updated>2022-01-05T14:23:31-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
     <id>https://gutocarvalho.net</id>
 
+    <entry>
+        <title>Revelando secrets com o ksd</title>
+        <author>
+            <name>Guto Carvalho</name>
+        </author>
+        <link href="https://gutocarvalho.net/revelando-secrets-com-o-ksd/"/>
+        <id>https://gutocarvalho.net/revelando-secrets-com-o-ksd/</id>
+            <category term="MindNotes"/>
+            <category term="Drops"/>
+
+        <updated>2022-01-05T14:23:31-03:00</updated>
+            <summary>
+                <![CDATA[
+                    <p>Conhece o projeto ksd? Então vem conhecer!</p>
+
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p>Conhece o projeto ksd? Então vem conhecer!</p>
+
+<p>Repo do projeto<br><br>- <a href="#INTERNAL_LINK#/post/null">https://github.com/mfuentesg/ksd</a></p>
+<p>Quando damos um get em um secret temos isso aqui</p>
+<pre>$ kubectl get secret &lt;secret name&gt; -o &lt;yaml|json&gt;</pre>
+<p>Saída</p>
+<pre>{
+    <span class="pl-ent">"apiVersion"</span>: <span class="pl-s"><span class="pl-pds">"</span>v1<span class="pl-pds">"</span></span>,
+    <span class="pl-ent">"data"</span>: {
+        <span class="pl-ent">"password"</span>: <span class="pl-s"><span class="pl-pds">"</span>c2VjcmV0<span class="pl-pds">"</span></span>,
+        <span class="pl-ent">"app"</span>: <span class="pl-s"><span class="pl-pds">"</span>a3ViZXJuZXRlcyBzZWNyZXQgZGVjb2Rlcg==<span class="pl-pds">"</span></span>
+    },
+    <span class="pl-ent">"kind"</span>: <span class="pl-s"><span class="pl-pds">"</span>Secret<span class="pl-pds">"</span></span>,
+    <span class="pl-ent">"metadata"</span>: {
+        <span class="pl-ent">"name"</span>: <span class="pl-s"><span class="pl-pds">"</span>kubernetes secret decoder<span class="pl-pds">"</span></span>,
+        <span class="pl-ent">"namespace"</span>: <span class="pl-s"><span class="pl-pds">"</span>ksd<span class="pl-pds">"</span></span>
+    },
+    <span class="pl-ent">"type"</span>: <span class="pl-s"><span class="pl-pds">"</span>Opaque<span class="pl-pds">"</span></span>
+}</pre>
+<p>Quando usamos o ksd ele vira texto puro</p>
+<pre>$ kubectl get secret &lt;secret name&gt; -o &lt;yaml|json&gt; | ksd</pre>
+<p>Saída</p>
+<pre>{
+    <span class="pl-ent">"apiVersion"</span>: <span class="pl-s"><span class="pl-pds">"</span>v1<span class="pl-pds">"</span></span>,
+    <span class="pl-ent">"data"</span>: {
+        <span class="pl-ent">"password"</span>: <span class="pl-s"><span class="pl-pds">"</span>secret<span class="pl-pds">"</span></span>,
+        <span class="pl-ent">"app"</span>: <span class="pl-s"><span class="pl-pds">"</span>kubernetes secret decoder<span class="pl-pds">"</span></span>
+    },
+    <span class="pl-ent">"kind"</span>: <span class="pl-s"><span class="pl-pds">"</span>Secret<span class="pl-pds">"</span></span>,
+    <span class="pl-ent">"metadata"</span>: {
+        <span class="pl-ent">"name"</span>: <span class="pl-s"><span class="pl-pds">"</span>kubernetes secret decoder<span class="pl-pds">"</span></span>,
+        <span class="pl-ent">"namespace"</span>: <span class="pl-s"><span class="pl-pds">"</span>ksd<span class="pl-pds">"</span></span>
+    },
+    <span class="pl-ent">"type"</span>: <span class="pl-s"><span class="pl-pds">"</span>Opaque<span class="pl-pds">"</span></span>
+}</pre>
+<p>Legal né?<br><br>[s]<br>Guto</p>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>Gracefully shutdown pods</title>
         <author>
@@ -69,7 +127,7 @@
         <id>https://gutocarvalho.net/keptn-outro-projeto-para-ficar-de-olho/</id>
             <category term="MindNotes"/>
 
-        <updated>2021-12-15T09:09:19-03:00</updated>
+        <updated>2021-12-16T07:01:17-03:00</updated>
             <summary>
                 <![CDATA[
                     <p>Venha conhecer um control-plane devops para K8s!</p>
@@ -80,7 +138,7 @@
             <![CDATA[
                 <p>Venha conhecer um control-plane devops para K8s!</p>
 
-<p>O Keptn (fala-se Captain) é um control-plane para automação com mindset devops dentro do seu cluster. <br><br>Esse projeto promete – entre outras coisas – te ajudar a manter a qualidade das APPs em seu cluster usando o que eles chamam de quality gates (é o que chamou minha atenção). Os quality gates usam SLIs e SLOs de sua APP para cuidar de sua APP, isso significa que caso você publique algo está fora dos padrões que você indicou, o Keptn faz o rollback para a última versão que tem a performance dentro dos seus indicadores.</p>
+<p>O Keptn (fala-se Captain) é um control-plane para automação com mindset devops dentro do seu cluster. <br><br>Esse projeto promete – entre outras coisas – te ajudar a manter a qualidade das APPs em seu cluster usando o que eles chamam de quality gates (é o que chamou minha atenção). Os quality gates usam SLIs e SLOs definidos por você para cuidar de sua APP, isso significa que caso você publique algo que esteja fora dos padrões que você indicou, o Keptn faz o rollback para a última versão que tem a performance dentro dos seus indicadores.</p>
 <p>Além disso temos recursos como:<br><br>- Multi-stage delivery<br>- Continuous Performance Verification<br>- Configuração declarativa<br>- Automação baseada em eventos<br>- Integração com projetos como Argo, GitHub Actions, Prometheus e +<br>- Observabilidade nativa para poder checar SLIs e SLOs<br><br>E tem muito mais, conheça <a href="https://keptn.sh">https://keptn.sh.</a></p>
 <figure class="post__video"><iframe loading="lazy" width="560" height="314" src="https://www.youtube.com/embed/fjfj97Vb4ds" allowfullscreen="allowfullscreen" data-mce-fragment="1"></iframe></figure>
 <p>É isso povo!<br><br>[s]<br><br></p>
@@ -173,7 +231,7 @@
         <id>https://gutocarvalho.net/dashboards-para-k8s/</id>
             <category term="MindNotes"/>
 
-        <updated>2021-11-18T10:54:36-03:00</updated>
+        <updated>2021-12-15T20:43:30-03:00</updated>
             <summary>
                 <![CDATA[
                     Quer usar Dashboards para o Kubernetes? Bora! Algumas opções bastante conhecidas Projetos&hellip;
@@ -402,50 +460,6 @@ customresourcedefinition.apiextensions.k8s.io &quot;workloadgroups.networking.is
 <p>A grande vantagem é que quando acaba o Giz Líquido eles continuam com o giz normal, que é baratinho :)<br><br>Espero que gostem das dicas!<br><br>[s]</p>
 <p> </p>
 <p> </p>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>DROPS: Criando um Cluster K8S com EKSCTL</title>
-        <author>
-            <name>Guto Carvalho</name>
-        </author>
-        <link href="https://gutocarvalho.net/criando-um-cluster-k8s-com-eksctl/"/>
-        <id>https://gutocarvalho.net/criando-um-cluster-k8s-com-eksctl/</id>
-            <category term="K8S"/>
-            <category term="Drops"/>
-
-        <updated>2021-11-02T11:37:55-03:00</updated>
-            <summary>
-                <![CDATA[
-                    Aprende aí como fazer isso com uma mão nas costas! Criando um&hellip;
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                <p>Aprende aí como fazer isso com uma mão nas costas!</p>
-<hr>
-<p>Criando um cluster para testes de forma rápida e rasteira, vamo nessa!</p>
-<pre><code>$ eksctl create cluster \
-    --region us-east-1 \
-    --name falagutera \
-    --version 1.21 \
-    --node-type t3.xlarge \
-    --nodes 3 \
-    --ssh-public-key &quot;~/nativetrail.pub&quot;
-</code></pre>
-<p>gerando o kubeconfig</p>
-<pre><code>$ aws eks --region us-east-1 update-kubeconfig --name falagutera
-$ export KUBECONFIG=config
-</code></pre>
-<p>checando o cluster baby</p>
-<pre><code>$ kubectl get nodes
-</code></pre>
-<p>terminou o teste? bora derrubar tudo!</p>
-<pre><code>$ eksctl delete cluster falagutera
-</code></pre>
-<p>pronto!</p>
-
             ]]>
         </content>
     </entry>
