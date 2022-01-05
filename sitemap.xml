@@ -345,7 +345,7 @@
 </url>
 <url>
 <loc>https://gutocarvalho.net/revelando-secrets-com-o-ksd/</loc>
-<lastmod>2022-01-05T14:23:31-03:00</lastmod>
+<lastmod>2022-01-05T17:22:33-03:00</lastmod>
 </url>
 <url>
 <loc>https://gutocarvalho.net/siga-o-pessoal-do-bem/</loc>
@@ -374,6 +374,10 @@
 <url>
 <loc>https://gutocarvalho.net/usando-efs-em-um-cluster-k8s-ec2/</loc>
 <lastmod>2021-10-25T08:03:34-03:00</lastmod>
+</url>
+<url>
+<loc>https://gutocarvalho.net/usando-o-kubetail-para-ver-logs-no-k8s/</loc>
+<lastmod>2022-01-05T17:22:27-03:00</lastmod>
 </url>
 <url>
 <loc>https://gutocarvalho.net/videos-cdcon/</loc>

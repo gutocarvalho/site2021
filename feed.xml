@@ -3,12 +3,83 @@
     <title>Guto@Site</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2022-01-05T14:23:31-03:00</updated>
+    <updated>2022-01-05T17:22:33-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
     <id>https://gutocarvalho.net</id>
 
+    <entry>
+        <title>Usando o kubetail para ver logs no K8S</title>
+        <author>
+            <name>Guto Carvalho</name>
+        </author>
+        <link href="https://gutocarvalho.net/usando-o-kubetail-para-ver-logs-no-k8s/"/>
+        <id>https://gutocarvalho.net/usando-o-kubetail-para-ver-logs-no-k8s/</id>
+            <category term="MindNotes"/>
+            <category term="K8S"/>
+            <category term="Drops"/>
+
+        <updated>2022-01-05T17:22:27-03:00</updated>
+            <summary>
+                <![CDATA[
+                    As vezes queremos ver os logs de todos os pods de um&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p>As vezes queremos ver os logs de todos os pods de um mesmo namespace, usando apenas o kubectl essa tarefa pode ser difícil, para isso podemos recorrer a ferramentas externas como o kubetail</p>
+<p>Instalando via homebrew</p>
+<div>
+<pre class=" language-none"><code class=" language-none">$ brew tap johanhaleby/kubetail &amp;&amp; brew install kubetail</code></pre>
+</div>
+<p>Procurando por pods em um namespace</p>
+<div>
+<pre class=" language-none"><code class=" language-none">$ kubectl get pods -n project</code></pre>
+</div>
+<p>Saída</p>
+<div>
+<pre class=" language-none"><code class=" language-none">NAME                   READY     STATUS    RESTARTS   AGE
+api-backend-v1-aba8y   1/1       Running   0          1d
+api-backend-v1-gc4st   1/1       Running   0          1d
+api-backend-v1-m8acl   1/1       Running   0          6d
+api-frontend-v31-s20d0 1/1       Running   0          1d
+api-frontend-v31-9pbpn 1/1       Running   0          1d
+api-frontend-v31-q74wg 1/1       Running   0          1d
+database-v5-0fa8o      1/1       Running   0          3h
+database-v5-yhren      1/1       Running   0          2h</code></pre>
+</div>
+<p>Fazendo tail nos logs dos pods api-backend</p>
+<div>
+<pre class=" language-none"><code class=" language-none">$ kubetail api-backend -n project</code></pre>
+</div>
+<p>Fazendo tail nos logs do primeiro containers nos pods api-backend</p>
+<div>
+<pre class=" language-none"><code class=" language-none">$ kubetail api-backend -c container1 -n project</code></pre>
+</div>
+<p>Fazendo tail nos logs do primeiro containers nos pods api-backend</p>
+<div>
+<pre class=" language-none"><code class=" language-none">$ kubetail api-backend -c container1 -c container2 -n project</code></pre>
+</div>
+<p>Fazendo tail dos logs dos pods api-backend e api-frontend</p>
+<div>
+<pre class=" language-none"><code class=" language-none">$ kubetail app1,app2 -n project</code></pre>
+</div>
+<p>Fazendo tail no que casar com a expressão regular abaixo</p>
+<div>
+<pre class=" language-none"><code class=" language-none">$ kubetail "^api|.*database.*" --regex -n project</code></pre>
+</div>
+<p>Fazendo tail dos logs do namesapce project</p>
+<div>
+<pre class=" language-none"><code class=" language-none">$ kubetail -n project</code></pre>
+</div>
+<h2 id="toc_0">References</h2>
+<ul>
+<li>https://github.com/johanhaleby/kubetail</li>
+</ul>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>Revelando secrets com o ksd</title>
         <author>
@@ -17,9 +88,10 @@
         <link href="https://gutocarvalho.net/revelando-secrets-com-o-ksd/"/>
         <id>https://gutocarvalho.net/revelando-secrets-com-o-ksd/</id>
             <category term="MindNotes"/>
+            <category term="K8S"/>
             <category term="Drops"/>
 
-        <updated>2022-01-05T14:23:31-03:00</updated>
+        <updated>2022-01-05T17:22:33-03:00</updated>
             <summary>
                 <![CDATA[
                     <p>Conhece o projeto ksd? Então vem conhecer!</p>
@@ -404,62 +476,6 @@ customresourcedefinition.apiextensions.k8s.io &quot;workloadgroups.networking.is
 <li><a href="https://istio.io/latest/docs/setup/install/helm/">https://istio.io/latest/docs/setup/install/helm/</a></li>
 </ul>
 
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>Dicas sobre quadros e canetas!</title>
-        <author>
-            <name>Guto Carvalho</name>
-        </author>
-        <link href="https://gutocarvalho.net/dicas-sobre-quadros-e-canetas/"/>
-        <id>https://gutocarvalho.net/dicas-sobre-quadros-e-canetas/</id>
-            <category term="Casa"/>
-
-        <updated>2021-11-06T06:28:30-03:00</updated>
-            <summary>
-                <![CDATA[
-                    <p>Pessoal, seguem algumas dicas sobre quadros para escrever em casa.</p>
-
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                <p>Pessoal, seguem algumas dicas sobre quadros para escrever em casa.</p>
-
-<figure class="post__image">Eu sou desses que tem vários quadros – para escrever com canetinha – em casa, tenho de vidro, de metal, de madeira, e outros tipos, eu gosto de escrever para lembrar das coisas, para deixar recados para as crianças, para deixar recados pra mim, para organizar atividades. Eu acho que os quadros sempre estiverem presentes na minha vida, eu não sei viver sem eles.<br><br><img loading="lazy"  src="https://gutocarvalho.net/media/posts/72/quadro_vidro.jpg" sizes="(min-width: 61.3125em) 50vw, 100vw" srcset="https://gutocarvalho.net/media/posts/72/responsive/quadro_vidro-xs.jpg 300w ,https://gutocarvalho.net/media/posts/72/responsive/quadro_vidro-sm.jpg 480w ,https://gutocarvalho.net/media/posts/72/responsive/quadro_vidro-md.jpg 768w"  alt="" width="1280" height="960"></figure><br><br>Eu escrevo até nos espelhos :)</p>
-<div class="gallery-wrapper"><div class="gallery"  data-is-empty="false" data-columns="2">
-<figure class="gallery__item"><a href="https://gutocarvalho.net/media/posts/72/gallery/espelho1-2.jpg" data-size="960x1280"><img loading="lazy" src="https://gutocarvalho.net/media/posts/72/gallery/espelho1-2-thumbnail.jpg" alt="" width="768" height="1024"></a></figure>
-<figure class="gallery__item"><a href="https://gutocarvalho.net/media/posts/72/gallery/espelho2-2.jpg" data-size="960x1280"><img loading="lazy" src="https://gutocarvalho.net/media/posts/72/gallery/espelho2-2-thumbnail.jpg" alt="" width="768" height="1024"></a></figure>
-</div></div>
-<p><br>Usando tantos quadros, por tantos anos, especialmente de vidro, a gente acaba experimentando uma série de canetas e aprendendo sobre elas. <br><br>Fiz esse post para ajudar você a escolher o melhor tipo de caneta e quadro para sua casa/escritório.<br><br><strong>Canetas com ponta grossa ( traço de 2 a 5 mm )</strong><br><br>No quesito caneta com ponta grossa, eu gosto muito das canetas da <a href="https://www.compactor.com.br/marcadores-qb/">compactor</a> para quadro branco, são excelentes, uso há cerca de dois anos, e virou minha caneta padrão devido a qualidade e custo vs benefício.<br><br></p>
-<figure class="post__image"><img loading="lazy"  src="https://gutocarvalho.net/media/posts/72/Screen-Shot-2021-11-05-at-12.35.11.png" sizes="(min-width: 61.3125em) 50vw, 100vw" srcset="https://gutocarvalho.net/media/posts/72/responsive/Screen-Shot-2021-11-05-at-12.35.11-xs.png 300w ,https://gutocarvalho.net/media/posts/72/responsive/Screen-Shot-2021-11-05-at-12.35.11-sm.png 480w ,https://gutocarvalho.net/media/posts/72/responsive/Screen-Shot-2021-11-05-at-12.35.11-md.png 768w"  alt="" width="562" height="540"></figure>
-<p>Elas funcionam muito bem para desenhar no geral, e no meu caso para rabiscar umas topologias, arquiteturas, redes, etc, ajuda muito no troubleshooting, na proposição de projetos e uso principalmente como "lista de coisas a fazer" :)<br><br>Ela está disponível nas cores azul, preta, vermelha, verde e rosa.<br><br>Sua ponta cônica é muito confortável e firme.<br><br>Oferece reservatório para recarga.<br><br><strong>Canetas com ponta fina ( traço de 1 a 2 mm )</strong></p>
-<p>Em alguns casos ponta grossa pode ser um problema, especialmente em quadros personalizados com pouco espaço para escrever, nestes quadros eu uso as canetas da <a href="https://www.staedtler.com/br/pt/produtos/marcador/marcador-para-quadro-branco/">staedtler</a> lumocolor whiteboard, são maravilhosas.</p>
-<figure class="post__image"><img loading="lazy"  src="https://gutocarvalho.net/media/posts/72/Screen-Shot-2021-11-05-at-12.37.01.png" sizes="(min-width: 61.3125em) 50vw, 100vw" srcset="https://gutocarvalho.net/media/posts/72/responsive/Screen-Shot-2021-11-05-at-12.37.01-xs.png 300w ,https://gutocarvalho.net/media/posts/72/responsive/Screen-Shot-2021-11-05-at-12.37.01-sm.png 480w ,https://gutocarvalho.net/media/posts/72/responsive/Screen-Shot-2021-11-05-at-12.37.01-md.png 768w"  alt="" width="441" height="431"></figure>
-<p> </p>
-<p><strong>Exemplo de traço grosso</strong><br><br></p>
-<div class="gallery-wrapper"><div class="gallery"  data-is-empty="false" data-columns="2">
-<figure class="gallery__item"><a href="https://gutocarvalho.net/media/posts/72/gallery/calendario_traco_grosso-3.jpg" data-size="1280x960"><img loading="lazy" src="https://gutocarvalho.net/media/posts/72/gallery/calendario_traco_grosso-3-thumbnail.jpg" alt="" width="768" height="576"></a></figure>
-<figure class="gallery__item"><a href="https://gutocarvalho.net/media/posts/72/gallery/semana_traco_grosso-4.jpg" data-size="1280x960"><img loading="lazy" src="https://gutocarvalho.net/media/posts/72/gallery/semana_traco_grosso-4-thumbnail.jpg" alt="" width="768" height="576"></a></figure>
-</div></div>
-<p><strong>Exemplo de Traço fino</strong><br><br></p>
-<div class="gallery-wrapper"><div class="gallery"  data-is-empty="false" data-columns="2">
-<figure class="gallery__item"><a href="https://gutocarvalho.net/media/posts/72/gallery/calendario_traco_fino.jpg" data-size="1280x960"><img loading="lazy" src="https://gutocarvalho.net/media/posts/72/gallery/calendario_traco_fino-thumbnail.jpg" alt="" width="768" height="576"></a></figure>
-<figure class="gallery__item"><a href="https://gutocarvalho.net/media/posts/72/gallery/semana_traco_fino.jpg" data-size="1280x960"><img loading="lazy" src="https://gutocarvalho.net/media/posts/72/gallery/semana_traco_fino-thumbnail.jpg" alt="" width="768" height="576"></a></figure>
-</div></div>
-<p><br>Yeah, minha letra é complexa e exótica.<br><br><strong>Outras canetas que recomendo</strong><br><br>Já usei as canetas <a href="http://www.pilotpen.com.br/produtos/marc-wbma-v-board-master-para-quadro-branco/">Pilot Board Master</a> recarregáveis, mais parei devido ao preço e a dificuldade de achar as recargas, fora que a recarga tava o preço da caneta, ai não compensava. Apesar de terem viajado no preço, são canetas boas , tem o traço grosso de 2 a 5 mm, são realmente bem bacanas especialmente para dar aulas, usei de 2013 a 2019 em especial, falando dessa marca e modelo.</p>
-<p>Recentemente descobri também as canetas da Faber Castell, são equivalentes ao Pilot Board Master e a Compactor.</p>
-<p>Quando as crianças querem desenhar eu compro uns kits de 4 canetas da bic, keep ou pilot modelo wbm-7, são mais baratas e viáveis para eles, do contrario eles acabam com minhas canetas pessoais em uma tarde.</p>
-<p><strong>Falando de Quadros</strong><br><br>Eu gosto desses quadros personalizados, eles normalmente são de metal, madeira ou até papelão, contudo hoje em dia eu prefiro quadros de vidro, vou até tentar refazer esses dois da foto acima em vidro com adesivagem similar.<br><br><strong><span style="color: var(--text-editor-body-color); font-family: var(--font-base); font-size: inherit;">Quadros de vidro tem muitas vantagens, dentre elas:</span></strong></p>
-<p>- São mais bonitos<br>- São mais discretos<br>- Eles encaixam melhor na sua decoração<br>- São fáceis de limpar<br>- São simples de instalar<br>- Qualquer vidraçaria faz<br><br><strong>Alguns cuidados ao comprar na vidraçaria</strong><br><br>- Sempre use vidro temperado, especialmente se tem crianças em casa<br>- A espessura mínima é 4mm, mas eu uso de 8mm pra frente<br>- Instale encostado na parede, ele fica mais firme e seguro, sendo mais difícil quebrar<br><br><strong>Opções no mercado</strong></p>
-<p>O pessoal da Easy Office oferece bons quadros de vidro, inclusive magnéticos, algo que não dá para pedir na vidraçaria. Os meus eu comprei na Kalunga.<br><br><strong>Custo vs Benefício dos quadros</strong><br><br>Os quadros de madeira são mais baratos, mas essencialmente tem vida útil menor e com o tempo eles perdem aquela camada de "verniz", deixando tudo bem dificil de apagar.<br><br>Os quadros de metal são interessantes, mas geralmente eles tem um tema, é difícil achar um todo branco para comprar, e nas minhas muitas mudanças vários amassaram as pontinhas.<br><br><strong>Dicas soltas</strong><br><br>Não use apagador, prefira panos de microfibra, funciona 1000x melhor.<br><br>Se sua parede é branca, e se instalar encostado na parede, nem precisará de fundo branco adesivado ou pintado – apesar de recomendar para dar uma uniformidade na cor.<br><br>Se for instalar afastado da parede com pinos de 5cm o 10cm, o fundo branco pintado ou adesivado é fundamental para conseguir ler o que escreveu no quadro. Mas é dificil limpar na parte de trás e se apoiar nele pode quebrar, tem que temperar e usar de 8 a 10mm.<br><br><strong>Quadros que nem vemos</strong><br><br>Eu escrevo nas janelas, vidros da varanda e até nos espelhos, essas canetinhas são muito funcionais e uma simples janela pode virar um quadro para deixar uma mensagem, um lembrete ou simplesmente para desenhar e soltar sua criatividade.</p>
-<p><strong>Dicas Kids</strong><br><br>Como as canetas são relativamente caras, especialmente se tratando de crianças, eles acabam com a tinta de 1 kit em uma tarde. Pensando nisso, no quarto das crianças eu pintei em uma parede um quadro usando tinta "lousa &amp; cor" da suvinil.</p>
-<figure class="post__image"><img loading="lazy"  src="https://gutocarvalho.net/media/posts/72/lousa_kids.jpg" sizes="(min-width: 61.3125em) 50vw, 100vw" srcset="https://gutocarvalho.net/media/posts/72/responsive/lousa_kids-xs.jpg 300w ,https://gutocarvalho.net/media/posts/72/responsive/lousa_kids-sm.jpg 480w ,https://gutocarvalho.net/media/posts/72/responsive/lousa_kids-md.jpg 768w"  alt="" width="960" height="1280"></figure><br><br>Esse é o quarto/brinquedoteca/sala de estudo aq de casa, quando as crianças vem pra cá usam esse espaço para tudo, inclusive para desenhar.</p>
-<p>Nessa parede eles podem escrever com giz normal ou giz líquido. As canetinhas de giz líquido duram bem mais que as canetinhas de quadro branco, tenho usado da marca <a href="https://b2b.brwsuprimentos.com.br/produto/listar/giz-liquido-o">BRW.</a></p>
-<p>A grande vantagem é que quando acaba o Giz Líquido eles continuam com o giz normal, que é baratinho :)<br><br>Espero que gostem das dicas!<br><br>[s]</p>
-<p> </p>
-<p> </p>
             ]]>
         </content>
     </entry>
