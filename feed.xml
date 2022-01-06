@@ -3,7 +3,7 @@
     <title>Guto@Site</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2022-01-06T17:40:50-03:00</updated>
+    <updated>2022-01-06T17:53:42-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
@@ -19,7 +19,7 @@
             <category term="MindNotes"/>
             <category term="K8S"/>
 
-        <updated>2022-01-06T17:40:50-03:00</updated>
+        <updated>2022-01-06T17:53:42-03:00</updated>
             <summary>
                 <![CDATA[
                     <p>Conheça algumas ferramentas interessantes para seu k8s toolkit</p>
@@ -30,7 +30,7 @@
             <![CDATA[
                 <p>Conheça algumas ferramentas interessantes para seu k8s toolkit</p>
 
-<p>Uma curadoria pessoal de ferramentas interessantes para k8s</p>
+<p>Uma curadoria pessoal de ferramentas para k8s</p>
 <p>Essa página é atualizada regularmente, volte para ver as novidades!</p>
 <h2 id="toc_0">shell</h2>
 <ul>
