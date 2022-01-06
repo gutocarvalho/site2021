@@ -3,21 +3,63 @@
     <title>Guto@Site</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2022-01-06T10:45:10-03:00</updated>
+    <updated>2022-01-06T10:50:36-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
     <id>https://gutocarvalho.net</id>
 
     <entry>
-        <title>O que são Drops?</title>
+        <title>O que são TLDR&#x27;s ?</title>
+        <author>
+            <name>Guto Carvalho</name>
+        </author>
+        <link href="https://gutocarvalho.net/o-que-sao-tldrs/"/>
+        <id>https://gutocarvalho.net/o-que-sao-tldrs/</id>
+
+        <updated>2022-01-06T10:49:31-03:00</updated>
+            <summary>
+                <![CDATA[
+                    TLDR significa "Too Long Don't Read", é uma expressão é inglês para&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p>TLDR significa "Too Long Don't Read", é uma expressão é inglês para o termo brazuca <strong>textão</strong>.</p>
+<p>Alguns temas aqui são TLDR, geralmente pois o assunto demanda muito texto para explicar um conceito, modelo ou tecnologia.<br><br>Então já sabe, se o post é TLDR pega a água e um lanchinho e vem!</p>
+<p><br>:)</p>
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>O que são #MindNotes ?</title>
+        <author>
+            <name>Guto Carvalho</name>
+        </author>
+        <link href="https://gutocarvalho.net/o-que-sao-mindnotes/"/>
+        <id>https://gutocarvalho.net/o-que-sao-mindnotes/</id>
+
+        <updated>2022-01-06T10:49:51-03:00</updated>
+            <summary>
+                <![CDATA[
+                    Mindnotes, como o nome diz são notas mentais rápidas de algo que&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p><strong>Mindnotes,</strong> como o nome diz são notas mentais rápidas de algo que eu preciso estudar, pesquisar, entender ou lembrar. <br><br>Pode ser um post de uma linha, de um link, ou até um parágrafo, rápido e direto!<br><br>Normalmente vira um <a href="https://gutocarvalho.net/o-que-sao-drops/">DROPS</a> ou um <a href="https://gutocarvalho.net/o-que-sao-tldrs/">TLDR</a> no futuro.<br><br>[s]<br>Guto</p>
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>O que são #Drops?</title>
         <author>
             <name>Guto Carvalho</name>
         </author>
         <link href="https://gutocarvalho.net/o-que-sao-drops/"/>
         <id>https://gutocarvalho.net/o-que-sao-drops/</id>
 
-        <updated>2022-01-06T10:42:40-03:00</updated>
+        <updated>2022-01-06T10:46:48-03:00</updated>
             <summary>
                 <![CDATA[
                     São DUMPs mentais rápidos e rasteiros, simples e objetivos – que funcionam.
@@ -36,10 +78,11 @@
         </author>
         <link href="https://gutocarvalho.net/organizando-e-tornando-o-kubeconfig-interativo/"/>
         <id>https://gutocarvalho.net/organizando-e-tornando-o-kubeconfig-interativo/</id>
+            <category term="Projetos"/>
             <category term="K8S"/>
             <category term="Drops"/>
 
-        <updated>2022-01-06T10:45:10-03:00</updated>
+        <updated>2022-01-06T10:50:36-03:00</updated>
             <summary>
                 <![CDATA[
                     <p>Aprenda a organizar seu kubeconfig!</p>
@@ -550,58 +593,6 @@ database-v5-yhren      1/1       Running   0          2h</code></pre>
 <figure class="post__video"><iframe loading="lazy" width="560" height="314" src="https://www.youtube.com/embed/fjfj97Vb4ds" allowfullscreen="allowfullscreen" data-mce-fragment="1"></iframe></figure>
 <p>É isso povo!<br><br>[s]<br><br></p>
 <p> </p>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>Karpenter, novo autoscaler para k8s da AWS</title>
-        <author>
-            <name>Guto Carvalho</name>
-        </author>
-        <link href="https://gutocarvalho.net/karpenter-novo-autoscaler-para-k8s-da-aws/"/>
-        <id>https://gutocarvalho.net/karpenter-novo-autoscaler-para-k8s-da-aws/</id>
-            <category term="MindNotes"/>
-
-        <updated>2021-12-15T09:11:53-03:00</updated>
-            <summary>
-                <![CDATA[
-                    <p>Projeto novo e promissor  que vai te ajudar bastante, vem!<br><br></p>
-
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                <p>Projeto novo e promissor  que vai te ajudar bastante, vem!<br><br></p>
-
-<p>Se ainda não conhece se liga no Karpenter, um novo autoscaler desenvolvido pelo time da AWS para te ajudar com seu cluster.</p>
-<p><a href="https://github.com/aws/karpenter">https://github.com/aws/karpenter</a></p>
-<figure class="post__video"><iframe loading="lazy" width="560" height="314" src="https://www.youtube.com/embed/3QsVRHVdOnM?feature=emb_title" allowfullscreen="allowfullscreen" data-mce-fragment="1"></iframe></figure>
-<figure class="post__video"><iframe loading="lazy" width="560" height="314" src="https://www.youtube.com/embed/qxWJRUF6JJc?feature=youtu" allowfullscreen="allowfullscreen" data-mce-fragment="1"></iframe></figure>
-<p>É só isso mesmo!<br><br>[s]</p>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>Teste de carga com ajuda do vegeta?</title>
-        <author>
-            <name>Guto Carvalho</name>
-        </author>
-        <link href="https://gutocarvalho.net/teste-de-carga-com-ajuda-do-vegeta/"/>
-        <id>https://gutocarvalho.net/teste-de-carga-com-ajuda-do-vegeta/</id>
-            <category term="MindNotes"/>
-
-        <updated>2021-12-15T09:09:55-03:00</updated>
-            <summary>
-                <![CDATA[
-                    <p>Quer conhecer uma ferramente de testar de carga? Vem!<br><br></p>
-
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                <p>Quer conhecer uma ferramente de testar de carga? Vem!<br><br></p>
-
-<figure class="post__image">Conheça o Vegeta!<br><br><img loading="lazy"  src="https://camo.githubusercontent.com/faf9be097f4731212debdd24210c750b2dc276d0a17df19c6a8ac026427c09e9/687474703a2f2f666330392e64657669616e746172742e6e65742f667334392f692f323030392f3139382f632f632f73736a325f7665676574615f62795f7472756e6b7332342e6a7067" data-is-external-image="true"  alt="" width="600" height="852"></figure><br><br><a href="https://github.com/tsenart/vegeta">https://github.com/tsenart/vegeta</a><br><br>É só isso mesmo.<br><br>[s]</p>
             ]]>
         </content>
     </entry>

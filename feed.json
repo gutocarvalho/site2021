@@ -10,9 +10,37 @@
     },
     "items": [
         {
+            "id": "https://gutocarvalho.net/o-que-sao-tldrs/",
+            "url": "https://gutocarvalho.net/o-que-sao-tldrs/",
+            "title": "O que são TLDR&#x27;s ?",
+            "summary": "TLDR significa \"Too Long Don't Read\", é uma expressão é inglês para&hellip;",
+            "content_html": "<p>TLDR significa \"Too Long Don't Read\", é uma expressão é inglês para o termo brazuca <strong>textão</strong>.</p>\n<p>Alguns temas aqui são TLDR, geralmente pois o assunto demanda muito texto para explicar um conceito, modelo ou tecnologia.<br><br>Então já sabe, se o post é TLDR pega a água e um lanchinho e vem!</p>\n<p><br>:)</p>",
+            "author": {
+                "name": "Guto Carvalho"
+            },
+            "tags": [
+            ],
+            "date_published": "2022-01-06T10:49:31-03:00",
+            "date_modified": "2022-01-06T10:49:31-03:00"
+        },
+        {
+            "id": "https://gutocarvalho.net/o-que-sao-mindnotes/",
+            "url": "https://gutocarvalho.net/o-que-sao-mindnotes/",
+            "title": "O que são #MindNotes ?",
+            "summary": "Mindnotes, como o nome diz são notas mentais rápidas de algo que&hellip;",
+            "content_html": "<p><strong>Mindnotes,</strong> como o nome diz são notas mentais rápidas de algo que eu preciso estudar, pesquisar, entender ou lembrar. <br><br>Pode ser um post de uma linha, de um link, ou até um parágrafo, rápido e direto!<br><br>Normalmente vira um <a href=\"https://gutocarvalho.net/o-que-sao-drops/\">DROPS</a> ou um <a href=\"https://gutocarvalho.net/o-que-sao-tldrs/\">TLDR</a> no futuro.<br><br>[s]<br>Guto</p>",
+            "author": {
+                "name": "Guto Carvalho"
+            },
+            "tags": [
+            ],
+            "date_published": "2022-01-06T10:46:39-03:00",
+            "date_modified": "2022-01-06T10:49:51-03:00"
+        },
+        {
             "id": "https://gutocarvalho.net/o-que-sao-drops/",
             "url": "https://gutocarvalho.net/o-que-sao-drops/",
-            "title": "O que são Drops?",
+            "title": "O que são #Drops?",
             "summary": "São DUMPs mentais rápidos e rasteiros, simples e objetivos – que funcionam.",
             "content_html": "<p>São DUMPs mentais rápidos e rasteiros, simples e objetivos – que funcionam. <br><br>Geralmente de algo que eu acabei de fazer.<br><br>Eu – quase sempre – volto para detalhar mais cada passo.<br><br>Considere com a mesma qualidade de um rascunho ou uma anotação rápida.<br><br>De qualquer forma comenta ai qquer coisa, os comentários estão ligados nos DROPS ;)<br><br>[s]<br>Guto</p>",
             "author": {
@@ -21,7 +49,7 @@
             "tags": [
             ],
             "date_published": "2022-01-06T10:42:40-03:00",
-            "date_modified": "2022-01-06T10:42:40-03:00"
+            "date_modified": "2022-01-06T10:46:48-03:00"
         },
         {
             "id": "https://gutocarvalho.net/organizando-e-tornando-o-kubeconfig-interativo/",
@@ -33,11 +61,12 @@
                 "name": "Guto Carvalho"
             },
             "tags": [
+                   "Projetos",
                    "K8S",
                    "Drops"
             ],
             "date_published": "2022-01-06T10:14:57-03:00",
-            "date_modified": "2022-01-06T10:45:10-03:00"
+            "date_modified": "2022-01-06T10:50:36-03:00"
         },
         {
             "id": "https://gutocarvalho.net/sistemas-de-comentarios-open-source/",
@@ -130,36 +159,6 @@
             ],
             "date_published": "2021-12-15T08:35:41-03:00",
             "date_modified": "2021-12-16T07:01:17-03:00"
-        },
-        {
-            "id": "https://gutocarvalho.net/karpenter-novo-autoscaler-para-k8s-da-aws/",
-            "url": "https://gutocarvalho.net/karpenter-novo-autoscaler-para-k8s-da-aws/",
-            "title": "Karpenter, novo autoscaler para k8s da AWS",
-            "summary": "<p>Projeto novo e promissor  que vai te ajudar bastante, vem!<br><br></p>\n",
-            "content_html": "<p>Projeto novo e promissor  que vai te ajudar bastante, vem!<br><br></p>\n\n<p>Se ainda não conhece se liga no Karpenter, um novo autoscaler desenvolvido pelo time da AWS para te ajudar com seu cluster.</p>\n<p><a href=\"https://github.com/aws/karpenter\">https://github.com/aws/karpenter</a></p>\n<figure class=\"post__video\"><iframe loading=\"lazy\" width=\"560\" height=\"314\" src=\"https://www.youtube.com/embed/3QsVRHVdOnM?feature=emb_title\" allowfullscreen=\"allowfullscreen\" data-mce-fragment=\"1\"></iframe></figure>\n<figure class=\"post__video\"><iframe loading=\"lazy\" width=\"560\" height=\"314\" src=\"https://www.youtube.com/embed/qxWJRUF6JJc?feature=youtu\" allowfullscreen=\"allowfullscreen\" data-mce-fragment=\"1\"></iframe></figure>\n<p>É só isso mesmo!<br><br>[s]</p>",
-            "author": {
-                "name": "Guto Carvalho"
-            },
-            "tags": [
-                   "MindNotes"
-            ],
-            "date_published": "2021-12-15T08:28:16-03:00",
-            "date_modified": "2021-12-15T09:11:53-03:00"
-        },
-        {
-            "id": "https://gutocarvalho.net/teste-de-carga-com-ajuda-do-vegeta/",
-            "url": "https://gutocarvalho.net/teste-de-carga-com-ajuda-do-vegeta/",
-            "title": "Teste de carga com ajuda do vegeta?",
-            "summary": "<p>Quer conhecer uma ferramente de testar de carga? Vem!<br><br></p>\n",
-            "content_html": "<p>Quer conhecer uma ferramente de testar de carga? Vem!<br><br></p>\n\n<figure class=\"post__image\">Conheça o Vegeta!<br><br><img loading=\"lazy\"  src=\"https://camo.githubusercontent.com/faf9be097f4731212debdd24210c750b2dc276d0a17df19c6a8ac026427c09e9/687474703a2f2f666330392e64657669616e746172742e6e65742f667334392f692f323030392f3139382f632f632f73736a325f7665676574615f62795f7472756e6b7332342e6a7067\" data-is-external-image=\"true\"  alt=\"\" width=\"600\" height=\"852\"></figure><br><br><a href=\"https://github.com/tsenart/vegeta\">https://github.com/tsenart/vegeta</a><br><br>É só isso mesmo.<br><br>[s]</p>",
-            "author": {
-                "name": "Guto Carvalho"
-            },
-            "tags": [
-                   "MindNotes"
-            ],
-            "date_published": "2021-12-15T08:20:31-03:00",
-            "date_modified": "2021-12-15T09:09:55-03:00"
         }
     ]
 }
