@@ -22,7 +22,7 @@
 </url>
 <url>
 <loc>https://gutocarvalho.net/archives/</loc>
-<lastmod>2021-10-04T10:30:26-03:00</lastmod>
+<lastmod>2022-01-05T18:18:48-03:00</lastmod>
 </url>
 <url>
 <loc>https://gutocarvalho.net/baixando-imagens-de-ecr-privado-no-k8s/</loc>
@@ -50,7 +50,7 @@
 </url>
 <url>
 <loc>https://gutocarvalho.net/comunidades/</loc>
-<lastmod>2021-10-22T05:09:44-03:00</lastmod>
+<lastmod>2022-01-05T18:19:03-03:00</lastmod>
 <image:image>
 <image:loc>https://gutocarvalho.net/media/posts/4/kubeconf_01.jpg</image:loc>
 <image:title><![CDATA[]]></image:title>
@@ -297,6 +297,10 @@
 <lastmod>2021-06-02T08:41:36-03:00</lastmod>
 </url>
 <url>
+<loc>https://gutocarvalho.net/organizando-e-tornando-o-kubeconfig-interativo/</loc>
+<lastmod>2022-01-06T10:22:26-03:00</lastmod>
+</url>
+<url>
 <loc>https://gutocarvalho.net/page/2/</loc>
 </url>
 <url>
@@ -345,7 +349,7 @@
 </url>
 <url>
 <loc>https://gutocarvalho.net/revelando-secrets-com-o-ksd/</loc>
-<lastmod>2022-01-05T17:33:59-03:00</lastmod>
+<lastmod>2022-01-06T10:22:51-03:00</lastmod>
 </url>
 <url>
 <loc>https://gutocarvalho.net/siga-o-pessoal-do-bem/</loc>
@@ -361,7 +365,7 @@
 </url>
 <url>
 <loc>https://gutocarvalho.net/sistemas-de-comentarios-open-source/</loc>
-<lastmod>2022-01-05T18:16:23-03:00</lastmod>
+<lastmod>2022-01-05T18:21:16-03:00</lastmod>
 </url>
 <url>
 <loc>https://gutocarvalho.net/storageclass-ebs-em-seu-cluster-k8s-ec2/</loc>
@@ -381,7 +385,7 @@
 </url>
 <url>
 <loc>https://gutocarvalho.net/usando-o-kubetail-para-ver-logs-no-k8s/</loc>
-<lastmod>2022-01-05T17:35:38-03:00</lastmod>
+<lastmod>2022-01-06T10:22:41-03:00</lastmod>
 </url>
 <url>
 <loc>https://gutocarvalho.net/videos-cdcon/</loc>

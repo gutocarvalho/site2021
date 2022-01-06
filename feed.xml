@@ -3,12 +3,293 @@
     <title>Guto@Site</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2022-01-05T18:16:23-03:00</updated>
+    <updated>2022-01-06T10:22:51-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
     <id>https://gutocarvalho.net</id>
 
+    <entry>
+        <title>Organizando e tornando o kubeconfig interativo!</title>
+        <author>
+            <name>Guto Carvalho</name>
+        </author>
+        <link href="https://gutocarvalho.net/organizando-e-tornando-o-kubeconfig-interativo/"/>
+        <id>https://gutocarvalho.net/organizando-e-tornando-o-kubeconfig-interativo/</id>
+            <category term="K8S"/>
+            <category term="Drops"/>
+
+        <updated>2022-01-06T10:22:26-03:00</updated>
+            <summary>
+                <![CDATA[
+                    <p>Aprenda a organizar seu kubeconfig!</p>
+
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p>Aprenda a organizar seu kubeconfig!</p>
+
+<p>Qual a melhor forma de organizar múltiplos clientes e projetos para administrar seus clusters?</p>
+<p>Sabemos que o kubectl precisa de um kubeconfig para funcionar, podemos apontar diretamnete e executar algo</p>
+<div>
+<pre class=" language-none"><code class=" language-none">$ kubectl --kubeconfig=arquivo_de_config get nodes</code></pre>
+</div>
+<p>Podemos usar a variável kubeconfig</p>
+<div>
+<pre class=" language-none"><code class=" language-none">$ export KUBECONFIG=/caminho/para/arquivo/config
+$ kubect get nodes</code></pre>
+</div>
+<p>E como eu faço para dar conta de gerenciar dezenas de projetos e clientes?</p>
+<div>
+<pre class=" language-none"><code class=" language-none">Eu uso o kubectx + fzf + kubectl-import, falaremos disso a frente :)</code></pre>
+</div>
+<p>Primeira coisa que você tem que pensar é que um único arquivo de kubeconfig é suficiente para todos os seus projetos, inclusive o arquivo foi pensado para ter diferentes contextos.</p>
+<p>Primeiro vamos entender como funciona esse arquivo e seus contextos.</p>
+<h3 id="toc_0">Entendendo contextos</h3>
+<p>Veja um exemplo simples de arquivo de configuração do kubectl com diferentes contextos</p>
+<div>
+<pre class=" language-none"><code class=" language-none">apiVersion: v1
+kind: Config
+preferences: {}
+
+clusters:
+- cluster:
+  name: prd
+- cluster:
+  name: dev
+- cluster:
+  name: tst
+- cluster:
+
+  
+users:
+- name: engineers
+- name: developers
+- name: testers
+
+contexts:
+- context:
+  name: production-cluster
+    user: name
+    cluter: prd
+- context:
+  name: dev-cluster
+    user: name
+    cluter: dev
+- context:
+  name: test-cluster
+    user: name
+    cluter: tst</code></pre>
+</div>
+<p>Agora vamos aprender a criar esse arquivo passo a passo.</p>
+<h3 id="toc_1">Adicionando clusters</h3>
+<p>Adicionando cluster prd com certificado CA</p>
+<div>
+<pre class=" language-none"><code class=" language-none"> $ kubectl config --kubeconfig=config set-cluster projeto-prd --server=https://192.168.222.80 --certificate-authority=prd-cert-file</code></pre>
+</div>
+<p>Adicionando cluster dev com certificado CA</p>
+<div>
+<pre class=" language-none"><code class=" language-none"> $ kubectl config --kubeconfig=config set-cluster projeto-dev --server=https://172.16.31.20 --certificate-authority=dev-cert-file</code></pre>
+</div>
+<p>Adicionando cluster ignorando o certificado</p>
+<div>
+<pre class=" language-none"><code class=" language-none"> $ kubectl config --kubeconfig=config set-cluster projeto-tst --server=https://10.200.3.90 --certificate-authority=tst-ca-file</code></pre>
+</div>
+<h3 id="toc_2">Adicionando usuários</h3>
+<p>Adicionando usuário para engenheiros com certificado</p>
+<div>
+<pre class=" language-none"><code class=" language-none">$ kubectl config --kubeconfig=config set-credentials engineers --client-certificate=eng-cert-file --client-key=eng-key-file</code></pre>
+</div>
+<p>Adicionando usuário para desenvolvedores com certificado</p>
+<div>
+<pre class=" language-none"><code class=" language-none">$ kubectl config --kubeconfig=config set-credentials developers --client-certificate=dev-cert-file --client-key=dev-key-file</code></pre>
+</div>
+<p>Adicionando usuário para testadores com user/senha</p>
+<div>
+<pre class=" language-none"><code class=" language-none">$ kubectl config --kubeconfig=config set-credentials testers --username=admin --password=password</code></pre>
+</div>
+<h3 id="toc_3">Adicionando contextos</h3>
+<p>Adicionando contexto para cluster de produção com usuário engineers</p>
+<div>
+<pre class=" language-none"><code class=" language-none">$ kubectl config --kubeconfig=config set-context cluster-projeto-prd --cluster=projeto-prd --user=engineers</code></pre>
+</div>
+<p>Adicionando contexto para cluster de dev com usuário developer</p>
+<div>
+<pre class=" language-none"><code class=" language-none">$ kubectl config --kubeconfig=config set-context cluster-projeto-dev --cluster=projeto-dev --user=developers</code></pre>
+</div>
+<p>Adicionando contexto para cluster de tst com usuário testers</p>
+<div>
+<pre class=" language-none"><code class=" language-none">$ kubectl config --kubeconfig=config set-context cluster-projeto-tst --cluster=projeto-tst --user=testers</code></pre>
+</div>
+<h3 id="toc_4">Verificando arquivo</h3>
+<p>Leia o carquivo</p>
+<div>
+<pre class=" language-none"><code class=" language-none">$ cat config</code></pre>
+</div>
+<p>Agora você provavelmente tem um arquivo como esse, provavelmente a única diferença para o seu é que eu coloquei o kind e preferences no topo.</p>
+<div>
+<pre class=" language-none"><code class=" language-none">apiVersion: v1
+kind: Config
+preferences: {}
+clusters:
+- cluster:
+    certificate-authority: dev-cert-file
+    server: https://172.16.31.20
+  name: projeto-dev
+- cluster:
+    certificate-authority: prd-cert-file
+    server: https://192.168.222.80
+  name: projeto-prd
+- cluster:
+    certificate-authority: tst-ca-file
+    server: https://10.200.3.90
+  name: projeto-tst
+contexts:
+- context:
+    cluster: projeto-dev
+    user: developers
+  name: cluster-projeto-dev
+- context:
+    cluster: projeto-prd
+    user: engineers
+  name: cluster-projeto-prd
+- context:
+    cluster: projeto-tst
+    user: testers
+  name: cluster-projeto-tst
+current-context: ""
+users:
+- name: developers
+  user:
+    client-certificate: dev-cert-file
+    client-key: dev-key-file
+- name: engineers
+  user:
+    client-certificate: eng-cert-file
+    client-key: eng-key-file
+- name: testers
+  user:
+    password: password
+    username: admin</code></pre>
+</div>
+<p>Agora que os contextos foram configurados, podemos mudar de contexto assim.</p>
+<div>
+<pre class=" language-none"><code class=" language-none">$ kubectl config --kubeconfig=config use-context cluster-projeto-prd</code></pre>
+</div>
+<p>E a partir daí qualquer comando do kubectl será realizado no cluster configurado nesse contexto.</p>
+<div>
+<pre class=" language-none"><code class=" language-none">$ kubeclt --kubeconfig=config get nodes</code></pre>
+</div>
+<p>Exemplo de saída</p>
+<div>
+<pre class=" language-none"><code class=" language-none">k8s-prd-ctl-01      Ready    controlplane,etcd   6d1h   v1.21.7
+k8s-prd-ctl-02      Ready    controlplane,etcd   6d1h   v1.21.7
+k8s-prd-ctl-03      Ready    controlplane,etcd   6d1h   v1.21.7
+k8s-prd-ctl-04      Ready    controlplane,etcd   6d1h   v1.21.7
+k8s-prd-ctl-05      Ready    controlplane,etcd   6d1h   v1.21.7
+k8s-prd-worker-01   Ready    worker              6d1h   v1.21.7
+k8s-prd-worker-02   Ready    worker              6d1h   v1.21.7
+k8s-prd-worker-03   Ready    worker              6d1h   v1.21.7
+k8s-prd-worker-04   Ready    worker              6d1h   v1.21.7</code></pre>
+</div>
+<h3 id="toc_5">Verificando a configuracao do kubectl</h3>
+<p>Com o comando abaixo voce verá a configuração completa</p>
+<div>
+<pre class=" language-none"><code class=" language-none">$ kubectl config --kubeconfig=config view</code></pre>
+</div>
+<h3 id="toc_6">Verificando apenas do contexto que está configurado</h3>
+<p>É preciso usaro parametro minify para limitar ao contexto</p>
+<div>
+<pre class=" language-none"><code class=" language-none">$ kubectl config --kubeconfig=config view --minify</code></pre>
+</div>
+<p>Saída</p>
+<div>
+<pre class=" language-none"><code class=" language-none">apiVersion: v1
+clusters:
+- cluster:
+    certificate-authority: prd-cert-file
+    server: https://192.168.222.80
+  name: projeto-prd
+contexts:
+- context:
+    cluster: projeto-prd
+    user: engineers
+  name: cluster-projeto-prd
+current-context: cluster-projeto-prd
+kind: Config
+preferences: {}
+users:
+- name: engineers
+  user:
+    client-certificate: eng-cert-file
+    client-key: eng-key-file</code></pre>
+</div>
+<p>Obseve a linha</p>
+<div>
+<pre class=" language-none"><code class=" language-none">current-context: cluster-projeto-prd</code></pre>
+</div>
+<p>Sempre que alteramos de contexto essa linha será modificado no seu arquivo de configuração.</p>
+<h3 id="toc_7">Existe algo mais prático para visualizar e trocar de contextos?</h3>
+<p>Sim existe o kubectx</p>
+<ul>
+<li>https://github.com/ahmetb/kubectx</li>
+</ul>
+<p>Instalando via brew</p>
+<div>
+<pre class=" language-none"><code class=" language-none">$ brew install kubectx</code></pre>
+</div>
+<p>Rodando</p>
+<div>
+<pre class=" language-none"><code class=" language-none">$ kubectx</code></pre>
+</div>
+<p>Ele vai te mostrar os contexto</p>
+<div>
+<pre class=" language-none"><code class=" language-none">cluster-projeto-prd
+cluster-projeto-dev
+cluster-projeto-tst</code></pre>
+</div>
+<p>Para escolher o contexto basta digitar</p>
+<div>
+<pre class=" language-none"><code class=" language-none">$ kubectx cluster-projeto-prd</code></pre>
+</div>
+<p>E pronto!</p>
+<h3 id="toc_8">Existe algo ainda mais fácil?</h3>
+<p>Sim, você pode utilizar o fzf</p>
+<ul>
+<li>https://github.com/junegunn/fzf</li>
+</ul>
+<p>Instalando via brew</p>
+<div>
+<pre class=" language-none"><code class=" language-none">$ brew install fzf</code></pre>
+</div>
+<p>Com ele o kubectx fica interativo, abre um menu e voce seleciona o contexto.</p>
+<div>
+<pre class=" language-none"><code class=" language-none">$ kubectx</code></pre>
+</div>
+<p>Saída</p>
+<p><a href="https://asciinema.org/a/NC0R8SqNRzcjpJl0j5B1iB7Ja"><img loading="lazy" src="https://asciinema.org/a/NC0R8SqNRzcjpJl0j5B1iB7Ja.svg" data-is-external-image="true"  alt="asciicast"></a></p>
+<h3 id="toc_9">Consigo importar um kubeconfig?</h3>
+<p>Eu sei que ficar editando isso na mão, dá um certo trabalho, mas tem solução. Recentemente eu encontrei o projeto kubectl-import para resolver essa questão.</p>
+<ul>
+<li>https://github.com/bitnami-labs/kubectl-import</li>
+</ul>
+<p>Instalando o projeto</p>
+<div>
+<pre class=" language-none"><code class=" language-none"> $ sudo curl -o kubectl-import https://raw.githubusercontent.com/bitnami-labs/kubectl-import/master/kubectl-import &amp;&amp; chmod 0755 kubectl-import</code></pre>
+</div>
+<p>Com ele você consegue pegar um kubeconfig e importar para o seu principal.</p>
+<div>
+<pre class=" language-none"><code class=" language-none"> $ export KUBECONFIG=/caminho/pro/seu/kubeconfig
+ $ ./kubectl-import kubeconfig-novo</code></pre>
+</div>
+<p>E pronto, vai aparecer no seu kubectx. Recomendo editar o arquivo antes de importar, setando corretamente os nomes do cluster, user e contexto.</p>
+<h2 id="toc_10">Amarrando as pontas</h2>
+<p>Espero que tenha aprendido a usar contextos do kubeconf, usar o kubectx, fzf, kubectl-import e agilizar a administração de seus clusters.</p>
+<p>[s]<br>Guto</p>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>Sistemas de comentários open source</title>
         <author>
@@ -18,18 +299,18 @@
         <id>https://gutocarvalho.net/sistemas-de-comentarios-open-source/</id>
             <category term="MindNotes"/>
 
-        <updated>2022-01-05T18:16:23-03:00</updated>
+        <updated>2022-01-05T18:21:16-03:00</updated>
             <summary>
                 <![CDATA[
-                    <p>Eu uso o DISQUS, mas estou buscando alternativas open source para substituir, eis algumas que eu descobri.</p>
+                    <p>Eu uso o DISQUS, mas estou buscando alternativas open source!</p>
 
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                <p>Eu uso o DISQUS, mas estou buscando alternativas open source para substituir, eis algumas que eu descobri.</p>
+                <p>Eu uso o DISQUS, mas estou buscando alternativas open source!</p>
 
-<p>Sistemas de comentários open source</p>
+<p>Veja alguns sistemas de comentários open source interessantes</p>
 <p><a href="https://commento.io/">https://commento.io/</a></p>
 <p><a href="https://remark42.com/">https://remark42.com/</a></p>
 <p><a href="https://posativ.org/isso/">https://posativ.org/isso/</a></p>
@@ -50,11 +331,10 @@
         </author>
         <link href="https://gutocarvalho.net/usando-o-kubetail-para-ver-logs-no-k8s/"/>
         <id>https://gutocarvalho.net/usando-o-kubetail-para-ver-logs-no-k8s/</id>
-            <category term="MindNotes"/>
             <category term="K8S"/>
             <category term="Drops"/>
 
-        <updated>2022-01-05T17:35:38-03:00</updated>
+        <updated>2022-01-06T10:22:41-03:00</updated>
             <summary>
                 <![CDATA[
                     As vezes queremos ver os logs de todos os pods de um&hellip;
@@ -121,11 +401,10 @@ database-v5-yhren      1/1       Running   0          2h</code></pre>
         </author>
         <link href="https://gutocarvalho.net/revelando-secrets-com-o-ksd/"/>
         <id>https://gutocarvalho.net/revelando-secrets-com-o-ksd/</id>
-            <category term="MindNotes"/>
             <category term="K8S"/>
             <category term="Drops"/>
 
-        <updated>2022-01-05T17:33:59-03:00</updated>
+        <updated>2022-01-06T10:22:51-03:00</updated>
             <summary>
                 <![CDATA[
                     <p>Conhece o projeto ksd? Então vem conhecer!</p>
@@ -325,62 +604,6 @@ database-v5-yhren      1/1       Running   0          2h</code></pre>
                 <p>Venha entender o que é service mesh!</p>
 
 <p>Esse documento foi escrito originalmente em inglês para um job, mas vou aproveitar para colocar aq no blog, se esqueci de traduzir algo me avise ;)<br><br><strong>## 1. O que é service Mesh e para que serve isso?</strong><br><br>Você provavelmente já ouviu falar sobre isso, e normalmente na mesma frase que alguém cita o tal do "service mesh" geralmente vem junto um "IstIO" ou "Linkerd", ambos implementações bastante populartes desta camada de abstração de rede.<br><br>Antes de entrar no modelo de abstração em si, vamos falar de algo realmente importante que permite o uso útil do service mesh, e neste caso, falamos especificamente dos microserviços.<br><br>Nos últimos anos essa é outra das buzzwords que tem dominado as conversas nos corredores de TI, mas é bom entender desde já que microserviços e containers não são a mesma coisa não dependem um do outro, contudo, ainda assim, microserviços em containers fazem todo o sentido, tal como juntar o queijo com a goiabada.<br><br>Ainda assim, microserviços podem rodar fora de containers, sem nenhum problema.<br><br><strong>## 2. Entendendo os microserviços</strong><br><br>Essa tendência de migração para microserviços – a qual tem se tornado muito popular na última década, basicamente se refere a decompor ou quebrar grandes monolitos de software em pedaços menores e independentes, chamados então de microserviços.<br><br>Pense no seguinte exemplo, imagine uma empresa área que rodava toda sua operação em um grande monolito que fazia tudo de ponta a ponta, contudo, tal monito era igualmente indomávele e difícil de escalar, atualizar, manter e operar. Depois de algum tempo a empresa decidiu decompor o monolito em pedaços menores, separando serviços como pagamento, atendimento do passageiro, atividades dos comissários, atividades dos pilotos, atividades dos mecânicos, venda de passagens, despacho de bagagem e marcação de assentos em pedaços únicos, independentes, que se comunicam entre si, conforme necessidade, utilizando para essa comunicação as API's, geralmente do tipo REST.<br><br>Ao decompor esse grande monolito, por um lado, é reduzida a complexidade em alguns pontos, o que facilita a evolução de determinados aspectos do negócio, reduz o risco e acelera a entrega. Além disso, os microserviços permitem que se utilizem técnicas de escalabilidade horizontal, o que faz muito sentido para o universo de containers, clusters de containers e orquestradores de clusters de containers.<br><br>Nem sempre redução da complexidade é um benefício bem aceito, muitos defendem que aumenta a complexidade, isso você poderá julgar e formar opinião com o tempo :)<br><br><strong>## 3. Vantagens dos microserviços</strong><br><br>Podemos ter times específicos e dedicados a manter um determinado serviço do negócio.<br><br>Como os componentes são independentes, uma vez definidos padrões de comunicação, interoperação, monitoramento, observação, operação e entrega, cada time tem mais liberdade de escolher a "melhor" STACK para criar e manter o serviço, desde que esta esteja aderente aos "macro" padrões previamente definidos pelos arquitetos.<br><br>O custo de operação – a médio e longo prazo - e manutenção tende a ser menor.<br><br>A disponibilidade do serviço - a médio e longo prazo – tende a ser maior.<br><br>A velocidade de entrega tende a ser muito maior.<br><br>O LEAD time (tempo da ideia de uma feature ao momento de entrar produção) tende a ser MUITO menor.<br><br>O tempo de recuperação (MTTR) de um incidente ou falha tende a ser menor.<br><br>A curva de aprendizado do time que vai manter o software é significantemente menor pois ele vai focar nos padrões definidos e nos requisitos de negócio do serviço de que seu time é responsável. <br><br>A atualização se torna mais simples e com menor risco, afinal você não está mudando o monolito inteiro, está mudando apenas a versão de um serviço, e pode inclusive retornar a versão anterior sem grandes e elaborados processos de mudança.<br><br>A escalabilidade horizontal passa a ser uma opção, permitindo em momentos de pico de acessos, aumentar o tamanho e a quantidade de microserviços atendendo requisições dos clientes, e após o pico, retornar ao tamanho e oferta normal de atendimento das requisições.<br><br>Quem ainda não está rodando nesse modelo, está se preparando para isso, ou já está em transição para ele.<br><br>Quem não está rodando nesse modelo, nem no processo de transição, nem se preparando, provavelmente sumirá do mercado em breve – de verdade.<br><br><strong>## 4. Nem tudo são flores nos microserviços</strong><br><br>O processo de decompor é complexo, necessita de apoio de arquitetos, engenheiros, desenvolvedores, analistas e também de recursos computacionais, financeiros, de aprovações em N níveis, além de um amplo entendimento e também da vontade de todos para fazer a transição funcionar da melhor forma.<br><br>Decompor demais também pode ser um problema, é preciso ter equilíbrio ou você gera novamente complexidade devido a imensa quantidade de serviços interconectados, onde, caso ocorra um problema, o nível de abstração aumenta imensamente a complexidade e o alcance do troubleshooting para resolução do problema.<br><br>Esse modelo também pode ser bem mais caro – normalmente <br>é – do que previsto no início – devido a incertezas, contudo, de médio a longo prazo os resultados são muito visíveis, do ponto de vista financeiro, operação e disponibilidade.<br><br>Monitoramento e operação também precisam estar afinados com todo o processo, a cultura SRE, DevOps, DevSecOps, GitOps e FinOps trazem experiências e indicam os caminhos e os possíveis percalços, permitindo desviar das estradas ruins, ainda assim, os engenheiros tem que dominar o conceito da infraestrutura como código, infraestrutura imutável, continuous integration, continuous delivery, containerização e orquestração de containers para que quando alguém comite código no lado esquerdo, algo saia rodando lá na ponta do lado direito de forma natural, controlada e com visibilidade plena.<br><br>Nesse processo de transição, a segurança tem que estar contida desde o dia zero no mindset de cada desenvolvedor e engenheiro, bem como a exposição de métricas e informações, tudo visando garantir o monitoramento e a observabilidade, bem como a adoção de uma madura cultura de testes que devem ser integrados a esteira.<br><br>No final, posso dizer que a transição funciona, está comprovado, tem cases fantásticos, mas não é fácil e não é simples como iniciar um novo projeto já com esses conceitos incutidos, mas dá para fazer, tenha certeza disso.<br><br><strong>## 5. Mas oq é esse tal de service mesh afinal?</strong><br><br>Service Mesh é basicamente uma camada de infraestrutura criada para controlar a comunicação serviço a serviço em um arquitetura de microserviços. <br><br>Ele controla a entrega das requisições para outros serviços, atua como load balancer, pode criptografar dados, descobrir serviços e agregá-los ao load balancer de sua APP.<br><br>Apesar de você poder determinar em seu código a lógica de comunicação de seu microserviço, o service mesh atua como uma abstração desta lógica, em uma camada paralela de infraestrutura, dedicada a isso. O funcionamento é bastante simples, ele injeta sidecars proxy em cada serviço.<br><br>O sidecar proxy oferece ao controlador mesh os dados do serviço e permite a troca de informações entre os serviços. O controlador service mesh em posse desses dados pode fazer todo o plano de funcionamento e comportamento da aplicação e seus serviços disponíveis. A aplicação de service mesh tem um "control plane" próprio e também oferece uma API que te permite gerenciar o tráfego, resiliência da rede, segurança, autenticação e telemetria de cada serviço.<br><br><strong>## 6. Pq eu preciso desse service mesh?</strong><br><br><strong>### 6.1. Performance e roteamento</strong><br> <br>Se você tem uma aplicação que atende uma demanda bastante grande, sendo essa aplicação composta de diversos microserviços se comunicando entre si, o fluxo de comunicação pode se tornar um desafio, uma vez que as requisições entre os serviços podem crescer de forma exponencial, neste caso você provavelmente vai precisar de um roteamento sofisticado e inteligente para manter a comunicação fluindo corretamente, e principalmente para manter a performance dentro dos padrões esperados, evitando degradar a comunicação entre os serviços.<br><br><strong>### 6.2. Segurança</strong><br><br>Você pode desejar que a comunicação entre os serviços seja segura com TLS mútuo, o que chamamos de mTLS.<br><br><strong>### 6.3. Melhorar a sua estratégia DevOps</strong><br><br>Permite que os times gerenciem as políticas de segurança e acesso através de código e integre isso nas pipelines CI/CD que entregam o software para o cluster.<br><br><strong>## 7. Quais os principais benefícios do service mesh?</strong><br><br>### Observabilidade<br><br>Normalmente times usam diferentes métodos e tecnologias para manter a visibilidade em relação ao tráfego, log, métricas, tracing e controles de segurança. O service mesh já traz tudo isso de forma centralizada e organizada.<br><br>### Resiliência<br><br>O service mesh oferece mecanismos como Circuit Breaker, Latency Aware Load Balancing, um descobrimento de serviço bastante consistente e robusto, permitindo ainda configurar retries, timeouts e deadlines nestes serviços.<br><br>### Traffic Control &amp; Circuit Breaker<br><br>Podemos controlar de forma muito granular o roteamento de tráfego de rede para determinar de forma objetiva por onde as requisições serão roteadas. O circuit breaker permite detectar problemas e definir regras precisas que dizem quando ejetar um POD do load balancer e quando recolocar.<br><br>### Security<br><br>A maioria dos service meshs oferece um mecanismo CA que gera certificados de forma dinâmica para cada serviço, garantindo uma comunicação segura serviço a serviço.<br><br>### Deploy strategies<br><br>Quando você precisa utilizar estratégias de deploy como Canary, Blue/Green, Dark Launch e não quer construir essa lógica na sua APP ou preparar isso em infraestrutura do zero.<br><br>### Delay, rate control &amp; fault injection<br><br>A maioria dos service meshs oferece forma de configurar latência e falhas para simular oq aconteceria no mundo real. Dessa forma você vai verificar qual o comportamento dos seus serviços no caso desse tipo de cenário. É possível também configurar rate limit para um determinado serviço.<br><br>### Less code para Devs<br><br>Os recursos contidos no service mesh reduzem sensivelmente a quantidade de código que precisa ser produzida pelos devs pois muita coisa já está pronta e disponível nesta camada de abstração que conecta os serviços.<br><br>### Less code para Ops<br><br>Da mesma forma os OPs não precisam demandar aos Devs formas de coletar métricas, logs, falar sobre retries, timeouts, disponibilidade e performance, pois esse conjunto de informações e configurações já é oferecido nativamente pelo service mesh.<br><br><strong>## 8. Quais os principais drawbacks para o cliente e para a operação?</strong><br><br>Aumenta a quantidade de pontos de falha - não tem jeito, é mais um componente central que precisa ser considerado, operado, gerido e atualizado.<br><br>Os principais projetos relacionados a service MESH estão em constante evolução, muita coisa nova está sendo criada, testada, e vamos navegar nesses mares com muitas coisas novas, atualizações podem ser desafiadores conforme a tecnologia evolui.<br><br>Aumenta a complexidade da operação de seu ambiente, pois agora além de pods e réplicas, precisamos pensar no service mesh e sua arquitetura.<br><br>A implementação inicial é simples, mas a personalização para as necessidades do clientes requer bastante esforço.<br><br>A curva de aprendizado pode ser de média a longo prazo até o time dominar o serviço e sua arquitetura.<br><br>O service mesh resolve as coisas dentro de nossa infraestrutura, dentro de nossa operação, contudo ao desacoplar sua APP e iniciar a migração para o modelo microserviços, isso normalmente traz junto a necessidade de implementar um API Gateway, especialmente se você tem um grande número de microserviços a expor para fora da sua infra, isso tem de ser considerado e provavelmente será o próximo passado.<br><br><strong>## 8. Quando não usar service mesh?</strong><br><br>- Quando você não sabe para que serve<br>- Quando você não enxerga como isso vai ajudar sua operação<br>- Quando você não enxerga como isso vai ajudar sua app do ponto de vista de disponibilidade<br>- Quando você não enxerga como isso vai ajudar sua app do ponto de vista de peformance<br>- Quando você não enxerga como isso vai ajudar sua estratégia de negócio<br>- Quando o discovery default do K8S é suficiente para você<br>- Quando o rollout default do K8S é suficiente para você<br>- Quando você não tem um grande número de microserviços para gerenciar<br>- Quando você não tem microserviços, mas acha que tem<br>- Quando você não tem um fluxo massivo de requisições para lidar<br>- Quando você não precisa de comunicação segura entre os serviços<br><br><strong>## 9. O que vem por aí?</strong><br><br>Vamos dar uma olhada a 20 mil metros de altura no Istio e Linkerd e comparar os dois.<br><br><strong>## 10. Refs</strong><br><br>- https://en.wikipedia.org/wiki/Service_mesh<br>- https://www.cncf.io/blog/2017/04/26/service-mesh-critical-component-cloud-native-stack/<br>- https://www.cncf.io/blog/2021/07/15/networking-with-a-service-mesh-use-cases-best-practices-and-comparison-of-top-mesh-options/<br>- https://www.nginx.com/blog/what-is-a-service-mesh/<br>- https://buoyant.io/what-is-a-service-mesh<br>- https://www.dynatrace.com/news/blog/what-is-a-service-mesh/<br>- https://www.bmc.com/blogs/service-mesh/<br>- https://glasnostic.com/blog/service-mesh-istio-limits-and-benefits-part-1<br>- https://glasnostic.com/blog/service-mesh-istio-limits-and-benefits-part-2<br>- https://www.plugandplaytechcenter.com/resources/what-service-mesh-and-why-should-you-care-about-it<br>- https://www.limepoint.com/blog/5-reasons-why-you-should-consider-service-mesh<br>- https://enterprisersproject.com/article/2019/7/service-mesh-how-to-make-case<br>- https://www.xenonstack.com/insights/what-is-a-service-mesh<br>- https://www.mulesoft.com/lp/whitepaper/api/service-mesh-api-management<br>- https://thenewstack.io/when-you-do-and-dont-need-a-service-mesh/</p>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>Dashboards para K8S</title>
-        <author>
-            <name>Guto Carvalho</name>
-        </author>
-        <link href="https://gutocarvalho.net/dashboards-para-k8s/"/>
-        <id>https://gutocarvalho.net/dashboards-para-k8s/</id>
-            <category term="MindNotes"/>
-
-        <updated>2021-12-15T20:43:30-03:00</updated>
-            <summary>
-                <![CDATA[
-                    Quer usar Dashboards para o Kubernetes? Bora! Algumas opções bastante conhecidas Projetos&hellip;
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                <p>Quer usar Dashboards para o Kubernetes? Bora!</p>
-<p>Algumas opções bastante conhecidas</p>
-<ul>
-<li><a href="https://rancher.com/docs/rancher/v2.6/en/">https://rancher.com/docs/rancher/v2.6/en/</a></li>
-<li><a href="https://github.com/kubernetes/dashboard">https://github.com/kubernetes/dashboard</a></li>
-<li><a href="https://www.portainer.io">https://www.portainer.io</a></li>
-<li><a href="https://www.weave.works/oss/scope">https://www.weave.works/oss/scope</a></li>
-</ul>
-<p>Projetos promissores</p>
-<ul>
-<li><a href="https://octant.dev">https://octant.dev</a></li>
-<li><a href="https://github.com/skooner-k8s/skooner">https://github.com/skooner-k8s/skooner</a></li>
-<li><a href="https://kubevious.io">https://kubevious.io</a> (esse é bem interessante)</li>
-</ul>
-<p>Para terminal</p>
-<ul>
-<li><a href="https://codeberg.org/hjacobs/kube-ops-view">https://codeberg.org/hjacobs/kube-ops-view</a></li>
-<li><a href="https://k9scli.io">https://k9scli.io</a></li>
-</ul>
-<p>Para seu desktop</p>
-<ul>
-<li><a href="https://k8slens.dev">https://k8slens.dev</a></li>
-<li><a href="https://kubenav.io">https://kubenav.io</a></li>
-</ul>
-<p>Para conhecer e testar</p>
-<ul>
-<li><a href="https://github.com/jeremykross/konstellate">https://github.com/jeremykross/konstellate</a></li>
-<li><a href="https://github.com/smpio/kubernator">https://github.com/smpio/kubernator</a></li>
-<li><a href="https://github.com/kubricksllc/Kubricks">https://github.com/kubricksllc/Kubricks</a></li>
-</ul>
-<p>Gerador de relatórios de custos para AWS e GCP</p>
-<ul>
-<li><a href="https://codeberg.org/hjacobs/kube-resource-report">https://codeberg.org/hjacobs/kube-resource-report</a></li>
-</ul>
-<p>[s]</p>
-
             ]]>
         </content>
     </entry>
