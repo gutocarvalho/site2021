@@ -3,7 +3,7 @@
     <title>Guto@Site</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2022-01-06T15:41:12-03:00</updated>
+    <updated>2022-01-06T15:49:18-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
@@ -17,8 +17,9 @@
         <link href="https://gutocarvalho.net/ferramentas-interessantes-para-k8s/"/>
         <id>https://gutocarvalho.net/ferramentas-interessantes-para-k8s/</id>
             <category term="MindNotes"/>
+            <category term="K8S"/>
 
-        <updated>2022-01-06T15:41:12-03:00</updated>
+        <updated>2022-01-06T15:49:18-03:00</updated>
             <summary>
                 <![CDATA[
                     <p>Conheça algumas ferramentas interessantes para seu k8s toolkit</p>
@@ -178,6 +179,8 @@
 <h2 id="toc_27">kubernetes installers</h2>
 <ul>
 <li>https://github.com/kubernetes/kops</li>
+<li>https://github.com/kubernetes-sigs/kubespray</li>
+<li>https://rancher.com/products/rke</li>
 </ul>
 <h2 id="toc_28">kubernetes distros</h2>
 <ul>
@@ -196,70 +199,73 @@
 <li>https://github.com/aquasecurity/kubectl-who-can</li>
 <li>https://github.com/aquasecurity/trivy</li>
 <li>https://github.com/armosec/kubescape</li>
+</ul>
+<h2 id="toc_32">cluster sanitizer</h2>
+<ul>
 <li>https://github.com/FairwindsOps/Pluto</li>
 <li>https://github.com/derailed/popeye</li>
 </ul>
-<h2 id="toc_32">service proxy</h2>
+<h2 id="toc_33">service proxy</h2>
 <ul>
 <li>https://github.com/envoyproxy/envoy</li>
 <li>https://github.com/projectcontour/contour</li>
 <li>https://github.com/traefik/traefik</li>
 <li>https://github.com/nginx/nginx</li>
 </ul>
-<h2 id="toc_33">storage (block)</h2>
+<h2 id="toc_34">storage (block)</h2>
 <ul>
 <li>https://github.com/longhorn/longhorn</li>
 <li>https://github.com/openebs/openebs</li>
 </ul>
-<h2 id="toc_34">storage (object)</h2>
+<h2 id="toc_35">storage (object)</h2>
 <ul>
 <li>https://github.com/minio/minio</li>
 </ul>
-<h2 id="toc_35">service mesh</h2>
+<h2 id="toc_36">service mesh</h2>
 <ul>
 <li>https://github.com/linkerd/linkerd2</li>
 <li>https://github.com/istio/istio</li>
 <li>https://github.com/hashicorp/consul</li>
 </ul>
-<h2 id="toc_36">packages</h2>
+<h2 id="toc_37">packages</h2>
 <ul>
 <li>https://github.com/helm/helm</li>
 <li>https://github.com/kubernetes-sigs/kustomize/</li>
 <li>https://github.com/buildpacks/pack</li>
 </ul>
-<h2 id="toc_37">container register</h2>
+<h2 id="toc_38">container register</h2>
 <ul>
 <li>https://github.com/goharbor/harbor</li>
 <li>https://github.com/quay/quay</li>
 </ul>
-<h2 id="toc_38">database</h2>
+<h2 id="toc_39">database</h2>
 <ul>
 <li>https://github.com/ongres/stackgres</li>
 <li>https://github.com/CrunchyData/postgres-operator</li>
 <li>https://github.com/vitessio/vitess</li>
 </ul>
-<h2 id="toc_39">api gateway</h2>
+<h2 id="toc_40">api gateway</h2>
 <ul>
 <li>https://github.com/emissary-ingress/emissary</li>
 <li>https://github.com/Kong/kong</li>
 </ul>
-<h2 id="toc_40">observability</h2>
+<h2 id="toc_41">observability</h2>
 <ul>
 <li>https://github.com/pulumi/kubespy</li>
 <li>https://github.com/salesforce/sloop</li>
 </ul>
-<h2 id="toc_41">troubleshooting</h2>
+<h2 id="toc_42">troubleshooting</h2>
 <ul>
 <li>https://github.com/aylei/kubectl-debug</li>
 </ul>
-<h2 id="toc_42">telemetria</h2>
+<h2 id="toc_43">telemetria</h2>
 <ul>
 <li>https://github.com/jaegertracing/jaeger</li>
 <li>https://github.com/open-telemetry</li>
 <li>https://github.com/opentracing</li>
 <li>https://grafana.com/oss/tempo</li>
 </ul>
-<h2 id="toc_43">serverless</h2>
+<h2 id="toc_44">serverless</h2>
 <ul>
 <li>https://github.com/kubeless/kubeless</li>
 <li>https://github.com/funktionio/funktion</li>
@@ -279,7 +285,7 @@
         <id>https://gutocarvalho.net/verificando-quando-uma-branch-foi-criada/</id>
             <category term="MindNotes"/>
 
-        <updated>2022-01-06T12:59:17-03:00</updated>
+        <updated>2022-01-06T15:49:05-03:00</updated>
             <summary>
                 <![CDATA[
                     <p>Nota mental para verificar a idade e o autor de uma branch.</p>
