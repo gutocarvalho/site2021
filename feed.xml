@@ -3,7 +3,7 @@
     <title>Guto@Site</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2022-01-06T18:12:47-03:00</updated>
+    <updated>2022-01-06T18:18:20-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
@@ -17,7 +17,7 @@
         <link href="https://gutocarvalho.net/quando-deveria-ganhar-um-cloud-engineer/"/>
         <id>https://gutocarvalho.net/quando-deveria-ganhar-um-cloud-engineer/</id>
 
-        <updated>2022-01-06T18:12:47-03:00</updated>
+        <updated>2022-01-06T18:18:20-03:00</updated>
             <summary>
                 <![CDATA[
                     Quanto deveria ganhar um DevOps Engineer ou Cloud Engineer? Me fazem essa&hellip;
@@ -44,7 +44,7 @@
 <li>Cloud Engineer 2, R$ 10.000,00 ( 4 anos de exp comprovada )</li>
 <li>Cloud Engineer 3, R$ 15.000,00 ( 6+ anos de exp comprovada )</li>
 </ul>
-<h2 id="toc_1">Cloud Native Engineer + DevOps Experience (k8s+cicd)</h2>
+<h2 id="toc_1">Cloud Native Engineer + DevOps Experience (k8s+cicd+iac)</h2>
 <p>CLT</p>
 <ul>
 <li>Cloud Native Eng Trainee, R$ 2.500,00 ( pegar para ensinar )</li>
