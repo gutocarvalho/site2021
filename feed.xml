@@ -3,7 +3,7 @@
     <title>Guto@Site</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2022-01-06T10:31:07-03:00</updated>
+    <updated>2022-01-06T10:34:12-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
@@ -19,7 +19,7 @@
             <category term="K8S"/>
             <category term="Drops"/>
 
-        <updated>2022-01-06T10:31:07-03:00</updated>
+        <updated>2022-01-06T10:34:12-03:00</updated>
             <summary>
                 <![CDATA[
                     <p>Aprenda a organizar seu kubeconfig!</p>
@@ -243,7 +243,7 @@ users:
 <div>
 <pre class=" language-none"><code class=" language-none">$ kubectx</code></pre>
 </div>
-<p>Ele vai te mostrar os contexto</p>
+<p>Ele vai te mostrar os contextos disponíveis</p>
 <div>
 <pre class=" language-none"><code class=" language-none">cluster-projeto-prd
 cluster-projeto-dev
@@ -268,7 +268,9 @@ cluster-projeto-tst</code></pre>
 <pre class=" language-none"><code class=" language-none">$ kubectx</code></pre>
 </div>
 <p>Saída</p>
-<p><a href="https://asciinema.org/a/NC0R8SqNRzcjpJl0j5B1iB7Ja"><img loading="lazy" src="https://asciinema.org/a/NC0R8SqNRzcjpJl0j5B1iB7Ja.svg" data-is-external-image="true"  alt="asciicast"></a></p>
+<p>
+<script id="asciicast-NC0R8SqNRzcjpJl0j5B1iB7Ja" src="https://asciinema.org/a/NC0R8SqNRzcjpJl0j5B1iB7Ja.js" async=""></script>
+</p>
 <h3 id="toc_9">Consigo importar um kubeconfig?</h3>
 <p>Eu sei que ficar editando isso na mão dá um certo trabalho, mas tem solução. Recentemente eu encontrei o projeto kubectl-import para resolver essa questão.</p>
 <ul>
