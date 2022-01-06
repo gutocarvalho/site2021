@@ -3,7 +3,7 @@
     <title>Guto@Site</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2022-01-06T10:50:36-03:00</updated>
+    <updated>2022-01-06T10:56:36-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
@@ -82,7 +82,7 @@
             <category term="K8S"/>
             <category term="Drops"/>
 
-        <updated>2022-01-06T10:50:36-03:00</updated>
+        <updated>2022-01-06T10:56:36-03:00</updated>
             <summary>
                 <![CDATA[
                     <p>Aprenda a organizar seu kubeconfig!</p>
@@ -105,7 +105,7 @@ $ kubect get nodes</code></pre>
 </div>
 <p>E como eu faço para dar conta de gerenciar dezenas de projetos e clientes?</p>
 <div>
-<pre class=" language-none"><code class=" language-none">Eu uso o kubectx + fzf + kubectl-import, falaremos disso a frente :)</code></pre>
+<pre class=" language-none"><code class=" language-none">Eu uso o kubectx + kubens + fzf + kubectl-import, falaremos disso a frente :)</code></pre>
 </div>
 <p>Primeira coisa que você tem que pensar é que um único arquivo de kubeconfig é suficiente para todos os seus projetos, inclusive o arquivo foi pensado para ter diferentes contextos.</p>
 <p>Primeiro vamos entender como funciona esse arquivo e seus contextos.</p>
@@ -349,6 +349,12 @@ cluster-projeto-tst</code></pre>
  $ ./kubectl-import kubeconfig-novo</code></pre>
 </div>
 <p>E pronto, o novo cluster/contexto vai aparecer no seu kubectx. Recomendo editar o arquivo antes de importar, setando corretamente os nomes do cluster, user e contexto.</p>
+<h3 id="toc_10">Tem algo parecido como kubectx só que para namespaces?</h3>
+<p>Tem sim, o projeto kubectx traz junto o kubens, aplicativo similar que serve para trocar de namespaces rapidamente de forma interativa, basta digitar</p>
+<div>
+<pre class=" language-none"><code class=" language-none">$ kubens</code></pre>
+</div>
+<p>E escolher o namespace.</p>
 <h2 id="toc_10">Amarrando as pontas</h2>
 <p>Espero que tenha aprendido a usar contextos do kubeconf, usar o kubectx, fzf, kubectl-import e agilizar a administração de seus clusters.<br><br>Esse post é o que eu chamo de DROPS, entenda o modelo <a href="https://gutocarvalho.net/o-que-sao-drops/">aqui</a>.</p>
 <p>[s]<br>Guto</p>
