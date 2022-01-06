@@ -3,7 +3,7 @@
     <title>Guto@Site</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2022-01-06T15:02:18-03:00</updated>
+    <updated>2022-01-06T15:09:05-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
@@ -18,7 +18,7 @@
         <id>https://gutocarvalho.net/ferramentas-interessantes-para-k8s/</id>
             <category term="MindNotes"/>
 
-        <updated>2022-01-06T15:02:18-03:00</updated>
+        <updated>2022-01-06T15:09:05-03:00</updated>
             <summary>
                 <![CDATA[
                     <p>Conheça algumas ferramentas interessantes para seu k8s toolkit</p>
@@ -97,158 +97,157 @@
 <li>https://github.com/Shopify/ejson</li>
 <li>https://github.com/mfuentesg/ksd</li>
 </ul>
-<h2 id="toc_12">security scan</h2>
-<ul>
-<li>https://github.com/FairwindsOps/Pluto</li>
-<li>https://github.com/derailed/popeye</li>
-</ul>
-<h2 id="toc_13">mobile dashboard</h2>
+<h2 id="toc_12">mobile dashboard</h2>
 <ul>
 <li>https://github.com/bitnami-labs/cabin</li>
 </ul>
-<h2 id="toc_14">chaos test</h2>
+<h2 id="toc_13">chaos test</h2>
 <ul>
 <li>https://github.com/asobti/kube-monkey</li>
 <li>https://github.com/linki/chaoskube</li>
 <li>https://github.com/powerfulseal/powerfulseal</li>
 </ul>
-<h2 id="toc_15">load test</h2>
+<h2 id="toc_14">load test</h2>
 <ul>
 <li>https://github.com/mrahbar/k8s-testsuite</li>
 </ul>
-<h2 id="toc_16">notifiers</h2>
+<h2 id="toc_15">notifiers</h2>
 <ul>
 <li>https://github.com/bitnami-labs/kubewatch</li>
 <li>https://github.com/searchlight/searchlight</li>
 <li>https://github.com/sukeesh/k8s-job-notify</li>
 <li>https://github.com/infracloudio/botkube</li>
 </ul>
-<h2 id="toc_17">web-cli</h2>
+<h2 id="toc_16">web-cli</h2>
 <ul>
 <li>https://github.com/kubernetes-sigs/kui</li>
 </ul>
-<h2 id="toc_18">desktop</h2>
+<h2 id="toc_17">desktop</h2>
 <ul>
 <li>https://github.com/lensapp/lens</li>
 <li>https://github.com/kubenav/kubenav</li>
 <li>https://github.com/skippbox/skippbox</li>
 </ul>
-<h2 id="toc_19">linter</h2>
+<h2 id="toc_18">linter</h2>
 <ul>
 <li>https://github.com/instrumenta/kubeval</li>
 <li>https://github.com/stackrox/kube-linter</li>
 <li>https://github.com/zegl/kube-score</li>
 </ul>
-<h2 id="toc_20">web dashboard</h2>
+<h2 id="toc_19">web dashboard</h2>
 <ul>
 <li>https://github.com/kubernetes/dashboard</li>
 <li>https://github.com/rancher/rancher</li>
 <li>https://github.com/kubevious/kubevious</li>
 <li>https://github.com/vmware-tanzu/octant</li>
 </ul>
-<h2 id="toc_21">web dashboard (novos projetos)</h2>
+<h2 id="toc_20">web dashboard (novos projetos)</h2>
 <ul>
 <li>https://github.com/skooner-k8s/skooner</li>
 <li>https://github.com/jeremykross/konstellate</li>
 <li>https://github.com/smpio/kubernator</li>
 </ul>
-<h2 id="toc_22">ci/cd system</h2>
+<h2 id="toc_21">ci/cd system</h2>
 <ul>
 <li>https://github.com/fluxcd/flux</li>
 <li>https://github.com/argoproj/argo-cd</li>
 <li>https://github.com/werf/werf</li>
 <li>https://github.com/tektoncd/operator</li>
 </ul>
-<h2 id="toc_23">ci/cd tool</h2>
+<h2 id="toc_22">ci/cd tool</h2>
 <ul>
 <li>https://githubhelp.com/alexcurtin/kubernetes-deploy</li>
 </ul>
-<h2 id="toc_24">developer</h2>
+<h2 id="toc_23">developer</h2>
 <ul>
 <li>https://github.com/tilt-dev/tilt</li>
 </ul>
-<h2 id="toc_25">kubernetes local</h2>
+<h2 id="toc_24">kubernetes local</h2>
 <ul>
 <li>https://github.com/rancher/k3d</li>
 <li>https://github.com/kubernetes/minikube</li>
 <li>https://github.com/kubernetes-sigs/kind</li>
 </ul>
-<h2 id="toc_26">kubernetes installers</h2>
+<h2 id="toc_25">kubernetes installers</h2>
 <ul>
 <li>https://github.com/kubernetes/kops</li>
 </ul>
-<h2 id="toc_27">kubernetes distros</h2>
-<p>https://rancher.com/products/rke https://github.com/kubernetes/kubeadm</p>
-<h2 id="toc_28">security (cli)</h2>
+<h2 id="toc_26">kubernetes distros</h2>
+<ul>
+<li>https://rancher.com/products/rke</li>
+<li>https://github.com/kubernetes/kubeadm</li>
+</ul>
+<h2 id="toc_27">security (cli)</h2>
 <ul>
 <li>https://github.com/aquasecurity/kube-bench</li>
 <li>https://github.com/aquasecurity/kube-hunter</li>
 <li>https://github.com/aquasecurity/kubectl-who-can</li>
 <li>https://github.com/aquasecurity/trivy</li>
 <li>https://github.com/armosec/kubescape</li>
+<li>https://github.com/FairwindsOps/Pluto</li>
+<li>https://github.com/derailed/popeye</li>
 </ul>
-<h2 id="toc_29">service proxy</h2>
+<h2 id="toc_28">service proxy</h2>
 <ul>
 <li>https://github.com/envoyproxy/envoy</li>
 <li>https://github.com/projectcontour/contour</li>
 <li>https://github.com/traefik/traefik</li>
 <li>https://github.com/nginx/nginx</li>
 </ul>
-<h2 id="toc_30">storage (block)</h2>
+<h2 id="toc_29">storage (block)</h2>
 <ul>
 <li>https://github.com/longhorn/longhorn</li>
 <li>https://github.com/openebs/openebs</li>
 </ul>
-<h2 id="toc_31">storage (object)</h2>
+<h2 id="toc_30">storage (object)</h2>
 <ul>
 <li>https://github.com/minio/minio</li>
 </ul>
-<h2 id="toc_32">service mesh</h2>
+<h2 id="toc_31">service mesh</h2>
 <ul>
 <li>https://github.com/linkerd/linkerd2</li>
 <li>https://github.com/istio/istio</li>
 <li>https://github.com/hashicorp/consul</li>
 </ul>
-<h2 id="toc_33">packages</h2>
+<h2 id="toc_32">packages</h2>
 <ul>
 <li>https://github.com/helm/helm</li>
 <li>https://github.com/kubernetes-sigs/kustomize/</li>
 <li>https://github.com/buildpacks/pack</li>
 </ul>
-<h2 id="toc_34">container register</h2>
+<h2 id="toc_33">container register</h2>
 <ul>
 <li>https://github.com/goharbor/harbor</li>
 <li>https://github.com/quay/quay</li>
 </ul>
-<h2 id="toc_35">database</h2>
+<h2 id="toc_34">database</h2>
 <ul>
 <li>https://github.com/ongres/stackgres</li>
 <li>https://github.com/CrunchyData/postgres-operator</li>
 <li>https://github.com/vitessio/vitess</li>
 </ul>
-<h2 id="toc_36">api gateway</h2>
+<h2 id="toc_35">api gateway</h2>
 <ul>
 <li>https://github.com/emissary-ingress/emissary</li>
 <li>https://github.com/Kong/kong</li>
 </ul>
-<h2 id="toc_37">observability</h2>
+<h2 id="toc_36">observability</h2>
 <ul>
-<li>https://github.com/derailed/popeye</li>
 <li>https://github.com/pulumi/kubespy</li>
 <li>https://github.com/salesforce/sloop</li>
 </ul>
-<h2 id="toc_38">troubleshooting</h2>
+<h2 id="toc_37">troubleshooting</h2>
 <ul>
 <li>https://github.com/aylei/kubectl-debug</li>
 </ul>
-<h2 id="toc_39">telemetria</h2>
+<h2 id="toc_38">telemetria</h2>
 <ul>
 <li>https://github.com/jaegertracing/jaeger</li>
 <li>https://github.com/open-telemetry</li>
 <li>https://github.com/opentracing</li>
 <li>https://grafana.com/oss/tempo</li>
 </ul>
-<h2 id="toc_40">serverless</h2>
+<h2 id="toc_39">serverless</h2>
 <ul>
 <li>https://github.com/kubeless/kubeless</li>
 <li>https://github.com/funktionio/funktion</li>
