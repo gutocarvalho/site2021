@@ -3,21 +3,21 @@
     <title>Guto@Site</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2022-01-06T18:43:28-03:00</updated>
+    <updated>2022-01-06T18:45:06-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
     <id>https://gutocarvalho.net</id>
 
     <entry>
-        <title>Quando eu devo cobrar a hora de projetos?</title>
+        <title>Quando eu devo cobrar a hora de projetos cloud?</title>
         <author>
             <name>Guto Carvalho</name>
         </author>
         <link href="https://gutocarvalho.net/quando-eu-devo-cobrar-a-hora-de-projetos/"/>
         <id>https://gutocarvalho.net/quando-eu-devo-cobrar-a-hora-de-projetos/</id>
 
-        <updated>2022-01-06T18:43:28-03:00</updated>
+        <updated>2022-01-06T18:45:06-03:00</updated>
             <summary>
                 <![CDATA[
                     <p>Clique aqui para saber mais!</p>
@@ -49,7 +49,7 @@
 <h2 id="toc_3">Amarrando as pontas</h2>
 <p>Isso aí é o justo na minha humilde opinião, de resto dependerá muito do seu currículo, cases que participou, soft skills, hard skills, parta daí e combine o melhor que puder.</p>
 <p>Se o contratante faz questão do atendimento presencial, adicione pelo menos 25-30% na proposta para cobrir combustível (7 reais o litro), seu tempo no trânsito, comer fora, dentre outras questões.</p>
-<p>[s] Guto</p>
+<p>[s]<br>Guto</p>
             ]]>
         </content>
     </entry>
@@ -61,7 +61,7 @@
         <link href="https://gutocarvalho.net/quando-deveria-ganhar-um-cloud-engineer/"/>
         <id>https://gutocarvalho.net/quando-deveria-ganhar-um-cloud-engineer/</id>
 
-        <updated>2022-01-06T18:43:24-03:00</updated>
+        <updated>2022-01-06T18:44:21-03:00</updated>
             <summary>
                 <![CDATA[
                     <p>Clique aqui para saber mais!</p>
@@ -75,7 +75,7 @@
 <p>Quanto deveria ganhar um DevOps Engineer ou Cloud Engineer?</p>
 <p>Me fazem essa pergunta todos os dias, vamos ver se esse post consegue ajudar.</p>
 <p>Essa é uma questão complicada, depende da experiência da pessoa e do currículo.</p>
-<p>Mas se fosse para colocar uma base, seria parecido com isso.<br><br>Esses valores são para trabalhos no regime "remoto" no mercado "privado".</p>
+<p>Mas se fosse para colocar uma <strong>base</strong>, seria parecido com isso.<br><br>Esses valores são para trabalhos no regime "remoto" no mercado "privado".</p>
 <h2 id="toc_0">Cloud Engineer (aws, gcp, azure)</h2>
 <p>CLT</p>
 <ul>
