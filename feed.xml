@@ -3,7 +3,7 @@
     <title>Guto@Site</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2022-01-06T10:22:51-03:00</updated>
+    <updated>2022-01-06T10:31:07-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
@@ -19,7 +19,7 @@
             <category term="K8S"/>
             <category term="Drops"/>
 
-        <updated>2022-01-06T10:22:26-03:00</updated>
+        <updated>2022-01-06T10:31:07-03:00</updated>
             <summary>
                 <![CDATA[
                     <p>Aprenda a organizar seu kubeconfig!</p>
@@ -31,11 +31,11 @@
                 <p>Aprenda a organizar seu kubeconfig!</p>
 
 <p>Qual a melhor forma de organizar múltiplos clientes e projetos para administrar seus clusters?</p>
-<p>Sabemos que o kubectl precisa de um kubeconfig para funcionar, podemos apontar diretamnete e executar algo</p>
+<p>Sabemos que o kubectl precisa de um kubeconfig para funcionar, podemos apontar diretamente e executar algo</p>
 <div>
 <pre class=" language-none"><code class=" language-none">$ kubectl --kubeconfig=arquivo_de_config get nodes</code></pre>
 </div>
-<p>Podemos usar a variável kubeconfig</p>
+<p>Podemos usar também a variável kubeconfig</p>
 <div>
 <pre class=" language-none"><code class=" language-none">$ export KUBECONFIG=/caminho/para/arquivo/config
 $ kubect get nodes</code></pre>
@@ -72,27 +72,27 @@ contexts:
 - context:
   name: production-cluster
     user: name
-    cluter: prd
+    cluster: prd
 - context:
   name: dev-cluster
     user: name
-    cluter: dev
+    cluster: dev
 - context:
   name: test-cluster
     user: name
-    cluter: tst</code></pre>
+    cluster: tst</code></pre>
 </div>
 <p>Agora vamos aprender a criar esse arquivo passo a passo.</p>
 <h3 id="toc_1">Adicionando clusters</h3>
-<p>Adicionando cluster prd com certificado CA</p>
+<p>Adicionando cluster <strong>prd</strong> com certificado CA</p>
 <div>
 <pre class=" language-none"><code class=" language-none"> $ kubectl config --kubeconfig=config set-cluster projeto-prd --server=https://192.168.222.80 --certificate-authority=prd-cert-file</code></pre>
 </div>
-<p>Adicionando cluster dev com certificado CA</p>
+<p>Adicionando cluster <strong>dev</strong> com certificado CA</p>
 <div>
 <pre class=" language-none"><code class=" language-none"> $ kubectl config --kubeconfig=config set-cluster projeto-dev --server=https://172.16.31.20 --certificate-authority=dev-cert-file</code></pre>
 </div>
-<p>Adicionando cluster ignorando o certificado</p>
+<p>Adicionando cluster <strong>tst</strong> e ignorando o certificado</p>
 <div>
 <pre class=" language-none"><code class=" language-none"> $ kubectl config --kubeconfig=config set-cluster projeto-tst --server=https://10.200.3.90 --certificate-authority=tst-ca-file</code></pre>
 </div>
@@ -110,24 +110,24 @@ contexts:
 <pre class=" language-none"><code class=" language-none">$ kubectl config --kubeconfig=config set-credentials testers --username=admin --password=password</code></pre>
 </div>
 <h3 id="toc_3">Adicionando contextos</h3>
-<p>Adicionando contexto para cluster de produção com usuário engineers</p>
+<p>Adicionando contexto para cluster de <strong>produção</strong> com usuário engineers</p>
 <div>
 <pre class=" language-none"><code class=" language-none">$ kubectl config --kubeconfig=config set-context cluster-projeto-prd --cluster=projeto-prd --user=engineers</code></pre>
 </div>
-<p>Adicionando contexto para cluster de dev com usuário developer</p>
+<p>Adicionando contexto para cluster de <strong>desenvolvimento</strong> com usuário developer</p>
 <div>
 <pre class=" language-none"><code class=" language-none">$ kubectl config --kubeconfig=config set-context cluster-projeto-dev --cluster=projeto-dev --user=developers</code></pre>
 </div>
-<p>Adicionando contexto para cluster de tst com usuário testers</p>
+<p>Adicionando contexto para cluster de <strong>teste</strong> com usuário testers</p>
 <div>
 <pre class=" language-none"><code class=" language-none">$ kubectl config --kubeconfig=config set-context cluster-projeto-tst --cluster=projeto-tst --user=testers</code></pre>
 </div>
 <h3 id="toc_4">Verificando arquivo</h3>
-<p>Leia o carquivo</p>
+<p>Leia o arquivo</p>
 <div>
 <pre class=" language-none"><code class=" language-none">$ cat config</code></pre>
 </div>
-<p>Agora você provavelmente tem um arquivo como esse, provavelmente a única diferença para o seu é que eu coloquei o kind e preferences no topo.</p>
+<p>Agora você provavelmente tem um arquivo como esse, acredito que a única diferença para o seu é que eu coloquei o kind e preferences no topo.</p>
 <div>
 <pre class=" language-none"><code class=" language-none">apiVersion: v1
 kind: Config
@@ -193,13 +193,13 @@ k8s-prd-worker-02   Ready    worker              6d1h   v1.21.7
 k8s-prd-worker-03   Ready    worker              6d1h   v1.21.7
 k8s-prd-worker-04   Ready    worker              6d1h   v1.21.7</code></pre>
 </div>
-<h3 id="toc_5">Verificando a configuracao do kubectl</h3>
-<p>Com o comando abaixo voce verá a configuração completa</p>
+<h3 id="toc_5">Verificando a configuração do kubectl</h3>
+<p>Com o comando abaixo você verá a configuração completa</p>
 <div>
 <pre class=" language-none"><code class=" language-none">$ kubectl config --kubeconfig=config view</code></pre>
 </div>
 <h3 id="toc_6">Verificando apenas do contexto que está configurado</h3>
-<p>É preciso usaro parametro minify para limitar ao contexto</p>
+<p>É preciso usar o parâmetro minify para limitar ao contexto escolhido</p>
 <div>
 <pre class=" language-none"><code class=" language-none">$ kubectl config --kubeconfig=config view --minify</code></pre>
 </div>
@@ -225,13 +225,13 @@ users:
     client-certificate: eng-cert-file
     client-key: eng-key-file</code></pre>
 </div>
-<p>Obseve a linha</p>
+<p>Observe a linha</p>
 <div>
 <pre class=" language-none"><code class=" language-none">current-context: cluster-projeto-prd</code></pre>
 </div>
 <p>Sempre que alteramos de contexto essa linha será modificado no seu arquivo de configuração.</p>
 <h3 id="toc_7">Existe algo mais prático para visualizar e trocar de contextos?</h3>
-<p>Sim existe o kubectx</p>
+<p>Sim, existe o projeto kubectx</p>
 <ul>
 <li>https://github.com/ahmetb/kubectx</li>
 </ul>
@@ -255,7 +255,7 @@ cluster-projeto-tst</code></pre>
 </div>
 <p>E pronto!</p>
 <h3 id="toc_8">Existe algo ainda mais fácil?</h3>
-<p>Sim, você pode utilizar o fzf</p>
+<p>Sim, você pode utilizar o projeto fzf</p>
 <ul>
 <li>https://github.com/junegunn/fzf</li>
 </ul>
@@ -263,14 +263,14 @@ cluster-projeto-tst</code></pre>
 <div>
 <pre class=" language-none"><code class=" language-none">$ brew install fzf</code></pre>
 </div>
-<p>Com ele o kubectx fica interativo, abre um menu e voce seleciona o contexto.</p>
+<p>Com ele o kubectx fica interativo, abre um menu e você seleciona o contexto.</p>
 <div>
 <pre class=" language-none"><code class=" language-none">$ kubectx</code></pre>
 </div>
 <p>Saída</p>
 <p><a href="https://asciinema.org/a/NC0R8SqNRzcjpJl0j5B1iB7Ja"><img loading="lazy" src="https://asciinema.org/a/NC0R8SqNRzcjpJl0j5B1iB7Ja.svg" data-is-external-image="true"  alt="asciicast"></a></p>
 <h3 id="toc_9">Consigo importar um kubeconfig?</h3>
-<p>Eu sei que ficar editando isso na mão, dá um certo trabalho, mas tem solução. Recentemente eu encontrei o projeto kubectl-import para resolver essa questão.</p>
+<p>Eu sei que ficar editando isso na mão dá um certo trabalho, mas tem solução. Recentemente eu encontrei o projeto kubectl-import para resolver essa questão.</p>
 <ul>
 <li>https://github.com/bitnami-labs/kubectl-import</li>
 </ul>
@@ -278,12 +278,12 @@ cluster-projeto-tst</code></pre>
 <div>
 <pre class=" language-none"><code class=" language-none"> $ sudo curl -o kubectl-import https://raw.githubusercontent.com/bitnami-labs/kubectl-import/master/kubectl-import &amp;&amp; chmod 0755 kubectl-import</code></pre>
 </div>
-<p>Com ele você consegue pegar um kubeconfig e importar para o seu principal.</p>
+<p>Com ele você consegue pegar um kubeconfig e importar</p>
 <div>
 <pre class=" language-none"><code class=" language-none"> $ export KUBECONFIG=/caminho/pro/seu/kubeconfig
  $ ./kubectl-import kubeconfig-novo</code></pre>
 </div>
-<p>E pronto, vai aparecer no seu kubectx. Recomendo editar o arquivo antes de importar, setando corretamente os nomes do cluster, user e contexto.</p>
+<p>E pronto, o novo cluster/contexto vai aparecer no seu kubectx. Recomendo editar o arquivo antes de importar, setando corretamente os nomes do cluster, user e contexto.</p>
 <h2 id="toc_10">Amarrando as pontas</h2>
 <p>Espero que tenha aprendido a usar contextos do kubeconf, usar o kubectx, fzf, kubectl-import e agilizar a administração de seus clusters.</p>
 <p>[s]<br>Guto</p>
