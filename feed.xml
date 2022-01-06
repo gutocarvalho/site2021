@@ -3,12 +3,51 @@
     <title>Guto@Site</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2022-01-06T11:01:53-03:00</updated>
+    <updated>2022-01-06T11:26:28-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
     <id>https://gutocarvalho.net</id>
 
+    <entry>
+        <title>Verificando quando uma branch foi criada!</title>
+        <author>
+            <name>Guto Carvalho</name>
+        </author>
+        <link href="https://gutocarvalho.net/verificando-quando-uma-branch-foi-criada/"/>
+        <id>https://gutocarvalho.net/verificando-quando-uma-branch-foi-criada/</id>
+            <category term="MindNotes"/>
+
+        <updated>2022-01-06T11:26:28-03:00</updated>
+            <summary>
+                <![CDATA[
+                    <p>Nota mental para verificar a idade de uma branch.</p>
+
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p>Nota mental para verificar a idade de uma branch.</p>
+
+<h2 id="toc_0">Branch age check</h2>
+<p>Para verificar quando uma branch foi criada</p>
+<div>
+<pre class=" language-none"><code class=" language-none">$ git for-each-ref --sort=authordate --format '%(authordate:iso) %(align:left,25)%(refname:short)%(end) %(subject)' refs/heads</code></pre>
+</div>
+<p>exemplo saída</p>
+<div>
+<pre class=" language-none"><code class=" language-none">2021-11-18 09:54:39 -0500 production                Added bugsnag configuration
+2022-01-05 14:35:47 -0300 dockerize                 Added shipit production config</code></pre>
+</div>
+<p>Este post é do tipo #MindNotes, entenda <a href="https://gutocarvalho.net/o-que-sao-mindnotes/">aqui</a>.</p>
+<h2 id="toc_1">References</h2>
+<ul>
+<li>https://www.codegrepper.com/code-examples/shell/check+age+of+git+branch</li>
+</ul>
+<p>[s]<br>Guto</p>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>O que são TLDR&#x27;s ?</title>
         <author>
@@ -571,34 +610,6 @@ database-v5-yhren      1/1       Running   0          2h</code></pre>
 <p>O kubestack é um projeto open source que traz um framework gitops para você gerenciar seu kubernetes, tudo usando Terraform.</p>
 <p>Já testei? Não<br><br>Quero testar? Sim<br><br>Vai lá conhecer =&gt; <a href="https://www.kubestack.com/">https://www.kubestack.com/</a></p>
 <p>[s]</p>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>Keptn, outro projeto para ficar de olho!</title>
-        <author>
-            <name>Guto Carvalho</name>
-        </author>
-        <link href="https://gutocarvalho.net/keptn-outro-projeto-para-ficar-de-olho/"/>
-        <id>https://gutocarvalho.net/keptn-outro-projeto-para-ficar-de-olho/</id>
-            <category term="MindNotes"/>
-
-        <updated>2021-12-16T07:01:17-03:00</updated>
-            <summary>
-                <![CDATA[
-                    <p>Venha conhecer um control-plane devops para K8s!</p>
-
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                <p>Venha conhecer um control-plane devops para K8s!</p>
-
-<p>O Keptn (fala-se Captain) é um control-plane para automação com mindset devops dentro do seu cluster. <br><br>Esse projeto promete – entre outras coisas – te ajudar a manter a qualidade das APPs em seu cluster usando o que eles chamam de quality gates (é o que chamou minha atenção). Os quality gates usam SLIs e SLOs definidos por você para cuidar de sua APP, isso significa que caso você publique algo que esteja fora dos padrões que você indicou, o Keptn faz o rollback para a última versão que tem a performance dentro dos seus indicadores.</p>
-<p>Além disso temos recursos como:<br><br>- Multi-stage delivery<br>- Continuous Performance Verification<br>- Configuração declarativa<br>- Automação baseada em eventos<br>- Integração com projetos como Argo, GitHub Actions, Prometheus e +<br>- Observabilidade nativa para poder checar SLIs e SLOs<br><br>E tem muito mais, conheça <a href="https://keptn.sh">https://keptn.sh.</a></p>
-<figure class="post__video"><iframe loading="lazy" width="560" height="314" src="https://www.youtube.com/embed/fjfj97Vb4ds" allowfullscreen="allowfullscreen" data-mce-fragment="1"></iframe></figure>
-<p>É isso povo!<br><br>[s]<br><br></p>
-<p> </p>
             ]]>
         </content>
     </entry>

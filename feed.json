@@ -10,6 +10,21 @@
     },
     "items": [
         {
+            "id": "https://gutocarvalho.net/verificando-quando-uma-branch-foi-criada/",
+            "url": "https://gutocarvalho.net/verificando-quando-uma-branch-foi-criada/",
+            "title": "Verificando quando uma branch foi criada!",
+            "summary": "<p>Nota mental para verificar a idade de uma branch.</p>\n",
+            "content_html": "<p>Nota mental para verificar a idade de uma branch.</p>\n\n<h2 id=\"toc_0\">Branch age check</h2>\n<p>Para verificar quando uma branch foi criada</p>\n<div>\n<pre class=\" language-none\"><code class=\" language-none\">$ git for-each-ref --sort=authordate --format '%(authordate:iso) %(align:left,25)%(refname:short)%(end) %(subject)' refs/heads</code></pre>\n</div>\n<p>exemplo saída</p>\n<div>\n<pre class=\" language-none\"><code class=\" language-none\">2021-11-18 09:54:39 -0500 production                Added bugsnag configuration\n2022-01-05 14:35:47 -0300 dockerize                 Added shipit production config</code></pre>\n</div>\n<p>Este post é do tipo #MindNotes, entenda <a href=\"https://gutocarvalho.net/o-que-sao-mindnotes/\">aqui</a>.</p>\n<h2 id=\"toc_1\">References</h2>\n<ul>\n<li>https://www.codegrepper.com/code-examples/shell/check+age+of+git+branch</li>\n</ul>\n<p>[s]<br>Guto</p>",
+            "author": {
+                "name": "Guto Carvalho"
+            },
+            "tags": [
+                   "MindNotes"
+            ],
+            "date_published": "2022-01-06T11:26:28-03:00",
+            "date_modified": "2022-01-06T11:26:28-03:00"
+        },
+        {
             "id": "https://gutocarvalho.net/o-que-sao-tldrs/",
             "url": "https://gutocarvalho.net/o-que-sao-tldrs/",
             "title": "O que são TLDR&#x27;s ?",
@@ -144,21 +159,6 @@
             ],
             "date_published": "2021-12-15T08:59:26-03:00",
             "date_modified": "2021-12-15T09:08:30-03:00"
-        },
-        {
-            "id": "https://gutocarvalho.net/keptn-outro-projeto-para-ficar-de-olho/",
-            "url": "https://gutocarvalho.net/keptn-outro-projeto-para-ficar-de-olho/",
-            "title": "Keptn, outro projeto para ficar de olho!",
-            "summary": "<p>Venha conhecer um control-plane devops para K8s!</p>\n",
-            "content_html": "<p>Venha conhecer um control-plane devops para K8s!</p>\n\n<p>O Keptn (fala-se Captain) é um control-plane para automação com mindset devops dentro do seu cluster. <br><br>Esse projeto promete – entre outras coisas – te ajudar a manter a qualidade das APPs em seu cluster usando o que eles chamam de quality gates (é o que chamou minha atenção). Os quality gates usam SLIs e SLOs definidos por você para cuidar de sua APP, isso significa que caso você publique algo que esteja fora dos padrões que você indicou, o Keptn faz o rollback para a última versão que tem a performance dentro dos seus indicadores.</p>\n<p>Além disso temos recursos como:<br><br>- Multi-stage delivery<br>- Continuous Performance Verification<br>- Configuração declarativa<br>- Automação baseada em eventos<br>- Integração com projetos como Argo, GitHub Actions, Prometheus e +<br>- Observabilidade nativa para poder checar SLIs e SLOs<br><br>E tem muito mais, conheça <a href=\"https://keptn.sh\">https://keptn.sh.</a></p>\n<figure class=\"post__video\"><iframe loading=\"lazy\" width=\"560\" height=\"314\" src=\"https://www.youtube.com/embed/fjfj97Vb4ds\" allowfullscreen=\"allowfullscreen\" data-mce-fragment=\"1\"></iframe></figure>\n<p>É isso povo!<br><br>[s]<br><br></p>\n<p> </p>",
-            "author": {
-                "name": "Guto Carvalho"
-            },
-            "tags": [
-                   "MindNotes"
-            ],
-            "date_published": "2021-12-15T08:35:41-03:00",
-            "date_modified": "2021-12-16T07:01:17-03:00"
         }
     ]
 }
