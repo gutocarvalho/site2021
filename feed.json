@@ -13,8 +13,8 @@
             "id": "https://gutocarvalho.net/verificando-quando-uma-branch-foi-criada/",
             "url": "https://gutocarvalho.net/verificando-quando-uma-branch-foi-criada/",
             "title": "Verificando quando uma branch foi criada!",
-            "summary": "<p>Nota mental para verificar a idade de uma branch.</p>\n",
-            "content_html": "<p>Nota mental para verificar a idade de uma branch.</p>\n\n<h2 id=\"toc_0\">Branch age check</h2>\n<p>Para verificar quando uma branch foi criada</p>\n<div>\n<pre class=\" language-none\"><code class=\" language-none\">$ git for-each-ref --sort=authordate --format '%(authordate:iso) %(align:left,25)%(refname:short)%(end) %(subject)' refs/heads</code></pre>\n</div>\n<p>exemplo saída</p>\n<div>\n<pre class=\" language-none\"><code class=\" language-none\">2021-11-18 09:54:39 -0500 production                Added bugsnag configuration\n2022-01-05 14:35:47 -0300 dockerize                 Added shipit production config</code></pre>\n</div>\n<p>Este post é do tipo #MindNotes, entenda <a href=\"https://gutocarvalho.net/o-que-sao-mindnotes/\">aqui</a>.</p>\n<h2 id=\"toc_1\">References</h2>\n<ul>\n<li>https://www.codegrepper.com/code-examples/shell/check+age+of+git+branch</li>\n</ul>\n<p>[s]<br>Guto</p>",
+            "summary": "<p>Nota mental para verificar a idade e o autor de uma branch.</p>\n",
+            "content_html": "<p>Nota mental para verificar a idade e o autor de uma branch.</p>\n\n<h2 id=\"toc_0\">Checando quando uma branch foi criada</h2>\n<p>Para verificar quando uma branch foi criada</p>\n<div>\n<pre class=\" language-none\"><code class=\" language-none\">$ git for-each-ref --sort=authordate --format '%(authordate:iso) %(align:left,25)%(refname:short)%(end) %(subject)' refs/heads</code></pre>\n</div>\n<p>exemplo saída</p>\n<div>\n<pre class=\" language-none\"><code class=\" language-none\">2021-11-18 09:54:39 -0500 production                Added bugsnag configuration\n2022-01-05 14:35:47 -0300 dockerize                 Added shipit production config</code></pre>\n</div>\n<h2 id=\"toc_1\">Checando quem criou cada branch</h2>\n<div>\n<pre class=\" language-none\"><code class=\" language-none\">$ git for-each-ref --format='%(color:cyan)[data] %(authordate:format:%m/%d/%Y %I:%M %p) %(color:green) [branch] %(refname:short) %(align:25,left)%(color:yellow)[author] %(authorname)%(end) %(color:reset)%(refname:strip=3)' --sort=authordate refs/heads</code></pre>\n</div>\n<p>exemplo de saída</p>\n<div>\n<pre class=\" language-none\"><code class=\" language-none\">[data] 11/18/2021 09:54 AM  [branch] production [author] Jose Augusto\n[data] 01/05/2022 02:35 PM  [branch] dockerize [author] Guto Carvalho</code></pre>\n</div>\n<p>Este post é do tipo #MindNotes, entenda <a href=\"https://gutocarvalho.net/o-que-sao-mindnotes/\">aqui</a>.</p>\n<h2 id=\"toc_2\">References</h2>\n<ul>\n<li>https://www.code-helper.com/answers/check-age-of-git-branch</li>\n</ul>\n<p>[s]<br>Guto</p>",
             "author": {
                 "name": "Guto Carvalho"
             },
@@ -22,7 +22,7 @@
                    "MindNotes"
             ],
             "date_published": "2022-01-06T11:26:28-03:00",
-            "date_modified": "2022-01-06T11:26:28-03:00"
+            "date_modified": "2022-01-06T11:47:25-03:00"
         },
         {
             "id": "https://gutocarvalho.net/o-que-sao-tldrs/",
