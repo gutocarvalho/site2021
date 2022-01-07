@@ -3,7 +3,7 @@
     <title>Guto@Site</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2022-01-06T22:40:46-03:00</updated>
+    <updated>2022-01-06T22:42:33-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
@@ -16,8 +16,9 @@
         </author>
         <link href="https://gutocarvalho.net/quando-eu-devo-cobrar-a-hora-de-projetos/"/>
         <id>https://gutocarvalho.net/quando-eu-devo-cobrar-a-hora-de-projetos/</id>
+            <category term="FalaGutera"/>
 
-        <updated>2022-01-06T22:39:09-03:00</updated>
+        <updated>2022-01-06T22:41:41-03:00</updated>
             <summary>
                 <![CDATA[
                     <p>Clique aqui para saber mais!</p>
@@ -61,8 +62,9 @@
         </author>
         <link href="https://gutocarvalho.net/quando-deveria-ganhar-um-cloud-engineer/"/>
         <id>https://gutocarvalho.net/quando-deveria-ganhar-um-cloud-engineer/</id>
+            <category term="FalaGutera"/>
 
-        <updated>2022-01-06T22:40:46-03:00</updated>
+        <updated>2022-01-06T22:41:33-03:00</updated>
             <summary>
                 <![CDATA[
                     <p>Clique aqui para saber mais!</p>
@@ -124,7 +126,7 @@
             <category term="MindNotes"/>
             <category term="K8S"/>
 
-        <updated>2022-01-06T17:53:42-03:00</updated>
+        <updated>2022-01-06T22:42:33-03:00</updated>
             <summary>
                 <![CDATA[
                     <p>Conheça algumas ferramentas interessantes para seu k8s toolkit</p>
@@ -406,8 +408,9 @@
 <li>https://github.com/kubeless/kubeless</li>
 <li>https://github.com/funktionio/funktion</li>
 <li>https://github.com/fission</li>
-<li>https://github.com/openfaas/faas</li>
+<li><a href="https://github.com/openfaas/faas">https://github.com/openfaas/faas</a></li>
 </ul>
+<p>Este post é do tipo #MindNotes, entenda <a href="https://gutocarvalho.net/o-que-sao-mindnotes/">aqui</a>.<br><br>[s]<br>Guto</p>
             ]]>
         </content>
     </entry>
@@ -420,7 +423,7 @@
         <id>https://gutocarvalho.net/verificando-quando-uma-branch-foi-criada/</id>
             <category term="MindNotes"/>
 
-        <updated>2022-01-06T15:49:05-03:00</updated>
+        <updated>2022-01-06T22:42:04-03:00</updated>
             <summary>
                 <![CDATA[
                     <p>Nota mental para verificar a idade e o autor de uma branch.</p>
