@@ -3,7 +3,7 @@
     <title>Guto@Site</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2022-01-06T22:58:38-03:00</updated>
+    <updated>2022-01-06T23:16:31-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
@@ -39,7 +39,7 @@
         <id>https://gutocarvalho.net/quanto-eu-devo-cobrar-a-hora-de-projetos/</id>
             <category term="FalaGutera"/>
 
-        <updated>2022-01-06T22:58:24-03:00</updated>
+        <updated>2022-01-06T23:15:49-03:00</updated>
             <summary>
                 <![CDATA[
                     <p>Clique aqui para saber mais!</p>
@@ -72,7 +72,8 @@
 <p>Isso aí é o justo na minha humilde opinião, de resto dependerá muito do seu currículo, cases que participou, soft skills, hard skills, parta daí e combine o melhor que puder.</p>
 <p>Se o contratante faz questão do atendimento presencial, adicione pelo menos 25-30% na proposta para cobrir combustível (7 reais o litro), seu tempo no trânsito, comer fora, dentre outras questões.</p>
 <p>Se for em outra cidade, todas as despesas de deslocamento aéreo e terrestre, hospedagem e alimentação são por conta do contratante, e mantenha o 25-30% de margem para atender presencial, mesmo assim, especialmente em outra cidade.</p>
-<p>Este post usa a tag #FalaGutera, entenda <a href="https://gutocarvalho.net/sobre-o-que-e-a-tag-falagutera/">aqui</a>.<br><br>[s]<br>Guto</p>
+<p>Este post usa a tag #FalaGutera, entenda <a href="https://gutocarvalho.net/sobre-o-que-e-a-tag-falagutera/">aqui</a>.<br><br>[s]<br>Guto<br><br>---</p>
+<p>Se gostou manda um alo no twitter @gutocarvalho.</p>
             ]]>
         </content>
     </entry>
@@ -85,7 +86,7 @@
         <id>https://gutocarvalho.net/quanto-deveria-ganhar-um-cloud-engineer/</id>
             <category term="FalaGutera"/>
 
-        <updated>2022-01-06T22:58:38-03:00</updated>
+        <updated>2022-01-06T23:16:00-03:00</updated>
             <summary>
                 <![CDATA[
                     <p>Clique aqui para saber mais!</p>
@@ -133,7 +134,8 @@
 <h2 id="toc_2">Amarrando as pontas</h2>
 <p>Isso aí é o justo na minha humilde opinião, de resto dependerá muito do seu currículo, cases que participou, soft skills, hard skills, parta daí e combine o melhor que puder.<br><br>No caso do CLT, combine ainda um custeio de sua internet e setup do home office, tal como uma cadeira maneira, um bom microfone e webcam :)<br><br>No caso do PJ lembre-se de negociar alguns dias pagos, pelo menos 20, para você poder descansar de vez em quando.</p>
 <p>O que você tem que entender e enxergar é o valor que você agrega ao projeto e ao cliente, sempre pense nisso e se valorize.<br><br>Este post usa a tag #FalaGutera, entenda <a href="https://gutocarvalho.net/sobre-o-que-e-a-tag-falagutera/">aqui</a>.</p>
-<p>[s]<br>Guto</p>
+<p>[s]<br>Guto<br><span style="color: var(--text-editor-body-color); font-family: var(--font-base); font-size: inherit; font-weight: var(--font-weight-normal);"><br>---</span></p>
+<p>Se gostou manda um alo no twitter @gutocarvalho.</p>
             ]]>
         </content>
     </entry>
@@ -147,7 +149,7 @@
             <category term="MindNotes"/>
             <category term="K8S"/>
 
-        <updated>2022-01-06T22:42:33-03:00</updated>
+        <updated>2022-01-06T23:16:10-03:00</updated>
             <summary>
                 <![CDATA[
                     <p>Conheça algumas ferramentas interessantes para seu k8s toolkit</p>
@@ -431,7 +433,9 @@
 <li>https://github.com/fission</li>
 <li><a href="https://github.com/openfaas/faas">https://github.com/openfaas/faas</a></li>
 </ul>
-<p>Este post é do tipo #MindNotes, entenda <a href="https://gutocarvalho.net/o-que-sao-mindnotes/">aqui</a>.<br><br>[s]<br>Guto</p>
+<p>Este post é do tipo #MindNotes, entenda <a href="https://gutocarvalho.net/o-que-sao-mindnotes/">aqui</a>.<br><br>[s]<br>Guto<br><br></p>
+<p>---</p>
+<p>Se gostou manda um alo no twitter @gutocarvalho.</p>
             ]]>
         </content>
     </entry>
@@ -444,7 +448,7 @@
         <id>https://gutocarvalho.net/verificando-quando-uma-branch-foi-criada/</id>
             <category term="MindNotes"/>
 
-        <updated>2022-01-06T22:42:04-03:00</updated>
+        <updated>2022-01-06T23:16:17-03:00</updated>
             <summary>
                 <![CDATA[
                     <p>Nota mental para verificar a idade e o autor de uma branch.</p>
@@ -479,7 +483,9 @@
 <ul>
 <li>https://www.code-helper.com/answers/check-age-of-git-branch</li>
 </ul>
-<p>[s]<br>Guto</p>
+<p>[s]<br>Guto<br><br></p>
+<p>---</p>
+<p>Se gostou manda um alo no twitter @gutocarvalho.</p>
             ]]>
         </content>
     </entry>
@@ -556,7 +562,7 @@
             <category term="K8S"/>
             <category term="Drops"/>
 
-        <updated>2022-01-06T10:56:36-03:00</updated>
+        <updated>2022-01-06T23:16:31-03:00</updated>
             <summary>
                 <![CDATA[
                     <p>Aprenda a organizar seu kubeconfig!</p>
@@ -831,7 +837,9 @@ cluster-projeto-tst</code></pre>
 <p>E escolher o namespace.</p>
 <h2 id="toc_10">Amarrando as pontas</h2>
 <p>Espero que tenha aprendido a usar contextos do kubeconf, usar o kubectx, fzf, kubectl-import e agilizar a administração de seus clusters.<br><br>Esse post é o que eu chamo de DROPS, entenda o modelo <a href="https://gutocarvalho.net/o-que-sao-drops/">aqui</a>.</p>
-<p>[s]<br>Guto</p>
+<p>[s]<br>Guto<br><br></p>
+<p>---</p>
+<p>Se gostou manda um alo no twitter @gutocarvalho.</p>
             ]]>
         </content>
     </entry>
