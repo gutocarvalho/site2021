@@ -3,12 +3,33 @@
     <title>Guto@Site</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2022-01-06T22:51:18-03:00</updated>
+    <updated>2022-01-06T22:58:38-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
     <id>https://gutocarvalho.net</id>
 
+    <entry>
+        <title>Sobre o que é a tag #FalaGutera?</title>
+        <author>
+            <name>Guto Carvalho</name>
+        </author>
+        <link href="https://gutocarvalho.net/sobre-o-que-e-a-tag-falagutera/"/>
+        <id>https://gutocarvalho.net/sobre-o-que-e-a-tag-falagutera/</id>
+
+        <updated>2022-01-06T22:57:38-03:00</updated>
+            <summary>
+                <![CDATA[
+                    Posts com essa TAG trazem minha opinião pessoal sobre um determinado assunto,&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p>Posts com essa TAG trazem minha opinião pessoal sobre um determinado assunto, seja profissional, cotidiano ou alguma coisa em que eu faça questão de me posicionar.</p>
+<p>:)</p>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>Quanto eu devo cobrar a hora de projetos cloud?</title>
         <author>
@@ -18,7 +39,7 @@
         <id>https://gutocarvalho.net/quanto-eu-devo-cobrar-a-hora-de-projetos/</id>
             <category term="FalaGutera"/>
 
-        <updated>2022-01-06T22:43:09-03:00</updated>
+        <updated>2022-01-06T22:58:24-03:00</updated>
             <summary>
                 <![CDATA[
                     <p>Clique aqui para saber mais!</p>
@@ -51,7 +72,7 @@
 <p>Isso aí é o justo na minha humilde opinião, de resto dependerá muito do seu currículo, cases que participou, soft skills, hard skills, parta daí e combine o melhor que puder.</p>
 <p>Se o contratante faz questão do atendimento presencial, adicione pelo menos 25-30% na proposta para cobrir combustível (7 reais o litro), seu tempo no trânsito, comer fora, dentre outras questões.</p>
 <p>Se for em outra cidade, todas as despesas de deslocamento aéreo e terrestre, hospedagem e alimentação são por conta do contratante, e mantenha o 25-30% de margem para atender presencial, mesmo assim, especialmente em outra cidade.</p>
-<p>[s]<br>Guto</p>
+<p>Este post usa a tag #FalaGutera, entenda <a href="https://gutocarvalho.net/sobre-o-que-e-a-tag-falagutera/">aqui</a>.<br><br>[s]<br>Guto</p>
             ]]>
         </content>
     </entry>
@@ -64,7 +85,7 @@
         <id>https://gutocarvalho.net/quanto-deveria-ganhar-um-cloud-engineer/</id>
             <category term="FalaGutera"/>
 
-        <updated>2022-01-06T22:51:18-03:00</updated>
+        <updated>2022-01-06T22:58:38-03:00</updated>
             <summary>
                 <![CDATA[
                     <p>Clique aqui para saber mais!</p>
@@ -111,7 +132,7 @@
 </ul>
 <h2 id="toc_2">Amarrando as pontas</h2>
 <p>Isso aí é o justo na minha humilde opinião, de resto dependerá muito do seu currículo, cases que participou, soft skills, hard skills, parta daí e combine o melhor que puder.<br><br>No caso do CLT, combine ainda um custeio de sua internet e setup do home office, tal como uma cadeira maneira, um bom microfone e webcam :)<br><br>No caso do PJ lembre-se de negociar alguns dias pagos, pelo menos 20, para você poder descansar de vez em quando.</p>
-<p>O que você tem que entender e enxergar é o valor que você agrega ao projeto e ao cliente, sempre pense nisso e se valorize.</p>
+<p>O que você tem que entender e enxergar é o valor que você agrega ao projeto e ao cliente, sempre pense nisso e se valorize.<br><br>Este post usa a tag #FalaGutera, entenda <a href="https://gutocarvalho.net/sobre-o-que-e-a-tag-falagutera/">aqui</a>.</p>
 <p>[s]<br>Guto</p>
             ]]>
         </content>
@@ -845,76 +866,6 @@ cluster-projeto-tst</code></pre>
 <p>References</p>
 <p>- <a href="https://ourcodeworld.com/articles/read/1265/top-7-best-open-source-self-hosted-comment-system-alternatives-to-disqus">https://ourcodeworld.com/articles/read/1265/top-7-best-open-source-self-hosted-comment-system-alternatives-to-disqus</a><br>- <a href="https://lisakov.com/projects/open-source-comments/">https://lisakov.com/projects/open-source-comments/</a><br>- <a href="https://www.findbestopensource.com/tagged/commenting-engine">https://www.findbestopensource.com/tagged/commenting-engine</a><br>- <a href="https://nestify.io/blog/11-best-disqus-alternatives-you-should-try">https://nestify.io/blog/11-best-disqus-alternatives-you-should-try</a></p>
 <p>[s]<br>Guto</p>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>Usando o kubetail para ver logs no K8S</title>
-        <author>
-            <name>Guto Carvalho</name>
-        </author>
-        <link href="https://gutocarvalho.net/usando-o-kubetail-para-ver-logs-no-k8s/"/>
-        <id>https://gutocarvalho.net/usando-o-kubetail-para-ver-logs-no-k8s/</id>
-            <category term="K8S"/>
-            <category term="Drops"/>
-
-        <updated>2022-01-06T10:22:41-03:00</updated>
-            <summary>
-                <![CDATA[
-                    As vezes queremos ver os logs de todos os pods de um&hellip;
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                <p>As vezes queremos ver os logs de todos os pods de um mesmo namespace, usando apenas o kubectl essa tarefa pode ser difícil, para isso podemos recorrer a ferramentas externas como o kubetail</p>
-<p>Instalando via homebrew</p>
-<div>
-<pre class=" language-none"><code class=" language-none">$ brew tap johanhaleby/kubetail &amp;&amp; brew install kubetail</code></pre>
-</div>
-<p>Procurando por pods em um namespace</p>
-<div>
-<pre class=" language-none"><code class=" language-none">$ kubectl get pods -n project</code></pre>
-</div>
-<p>Saída</p>
-<div>
-<pre class=" language-none"><code class=" language-none">NAME                   READY     STATUS    RESTARTS   AGE
-api-backend-v1-aba8y   1/1       Running   0          1d
-api-backend-v1-gc4st   1/1       Running   0          1d
-api-backend-v1-m8acl   1/1       Running   0          6d
-api-frontend-v31-s20d0 1/1       Running   0          1d
-api-frontend-v31-9pbpn 1/1       Running   0          1d
-api-frontend-v31-q74wg 1/1       Running   0          1d
-database-v5-0fa8o      1/1       Running   0          3h
-database-v5-yhren      1/1       Running   0          2h</code></pre>
-</div>
-<p>Fazendo tail nos logs dos pods api-backend</p>
-<div>
-<pre class=" language-none"><code class=" language-none">$ kubetail api-backend -n project</code></pre>
-</div>
-<p>Fazendo tail nos logs do primeiro container nos pods api-backend</p>
-<div>
-<pre class=" language-none"><code class=" language-none">$ kubetail api-backend -c container1 -n project</code></pre>
-</div>
-<p>Fazendo tail nos logs do container 1 e 2 dos pods api-backend</p>
-<div>
-<pre class=" language-none"><code class=" language-none">$ kubetail api-backend -c container1 -c container2 -n project</code></pre>
-</div>
-<p>Fazendo tail dos logs dos pods api-backend e api-frontend</p>
-<div>
-<pre class=" language-none"><code class=" language-none">$ kubetail api-backend,api-frontend -n project</code></pre>
-</div>
-<p>Fazendo tail no que casar com a expressão regular abaixo</p>
-<div>
-<pre class=" language-none"><code class=" language-none">$ kubetail "^api|.*database.*" --regex -n project</code></pre>
-</div>
-<p>Fazendo tail dos logs de todos os pods do namesapce project</p>
-<div>
-<pre class=" language-none"><code class=" language-none">$ kubetail -n project</code></pre>
-</div>
-<h2 id="toc_0">References</h2>
-<ul>
-<li>https://github.com/johanhaleby/kubetail</li>
-</ul>
             ]]>
         </content>
     </entry>
