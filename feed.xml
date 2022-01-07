@@ -3,7 +3,7 @@
     <title>Guto@Site</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2022-01-07T08:51:46-03:00</updated>
+    <updated>2022-01-07T13:13:08-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
@@ -39,7 +39,7 @@
         <id>https://gutocarvalho.net/quanto-eu-devo-cobrar-a-hora-de-projetos/</id>
             <category term="FalaGutera"/>
 
-        <updated>2022-01-07T08:51:38-03:00</updated>
+        <updated>2022-01-07T13:12:58-03:00</updated>
             <summary>
                 <![CDATA[
                     <p>Clique aqui para saber mais!</p>
@@ -87,7 +87,7 @@
         <id>https://gutocarvalho.net/quanto-deveria-ganhar-um-cloud-engineer/</id>
             <category term="FalaGutera"/>
 
-        <updated>2022-01-07T08:51:46-03:00</updated>
+        <updated>2022-01-07T13:13:08-03:00</updated>
             <summary>
                 <![CDATA[
                     <p>Clique aqui para saber mais!</p>
@@ -101,7 +101,7 @@
 <p>Quanto deveria ganhar um DevOps Engineer ou Cloud Engineer?</p>
 <p>Me fazem essa pergunta todos os dias, vamos ver se esse post consegue ajudar.</p>
 <p>Essa é uma questão complicada, depende da experiência da pessoa e do currículo.</p>
-<p>Mas se fosse para colocar uma base, seria parecido com isso.</p>
+<p>Mas se fosse para colocar uma <strong>base</strong>, seria parecido com isso.</p>
 <h2 id="toc_0">Cloud Engineer (aws, gcp, azure)</h2>
 <p>CLT</p>
 <ul>
