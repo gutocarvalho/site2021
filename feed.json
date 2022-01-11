@@ -10,6 +10,21 @@
     },
     "items": [
         {
+            "id": "https://gutocarvalho.net/reflexoes-sobre-o-github/",
+            "url": "https://gutocarvalho.net/reflexoes-sobre-o-github/",
+            "title": "Reflexões sobre o GitHub",
+            "summary": "<p>Bora falar um pouco sobre esse Buzz do GitHub e seu código de uso.</p>\n",
+            "content_html": "<p>Bora falar um pouco sobre esse Buzz do GitHub e seu código de uso.</p>\n\n<p>Do ponto de vista do GitHub e de suas letras miúdas, provavelmente nada em sua vida vai mudar muito, isso já é assim desde que o github é github, contudo, podemos fazer uma reflexão – leve – sobre esse assunto.<br><br>Tanto GitHub, quanto GitLab, quanto Bitbucket são mantidos por empresas privadas que tem em suas entrelinhas do \"código de uso\" coisas como \"temos o direito de usar seu código como bem entendermos, bacana?\".<br><br>Não existe almoço grátis, já dizia o ditado. Eles não cobram pelo uso, mas em troca damos métricas, dados de nosso comportamento e diversas informações muito valiosas para GitHub/GitLab/Bitbucket e seus parceiro, seja para uso direto ou indireto.<br><br>Além do acesso ao código, eles podem fechar sua conta, caso entendam que precisam fazer isso e você não pode fazer muito, afinal é uma empresa privada, a decisão final é deles.<br><br><strong>E agora?</strong><br><br>Agora que você tem ciência – pelo menos de um parágrafo – do código de uso, talvez devesse ler tudo, talvez não – caso queria paz de espírito, alguns dizem que ignorância pode ser uma benção em certos casos. <br><br>De qualquer forma, a partir de agora, você pelo menos estará usando o GitHub e similares de forma mais consciente.<br><br><strong>O que poderia ser feito para melhorar?</strong><br><br>Eu acho que alguma entidade poderia criar uma fundação para prover um serviço de hospedagem de código de projetos open source, sem fins lucrativos. Poderia rodar até mesmo usar o GitLab CE, quem sabe.<br><br>A ideia aqui é que fosse mantido pela fundação, com apoio de membros e parceiros, com isso poderíamos ter o GitHub, GitLab e Bitbucket bancando financeiramente a operação e ajudando a padronizar as coisas referentes ao Git, versionamento e quem sabe até padronizar CI e CD.<br><br>A linux.com é uma fundação que poderia fazer isso, eu acho que seria a fundação mais experiente e adequada visto o bom case da CNCF e CDF e outras fundações abaixo dela.<br><br>Vale lembrar que a Linux.com já mantém projetos como o  kubernetes, letsencrypt, nodejs, cert-manager, ceph, electron e tantos outros.<br><br>Acho que eles teriam capacidade de fazer e mater esse serviço em escala global, obviamente com apoio financeiro dos gigantes da informática.<br><br>Uma alternativa seria a fundação Apache, que também é bastante sólida.<br><br>São meus 50 cents nesse assunto.<br><br>Durma em paz :)<br><br>[s]<br>Guto<br><br>--- <br><br>Este post usa a tag #FalaGutera, entenda <a href=\"https://gutocarvalho.net/sobre-o-que-e-a-tag-falagutera/\">aqui</a>.<br><br>Se gostou manda um alo no twitter @gutocarvalho.</p>",
+            "author": {
+                "name": "Guto Carvalho"
+            },
+            "tags": [
+                   "FalaGutera"
+            ],
+            "date_published": "2022-01-11T13:57:31-03:00",
+            "date_modified": "2022-01-11T13:58:13-03:00"
+        },
+        {
             "id": "https://gutocarvalho.net/sobre-o-que-e-a-tag-falagutera/",
             "url": "https://gutocarvalho.net/sobre-o-que-e-a-tag-falagutera/",
             "title": "Sobre o que é a tag #FalaGutera?",
@@ -36,7 +51,7 @@
                    "FalaGutera"
             ],
             "date_published": "2022-01-06T18:34:46-03:00",
-            "date_modified": "2022-01-07T13:12:58-03:00"
+            "date_modified": "2022-01-11T13:57:56-03:00"
         },
         {
             "id": "https://gutocarvalho.net/quanto-deveria-ganhar-um-cloud-engineer/",
@@ -142,21 +157,6 @@
             ],
             "date_published": "2022-01-06T10:14:57-03:00",
             "date_modified": "2022-01-06T23:16:31-03:00"
-        },
-        {
-            "id": "https://gutocarvalho.net/sistemas-de-comentarios-open-source/",
-            "url": "https://gutocarvalho.net/sistemas-de-comentarios-open-source/",
-            "title": "Sistemas de comentários open source",
-            "summary": "<p>Eu uso o DISQUS, mas estou buscando alternativas open source!</p>\n",
-            "content_html": "<p>Eu uso o DISQUS, mas estou buscando alternativas open source!</p>\n\n<p>Veja alguns sistemas de comentários open source interessantes</p>\n<p><a href=\"https://commento.io/\">https://commento.io/</a></p>\n<p><a href=\"https://remark42.com/\">https://remark42.com/</a></p>\n<p><a href=\"https://posativ.org/isso/\">https://posativ.org/isso/</a></p>\n<p><a href=\"https://github.com/phusion/juvia\">https://github.com/phusion/juvia</a></p>\n<p><a href=\"https://github.com/jacobwb/hashover\">https://github.com/jacobwb/hashover</a></p>\n<p><a href=\"https://github.com/schn4ck/schnack\">https://github.com/schn4ck/schnack</a></p>\n<p><a href=\"https://github.com/xCss/Valine\">https://github.com/xCss/Valine</a><br><br><a href=\"https://github.com/commentics/commentics\">https://github.com/commentics/commentics</a><br><br><a href=\"https://github.com/vkuznecovas/mouthful\">https://github.com/vkuznecovas/mouthful</a><br><br><a href=\"https://cusdis.com/\">https://cusdis.com/</a><br><br><a href=\"https://github.com/gitalk/gitalk\">https://github.com/gitalk/gitalk</a></p>\n<p>References</p>\n<p>- <a href=\"https://ourcodeworld.com/articles/read/1265/top-7-best-open-source-self-hosted-comment-system-alternatives-to-disqus\">https://ourcodeworld.com/articles/read/1265/top-7-best-open-source-self-hosted-comment-system-alternatives-to-disqus</a><br>- <a href=\"https://lisakov.com/projects/open-source-comments/\">https://lisakov.com/projects/open-source-comments/</a><br>- <a href=\"https://www.findbestopensource.com/tagged/commenting-engine\">https://www.findbestopensource.com/tagged/commenting-engine</a><br>- <a href=\"https://nestify.io/blog/11-best-disqus-alternatives-you-should-try\">https://nestify.io/blog/11-best-disqus-alternatives-you-should-try</a></p>\n<p>[s]<br>Guto</p>",
-            "author": {
-                "name": "Guto Carvalho"
-            },
-            "tags": [
-                   "MindNotes"
-            ],
-            "date_published": "2022-01-05T18:13:17-03:00",
-            "date_modified": "2022-01-05T18:21:16-03:00"
         }
     ]
 }
