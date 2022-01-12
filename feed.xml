@@ -3,12 +3,163 @@
     <title>Guto@Site</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2022-01-11T14:20:40-03:00</updated>
+    <updated>2022-01-12T19:29:26-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
     <id>https://gutocarvalho.net</id>
 
+    <entry>
+        <title>Descobrindo o ip público via curl</title>
+        <author>
+            <name>Guto Carvalho</name>
+        </author>
+        <link href="https://gutocarvalho.net/descobrindo-ip-publico-via-curl/"/>
+        <id>https://gutocarvalho.net/descobrindo-ip-publico-via-curl/</id>
+            <category term="MindNotes"/>
+
+        <updated>2022-01-12T19:29:26-03:00</updated>
+            <summary>
+                <![CDATA[
+                    <p>É fácil, vamos lá.</p>
+
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p>É fácil, vamos lá.</p>
+
+<p>via ifconfig.me</p>
+<div>
+<pre class=" language-none"><code class=" language-none">$ curl ifconfig.me</code></pre>
+</div>
+<p>via ip.me</p>
+<div>
+<pre class=" language-none"><code class=" language-none">$ curl ip.me</code></pre>
+</div>
+<p>via ipinfo.io</p>
+<div>
+<pre class=" language-none"><code class=" language-none">$ curl ipinfo.io</code></pre>
+</div>
+<p>[s]<br>Guto<br><br>---<br><br>Este post é do tipo #MindNotes, entenda <a href="https://gutocarvalho.net/o-que-sao-mindnotes/">aqui</a>.<br><br>Se gostou manda um alo no twitter @gutocarvalho :)</p>
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>Sites interessantes para conhecer</title>
+        <author>
+            <name>Guto Carvalho</name>
+        </author>
+        <link href="https://gutocarvalho.net/sites-interessantes-para-conhecer/"/>
+        <id>https://gutocarvalho.net/sites-interessantes-para-conhecer/</id>
+            <category term="FalaGutera"/>
+
+        <updated>2022-01-12T19:23:11-03:00</updated>
+            <summary>
+                <![CDATA[
+                    <p>Curadoria pantaneira especial, só pra você :)</p>
+
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p>Curadoria pantaneira especial, só pra você :)</p>
+
+<p>Este post é atualizado regularmente, volte para conferir as novidades.</p>
+<p>Os sites gringos que eu gosto e uso para me manter informado sobre tecnologia:</p>
+<ul>
+<li><a href="https://mashable.com/">mashable</a></li>
+<li><a href="https://www.digitaltrends.com/">digitaltrends</a></li>
+<li><a href="https://www.wired.com/">wired</a></li>
+<li><a href="https://arstechnica.com/">ars technica</a></li>
+<li><a href="https://thenextweb.com/">thenextweb</a></li>
+<li><a href="https://www.lifewire.com/">lifewire</a></li>
+<li><a href="https://www.cnet.com/">cnet</a></li>
+<li><a href="https://www.zdnet.com/">zdnet</a></li>
+</ul>
+<p>Sobre Hardware</p>
+<ul>
+<li><a href="https://www.tomshardware.com/">tomshardware</a></li>
+<li><a href="https://www.techradar.com/">techradar</a></li>
+</ul>
+<p>Gadgets</p>
+<ul>
+<li><a href="https://www.engadget.com/">engadget</a></li>
+<li><a href="https://gizmodo.com/">gizmodo</a></li>
+<li><a href="https://www.ubergizmo.com/">ubergizmo</a></li>
+<li><a href="https://www.gadgetreview.com/">gadget review</a></li>
+</ul>
+<p>Android</p>
+<ul>
+<li><a href="https://www.androidauthority.com/">androidauthority.com</a></li>
+</ul>
+<p>Apple</p>
+<ul>
+<li><a href="https://9to5mac.com/">9to5mac</a></li>
+<li><a href="https://osxdaily.com/">osx daily</a></li>
+<li><a href="https://www.macrumors.com">macrumors</a></li>
+<li><a href="https://appleinsider.com">apple insider</a></li>
+<li><a href="https://www.cultofmac.com/">cult of mac</a></li>
+</ul>
+<p>Sobre empresas de tech, startups e investimentos</p>
+<ul>
+<li><a href="https://venturebeat.com/">venturebeat</a></li>
+<li><a href="https://techcrunch.com/">techcrunch</a></li>
+</ul>
+<p>Sobre Security</p>
+<ul>
+<li><a href="https://thehackernews.com/">thehackernews</a></li>
+<li><a href="https://www.securityweek.com/">securityweek</a></li>
+<li><a href="https://threatpost.com/">threatpost</a></li>
+<li><a href="https://www.darkreading.com/">darkreading</a></li>
+<li><a href="https://www.welivesecurity.com/">welivesecurity</a></li>
+</ul>
+<p>Sobre Cloud Native</p>
+<ul>
+<li><a href="https://www.cncf.io/news/">cncf news</a></li>
+<li><a href="https://www.infoq.com/Cloud-native/news/">infoq cloud native news</a></li>
+<li><a href="https://thenewstack.io/">thenewstack</a></li>
+</ul>
+<p>Sobre DevOps</p>
+<ul>
+<li><a href="https://dzone.com/">dzone</a></li>
+<li><a href="https://devops.com">devops.com</a></li>
+<li><a href="https://www.devopsonline.co.uk/">devopsonline</a></li>
+<li><a href="https://devclass.com/">devclass</a></li>
+</ul>
+<p>Sobre Cultura Digital</p>
+<ul>
+<li><a href="https://lifehacker.com/">lifehacker</a></li>
+<li><a href="https://www.theverge.com/">theverge</a></li>
+</ul>
+<p>Sobre humor geek</p>
+<ul>
+<li><a href="https://xkcd.com/">xkcd</a></li>
+<li><a href="https://www.commitstrip.com/">commitstrip</a></li>
+</ul>
+<p>Blogs</p>
+<ul>
+<li><a href="https://www.namecheap.com/blog/">namecheap blog</a></li>
+<li><a href="https://heimdalsecurity.com/blog/">heimdal security blog</a></li>
+</ul>
+<p>Menções honrosas</p>
+<ul>
+<li><a href="https://slashdot.org/">slashdot</a></li>
+</ul>
+<p>Mas Guto, e no br, tb tem? Tem!</p>
+<ul>
+<li><a href="https://tecnoblog.net">tecnoblog</a></li>
+<li><a href="https://www.inovacaotecnologica.com.br">inovacao tecnologica</a></li>
+<li><a href="https://www.techtudo.com.br">tectudo</a></li>
+<li><a href="https://www.techtudo.com.br">canaltech</a></li>
+<li><a href="https://www.tecmundo.com.br/">tecmundo</a></li>
+</ul>
+<p>[s]<br>Guto</p>
+<p>--- </p>
+<p>Este post usa a tag #FalaGutera, entenda <a href="https://gutocarvalho.net/sobre-o-que-e-a-tag-falagutera/">aqui</a>.<br><br>Se gostou manda um alo no twitter @gutocarvalho.</p>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>Reflexões sobre o GitHub</title>
         <author>
@@ -18,7 +169,7 @@
         <id>https://gutocarvalho.net/reflexoes-sobre-o-github/</id>
             <category term="FalaGutera"/>
 
-        <updated>2022-01-11T14:20:40-03:00</updated>
+        <updated>2022-01-11T18:40:33-03:00</updated>
             <summary>
                 <![CDATA[
                     <p>Bora falar um pouco sobre esse Buzz do GitHub e seu código de uso.</p>
@@ -29,7 +180,7 @@
             <![CDATA[
                 <p>Bora falar um pouco sobre esse Buzz do GitHub e seu código de uso.</p>
 
-<p>Do ponto de vista do GitHub e de suas letras miúdas, provavelmente nada em sua vida vai mudar muito, isso já é assim desde que o github é github, contudo, podemos fazer uma reflexão – leve – sobre esse assunto.<br><br>Tanto GitHub, quanto GitLab, quanto Bitbucket são mantidos por empresas privadas que tem em suas entrelinhas do "código de uso" coisas como "temos o direito de usar seu código como bem entendermos, bacana?".<br><br>Não existe almoço grátis, já dizia o ditado. Eles não cobram pelo uso, mas em troca damos métricas, dados de nosso comportamento e diversas informações muito valiosas para GitHub/GitLab/Bitbucket e seus parceiros, seja para uso direto ou indireto.<br><br>Além do acesso ao código, eles podem fechar sua conta, caso entendam que precisam fazer isso e você não pode fazer muito, afinal é uma empresa privada, a decisão final é deles.<br><br><strong>E agora?</strong><br><br>Agora que você tem ciência – pelo menos de um parágrafo – do código de uso, talvez devesse ler tudo, talvez não – caso queria paz de espírito, alguns dizem que ignorância pode ser uma benção em certos casos. <br><br>De qualquer forma, a partir de agora, você pelo menos estará usando o GitHub e similares de forma mais consciente.<br><br><strong>O que poderia ser feito para melhorar?</strong><br><br>Eu acho que alguma entidade poderia criar uma fundação para prover um serviço de hospedagem de código de projetos open source, sem fins lucrativos. Poderia rodar até mesmo o GitLab CE, quem sabe.<br><br>A ideia aqui é que fosse mantido pela fundação, com apoio de membros e parceiros, com isso poderíamos ter o GitHub, GitLab e Bitbucket bancando financeiramente a operação e ajudando a padronizar as coisas referentes ao Git, versionamento e quem sabe até padronizar CI e CD.<br><br>A <strong>linuxfoundation.org</strong> é uma fundação que poderia fazer isso, eu acho que seria a fundação mais experiente e adequada visto o bom case da CNCF, CDF e outras fundações e projetos abaixo dela.<br><br>Vale lembrar que a <strong>linuxfoundation.org</strong> já mantém projetos como o kubernetes, letsencrypt, nodejs, cert-manager, ceph, electron e tantos outros.<br><br>Acho que eles teriam capacidade de mater esse serviço em escala global, obviamente com apoio financeiro dos gigantes da informática.<br><br>Uma alternativa a <strong>linuxfoundation.org</strong> seria a fundação Apache, que também é bastante sólida.<br><br>São meus 50 cents nesse assunto.<br><br>Durma em paz :)<br><br>[s]<br>Guto<br><br>--- <br><br>Este post usa a tag #FalaGutera, entenda <a href="https://gutocarvalho.net/sobre-o-que-e-a-tag-falagutera/">aqui</a>.<br><br>Se gostou manda um alo no twitter @gutocarvalho.</p>
+<p>Do ponto de vista do GitHub e de suas letras miúdas, provavelmente nada em sua vida vai mudar muito, isso já é assim desde que o github é github, contudo, podemos fazer uma reflexão – leve – sobre esse assunto.<br><br>Tanto GitHub, quanto GitLab, quanto Bitbucket são mantidos por empresas privadas que tem em suas entrelinhas do "código de uso" coisas como "temos o direito de usar seu código como bem entendermos, bacana?".<br><br>Não existe almoço grátis, já dizia o ditado. Eles não cobram pelo uso, mas em troca damos métricas, dados de nosso comportamento e diversas informações muito valiosas para GitHub/GitLab/Bitbucket e seus parceiros, seja para uso direto ou indireto.<br><br>Além do acesso ao código, eles podem fechar sua conta, caso entendam que precisam fazer isso e você não pode fazer muito, afinal é uma empresa privada, a decisão final é deles.<br><br><strong>E agora?</strong><br><br>Agora que você tem ciência – pelo menos de um parágrafo – do código de uso, talvez devesse ler tudo, talvez não – caso queria paz de espírito, alguns dizem que ignorância pode ser uma benção em certos casos. <br><br>De qualquer forma, a partir de agora, você pelo menos estará usando o GitHub e similares de forma mais consciente.<br><br><strong>O que poderia ser feito para melhorar?</strong><br><br>Eu acho que alguma entidade poderia criar uma fundação para prover um serviço de hospedagem de código de projetos open source, sem fins lucrativos. Poderia rodar até mesmo o GitLab CE, quem sabe.<br><br>A ideia aqui é que fosse mantido pela fundação, com apoio de membros e parceiros, com isso poderíamos ter o GitHub, GitLab e Bitbucket bancando financeiramente a operação e ajudando a padronizar as coisas referentes ao Git, versionamento e quem sabe até padronizar CI e CD.<br><br>A <strong>linuxfoundation.org</strong> é uma fundação que poderia fazer isso, eu acho que seria a fundação mais experiente e adequada visto o bom case da CNCF, CDF e outras fundações e projetos abaixo dela.<br><br>Vale lembrar que a <strong>linuxfoundation.org</strong> já mantém projetos como o kubernetes, letsencrypt, nodejs, cert-manager, ceph, electron e tantos outros.<br><br>Acho que eles teriam capacidade de mater esse serviço em escala global, obviamente com apoio financeiro dos gigantes da informática, afinal eles tem que dar algum retorno para a comunidade.<br><br>Uma alternativa a <strong>linuxfoundation.org</strong> seria a fundação Apache, que também é bastante sólida.<br><br>São meus 50 cents nesse assunto.<br><br>Durma em paz :)<br><br>[s]<br>Guto<br><br>--- <br><br>Este post usa a tag #FalaGutera, entenda <a href="https://gutocarvalho.net/sobre-o-que-e-a-tag-falagutera/">aqui</a>.<br><br>Se gostou manda um alo no twitter @gutocarvalho.</p>
             ]]>
         </content>
     </entry>
@@ -476,7 +627,7 @@
         <id>https://gutocarvalho.net/verificando-quando-uma-branch-foi-criada/</id>
             <category term="MindNotes"/>
 
-        <updated>2022-01-06T23:16:17-03:00</updated>
+        <updated>2022-01-12T19:28:58-03:00</updated>
             <summary>
                 <![CDATA[
                     <p>Nota mental para verificar a idade e o autor de uma branch.</p>
@@ -556,318 +707,6 @@
         <content type="html">
             <![CDATA[
                 <p><strong>Mindnotes,</strong> como o nome diz são notas mentais rápidas de algo que eu preciso estudar, pesquisar, entender ou lembrar. <br><br>Pode ser um post de uma linha, de um link, ou até um parágrafo, rápido e direto!<br><br>Normalmente vira um <a href="https://gutocarvalho.net/o-que-sao-drops/">DROPS</a> ou um <a href="https://gutocarvalho.net/o-que-sao-tldrs/">TLDR</a> no futuro.<br><br>[s]<br>Guto</p>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>O que são #Drops?</title>
-        <author>
-            <name>Guto Carvalho</name>
-        </author>
-        <link href="https://gutocarvalho.net/o-que-sao-drops/"/>
-        <id>https://gutocarvalho.net/o-que-sao-drops/</id>
-
-        <updated>2022-01-06T10:46:48-03:00</updated>
-            <summary>
-                <![CDATA[
-                    São DUMPs mentais rápidos e rasteiros, simples e objetivos – que funcionam.
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                <p>São DUMPs mentais rápidos e rasteiros, simples e objetivos – que funcionam. <br><br>Geralmente de algo que eu acabei de fazer.<br><br>Eu – quase sempre – volto para detalhar mais cada passo.<br><br>Considere com a mesma qualidade de um rascunho ou uma anotação rápida.<br><br>De qualquer forma comenta ai qquer coisa, os comentários estão ligados nos DROPS ;)<br><br>[s]<br>Guto</p>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>Organizando e tornando o kubeconfig interativo!</title>
-        <author>
-            <name>Guto Carvalho</name>
-        </author>
-        <link href="https://gutocarvalho.net/organizando-e-tornando-o-kubeconfig-interativo/"/>
-        <id>https://gutocarvalho.net/organizando-e-tornando-o-kubeconfig-interativo/</id>
-            <category term="Projetos"/>
-            <category term="K8S"/>
-            <category term="Drops"/>
-
-        <updated>2022-01-06T23:16:31-03:00</updated>
-            <summary>
-                <![CDATA[
-                    <p>Aprenda a organizar seu kubeconfig!</p>
-
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                <p>Aprenda a organizar seu kubeconfig!</p>
-
-<p>Qual a melhor forma de organizar múltiplos clientes e projetos para administrar seus clusters?</p>
-<p>Sabemos que o kubectl precisa de um kubeconfig para funcionar, podemos apontar diretamente e executar algo</p>
-<div>
-<pre class=" language-none"><code class=" language-none">$ kubectl --kubeconfig=arquivo_de_config get nodes</code></pre>
-</div>
-<p>Podemos usar também a variável kubeconfig</p>
-<div>
-<pre class=" language-none"><code class=" language-none">$ export KUBECONFIG=/caminho/para/arquivo/config
-$ kubect get nodes</code></pre>
-</div>
-<p>E como eu faço para dar conta de gerenciar dezenas de projetos e clientes?</p>
-<div>
-<pre class=" language-none"><code class=" language-none">Eu uso o kubectx + kubens + fzf + kubectl-import, falaremos disso a frente :)</code></pre>
-</div>
-<p>Primeira coisa que você tem que pensar é que um único arquivo de kubeconfig é suficiente para todos os seus projetos, inclusive o arquivo foi pensado para ter diferentes contextos.</p>
-<p>Primeiro vamos entender como funciona esse arquivo e seus contextos.</p>
-<h3 id="toc_0">Entendendo contextos</h3>
-<p>Veja um exemplo simples de arquivo de configuração do kubectl com diferentes contextos</p>
-<div>
-<pre class=" language-none"><code class=" language-none">apiVersion: v1
-kind: Config
-preferences: {}
-
-clusters:
-- cluster:
-  name: prd
-- cluster:
-  name: dev
-- cluster:
-  name: tst
-- cluster:
-
-  
-users:
-- name: engineers
-- name: developers
-- name: testers
-
-contexts:
-- context:
-  name: production-cluster
-    user: name
-    cluster: prd
-- context:
-  name: dev-cluster
-    user: name
-    cluster: dev
-- context:
-  name: test-cluster
-    user: name
-    cluster: tst</code></pre>
-</div>
-<p>Agora vamos aprender a criar esse arquivo passo a passo.</p>
-<h3 id="toc_1">Adicionando clusters</h3>
-<p>Adicionando cluster <strong>prd</strong> com certificado CA</p>
-<div>
-<pre class=" language-none"><code class=" language-none"> $ kubectl config --kubeconfig=config set-cluster projeto-prd --server=https://192.168.222.80 --certificate-authority=prd-cert-file</code></pre>
-</div>
-<p>Adicionando cluster <strong>dev</strong> com certificado CA</p>
-<div>
-<pre class=" language-none"><code class=" language-none"> $ kubectl config --kubeconfig=config set-cluster projeto-dev --server=https://172.16.31.20 --certificate-authority=dev-cert-file</code></pre>
-</div>
-<p>Adicionando cluster <strong>tst</strong> e ignorando o certificado</p>
-<div>
-<pre class=" language-none"><code class=" language-none"> $ kubectl config --kubeconfig=config set-cluster projeto-tst --server=https://10.200.3.90 --certificate-authority=tst-ca-file</code></pre>
-</div>
-<h3 id="toc_2">Adicionando usuários</h3>
-<p>Adicionando usuário para engenheiros com certificado</p>
-<div>
-<pre class=" language-none"><code class=" language-none">$ kubectl config --kubeconfig=config set-credentials engineers --client-certificate=eng-cert-file --client-key=eng-key-file</code></pre>
-</div>
-<p>Adicionando usuário para desenvolvedores com certificado</p>
-<div>
-<pre class=" language-none"><code class=" language-none">$ kubectl config --kubeconfig=config set-credentials developers --client-certificate=dev-cert-file --client-key=dev-key-file</code></pre>
-</div>
-<p>Adicionando usuário para testadores com user/senha</p>
-<div>
-<pre class=" language-none"><code class=" language-none">$ kubectl config --kubeconfig=config set-credentials testers --username=admin --password=password</code></pre>
-</div>
-<h3 id="toc_3">Adicionando contextos</h3>
-<p>Adicionando contexto para cluster de <strong>produção</strong> com usuário engineers</p>
-<div>
-<pre class=" language-none"><code class=" language-none">$ kubectl config --kubeconfig=config set-context cluster-projeto-prd --cluster=projeto-prd --user=engineers</code></pre>
-</div>
-<p>Adicionando contexto para cluster de <strong>desenvolvimento</strong> com usuário developer</p>
-<div>
-<pre class=" language-none"><code class=" language-none">$ kubectl config --kubeconfig=config set-context cluster-projeto-dev --cluster=projeto-dev --user=developers</code></pre>
-</div>
-<p>Adicionando contexto para cluster de <strong>teste</strong> com usuário testers</p>
-<div>
-<pre class=" language-none"><code class=" language-none">$ kubectl config --kubeconfig=config set-context cluster-projeto-tst --cluster=projeto-tst --user=testers</code></pre>
-</div>
-<h3 id="toc_4">Verificando arquivo</h3>
-<p>Leia o arquivo</p>
-<div>
-<pre class=" language-none"><code class=" language-none">$ cat config</code></pre>
-</div>
-<p>Agora você provavelmente tem um arquivo como esse, acredito que a única diferença para o seu é que eu coloquei o kind e preferences no topo.</p>
-<div>
-<pre class=" language-none"><code class=" language-none">apiVersion: v1
-kind: Config
-preferences: {}
-clusters:
-- cluster:
-    certificate-authority: dev-cert-file
-    server: https://172.16.31.20
-  name: projeto-dev
-- cluster:
-    certificate-authority: prd-cert-file
-    server: https://192.168.222.80
-  name: projeto-prd
-- cluster:
-    certificate-authority: tst-ca-file
-    server: https://10.200.3.90
-  name: projeto-tst
-contexts:
-- context:
-    cluster: projeto-dev
-    user: developers
-  name: cluster-projeto-dev
-- context:
-    cluster: projeto-prd
-    user: engineers
-  name: cluster-projeto-prd
-- context:
-    cluster: projeto-tst
-    user: testers
-  name: cluster-projeto-tst
-current-context: ""
-users:
-- name: developers
-  user:
-    client-certificate: dev-cert-file
-    client-key: dev-key-file
-- name: engineers
-  user:
-    client-certificate: eng-cert-file
-    client-key: eng-key-file
-- name: testers
-  user:
-    password: password
-    username: admin</code></pre>
-</div>
-<p>Agora que os contextos foram configurados, podemos mudar de contexto assim.</p>
-<div>
-<pre class=" language-none"><code class=" language-none">$ kubectl config --kubeconfig=config use-context cluster-projeto-prd</code></pre>
-</div>
-<p>E a partir daí qualquer comando do kubectl será realizado no cluster configurado nesse contexto.</p>
-<div>
-<pre class=" language-none"><code class=" language-none">$ kubeclt --kubeconfig=config get nodes</code></pre>
-</div>
-<p>Exemplo de saída</p>
-<div>
-<pre class=" language-none"><code class=" language-none">k8s-prd-ctl-01      Ready    controlplane,etcd   6d1h   v1.21.7
-k8s-prd-ctl-02      Ready    controlplane,etcd   6d1h   v1.21.7
-k8s-prd-ctl-03      Ready    controlplane,etcd   6d1h   v1.21.7
-k8s-prd-ctl-04      Ready    controlplane,etcd   6d1h   v1.21.7
-k8s-prd-ctl-05      Ready    controlplane,etcd   6d1h   v1.21.7
-k8s-prd-worker-01   Ready    worker              6d1h   v1.21.7
-k8s-prd-worker-02   Ready    worker              6d1h   v1.21.7
-k8s-prd-worker-03   Ready    worker              6d1h   v1.21.7
-k8s-prd-worker-04   Ready    worker              6d1h   v1.21.7</code></pre>
-</div>
-<h3 id="toc_5">Verificando a configuração do kubectl</h3>
-<p>Com o comando abaixo você verá a configuração completa</p>
-<div>
-<pre class=" language-none"><code class=" language-none">$ kubectl config --kubeconfig=config view</code></pre>
-</div>
-<h3 id="toc_6">Verificando apenas do contexto que está configurado</h3>
-<p>É preciso usar o parâmetro minify para limitar ao contexto escolhido</p>
-<div>
-<pre class=" language-none"><code class=" language-none">$ kubectl config --kubeconfig=config view --minify</code></pre>
-</div>
-<p>Saída</p>
-<div>
-<pre class=" language-none"><code class=" language-none">apiVersion: v1
-clusters:
-- cluster:
-    certificate-authority: prd-cert-file
-    server: https://192.168.222.80
-  name: projeto-prd
-contexts:
-- context:
-    cluster: projeto-prd
-    user: engineers
-  name: cluster-projeto-prd
-current-context: cluster-projeto-prd
-kind: Config
-preferences: {}
-users:
-- name: engineers
-  user:
-    client-certificate: eng-cert-file
-    client-key: eng-key-file</code></pre>
-</div>
-<p>Observe a linha</p>
-<div>
-<pre class=" language-none"><code class=" language-none">current-context: cluster-projeto-prd</code></pre>
-</div>
-<p>Sempre que alteramos de contexto essa linha será modificado no seu arquivo de configuração.</p>
-<h3 id="toc_7">Existe algo mais prático para visualizar e trocar de contextos?</h3>
-<p>Sim, existe o projeto kubectx</p>
-<ul>
-<li>https://github.com/ahmetb/kubectx</li>
-</ul>
-<p>Instalando via brew</p>
-<div>
-<pre class=" language-none"><code class=" language-none">$ brew install kubectx</code></pre>
-</div>
-<p>Rodando</p>
-<div>
-<pre class=" language-none"><code class=" language-none">$ kubectx</code></pre>
-</div>
-<p>Ele vai te mostrar os contextos disponíveis</p>
-<div>
-<pre class=" language-none"><code class=" language-none">cluster-projeto-prd
-cluster-projeto-dev
-cluster-projeto-tst</code></pre>
-</div>
-<p>Para escolher o contexto basta digitar</p>
-<div>
-<pre class=" language-none"><code class=" language-none">$ kubectx cluster-projeto-prd</code></pre>
-</div>
-<p>E pronto!</p>
-<h3 id="toc_8">Existe algo ainda mais fácil?</h3>
-<p>Sim, você pode utilizar o projeto fzf</p>
-<ul>
-<li>https://github.com/junegunn/fzf</li>
-</ul>
-<p>Instalando via brew</p>
-<div>
-<pre class=" language-none"><code class=" language-none">$ brew install fzf</code></pre>
-</div>
-<p>Com ele o kubectx fica interativo, abre um menu e você seleciona o contexto.</p>
-<div>
-<pre class=" language-none"><code class=" language-none">$ kubectx</code></pre>
-</div>
-<p>Saída</p>
-<p>
-<script id="asciicast-NC0R8SqNRzcjpJl0j5B1iB7Ja" src="https://asciinema.org/a/NC0R8SqNRzcjpJl0j5B1iB7Ja.js" async=""></script>
-</p>
-<h3 id="toc_9">Consigo importar um kubeconfig?</h3>
-<p>Eu sei que ficar editando isso na mão dá um certo trabalho, mas tem solução. Recentemente eu encontrei o projeto kubectl-import para resolver essa questão.</p>
-<ul>
-<li>https://github.com/bitnami-labs/kubectl-import</li>
-</ul>
-<p>Instalando o projeto</p>
-<div>
-<pre class=" language-none"><code class=" language-none"> $ sudo curl -o kubectl-import https://raw.githubusercontent.com/bitnami-labs/kubectl-import/master/kubectl-import &amp;&amp; chmod 0755 kubectl-import</code></pre>
-</div>
-<p>Com ele você consegue pegar um kubeconfig e importar</p>
-<div>
-<pre class=" language-none"><code class=" language-none"> $ export KUBECONFIG=/caminho/pro/seu/kubeconfig
- $ ./kubectl-import kubeconfig-novo</code></pre>
-</div>
-<p>E pronto, o novo cluster/contexto vai aparecer no seu kubectx. Recomendo editar o arquivo antes de importar, setando corretamente os nomes do cluster, user e contexto.</p>
-<h3 id="toc_10">Tem algo parecido como kubectx só que para namespaces?</h3>
-<p>Tem sim, o projeto kubectx traz junto o kubens, aplicativo similar que serve para trocar de namespaces rapidamente de forma interativa, basta digitar</p>
-<div>
-<pre class=" language-none"><code class=" language-none">$ kubens</code></pre>
-</div>
-<p>E escolher o namespace.</p>
-<h2 id="toc_10">Amarrando as pontas</h2>
-<p>Espero que tenha aprendido a usar contextos do kubeconf, usar o kubectx, fzf, kubectl-import e agilizar a administração de seus clusters.<br><br>Esse post é o que eu chamo de DROPS, entenda o modelo <a href="https://gutocarvalho.net/o-que-sao-drops/">aqui</a>.</p>
-<p>[s]<br>Guto<br><br></p>
-<p>---</p>
-<p>Se gostou manda um alo no twitter @gutocarvalho.</p>
             ]]>
         </content>
     </entry>
