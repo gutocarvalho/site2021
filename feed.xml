@@ -3,12 +3,118 @@
     <title>Guto@Site</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2022-01-13T11:19:33-03:00</updated>
+    <updated>2022-02-07T18:58:49-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
     <id>https://gutocarvalho.net</id>
 
+    <entry>
+        <title>Comandos UNIFI USG CLI</title>
+        <author>
+            <name>Guto Carvalho</name>
+        </author>
+        <link href="https://gutocarvalho.net/comandos-unifi-usg-cli/"/>
+        <id>https://gutocarvalho.net/comandos-unifi-usg-cli/</id>
+            <category term="MindNotes"/>
+
+        <updated>2022-02-07T18:58:49-03:00</updated>
+            <summary>
+                <![CDATA[
+                    Bora anotar algumas dicas do USG já que documentação da CLI é&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p>Bora anotar algumas dicas do USG já que documentação da CLI é rara.</p>
+<h2 id="load-balancer">Load balancer</h2>
+<p>checando status do LB</p>
+<pre><code>gutocarvalho@RoteadorUSG:~$ show load-balance status 
+</code></pre>
+<p>saída exemplo</p>
+<pre><code>show load-balance status
+Group wan_failover
+  interface   : eth0
+  carrier     : up
+  status      : active
+  gateway     : 192.168.1.1
+  route table : 201
+  weight      : 100%
+  flows
+      WAN Out : 11156
+      WAN In  : 2048
+    Local Out : 55
+
+  interface   : eth2
+  carrier     : up
+  status      : failover
+  gateway     : 192.168.22.1
+  route table : 202
+  weight      : 0%
+  flows
+      WAN Out : 1101
+      WAN In  : 0
+    Local Out : 27
+</code></pre>
+<p>checando métricas do load balancer</p>
+<pre><code>gutocarvalho@RoteadorUSG:~$ show load-balance watchdog
+</code></pre>
+<p>saída exemplo</p>
+<pre><code>Group wan_failover
+  eth0
+  status: Running
+  pings: 6
+  fails: 1
+  run fails: 1/3
+  route drops: 8
+  ping gateway: ping.ubnt.com - REACHABLE
+  last route drop   : Mon Feb  7 17:20:15 2022
+  last route recover: Mon Feb  7 17:20:37 2022
+
+  eth2
+  status: Running
+  failover-only mode
+  pings: 35
+  fails: 1
+  run fails: 0/3
+  route drops: 1
+  ping gateway: ping.ubnt.com - REACHABLE
+  last route drop   : Mon Feb  7 17:13:07 2022
+  last route recover: Mon Feb  7 17:15:40 2022
+</code></pre>
+<p>vendo os logs</p>
+<pre><code>gutocarvalho@RoteadorUSG:~$ show log | grep wlb
+</code></pre>
+<p>saída exemplo</p>
+<pre><code>Feb  7 18:00:12 RoteadorUSG wlb: wlb-wan_failover-eth0 wlb-wan_failover-eth0 reachability failed, failover
+Feb  7 18:00:12 RoteadorUSG wlb: group wan_failover, interface eth0 going Inactive
+Feb  7 18:00:13 RoteadorUSG wlb: group wan_failover, interface eth2 going Active
+Feb  7 18:01:06 RoteadorUSG wlb: group wan_failover, interface eth0 going Active
+Feb  7 18:04:25 RoteadorUSG wlb: wlb-wan_failover-eth0 wlb-wan_failover-eth0 reachability failed, failover
+Feb  7 18:04:25 RoteadorUSG wlb: group wan_failover, interface eth0 going Inactive
+Feb  7 18:04:26 RoteadorUSG wlb: group wan_failover, interface eth2 going Active
+Feb  7 18:04:46 RoteadorUSG wlb: group wan_failover, interface eth0 going Active
+Feb  7 18:15:46 RoteadorUSG wlb: wlb-wan_failover-eth2 wlb-wan_failover-eth2 reachability failed, failover
+</code></pre>
+<h2 id="ip-saindo-pela-wan2">IP saindo pela WAN2</h2>
+<p>Policy-Based Routing (PBR) is a way to force traffic to use a specific address or interface as the next-hop. When using PBR, traffic is matched on a certain criteria, for example a source IP address, and forwarded to a next-hop. On the USG models, Policy-Based Routing can be used to send specific traffic to the WAN1/WAN2 interfaces.</p>
+<p>To route traffic out of WAN2 based on the Source Network, Destination Port and Protocol:</p>
+<pre><code>configure
+set protocols static table 5 route 0.0.0.0/0 next-hop &lt;IP address&gt;
+set firewall modify LOAD_BALANCE rule 2501 action modify
+set firewall modify LOAD_BALANCE rule 2501 modify table 5
+set firewall modify LOAD_BALANCE rule 2501 source address &lt;IP address&gt;
+set firewall modify LOAD_BALANCE rule 2501 destination port 80,443
+set firewall modify LOAD_BALANCE rule 2501 protocol tcp
+commit ; exit
+</code></pre>
+<p>Policy-Based Routing can be used with either weighted or failover-only Load Balancing. When using PPPoE interfaces, create an interface-route instead with the next-hop set to the interface. For example: set protocols static table 5 interface-route 0.0.0.0/0 next-hop-interface pppoe0.</p>
+<p>In 1st command line, the next-hop gateway address of the ISP connected to the WAN2 interface.</p>
+<p>In 4th line, you will need to mention the source from host from VLAN/LAN for am example VLAN 2 set as 192.168.2.0/24</p>
+
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>Descobrindo o ip público via curl</title>
         <author>
@@ -701,26 +807,6 @@
                 <p>TLDR significa "Too Long Don't Read", é uma expressão é inglês para o termo brazuca <strong>textão</strong>.</p>
 <p>Alguns temas aqui são TLDR, geralmente pois o assunto demanda muito texto para explicar um conceito, modelo ou tecnologia.<br><br>Então já sabe, se o post é TLDR pega a água e um lanchinho e vem!</p>
 <p><br>:)</p>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>O que são #MindNotes ?</title>
-        <author>
-            <name>Guto Carvalho</name>
-        </author>
-        <link href="https://gutocarvalho.net/o-que-sao-mindnotes/"/>
-        <id>https://gutocarvalho.net/o-que-sao-mindnotes/</id>
-
-        <updated>2022-01-06T11:01:51-03:00</updated>
-            <summary>
-                <![CDATA[
-                    Mindnotes, como o nome diz são notas mentais rápidas de algo que&hellip;
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                <p><strong>Mindnotes,</strong> como o nome diz são notas mentais rápidas de algo que eu preciso estudar, pesquisar, entender ou lembrar. <br><br>Pode ser um post de uma linha, de um link, ou até um parágrafo, rápido e direto!<br><br>Normalmente vira um <a href="https://gutocarvalho.net/o-que-sao-drops/">DROPS</a> ou um <a href="https://gutocarvalho.net/o-que-sao-tldrs/">TLDR</a> no futuro.<br><br>[s]<br>Guto</p>
             ]]>
         </content>
     </entry>

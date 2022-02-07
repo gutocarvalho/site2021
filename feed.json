@@ -10,6 +10,21 @@
     },
     "items": [
         {
+            "id": "https://gutocarvalho.net/comandos-unifi-usg-cli/",
+            "url": "https://gutocarvalho.net/comandos-unifi-usg-cli/",
+            "title": "Comandos UNIFI USG CLI",
+            "summary": "Bora anotar algumas dicas do USG já que documentação da CLI é&hellip;",
+            "content_html": "<p>Bora anotar algumas dicas do USG já que documentação da CLI é rara.</p>\n<h2 id=\"load-balancer\">Load balancer</h2>\n<p>checando status do LB</p>\n<pre><code>gutocarvalho@RoteadorUSG:~$ show load-balance status \n</code></pre>\n<p>saída exemplo</p>\n<pre><code>show load-balance status\nGroup wan_failover\n  interface   : eth0\n  carrier     : up\n  status      : active\n  gateway     : 192.168.1.1\n  route table : 201\n  weight      : 100%\n  flows\n      WAN Out : 11156\n      WAN In  : 2048\n    Local Out : 55\n\n  interface   : eth2\n  carrier     : up\n  status      : failover\n  gateway     : 192.168.22.1\n  route table : 202\n  weight      : 0%\n  flows\n      WAN Out : 1101\n      WAN In  : 0\n    Local Out : 27\n</code></pre>\n<p>checando métricas do load balancer</p>\n<pre><code>gutocarvalho@RoteadorUSG:~$ show load-balance watchdog\n</code></pre>\n<p>saída exemplo</p>\n<pre><code>Group wan_failover\n  eth0\n  status: Running\n  pings: 6\n  fails: 1\n  run fails: 1/3\n  route drops: 8\n  ping gateway: ping.ubnt.com - REACHABLE\n  last route drop   : Mon Feb  7 17:20:15 2022\n  last route recover: Mon Feb  7 17:20:37 2022\n\n  eth2\n  status: Running\n  failover-only mode\n  pings: 35\n  fails: 1\n  run fails: 0/3\n  route drops: 1\n  ping gateway: ping.ubnt.com - REACHABLE\n  last route drop   : Mon Feb  7 17:13:07 2022\n  last route recover: Mon Feb  7 17:15:40 2022\n</code></pre>\n<p>vendo os logs</p>\n<pre><code>gutocarvalho@RoteadorUSG:~$ show log | grep wlb\n</code></pre>\n<p>saída exemplo</p>\n<pre><code>Feb  7 18:00:12 RoteadorUSG wlb: wlb-wan_failover-eth0 wlb-wan_failover-eth0 reachability failed, failover\nFeb  7 18:00:12 RoteadorUSG wlb: group wan_failover, interface eth0 going Inactive\nFeb  7 18:00:13 RoteadorUSG wlb: group wan_failover, interface eth2 going Active\nFeb  7 18:01:06 RoteadorUSG wlb: group wan_failover, interface eth0 going Active\nFeb  7 18:04:25 RoteadorUSG wlb: wlb-wan_failover-eth0 wlb-wan_failover-eth0 reachability failed, failover\nFeb  7 18:04:25 RoteadorUSG wlb: group wan_failover, interface eth0 going Inactive\nFeb  7 18:04:26 RoteadorUSG wlb: group wan_failover, interface eth2 going Active\nFeb  7 18:04:46 RoteadorUSG wlb: group wan_failover, interface eth0 going Active\nFeb  7 18:15:46 RoteadorUSG wlb: wlb-wan_failover-eth2 wlb-wan_failover-eth2 reachability failed, failover\n</code></pre>\n<h2 id=\"ip-saindo-pela-wan2\">IP saindo pela WAN2</h2>\n<p>Policy-Based Routing (PBR) is a way to force traffic to use a specific address or interface as the next-hop. When using PBR, traffic is matched on a certain criteria, for example a source IP address, and forwarded to a next-hop. On the USG models, Policy-Based Routing can be used to send specific traffic to the WAN1/WAN2 interfaces.</p>\n<p>To route traffic out of WAN2 based on the Source Network, Destination Port and Protocol:</p>\n<pre><code>configure\nset protocols static table 5 route 0.0.0.0/0 next-hop &lt;IP address&gt;\nset firewall modify LOAD_BALANCE rule 2501 action modify\nset firewall modify LOAD_BALANCE rule 2501 modify table 5\nset firewall modify LOAD_BALANCE rule 2501 source address &lt;IP address&gt;\nset firewall modify LOAD_BALANCE rule 2501 destination port 80,443\nset firewall modify LOAD_BALANCE rule 2501 protocol tcp\ncommit ; exit\n</code></pre>\n<p>Policy-Based Routing can be used with either weighted or failover-only Load Balancing. When using PPPoE interfaces, create an interface-route instead with the next-hop set to the interface. For example: set protocols static table 5 interface-route 0.0.0.0/0 next-hop-interface pppoe0.</p>\n<p>In 1st command line, the next-hop gateway address of the ISP connected to the WAN2 interface.</p>\n<p>In 4th line, you will need to mention the source from host from VLAN/LAN for am example VLAN 2 set as 192.168.2.0/24</p>\n",
+            "author": {
+                "name": "Guto Carvalho"
+            },
+            "tags": [
+                   "MindNotes"
+            ],
+            "date_published": "2022-02-07T16:25:51-03:00",
+            "date_modified": "2022-02-07T18:58:49-03:00"
+        },
+        {
             "id": "https://gutocarvalho.net/descobrindo-ip-publico-via-curl/",
             "url": "https://gutocarvalho.net/descobrindo-ip-publico-via-curl/",
             "title": "Descobrindo o ip público via curl",
@@ -142,20 +157,6 @@
             ],
             "date_published": "2022-01-06T10:49:31-03:00",
             "date_modified": "2022-01-06T11:01:53-03:00"
-        },
-        {
-            "id": "https://gutocarvalho.net/o-que-sao-mindnotes/",
-            "url": "https://gutocarvalho.net/o-que-sao-mindnotes/",
-            "title": "O que são #MindNotes ?",
-            "summary": "Mindnotes, como o nome diz são notas mentais rápidas de algo que&hellip;",
-            "content_html": "<p><strong>Mindnotes,</strong> como o nome diz são notas mentais rápidas de algo que eu preciso estudar, pesquisar, entender ou lembrar. <br><br>Pode ser um post de uma linha, de um link, ou até um parágrafo, rápido e direto!<br><br>Normalmente vira um <a href=\"https://gutocarvalho.net/o-que-sao-drops/\">DROPS</a> ou um <a href=\"https://gutocarvalho.net/o-que-sao-tldrs/\">TLDR</a> no futuro.<br><br>[s]<br>Guto</p>",
-            "author": {
-                "name": "Guto Carvalho"
-            },
-            "tags": [
-            ],
-            "date_published": "2022-01-06T10:46:39-03:00",
-            "date_modified": "2022-01-06T11:01:51-03:00"
         }
     ]
 }
