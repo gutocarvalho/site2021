@@ -3,12 +3,36 @@
     <title>Guto@Site</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2022-02-08T12:14:00-03:00</updated>
+    <updated>2022-02-08T12:38:46-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
     <id>https://gutocarvalho.net</id>
 
+    <entry>
+        <title>30 percepções sobre TI em 2022</title>
+        <author>
+            <name>Guto Carvalho</name>
+        </author>
+        <link href="https://gutocarvalho.net/trinta-percepcoes-sobre-ti-em-2022/"/>
+        <id>https://gutocarvalho.net/trinta-percepcoes-sobre-ti-em-2022/</id>
+            <category term="FalaGutera"/>
+
+        <updated>2022-02-08T12:38:46-03:00</updated>
+            <summary>
+                <![CDATA[
+                    <p>Pensamentos claros, mandando a real para quem quiser ler.</p>
+
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p>Pensamentos claros, mandando a real para quem quiser ler.</p>
+
+<p>Post especial para quem está começando, no meio do caminho e também para gestores antenados.<br><br><strong>1.</strong> Pedir ajuda não é sinal de fraqueza;<br><br><strong>2.</strong> Ajudar outra pessoa não é um problema e sim um ato de gentileza, respeito e empatia;<br><br><strong>3.</strong> Cada um tem experiências e conhecimentos distintos em níveis distintos, é isso que torna sua equipe rica e diversa;<br><br><strong>4.</strong> Compartilhar conhecimento faz todos crescerem juntos e faz o time se tornar mais forte e unido;<br><br><strong>5.</strong> Respeito não se combina, respeito se tem, não é opcional;<br><br><strong>6.</strong> Empatia tem que se ter sempre, em todas as direções possíveis;<br><br><strong>7.</strong> Tentar entender um problema e ajudar a resolver é mais eficiente humano do que apontar o problema e sumir;<br><br><strong>8.</strong> Criar um ambiente saudável, seguro e profissional é responsabilidades de todos;<br><br><strong>9.</strong> Não se estimula competição entre pessoas do mesmo time, e também não se deve comparar conhecimentos, skills e personalidades, somos todos diferentes, cada um com suas experiências e qualidades;<br><br><strong>10.</strong> Colaboração se estimula, e deve ser estimulada sempre;<br><br><strong>11.</strong> Controle excessivo só gera perturbação no time ao invés de ajudar;<br><br><strong>12.</strong> É preciso ter equilíbrio entre as necessidades da empresa e as necessidades de seus colaboradores;<br><br><strong>13.</strong> Uma empresa é formada de pessoas, sem pessoas não há empresa;<br><br><strong>14.</strong> Se a empresa quer ser bem sucedida ela tem que se preocupar primeiro com o bem estar do seu time, pq sem ele vocês não vão entregar nada;<br><br><strong>15.</strong> Estenda essa cortesia para os familiares em primeiro grau da pessoa que trabalha contigo, ninguém trabalha bem sabendo com o filho/filha/esposa/pai/mãe/pet está mal;<br><br><strong>16.</strong> Ameaçar pessoas, mesmo que de forma subliminar é sinal de falta de capacidade de gerenciar e mostra a completa falta de compreensão da empresa e falta de empatia;<br> <br><strong>17.</strong> O gestor deve ser direto, honesto e agir com respeito em qualquer situação;<br><br><strong>18.</strong> Espera em 2022 um cultura centrada em pessoas, para que essas pessoas juntas possam ajudar sua empresa a alcançar os objetivos;<br><br><strong>19.</strong> Cultura focada em empresa, com clientes em segundo e colaboradores por último é uma empresa com mindset anos 90, não funciona mais e não se aceita + hoje dia, hora de mudar gestor;<br><br><strong>20.</strong> Pessoas não são máquinas ou ferramentas que estão ali só para fazer seu cliente feliz. Pessoas são pessoas e devem ser respeitadas como tal;<br><br><strong>21.</strong> Se trabalha remoto tente manter uma conf aberta para se sentir próximo dos demais, como se fosse a mesa do lado, converse com eles além da daily, além da review, além da retrospectiva, converse sempre que puder, já está remoto, manter contato, conversar via conf é essencial;<br><br><strong>22.</strong> Gestor, One a One só funciona se existe confiança, se não houver não adianta que ninguém vai ser abrir e conversar;<br><br><strong>23.</strong> Gestor, One a One não é só para o funcionário dar feedback que não pode dar em reunião pública, ele tá ali para aprender a confiar em você e você está lá para ajudá-lo a crescer como pessoa e profissional e principalmente para criarem laços;<br><br><strong>24.</strong> Alguns usam One-a-One apenas para falar de trabalho e como crescer lá, outros evitam falar de trabalho, depende da empresa e de como se aplica, no final, o importante é ter equilíbrio e saber que o objetivo é construir confiança, laços e apoiar a pessoa;<br><br><strong>25.</strong> No final do dia você vai ver que está tudo relacionado a pessoas, a forma como nós nos relacionamos e colaboramos, pois como disse, empresas são formadas por pessoas, e sem pessoas empresas não funcionam e não podem existir;<br><br><strong>26.</strong> Pessoas não são recursos, pare de chamar pessoas de recursos, mude o nome do seu RH para departamento de pessoas, esse é o primeiro passo, o segundo é enxergá-los como colaboradores essenciais para seu sucesso e não como meros empregados;<br><br><strong>27.</strong> Pare de dizer que colaboradores tem que ralar como se fosse o dono da empresa, eu só vou concordar com isso se eles forem sócios e ganharem a mesma coisa. Cada um no seu quadrado, cada com na sua responsabilidade, sem loucura ou devaneios, foco no profissionalismo;<br><br><strong>28.</strong> O maior e mais importante princípio dentro de qualquer empresa é uma coisa chamada “RESPEITO”. Tudo se constrói em volta disso.<br><br><strong>29.</strong> O segundo mais importante chama-se EMPATIA, sem ela, sua empresa é oca.<br><br><strong>30.</strong> As pessoas não precisam gostar de você, e nem você precisa gostar de todo mundo, mas todos precisam se respeitar, colaborar e se ajudar, e se der para gostar, ai é melhor ainda :)</p>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>10 Ferramentas do ecossistema Rancher</title>
         <author>
@@ -492,306 +516,6 @@ commit ; exit
 <p>[s]<br>Guto<br><br>---</p>
 <p>Este post usa a tag #FalaGutera, entenda <a href="https://gutocarvalho.net/sobre-o-que-e-a-tag-falagutera/">aqui</a>.<br><br>Se gostou manda um alo no twitter @gutocarvalho.</p>
 <p><span style="color: var(--text-editor-body-color); font-family: var(--font-base); font-size: inherit; font-weight: var(--font-weight-normal);"> </span></p>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>Ferramentas interessantes para k8s</title>
-        <author>
-            <name>Guto Carvalho</name>
-        </author>
-        <link href="https://gutocarvalho.net/ferramentas-interessantes-para-k8s/"/>
-        <id>https://gutocarvalho.net/ferramentas-interessantes-para-k8s/</id>
-            <category term="MindNotes"/>
-            <category term="K8S"/>
-
-        <updated>2022-01-06T23:16:10-03:00</updated>
-            <summary>
-                <![CDATA[
-                    <p>Conheça algumas ferramentas interessantes para seu k8s toolkit</p>
-
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                <p>Conheça algumas ferramentas interessantes para seu k8s toolkit</p>
-
-<p>Uma curadoria pessoal de ferramentas para k8s</p>
-<p>Essa página é atualizada regularmente, volte para ver as novidades!</p>
-<h2 id="toc_0">shell</h2>
-<ul>
-<li>https://github.com/cloudnativelabs/kube-shell'</li>
-<li>https://github.com/jonmosco/kube-ps1</li>
-</ul>
-<h2 id="toc_1">port forwarding</h2>
-<ul>
-<li>https://github.com/txn2/kubefwd</li>
-<li>https://www.electronjs.org/apps/kube-forwarder</li>
-</ul>
-<h2 id="toc_2">autoscaling</h2>
-<ul>
-<li>https://github.com/aws/karpenter</li>
-<li>https://github.com/kedacore/keda</li>
-</ul>
-<h2 id="toc_3">namespace and cluster switch (cli)</h2>
-<ul>
-<li>https://github.com/ahmetb/kubectx</li>
-<li>https://github.com/sbstp/kubie</li>
-</ul>
-<h2 id="toc_4">kubeconfig manager</h2>
-<ul>
-<li>https://github.com/sunny0826/kubecm</li>
-<li>https://github.com/bitnami-labs/kubectl-import</li>
-</ul>
-<h2 id="toc_5">resources view (web)</h2>
-<ul>
-<li>https://github.com/FairwindsOps/goldilocks</li>
-<li>https://github.com/stevelacy/kuberhaus</li>
-</ul>
-<h2 id="toc_6">resources view realtime (cli)</h2>
-<ul>
-<li>https://github.com/pulumi/kubespy</li>
-</ul>
-<h2 id="toc_7">backup for production (config and volumes)</h2>
-<ul>
-<li>https://velero.io</li>
-</ul>
-<h2 id="toc_8">backup etcd</h2>
-<ul>
-<li>https://github.com/gardener/etcd-backup-restore</li>
-</ul>
-<h2 id="toc_9">backup on git (yaml manifests)</h2>
-<ul>
-<li>https://github.com/bpineau/katafygio</li>
-</ul>
-<h2 id="toc_10">etcd management</h2>
-<ul>
-<li>https://github.com/gtamas/etcdmanager</li>
-<li>https://github.com/kopeio/etcd-manager</li>
-</ul>
-<h2 id="toc_11">logs (cli)</h2>
-<ul>
-<li>https://github.com/johanhaleby/kubetail</li>
-<li>https://github.com/boz/kail</li>
-<li>https://github.com/wercker/stern</li>
-</ul>
-<h2 id="toc_12">monitoring (cli)</h2>
-<ul>
-<li>https://github.com/astefanutti/kubebox</li>
-</ul>
-<h2 id="toc_13">monitoring (web)</h2>
-<ul>
-<li>https://github.com/hjacobs/kube-ops-view</li>
-</ul>
-<h2 id="toc_14">monitoring tools</h2>
-<ul>
-<li>https://www.weave.works/oss/scope</li>
-<li>https://prometheus.io</li>
-<li>https://grafana.com/oss/grafana</li>
-</ul>
-<h2 id="toc_15">monitoring tools for prometheus</h2>
-<ul>
-<li>https://github.com/cortexproject</li>
-<li>https://github.com/thanos-io/thanos</li>
-</ul>
-<h2 id="toc_16">monitoring prometheus stack</h2>
-<ul>
-<li>https://github.com/prometheus-community/helm-charts/tree/main/charts/kube-prometheus-stack</li>
-</ul>
-<h2 id="toc_17">log system</h2>
-<ul>
-<li>https://github.com/grafana/loki</li>
-<li>https://github.com/fluent/fluentd</li>
-</ul>
-<h2 id="toc_18">cli dashboard</h2>
-<ul>
-<li>https://github.com/derailed/k9s</li>
-</ul>
-<h2 id="toc_19">secrets</h2>
-<ul>
-<li>https://github.com/bitnami-labs/sealed-secrets</li>
-<li>https://github.com/Shopify/ejson</li>
-<li>https://github.com/mfuentesg/ksd</li>
-</ul>
-<h2 id="toc_20">mobile dashboard</h2>
-<ul>
-<li>https://github.com/bitnami-labs/cabin</li>
-</ul>
-<h2 id="toc_21">chaos test</h2>
-<ul>
-<li>https://github.com/asobti/kube-monkey</li>
-<li>https://github.com/linki/chaoskube</li>
-<li>https://github.com/powerfulseal/powerfulseal</li>
-</ul>
-<h2 id="toc_22">load test</h2>
-<ul>
-<li>https://github.com/mrahbar/k8s-testsuite</li>
-<li>https://github.com/grafana/k6-operator</li>
-</ul>
-<h2 id="toc_23">notifiers</h2>
-<ul>
-<li>https://github.com/bitnami-labs/kubewatch</li>
-<li>https://github.com/searchlight/searchlight</li>
-<li>https://github.com/sukeesh/k8s-job-notify</li>
-<li>https://github.com/infracloudio/botkube</li>
-</ul>
-<h2 id="toc_24">web-cli</h2>
-<ul>
-<li>https://github.com/kubernetes-sigs/kui</li>
-</ul>
-<h2 id="toc_25">desktop</h2>
-<ul>
-<li>https://github.com/lensapp/lens</li>
-<li>https://github.com/kubenav/kubenav</li>
-<li>https://github.com/skippbox/skippbox</li>
-</ul>
-<h2 id="toc_26">linter &amp; validators</h2>
-<ul>
-<li>https://github.com/instrumenta/kubeval</li>
-<li>https://github.com/stackrox/kube-linter</li>
-<li>https://github.com/zegl/kube-score</li>
-<li>https://github.com/yannh/kubeconform</li>
-</ul>
-<h2 id="toc_27">web dashboard</h2>
-<ul>
-<li>https://github.com/kubernetes/dashboard</li>
-<li>https://github.com/rancher/rancher</li>
-</ul>
-<h2 id="toc_28">web dashboard (promissores)</h2>
-<ul>
-<li>https://github.com/kubevious/kubevious</li>
-<li>https://github.com/vmware-tanzu/octant</li>
-</ul>
-<h2 id="toc_29">web dashboard (novos projetos para acompanhar)</h2>
-<ul>
-<li>https://github.com/skooner-k8s/skooner</li>
-<li>https://github.com/jeremykross/konstellate</li>
-<li>https://github.com/smpio/kubernator</li>
-</ul>
-<h2 id="toc_30">ci/cd system</h2>
-<ul>
-<li>https://github.com/fluxcd/flux</li>
-<li>https://github.com/argoproj/argo-cd</li>
-<li>https://github.com/werf/werf</li>
-<li>https://github.com/tektoncd/operator</li>
-</ul>
-<h2 id="toc_31">quality</h2>
-<ul>
-<li>https://github.com/keptn/keptn</li>
-</ul>
-<h2 id="toc_32">ci/cd tool</h2>
-<ul>
-<li>https://githubhelp.com/alexcurtin/kubernetes-deploy</li>
-</ul>
-<h2 id="toc_33">developer</h2>
-<ul>
-<li>https://github.com/tilt-dev/tilt</li>
-</ul>
-<h2 id="toc_34">kubernetes local</h2>
-<ul>
-<li>https://github.com/rancher/k3d</li>
-<li>https://github.com/kubernetes/minikube</li>
-<li>https://github.com/kubernetes-sigs/kind</li>
-<li>https://github.com/ubuntu/microk8s</li>
-</ul>
-<h2 id="toc_35">kubernetes installers</h2>
-<ul>
-<li>https://github.com/kubernetes/kops</li>
-<li>https://github.com/kubernetes-sigs/kubespray</li>
-<li>https://rancher.com/products/rke</li>
-</ul>
-<h2 id="toc_36">kubernetes distros</h2>
-<ul>
-<li>https://rancher.com/products/rke</li>
-<li>https://github.com/kubernetes/kubeadm</li>
-</ul>
-<h2 id="toc_37">kubernetes light distros</h2>
-<ul>
-<li>https://github.com/k3s-io/k3s</li>
-<li>https://github.com/k0sproject/k0s</li>
-</ul>
-<h2 id="toc_38">security (cli)</h2>
-<ul>
-<li>https://github.com/aquasecurity/kube-bench</li>
-<li>https://github.com/aquasecurity/kube-hunter</li>
-<li>https://github.com/aquasecurity/kubectl-who-can</li>
-<li>https://github.com/aquasecurity/trivy</li>
-<li>https://github.com/armosec/kubescape</li>
-</ul>
-<h2 id="toc_39">cluster sanitizer</h2>
-<ul>
-<li>https://github.com/FairwindsOps/Pluto</li>
-<li>https://github.com/derailed/popeye</li>
-</ul>
-<h2 id="toc_40">service proxy</h2>
-<ul>
-<li>https://github.com/envoyproxy/envoy</li>
-<li>https://github.com/projectcontour/contour</li>
-<li>https://github.com/traefik/traefik</li>
-<li>https://github.com/nginx/nginx</li>
-</ul>
-<h2 id="toc_41">storage (block)</h2>
-<ul>
-<li>https://github.com/longhorn/longhorn</li>
-<li>https://github.com/openebs/openebs</li>
-</ul>
-<h2 id="toc_42">storage (object)</h2>
-<ul>
-<li>https://github.com/minio/minio</li>
-</ul>
-<h2 id="toc_43">service mesh</h2>
-<ul>
-<li>https://github.com/linkerd/linkerd2</li>
-<li>https://github.com/istio/istio</li>
-<li>https://github.com/hashicorp/consul</li>
-</ul>
-<h2 id="toc_44">packages</h2>
-<ul>
-<li>https://github.com/helm/helm</li>
-<li>https://github.com/kubernetes-sigs/kustomize/</li>
-<li>https://github.com/buildpacks/pack</li>
-</ul>
-<h2 id="toc_45">container register</h2>
-<ul>
-<li>https://github.com/goharbor/harbor</li>
-<li>https://github.com/quay/quay</li>
-</ul>
-<h2 id="toc_46">database</h2>
-<ul>
-<li>https://github.com/ongres/stackgres</li>
-<li>https://github.com/CrunchyData/postgres-operator</li>
-<li>https://github.com/vitessio/vitess</li>
-</ul>
-<h2 id="toc_47">api gateway</h2>
-<ul>
-<li>https://github.com/emissary-ingress/emissary</li>
-<li>https://github.com/Kong/kong</li>
-</ul>
-<h2 id="toc_48">kubernetes history dashboard</h2>
-<ul>
-<li>https://github.com/salesforce/sloop</li>
-</ul>
-<h2 id="toc_49">troubleshooting</h2>
-<ul>
-<li>https://github.com/aylei/kubectl-debug</li>
-</ul>
-<h2 id="toc_50">tracing and telemetry</h2>
-<ul>
-<li>https://github.com/jaegertracing/jaeger</li>
-<li>https://github.com/open-telemetry</li>
-<li>https://github.com/opentracing</li>
-<li>https://grafana.com/oss/tempo</li>
-</ul>
-<h2 id="toc_51">serverless</h2>
-<ul>
-<li>https://github.com/kubeless/kubeless</li>
-<li>https://github.com/funktionio/funktion</li>
-<li>https://github.com/fission</li>
-<li><a href="https://github.com/openfaas/faas">https://github.com/openfaas/faas</a></li>
-</ul>
-<p>Este post é do tipo #MindNotes, entenda <a href="https://gutocarvalho.net/o-que-sao-mindnotes/">aqui</a>.<br><br>[s]<br>Guto<br><br></p>
-<p>---</p>
-<p>Se gostou manda um alo no twitter @gutocarvalho.</p>
             ]]>
         </content>
     </entry>
