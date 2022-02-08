@@ -3,7 +3,7 @@
     <title>Guto@Site</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2022-02-08T16:40:28-03:00</updated>
+    <updated>2022-02-08T16:47:42-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
@@ -18,7 +18,7 @@
         <id>https://gutocarvalho.net/ti-remota-em-2022-entenda/</id>
             <category term="FalaGutera"/>
 
-        <updated>2022-02-08T16:40:28-03:00</updated>
+        <updated>2022-02-08T16:47:42-03:00</updated>
             <summary>
                 <![CDATA[
                     Vindo aqui para tentar explicar o atual momento sobre vagas remotas, presenciais&hellip;
@@ -155,7 +155,7 @@ grande maioria das profissões de nosso país as pessoas não tem essa escolha.<
 <p>Tem gente que não tem condições para trabalhar em casa devido a internet</p>
 <p>Tem gente que não tem condições para trabalhar em casa devido a falta de equipamento</p>
 <p>Tem várias razões e motivos para não se trabalhar em casa, eu não dúvido ou questiono</p>
-<p>Exceções sempre vão existir, o que eu estou tentando mostrar é que existe um movimento – e na minha opinião sem volta – acontecendo de pessoas que desejam trabalhar em regime de home office, e isso provavelmente vai ser o novo normal e o novo padrão para TI para os próximos anos.</p>
+<p>Exceções sempre vão existir, o que eu estou tentando mostrar é que existe um movimento – e na minha opinião sem volta – acontecendo de pessoas que desejam trabalhar em regime de home office, e isso provavelmente vai ser o novo normal e o novo padrão na TI para os próximos anos.</p>
 <p>Ainda assim, exceções vão existir, listo algumas áreas que TI precisam de atendimento presencial ou pelo menos semi-presencial.</p>
 <ul>
 <li>Suporte a sistemas médicos de TI</li>
@@ -188,7 +188,7 @@ grande maioria das profissões de nosso país as pessoas não tem essa escolha.<
 <li>Mantenha Reuniões diárias entre times e líderes</li>
 <li>Adote Planejamento semanal, quinzenal ou mensal</li>
 <li><strong>Trabalhe mais com prazos e projetos</strong> do que com controle de horário</li>
-<li>Acompanhamente de atividades via sistemas que te possibilite isso</li>
+<li>Acompanhe as atividades via sistemas que te possibilitem isso</li>
 <li>Adote revisões regulares de projetos com curtas apresentaçoes de cada time</li>
 <li>Adote a prática do one-a-one com seus colaboradores</li>
 </ul>
@@ -217,23 +217,23 @@ grande maioria das profissões de nosso país as pessoas não tem essa escolha.<
 <p>Redução de custos para a empresa como:</p>
 <p>Energia</p>
 <ul>
-<li>Reduzindo gente no escritório você reduz seu mair custo visto que energia que alimenta equipamentos e o ar-condicionado.</li>
+<li>Reduzindo gente no escritório você reduz um dos seus maiores custos, visto que energia elétrioca é quem alimenta equipamentos e o ar-condicionado (vilão ou salvador?).</li>
 </ul>
 <p>Internet</p>
 <ul>
-<li>Com pouca gente no escritório você não preciso de links de internet tão caros</li>
+<li>Com pouca gente no escritório você não precisa de links de internet tão caros ou rápidos</li>
 </ul>
-<p>Mobiliario</p>
+<p>Mobiliário</p>
 <ul>
 <li>O mobiliário pode ser reduzido já que não terá tantos funcionários no local</li>
 </ul>
 <p>Aluguel</p>
 <ul>
-<li>Voce pode ir para uma sede menor, com foco em reuniões, estilo co-working e atendimento de clientes, isso reduzirá o custo do aluguel e custos indiretos e diretos com o escritório.</li>
+<li>Voce pode ir para uma sede menor e mobiliar a nova sede com foco em reuniões, estilo co-working e atendimento de clientes, isso reduzirá o custo do aluguel e custos indiretos e diretos com o escritório.</li>
 </ul>
 <p>Seguro</p>
 <ul>
-<li>Sala menor, seguro menor, risco menor do seu patrimônio.</li>
+<li>Com sala menor, seguro menor e risco menor do seu patrimônio</li>
 </ul>
 <p>Datacenter na nuvem</p>
 <ul>
@@ -258,10 +258,14 @@ grande maioria das profissões de nosso país as pessoas não tem essa escolha.<
 </ul>
 <h2 id="concluindo">Concluindo</h2>
 <p>Confia que funciona, tem centenas de milhares de cases que comprovam.</p>
-<p>Eu mesmo já fundei 2 empresas que seguem firmes até hoje e funcionam desde sempre no modelo remoto.</p>
+<p>Eu mesmo já fundei 2 empresas que seguem firmes até hoje e funcionam desde sempre – dia zero – no modelo remoto.</p>
 <p>Espero que a informação ajude quem precisa de ajuda :)</p>
+<p>Compartilha com as pessoas que precisam!</p>
 <p>[s]<br>
 Guto</p>
+<p>— </p>
+<p>Este post usa a tag #FalaGutera, <a href="https://gutocarvalho.net/sobre-o-que-e-a-tag-falagutera/">entenda</a> aqui.</p>
+<p>Se gostou manda um alo no twitter <a href="https://twitter.com/gutocarvalho">@gutocarvalho</a>.</p>
 
             ]]>
         </content>
@@ -627,7 +631,7 @@ commit ; exit
         <id>https://gutocarvalho.net/reflexoes-sobre-o-github/</id>
             <category term="FalaGutera"/>
 
-        <updated>2022-01-11T18:40:33-03:00</updated>
+        <updated>2022-02-08T16:46:00-03:00</updated>
             <summary>
                 <![CDATA[
                     <p>Bora falar um pouco sobre esse Buzz do GitHub e seu código de uso.</p>
