@@ -10,6 +10,21 @@
     },
     "items": [
         {
+            "id": "https://gutocarvalho.net/etiqueta-do-trabalho-remoto/",
+            "url": "https://gutocarvalho.net/etiqueta-do-trabalho-remoto/",
+            "title": "Etiqueta do trabalho remoto",
+            "summary": "Em especial para Cloud Engineers. Em relação ao seu trabalho Em relação&hellip;",
+            "content_html": "<p>Em especial para Cloud Engineers.</p>\n<h2 id=\"o-que-uma-pessoa-nao-deve-fazer-no-trabalho-remoto\">O que uma pessoa NAO DEVE fazer no trabalho remoto</h2>\n<p>Em relação ao seu trabalho</p>\n<ul>\n<li>Dar perdido e não avisar</li>\n<li>Não estar disponível no regime que foi combinado</li>\n<li>Aparecer só na calls e sumir depois</li>\n<li>Ter problemas de foco e não avisar ou pedir ajuda</li>\n<li>Ficar bloqueado mais de 4 horas e nao pedir ajuda</li>\n<li>Ficar bloqueado mais de 1 dia e não pedir ajuda</li>\n</ul>\n<p>Em relação ao seu time</p>\n<ul>\n<li>Não dedicar parte do seu tempo para ensinar aos mais novos</li>\n<li>Não ajudar os novos membros com ISSUES e INCIDENTES</li>\n<li>Não ajudar no mapeamento de melhorias e inovações</li>\n<li>Ficar pedindo constantemente para mudar o ONCALL com outros membros</li>\n<li>Criticar publicamente colegas ou superiores de forma desnecessária sem conversar com eles antes</li>\n</ul>\n<p>Comportamentos pessoais que podem pegar mal</p>\n<ul>\n<li>Não se vestir de forma adequada nas reuniões</li>\n<li>Não abrir a camera nas reuniões</li>\n<li>Não ter iluminação minimamente adequada para usar a camera</li>\n<li>Computador ou navegador ficar travando durante reuniões sempre</li>\n<li>Não responder no chat da empresa quando pedirem sua opinião ou opinião geral</li>\n<li>Chegar atrasado nas reuniões diárias ou regulares da empresa sem avisar</li>\n</ul>\n<p>Comportamentos técnicos que podem pegar mal</p>\n<ul>\n<li>Não versionar corretamente seu trabalho</li>\n<li>Não ter cuidado com as mensagens de commit</li>\n<li>Não ter cuidado no merge do seu código</li>\n<li>Fazer commit com –FORCE em branchs de integração</li>\n<li>Não comentar nas ISSUES seu progresso diário</li>\n<li>Não criar ISSUES quando vai fazer algo</li>\n<li>Não documentar processos e procedimentos que só você sabe fazer</li>\n<li>Usar ferramental que não é padrão do time</li>\n<li>Fazer coisas manualmente em um time de automação e não avisar</li>\n</ul>\n<h2 id=\"o-que-uma-pessoa-deve-fazer-no-trabalho-remoto\">O que uma pessoa DEVE fazer no trabalho remoto</h2>\n<ul>\n<li>Avisar no canal do seu time seu progressor diariamente</li>\n<li>Pedir ajudar sempre que precisar</li>\n<li>Ser honesto sobre qualquer situação ou problema</li>\n<li>Estar sempre disponível no horário combinado</li>\n<li>Participar de todas as reuniões que for convidado</li>\n<li>Estar presente e se fazer presente para o time e empresa</li>\n<li>Ajudar o time como um todo, especialmente se estiver livre</li>\n<li>Ajudar os novos membros do time a entender o todo</li>\n<li>Atuar na solução de conflitos ou problemas se houver</li>\n<li>Compartilhar sempre que possível</li>\n</ul>\n<h2 id=\"o-que-a-empresa-não-deve-fazer-com-sua-equipe\">O que a empresa não deve fazer com sua equipe</h2>\n<p>Pega mal</p>\n<ul>\n<li>Pedir para instalar software de vigilancia</li>\n<li>Ficar monitorando para ver se a pessoa está na frente do computador ou não</li>\n<li>Pedir para logar cada atividade, em especial se não for contrato por horas</li>\n<li>Atravessar o manager e tentar resolver algo direto com alguém do time dele</li>\n</ul>\n<p>[s]<br>\nGuto</p>\n<p>— </p>\n<p>Este post usa a tag #FalaGutera, <a href=\"https://gutocarvalho.net/sobre-o-que-e-a-tag-falagutera/\">entenda</a> aqui.</p>\n<p>Se gostou manda um alo no twitter <a href=\"https://twitter.com/gutocarvalho\">@gutocarvalho</a>.</p>\n",
+            "author": {
+                "name": "Guto Carvalho"
+            },
+            "tags": [
+                   "FalaGutera"
+            ],
+            "date_published": "2022-02-08T17:53:35-03:00",
+            "date_modified": "2022-02-08T17:58:43-03:00"
+        },
+        {
             "id": "https://gutocarvalho.net/ti-remota-em-2022-entenda/",
             "url": "https://gutocarvalho.net/ti-remota-em-2022-entenda/",
             "title": "TI Remota em 2022 entenda!",
@@ -22,7 +37,7 @@
                    "FalaGutera"
             ],
             "date_published": "2022-02-08T16:30:33-03:00",
-            "date_modified": "2022-02-08T17:18:11-03:00"
+            "date_modified": "2022-02-08T17:53:45-03:00"
         },
         {
             "id": "https://gutocarvalho.net/trinta-percepcoes-sobre-ti-em-2022/",
@@ -142,21 +157,6 @@
             ],
             "date_published": "2022-01-06T22:57:38-03:00",
             "date_modified": "2022-01-06T22:57:38-03:00"
-        },
-        {
-            "id": "https://gutocarvalho.net/quanto-eu-devo-cobrar-a-hora-de-projetos/",
-            "url": "https://gutocarvalho.net/quanto-eu-devo-cobrar-a-hora-de-projetos/",
-            "title": "Quanto eu devo cobrar a hora de projetos cloud?",
-            "summary": "<p>Clique aqui para saber mais!</p>\n",
-            "content_html": "<p>Clique aqui para saber mais!</p>\n\n<p>Eu sou Cloud Engineer ou Cloud Native Engineer, quanto deveria cobrar a hora de um projeto?</p>\n<p>Me fazem essa pergunta todos os dias, vamos ver se esse post consegue ajudar.</p>\n<p>Essa é uma questão complicada, depende de sua experiência e currículo.</p>\n<p>Mas se fosse para colocar uma <strong>base</strong>, seria parecido com isso.</p>\n<h2 id=\"toc_0\">Cloud Engineer (aws, gcp, azure)</h2>\n<ul>\n<li>Profissional com 2+ anos de EXP: R$ 120,00</li>\n<li>Profissional com 4+ anos de EXP: R$ 220,00</li>\n<li>Profissional com 6+ anos de EXP: R$ 320,00</li>\n</ul>\n<h2 id=\"toc_1\">Cloud Native Engineer + DevOps Experience (k8s+cicd+iac)</h2>\n<ul>\n<li>Profissional com 2+ anos de EXP: R$ 180,00</li>\n<li>Profissional com 4+ anos de EXP: R$ 280,00</li>\n<li>Profissional com 6+ anos de EXP: R$ 380,00</li>\n</ul>\n<h2 id=\"toc_2\">Quando é por hora e quando é projeto com valor fechado?</h2>\n<p>Passou de 40 horas você pode considerar um projeto \"porteira fechada\". Mas lembre-se, no seu cálculo pessoal, sua estimativa continua em horas, contudo você pode combinar um preço mais atrativo para fechar o projeto com o cliente e combinar um prazo adequado para entregar, com boa gordura.</p>\n<h2 id=\"toc_3\">Amarrando as pontas</h2>\n<p>Isso aí é o justo na minha humilde opinião, de resto dependerá muito do seu currículo, cases que participou, soft skills, hard skills, parta daí e combine o melhor que puder.</p>\n<p>Se o contratante faz questão do atendimento presencial, adicione pelo menos 25-30% na proposta para cobrir combustível (7 reais o litro), seu tempo no trânsito, comer fora, dentre outras questões.</p>\n<p>Se for em outra cidade, todas as despesas de deslocamento aéreo e terrestre, hospedagem e alimentação são por conta do contratante, e mantenha o 25-30% de margem para atender presencial, mesmo assim, especialmente em outra cidade.</p>\n<h2 id=\"toc_3\">Atualizações sobre valores estimados</h2>\n<p>- 2022-01-07: Primeira versão<br><br>[s]<br>Guto<br><br>---</p>\n<p>Este post usa a tag #FalaGutera, entenda <a href=\"https://gutocarvalho.net/sobre-o-que-e-a-tag-falagutera/\">aqui</a>.<br><br>Se gostou manda um alo no twitter @gutocarvalho.</p>",
-            "author": {
-                "name": "Guto Carvalho"
-            },
-            "tags": [
-                   "FalaGutera"
-            ],
-            "date_published": "2022-01-06T18:34:46-03:00",
-            "date_modified": "2022-01-11T13:57:56-03:00"
         }
     ]
 }
