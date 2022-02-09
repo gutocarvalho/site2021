@@ -14,7 +14,7 @@
             "url": "https://gutocarvalho.net/novos-slidedecks-publicados/",
             "title": "Novos slides publicados",
             "summary": "<p>Só vem ver o conteúdo, tá bacana!</p>\n",
-            "content_html": "<p>Só vem ver o conteúdo, tá bacana!</p>\n\n<p>Recentemente publiquei dois slidedecks interessantes sobre Service Mesh e EKS DR, foram pesquisas feitas para projetos que participei, talvez o conteúdo pode te ajudar :)<br><br><br><strong>Apresentação sobre investigação de DR para EKS</strong></p>\n<div class=\"post__iframe\"><iframe loading=\"lazy\" style=\"border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 560px; height: 314px;\" class=\"speakerdeck-iframe\" frameborder=\"0\" src=\"https://speakerdeck.com/player/89925d0e218844bf96aceb1791f0eacb\" title=\"EKS DR Investigation\" allowfullscreen=\"allowfullscreen\" mozallowfullscreen=\"mozallowfullscreen\" webkitallowfullscreen=\"webkitallowfullscreen\" data-ratio=\"1.78343949044586\"></iframe></div> <br><br><strong>Apresentação sobre comparação entre service meshes Istio e Linkerd</strong> <br><br><div class=\"post__iframe\"><iframe loading=\"lazy\" style=\"border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 560px; height: 314px;\" class=\"speakerdeck-iframe\" frameborder=\"0\" src=\"https://speakerdeck.com/player/de8fd85d7de04f2da815b7475aba8dce\" title=\"Service Mesh: Istio vs Linkerd\" allowfullscreen=\"allowfullscreen\" mozallowfullscreen=\"mozallowfullscreen\" webkitallowfullscreen=\"webkitallowfullscreen\" data-ratio=\"1.78343949044586\"></iframe></div>\n<p>[s]<br>Guto<br><br>---</p>\n<p>Este post é do tipo #MindNotes, entenda <a href=\"https://gutocarvalho.net/o-que-sao-mindnotes/\">aqui</a>.</p>\n<p>Se gostou manda um alo no twitter @gutocarvalho.</p>",
+            "content_html": "<p>Só vem ver o conteúdo, tá bacana!</p>\n\n<p>Recentemente publiquei dois slidedecks interessantes sobre Service Mesh e EKS DR, foram pesquisas feitas para projetos que participei, talvez o conteúdo possa te ajudar :)<br><br><br><strong>Apresentação sobre investigação de DR para EKS</strong></p>\n<div class=\"post__iframe\"><iframe loading=\"lazy\" style=\"border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 560px; height: 314px;\" class=\"speakerdeck-iframe\" frameborder=\"0\" src=\"https://speakerdeck.com/player/89925d0e218844bf96aceb1791f0eacb\" title=\"EKS DR Investigation\" allowfullscreen=\"allowfullscreen\" mozallowfullscreen=\"mozallowfullscreen\" webkitallowfullscreen=\"webkitallowfullscreen\" data-ratio=\"1.78343949044586\"></iframe></div> <br><br><strong>Apresentação sobre comparação entre service meshes Istio e Linkerd</strong> <br><br><div class=\"post__iframe\"><iframe loading=\"lazy\" style=\"border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 560px; height: 314px;\" class=\"speakerdeck-iframe\" frameborder=\"0\" src=\"https://speakerdeck.com/player/de8fd85d7de04f2da815b7475aba8dce\" title=\"Service Mesh: Istio vs Linkerd\" allowfullscreen=\"allowfullscreen\" mozallowfullscreen=\"mozallowfullscreen\" webkitallowfullscreen=\"webkitallowfullscreen\" data-ratio=\"1.78343949044586\"></iframe></div>\n<p>[s]<br>Guto<br><br>---</p>\n<p>Este post é do tipo #MindNotes, entenda <a href=\"https://gutocarvalho.net/o-que-sao-mindnotes/\">aqui</a>.</p>\n<p>Se gostou manda um alo no twitter @gutocarvalho.</p>",
             "author": {
                 "name": "Guto Carvalho"
             },
@@ -22,7 +22,7 @@
                    "MindNotes"
             ],
             "date_published": "2022-02-09T14:46:32-03:00",
-            "date_modified": "2022-02-09T15:08:26-03:00"
+            "date_modified": "2022-02-09T15:13:16-03:00"
         },
         {
             "id": "https://gutocarvalho.net/etiqueta-do-trabalho-remoto/",
@@ -117,7 +117,7 @@
         {
             "id": "https://gutocarvalho.net/descobrindo-ip-publico-via-curl/",
             "url": "https://gutocarvalho.net/descobrindo-ip-publico-via-curl/",
-            "title": "Descobrindo o ip público via curl",
+            "title": "Descobrindo o ip público via cURL",
             "summary": "<p>É fácil, vamos lá.</p>\n",
             "content_html": "<p>É fácil, vamos lá.</p>\n\n<p>via ifconfig.me</p>\n<div>\n<pre class=\" language-none\"><code class=\" language-none\">$ curl ifconfig.me</code></pre>\n</div>\n<p>via ip.me</p>\n<div>\n<pre class=\" language-none\"><code class=\" language-none\">$ curl ip.me</code></pre>\n</div>\n<p>via ipinfo.io</p>\n<div>\n<pre class=\" language-none\"><code class=\" language-none\">$ curl ipinfo.io</code></pre>\n</div>\n<p>voce pode até criar um alias nos eu .bashrc ou .zshrc</p>\n<div>\n<pre class=\" language-none\"><code class=\" language-none\">alias myip=\"curl ip.me\"</code></pre>\n</div>\n<p>e depois de recarregar o rc é só digitar no terminal</p>\n<div>\n<pre class=\" language-none\"><code class=\" language-none\">$ myip</code></pre>\n</div>\n<p>[s]<br>Guto</p>\n<p><br>---<br><br>Este post é do tipo #MindNotes, entenda <a href=\"https://gutocarvalho.net/o-que-sao-mindnotes/\">aqui</a>.<br><br>Se gostou manda um alo no twitter @gutocarvalho :)</p>",
             "author": {
@@ -127,7 +127,7 @@
                    "MindNotes"
             ],
             "date_published": "2022-01-12T18:58:16-03:00",
-            "date_modified": "2022-01-13T11:17:49-03:00"
+            "date_modified": "2022-02-09T15:12:39-03:00"
         },
         {
             "id": "https://gutocarvalho.net/sites-interessantes-para-conhecer/",
