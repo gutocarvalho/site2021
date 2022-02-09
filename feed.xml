@@ -3,7 +3,7 @@
     <title>Guto@Site</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2022-02-09T14:49:53-03:00</updated>
+    <updated>2022-02-09T15:08:26-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
@@ -18,15 +18,18 @@
         <id>https://gutocarvalho.net/novos-slidedecks-publicados/</id>
             <category term="MindNotes"/>
 
-        <updated>2022-02-09T14:49:53-03:00</updated>
+        <updated>2022-02-09T15:08:26-03:00</updated>
             <summary>
                 <![CDATA[
-                    Recentemente publiquei dois slidedecks interessantes sobre Service Meshh e EKS DR, foram&hellip;
+                    <p>Só vem ver o conteúdo, tá bacana!</p>
+
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                <p>Recentemente publiquei dois slidedecks interessantes sobre Service Meshh e EKS DR, foram pesquisas feitas para projetos que participei, talvez o conteúdo pode te ajudar :)<br><br><br><strong>Apresentação sobre investigação de DR para EKS</strong></p>
+                <p>Só vem ver o conteúdo, tá bacana!</p>
+
+<p>Recentemente publiquei dois slidedecks interessantes sobre Service Mesh e EKS DR, foram pesquisas feitas para projetos que participei, talvez o conteúdo pode te ajudar :)<br><br><br><strong>Apresentação sobre investigação de DR para EKS</strong></p>
 <div class="post__iframe"><iframe loading="lazy" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 560px; height: 314px;" class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/89925d0e218844bf96aceb1791f0eacb" title="EKS DR Investigation" allowfullscreen="allowfullscreen" mozallowfullscreen="mozallowfullscreen" webkitallowfullscreen="webkitallowfullscreen" data-ratio="1.78343949044586"></iframe></div> <br><br><strong>Apresentação sobre comparação entre service meshes Istio e Linkerd</strong> <br><br><div class="post__iframe"><iframe loading="lazy" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 560px; height: 314px;" class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/de8fd85d7de04f2da815b7475aba8dce" title="Service Mesh: Istio vs Linkerd" allowfullscreen="allowfullscreen" mozallowfullscreen="mozallowfullscreen" webkitallowfullscreen="webkitallowfullscreen" data-ratio="1.78343949044586"></iframe></div>
 <p>[s]<br>Guto<br><br>---</p>
 <p>Este post é do tipo #MindNotes, entenda <a href="https://gutocarvalho.net/o-que-sao-mindnotes/">aqui</a>.</p>
