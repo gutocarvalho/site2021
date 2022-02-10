@@ -3,7 +3,7 @@
     <title>Guto@Site</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2022-02-10T16:23:03-03:00</updated>
+    <updated>2022-02-10T16:56:07-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
@@ -63,7 +63,7 @@ Guto</p>
         <id>https://gutocarvalho.net/entendendo-diferenca-entre-lb-tipo-l4-e-l7/</id>
             <category term="MindNotes"/>
 
-        <updated>2022-02-10T16:23:03-03:00</updated>
+        <updated>2022-02-10T16:56:07-03:00</updated>
             <summary>
                 <![CDATA[
                     A ideia aqui é falar sobre a diferença de LB na camada&hellip;
@@ -99,13 +99,15 @@ Guto</p>
 <p>A camada 4 é camada de transporte onde temos o TCP que o que importa quando estamos falando de LB geralmente.</p>
 <h3 id="camada-4">Camada 4</h3>
 <p>O balanceamento nesta camada leve em conta as informações de endereçamento  de cada pacote – dos primeiros que recebe – para tomar decisões de roteamento, contudo ele não lê ou inspeciona os dados do pacote.</p>
-<p>Aqui estamos falando de dados brutos, pacotes de dados, o LB vai receber pacotes em uma porta TCP qualquer, por exemplo a 80 e repassar para outro IP na mesma porta ou em outra que for designada. O balanceador pode fazer isso para vários IPs diferentes de acordo com configurações de peso, prioridade, timeout, tolerância a falhas e outras que serão definadas nele pelo administrador.</p>
-<p>O único tratamento ele vai fazer é um NAT, que será o meio de campo entre quem requisita e quem responde mudando quando necessário ip de origem e destino do pacote.</p>
+<p>Aqui estamos falando dos dados brutos, estamos falando dos pacotes de fato. Neste cenário o LB vai receber pacotes em uma porta TCP qualquer, por exemplo a 80 e repassar para outro IP na mesma porta ou em outra porta que for definida. O balanceador pode encaminhar pacotes para vários IPs diferentes de acordo com as regras estabelecidas pelo administrador. </p>
+<p>Pode-se ainda definir configurações de estratégia de balanceamento como RR (round-robin), persistência de sessão, definir pesos, prioridades, tempo de timeout, nível máximo de tolerância a falhas e outras regras que a tecnologia escolhida oferecer e suportar.</p>
+<p>O único tratamento – de fato – que ele vai fazer é um NAT que irá mudar quando necessário o <strong>ip de origem</strong> e o <strong>ip destino</strong> dos pacotes.</p>
 <h3 id="camada-7">Camada 7</h3>
-<p>Já nesta camada o LB baseia todas as decisões de roteamento usando características e informações presentes nos pacotes, e falando especicamente de HTTP temos o cabeçalho HTTP, o conteúdo da mensagem, a url, o tipo de dados (imagem, texto, áudio, vídeo…) e os cookies, dentre outros tipos de regras que podem ser definidas</p>
-<p>Balanceamento na L7 pode oferecer a flexibidade de enviar por exemplo específicas requisições para um determinado servidor, habilitar compressão de dados e criptografia na comunicação, coisas que não podem ser feitas no L4.</p>
-<h2 id="concluindo">Concluindo</h2>
-<p>O custo computacional do L7 é bem maior que o L4, contudo, hoje em dia isso é praticamente imperceptível para a maioria das aplicações e cenários. Só vamos começar a perceber o custo computacional com missão crítica ou em um site com acessos na casa dos centenas de milhares por segundo. Ainda assim, os benefícios são maiores IMHO.</p>
+<p>Já nesta camada o LB baseia todas as decisões de roteamento usando características e informações presentes nos pacotes, e falando especicamente de HTTP temos o cabeçalho HTTP, o conteúdo da mensagem, a url, o tipo de dados (imagem, texto, áudio, vídeo…) e os cookies. </p>
+<p>Além destas informações, o administrador pode definir configurações de estratégia de balanceamento, persistência de sessão, definir pesos, prioridades, tempo de timeout, nível máximo de tolerância a falhas e outras regras que cada a tecnologia escolhida oferecer e suportar.</p>
+<p>E não é só isso, o balanceamento na L7 pode ir além, usando características de reverse-proxys ele permite por exemplo, enviar requisições específicas para um determinado servidor, habilitar compressão de dados (GZIP) e criptografia na comunicação (TLS/SSL), coisas que não podem ser feitas em um LB do tipo L4.</p>
+<h2 id="amarrando-as-pontas">Amarrando as pontas</h2>
+<p>Sabemos que o custo computacional do L7 é bem maior que o L4, contudo, hoje em dia isso é praticamente imperceptível para a maioria das aplicações e cenários. Só vamos começar a perceber o custo computacional com aplicaçoes de missão crítica ou em sites com acessos na casa dos centenas de milhares por segundo. Ainda assim, os benefícios são maiores IMHO.</p>
 <p>[s]<br>
 Guto</p>
 <p>–</p>
