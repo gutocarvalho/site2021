@@ -3,7 +3,7 @@
     <title>Guto@Site</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2022-02-10T16:56:07-03:00</updated>
+    <updated>2022-02-10T17:24:44-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
@@ -18,7 +18,7 @@
         <id>https://gutocarvalho.net/entendendo-o-que-e-three-tier-application/</id>
             <category term="MindNotes"/>
 
-        <updated>2022-02-10T16:12:40-03:00</updated>
+        <updated>2022-02-10T17:24:34-03:00</updated>
             <summary>
                 <![CDATA[
                     Se você está se inscrevendo para vagas de Cloud Engineer ou DevOps&hellip;
@@ -48,6 +48,12 @@
 <li>Teremos mais segurança já que o o frontend nao fala diretamente com o banco</li>
 </ul>
 <p>Esse é o básico do básico sobre o assunto, mas suficiente para responder.</p>
+<h3 id="refs">Refs</h3>
+<ul>
+<li><a href="https://www.logianalytics.com/5-benefits-3-tier-architecture">https://www.logianalytics.com/5-benefits-3-tier-architecture</a></li>
+<li><a href="https://gocloudcareers.com/2021/10/21/what-is-a-three-tier-architecture">https://gocloudcareers.com/2021/10/21/what-is-a-three-tier-architecture</a></li>
+<li><a href="https://ipwithease.com/three-tier-architecture-in-application/">https://ipwithease.com/three-tier-architecture-in-application/</a></li>
+</ul>
 <p>[s]<br>
 Guto</p>
 
@@ -63,7 +69,7 @@ Guto</p>
         <id>https://gutocarvalho.net/entendendo-diferenca-entre-lb-tipo-l4-e-l7/</id>
             <category term="MindNotes"/>
 
-        <updated>2022-02-10T16:56:07-03:00</updated>
+        <updated>2022-02-10T17:24:39-03:00</updated>
             <summary>
                 <![CDATA[
                     A ideia aqui é falar sobre a diferença de LB na camada&hellip;
@@ -108,6 +114,12 @@ Guto</p>
 <p>E não é só isso, o balanceamento na L7 pode ir além, usando características de reverse-proxys ele permite por exemplo, enviar requisições específicas para um determinado servidor, habilitar compressão de dados (GZIP) e criptografia na comunicação (TLS/SSL), coisas que não podem ser feitas em um LB do tipo L4.</p>
 <h2 id="amarrando-as-pontas">Amarrando as pontas</h2>
 <p>Sabemos que o custo computacional do L7 é bem maior que o L4, contudo, hoje em dia isso é praticamente imperceptível para a maioria das aplicações e cenários. Só vamos começar a perceber o custo computacional com aplicaçoes de missão crítica ou em sites com acessos na casa dos centenas de milhares por segundo. Ainda assim, os benefícios são maiores IMHO.</p>
+<h3 id="refs">Refs</h3>
+<ul>
+<li><a href="https://www.a10networks.com/blog/how-do-layer-4-and-layer-7-load-balancing-differ">https://www.a10networks.com/blog/how-do-layer-4-and-layer-7-load-balancing-differ</a></li>
+<li><a href="https://www.nginx.com/resources/glossary/layer-7-load-balancing">https://www.nginx.com/resources/glossary/layer-7-load-balancing</a></li>
+<li><a href="https://levelup.gitconnected.com/l4-vs-l7-load-balancing-d2012e271f56">https://levelup.gitconnected.com/l4-vs-l7-load-balancing-d2012e271f56</a></li>
+</ul>
 <p>[s]<br>
 Guto</p>
 <p>–</p>
@@ -126,7 +138,7 @@ Guto</p>
         <id>https://gutocarvalho.net/entendendo-o-dogpile-effect/</id>
             <category term="MindNotes"/>
 
-        <updated>2022-02-10T15:58:28-03:00</updated>
+        <updated>2022-02-10T17:24:44-03:00</updated>
             <summary>
                 <![CDATA[
                     Se você está se inscrevendo para vagas de Cloud Engineer ou DevOps&hellip;
@@ -145,7 +157,10 @@ Guto</p>
 <h3 id="amarrando-as-pontas">Amarrando as pontas</h3>
 <p>Cada stack ou linguagem tem ferramentas, técnicas métodos para implementar o semaphore lock, isso é algo a ser tratado em nível de código de aplicação – geralmente.</p>
 <p>Essa é uma pergunta mais do ponto de vista de arquitetura e engenharia de software do que de infraestrutura, mas é importante entender o conceito e responder corretamente ao entrevistador.</p>
-<p>Sucesso!</p>
+<h3 id="refs">Refs</h3>
+<ul>
+<li><a href="https://www.sobstel.dev/blog/preventing-dogpile-effect/">https://www.sobstel.dev/blog/preventing-dogpile-effect/</a></li>
+</ul>
 <p>[s]<br>
 Guto</p>
 <p>–</p>
