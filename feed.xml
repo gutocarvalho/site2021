@@ -3,7 +3,7 @@
     <title>Guto@Site</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2022-02-10T09:14:36-03:00</updated>
+    <updated>2022-02-10T09:18:22-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
@@ -86,7 +86,7 @@
         <id>https://gutocarvalho.net/etiqueta-do-trabalho-remoto/</id>
             <category term="FalaGutera"/>
 
-        <updated>2022-02-10T09:14:36-03:00</updated>
+        <updated>2022-02-10T09:18:22-03:00</updated>
             <summary>
                 <![CDATA[
                     Se você está começando a trabalhar remoto ou quer trabalhar, tem dúvidas&hellip;
@@ -175,6 +175,7 @@
 <p>Que podem pegar mal</p>
 <ul>
 <li>Não usar THREADS no CHAT, dificultando entender o contexto</li>
+<li>Postar código no CHAT sem usar highlight ou formatação para isso</li>
 <li>Não versionar corretamente seu trabalho</li>
 <li>Não ter cuidado com as mensagens de commit</li>
 <li>Não ter cuidado no merge do seu código</li>
