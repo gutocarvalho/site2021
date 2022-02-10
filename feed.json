@@ -10,6 +10,21 @@
     },
     "items": [
         {
+            "id": "https://gutocarvalho.net/entendendo-o-dogpile-effect/",
+            "url": "https://gutocarvalho.net/entendendo-o-dogpile-effect/",
+            "title": "Entendendo o Dogpile Effect",
+            "summary": "Se você está se inscrevendo para vagas de Cloud Engineer ou DevOps&hellip;",
+            "content_html": "<p>Se você está se inscrevendo para vagas de Cloud Engineer ou DevOps Engineer esse termo pode aparecer em sua entrevista, as vezes pode ser até mesmo a primeira pergunta.</p>\n<h3 id=\"o-que-é\">O que é?</h3>\n<p>Basicamente é o nome que se dá para aquele momento que os objetos em seu CACHE expiram e seu ambiente começa a tomar requests sem parar, frontend, backend e em especial sua database serão bastante exigidos pois seu CACHE praticamente sumiu. </p>\n<p>Imagine centenas de milhares de processos fazendo requests no seu frontend, backend e indiretamente no seu banco de dados, tudo vai ficar bem lento, o load vai subir muito, especialmente se você não tiver uma estratégia de escalabilidade configurada, e isso pode gerar até uma indisponibilidade de suas APPs gerando um enorme prejuizo financeiro e de imagem.</p>\n<h3 id=\"como-previnir-isso\">Como previnir isso?</h3>\n<p>Geralmente o pessoal usa os semáforos ou “semaphore lock”. Nesse caso, quando um valor expira o primeiro request a requisitar o valor gerar um tipo de LOCK, com isso o valor vai ser regerado, enquanto isso, caso outros processos solicitem o mesmo valor, estes vão receber um conteúdo mais antigo (stale content) até que o novo valor seja regerado e armazenado no cache. Quando o novo valor estiver no cache, o lock será removido e o conteúdo novo servido para os novos requests.</p>\n<h3 id=\"mas-servir-conteúdo-antigo-ou-desatualizado-não-é-ruim\">Mas servir conteúdo antigo ou desatualizado não é ruim?</h3>\n<p>Acredite, ruim seria sua aplicação ficar indisponível, servir um conteúdo desatualizado por poucos segundos será o menor dos seus problemas.</p>\n<h3 id=\"amarrando-as-pontas\">Amarrando as pontas</h3>\n<p>Cada stack ou linguagem tem ferramentas, técnicas métodos para implementar o semaphore lock, isso é algo a ser tratado em nível de código de aplicação – geralmente.</p>\n<p>Essa é uma pergunta mais do ponto de vista de arquitetura e engenharia de software do que de infraestrutura, mas é importante entender o conceito e responder corretamente ao entrevistador.</p>\n<p>Sucesso!</p>\n<p>[s]<br>\nGuto</p>\n<p>–</p>\n<p>Este post é do tipo #MindNotes, entenda <a href=\"https://gutocarvalho.net/o-que-sao-mindnotes/\">aqui</a>.</p>\n<p>Se gostou manda um alo no twitter @gutocarvalho.</p>\n",
+            "author": {
+                "name": "Guto Carvalho"
+            },
+            "tags": [
+                   "MindNotes"
+            ],
+            "date_published": "2022-02-10T12:51:26-03:00",
+            "date_modified": "2022-02-10T12:57:55-03:00"
+        },
+        {
             "id": "https://gutocarvalho.net/cdfoundation-ambassador-2022/",
             "url": "https://gutocarvalho.net/cdfoundation-ambassador-2022/",
             "title": "CD.Foundation Ambassador 2022",
@@ -37,7 +52,7 @@
                    "MindNotes"
             ],
             "date_published": "2022-02-09T14:46:32-03:00",
-            "date_modified": "2022-02-09T20:16:46-03:00"
+            "date_modified": "2022-02-10T12:52:01-03:00"
         },
         {
             "id": "https://gutocarvalho.net/etiqueta-do-trabalho-remoto/",
@@ -143,21 +158,6 @@
             ],
             "date_published": "2022-01-12T18:58:16-03:00",
             "date_modified": "2022-02-09T15:12:39-03:00"
-        },
-        {
-            "id": "https://gutocarvalho.net/sites-interessantes-para-conhecer/",
-            "url": "https://gutocarvalho.net/sites-interessantes-para-conhecer/",
-            "title": "Sites interessantes para conhecer",
-            "summary": "<p>Curadoria pantaneira especial, só pra você :)</p>\n",
-            "content_html": "<p>Curadoria pantaneira especial, só pra você :)</p>\n\n<p>Este post é atualizado regularmente, volte para conferir as novidades.</p>\n<p>Os sites gringos que eu gosto e uso para me manter informado sobre tecnologia:</p>\n<ul>\n<li><a href=\"https://mashable.com/\">mashable</a></li>\n<li><a href=\"https://www.digitaltrends.com/\">digitaltrends</a></li>\n<li><a href=\"https://www.wired.com/\">wired</a></li>\n<li><a href=\"https://arstechnica.com/\">ars technica</a></li>\n<li><a href=\"https://thenextweb.com/\">thenextweb</a></li>\n<li><a href=\"https://www.lifewire.com/\">lifewire</a></li>\n<li><a href=\"https://www.cnet.com/\">cnet</a></li>\n<li><a href=\"https://www.zdnet.com/\">zdnet</a></li>\n</ul>\n<p>Sobre Hardware</p>\n<ul>\n<li><a href=\"https://www.tomshardware.com/\">tomshardware</a></li>\n<li><a href=\"https://www.techradar.com/\">techradar</a></li>\n</ul>\n<p>Gadgets</p>\n<ul>\n<li><a href=\"https://www.engadget.com/\">engadget</a></li>\n<li><a href=\"https://gizmodo.com/\">gizmodo</a></li>\n<li><a href=\"https://www.ubergizmo.com/\">ubergizmo</a></li>\n<li><a href=\"https://www.gadgetreview.com/\">gadget review</a></li>\n</ul>\n<p>Android</p>\n<ul>\n<li><a href=\"https://www.androidauthority.com/\">androidauthority.com</a></li>\n</ul>\n<p>Apple</p>\n<ul>\n<li><a href=\"https://9to5mac.com/\">9to5mac</a></li>\n<li><a href=\"https://osxdaily.com/\">osx daily</a></li>\n<li><a href=\"https://www.macrumors.com\">macrumors</a></li>\n<li><a href=\"https://appleinsider.com\">apple insider</a></li>\n<li><a href=\"https://www.cultofmac.com/\">cult of mac</a></li>\n</ul>\n<p>Sobre empresas de tech, startups e investimentos</p>\n<ul>\n<li><a href=\"https://venturebeat.com/\">venturebeat</a></li>\n<li><a href=\"https://techcrunch.com/\">techcrunch</a></li>\n</ul>\n<p>Sobre Security</p>\n<ul>\n<li><a href=\"https://thehackernews.com/\">thehackernews</a></li>\n<li><a href=\"https://www.securityweek.com/\">securityweek</a></li>\n<li><a href=\"https://threatpost.com/\">threatpost</a></li>\n<li><a href=\"https://www.darkreading.com/\">darkreading</a></li>\n<li><a href=\"https://www.welivesecurity.com/\">welivesecurity</a></li>\n</ul>\n<p>Sobre Cloud Native</p>\n<ul>\n<li><a href=\"https://www.cncf.io/news/\">cncf news</a></li>\n<li><a href=\"https://www.infoq.com/Cloud-native/news/\">infoq cloud native news</a></li>\n<li><a href=\"https://thenewstack.io/\">thenewstack</a></li>\n</ul>\n<p>Sobre DevOps</p>\n<ul>\n<li><a href=\"https://dzone.com/\">dzone</a></li>\n<li><a href=\"https://devops.com\">devops.com</a></li>\n<li><a href=\"https://www.devopsonline.co.uk/\">devopsonline</a></li>\n<li><a href=\"https://devclass.com/\">devclass</a></li>\n</ul>\n<p>Sobre Cultura Digital</p>\n<ul>\n<li><a href=\"https://lifehacker.com/\">lifehacker</a></li>\n<li><a href=\"https://www.theverge.com/\">theverge</a></li>\n</ul>\n<p>Sobre humor geek</p>\n<ul>\n<li><a href=\"https://xkcd.com/\">xkcd</a></li>\n<li><a href=\"https://www.commitstrip.com/\">commitstrip</a></li>\n</ul>\n<p>Blogs</p>\n<ul>\n<li><a href=\"https://www.namecheap.com/blog/\">namecheap blog</a></li>\n<li><a href=\"https://heimdalsecurity.com/blog/\">heimdal security blog</a></li>\n</ul>\n<p>Menções honrosas</p>\n<ul>\n<li><a href=\"https://slashdot.org/\">slashdot</a></li>\n</ul>\n<p>Mas Guto, e no br, tb tem? Tem!</p>\n<ul>\n<li><a href=\"https://tecnoblog.net\">tecnoblog</a></li>\n<li><a href=\"https://www.inovacaotecnologica.com.br\">inovacao tecnologica</a></li>\n<li><a href=\"https://www.techtudo.com.br\">tectudo</a></li>\n<li><a href=\"https://www.techtudo.com.br\">canaltech</a></li>\n<li><a href=\"https://www.tecmundo.com.br/\">tecmundo</a></li>\n</ul>\n<p>Games e Tech</p>\n<ul>\n<li><a href=\"https://nerdweek.com.br/\">Nerdweek</a></li>\n</ul>\n<p>Mandem suas sugestões nos comentários! ;)</p>\n<p>[s]<br>Guto</p>\n<p>--- </p>\n<p>Este post usa a tag #FalaGutera, entenda <a href=\"https://gutocarvalho.net/sobre-o-que-e-a-tag-falagutera/\">aqui</a>.<br><br>Se gostou manda um alo no twitter @gutocarvalho.</p>",
-            "author": {
-                "name": "Guto Carvalho"
-            },
-            "tags": [
-                   "FalaGutera"
-            ],
-            "date_published": "2022-01-12T16:02:04-03:00",
-            "date_modified": "2022-01-13T11:19:33-03:00"
         }
     ]
 }
