@@ -3,7 +3,7 @@
     <title>Guto@Site</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2022-02-10T09:24:39-03:00</updated>
+    <updated>2022-02-10T09:26:23-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
@@ -86,7 +86,7 @@
         <id>https://gutocarvalho.net/etiqueta-do-trabalho-remoto/</id>
             <category term="FalaGutera"/>
 
-        <updated>2022-02-10T09:24:39-03:00</updated>
+        <updated>2022-02-10T09:26:23-03:00</updated>
             <summary>
                 <![CDATA[
                     Se você está começando a trabalhar remoto ou quer trabalhar, tem dúvidas&hellip;
@@ -172,7 +172,7 @@
 </ul>
 <p>Se for atrasar avise, se não for participar avise, é remoto mas como já disse, se combinou horário e disponibilidade é preciso cumprir. Se atrasar constantemente, esquecer de avisar, isso pega mal, muito mal.</p>
 <h3 id="comportamentos-técnicos">Comportamentos técnicos</h3>
-<p>Que podem pegar mal</p>
+<p>Pegal mal</p>
 <ul>
 <li>Não usar THREADS no CHAT, dificultando entender o contexto</li>
 <li>Postar código no CHAT sem usar highlight ou formatação para isso</li>
@@ -189,7 +189,8 @@
 <li>Não documentar procedimentos que só você sabe fazer</li>
 <li>Nao documentar ambientes que só você conhece</li>
 <li>Usar ferramental que não é padrão do seu time</li>
-<li>Fazer coisas manualmente em um time de automação e não avisar</li>
+<li>Fazer coisas manualmente em um time de automação</li>
+<li>Não avisar o time que fez algo manualmente</li>
 </ul>
 <p>Lembre-se que você não trabalha sozinho e todos precisam entender o que você está falando, fazendo e também o que fez. É preciso tomar cuidado para que alguma alteração sua não afete o trabalho de outro colega e documente tudo que puder, isso ajuda a todos.</p>
 <h2 id="o-que-uma-pessoa-deve-fazer-sempre">O que uma pessoa DEVE FAZER SEMPRE</h2>
