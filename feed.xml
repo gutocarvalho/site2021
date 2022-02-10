@@ -3,7 +3,7 @@
     <title>Guto@Site</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2022-02-10T15:51:53-03:00</updated>
+    <updated>2022-02-10T16:12:40-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
@@ -18,15 +18,16 @@
         <id>https://gutocarvalho.net/entendendo-o-que-e-three-tier-application/</id>
             <category term="MindNotes"/>
 
-        <updated>2022-02-10T15:51:53-03:00</updated>
+        <updated>2022-02-10T16:12:40-03:00</updated>
             <summary>
                 <![CDATA[
-                    É um arquitetura client-server bem conhecida separada da seguinte forma: Fazendo uma&hellip;
+                    Se você está se inscrevendo para vagas de Cloud Engineer ou DevOps&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                <p>É um arquitetura client-server bem conhecida separada da seguinte forma:</p>
+                <p>Se você está se inscrevendo para vagas de Cloud Engineer ou DevOps Engineer esse termo pode aparecer em sua entrevista, vamos entender de forma simples o que é.</p>
+<p>É um arquitetura client-server bem conhecida e está organizada da seguinte forma:</p>
 <ul>
 <li>Presentation Layer (GUI)</li>
 <li>Application Layer (Business)</li>
@@ -38,15 +39,15 @@
 <li>Backend (Python, C)</li>
 <li>Database (PostgreSQL, Mongo)</li>
 </ul>
-<p>Atualmente seria um <strong>Backend</strong> desenvolvido com a estratégia <strong>API-FIRST</strong>, um <strong>Frontend</strong> leve e moderno usando algum framework <strong>JS</strong> consumindo as <strong>APIs</strong> e <strong>Endpoints</strong> do <strong>Backend</strong> que estará gravando dados em sistemas de <strong>SGBDS</strong> sendo estes <strong>relacionais</strong> e <strong>não relacionais</strong> de acordo com o tipo de dado e contexto a ser persistido.</p>
+<p>Atualmente seria um <strong>Backend</strong> desenvolvido com a estratégia <strong>API-FIRST</strong>, um <strong>Frontend</strong> leve e moderno usando algum framework <strong>JS</strong> consumindo as <strong>APIs</strong> e <strong>Endpoints</strong> do <strong>Backend</strong> que estará gravando os dados em sistemas <strong>SGBDS</strong> modernos, sendo estes <strong>relacionais</strong> e <strong>não relacionais</strong> de acordo com o tipo de dado e contexto a ser persistido.</p>
 <h3 id="quais-as-vantagens">Quais as vantagens?</h3>
 <ul>
 <li>Pode-se atualizar os componentes de forma separada e independente</li>
-<li>Como os componentes sao separados o desenvolvimento é simplificado e independente e pode ser feitos por times distintos</li>
-<li>Podemos trabalhar escalabilidade em cada componente de forma independente aumentando a resiliência e disponibilidade da aplicação</li>
+<li>Como os componentes são separados, o desenvolvimento é simplificado e independente, podendo inclusive ser feito por times distintos</li>
+<li>Podemos trabalhar com objetivo de melhorar a escalabilidade em cada componente de forma independente, o que vai aumentar a resiliência e disponibilidade da aplicação</li>
 <li>Teremos mais segurança já que o o frontend nao fala diretamente com o banco</li>
 </ul>
-<p>Esse é o básico do básico.</p>
+<p>Esse é o básico do básico sobre o assunto, mas suficiente para responder.</p>
 <p>[s]<br>
 Guto</p>
 
@@ -62,7 +63,7 @@ Guto</p>
         <id>https://gutocarvalho.net/entendendo-diferenca-entre-lb-tipo-l4-e-l7/</id>
             <category term="MindNotes"/>
 
-        <updated>2022-02-10T15:18:20-03:00</updated>
+        <updated>2022-02-10T15:58:23-03:00</updated>
             <summary>
                 <![CDATA[
                     A ideia aqui é falar sobre a diferença de LB na camada&hellip;
@@ -123,7 +124,7 @@ Guto</p>
         <id>https://gutocarvalho.net/entendendo-o-dogpile-effect/</id>
             <category term="MindNotes"/>
 
-        <updated>2022-02-10T15:08:31-03:00</updated>
+        <updated>2022-02-10T15:58:28-03:00</updated>
             <summary>
                 <![CDATA[
                     Se você está se inscrevendo para vagas de Cloud Engineer ou DevOps&hellip;

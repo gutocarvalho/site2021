@@ -13,8 +13,8 @@
             "id": "https://gutocarvalho.net/entendendo-o-que-e-three-tier-application/",
             "url": "https://gutocarvalho.net/entendendo-o-que-e-three-tier-application/",
             "title": "Entendendo o que é three tier application",
-            "summary": "É um arquitetura client-server bem conhecida separada da seguinte forma: Fazendo uma&hellip;",
-            "content_html": "<p>É um arquitetura client-server bem conhecida separada da seguinte forma:</p>\n<ul>\n<li>Presentation Layer (GUI)</li>\n<li>Application Layer (Business)</li>\n<li>Data Layer (Persistence)</li>\n</ul>\n<p>Fazendo uma APP seguindo esse modelo nos dias de hoje geraria algo como:</p>\n<ul>\n<li>Frontend (HTML, JS, CSS)</li>\n<li>Backend (Python, C)</li>\n<li>Database (PostgreSQL, Mongo)</li>\n</ul>\n<p>Atualmente seria um <strong>Backend</strong> desenvolvido com a estratégia <strong>API-FIRST</strong>, um <strong>Frontend</strong> leve e moderno usando algum framework <strong>JS</strong> consumindo as <strong>APIs</strong> e <strong>Endpoints</strong> do <strong>Backend</strong> que estará gravando dados em sistemas de <strong>SGBDS</strong> sendo estes <strong>relacionais</strong> e <strong>não relacionais</strong> de acordo com o tipo de dado e contexto a ser persistido.</p>\n<h3 id=\"quais-as-vantagens\">Quais as vantagens?</h3>\n<ul>\n<li>Pode-se atualizar os componentes de forma separada e independente</li>\n<li>Como os componentes sao separados o desenvolvimento é simplificado e independente e pode ser feitos por times distintos</li>\n<li>Podemos trabalhar escalabilidade em cada componente de forma independente aumentando a resiliência e disponibilidade da aplicação</li>\n<li>Teremos mais segurança já que o o frontend nao fala diretamente com o banco</li>\n</ul>\n<p>Esse é o básico do básico.</p>\n<p>[s]<br>\nGuto</p>\n",
+            "summary": "Se você está se inscrevendo para vagas de Cloud Engineer ou DevOps&hellip;",
+            "content_html": "<p>Se você está se inscrevendo para vagas de Cloud Engineer ou DevOps Engineer esse termo pode aparecer em sua entrevista, vamos entender de forma simples o que é.</p>\n<p>É um arquitetura client-server bem conhecida e está organizada da seguinte forma:</p>\n<ul>\n<li>Presentation Layer (GUI)</li>\n<li>Application Layer (Business)</li>\n<li>Data Layer (Persistence)</li>\n</ul>\n<p>Fazendo uma APP seguindo esse modelo nos dias de hoje geraria algo como:</p>\n<ul>\n<li>Frontend (HTML, JS, CSS)</li>\n<li>Backend (Python, C)</li>\n<li>Database (PostgreSQL, Mongo)</li>\n</ul>\n<p>Atualmente seria um <strong>Backend</strong> desenvolvido com a estratégia <strong>API-FIRST</strong>, um <strong>Frontend</strong> leve e moderno usando algum framework <strong>JS</strong> consumindo as <strong>APIs</strong> e <strong>Endpoints</strong> do <strong>Backend</strong> que estará gravando os dados em sistemas <strong>SGBDS</strong> modernos, sendo estes <strong>relacionais</strong> e <strong>não relacionais</strong> de acordo com o tipo de dado e contexto a ser persistido.</p>\n<h3 id=\"quais-as-vantagens\">Quais as vantagens?</h3>\n<ul>\n<li>Pode-se atualizar os componentes de forma separada e independente</li>\n<li>Como os componentes são separados, o desenvolvimento é simplificado e independente, podendo inclusive ser feito por times distintos</li>\n<li>Podemos trabalhar com objetivo de melhorar a escalabilidade em cada componente de forma independente, o que vai aumentar a resiliência e disponibilidade da aplicação</li>\n<li>Teremos mais segurança já que o o frontend nao fala diretamente com o banco</li>\n</ul>\n<p>Esse é o básico do básico sobre o assunto, mas suficiente para responder.</p>\n<p>[s]<br>\nGuto</p>\n",
             "author": {
                 "name": "Guto Carvalho"
             },
@@ -22,7 +22,7 @@
                    "MindNotes"
             ],
             "date_published": "2022-02-10T15:50:30-03:00",
-            "date_modified": "2022-02-10T15:51:53-03:00"
+            "date_modified": "2022-02-10T16:12:40-03:00"
         },
         {
             "id": "https://gutocarvalho.net/entendendo-diferenca-entre-lb-tipo-l4-e-l7/",
@@ -37,7 +37,7 @@
                    "MindNotes"
             ],
             "date_published": "2022-02-10T15:08:25-03:00",
-            "date_modified": "2022-02-10T15:18:20-03:00"
+            "date_modified": "2022-02-10T15:58:23-03:00"
         },
         {
             "id": "https://gutocarvalho.net/entendendo-o-dogpile-effect/",
@@ -52,7 +52,7 @@
                    "MindNotes"
             ],
             "date_published": "2022-02-10T12:51:26-03:00",
-            "date_modified": "2022-02-10T15:08:31-03:00"
+            "date_modified": "2022-02-10T15:58:28-03:00"
         },
         {
             "id": "https://gutocarvalho.net/cdfoundation-ambassador-2022/",
