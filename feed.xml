@@ -3,7 +3,7 @@
     <title>Guto@Site</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2022-02-10T16:19:21-03:00</updated>
+    <updated>2022-02-10T16:23:03-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
@@ -63,7 +63,7 @@ Guto</p>
         <id>https://gutocarvalho.net/entendendo-diferenca-entre-lb-tipo-l4-e-l7/</id>
             <category term="MindNotes"/>
 
-        <updated>2022-02-10T16:19:21-03:00</updated>
+        <updated>2022-02-10T16:23:03-03:00</updated>
             <summary>
                 <![CDATA[
                     A ideia aqui é falar sobre a diferença de LB na camada&hellip;
@@ -102,10 +102,10 @@ Guto</p>
 <p>Aqui estamos falando de dados brutos, pacotes de dados, o LB vai receber pacotes em uma porta TCP qualquer, por exemplo a 80 e repassar para outro IP na mesma porta ou em outra que for designada. O balanceador pode fazer isso para vários IPs diferentes de acordo com configurações de peso, prioridade, timeout, tolerância a falhas e outras que serão definadas nele pelo administrador.</p>
 <p>O único tratamento ele vai fazer é um NAT, que será o meio de campo entre quem requisita e quem responde mudando quando necessário ip de origem e destino do pacote.</p>
 <h3 id="camada-7">Camada 7</h3>
-<p>Já nesta camada o LB baseia todas as decisões de roteamento usando características e informações presentes nos pacotes, e falando especicamente de HTTP temos o cabeçalho HTTP, o conteúdo da mensagem, a url, o tipo de dados (imagem, texto, áudio, vídeo…) e os cookies, dentre outros tipos de informações que podem ser extraídas.</p>
-<p>Balanceamento na L7 pode oferecer a flexibidade de enviar por exemplo especificas requisicoes para um determinado servidor e habilitar compressão de dados e criptografia na comunicação, coisas que não podem ser feitas no L4.</p>
+<p>Já nesta camada o LB baseia todas as decisões de roteamento usando características e informações presentes nos pacotes, e falando especicamente de HTTP temos o cabeçalho HTTP, o conteúdo da mensagem, a url, o tipo de dados (imagem, texto, áudio, vídeo…) e os cookies, dentre outros tipos de regras que podem ser definidas</p>
+<p>Balanceamento na L7 pode oferecer a flexibidade de enviar por exemplo específicas requisições para um determinado servidor, habilitar compressão de dados e criptografia na comunicação, coisas que não podem ser feitas no L4.</p>
 <h2 id="concluindo">Concluindo</h2>
-<p>O custo computacional do L7 é bem maior que o L4, contudo, hoje em dia, praticamente imperceptível para a maioria das aplicações e cenários. Só vamos começar a perceber o custo computacional com missão crítica ou em um site com acessos na casa dos centenas de milhares de acessos por segundo. Ainda assim os benefícios são maiores IMHO.</p>
+<p>O custo computacional do L7 é bem maior que o L4, contudo, hoje em dia isso é praticamente imperceptível para a maioria das aplicações e cenários. Só vamos começar a perceber o custo computacional com missão crítica ou em um site com acessos na casa dos centenas de milhares por segundo. Ainda assim, os benefícios são maiores IMHO.</p>
 <p>[s]<br>
 Guto</p>
 <p>–</p>
