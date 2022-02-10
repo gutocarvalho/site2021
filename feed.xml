@@ -3,12 +3,70 @@
     <title>Guto@Site</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2022-02-10T17:24:44-03:00</updated>
+    <updated>2022-02-10T20:13:34-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
     <id>https://gutocarvalho.net</id>
 
+    <entry>
+        <title>Entendendo VCS centralizado e distribuído</title>
+        <author>
+            <name>Guto Carvalho</name>
+        </author>
+        <link href="https://gutocarvalho.net/entendendo-vcs-centralizado-e-distribuido/"/>
+        <id>https://gutocarvalho.net/entendendo-vcs-centralizado-e-distribuido/</id>
+            <category term="MindNotes"/>
+
+        <updated>2022-02-10T20:13:34-03:00</updated>
+            <summary>
+                <![CDATA[
+                    Essa é outra daquelas perguntinhas marotas de entrevistas, bora entender isso direitinho&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p>Essa é outra daquelas perguntinhas marotas de entrevistas, bora entender isso direitinho para responder com segurança!</p>
+<h2 id="vcs">VCS?</h2>
+<p><strong>VCS</strong> significa <strong>version control system</strong>, ou sistema de controle de versões.</p>
+<p>O <strong>GIT</strong> é o mais famoso hoje, o qual faz parte do grupo dos <strong>distribuídos</strong>.</p>
+<p>Mas qual a diferença entre sistemas <strong>centralizados</strong> e <strong>distribuídos</strong>?</p>
+<h2 id="vsc-centralizado">VSC Centralizado</h2>
+<p>O sistema centralizado, como o nome diz tem um servidor ou serviço central e funciona na arquitetura <strong>cliente/servidor</strong>. Este servidor tem todas as versões do código.</p>
+<p>Para trabalhar em um projeto você precisa instalar o cliente e fazer o download de todo o código e <strong>sempre vai depender do servidor para gravar suas modificações</strong>, se ele não estiver no ar você não consegue fazer seus commits, e isso te impede de trabalhar.</p>
+<p>A dependência do serviço no ar para  trabalhar por si só já é algo que pode incomodar, além disso, temos um problema maior ainda, uma vez que todo o código está no servidor, perdeu o servidor, perdeu o código e aí ninguém trabalha mesmo.</p>
+<p>Em resumo, se o servidor estiver fora, ninguém faz nada.</p>
+<p>Os VCS centralizados podem até ser mais simples de instalar, manter e usar, mas o risco de um ponto único de falha é muito grande para assumir hoje em dia.</p>
+<p>Exemplos de sistemas centralizados:</p>
+<ul>
+<li>SVN</li>
+<li>CVS</li>
+<li>Perforce</li>
+</ul>
+<h2 id="vcs-distribuído">VCS Distribuído</h2>
+<p>No VCS distribuído <strong>todo mundo tem a cópia do software em sua máquina</strong>, pode trabalhar <strong>localmente</strong> e depois enviar e <strong>integrar</strong> seu código em um repositório intermediário usado para isso, no caso do GIT chamamos esse locais de <strong>remotes</strong>.</p>
+<p>Como todo mundo tem o código, <strong>temos múltiplos backups</strong> e caso o repositório de alguém se corrompa, podemos facilmente pegar a cópia de outro desenvolvedor e seguir trabalhando.</p>
+<p>Como temos uma cópia local, <strong>podemos trabalhar offline</strong> e depois enviar e integrar o código com dos nossos colegas, e saiba que trabalhar local é bem mais rápido.</p>
+<p>A criação de <strong>branchs</strong> é rápida e objetiva pq é tudo local e não precisa contatar um servidor central <strong>toda a vez que for criar uma branch</strong>.</p>
+<p>A única coisa que precisa ficar claro é a curva de aprendizado <strong>pode</strong> ser maior do que sistemas mais simples e centralizados, contudo, o poder, a flexibilidade, a segurança e a velocidade de trabalhar superam esse detalhe.</p>
+<p>Exemplos de sistemas centralizados:</p>
+<ul>
+<li><strong>GIT</strong></li>
+<li><strong>Mercurial</strong></li>
+<li>Bazaar</li>
+</ul>
+<h2 id="amarrando-as-pontas">Amarrando as pontas</h2>
+<p>Hoje o <strong>GIT</strong> se tornou padrão do mercado, todo mundo usa, conhece e sabe trabalhar, contudo, não é incomum encontrar empresas usando Mercurial o segundo mais popular entre os distribuídos.</p>
+<p>Espero que tenha te ajudado a entender a diferença :)</p>
+<p>[s]<br>
+Guto</p>
+<p>–</p>
+<p>Este post é do tipo #MindNotes, entenda <a href="https://gutocarvalho.net/o-que-sao-mindnotes/">aqui</a>.</p>
+<p>Se gostou manda um alo no twitter @gutocarvalho.</p>
+
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>Entendendo o que é three tier application</title>
         <author>
@@ -18,7 +76,7 @@
         <id>https://gutocarvalho.net/entendendo-o-que-e-three-tier-application/</id>
             <category term="MindNotes"/>
 
-        <updated>2022-02-10T17:24:34-03:00</updated>
+        <updated>2022-02-10T20:12:13-03:00</updated>
             <summary>
                 <![CDATA[
                     Se você está se inscrevendo para vagas de Cloud Engineer ou DevOps&hellip;
@@ -69,15 +127,15 @@ Guto</p>
         <id>https://gutocarvalho.net/entendendo-diferenca-entre-lb-tipo-l4-e-l7/</id>
             <category term="MindNotes"/>
 
-        <updated>2022-02-10T17:24:39-03:00</updated>
+        <updated>2022-02-10T20:12:20-03:00</updated>
             <summary>
                 <![CDATA[
-                    A ideia aqui é falar sobre a diferença de LB na camada&hellip;
+                    A ideia aqui é falar sobre a diferença de Load Balancer (LB)&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                <p>A ideia aqui é falar sobre a diferença de LB na camada 4 e 7, perguntinha comum em entrevistas, para isso vamos relembrar algumas coisinhas básicas.</p>
+                <p>A ideia aqui é falar sobre a diferença de Load Balancer (LB) na camada 4 e 7, perguntinha comum em entrevistas de emprego para quem está disputando uma vaga de Cloud Engineer ou Cloud Architect. Antes de entrar no assunto vamos relembrar algumas coisinhas básicas.</p>
 <h2 id="relembrando-do-modelo-osi">Relembrando do Modelo OSI?</h2>
 <p>É um modelo referência para comunicação entre sistemas computacionais composto por 7 camadas.</p>
 <ul>
@@ -138,7 +196,7 @@ Guto</p>
         <id>https://gutocarvalho.net/entendendo-o-dogpile-effect/</id>
             <category term="MindNotes"/>
 
-        <updated>2022-02-10T17:24:44-03:00</updated>
+        <updated>2022-02-10T19:40:18-03:00</updated>
             <summary>
                 <![CDATA[
                     Se você está se inscrevendo para vagas de Cloud Engineer ou DevOps&hellip;
@@ -146,7 +204,7 @@ Guto</p>
             </summary>
         <content type="html">
             <![CDATA[
-                <p>Se você está se inscrevendo para vagas de Cloud Engineer ou DevOps Engineer esse termo pode aparecer em sua entrevista, as vezes pode ser até mesmo a primeira pergunta.</p>
+                <p>Se você está se inscrevendo para vagas de Cloud Engineer ou DevOps Engineer esse termo pode aparecer em sua entrevista. Eu confesso que hoje em dia eu não vejo a turma falando disso, parece uma questão superada do ponto de vista de engenharia de software, posts com esse termo datam de 2014 e achei alguns até mais antigos, no entando, parece que os recrutadores adoram perguntar isso, então bora lá entender o que é para saber responder :)</p>
 <h3 id="o-que-é">O que é?</h3>
 <p>Basicamente é o nome que se dá para aquele momento que os objetos em seu CACHE expiram e seu ambiente começa a tomar requests sem parar, frontend, backend e em especial sua database serão bastante exigidos pois seu CACHE praticamente sumiu. </p>
 <p>Imagine centenas de milhares de processos fazendo requests no seu frontend, backend e indiretamente no seu banco de dados, tudo vai ficar bem lento, o load vai subir muito, especialmente se você não tiver uma estratégia de escalabilidade configurada, e isso pode gerar até uma indisponibilidade de suas APPs gerando um enorme prejuizo financeiro e de imagem.</p>
@@ -742,38 +800,6 @@ Guto</p>
 <p>---</p>
 <p>Este post é do tipo #MindNotes, entenda <a href="https://gutocarvalho.net/o-que-sao-mindnotes/">aqui</a>.</p>
 <p>Se gostou manda um alo no twitter @gutocarvalho.</p>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>5 ferramentas CI/CD para Kubernetes</title>
-        <author>
-            <name>Guto Carvalho</name>
-        </author>
-        <link href="https://gutocarvalho.net/5-ferramentas-cicd-para-kubernetes/"/>
-        <id>https://gutocarvalho.net/5-ferramentas-cicd-para-kubernetes/</id>
-            <category term="MindNotes"/>
-
-        <updated>2022-02-09T14:48:13-03:00</updated>
-            <summary>
-                <![CDATA[
-                    <p>Lista de 5 projetos CI/CD com foco em K8S para conhecer!</p>
-
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                <p>Lista de 5 projetos CI/CD com foco em K8S para conhecer!</p>
-
-<p>Esses são projetos modernos para Cloud Native e Kubernetes!<br><br><strong>1. Flux<br><br></strong>Esse foi o projeto que começou tudo no GitOps, feito pela empresa WeaveWorks que cunhou o termo. Ele oferece CD via GitOps para suas apps e também para infraestrutura do seu cluster K8S.<br><br><a href="https://fluxcd.io/">https://fluxcd.io/</a><strong><br><br>2. ArgoCD</strong><br><br>O Argo é uma ferramenta de CD declarativa no estilo GitOps que traz um painel web muito eficiente para lidar com projetos em K8S.<br><br><a href="https://argoproj.github.io/">https://argoproj.github.io/</a></p>
-<p><strong>3. Tekton</strong><br><br>É uma ferramenta CI/CD, com foco total em Cloud Native feita para kubernetes que roda apenas em kubernetes, perfeita para te ajudar a fazer o build, rodar testes e fazer o deploy de sua APP no K8S. <br><br><a href="https://tekton.dev/">https://tekton.dev/</a><br><br><strong>4. Flagger</strong><br><br>É uma ferramenta com foco em CD que te ajuda a automatizar todo o processo de release de suas apps que rodam em K8S. <br><br><a href="https://flagger.app">https://flagger.app</a></p>
-<p><strong>5. Werf</strong><br><br>É uma ferramenta de CI/CD que usa o que eles chamam de <strong>Giterminismo</strong>, é um tipo de idempotência com determinismo que gerencia e mantém os estados de suas APPs no cluster.</p>
-<p><a href="https://werf.io/">https://werf.io/</a></p>
-<p>[s]<br>Guto<br><br></p>
-<p>---</p>
-<p>Este post é do tipo #MindNotes, entenda <a href="https://gutocarvalho.net/o-que-sao-mindnotes/">aqui</a>.</p>
-<p>Se gostou manda um alo no twitter @gutocarvalho.</p>
-<p> </p>
             ]]>
         </content>
     </entry>
