@@ -3,22 +3,22 @@
     <title>Guto@Site</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2022-02-10T15:08:39-03:00</updated>
+    <updated>2022-02-10T15:18:20-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
     <id>https://gutocarvalho.net</id>
 
     <entry>
-        <title>Entendendo diferença em LB L4 e L7</title>
+        <title>Entendendo diferença entre LB tipo L4 e L7</title>
         <author>
             <name>Guto Carvalho</name>
         </author>
-        <link href="https://gutocarvalho.net/entendendo-diferenca-em-lb-l4-e-l7/"/>
-        <id>https://gutocarvalho.net/entendendo-diferenca-em-lb-l4-e-l7/</id>
+        <link href="https://gutocarvalho.net/entendendo-diferenca-entre-lb-tipo-l4-e-l7/"/>
+        <id>https://gutocarvalho.net/entendendo-diferenca-entre-lb-tipo-l4-e-l7/</id>
             <category term="MindNotes"/>
 
-        <updated>2022-02-10T15:08:39-03:00</updated>
+        <updated>2022-02-10T15:18:20-03:00</updated>
             <summary>
                 <![CDATA[
                     A ideia aqui é falar sobre a diferença de LB na camada&hellip;
