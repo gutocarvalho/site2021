@@ -3,7 +3,7 @@
     <title>Guto@Site</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2022-02-10T09:26:23-03:00</updated>
+    <updated>2022-02-10T09:33:49-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
@@ -86,7 +86,7 @@
         <id>https://gutocarvalho.net/etiqueta-do-trabalho-remoto/</id>
             <category term="FalaGutera"/>
 
-        <updated>2022-02-10T09:26:23-03:00</updated>
+        <updated>2022-02-10T09:33:49-03:00</updated>
             <summary>
                 <![CDATA[
                     Se você está começando a trabalhar remoto ou quer trabalhar, tem dúvidas&hellip;
@@ -99,6 +99,7 @@
 <p>Em especial para Cloud Engineers ingressando nesse modelo!</p>
 <h2 id="o-que-uma-pessoa-nao-deve-fazer">O que uma pessoa NAO DEVE fazer</h2>
 <h3 id="sobre-disponibilidade">Sobre disponibilidade</h3>
+<p>Pega muito mal</p>
 <ul>
 <li>Dar perdido e não avisar</li>
 <li>Não estar disponível nos horários combinados</li>
@@ -140,6 +141,7 @@
 </ul>
 <p>Nem sempre conseguimos evitar conflitos, mas podemos ao menos tentar encaminhar questões de formas que surtam mais efeito em espaços e momentos mais adequados que respeitem o tempo e o trabalho de todos.</p>
 <h3 id="não-se-preparar-adequadamente">Não se preparar adequadamente</h3>
+<p>Pega mal</p>
 <ul>
 <li>Não se vestir de forma adequada para reuniões</li>
 <li>Não abrir a camera nas reuniões, especialmente na sua vez</li>
@@ -164,6 +166,7 @@
 <li>Fazer SPAM nos canais da empresa</li>
 </ul>
 <h3 id="sobre-atrasos-recorrentes">Sobre atrasos recorrentes</h3>
+<p>Pega muito mal</p>
 <ul>
 <li>Não responder no chat quando pedirem sua opinião</li>
 <li>Demorar muito para responder no chat quando te chamam</li>
@@ -175,7 +178,7 @@
 <p>Pegal mal</p>
 <ul>
 <li>Não usar THREADS no CHAT, dificultando entender o contexto</li>
-<li>Postar código no CHAT sem usar highlight ou formatação para isso</li>
+<li>Postar código no CHAT sem formatar ou usar highlight </li>
 <li>Não versionar corretamente seu trabalho</li>
 <li>Não ter cuidado com as mensagens de commit</li>
 <li>Não ter cuidado no merge do seu código</li>
