@@ -3,12 +3,52 @@
     <title>Guto@Site</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2022-02-09T20:15:32-03:00</updated>
+    <updated>2022-02-09T21:57:20-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
     <id>https://gutocarvalho.net</id>
 
+    <entry>
+        <title>CD.Foundation Ambassador 2022</title>
+        <author>
+            <name>Guto Carvalho</name>
+        </author>
+        <link href="https://gutocarvalho.net/cdfoundation-ambassador-2022/"/>
+        <id>https://gutocarvalho.net/cdfoundation-ambassador-2022/</id>
+            <category term="FalaGutera"/>
+
+        <updated>2022-02-09T21:40:06-03:00</updated>
+            <summary>
+                <![CDATA[
+                    <p>Eis que temos novidades, vem cá ver!</p>
+
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p>Eis que temos novidades, vem cá ver!</p>
+
+<p>Eu me inscrevi e fui selecionado para ser embaixador da CD.Foundation em 2022.</p>
+<h2 id="toc_0">Ainda não conhece da CD.Foundation?</h2>
+<p>CD significa Continuous Delivery, essa fundação tá embaixo da Linux Foundation e tem o objetivo de organizar, fomentar, promover e prover recursos para sustentar o crescimento de um ecosistema aberto de soluções para entrega contínua (CD) de software.</p>
+<p>Vai lá conhecer</p>
+<ul>
+<li><a href="https://cd.foundation">https://cd.foundation</a></li>
+<li><a href="https://twitter.com/CDeliveryFdn">https://twitter.com/CDeliveryFdn</a></li>
+</ul>
+<h2 id="toc_1">O que faz um embaixador?</h2>
+<p>Basicamente vou trabalhar no apoio dos eventos da fundação, organizar meetups, apoiar a comunidade local, divulgar as atividades da CD e escrever muito conteúdo :)</p>
+<p>Aqui explica certinho</p>
+<ul>
+<li><a href="https://cd.foundation/ambassador-program-overview-application">https://cd.foundation/ambassador-program-overview-application</a></li>
+</ul>
+<h2 id="toc_2">Quais as minhas expectativas?</h2>
+<p>Espero poder ajudar a fundação a crescer e se estabelecer além de juntar a galera e escrever muito conteúdo :)</p>
+<p>[s]<br>Guto<br><br><br>--- <br><br>Este post usa a tag #FalaGutera, entenda <a href="https://gutocarvalho.net/sobre-o-que-e-a-tag-falagutera/">aqui</a>.<br><br>Se gostou manda um alo no twitter @gutocarvalho.</p>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>Novos slides publicados</title>
         <author>
@@ -18,7 +58,7 @@
         <id>https://gutocarvalho.net/novos-slidedecks-publicados/</id>
             <category term="MindNotes"/>
 
-        <updated>2022-02-09T15:13:16-03:00</updated>
+        <updated>2022-02-09T20:16:46-03:00</updated>
             <summary>
                 <![CDATA[
                     <p>Só vem ver o conteúdo, tá bacana!</p>
@@ -46,15 +86,17 @@
         <id>https://gutocarvalho.net/etiqueta-do-trabalho-remoto/</id>
             <category term="FalaGutera"/>
 
-        <updated>2022-02-09T20:15:32-03:00</updated>
+        <updated>2022-02-09T21:57:20-03:00</updated>
             <summary>
                 <![CDATA[
-                    Em especial para Cloud Engineers trabalhando remotamente. Apesar de ser um trabalho&hellip;
+                    Se você está começando a trabalhar remoto ou quer trabalhar, tem dúvidas&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                <p>Em especial para Cloud Engineers trabalhando remotamente.</p>
+                <p>Se você está começando a trabalhar remoto ou quer trabalhar, tem dúvidas sobre como é a cultura, o modelo, a forma de se comunicar, dentre outras questões e principalmente se está curioso sobre o que fazer e o que não fazer em um trabalho remoto, esse post é para você!</p>
+<p>Eu atuo remotamente em projetos desde 2013 e compilei aqui dicas valiosas para profissionais e empresas :)</p>
+<p>Em especial para Cloud Engineers ingressando nesse modelo!</p>
 <h2 id="o-que-uma-pessoa-nao-deve-fazer">O que uma pessoa NAO DEVE fazer</h2>
 <h3 id="sobre-disponibilidade">Sobre disponibilidade</h3>
 <ul>
@@ -88,21 +130,23 @@
 <li>Não abrir a camera nas reuniões, especialmente na sua vez</li>
 <li>Não ter iluminação minimamente adequada para usar a camera</li>
 </ul>
-<p>Apesar de estarmos em casa estamos trabalhando e precisamos nos preparar para isso da melhor forma que pudermos.</p>
+<p>Apesar de estarmos em casa, estamos trabalhando e precisamos nos preparar para isso da melhor forma que pudermos.</p>
 <h3 id="em-relação-a-problemas-técnicos">Em relação a problemas técnicos</h3>
 <p>Pega muito mal se acontece sempre</p>
 <ul>
 <li>Computador ou navegador ficar travando durante reuniões</li>
-<li>Microfone ficar falhando quando que for falar</li>
-<li>Webcam nao funcionar na sua vez</li>
+<li>Microfone ficar falhando quando você for falar</li>
+<li>Webcam não funcionar na sua vez</li>
 </ul>
-<p>Problemas acontecem, mas quando acontecerem você deve tomar ações para que eles não voltem a acontecer, especialmente ser for uma questão técnica que pode ser evitada com uma manutenção corretiva ou uma troca de equipamento ou dispositivo.</p>
+<p>Problemas acontecem, nós entedemos, mas quando acontecerem você deve tomar ações para que eles não voltem a acontecer, especialmente ser for uma questão técnica que pode ser evitada com uma manutenção corretiva ou uma troca de equipamento ou dispositivo.</p>
+<p>Se for um problema de configuração (software) peça ajuda para seu time, se for problema em um equipamento (hardware) fale com sua empresa, certamente ela vai te ajudar.</p>
+<p>Em relação a abrir a caâmera, entenda que já estamos no modelo remoto, geograficamente distribuídos, abrir a câmera, ao menos na sua vez de falar é educado e ajuda a reduzir a sensação de distânciamento, recomendo.</p>
 <h3 id="sobre-atrasos-recorrentes">Sobre atrasos recorrentes</h3>
 <ul>
 <li>Não responder no chat quando pedirem sua opinião</li>
 <li>Demorar muito para responder no chat quando te chamam</li>
 <li>Chegar atrasado nas reuniões diárias ou regulares da empresa</li>
-<li>Sempre esquecer de avisar que vai se atrasar</li>
+<li>Sempre esquecer de avisar que vai se atrasar o não participar</li>
 </ul>
 <p>Se for atrasar avise, se não for participar avise, é remoto mas como já disse, se combinou horário e disponibilidade é preciso cumprir. Se atrasar constantemente, esquecer de avisar, isso pega mal, muito mal.</p>
 <h3 id="comportamentos-técnicos-que-podem-pegar-mal">Comportamentos técnicos que podem pegar mal</h3>
@@ -179,7 +223,7 @@ Guto</p>
         <id>https://gutocarvalho.net/ti-remota-em-2022-entenda/</id>
             <category term="FalaGutera"/>
 
-        <updated>2022-02-08T19:12:58-03:00</updated>
+        <updated>2022-02-09T21:51:41-03:00</updated>
             <summary>
                 <![CDATA[
                     Vindo aqui para tentar explicar o atual momento sobre vagas remotas, presenciais&hellip;
@@ -804,30 +848,6 @@ commit ; exit
 <p>[s]<br>Guto</p>
 <p>--- </p>
 <p>Este post usa a tag #FalaGutera, entenda <a href="https://gutocarvalho.net/sobre-o-que-e-a-tag-falagutera/">aqui</a>.<br><br>Se gostou manda um alo no twitter @gutocarvalho.</p>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>Reflexões sobre o GitHub</title>
-        <author>
-            <name>Guto Carvalho</name>
-        </author>
-        <link href="https://gutocarvalho.net/reflexoes-sobre-o-github/"/>
-        <id>https://gutocarvalho.net/reflexoes-sobre-o-github/</id>
-            <category term="FalaGutera"/>
-
-        <updated>2022-02-08T16:46:00-03:00</updated>
-            <summary>
-                <![CDATA[
-                    <p>Bora falar um pouco sobre esse Buzz do GitHub e seu código de uso.</p>
-
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                <p>Bora falar um pouco sobre esse Buzz do GitHub e seu código de uso.</p>
-
-<p>Do ponto de vista do GitHub e de suas letras miúdas, provavelmente nada em sua vida vai mudar muito, isso já é assim desde que o github é github, contudo, podemos fazer uma reflexão – leve – sobre esse assunto.<br><br>Tanto GitHub, quanto GitLab, quanto Bitbucket são mantidos por empresas privadas que tem em suas entrelinhas do "código de uso" coisas como "temos o direito de usar seu código como bem entendermos, bacana?".<br><br>Não existe almoço grátis, já dizia o ditado. Eles não cobram pelo uso, mas em troca damos métricas, dados de nosso comportamento e diversas informações muito valiosas para GitHub/GitLab/Bitbucket e seus parceiros, seja para uso direto ou indireto.<br><br>Além do acesso ao código, eles podem fechar sua conta, caso entendam que precisam fazer isso e você não pode fazer muito, afinal é uma empresa privada, a decisão final é deles.<br><br><strong>E agora?</strong><br><br>Agora que você tem ciência – pelo menos de um parágrafo – do código de uso, talvez devesse ler tudo, talvez não – caso queria paz de espírito, alguns dizem que ignorância pode ser uma benção em certos casos. <br><br>De qualquer forma, a partir de agora, você pelo menos estará usando o GitHub e similares de forma mais consciente.<br><br><strong>O que poderia ser feito para melhorar?</strong><br><br>Eu acho que alguma entidade poderia criar uma fundação para prover um serviço de hospedagem de código de projetos open source, sem fins lucrativos. Poderia rodar até mesmo o GitLab CE, quem sabe.<br><br>A ideia aqui é que fosse mantido pela fundação, com apoio de membros e parceiros, com isso poderíamos ter o GitHub, GitLab e Bitbucket bancando financeiramente a operação e ajudando a padronizar as coisas referentes ao Git, versionamento e quem sabe até padronizar CI e CD.<br><br>A <strong>linuxfoundation.org</strong> é uma fundação que poderia fazer isso, eu acho que seria a fundação mais experiente e adequada visto o bom case da CNCF, CDF e outras fundações e projetos abaixo dela.<br><br>Vale lembrar que a <strong>linuxfoundation.org</strong> já mantém projetos como o kubernetes, letsencrypt, nodejs, cert-manager, ceph, electron e tantos outros.<br><br>Acho que eles teriam capacidade de mater esse serviço em escala global, obviamente com apoio financeiro dos gigantes da informática, afinal eles tem que dar algum retorno para a comunidade.<br><br>Uma alternativa a <strong>linuxfoundation.org</strong> seria a fundação Apache, que também é bastante sólida.<br><br>São meus 50 cents nesse assunto.<br><br>Durma em paz :)<br><br>[s]<br>Guto<br><br>--- <br><br>Este post usa a tag #FalaGutera, entenda <a href="https://gutocarvalho.net/sobre-o-que-e-a-tag-falagutera/">aqui</a>.<br><br>Se gostou manda um alo no twitter @gutocarvalho.</p>
             ]]>
         </content>
     </entry>
