@@ -3,7 +3,7 @@
     <title>Guto@Site</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2022-02-11T08:27:55-03:00</updated>
+    <updated>2022-02-11T08:42:38-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
@@ -127,7 +127,7 @@ Guto</p>
         <id>https://gutocarvalho.net/entendendo-diferenca-entre-lb-tipo-l4-e-l7/</id>
             <category term="MindNotes"/>
 
-        <updated>2022-02-10T20:12:20-03:00</updated>
+        <updated>2022-02-11T08:42:38-03:00</updated>
             <summary>
                 <![CDATA[
                     A ideia aqui é falar sobre a diferença de Load Balancer (LB)&hellip;
@@ -168,7 +168,7 @@ Guto</p>
 <p>O único tratamento – de fato – que ele vai fazer é um NAT que irá mudar quando necessário o <strong>ip de origem</strong> e o <strong>ip destino</strong> dos pacotes.</p>
 <h3 id="camada-7">Camada 7</h3>
 <p>Já nesta camada o LB baseia todas as decisões de roteamento usando características e informações presentes nos pacotes, e falando especicamente de HTTP temos o cabeçalho HTTP, o conteúdo da mensagem, a url, o tipo de dados (imagem, texto, áudio, vídeo…) e os cookies. </p>
-<p>Além destas informações, o administrador pode definir configurações de estratégia de balanceamento, persistência de sessão, definir pesos, prioridades, tempo de timeout, nível máximo de tolerância a falhas e outras regras que cada a tecnologia escolhida oferecer e suportar.</p>
+<p>Além destas informações, o administrador pode definir configurações de estratégia de balanceamento, persistência de sessão, definir pesos, prioridades, tempo de timeout, nível máximo de tolerância a falhas e outras regras que a tecnologia escolhida oferecer e suportar.</p>
 <p>E não é só isso, o balanceamento na L7 pode ir além, usando características de reverse-proxys ele permite por exemplo, enviar requisições específicas para um determinado servidor, habilitar compressão de dados (GZIP) e criptografia na comunicação (TLS/SSL), coisas que não podem ser feitas em um LB do tipo L4.</p>
 <h2 id="amarrando-as-pontas">Amarrando as pontas</h2>
 <p>Sabemos que o custo computacional do L7 é bem maior que o L4, contudo, hoje em dia isso é praticamente imperceptível para a maioria das aplicações e cenários. Só vamos começar a perceber o custo computacional com aplicaçoes de missão crítica ou em sites com acessos na casa dos centenas de milhares por segundo. Ainda assim, os benefícios são maiores IMHO.</p>
