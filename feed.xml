@@ -3,7 +3,7 @@
     <title>Guto@Site</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2022-02-11T16:15:40-03:00</updated>
+    <updated>2022-02-11T16:36:59-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
@@ -17,7 +17,7 @@
         <link href="https://gutocarvalho.net/boas-praticas-git-para-pessoas-e-times/"/>
         <id>https://gutocarvalho.net/boas-praticas-git-para-pessoas-e-times/</id>
 
-        <updated>2022-02-11T16:15:40-03:00</updated>
+        <updated>2022-02-11T16:36:59-03:00</updated>
             <summary>
                 <![CDATA[
                     Em especial para Cloud Engineers. Para que seus commits não sejam gravados&hellip;
@@ -155,14 +155,17 @@ Criada feature W para módulo X
 <p>Enfim, existem longas threads sobre isso na internet, quase uma guerra santa, contudo, IMHO isso vai depender de cada um, ou da forma como cada time decidiu trabalhar.</p>
 <p>No final o importante é você versionar seu código e conseguir entender o que fez ali só lendo a mensagem de commit :)</p>
 <h3 id="122-usando-o-editor-para-algo-mais-detalhado">12.2 Usando o editor para algo mais detalhado</h3>
-<p>As vezes precisamos escrever mais, especialmente se foi uma correção complexa, se tem alguma pegadinha, ou explicar porque você fez aquilo daquela forma, no caso de Cloud Engineers nem sempre é necessário, mas se for veja como fazer.</p>
-<p>Nesse caso não podemos fazer commit online, temos que ir para o editor.</p>
+<p>As vezes precisamos escrever mais, especialmente se foi uma correção complexa, se tem alguma pegadinha, ou explicar porque você fez aquilo daquela forma. No caso de Cloud Engineers nem sempre é necessário, mas se for, veja como fazer.</p>
+<p>Nesse caso, como é uma mensagem longa, não podemos fazer commit online, temos que ir para o editor.</p>
+<pre><code>$ git commit
+</code></pre>
+<p>E escrever a mensagem</p>
 <pre><code>Assunto da mensagem com no máximo 50 caracteres, sem ponto final
 
 Descrição em múltiplas linhas
-sobre seu commit, use até 72 caracteres
+sobre seu commit. Use até 72 caracteres
 
-Outros parágrafos devem vir após linhas em branco
+Outros parágrafos podem vir após inserir uma linha em branco
 Aqui nao tem mais limite de caracteres
 
 Podemos usar bullets também, ajuda a organizar a informação
@@ -175,7 +178,7 @@ Podemos usar bullets também, ajuda a organizar a informação
 - Commit
 
 Se existe um ticket coloque seu 
-o número dele na mensagem
+o número dele na mensagem e os tickets relacionados
 
 Esse commit resolve o problema do ticket #2222
 E está relacionado com o ticket #3333 e #4444
@@ -183,7 +186,7 @@ E está relacionado com o ticket #3333 e #4444
 <p>É bem simples!</p>
 <h2 id="13-não-reescreva-o-histórico-da-branch-principal">13. Não reescreva o histórico da branch principal</h2>
 <p>Se você já gravou o código na branch principal, e o código alterado já está disponível para outras pessoas verem, recomenda-se não alterar esse histórico.</p>
-<p>Fazer rebase na MAIN ou qualquer que seja o nome da sua branch upstream, ou mesmo uma branch de integração pode causar problemas para seus colegas e eles podem ter que lidar com conflitos ou ter que fazer stash e baixar toda a branch novamente. Fora que normalmente alterações nessas branchs geralmente acionam gatilhos em ferramentas de CICD, o que pode gerar um deploy com regressão.</p>
+<p>Fazer rebase na MAIN ou qualquer que seja o nome da sua branch upstream, ou mesmo em uma branch de integração pode causar problemas para seus colegas e eles podem ter que lidar com conflitos ou ter que fazer stash e baixar toda a branch novamente. Fora que normalmente alterações nessas branchs geralmente acionam gatilhos em ferramentas de CICD, o que pode gerar um deploy com regressão.</p>
 <p>Dito isso, muito cuidado com suas branchs, em especial a upstream e as branchs de integração.</p>
 <p>Na sua branch de feature você faz o que quiser, use o rebase sem problema algum, mas só nela ok?</p>
 <h2 id="14-faça-rebases-regulares-para-manter-sua-feature-branch-atualizada">14. Faça rebases regulares para manter sua feature-branch atualizada</h2>
@@ -198,7 +201,7 @@ git rebase main
 git pull
 git merge feature-xyz
 </code></pre>
-<p>Hoje em dia eu quase não faço merge no braço, geralmente uso MR ou PR, depende da ferramenta que estamos usando.</p>
+<p>Hoje em dia eu quase não faço merge no braço, geralmente uso MR ou PR, depende da ferramenta que estamos usando. </p>
 <h2 id="15-faça-squash-antes-de-fazer-um-merge">15. Faça squash antes de fazer um merge</h2>
 <p>Texto em produção…</p>
 <pre><code>$ git rebase -i HEAD~20  # look at up to 20 commits to consider squashing
@@ -215,14 +218,41 @@ git merge feature-xyz
 <pre><code>$ git tag milestone-id -m &quot;short message saying what this milestone is about&quot;
 $ git push --tags   # don&#39;t forget to explicitly push the tag to the remote
 </code></pre>
-<p>Versionamento semântico</p>
-<h2 id="20-de-vez-em-quando-recrie-suas-branchs-de-integração">20. De vez em quando recrie suas branchs de integração</h2>
-<p>Isso é legal de fazer para dar uma limpada na coisa toda…</p>
-<h2 id="21-use-e-abuse-de-mrs-e-pr-no-github-e-gitlab">21. Use e abuse de MRs e PR no GitHub e GitLab</h2>
+<h2 id="20-se-possível-use-versionamento-semântico">20. Se possível use versionamento semântico</h2>
 <p>Texto em produção…</p>
-<h2 id="22-use-uma-versão-atualizada-do-git">22. Use uma versão atualizada do GIT</h2>
+<p>Caso não conheça acessa o site semver.org</p>
+<p>O versionamento semantico consiste basicamente no uso de três numeros que podem ser incrementados, como o exemplo abaixo:</p>
+<pre><code>2.3.5
+</code></pre>
+<h3 id="major">MAJOR</h3>
+<p>Deve ser incrementando quando alguma mudança causa uma quebra de compatilidade de API</p>
+<h3 id="minor">MINOR</h3>
+<p>Deve ser incrementado quando uma nova funcionalidade é adicionada, sem quebra de compatibilidade</p>
+<h3 id="patch">PATCH</h3>
+<p>Deve ser incrementado quando fazemos algum tipo de correção</p>
+<h3 id="buildrelease">BUILD/RELEASE</h3>
+<p>Ao ler o semver.org verá outras possibilidades de versionar, alguns exemplos:</p>
+<pre><code>1.0.0-alpha
+1.0.0-beta
+1.0.0-rc1
+1.0.0-rc2
+1.0.0+20130313144700
+1.0.0-0.3.7
+</code></pre>
+<p>O versionamento semântico é bem flexível você vai ver.</p>
+<h3 id="posso-automatizar">Posso automatizar?</h3>
+<p>Como as regras sao claras fica fácil entender como incrementar a versões manualmente e podemos até mesmo automatizar isso em nossa pipeline.</p>
+<h3 id="posso-criar-o-meu-próprio-método">Posso criar o meu próprio método?</h3>
+<p>Claro, cada time pode definir seu jeito de versionar, mas lembre-se criar um repo onde você explica isso para todo mundo, em formato MD. :)</p>
+<h2 id="21-de-vez-em-quando-recrie-suas-branchs-de-integração">21. De vez em quando recrie suas branchs de integração</h2>
+<p>Isso é legal de fazer para dar uma limpada na coisa toda…</p>
+<h2 id="22-use-e-abuse-de-mrs-e-pr-no-github-e-gitlab">22. Use e abuse de MRs e PR no GitHub e GitLab</h2>
+<p>A vantagem de usar PR ou MR seja no GitLab ou GitHub é que você tem facilidades para fazer squash, resolver conflitos, solicitar revisão de pares, receber comentários e então finalmente fazer o merge. São excelentes recursos e devemos usá-los pois facilitam nossa vida.</p>
+<h2 id="23-use-uma-versão-atualizada-do-git">23. Use uma versão atualizada do GIT</h2>
 <p>Texto em produção…</p>
 <p>Note: A versão das distros normalmente é beeeeem velha.</p>
+<h2 id="24-crie-aliases-para-agializar-seu-trabalho">24. Crie aliases para agializar seu trabalho</h2>
+<p>Texto em produção…</p>
 <h2 id="refs">Refs</h2>
 <ul>
 <li><a href="https://deepsource.io/blog/git-best-practices/">https://deepsource.io/blog/git-best-practices/</a></li>
