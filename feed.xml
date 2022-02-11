@@ -3,7 +3,7 @@
     <title>Guto@Site</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2022-02-11T15:58:34-03:00</updated>
+    <updated>2022-02-11T16:04:29-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
@@ -17,7 +17,7 @@
         <link href="https://gutocarvalho.net/boas-praticas-git-para-pessoas-e-times/"/>
         <id>https://gutocarvalho.net/boas-praticas-git-para-pessoas-e-times/</id>
 
-        <updated>2022-02-11T15:58:34-03:00</updated>
+        <updated>2022-02-11T16:04:29-03:00</updated>
             <summary>
                 <![CDATA[
                     Em especial para Cloud Engineers. Para que seus commits não sejam gravados&hellip;
@@ -44,12 +44,12 @@ $ git config user.email &quot;nome.sobrenome@provider.dlt&quot;
 <p>Combinar antes é sai mais barato do que arrumar depois, converse com seu time e defina:</p>
 <ul>
 <li>Convenções comuns</li>
-<li>Quais serão e como usar Branchs de integração…</li>
-<li>Quais serão e como usar Branchs de features…</li>
+<li>Quais serão e como usar branchs de integração…</li>
+<li>Quais serão e como usar branchs de features…</li>
 <li>Quais serão e como usar demais branchs…</li>
 <li>Padrão de nome de branchs para integração, feature, hotfix, deploy, etc…</li>
 <li>Padrão esperado para commit, forma, mensagens, etc… </li>
-<li>Template e forma de se fazer merge…</li>
+<li>Templates e forma de se fazer merge…</li>
 <li>Regras gerais do que se deve ou se deve não fazer</li>
 </ul>
 <p>Eu sugiro que crie um repo git e coloque tudo isso em formato MD, nada melhor do que versionar suas regras :)</p>
@@ -68,15 +68,15 @@ $ git checkout correcao_criacao_vpc
 </code></pre>
 <h2 id="5-use-branchs-de-integração">5. Use branchs de integração</h2>
 <p>Quando estamos trabalhando com integração contínua o uso de Branchs de integração é fundamental, precisamos integrar nosso código com o código do nosso colega e rodar os testes na pipeline.</p>
-<p>Geralmente temos uma branch de integraçao para desenvolvimento e depois vamos promevendo esse código para outras branchs que vão nos ajudar a fechar a release e publicar, tudo depende do git-flow que seu time está seguindo.</p>
+<p>Geralmente temos uma branch de integração para desenvolvimento e depois vamos promovendo esse código para outras branchs que vão nos ajudar a fechar a release e publicar, tudo depende do git-flow que seu time está seguindo.</p>
 <h2 id="6-não-escreva-direto-na-main">6. Não escreva direto na MAIN</h2>
-<p>Evitamos escrever direto na MAIN pois geralmente é a última versão estável devidamente testada e validada por todos, é de fato a fonte da verdade, portanto, para colocar código lá devemos sempre passar por diversas testes em sua pipeline e revisões de seus colegas.</p>
+<p>Evitamos escrever direto na MAIN pois geralmente é a última versão estável devidamente testada e validada por todos, é de fato a fonte da verdade, portanto, para colocar código lá devemos sempre passar por diversos testes em sua pipeline e revisões de seus colegas.</p>
 <h2 id="7-faça-commits-pontuais-e-objetivos">7. Faça commits pontuais e objetivos</h2>
 <p>Evite fazer um commit com dezenas de arquivos se esses arquivos trazem mais de uma mudança ou correção pois fica difícil rastrear, entender e revisar o que foi feito.</p>
 <p>Prefira fazer commits pequenos e pontuais de algo que está terminado, algo que funciona e que não traga muitas alterações de uma vez só.</p>
 <h2 id="8-commits-atômicos-quando-possível">8. Commits atômicos quando possível</h2>
 <p>Já sabemos que commitar poucas alterações é o melhor caminho, mas dá para ser ainda menor.</p>
-<p>Os commits atômicos são aqueles que commitam apenas uma única mudança – ainda que envolva vários arquivos – em um único commit.</p>
+<p>Os commits atômicos são aqueles que gravam apenas uma única mudança – ainda que envolva vários arquivos – em um único commit.</p>
 <p>É claro que nem sempre dá para fazer, mas é uma prática excelente se conseguir fazer.</p>
 <p>A ideia do commit atômico é gravar a menor e mais importante melhoria que voce fez no código, sendo grande suficiente para adicionar algum valor, contudo, pequena o suficiente para ser gerenciada com grande flexibilidade.</p>
 <p>Se quiser trabalhar dessa forma tenha em mente duas coisas:</p>
@@ -85,17 +85,17 @@ $ git checkout correcao_criacao_vpc
 <li>Faça alterações pequenas e pontuais</li>
 </ul>
 <h2 id="9-faça-commits-regulares-e-frequentes-não-espere-demais">9. Faça commits regulares e frequentes, não espere demais</h2>
-<p>Algumas pessoas esperam demais até gravar alguma alteração, as vezes ficam ali melhorando algo que já está funcionando, buscando algum tipo de perfeição antes de gravar.</p>
+<p>Algumas pessoas esperam demais até gravar alguma alteração, às vezes ficam ali melhorando algo que já está funcionando, buscando algum tipo de perfeição antes de gravar.</p>
 <p>Deixa eu te dizer uma coisa, o git funciona melhor e te ajuda mais quando você grava com frequência ao invés de esperar muitoooo tempo para gravar sua mudança. </p>
 <p>Ao gravar com frequência você vai rastrear inclusive como você foi melhorando aquele código ao longo do seu processo e histórico de desenvolvimento.</p>
 <p>E lembre-se o GIT só cuida do seu código depois que você grava, se você fechar o editor por acidente ou se o editor travar, seu código já era, contudo, se estiver commitando com frequência você evita isso.</p>
 <h2 id="10-não-faça-commit-de-algo-que-você-não-finalizou">10. Não faça commit de algo que você não finalizou</h2>
 <p>Nunca, eu repito, nunca grave algo que não está funcionando ou que não está completo.</p>
 <h2 id="11-teste-seu-código-antes-de-gravar">11. Teste seu código antes de gravar</h2>
-<p>Essa é uma das coisas mais básicas que vou falar hoje, mas tem falar e tem que fazer.</p>
+<p>Essa é uma das coisas mais básicas que vou falar hoje, mas tem que falar e tem que fazer.</p>
 <p>Caso não saiba, gravar código quebrado é algo bastante incômodo e poderá irritar seus pares, podendo em algum caso chegar a ser considerado uma falta de respeito e profissionalismo.</p>
 <p>Verifique a sintaxe do seu código, rode um linter e claro, execute o código para ver se a feature ou fix estão funcionando, afinal se o código estiver ok e a alteração também, é o melhor dos mundos.</p>
-<p>O git inclusive oferece diferentes tipos HOOKS para por exemplo executar comandos de checagem de sintaxe da linguagem e linters antes mesmo de gravar seu código, veja o link abaixo e leia sobre o hook pre-commit, é muito útil.</p>
+<p>O git inclusive oferece diferentes tipos de HOOKS para por exemplo executar comandos de checagem de sintaxe da linguagem e linters antes mesmo de gravar seu código, veja o link abaixo e leia sobre o hook pre-commit, é muito útil.</p>
 <ul>
 <li><a href="https://git-scm.com/docs/githooks">https://git-scm.com/docs/githooks</a></li>
 </ul>
@@ -103,8 +103,8 @@ $ git checkout correcao_criacao_vpc
 <h3 id="121-command-line">12.1 Command Line</h3>
 <p>A mensagem tem que fazer sentido, ser fácil de ler e ser suficiente para entender o que foi feito.</p>
 <h4 id="exemplos">Exemplos</h4>
-<p>Podemos usar convençoes para mostrar que fizemos uma <strong>correção</strong></p>
-<pre><code>fix: corrije bug que ocorre quando modulo vai crair a 2o VPC na AWS
+<p>Podemos usar convenções para mostrar que fizemos uma <strong>correção</strong></p>
+<pre><code>fix: corrige bug que ocorre quando modulo vai crair a 2o VPC na AWS
 </code></pre>
 <p><strong>refatoração</strong></p>
 <pre><code>refact: refatora código que configura IAM para EKS na AWS
@@ -119,7 +119,7 @@ $ git checkout correcao_criacao_vpc
 <p><strong>feature</strong></p>
 <pre><code>feat: adiciona recurso para lidar com ALB no EC2/AWS
 </code></pre>
-<p>Explicando a estruturura</p>
+<p>Explicando a estrutura</p>
 <pre><code>feat: added a feature to deal with ALB resources #220412
 ^--^  ^-----------------------------------------^
 |     |
@@ -149,7 +149,7 @@ Corrigido módulo Y
 Refatorado manifesto Z
 Criada feature W para módulo X
 </code></pre>
-<p>Enfim, existem longas threads sobre isso na internet, quase uma guerra santa, contudo, IMHO isso vai de depender cada um, ou da forma como cada time decidiu trabalhar.</p>
+<p>Enfim, existem longas threads sobre isso na internet, quase uma guerra santa, contudo, IMHO isso vai depender de cada um, ou da forma como cada time decidiu trabalhar.</p>
 <p>No final o importante é você versionar seu código e conseguir entender o que fez ali só lendo a mensagem de commit :)</p>
 <h3 id="122-usando-o-editor-para-algo-mais-detalhado">12.2 Usando o editor para algo mais detalhado</h3>
 <p>As vezes precisamos escrever mais, especialmente se foi uma correção complexa, se tem alguma pegadinha, ou explicar porque você fez aquilo daquela forma, no caso de Cloud Engineers nem sempre é necessário, mas se for veja como fazer.</p>
@@ -165,7 +165,7 @@ Aqui nao tem mais limite de caracteres
 Podemos usar bullets também, ajuda a organizar a informação
 
 - Enumerando
-- Alteracoes
+- Alterações
 - Realizadas
 - Por
 - Este
@@ -181,10 +181,10 @@ E está relacionado com o ticket #3333 e #4444
 <h2 id="13-não-reescreva-o-histórico-da-branch-principal">13. Não reescreva o histórico da branch principal</h2>
 <p>Se você já gravou o código na branch principal, e o código alterado já está disponível para outras pessoas verem, recomenda-se não alterar esse histórico.</p>
 <p>Fazer rebase na MAIN ou qualquer que seja o nome da sua branch upstream, ou mesmo uma branch de integração pode causar problemas para seus colegas e eles podem ter que lidar com conflitos ou ter que fazer stash e baixar toda a branch novamente. Fora que normalmente alterações nessas branchs geralmente acionam gatilhos em ferramentas de CICD, o que pode gerar um deploy com regressão.</p>
-<p>Dito isso, muito cuiddo com suas branchs, em especial a upstream e as branchs de integração.</p>
+<p>Dito isso, muito cuidado com suas branchs, em especial a upstream e as branchs de integração.</p>
 <p>Na sua branch de feature você faz o que quiser, use o rebase sem problema algum, mas só nela ok?</p>
 <h2 id="14-faça-rebases-regulares-para-manter-sua-feature-branch-atualizada">14. Faça rebases regulares para manter sua feature-branch atualizada</h2>
-<p>Exemplo de atualizacao da branch main localmente e depois rebase</p>
+<p>Exemplo de atualização da branch main localmente e depois rebase</p>
 <pre><code>git checkout main
 git pull
 git checkout feature-xyz  
@@ -195,7 +195,7 @@ git rebase main
 git pull
 git merge feature-xyz
 </code></pre>
-<p>Hoje em dia eu quase nao faço merge no braço, geralmente uso MR ou PR, depende da ferramenta que estamos usando.</p>
+<p>Hoje em dia eu quase não faço merge no braço, geralmente uso MR ou PR, depende da ferramenta que estamos usando.</p>
 <h2 id="15-faça-squash-antes-de-fazer-um-merge">15. Faça squash antes de fazer um merge</h2>
 <p>Texto em produção…</p>
 <pre><code>$ git rebase -i HEAD~20  # look at up to 20 commits to consider squashing
@@ -207,13 +207,13 @@ git merge feature-xyz
 <p>Note: Prefira sempre chaves SSH</p>
 <h2 id="18-use-e-abuse-do-gitignore">18. Use e abuse do .Gitignore</h2>
 <p>Texto em produção…</p>
-<h2 id="19-use-tags-e-se-possível-versionamento-semantico">19. Use tags e se possível versionamento semantico</h2>
+<h2 id="19-use-tags-e-se-possível-versionamento-semântico">19. Use tags e se possível versionamento semântico</h2>
 <p>Texto em produção…</p>
 <pre><code>$ git tag milestone-id -m &quot;short message saying what this milestone is about&quot;
 $ git push --tags   # don&#39;t forget to explicitly push the tag to the remote
 </code></pre>
 <p>Versionamento semântico</p>
-<h2 id="20-de-vez-em-quando-recrie-suas-branchs-de-integracao">20. De vez em quando recrie suas branchs de integracao</h2>
+<h2 id="20-de-vez-em-quando-recrie-suas-branchs-de-integração">20. De vez em quando recrie suas branchs de integração</h2>
 <p>Isso é legal de fazer para dar uma limpada na coisa toda…</p>
 <h2 id="21-use-e-abuse-de-mrs-e-pr-no-github-e-gitlab">21. Use e abuse de MRs e PR no GitHub e GitLab</h2>
 <p>Texto em produção…</p>
