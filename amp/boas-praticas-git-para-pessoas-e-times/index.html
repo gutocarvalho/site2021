@@ -1,0 +1,653 @@
+<!doctype html><html amp lang="en"><head><meta charset="utf-8"><title>Boas práticas GIT para pessoas e times - Guto@Site</title><meta name="description" content="Em especial para Cloud Engineers. Para que seus commits não sejam gravados&hellip;"><link rel="canonical" href="https://gutocarvalho.net/boas-praticas-git-para-pessoas-e-times/"><meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1"><link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet" type="text/css"><script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script><script async custom-element="amp-social-share" src="https://cdn.ampproject.org/v0/amp-social-share-0.1.js"></script><script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script><script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script><script async custom-element="amp-video" src="https://cdn.ampproject.org/v0/amp-video-0.1.js"></script><script type="application/ld+json">{"@context":"http://schema.org","@type":"Article","mainEntityOfPage":{"@type":"WebPage","@id":"https://gutocarvalho.net/amp/boas-praticas-git-para-pessoas-e-times/"},"headline":"Boas práticas GIT para pessoas e times","datePublished":"2022-02-11T09:35","dateModified":"2022-02-11T15:42","description":"Em especial para Cloud Engineers. Para que seus commits não sejam gravados&hellip;","author":{"@type":"Person","name":"Guto Carvalho"},"publisher":{"@type":"Organization","name":"Guto Carvalho"}}</script><style amp-custom>article,
+aside,
+footer,
+header,
+hgroup,
+main,
+nav,
+section {
+  display: block; }
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  margin: 0;
+  padding: 0; }
+
+li {
+  list-style: none; }
+
+amp-img {
+  max-width: 100%; }
+
+button,
+input,
+select,
+textarea {
+  font: inherit; }
+
+html {
+  font-size: 1rem; }
+
+body {
+  background: #f1f1f1;
+  color: #262626;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  line-height: 1.6; }
+
+a {
+  color:  #039be5;
+  text-decoration: none;
+  -webkit-transition: all 0.12s linear 0s;
+  -o-transition: all 0.12s linear 0s;
+  transition: all 0.12s linear 0s; }
+
+a:hover {
+  color: #262626;
+  text-decoration: underline;
+  -webkit-text-decoration-skip: ink;
+  text-decoration-skip: ink; }
+
+a:active {
+  color: #262626; }
+
+a:focus {
+  outline: 2px dotted #039be5; }
+
+figure,
+blockquote,
+p,
+ul,
+ol,
+dl,
+table,
+hr,
+fieldset {
+  margin-top: 1.6rem; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #262626;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-weight: 500;
+  line-height: 1.2;
+  margin-top: 2.13333rem; }
+
+h1 {
+  font-size: 1.67583rem;
+  font-weight: normal; }
+
+h2 {
+  font-size: 1.4729rem; }
+
+h3 {
+  font-size: 1.29454rem; }
+
+h4 {
+  font-size: 1.13778rem; }
+
+h5 {
+  font-size: 1rem; }
+
+h6 {
+  font-size: 0.87891rem; }
+
+h2 + p,
+h3 + p,
+h4 + p,
+h5 + p,
+h6 + p {
+  margin-top: 0.8rem; }
+
+b,
+strong {
+  font-weight: 600; }
+
+blockquote {
+  color: #6c7175;
+  font-family: "Droid Serif", "Times", "Source Serif Pro", serif;
+  font-style: italic;
+  padding: 1.33333rem 0.53333rem 1.33333rem 3.2rem;
+  position: relative; }
+  blockquote:before {
+    display: block;
+    content: "\201C";
+    font-size: 4.41226rem;
+    position: absolute;
+    left: 0;
+    top: -12px;
+    color: rgba(108, 113, 117, 0.5); }
+  blockquote > :nth-child(1) {
+    margin-top: 0; }
+
+ul,
+ol {
+  margin-left: 2rem; }
+  ul > li,
+  ol > li {
+    list-style: inherit;
+    padding: 0 0 0.26667rem 0.26667rem; }
+
+dl dt {
+  color: #262626;
+  font-weight: 600; }
+
+code,
+pre {
+  background-color: #f1f1f1;
+  font-family: monospace; }
+
+pre {
+  margin: 1.6rem 0 0;
+  padding: 1.6rem;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  overflow-x: auto; }
+  pre > code {
+    color: #262626;
+    padding: 0; }
+
+code {
+  border-radius: 3px;
+  color: #262626;
+  padding: 0.26667rem 0.53333rem; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  border: 1px solid #d4d4d4;
+  width: 100%;
+  overflow-x: auto;
+  vertical-align: top;
+  text-align: left;
+  white-space: nowrap; }
+  table th {
+    font-weight: 500;
+    padding: 0.53333rem 1.06667rem; }
+  table tr {
+    border-bottom: 1px solid #d4d4d4; }
+    table tr:nth-child(2n) {
+      background: #f1f1f1; }
+  table td {
+    padding: 0.53333rem 1.06667rem; }
+
+figcaption {
+  clear: both;
+  color: rgba(108, 113, 117, 0.6);
+  font-size: 0.82397rem;
+  margin: 0.8rem 0 0;
+  text-align: center; }
+
+sub,
+sup {
+  font-size: 65%; }
+
+hr {
+  border: 0;
+  height: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3); }
+
+.btn, [type=button],
+[type=submit],
+button {
+  background: #039be5;
+  border: none;
+  border-radius: 2px;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 0.87891rem;
+  font-weight: 500;
+  line-height: 1.9;
+  padding: 0.53333rem 1.33333rem;
+  text-align: center;
+  text-decoration: none;
+  -webkit-transition: all .15s ease;
+  -o-transition: all .15s ease;
+  transition: all .15s ease;
+  width: auto; }
+  .btn:hover, [type=button]:hover,
+  [type=submit]:hover,
+  button:hover {
+    background: #262626;
+    color: #ffffff; }
+  .btn:focus, [type=button]:focus,
+  [type=submit]:focus,
+  button:focus {
+    outline: none; }
+  .btn-outline {
+    border: 1px solid #ddd;
+    background: #ffffff;
+    border-radius: 3px;
+    color: #262626; }
+
+[type=button],
+[type=submit],
+button {
+  text-transform: uppercase;
+  -webkit-appearance: none;
+  -moz-appearance: none; }
+
+.navbar {
+  background: #039be5;
+  -webkit-box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.2);
+  line-height: 3;
+  max-height: 4rem; }
+  .navbar > div {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: left;
+    max-width: 700px;
+    margin: 0 auto; }
+  .navbar a {
+    color: #ffffff;
+    text-decoration: none; }
+  .navbar-sidebar-toggle {
+    left: 0;
+    position: relative;
+    text-indent: -99999rem; }
+    .navbar-sidebar-toggle:before {
+      content: "";
+      display: block;
+      border-top: 0.375rem double #ffffff;
+      border-bottom: 0.125rem solid #ffffff;
+      height: 0.125rem;
+      position: absolute;
+      text-indent: 0;
+      top: 50%;
+      width: 1.3rem;
+      -webkit-transform: translate(0px, -50%);
+      -ms-transform: translate(0px, -50%);
+      transform: translate(0px, -50%); }
+
+
+.logo {
+            display: inline-block;
+  font-weight: 600;
+  line-height: 1;
+            margin: 0 auto;
+            height: 2rem;
+            text-indent: -9999px;
+            width: 240px;vertical-align: middle;
+        }
+        .logo.logo-text {
+            line-height: 2;
+            text-align: center;
+            text-indent: 0;
+        }
+
+amp-sidebar {
+  background: #ffffff;
+  width: 240px; }
+  amp-sidebar > ul {
+    margin: 0.8rem 0 0;
+    padding: 0; }
+    amp-sidebar > ul ul {
+      border-left: 1px solid #d4d4d4;
+      margin: 0.53333rem 0 0; }
+    amp-sidebar > ul li {
+      color: #262626;
+      font-size: 0.9375rem;
+      font-weight: 600;
+      list-style: none;
+      line-height: 1.4;
+      padding: 0.42667rem 1.06667rem; }
+      amp-sidebar > ul li li {
+        font-weight: normal;
+        padding: 0.26667rem 0 0.26667rem 1.06667rem; }
+    amp-sidebar > ul a,
+    amp-sidebar > ul a:visited {
+      color: #262626; }
+
+.bg-white {
+  background: #ffffff; }
+
+.wrap-page {
+  max-width: 700px;
+  margin: 0 auto; }
+
+@media all and (max-width: 43.6875em) {
+  .wrap-inner {
+    padding: 0 6%; } }
+
+.page-title {
+  background: #ffffff;
+  -webkit-box-shadow: 0 2px 3px rgba(38, 38, 38, 0.1);
+  box-shadow: 0 2px 3px rgba(38, 38, 38, 0.1);
+  margin-bottom: 0.8rem;
+  padding: 1.6rem 6%; }
+  .page-title > h1 {
+    margin: 0;
+    font-size: 1.29454rem; }
+  .page-title > p {
+    font-size: 0.87891rem;
+    color: #6c7175;
+    line-height: 1.3;
+    margin: 0.26667rem 0 0; }
+  .page-title-author {
+    border-radius: 50%;
+    float: left;
+    height: 2.5rem;
+    width: 2.5rem; }
+    .page-title-author + h1 {
+      margin-left: 3.5rem; }
+      .page-title-author + h1 + p {
+        margin-left: 3.5rem; }
+
+.card {
+  background: #ffffff;
+  -webkit-box-shadow: 0 2px 3px rgba(38, 38, 38, 0.1);
+  box-shadow: 0 2px 3px rgba(38, 38, 38, 0.1);
+  margin-bottom: 0.8rem;
+  padding-bottom: 1.06667rem; }
+
+  .card-meta {
+    border-top: 1px solid #d4d4d4;
+    color: rgba(108, 113, 117, 0.6);
+    font-size: 0.7242rem;
+    font-weight: 500;
+    margin-top: 1.06667rem;
+    padding-top: 1.06667rem;
+    text-transform: uppercase; }
+    .card-meta a + time:before {
+      content: "";
+      background: #d4d4d4;
+      display: inline-block;
+      height: 3px;
+      margin: 0 8px;
+      width: 3px;
+      vertical-align: middle;
+      border-radius: 50%; }
+  .card-text {
+    font-size: 0.9375rem;
+    overflow: hidden;
+    padding: 0 6%; }
+    .card-text h2 {
+      font-size: 1.13778rem; }
+
+.post {
+  margin-bottom: 2.13333rem; }
+  .post-featured-image {
+    margin-top: 0;
+    position: relative; }
+    .post-featured-image > figcaption {
+      background: rgba(0, 0, 0, 0.5);
+      border-radius: 3px;
+      color: #ffffff;
+      position: absolute;
+      bottom: 0.8rem;
+      padding: 0 0.26667rem;
+      right: 6%; }
+  .post-header {
+    margin-bottom: 2.13333rem; }
+  .post-meta {
+    border-bottom: 1px solid #d4d4d4;
+    color: rgba(108, 113, 117, 0.6);
+    font-size: 0.7242rem;
+    font-weight: 500;
+    margin-top: 1.06667rem;
+    padding-bottom: 1.06667rem;
+    text-transform: uppercase; }
+    .post-meta a + time:before {
+      content: "";
+      background: #d4d4d4;
+      display: inline-block;
+      height: 3px;
+      margin: 0 8px;
+      width: 3px;
+      vertical-align: middle;
+      border-radius: 50%; }
+  .post-tag {
+    margin: 0; }
+    .post-tag > li {
+      display: inline-block;
+      padding: 0; }
+      .post-tag > li a {
+        background: #f1f1f1;
+        border-radius: 2px;
+        color: #6c7175;
+        font-size: 0.77248rem;
+        display: inline-block;
+        margin: 0 0.26667rem 0.26667rem 0;
+        padding: 0.26667rem 0.53333rem; }
+        .post-tag > li a:hover {
+          background: #039be5;
+          color: #ffffff;
+          text-decoration: none; }
+  .post-share {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-top: 1.6rem;
+    width: 100%; }
+    .post-share amp-social-share {
+      -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+      flex: 1 0 auto;
+      background-size: 24px; }
+  .post-scroll {
+    color: #ffffff;
+    background: #039be5;
+    bottom: 10px;
+    border-radius: 50%;
+    border: none;
+    -webkit-box-shadow: 0 1px 1.5px 0 rgba(38, 38, 38, 0.12), 0 1px 1px 0 rgba(38, 38, 38, 0.24);
+    box-shadow: 0 1px 1.5px 0 rgba(38, 38, 38, 0.12), 0 1px 1px 0 rgba(38, 38, 38, 0.24);
+    font-size: 1.13778rem;
+    height: 46px;
+    opacity: 0;
+    outline: none;
+    position: fixed;
+    padding: 0;
+    right: 4%;
+    visibility: hidden;
+    width: 46px;
+    z-index: 9999; }
+    .post-scroll-marker {
+      height: 0px;
+      position: absolute;
+      top: 100px;
+      width: 0px; }
+        .post-pagination {
+    background: #f1f1f1;
+    -webkit-box-shadow: inset 0 2px 3px rgba(38, 38, 38, 0.1);
+    box-shadow: inset 0 2px 3px rgba(38, 38, 38, 0.1);
+    border-top: 1px solid #d4d4d4;
+    padding: 1.06667rem 0; }
+    .post-pagination > div {
+      line-height: 1.2;
+      padding: 0.53333rem 1.06667rem;
+      text-align: center; }
+      .post-pagination > div span {
+        display: block;
+        color: #6c7175;
+        font-size: 0.7242rem;
+        font-weight: 500;
+        margin-bottom: 0.26667rem;
+        text-transform: uppercase; }
+    .post-pagination-prev a:before {
+      content: "\2190";
+      margin-right: 0.26667rem; }
+    .post-pagination-next a:after {
+      content: "\2192";
+      margin-left: 0.26667rem; }
+
+aside {
+  margin: 1.6rem 0 0; }
+
+.align-left {
+  text-align: left; }
+
+.align-right {
+  text-align: right; }
+
+.align-center {
+  text-align: center; }
+
+.align-justify {
+  text-align: justify; }
+
+.msg {
+  border-left: 2px solid transparent;
+  padding: 1.06667rem 1.06667rem; }
+  .msg--highlight {
+    background-color: #fff8e6;
+    border-color: #e2ac4f; }
+  .msg--info {
+    background: rgba(45, 97, 201, 0.03);
+    border-color: #039be5; }
+  .msg--success {
+    background: #f7fbf6;
+    border-color: #5ab44b; }
+  .msg--warning {
+    background: #fff3f3;
+    border-color: #c06367;
+    color: #a94442; }
+
+.dropcap:first-letter {
+  float: left;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-size: 2.16943rem;
+  line-height: 0.7;
+  margin-right: 0.53333rem;
+  padding: 0.53333rem 0.53333rem 0.53333rem 0; }
+
+.pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin: 0.8rem 0; }
+  .pagination > a {
+    padding-left: 0;
+    padding-right: 0;
+    width: 49%; }
+  .pagination-right {
+    margin-left: auto; }
+
+.bottom {
+  background: #039be5;
+  color: #ffffff;
+  padding: 1.06667rem 4%;
+  text-align: center; }</style><style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript><script async src="https://cdn.ampproject.org/v0.js"></script><script custom-element="amp-animation" src="https://cdn.ampproject.org/v0/amp-animation-0.1.js" async></script><script custom-element="amp-position-observer" src="https://cdn.ampproject.org/v0/amp-position-observer-0.1.js" async></script></head><body class="bg-white"><nav class="navbar wrap-inner" id="top"><div><a on="tap:navbar-sidebar.toggle" class="navbar-sidebar-toggle" title="Menu">Menu</a> <a class="logo logo-text" href="https://gutocarvalho.net/amp/">Guto@Site</a></div></nav><main class="wrap-page"><article class="post"><div class="wrap-inner"><header class="post-header"><h1>Boas práticas GIT para pessoas e times</h1><p class="post-meta">[MISSING TRANSLATION] <a href="https://gutocarvalho.net/amp/authors/gutocarvalho/" rel="nofollow" title="Guto Carvalho">Guto Carvalho</a> <time datetime="2022-02-11T09:35">February 11, 2022 09:35:32</time></p></header><p>Em especial para Cloud Engineers.</p><h2 id="1-configure-corretamente-nome-e-e-mail">1. Configure corretamente nome e e-mail</h2><p>Para que seus commits não sejam gravados com autor “root” e-mail “root@root” configure esses valores iniciais assim que instalar seu GIT.</p><pre><code>$ git config --global user.name &quot;Nome Sobrenome&quot;
+$ git config --global user.email &quot;nome.sobrenome@domain.ext&quot;
+</code></pre><p>Pode acontecer de ter que mudar de e-mail dependendo do projeto, nesse caso rode isso dentro do diretório do seu projeto para sobrescrever as configurações globais</p><pre><code>$ cd meu_projeto/
+$ git config user.name &quot;Nome Sobrenome&quot;
+$ git config user.email &quot;nome.sobrenome@provider.dlt&quot;
+</code></pre><h2 id="2-configure-seu-editor-favorito-globalmente">2. Configure seu editor favorito globalmente</h2><p>Eu gosto de usar o VIM</p><pre><code> $ git config --global core.editor vim
+</code></pre><h2 id="3-sente-com-seu-time-e-formalize-o-padrão-de-versionamento-que-vao-seguir">3. Sente com seu time e formalize o padrão de versionamento que vao seguir</h2><p>Combinar antes é sai mais barato do que arrumar depois, converse com seu time e defina:</p><ul><li>Convenções comuns</li><li>Quais serão e como usar Branchs de integrações…</li><li>Quais serão e como usar Branchs de features…</li><li>Quais serão e como usar demais branchs…</li><li>Padrão de nome de branchs para integração, feature, hotfix, deploy, etc…</li><li>Padrão esperado para commit, forma, mensagens, etc…</li><li>Template e forma de se fazer merge…</li><li>Regras gerais do que se deve ou se deve não fazer</li></ul><p>Eu sugiro que crie um repo git e coloque tudo isso em formato MD, nada melhor do que versionar suas regras :)</p><h2 id="4-use-e-abuse-de-branchs">4. Use e abuse de branchs</h2><p>O recurso de branch é fantástico, você pode criar a partir de qualquer uma.</p><ul><li>Evite gravar diretamente na main.</li><li>Sempre trabalhe em uma branch separada</li><li>Integre sua branch quando finalizar seu trabalho e finalize ela.</li></ul><p>Exemplo</p><pre><code>$ git branch -u main correcao_criacao_vpc
+$ git checkout correcao_criacao_vpc
+</code></pre><h2 id="5-use-branchs-de-integração">5. Use branchs de integração</h2><p>Quando estamos trabalhando com integração contínua o uso de Branchs de integração é fundamental, precisamos integrar nosso código com o código do nosso colega e rodar os testes na pipeline.</p><p>Geralmente temos uma branch de integraçao para desenvolvimento e depois vamos promevendo esse código para outras branchs que vão nos ajudar a fechar a release e publicar, tudo depende do git-flow que seu time está seguindo.</p><h2 id="6-não-escreva-direto-na-main">6. Não escreva direto na MAIN</h2><p>Evitamos escrever direto na MAIN pois geralmente é a última versão estável devidamente testada e valida, portanto, para colocar código lá devemos sempre passar por diversas testes em sua pipeline e revisões de seus colegas.</p><h2 id="7-faça-commits-pontuais-e-objetivos">7. Faça commits pontuais e objetivos</h2><p>Evite fazer um commit com dezenas de arquivos se esses arquivos trazem mais de uma mudança ou correção pois fica difícil rastrear, entender e revisar o que foi feito.</p><p>Prefira fazer commits pequenos e pontuais de algo que está terminado, algo que funciona e que não traga muitas alterações de uma vez só.</p><h2 id="8-commits-atômicos-quando-possível">8. Commits atômicos quando possível</h2><p>Já sabemos que commitar poucas alterações é o melhor caminho, mas dá para ser ainda menor.</p><p>Os commits atômicos são aqueles que commitam apenas uma única mudança – ainda que envolva vários arquivos – em um único commit.</p><p>É claro que nem sempre dá para fazer, mas é uma prática excelente se conseguir fazer.</p><p>A ideia do commit atômico é gravar a menor e mais importante melhoria que voce fez no código, sendo grande suficiente para adicionar algum valor, contudo, pequena o suficiente para ser gerenciada com grande flexibilidade.</p><p>Se quiser trabalhar dessa forma tenha em mente duas coisas:</p><ul><li>Trabalhe em uma coisa por vez</li><li>Mantenha suas alterações pequenas</li></ul><h2 id="9-faça-commits-regulares-e-frequentes-não-espere-demais">9. Faça commits regulares e frequentes, não espere demais</h2><p>Algumas pessoas esperam demais até gravar alguma alteração, as vezes ficam ali melhorando algo que já está funcionando, buscando algum tipo de perfeição antes de gravar.</p><p>Deixa eu te dizer uma coisa, o git funciona melhor e te ajuda mais quando você grava com frequência ao invés de esperar muitoooo tempo para gravar sua mudança. Ao gravar com frequência você vai rastrear inclusive como você foi melhorando aquele código ao longo do seu processo e histórico de desenvolvimento.</p><p>E lembre-se o GIT só cuida do seu código depois que você grava, se voce fechar o editor por acidente ou se o editor travar, seu código já era, contudo, se estiver commitando com frequência você evita isso.</p><h2 id="10-não-faça-commit-de-algo-que-você-não-finalizou">10. Não faça commit de algo que você não finalizou</h2><p>Nunca, eu repito, nunca grave algo que não está funcionando ou que não está completo.</p><h2 id="11-teste-seu-código-antes-de-gravar">11. Teste seu código antes de gravar</h2><p>Essa é uma das coisas mais básicas que vou falar hoje, mas tem falar e tem que fazer.</p><p>Caso não saiba, gravar código quebrado é algo bastante incômodo e poderá irritar seus pares, podendo em algum caso chegar a ser considerado uma falta de respeito e profissionalismo.</p><p>Verifique a sintaxe do seu código, rode um linter e claro, execute o código para ver se a feature ou fix estão funcionando, afinal se o código estiver ok e a alteração também, é o melhor dos mundos.</p><p>O git inclusive oferece diferentes tipos HOOKS para por exemplo executar comandos de checagem de sintaxe da linguagem e linters antes mesmo de gravar seu código, veja o link abaixo e leia sobre o hook pre-commit, é muito útil.</p><ul><li><a href="https://git-scm.com/docs/githooks">https://git-scm.com/docs/githooks</a></li></ul><h2 id="12-escreva-mensagens-de-commit-claras-e-úteis-para-todos">12. Escreva mensagens de commit claras e úteis para todos</h2><h3 id="121-command-line">12.1 Command Line</h3><p>A mensagem tem que fazer sentido, ser fácil de ler e ser suficiente para entender o que foi feito.</p><h4 id="convenções-comuns-que-você-pode-usar">Convenções comuns que você pode usar</h4><p>Usar convenções ajudam muito, exemplo</p><pre><code>fix: corrije bug que ocorre quando modulo vai crair a 2o VPC na AWS
+</code></pre><p>outro exemplo</p><pre><code>refact: refatora código que configura IAM para EKS na AWS
+</code></pre><p>documentacao</p><pre><code>doc: adiciona docs para uso do modulo IAM/EKS
+</code></pre><p>testes</p><pre><code>test: adiciona testes unitários no módulo
+    
+</code></pre><p>feature</p><pre><code>feat: adiciona recurso para lidar com ALB no EC2/AWS
+</code></pre><p>Explicando a estruturura</p><pre><code>feat: added a feature to deal with ALB resources #220412
+^--^  ^-----------------------------------------^
+|     |
+|     +-&gt; Sumário da sua mudança
+|
++-------&gt; Tipo: docs, feat, fix, refact, ou test.
+</code></pre><p>Se você estiver usando um sistema de tickets junto, adicione o número do ticket na mensagem, sistemas como GitLab e GitHub já farão a associação para você.</p><p>Evite colocar ponto final na mensagem, afinal é um título.</p><p>Vale lembrar que você deve evitar escrever mais de 50 caracteres.</p><h4 id="de-que-modo-escrever-a-mensagem">De que modo escrever a mensagem?</h4><p>Em alguns blogs vocês verão pessoas que defendam usar verbos no imperativo (ou presente do indicativo) e faz sentido. Em ambos os casos a ideia é que o commit responda essa pergunta:</p><pre><code>  &quot;Em caso de aplicar esse commit ele...&quot;
+</code></pre><p>Resposta</p><pre><code>Altera código X
+Corrige módulo Y
+Refatora manifesto Z
+Cria feature W para módulo X
+</code></pre><p>Eu já gosto de usar particípio do passado, pois foi algo que já foi realizado e nem precisa fazer a perguntinha para ver como tem que escrever, neste caso você pode afirmar ao invés de perguntar, dessa forma:</p><pre><code>&quot;Nesse commit foi...&quot;
+</code></pre><p>Resposta</p><pre><code>Alterado código X
+Corrigido módulo Y
+Refatorado manifesto Z
+Criada feature W para módulo X
+</code></pre><p>Enfim, existem longas threads sobre isso na internet, quase uma guerra santa, contudo, IMHO isso vai de depender cada um, ou da forma como cada time decidiu trabalhar.</p><p>No final o importante é você versionar seu código e conseguir entender o que fez ali só lendo a mensagem de commit :)</p><h3 id="122-usando-o-editor-para-algo-mais-detalhado">12.2 Usando o editor para algo mais detalhado</h3><p>As vezes precisamos escrever mais, especialmente se foi uma correção complexa, se tem alguma pegadinha, ou explicar porque você fez aquilo daquela forma, no caso de Cloud Engineers nem sempre é necessário, mas se for veja como fazer.</p><p>Nesse caso não podemos fazer commit online, temos que ir para o editor.</p><pre><code>Assunto da mensagem (no máximo 50 caracteres, sem ponto final)
+
+Descrição em múltiplas linhas
+sobre seu commit, use até 72 caracteres
+
+Outros parágrafos devem vir após linhas em branco
+Aqui nao tem mais limite de caracteres
+
+Podemos usar bullets também, ajuda a organizar a informação
+
+- Podemos 
+- Usar
+- Sempre
+- Que
+- Precisar
+- Explicar
+- Algo
+
+Se existe um ticket coloque seu 
+o número dele na mensagem
+
+Esse commit resolve o problema do ticket #2222
+E está relacionado com o ticket #3333 e #4444
+</code></pre><h2 id="13-não-reescreva-o-histórico-da-branch-principal">13. Não reescreva o histórico da branch principal</h2><p>Se você já gravou o código na branch principal, e o código alterado já está disponível para outras pessoas verem, recomenda-se não alterar esse histórico.</p><p>Fazer rebase na MAIN ou qualquer que seja o nome da sua branch upstream, ou mesmo uma branch de integração pode causar problemas para seus colegas e eles podem ter que lidar com conflitos ou fazer stash e baixar toda a branch novamente. Fora que normalmente alterações nessas acionam gatilhos em ferramentas de CICD e isso pode gerar um deploy com regressão.</p><p>Dito isso, muito cuiddo com suas branchs, em especial a upstream e as branchs de integração.</p><p>Na sua branch de feature você faz o que quiser, use o rebase sem problema algum, mas só ela ok?</p><h2 id="14-faça-rebases-regulares-para-manter-sua-feature-branch-atualizada">14. Faça rebases regulares para manter sua feature-branch atualizada</h2><p>Exemplo de atualizacao da branch main localmente e depois rebase</p><pre><code>git checkout main
+git pull
+git checkout feature-xyz  # name of your hypothetical feature branch
+git rebase main           # may need to fix merge conflicts in feature-xyz
+</code></pre><p>Exemplo de merge do código com a main</p><pre><code>git checkout main
+git pull
+git merge feature-xyz
+</code></pre><p>Hoje em dia eu quase nao faço merge no braço, geralmente uso MR ou PR, depende da ferramenta que estamos usando.</p><h2 id="15-faça-squash-antes-de-fazer-um-merge">15. Faça squash antes de fazer um merge</h2><p>Texto em produção…</p><pre><code>$ git rebase -i HEAD~20  # look at up to 20 commits to consider squashing
+</code></pre><h2 id="16-configure-corretamente-seus-remotos">16. Configure corretamente seus remotos</h2><p>Texto em produção…</p><h2 id="17-use-chaves-ssh-ao-invés-de-usersenha">17. Use chaves SSH ao invés de user/senha</h2><p>Texto em produção…</p><p>Note: Prefira sempre chaves SSH</p><h2 id="18-use-e-abuse-do-gitignore">18. Use e abuse do .Gitignore</h2><p>Texto em produção…</p><h2 id="19-use-tags-e-se-possível-versionamento-semantico">19. Use tags e se possível versionamento semantico</h2><p>git tag milestone-id -m “short message saying what this milestone is about” git push –tags # don’t forget to explicitly push the tag to the remote</p><h2 id="20-de-vez-em-quando-recrie-suas-branchs-de-integracao">20. De vez em quando recrie suas branchs de integracao</h2><p>Isso é legal de fazer para dar uma limpada na coisa</p><h2 id="21-use-e-abuse-de-mrs-e-pr-no-github-e-gitlab">21. Use e abuse de MRs e PR no GitHub e GitLab</h2><p>Texto em produção…</p><h2 id="22-use-uma-versão-atualizada-do-git">22. Use uma versão atualizada do GIT</h2><p>Texto em produção…</p><p>Note: A versao das distros normalmente é beeeeem velha.</p><h2 id="refs">Refs</h2><ul><li><a href="https://deepsource.io/blog/git-best-practices/">https://deepsource.io/blog/git-best-practices/</a></li><li><a href="https://opensource.com/article/20/7/git-best-practices">https://opensource.com/article/20/7/git-best-practices</a></li><li><a href="https://cbea.ms/git-commit/">https://cbea.ms/git-commit/</a></li></ul><aside><div class="post-share"><amp-social-share type="system" width="40" height="40" data-param-text="Boas práticas GIT para pessoas e times"></amp-social-share><amp-social-share type="facebook" width="40" height="40" data-param-app_id="" data-param-text="Boas práticas GIT para pessoas e times" data-param-href="https://gutocarvalho.net/amp/boas-praticas-git-para-pessoas-e-times/"></amp-social-share><amp-social-share type="twitter" width="40" height="40" data-param-text="Boas práticas GIT para pessoas e times" data-param-url="https://gutocarvalho.net/amp/boas-praticas-git-para-pessoas-e-times/"></amp-social-share><amp-social-share type="pinterest" width="40" height="40" data-param-url="https://gutocarvalho.net/amp/boas-praticas-git-para-pessoas-e-times/"></amp-social-share><amp-social-share type="tumblr" width="40" height="40" data-param-text="Boas práticas GIT para pessoas e times" data-param-url="https://gutocarvalho.net/amp/boas-praticas-git-para-pessoas-e-times/"></amp-social-share><amp-social-share type="whatsapp" width="40" height="40" data-param-text="Boas práticas GIT para pessoas e times" data-param-url="https://gutocarvalho.net/amp/boas-praticas-git-para-pessoas-e-times/"></amp-social-share></div></aside></div></article></main><amp-animation id="showAnim" layout="nodisplay"><script type="application/json">{
+                    "duration": "200ms",
+                    "fill": "both",
+                    "iterations": "1",
+                    "direction": "alternate",
+                    "animations": [{
+                        "selector": ".post-scroll",
+                        "keyframes": [{
+                            "opacity": "1",
+                            "visibility": "visible",
+                            "transform": "scale(1)"
+                        }]
+                    }]
+                }</script></amp-animation><amp-animation id="hideAnim" layout="nodisplay"><script type="application/json">{
+                    "duration": "200ms",
+                    "fill": "both",
+                    "iterations": "1",
+                    "direction": "alternate",
+                    "animations": [{
+                        "selector": ".post-scroll",
+                        "keyframes": [{
+                            "opacity": "0",
+                            "visibility": "hidden",
+                            "transform": "scale(0.1)"
+                        }]
+                    }]
+                }</script></amp-animation><div class="post-scroll-marker"><amp-position-observer on="enter:hideAnim.start; exit:showAnim.start" layout="nodisplay"></amp-position-observer></div><button class="post-scroll" on="tap:top.scrollTo(duration=200)">&#8593;</button><footer class="bottom">Powered by Publii</footer><amp-sidebar id="navbar-sidebar" layout="nodisplay"><ul><li><a href="https://gutocarvalho.net/amp/quem-sou/">Me conheça</a></li><li><a href="https://curriculo.gutocarvalho.net">Meu Currículo</a></li><li><a href="https://resume.gutocarvalho.net">My resume</a></li><li><span>Posts</span><ul class="navbar__submenu"><li><a href="https://gutocarvalho.net/amp/" target="_self">BLOG</a></li><li><a href="https://twitter.com/gutocarvalho" target="_self">TWITTER</a></li></ul></li><li><span>Eu recomendo</span><ul class="navbar__submenu"><li><a href="https://gutocarvalho.net/amp/comunidades/" target="_self">COMUNIDADES</a></li><li><a href="https://gutocarvalho.net/amp/siga-o-pessoal-do-bem/" target="_self">PESSOAS</a></li><li><a href="https://gutocarvalho.net/amp/ferramentas-interessantes-para-k8s/" target="_self">K8S TOOLS</a></li><li><a href="https://gutocarvalho.net/amp/sites-interessantes-para-conhecer/" target="_self">TECH SITES</a></li></ul></li><li><span>Opinião</span><ul class="navbar__submenu"><li><a href="https://gutocarvalho.net/amp/etiqueta-do-trabalho-remoto/" target="_self">ETIQUETA NO JOB REMOTO</a></li><li><a href="https://gutocarvalho.net/amp/ti-remota-em-2022-entenda/" target="_self">ENTENDA O JOB REMOTO EM 22</a></li><li><a href="https://gutocarvalho.net/amp/trinta-percepcoes-sobre-ti-em-2022/" target="_self">30 PERCEPCOES SOBRE TI EM 22</a></li><li><a href="https://gutocarvalho.net/amp/quanto-eu-devo-cobrar-a-hora-de-projetos/" target="_self">VALOR HORA DE PROJETOS</a></li><li><a href="https://gutocarvalho.net/amp/quanto-deveria-ganhar-um-cloud-engineer/" target="_self">SALARIO CLOUD ENGINEER</a></li></ul></li><li><span>TECH</span><ul class="navbar__submenu"><li><a href="https://gutocarvalho.net/amp/tags/tips/" target="_self">DROPS</a></li><li><a href="https://gutocarvalho.net/amp/tags/projetos/" target="_self">PROJETOS</a></li><li><a href="https://gutocarvalho.net/amp/tags/mindnotes/" target="_self">MIND NOTES</a></li><li><a href="https://gutocarvalho.net/amp/tags/mente/" target="_self">FALAGUTERA</a></li><li><a href="https://gutocarvalho.net/amp/tags/k8s/" target="_self">K8S</a></li></ul></li><li><span>Vitae</span><ul class="navbar__submenu"><li><a href="https://gutocarvalho.net/amp/tags/poesia/" target="_self">POESIA</a></li></ul></li><li><a href="https://gutocarvalho.net/amp/archives/">ARCHIVED SITES</a></li><li><a href="https://nativetrail.io">NativeTrail</a></li><li><a href="https://www.google.com/search?q&#x3D;site%3Agutocarvalho.net">Busca</a></li><li><a href="https://gutocarvalho.net/amp/contato/">Contato</a></li></ul></amp-sidebar><amp-analytics type="googleanalytics" id="analytics1"><script type="application/json">{
+            "vars": {
+                "account": "UA-1356269-1"
+            },
+            "triggers": {
+                "trackPageview": {
+                    "on": "visible",
+                    "request": "pageview"
+                }
+            }
+        }</script></amp-analytics></body></html>
