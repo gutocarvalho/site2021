@@ -3,7 +3,7 @@
     <title>Guto@Site</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2022-02-12T18:52:52-03:00</updated>
+    <updated>2022-02-12T19:00:27-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
@@ -18,7 +18,7 @@
         <id>https://gutocarvalho.net/boas-praticas-git-para-pessoas-e-times/</id>
             <category term="MindNotes"/>
 
-        <updated>2022-02-12T18:52:52-03:00</updated>
+        <updated>2022-02-12T19:00:27-03:00</updated>
             <summary>
                 <![CDATA[
                     Em especial para Cloud Engineers. Para que seus commits não sejam gravados&hellip;
@@ -232,7 +232,7 @@ $ git branch -u main devel
 |
 +-------&gt; Tipo: docs, feat, fix, refact, ou test.
 </code></pre>
-<p>Se você estiver usando um sistema de tickets junto, adicione o número do ticket na mensagem, sistemas como GitLab e GitHub já farão a associação para você.</p>
+<p>Se você estiver usando um sistema de tickets junto, adicione o número do ticket na mensagem, sistemas como GitLab e GitHub já farão a associação para você entre a issue e o commit.</p>
 <p>Evite colocar ponto final na mensagem, afinal é um título.</p>
 <p>Vale lembrar que você deve evitar escrever mais de 50 caracteres ou vai quebrar a saída do “git log”.</p>
 <h5 id="de-que-modo-escrever-a-mensagem">De que modo escrever a mensagem?</h5>
@@ -255,9 +255,9 @@ $ git branch -u main devel
 ...criada a feature W para módulo X
 </code></pre>
 <p>Enfim, existem longas threads sobre isso na internet, quase uma guerra santa, contudo, IMHO isso vai depender de cada um, ou da forma como cada time decidiu trabalhar.</p>
-<p>No final o importante é você versionar seu código e conseguir entender o que fez ali só lendo a mensagem de commit :)</p>
+<p>No final o importante é você versionar seu código e conseguir entender o que fez ali lendo a mensagem de commit :)</p>
 <h4 id="202-usando-o-editor-para-algo-mais-detalhado">20.2 Usando o editor para algo mais detalhado</h4>
-<p>As vezes precisamos escrever mais além do “one line commit”, especialmente se foi uma correção complexa, se tem alguma pegadinha, ou explicar porque você fez aquilo daquela forma. No caso do trabalho e o dia-a-dia dos Cloud Engineers nem sempre é necessário, mas se for, veja como fazer.</p>
+<p>As vezes precisamos escrever um pouco mais, indo além do “one line commit”, especialmente se foi uma correção complexa, se tem alguma pegadinha, ou se for preciso explicar porque você fez aquilo daquela forma. No caso do trabalho e o dia-a-dia dos Cloud Engineers nem sempre é necessário, mas se for, veja como fazer.</p>
 <p>Nesse caso, como é uma mensagem longa, não podemos fazer commit online, temos que ir para o editor.</p>
 <pre><code>$ git commit
 </code></pre>
