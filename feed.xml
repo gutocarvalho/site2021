@@ -3,7 +3,7 @@
     <title>Guto@Site</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2022-02-12T18:41:49-03:00</updated>
+    <updated>2022-02-12T18:43:00-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
@@ -16,8 +16,9 @@
         </author>
         <link href="https://gutocarvalho.net/boas-praticas-git-para-pessoas-e-times/"/>
         <id>https://gutocarvalho.net/boas-praticas-git-para-pessoas-e-times/</id>
+            <category term="MindNotes"/>
 
-        <updated>2022-02-12T18:41:49-03:00</updated>
+        <updated>2022-02-12T18:43:00-03:00</updated>
             <summary>
                 <![CDATA[
                     Em especial para Cloud Engineers. Para que seus commits não sejam gravados&hellip;
@@ -474,6 +475,11 @@ $ git push --tags
 <li><a href="https://github.com/git-tips/tips">https://github.com/git-tips/tips</a></li>
 <li><a href="https://codeburst.io/git-tips-and-tricks-to-improve-your-git-workflow-3f8652fa4a62">https://codeburst.io/git-tips-and-tricks-to-improve-your-git-workflow-3f8652fa4a62</a></li>
 </ul>
+<p>[s]<br>
+Guto</p>
+<p>–</p>
+<p>Este post é do tipo #MindNotes, entenda <a href="https://gutocarvalho.net/o-que-sao-mindnotes/">aqui</a>.</p>
+<p>Se gostou manda um alo no twitter @gutocarvalho.</p>
 
             ]]>
         </content>
@@ -487,7 +493,7 @@ $ git push --tags
         <id>https://gutocarvalho.net/entendendo-vcs-centralizado-e-distribuido/</id>
             <category term="MindNotes"/>
 
-        <updated>2022-02-11T08:27:55-03:00</updated>
+        <updated>2022-02-12T18:42:45-03:00</updated>
             <summary>
                 <![CDATA[
                     Essa é outra daquelas perguntinhas marotas de entrevistas, bora entender isso direitinho&hellip;
