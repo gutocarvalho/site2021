@@ -3,7 +3,7 @@
     <title>Guto@Site</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2022-02-12T19:00:27-03:00</updated>
+    <updated>2022-02-12T20:46:48-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
@@ -18,7 +18,7 @@
         <id>https://gutocarvalho.net/boas-praticas-git-para-pessoas-e-times/</id>
             <category term="MindNotes"/>
 
-        <updated>2022-02-12T19:00:27-03:00</updated>
+        <updated>2022-02-12T20:46:48-03:00</updated>
             <summary>
                 <![CDATA[
                     Em especial para Cloud Engineers. Para que seus commits não sejam gravados&hellip;
@@ -29,14 +29,14 @@
                 <p>Em especial para Cloud Engineers.</p>
 <h2 id="o-básico">O Básico</h2>
 <h3 id="1-configure-corretamente-nome-e-e-mail">1. Configure corretamente nome e e-mail</h3>
-<p>Para que seus commits não sejam gravados com autor “root” e-mail “root@root” configure esses valores iniciais assim que instalar seu GIT.</p>
+<p>Para que seus commits <strong>não</strong> sejam gravados com autor “root” e-mail “root@root” configure esses valores iniciais assim que instalar seu GIT.</p>
 <pre><code>$ git config --global user.name &quot;Nome Sobrenome&quot;
-$ git config --global user.email &quot;nome.sobrenome@domain.ext&quot;
+$ git config --global user.email &quot;email@domain.ext&quot;
 </code></pre>
 <p>Pode acontecer de ter que mudar de e-mail dependendo do projeto, nesse caso rode isso dentro do diretório do seu projeto para sobrescrever as configurações globais</p>
 <pre><code>$ cd meu_projeto/
 $ git config user.name &quot;Nome Sobrenome&quot;
-$ git config user.email &quot;nome.sobrenome@provider.dlt&quot;
+$ git config user.email &quot;email@domain.ext&quot;
 </code></pre>
 <h3 id="2-configure-seu-editor-favorito-globalmente">2. Configure seu editor favorito globalmente</h3>
 <p>Eu gosto de usar o VIM</p>
@@ -315,23 +315,31 @@ $ git push clienteX main
 <p>Autenticação chave é mais seguro, tanto que algumas ferramentas como GitHub desabilitam push sem ela.</p>
 <h4 id="criando-uma-chave-ssh-segura-ed2559">Criando uma chave ssh segura (ed2559)</h4>
 <p>Como criar um chave segura?</p>
-<pre><code>$ ssh-keygen -o -a 100 -t ed25519 -f ~/.ssh/id_ed25519 -C “nome@domain.ext”
+<pre><code>$ ssh-keygen -o -a 100 -t ed25519 -f ~/.ssh/nome_da_sua_chave -C “nome@domain.ext”
 </code></pre>
 <h4 id="definindo-chaves-para-repos-específicos">Definindo chaves para repos específicos</h4>
 <p>No meu caso eu trabalho com várias chaves, uma para projetos pessoais, uma para projetos na empresa que trabalho e sempre crio chaves para projetos ou freelas que eu estou fazendo.</p>
 <p>É sempre bom evitar usar a mesma chave para tudo.</p>
 <p>Mas como organizar isso?</p>
-<p>Simples edite o arquivo ~/.ssh/config e configure a chave para cada server</p>
+<p>Simples edite o arquivo ~/.ssh/config e configure a chave para cada server </p>
 <pre><code>Host nativeltrail_gitlab
   Hostname gitlab.nativetrail.io
+  User git
   IdentityFile ~/.ssh/id_ed2559_gitlab_nativetrail_key
+
+Host client_x_gitlab
+  Hostname gitlab.cliente-x.com
+  User git
+  IdentityFile ~/.ssh/id_ed2559_gitlab_clientex_key
   
 Host gitlab
   Hostname gitlab.com
+  User git
   IdentityFile ~/.ssh/id_ed2559_gitlab_key 
 
 Host github
   Hostname github.com
+  User git
   IdentityFile ~/.ssh/id_ed2559_github_key  
 </code></pre>
 <p>Pronto, diferentes chaves para diferentes servers.</p>
@@ -459,9 +467,9 @@ $ git push --tags
 <h4 id="quais-problemas-isso-pode-gerar">Quais problemas isso pode gerar?</h4>
 <p>Se alguém fez um push e você não atualizou sua branch local, os commits do coleginha serão perdidos.</p>
 <p>Se alguém fez um clone e você mandou um force removendo várias coisas, no próximo pull o coleginha vai lidar com conflitos ou coisas piores, talvez tenha até que apagar o repo e baixar novamente.</p>
-<p>Isso pode gerar algumas situações chates com seu time, tome cuidado, use com cuidado.</p>
+<p>Isso pode gerar algumas situações chatas com seu time, tome cuidado, use com cuidado.</p>
 <h3 id="30-aprenda-mais-sobre-o-git-e-pratique">30. Aprenda mais sobre o GIT e pratique</h3>
-<p>Aprender, entender e usar boas práticas vem com a prática, quanto mais ler para conhecer seus recursos, quanto mais usar, mais precisará aprender, é assim que funciona.</p>
+<p>Aprender, entender e usar boas práticas vem com a experiência do dia a dia, quanto mais ler para conhecer seus recursos, quanto mais usar, mais precisará aprender, é assim que funciona.</p>
 <p>Então vai lá e estuda!</p>
 <ul>
 <li><a href="https://git-scm.com/book/en/v2">https://git-scm.com/book/en/v2</a></li>
