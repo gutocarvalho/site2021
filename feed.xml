@@ -3,7 +3,7 @@
     <title>Guto@Site</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2022-02-12T18:43:00-03:00</updated>
+    <updated>2022-02-12T18:52:52-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
@@ -18,7 +18,7 @@
         <id>https://gutocarvalho.net/boas-praticas-git-para-pessoas-e-times/</id>
             <category term="MindNotes"/>
 
-        <updated>2022-02-12T18:43:00-03:00</updated>
+        <updated>2022-02-12T18:52:52-03:00</updated>
             <summary>
                 <![CDATA[
                     Em especial para Cloud Engineers. Para que seus commits não sejam gravados&hellip;
@@ -137,9 +137,9 @@ $ git checkout correcao_criacao_vpc
 <h3 id="8-use-branchs-de-integração">8. Use branchs de integração</h3>
 <p>Quando estamos trabalhando com integração contínua o uso de <strong>branchs</strong> de <strong>integração</strong> é fundamental, precisamos integrar nosso código com o código de nossos colegas e rodar os testes na pipeline.</p>
 <p>Geralmente temos uma branch de integração para <strong>desenvolvimento</strong> e depois vamos promovendo esse código para outras branchs que vão nos ajudar a <strong>fechar a release e publicar</strong>, tudo depende do <strong>git-flow</strong> que seu time acordou e está seguindo.</p>
-<h3 id="n-não-escreva-direto-na-branch-main">N. Não escreva direto na branch MAIN</h3>
+<h3 id="9-não-escreva-direto-na-branch-main">9. Não escreva direto na branch MAIN</h3>
 <p>Evitamos escrever direto na branch <strong>main</strong> pois geralmente é a última versão estável devidamente testada e validada por todos, é de fato a fonte da verdade, portanto, para colocar código lá devemos sempre passar por diversos testes em sua pipeline e revisões de seus colegas.</p>
-<h3 id="9-mantenha-sua-feature-branch-atualizada">9. Mantenha sua feature-branch atualizada</h3>
+<h3 id="10-mantenha-sua-feature-branch-atualizada">10. Mantenha sua feature-branch atualizada</h3>
 <p>Faça rebases regulares para garantir isso!</p>
 <p>Exemplo de atualização da branch main localmente e depois rebase</p>
 <pre><code>$ git checkout main
@@ -153,25 +153,25 @@ $ git pull
 $ git merge feature-xyz
 </code></pre>
 <p>Hoje em dia eu quase não faço merge no braço, geralmente uso MR ou PR, depende da ferramenta que estamos usando. </p>
-<h3 id="10-de-vez-em-quando-recrie-suas-branchs-de-integração">10. De vez em quando recrie suas branchs de integração</h3>
+<h3 id="11-de-vez-em-quando-recrie-suas-branchs-de-integração">11. De vez em quando recrie suas branchs de integração</h3>
 <p>Isso é legal de fazer para dar uma limpada na coisa toda e começar novamente.</p>
 <pre><code>$ git checkout main
 $ git branch -D devel
 $ git branch -u main devel
 </code></pre>
-<h3 id="11-limpe-periodicamente-branchs-de-feature">11. Limpe periodicamente branchs de feature</h3>
+<h3 id="12-limpe-periodicamente-branchs-de-feature">12. Limpe periodicamente branchs de feature</h3>
 <p>O ideal é sempre apagar suas branchs de feature ou de teste após finalizar um ticket.</p>
 <p>Apesar de ser o ideal, nem sempre lembramos, então de vez em quando é bom olhar e apagar branchs que não estão sendo usadas.</p>
 <p>Pode-se até definir um tempo de vida para branchs que não são fixas, e definindo isso podemos até criar uma automação para limpar o repo.</p>
 <h2 id="boas-práticas-com-commit">Boas práticas com commit</h2>
-<h3 id="12-corrija-as-mensagens-do-seu-commit-se-errar">12. Corrija as mensagens do seu commit se errar</h3>
+<h3 id="13-corrija-as-mensagens-do-seu-commit-se-errar">13. Corrija as mensagens do seu commit se errar</h3>
 <p>Caso perceba algum typo na sua mensagem de commit, use o amend para corrigir</p>
 <pre><code> $ git commit -v --amend
 </code></pre>
-<h3 id="13-faça-commits-pontuais-e-objetivos">13. Faça commits pontuais e objetivos</h3>
+<h3 id="14-faça-commits-pontuais-e-objetivos">14. Faça commits pontuais e objetivos</h3>
 <p>Evite fazer um commit com dezenas de arquivos, em especial se esses arquivos trazem mais de uma mudança ou correção. Devemos evitar isso pois fica difícil rastrear, entender e revisar o que foi feito no commit.</p>
 <p>Prefira fazer commits pequenos e pontuais de algo que está terminado, algo que funciona e que não traga muitas alterações de uma vez só.</p>
-<h3 id="14-faça-commits-atômicos-quando-possível">14. Faça commits atômicos quando possível</h3>
+<h3 id="15-faça-commits-atômicos-quando-possível">15. Faça commits atômicos quando possível</h3>
 <p>Já sabemos que commitar poucas alterações é o melhor caminho, mas dá para ser ainda menor.</p>
 <p>Os commits atômicos são aqueles que gravam apenas uma única mudança – ainda que envolva vários arquivos – em um único commit.</p>
 <p>É claro que nem sempre dá para fazer, mas é uma prática excelente se conseguir fazer.</p>
@@ -181,20 +181,20 @@ $ git branch -u main devel
 <li>Trabalhe em uma coisa por vez</li>
 <li>Faça alterações pequenas e pontuais</li>
 </ul>
-<h3 id="15-faça-commits-regulares-e-frequentes">15. Faça commits regulares e frequentes</h3>
+<h3 id="16-faça-commits-regulares-e-frequentes">16. Faça commits regulares e frequentes</h3>
 <p>Não espere demais!</p>
 <p>Algumas pessoas esperam demais até gravar alguma alteração, às vezes ficam ali melhorando algo que já está funcionando, buscando algum tipo de perfeição antes de gravar.</p>
 <p>Deixa eu te dizer uma coisa, o git funciona melhor e te ajuda mais quando você grava com frequência ao invés de esperar muitoooo tempo para gravar sua mudança. </p>
 <p>Ao gravar com frequência você vai rastrear inclusive como você foi melhorando aquele código ao longo do seu processo e histórico de desenvolvimento.</p>
 <p>E lembre-se, o GIT só cuida do seu código depois que você grava, se você fechar o editor por acidente ou se o editor travar, seu código já era, contudo, se estiver commitando com frequência você evita isso.</p>
-<h3 id="16-quebre-seu-commit-em-commits-menores">16. Quebre seu commit em commits menores</h3>
+<h3 id="17-quebre-seu-commit-em-commits-menores">17. Quebre seu commit em commits menores</h3>
 <p>As vezes a gente vai trabalhando e se empolga demais, fazendo mais de uma alteração em um mesmo arquivo, coisas que poderiam ser commitadas de forma separada. Se for esse o caso, o commando abaixo te permite escolher quais mudanças você deseja commitar.</p>
 <pre><code>$ git add -p &lt;filename&gt;
 </code></pre>
 <p>Assim vamos conseguir commitar pequenas porções do arquivo por vez.</p>
-<h3 id="17-não-faça-commit-de-algo-que-você-não-finalizou">17. Não faça commit de algo que você não finalizou</h3>
+<h3 id="18-não-faça-commit-de-algo-que-você-não-finalizou">18. Não faça commit de algo que você não finalizou</h3>
 <p>Nunca, eu repito, nunca grave algo que não está funcionando ou que não está completo.</p>
-<h3 id="18-teste-seu-código-antes-de-gravar">18. Teste seu código antes de gravar</h3>
+<h3 id="19-teste-seu-código-antes-de-gravar">19. Teste seu código antes de gravar</h3>
 <p>Essa é uma das coisas mais básicas que vou falar hoje, mas tem que falar e tem que fazer.</p>
 <p>Caso não saiba, gravar código quebrado é algo bastante incômodo, poderá irritar seus colegas, podendo em alguns casos chegar a ser considerado uma falta de respeito e falta de profissionalismo.</p>
 <p>Verifique a sintaxe do seu código, rode um linter e execute o código para ver se o que fez está funcionando, seja uma feature, seja um bugfix, seja um hotfix, afinal, se o código estiver funcionando e se sua solução resolver o ticket, isso será o melhor dos mundos.</p>
@@ -202,9 +202,9 @@ $ git branch -u main devel
 <ul>
 <li><a href="https://git-scm.com/docs/githooks">https://git-scm.com/docs/githooks</a></li>
 </ul>
-<h3 id="19-escreva-mensagens-de-commit-claras">19. Escreva mensagens de commit claras</h3>
+<h3 id="20-escreva-mensagens-de-commit-claras">20. Escreva mensagens de commit claras</h3>
 <p>As mensagens precisam fazer sentido e ser úteis para todos do time.</p>
-<h4 id="191-commitando-em-uma-linha">19.1 Commitando em uma linha</h4>
+<h4 id="201-commitando-em-uma-linha">20.1 Commitando em uma linha</h4>
 <p>A mensagem tem que fazer sentido, ser fácil de ler e ser suficiente para entender o que foi feito.</p>
 <h5 id="exemplos">Exemplos</h5>
 <p>Podemos usar convenções para mostrar que fizemos uma <strong>correção</strong></p>
@@ -256,7 +256,7 @@ $ git branch -u main devel
 </code></pre>
 <p>Enfim, existem longas threads sobre isso na internet, quase uma guerra santa, contudo, IMHO isso vai depender de cada um, ou da forma como cada time decidiu trabalhar.</p>
 <p>No final o importante é você versionar seu código e conseguir entender o que fez ali só lendo a mensagem de commit :)</p>
-<h4 id="192-usando-o-editor-para-algo-mais-detalhado">19.2 Usando o editor para algo mais detalhado</h4>
+<h4 id="202-usando-o-editor-para-algo-mais-detalhado">20.2 Usando o editor para algo mais detalhado</h4>
 <p>As vezes precisamos escrever mais além do “one line commit”, especialmente se foi uma correção complexa, se tem alguma pegadinha, ou explicar porque você fez aquilo daquela forma. No caso do trabalho e o dia-a-dia dos Cloud Engineers nem sempre é necessário, mas se for, veja como fazer.</p>
 <p>Nesse caso, como é uma mensagem longa, não podemos fazer commit online, temos que ir para o editor.</p>
 <pre><code>$ git commit
@@ -286,21 +286,21 @@ Esse commit resolve o problema do ticket #2222
 E está relacionado com o ticket #3333 e #4444
 </code></pre>
 <p>É bem simples!</p>
-<h3 id="20-não-reescreva-o-histórico-da-branch-principal">20. Não reescreva o histórico da branch principal</h3>
+<h3 id="21-não-reescreva-o-histórico-da-branch-principal">21. Não reescreva o histórico da branch principal</h3>
 <p>Se você já gravou o código na branch principal, e o código alterado já está disponível para outras pessoas verem, recomenda-se não alterar esse histórico.</p>
 <p>Fazer rebase na MAIN ou qualquer que seja o nome da sua branch upstream, ou mesmo em uma branch de integração pode causar problemas para seus colegas e eles podem ter que lidar com conflitos ou ter que fazer stash e baixar toda a branch novamente. Fora que normalmente alterações nessas branchs geralmente acionam gatilhos em ferramentas de CICD, o que pode gerar um deploy com regressão.</p>
 <p>Dito isso, muito cuidado com suas branchs, em especial a upstream e as branchs de integração.</p>
 <p>Na sua branch de feature você faz o que quiser, use o rebase sem problema algum, mas só nela ok?</p>
 <h2 id="boas-práticas-com-merge">Boas práticas com merge</h2>
-<h3 id="21-faça-squash-antes-de-fazer-um-merge">21. Faça squash antes de fazer um merge</h3>
+<h3 id="22-faça-squash-antes-de-fazer-um-merge">22. Faça squash antes de fazer um merge</h3>
 <p>Antes de fazer um merge verifique seu histórico de commit, veja se é possível melhorar o histórico, reduzir e juntar algumas coisas, as vezes 20 commits podem ser agrupados em 10, fica mais limpo, organizado e facilitará a revisão por seus pares.</p>
 <pre><code>$ git rebase -i HEAD~20  # apresenta os últimos 20 commits para fazer o squash
 </code></pre>
 <p>Faça o squash na sua branch de trabalho antes de mandar o PR/MR e altere apenas os seus commits ok?</p>
-<h3 id="22-use-e-abuse-de-mrs-e-prs-no-github-e-gitlab">22. Use e abuse de MRs e PRs no GitHub e GitLab</h3>
+<h3 id="23-use-e-abuse-de-mrs-e-prs-no-github-e-gitlab">23. Use e abuse de MRs e PRs no GitHub e GitLab</h3>
 <p>A vantagem de usar PR ou MR seja no GitLab ou GitHub é que você tem facilidades para fazer squash, resolver conflitos, enxergar o que mudou (diff), solicitar revisão de pares, receber comentários e então finalmente fazer o merge. São excelentes recursos e devemos usá-los pois facilitam nossa vida.</p>
 <h2 id="outras-coisas-interessantes">Outras coisas interessantes</h2>
-<h3 id="23-use-nomes-consistentes-para-seus-remotes">23. Use nomes consistentes para seus remotes</h3>
+<h3 id="24-use-nomes-consistentes-para-seus-remotes">24. Use nomes consistentes para seus remotes</h3>
 <p>Origin é um nome padrão, mas não é obrigatório tá?</p>
 <pre><code>$ git push origin main
 </code></pre>
@@ -311,7 +311,7 @@ $ git push bitbucket main
 $ git push clienteX main
 </code></pre>
 <p>Colocar um contexto no nome do remote ajuda bastante, especialmente se tem vários remotes.</p>
-<h3 id="24-prefira-autenticação-ssh-ao-invés-de-usersenha">24. Prefira autenticação SSH ao invés de user/senha</h3>
+<h3 id="25-prefira-autenticação-ssh-ao-invés-de-usersenha">25. Prefira autenticação SSH ao invés de user/senha</h3>
 <p>Autenticação chave é mais seguro, tanto que algumas ferramentas como GitHub desabilitam push sem ela.</p>
 <h4 id="criando-uma-chave-ssh-segura-ed2559">Criando uma chave ssh segura (ed2559)</h4>
 <p>Como criar um chave segura?</p>
@@ -335,7 +335,7 @@ Host github
   IdentityFile ~/.ssh/id_ed2559_github_key  
 </code></pre>
 <p>Pronto, diferentes chaves para diferentes servers.</p>
-<h3 id="25-use-e-abuse-do-gitignore">25. Use e abuse do .Gitignore</h3>
+<h3 id="26-use-e-abuse-do-gitignore">26. Use e abuse do .Gitignore</h3>
 <p>O Gitignore é um arquivo essencial em nosso repositório, é através dele que dizemos para o GIT ignorar alguns arquivos e não versioná-los.</p>
 <p>O Github traz uma bela coleção de templates para isso, veja no link abaixo:</p>
 <ul>
@@ -411,8 +411,8 @@ Temporary Items
 # Built Visual Studio Code Extensions
 *.vsix
 </code></pre>
-<h3 id="26-use-tags-para-criar-referências-no-seu-histórico">26. Use tags para criar referências no seu histórico</h3>
-<p>Tags para milestones</p>
+<h3 id="27-use-tags-para-criar-referências-no-seu-histórico">27. Use tags para criar referências no seu histórico</h3>
+<p>Tags que identificam milestones</p>
 <pre><code>$ git tag milestone-id -m
 $ git push --tags
 </code></pre>
@@ -420,12 +420,12 @@ $ git push --tags
 <pre><code>$ git tag stable -m
 $ git push --tags
 </code></pre>
-<p>Tags para versões</p>
+<p>Tags que identificam versões</p>
 <pre><code>$ git tag v1.2.3 -m
 $ git push --tags
 </code></pre>
 <p>Existem várias formas de usar tags, seu uso facilita a identificação de um momento específico em seu histórico de desenvolvimento, tal como o fechamento de uma release, a conclusão de um milestones, a identifição e uma versão, o que possibilita que façamos clone do código naquele momento exato.</p>
-<h3 id="27-se-possível-use-versionamento-semântico">27. Se possível use versionamento semântico</h3>
+<h3 id="28-se-possível-use-versionamento-semântico">28. Se possível use versionamento semântico</h3>
 <p>Caso não conheça acessa o site <a href="https://semver.org">https://semver.org</a></p>
 <p>O versionamento semântico consiste basicamente no uso de três numeros que podem ser incrementados, como o exemplo abaixo:</p>
 <pre><code>2.3.5
@@ -450,7 +450,7 @@ $ git push --tags
 <p>Como as regras sao claras fica fácil entender como incrementar a versões manualmente e podemos até mesmo automatizar isso em nossa pipeline.</p>
 <h4 id="posso-criar-o-meu-próprio-método">Posso criar o meu próprio método?</h4>
 <p>Claro, cada time pode definir seu jeito de versionar, mas lembre-se criar um repo onde você explica isso para todo mundo, em formato MD. :)</p>
-<h3 id="28-cuidado-com-push-usando-force">28. Cuidado com Push usando FORCE</h3>
+<h3 id="29-cuidado-com-push-usando-force">29. Cuidado com Push usando FORCE</h3>
 <p>Quando você manda um</p>
 <pre><code>$ git push origin main --force
 </code></pre>
@@ -460,7 +460,7 @@ $ git push --tags
 <p>Se alguém fez um push e você não atualizou sua branch local, os commits do coleginha serão perdidos.</p>
 <p>Se alguém fez um clone e você mandou um force removendo várias coisas, no próximo pull o coleginha vai lidar com conflitos ou coisas piores, talvez tenha até que apagar o repo e baixar novamente.</p>
 <p>Isso pode gerar algumas situações chates com seu time, tome cuidado, use com cuidado.</p>
-<h3 id="29-aprenda-mais-sobre-o-git-e-pratique">29. Aprenda mais sobre o GIT e pratique</h3>
+<h3 id="30-aprenda-mais-sobre-o-git-e-pratique">30. Aprenda mais sobre o GIT e pratique</h3>
 <p>Aprender, entender e usar boas práticas vem com a prática, quanto mais ler para conhecer seus recursos, quanto mais usar, mais precisará aprender, é assim que funciona.</p>
 <p>Então vai lá e estuda!</p>
 <ul>
@@ -475,11 +475,6 @@ $ git push --tags
 <li><a href="https://github.com/git-tips/tips">https://github.com/git-tips/tips</a></li>
 <li><a href="https://codeburst.io/git-tips-and-tricks-to-improve-your-git-workflow-3f8652fa4a62">https://codeburst.io/git-tips-and-tricks-to-improve-your-git-workflow-3f8652fa4a62</a></li>
 </ul>
-<p>[s]<br>
-Guto</p>
-<p>–</p>
-<p>Este post é do tipo #MindNotes, entenda <a href="https://gutocarvalho.net/o-que-sao-mindnotes/">aqui</a>.</p>
-<p>Se gostou manda um alo no twitter @gutocarvalho.</p>
 
             ]]>
         </content>
