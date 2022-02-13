@@ -3,7 +3,7 @@
     <title>Guto@Site</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2022-02-12T21:07:55-03:00</updated>
+    <updated>2022-02-12T21:08:33-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
@@ -18,15 +18,15 @@
         <id>https://gutocarvalho.net/boas-praticas-git-para-pessoas-e-times/</id>
             <category term="MindNotes"/>
 
-        <updated>2022-02-12T21:07:55-03:00</updated>
+        <updated>2022-02-12T21:08:33-03:00</updated>
             <summary>
                 <![CDATA[
-                    Em especial para Cloud Engineers. Para que seus commits não sejam gravados&hellip;
+                    30 dicas especiais para Cloud Engineers. Para que seus commits não sejam&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                <p>Em especial para Cloud Engineers.</p>
+                <p>30 dicas especiais para Cloud Engineers.</p>
 <h2 id="o-básico">O Básico</h2>
 <h3 id="1-configure-corretamente-nome-e-e-mail">1. Configure corretamente nome e e-mail</h3>
 <p>Para que seus commits <strong>não</strong> sejam gravados com autor “root” e-mail “root@root” configure esses valores iniciais assim que instalar seu GIT.</p>
