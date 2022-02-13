@@ -3,7 +3,7 @@
     <title>Guto@Site</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2022-02-12T20:46:48-03:00</updated>
+    <updated>2022-02-12T21:07:30-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
@@ -18,7 +18,7 @@
         <id>https://gutocarvalho.net/boas-praticas-git-para-pessoas-e-times/</id>
             <category term="MindNotes"/>
 
-        <updated>2022-02-12T20:46:48-03:00</updated>
+        <updated>2022-02-12T21:07:30-03:00</updated>
             <summary>
                 <![CDATA[
                     Em especial para Cloud Engineers. Para que seus commits não sejam gravados&hellip;
@@ -43,10 +43,10 @@ $ git config user.email &quot;email@domain.ext&quot;
 <pre><code> $ git config --global core.editor vim
 </code></pre>
 <h3 id="3-ative-o-autocorrect">3. Ative o autocorrect</h3>
-<p>O autocorret vai te ajudar nos erros mais comuns, afinal quem nunca digitou git stats o bramch né?</p>
+<p>O autocorrect vai te ajudar nos erros mais comuns, afinal quem nunca digitou git stats o bramch né?</p>
 <pre><code>$ git config --global help.autocorrect 10
 </code></pre>
-<p>olhe um exemplo quando digitamo BRAMCH ao invés de BRANCH</p>
+<p>olhe um exemplo quando digitamos BRAMCH ao invés de BRANCH</p>
 <pre><code>$ git bramch
 WARNING: You called a Git command named &#39;bramch&#39;, which does not exist.
 Continuing in 1.0 seconds, assuming that you meant &#39;branch&#39;.
@@ -188,12 +188,12 @@ $ git branch -u main devel
 <p>Ao gravar com frequência você vai rastrear inclusive como você foi melhorando aquele código ao longo do seu processo e histórico de desenvolvimento.</p>
 <p>E lembre-se, o GIT só cuida do seu código depois que você grava, se você fechar o editor por acidente ou se o editor travar, seu código já era, contudo, se estiver commitando com frequência você evita isso.</p>
 <h3 id="17-quebre-seu-commit-em-commits-menores">17. Quebre seu commit em commits menores</h3>
-<p>As vezes a gente vai trabalhando e se empolga demais, fazendo mais de uma alteração em um mesmo arquivo, coisas que poderiam ser commitadas de forma separada. Se for esse o caso, o commando abaixo te permite escolher quais mudanças você deseja commitar.</p>
-<pre><code>$ git add -p &lt;filename&gt;
+<p>As vezes a gente vai trabalhando e se empolga demais, e com isso acaba fazendo mais de uma alteração em um mesmo arquivo, e neste caso,  tais alteraçoes que poderiam ser commitadas de forma separada. Se for esse o caso, o commando abaixo te permite escolher quais mudanças você deseja commitar em um determinado arquivo.</p>
+<pre><code>$ git add -p &lt;nome_do_arquivo&gt;
 </code></pre>
 <p>Assim vamos conseguir commitar pequenas porções do arquivo por vez.</p>
 <h3 id="18-não-faça-commit-de-algo-que-você-não-finalizou">18. Não faça commit de algo que você não finalizou</h3>
-<p>Nunca, eu repito, nunca grave algo que não está funcionando ou que não está completo.</p>
+<p><strong>Nunca</strong>, eu repito, <strong>nunca</strong> grave algo que não está funcionando ou que não está completo.</p>
 <h3 id="19-teste-seu-código-antes-de-gravar">19. Teste seu código antes de gravar</h3>
 <p>Essa é uma das coisas mais básicas que vou falar hoje, mas tem que falar e tem que fazer.</p>
 <p>Caso não saiba, gravar código quebrado é algo bastante incômodo, poderá irritar seus colegas, podendo em alguns casos chegar a ser considerado uma falta de respeito e falta de profissionalismo.</p>
@@ -258,7 +258,7 @@ $ git branch -u main devel
 <p>No final o importante é você versionar seu código e conseguir entender o que fez ali lendo a mensagem de commit :)</p>
 <h4 id="202-usando-o-editor-para-algo-mais-detalhado">20.2 Usando o editor para algo mais detalhado</h4>
 <p>As vezes precisamos escrever um pouco mais, indo além do “one line commit”, especialmente se foi uma correção complexa, se tem alguma pegadinha, ou se for preciso explicar porque você fez aquilo daquela forma. No caso do trabalho e o dia-a-dia dos Cloud Engineers nem sempre é necessário, mas se for, veja como fazer.</p>
-<p>Nesse caso, como é uma mensagem longa, não podemos fazer commit online, temos que ir para o editor.</p>
+<p>Nesse caso, como é uma mensagem longa, não podemos fazer “one line commit”, temos que ir para o editor.</p>
 <pre><code>$ git commit
 </code></pre>
 <p>E escrever a mensagem</p>
@@ -267,7 +267,8 @@ $ git branch -u main devel
 Descrição em múltiplas linhas
 sobre seu commit. Use até 72 caracteres
 
-Outros parágrafos podem vir após inserir uma linha em branco
+Outros parágrafos podem vir após inserir 
+uma linha em branco
 Aqui nao tem mais limite de caracteres
 
 Podemos usar bullets também, ajuda a organizar a informação
@@ -312,13 +313,19 @@ $ git push clienteX main
 </code></pre>
 <p>Colocar um contexto no nome do remote ajuda bastante, especialmente se tem vários remotes.</p>
 <h3 id="25-prefira-autenticação-ssh-ao-invés-de-usersenha">25. Prefira autenticação SSH ao invés de user/senha</h3>
-<p>Autenticação chave é mais seguro, tanto que algumas ferramentas como GitHub desabilitam push sem ela.</p>
+<p>Autenticação através de chaves é mais segura, tanto que algumas ferramentas como GitHub desabilitam push em outros métodos.</p>
 <h4 id="criando-uma-chave-ssh-segura-ed2559">Criando uma chave ssh segura (ed2559)</h4>
 <p>Como criar um chave segura?</p>
 <pre><code>$ ssh-keygen -o -a 100 -t ed25519 -f ~/.ssh/nome_da_sua_chave -C “nome@domain.ext”
 </code></pre>
-<h4 id="definindo-chaves-para-repos-específicos">Definindo chaves para repos específicos</h4>
-<p>No meu caso eu trabalho com várias chaves, uma para projetos pessoais, uma para projetos na empresa que trabalho e sempre crio chaves para projetos ou freelas que eu estou fazendo.</p>
+<p>Quer saber por que usar o  ed25519?</p>
+<p>Basicamente pois é um algoritmo mais moderno que usa curvas elípiticas, mais performático comparado com outras alternativas.</p>
+<p>Se quiser saber mais mergulhe nesse post!</p>
+<ul>
+<li><a href="https://medium.com/risan/upgrade-your-ssh-key-to-ed25519-c6e8d60d3c54">https://medium.com/risan/upgrade-your-ssh-key-to-ed25519-c6e8d60d3c54</a></li>
+</ul>
+<h4 id="definindo-o-uso-de-chaves-ssh-para-repos-específicos">Definindo o uso de chaves ssh para repos específicos</h4>
+<p>No meu caso eu trabalho com várias chaves ssh, uma para projetos pessoais, uma para projetos na empresa que trabalho e sempre crio chaves para projetos ou freelas que eu estou fazendo.</p>
 <p>É sempre bom evitar usar a mesma chave para tudo.</p>
 <p>Mas como organizar isso?</p>
 <p>Simples edite o arquivo ~/.ssh/config e configure a chave para cada server </p>
@@ -342,7 +349,7 @@ Host github
   User git
   IdentityFile ~/.ssh/id_ed2559_github_key  
 </code></pre>
-<p>Pronto, diferentes chaves para diferentes servers.</p>
+<p>Pronto, diferentes chaves para diferentes servidores e serviços.</p>
 <h3 id="26-use-e-abuse-do-gitignore">26. Use e abuse do .Gitignore</h3>
 <p>O Gitignore é um arquivo essencial em nosso repositório, é através dele que dizemos para o GIT ignorar alguns arquivos e não versioná-los.</p>
 <p>O Github traz uma bela coleção de templates para isso, veja no link abaixo:</p>
@@ -354,8 +361,8 @@ Host github
 <pre><code>_site
 _temp
 _build
-.zip
-.tar.gz
+*.zip
+*.tar.gz
 </code></pre>
 <p>e pronto, seu git vai ignorar esses padroes, saiba mais na documentação:</p>
 <ul>
@@ -439,13 +446,13 @@ $ git push --tags
 <pre><code>2.3.5
 </code></pre>
 <h5 id="major">MAJOR</h5>
-<p>Deve ser incrementando quando alguma mudança causa uma quebra de compatilidade de API</p>
+<p>O primeiro número é chamado de <strong>major</strong>, ele deve ser incrementando quando alguma mudança causa uma quebra de compatilidade de API</p>
 <h5 id="minor">MINOR</h5>
-<p>Deve ser incrementado quando uma nova funcionalidade é adicionada, sem quebra de compatibilidade</p>
+<p>O segundo número é chamado de <strong>minor</strong>, ele deve ser incrementado quando uma nova funcionalidade é adicionada, sem quebra de compatibilidade</p>
 <h5 id="patch">PATCH</h5>
-<p>Deve ser incrementado quando fazemos algum tipo de correção</p>
+<p>O terceiro número é chamado de <strong>patch,</strong> ele deve ser incrementado quando fazemos algum tipo de correção na versão minor</p>
 <h5 id="buildrelease">BUILD/RELEASE</h5>
-<p>Ao ler o semver.org você verá outras possibilidades de versionar, alguns exemplos:</p>
+<p>Ao ler o semver.org você verá outras possibilidades de versionar, usando build number e release name, veja alguns exemplos:</p>
 <pre><code>1.0.0-alpha
 1.0.0-beta
 1.0.0-rc1
@@ -455,7 +462,7 @@ $ git push --tags
 </code></pre>
 <p>O versionamento semântico é bem flexível e fácil de usar, você vai ver.</p>
 <h4 id="posso-automatizar-o-incremento-de-versão">Posso automatizar o incremento de versão?</h4>
-<p>Como as regras sao claras fica fácil entender como incrementar a versões manualmente e podemos até mesmo automatizar isso em nossa pipeline.</p>
+<p>Como as regras são claras fica fácil entender como incrementar a versões manualmente e podemos até mesmo automatizar isso em nossa pipeline.</p>
 <h4 id="posso-criar-o-meu-próprio-método">Posso criar o meu próprio método?</h4>
 <p>Claro, cada time pode definir seu jeito de versionar, mas lembre-se criar um repo onde você explica isso para todo mundo, em formato MD. :)</p>
 <h3 id="29-cuidado-com-push-usando-force">29. Cuidado com Push usando FORCE</h3>
