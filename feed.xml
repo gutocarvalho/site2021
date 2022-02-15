@@ -3,12 +3,36 @@
     <title>Guto@Site</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2022-02-15T11:56:52-03:00</updated>
+    <updated>2022-02-15T15:58:17-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
     <id>https://gutocarvalho.net</id>
 
+    <entry>
+        <title>CFP para CdCon 2022</title>
+        <author>
+            <name>Guto Carvalho</name>
+        </author>
+        <link href="https://gutocarvalho.net/cfp-para-cdcon-2022/"/>
+        <id>https://gutocarvalho.net/cfp-para-cdcon-2022/</id>
+            <category term="MindNotes"/>
+
+        <updated>2022-02-15T15:58:17-03:00</updated>
+            <summary>
+                <![CDATA[
+                    Pessoal, faltam 5 dias para fechar a CFP para a CdCON Texas&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p>Pessoal, faltam 5 dias para fechar a CFP para a CdCON Texas 2022.</p>
+<p>Bora enviar propostas!<br><br><a href="https://events.linuxfoundation.org/cdcon/program/cfp/">https://events.linuxfoundation.org/cdcon/program/cfp</a></p>
+<p>Visite o site da CDCON<br><br><a href="https://events.linuxfoundation.org/cdcon">https://events.linuxfoundation.org/cdcon</a></p>
+<p>[s]<br>Guto</p>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>Conheça o Cloud Native Trail Map</title>
         <author>
@@ -870,179 +894,6 @@ Guto</p>
 <p>[s]<br>Guto<br><br>---</p>
 <p>Este post é do tipo #MindNotes, entenda <a href="https://gutocarvalho.net/o-que-sao-mindnotes/">aqui</a>.</p>
 <p>Se gostou manda um alo no twitter @gutocarvalho.</p>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>Etiqueta do trabalho remoto</title>
-        <author>
-            <name>Guto Carvalho</name>
-        </author>
-        <link href="https://gutocarvalho.net/etiqueta-do-trabalho-remoto/"/>
-        <id>https://gutocarvalho.net/etiqueta-do-trabalho-remoto/</id>
-            <category term="FalaGutera"/>
-
-        <updated>2022-02-10T12:20:37-03:00</updated>
-            <summary>
-                <![CDATA[
-                    Se você está começando a trabalhar remoto ou quer trabalhar, tem dúvidas&hellip;
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                <p>Se você está começando a trabalhar remoto ou quer trabalhar, tem dúvidas sobre como é a cultura, o modelo, a forma de se comunicar, dentre outras questões e principalmente se está curioso sobre o que fazer e o que não fazer em um trabalho remoto, esse post é para você!</p>
-<p>Eu atuo remotamente em projetos desde 2013 e compilei aqui dicas valiosas para profissionais e empresas :)</p>
-<p>Em especial para Cloud Engineers ingressando nesse modelo!</p>
-<h2 id="o-que-uma-pessoa-nao-deve-fazer">O que uma pessoa NAO DEVE fazer</h2>
-<h3 id="sobre-disponibilidade">Sobre disponibilidade</h3>
-<p>Pega muito mal</p>
-<ul>
-<li>Dar perdido e não avisar</li>
-<li>Não estar disponível nos horários combinados</li>
-<li>Aparecer só nos horários das calls e sumir depois</li>
-</ul>
-<p>Apesar de ser um trabalho remoto, se horários foram combinados eles devem ser cumpridos por todos.</p>
-<h3 id="em-relação-a-bloqueios">Em relação a bloqueios</h3>
-<ul>
-<li>Ter problemas de foco e não avisar ou pedir ajuda</li>
-<li>Ficar bloqueado mais de 4 horas e nao pedir ajuda</li>
-<li>Ficar bloqueado mais de 1 dia e não pedir ajuda</li>
-</ul>
-<p>Pedir ajuda é importante e saber quando pedir ajuda também.</p>
-<h3 id="em-relação-seu-time">Em relação seu time</h3>
-<ul>
-<li>Não dedicar parte do seu tempo para ensinar aos mais novos</li>
-<li>Não ajudar os novos membros com ISSUES e INCIDENTES</li>
-<li>Não ajudar no mapeamento de melhorias e inovações</li>
-<li>Pedir para trocar ONCALL sempre que é sua vez</li>
-</ul>
-<p>Fazer parte de um time significa ajudá-lo sempre que possível. Ajudar quem está chegando é educado, importante e humano de se fazer.</p>
-<h3 id="em-relação-a-críticas-e-feedbacks">Em relação a críticas e feedbacks</h3>
-<p>Criticar publicamente colegas ou superiores durante uma reunião <strong>regular</strong> pode gerar um climão que não vai afetar só você, isso geralmente acaba com o dia de todo mundo, devemos evitar ao máximo esse tipo de situação e agir com maturidade.</p>
-<p>Tem alguma coisa que acha que possa melhorar na empresa?</p>
-<ul>
-<li>Organize a ideia e apresente no momento mais adequado como uma retrospectiva</li>
-</ul>
-<p>Tem um problema com algum colega? </p>
-<ul>
-<li>Chame ele para uma conversa one-a-one</li>
-</ul>
-<p>Não resolveu?</p>
-<ul>
-<li>Chame seu manager e peça ajuda.</li>
-</ul>
-<p>Tem problema com seu manager?</p>
-<ul>
-<li>Chame para conversa one-a-one, se precisar escale.</li>
-</ul>
-<p>Nem sempre conseguimos evitar conflitos, mas podemos ao menos tentar encaminhar questões de formas que surtam mais efeito em espaços e momentos mais adequados que respeitem o tempo e o trabalho de todos.</p>
-<h3 id="não-se-preparar-adequadamente">Não se preparar adequadamente</h3>
-<p>Pega mal</p>
-<ul>
-<li>Não se vestir de forma adequada para reuniões</li>
-<li>Não abrir a camera nas reuniões, especialmente na sua vez</li>
-<li>Não ter iluminação minimamente adequada para usar a camera</li>
-</ul>
-<p>Apesar de estarmos em casa, estamos trabalhando e precisamos nos preparar para isso da melhor forma que pudermos.</p>
-<h3 id="em-relação-a-problemas-técnicos">Em relação a problemas técnicos</h3>
-<p>Pega muito mal se acontece sempre</p>
-<ul>
-<li>Computador ou navegador ficar travando durante reuniões</li>
-<li>Microfone ficar falhando quando você for falar</li>
-<li>Webcam não funcionar na sua vez</li>
-</ul>
-<p>Problemas acontecem, nós entedemos, mas quando acontecerem você deve tomar ações para que eles não voltem a acontecer, especialmente ser for uma questão técnica que pode ser evitada com uma manutenção corretiva ou uma troca de equipamento ou dispositivo.</p>
-<p>Se for um problema de configuração (software) peça ajuda para seu time, se for problema em um equipamento (hardware) fale com sua empresa, certamente ela vai te ajudar.</p>
-<p>Em relação a abrir a câmera, entenda que já estamos no modelo remoto, geograficamente distribuídos, abrir a câmera, ao menos na sua vez de falar é educado e ajuda a reduzir a sensação de distânciamento e isolamento, recomendo.</p>
-<h3 id="em-relação-ao-uso-de-chat">Em relação ao uso de chat</h3>
-<p>Pega mal</p>
-<ul>
-<li>Usar o canal GENERAL como se fosse o OFFTOPIC</li>
-<li>Usar o canal do time como se fosse OFFTOPIC</li>
-<li>Fazer SPAM nos canais da empresa</li>
-</ul>
-<h3 id="sobre-atrasos-recorrentes">Sobre atrasos recorrentes</h3>
-<p>Pega muito mal</p>
-<ul>
-<li>Não responder no chat quando pedirem sua opinião</li>
-<li>Demorar muito para responder no chat quando te chamam</li>
-<li>Chegar atrasado nas reuniões diárias ou regulares da empresa</li>
-<li>Sempre esquecer de avisar que vai se atrasar ou furar uma call</li>
-</ul>
-<p>Se for atrasar avise, se não for participar avise, é remoto mas como já disse, se combinou horário e disponibilidade é preciso cumprir. Se atrasar constantemente, esquecer de avisar, isso pega mal, muito mal.</p>
-<h3 id="comportamentos-técnicos">Comportamentos técnicos</h3>
-<p>Pegal mal</p>
-<ul>
-<li>Não usar THREADS no CHAT, dificultando entender o contexto</li>
-<li>Postar código no CHAT sem formatar ou usar highlight </li>
-<li>Não versionar corretamente seu trabalho</li>
-<li>Não ter cuidado com as mensagens de commit</li>
-<li>Não ter cuidado no merge do seu código</li>
-<li>Fazer commit com –FORCE em branchs de integração<ul>
-<li>Isso pode apagar commits de seus coleguinhas</li>
-</ul>
-</li>
-<li>Não comentar nas ISSUES seu progresso diário</li>
-<li>Não criar ISSUES quando vai fazer algo</li>
-<li>Não documentar processos que só você sabe fazer</li>
-<li>Não documentar procedimentos que só você sabe fazer</li>
-<li>Nao documentar ambientes que só você conhece</li>
-<li>Usar ferramental que não é padrão do seu time</li>
-<li>Fazer coisas manualmente em um time de automação</li>
-<li>Não avisar o time que fez algo manualmente</li>
-</ul>
-<p>Lembre-se que você não trabalha sozinho e todos precisam entender o que você está falando, fazendo e também o que fez. É preciso tomar cuidado para que alguma alteração sua não afete o trabalho de outro colega e documente tudo que puder, isso ajuda a todos.</p>
-<h2 id="o-que-uma-pessoa-deve-fazer-sempre">O que uma pessoa DEVE FAZER SEMPRE</h2>
-<ul>
-<li>Avisar no canal do seu time seu progressor diariamente</li>
-<li>Sempre usar THREADS nos chats :)</li>
-<li>Manter assuntos OFFTOPIC no canal OFFTOPIC :)</li>
-<li>Pedir ajudar sempre que precisar, sem medo</li>
-<li>Ser honesto sobre qualquer situação ou problema</li>
-<li>Estar sempre disponível no horário combinado</li>
-<li>Participar das reuniões que for convidado</li>
-<li>Estar presente e se fazer presente para o time e para a empresa</li>
-<li>Ajudar o time como um todo, especialmente se estiver livre</li>
-<li>Ajudar os novos membros do time a ter o mesmo entendimento</li>
-<li>Atuar na solução de conflitos ou problemas se houver</li>
-<li>Compartilhar seu conhecimento sempre que possível</li>
-</ul>
-<h2 id="o-que-a-empresa-nao-deve-fazer">O que a empresa NAO DEVE FAZER</h2>
-<p>Pega mal</p>
-<ul>
-<li>Pedir para instalar software de vigilância</li>
-<li>Demonstrar desconfiança excessiva com seus colaboradores</li>
-<li>Ficar monitorando para ver se a pessoa está na frente do computador ou não</li>
-<li>Pedir para logar cada atividade, em especial se não for um contrato por horas</li>
-<li>Atravessar o manager e tentar resolver algo direto com alguém do time dele</li>
-</ul>
-<p>Pega mal e não faz sentido</p>
-<ul>
-<li>Reclamar de problemas que o colaborador nao pode resolver<ul>
-<li>Problemas no fornecimento de energia</li>
-<li>Problemas na disponibilidade de sinal internet</li>
-</ul>
-</li>
-</ul>
-<p>Alguns colaboradores não moram em grandes centros e podem ter que conviver com falta de energia que geralmente ocasiona em falta de sinal de internet por tabela. É claro que o colaborador pode tentar mitigar com uso de nobreaks e até tentar usar o 4g se estiver disponível, mas são coisas que fogem do controle e poder de decisão do colaborador. Nesse caso o bom senso é o melhor caminho, foco nas entregas do colaborador e não nos problemas com provedores de serviços públicos que ele tem. Ele preferia não ter, acredite.</p>
-<h2 id="o-que-a-empresa-deve-fazer-sempre">O que a empresa DEVE FAZER SEMPRE</h2>
-<p>Pega bem!</p>
-<ul>
-<li>Agir com respeito sempre</li>
-<li>Demonstrar confiança nos líderes e colaboradores</li>
-<li>Estimular e proporcionar a autonomia dos colaboradores</li>
-<li>Estimular e garantir a autonomia dos líderes para com seus times</li>
-<li>Oferecer recursos adequados para o trabalho de todos</li>
-<li>Proprocionar um ambiente seguro, humano e livre de assédio</li>
-<li>Dar autonomia para o líder/manager cuidar dos horários do time</li>
-<li>Focar em valor gerado e nao em relógio de ponto</li>
-</ul>
-<p>[s]<br>
-Guto</p>
-<p>— </p>
-<p>Este post usa a tag #FalaGutera, <a href="https://gutocarvalho.net/sobre-o-que-e-a-tag-falagutera/">entenda</a> aqui.</p>
-<p>Se gostou manda um alo no twitter <a href="https://twitter.com/gutocarvalho">@gutocarvalho</a>.</p>
-
             ]]>
         </content>
     </entry>
