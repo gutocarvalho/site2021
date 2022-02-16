@@ -3,7 +3,7 @@
     <title>Guto@Site</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2022-02-16T17:19:34-03:00</updated>
+    <updated>2022-02-16T17:23:02-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
@@ -18,15 +18,16 @@
         <id>https://gutocarvalho.net/entendendo-o-kubernetes-and-cloud-native/</id>
             <category term="TLDR"/>
 
-        <updated>2022-02-16T17:19:34-03:00</updated>
+        <updated>2022-02-16T17:23:02-03:00</updated>
             <summary>
                 <![CDATA[
-                    Me siga no twitter @gutocarvalho e acompanhe meus posts sobre Cloud Native&hellip;
+                    Bora entender isso e ficar na mesma página? Vem com a gente!&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                <p>Me siga no twitter <a href="https://twitter.com/gutocarvalho">@gutocarvalho</a> e acompanhe meus posts sobre Cloud Native e CI/CD.</p>
+                <p>Bora entender isso e ficar na mesma página? Vem com a gente!</p>
+<p>Me siga no twitter <a href="https://twitter.com/gutocarvalho">@gutocarvalho</a> e acompanhe meus posts sobre Cloud Native e CI/CD.</p>
 <p>Siga a <a href="https://twitter.com/CDeliveryFdn">CD Foundation</a> e <a href="https://twitter.com/cloudnativefdn">Cloud Native Foundation</a> no twitter.</p>
 <p>Revisor: <a href="https://twitter.com/rkpegoraro">Ricardo Pegoraro</a></p>
 <h2 id="o-que-é">O que é?</h2>
