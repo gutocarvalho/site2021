@@ -3,7 +3,7 @@
     <title>Guto@Site</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2022-02-15T15:58:17-03:00</updated>
+    <updated>2022-02-16T08:55:52-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
@@ -42,7 +42,7 @@
         <id>https://gutocarvalho.net/conheca-o-cloud-native-trail-map/</id>
             <category term="MindNotes"/>
 
-        <updated>2022-02-15T11:54:40-03:00</updated>
+        <updated>2022-02-16T08:55:52-03:00</updated>
             <summary>
                 <![CDATA[
                     <p>Saiba como iniciar sua jornada <a href="https://raw.githubusercontent.com/cncf/trailmap/master/CNCF_TrailMap_latest.png"><strong>Cloud Native</strong></a>!</p>
@@ -53,7 +53,11 @@
             <![CDATA[
                 <p>Saiba como iniciar sua jornada <a href="https://raw.githubusercontent.com/cncf/trailmap/master/CNCF_TrailMap_latest.png"><strong>Cloud Native</strong></a>!</p>
 
-<figure class="post__image">Esse mapa sugere um caminho com 10 passos para você entrar no mundo Cloud Native sempre utilizando tecnologias open source para sua jornada.<br><br>Abaixo do mapa eu comento livremente passo a passo! :)<br><br><img loading="lazy"  src="https://gutocarvalho.net/media/posts/111/CNCF_TrailMap_2022-02-15-2.png" sizes="(min-width: 61.3125em) 50vw, 100vw" srcset="https://gutocarvalho.net/media/posts/111/responsive/CNCF_TrailMap_2022-02-15-2-xs.png 300w ,https://gutocarvalho.net/media/posts/111/responsive/CNCF_TrailMap_2022-02-15-2-sm.png 480w ,https://gutocarvalho.net/media/posts/111/responsive/CNCF_TrailMap_2022-02-15-2-md.png 768w"  alt="Cloud Native Trail Map" width="7653" height="8869"></figure>
+<p>Me siga no twitter <a href="https://twitter.com/gutocarvalho">@gutocarvalho</a> e acompanhe meus posts sobre Cloud Native e CI/CD.</p>
+<p>Siga a <a href="https://twitter.com/CDeliveryFdn">CD Foundation</a> e <a href="https://twitter.com/cloudnativefdn">Cloud Native Foundation</a> no twitter.</p>
+<p>Revisor: <a href="https://twitter.com/rkpegoraro">Ricardo Pegoraro</a></p>
+<hr>
+<figure class="post__image"><br>Esse mapa sugere um caminho com 10 passos para você entrar no mundo Cloud Native sempre utilizando tecnologias open source para sua jornada.<br><br>Abaixo do mapa eu comento livremente passo a passo! :)<br><br><img loading="lazy"  src="https://gutocarvalho.net/media/posts/111/CNCF_TrailMap_2022-02-15-2.png" sizes="(min-width: 61.3125em) 50vw, 100vw" srcset="https://gutocarvalho.net/media/posts/111/responsive/CNCF_TrailMap_2022-02-15-2-xs.png 300w ,https://gutocarvalho.net/media/posts/111/responsive/CNCF_TrailMap_2022-02-15-2-sm.png 480w ,https://gutocarvalho.net/media/posts/111/responsive/CNCF_TrailMap_2022-02-15-2-md.png 768w"  alt="Cloud Native Trail Map" width="7653" height="8869"></figure>
 <p class="part" title="" data-startline="10" data-endline="10" data-position="283" data-size="0" data-original-title="" aria-describedby="popover429228"><strong data-position="283" data-size="0"><span data-position="285" data-size="24">Passo 1: Containerização</span></strong></p>
 <div id="popover429228" class="popover selection-popover top in">
 <div class="arrow"><span style="color: var(--text-editor-body-color); font-family: var(--font-base); font-size: inherit; font-weight: var(--font-weight-normal);"><br>Aqui nesse passo a ideia é atuar para que sua aplicação rode em containers. No futuro é interessante pensar em desacoplar sua APP para rodar pequenas partes do seu software de forma separada usando o conceito de <strong>microserviços</strong>.</span></div>
@@ -95,7 +99,10 @@
 <p class="part in-view" data-startline="83" data-endline="83" data-position="5384" data-size="0"><span data-position="5384" data-size="121">Caso precise distribuir software de forma segura, o projeto <strong>Notary</strong>, baseado no <strong>TUF</strong> (The Update Framework) pode te ajudar.</span></p>
 <p class="part in-view" data-startline="85" data-endline="85" data-position="5507" data-size="0"><strong>Quer ver o mapa atualizado?</strong></p>
 <p class="part in-view" data-startline="87" data-endline="87" data-position="5536" data-size="0"><a href="https://raw.githubusercontent.com/cncf/trailmap/master/CNCF_TrailMap_latest.png" target="_blank" rel="noopener"><span data-position="5536" data-size="79">https://raw.githubusercontent.com/cncf/trailmap/master/CNCF_TrailMap_latest.png</span></a></p>
-<p class="part in-view" data-startline="89" data-endline="90" data-position="5617" data-size="0"><span data-position="5617" data-size="3">[s]</span><br><span data-position="5621" data-size="4">Guto</span></p>
+<p class="part in-view" data-startline="89" data-endline="90" data-position="5617" data-size="0"><span data-position="5617" data-size="3">[s]</span><br><span data-position="5621" data-size="4">Guto<br><br>--</span></p>
+<p>Este post é do tipo #MindNotes, entenda <a href="https://gutocarvalho.net/o-que-sao-mindnotes/">aqui</a>.</p>
+<p>Se gostou manda um alo no twitter <a href="https://twitter.com/gutocarvalho">@gutocarvalho</a>.</p>
+<p class="part in-view" data-startline="89" data-endline="90" data-position="5617" data-size="0"><span data-position="5621" data-size="4"> </span></p>
             ]]>
         </content>
     </entry>
@@ -108,7 +115,7 @@
         <id>https://gutocarvalho.net/conheca-o-cloud-native-landscape/</id>
             <category term="MindNotes"/>
 
-        <updated>2022-02-15T11:56:52-03:00</updated>
+        <updated>2022-02-16T08:55:46-03:00</updated>
             <summary>
                 <![CDATA[
                     <p>Entenda para que serve e como usar!</p>
@@ -119,9 +126,15 @@
             <![CDATA[
                 <p>Entenda para que serve e como usar!</p>
 
-<figure class="post__image">Fala pessoa, tudo em paz?<br><br>Talvez você já tenha visto o Cloud Native Landscape, mas ainda tem dúvidas sobre ele.<br><br><img loading="lazy"  src="https://gutocarvalho.net/media/posts/112/Screen-Shot-2022-02-15-at-10.11.44.png" sizes="(min-width: 61.3125em) 50vw, 100vw" srcset="https://gutocarvalho.net/media/posts/112/responsive/Screen-Shot-2022-02-15-at-10.11.44-xs.png 300w ,https://gutocarvalho.net/media/posts/112/responsive/Screen-Shot-2022-02-15-at-10.11.44-sm.png 480w ,https://gutocarvalho.net/media/posts/112/responsive/Screen-Shot-2022-02-15-at-10.11.44-md.png 768w"  alt="" width="1917" height="876"></figure>
+<p>Me siga no twitter <a href="https://twitter.com/gutocarvalho">@gutocarvalho</a> e acompanhe meus posts sobre Cloud Native e CI/CD.</p>
+<p>Siga a <a href="https://twitter.com/CDeliveryFdn">CD Foundation</a> e <a href="https://twitter.com/cloudnativefdn">Cloud Native Foundation</a> no twitter.</p>
+<p>Revisor: <a href="https://twitter.com/rkpegoraro">Ricardo Pegoraro</a><br><br><br></p>
+<hr>
+<figure class="post__image"><br><br>Fala pessoa, tudo em paz?<br><br>Talvez você já tenha visto o Cloud Native Landscape, mas ainda tem dúvidas sobre ele.<br><br><img loading="lazy"  src="https://gutocarvalho.net/media/posts/112/Screen-Shot-2022-02-15-at-10.11.44.png" sizes="(min-width: 61.3125em) 50vw, 100vw" srcset="https://gutocarvalho.net/media/posts/112/responsive/Screen-Shot-2022-02-15-at-10.11.44-xs.png 300w ,https://gutocarvalho.net/media/posts/112/responsive/Screen-Shot-2022-02-15-at-10.11.44-sm.png 480w ,https://gutocarvalho.net/media/posts/112/responsive/Screen-Shot-2022-02-15-at-10.11.44-md.png 768w"  alt="" width="1917" height="876"></figure>
 <p><strong>Para que serve isso?</strong><br><br>Esse landscape é um grande mapa de projetos que compõe esse universo <strong>Cloud Native</strong>, são centenas de <strong>projetos open source</strong> em constante expansão através de <strong>contribuições</strong> de suas <strong>comunidades</strong>.<br><br>O Landscape é uma grande vitrine de projetos. Essa vitrine te ajuda a encontrar soluções open source para seu projeto Cloud Native de forma simples e fácil.<br><br><strong>Como está organizado?</strong><br><br>O Landscape está separado em categorias e sub-categorias, sendo elas:<br><br>- <strong>App Definition And Development</strong><br>  - Database<br>  - Streaming &amp; Messaging<br>  - Application Definition &amp; Image Build<br>  - Continuous Integration &amp; Delivery<br><br><br>- <strong>Orchestration &amp; Management</strong><br>  - Scheduling &amp; Orchestration<br>  - Coordination &amp; Service Discovery<br>  - Remote Procedure Call<br>  - Service Proxy<br>  - API Gateway<br>  - Service Mesh<br><br>- <strong>Runtime</strong><br>  - Cloud Native Storage<br>  - Container Runtime<br>  - Cloud Native Network<br><br>- <strong>Provisioning</strong><br>  - Automation &amp; Configuration<br>  - Container Registry<br>  - Security &amp; Compliance<br>  - Key Management<br><br>- <strong>Special</strong><br>  - Kubernetes Certified Service Provider<br>  - Kubernetes Training Partner<br><br>- <strong>Plataform</strong><br>  - Certified Kubernetes Distribuition<br>  - Certified Kubernetes Hosted<br>  - Certified Kubernetes Installer<br><br>- <strong>Observabilty &amp; Analysis</strong><br>  - Monitoring<br>  - Logging<br>  - Tracing<br>  - Chaos Engineering<br><br><strong> Outros Landscapes<br></strong><br>E ainda temos dois projetos separados que também tem seus próprios landscapes<br>  <br>  - <strong><a href="https://landscape.cncf.io/serverless">Serverless</a></strong> Landscape<br>  - <strong><a href="https://landscape.cd.foundation/">CD.Foundation</a></strong> Landscape</p>
-<p><strong>Bora para os sites?</strong><br><br>Acesse o <a href="https://landscape.cncf.io/">CNCF</a> Landspace<br>Acesse o <a href="https://landscape.cncf.io/serverless">Serverless</a> Landscape<br>Acesse o <a href="https://landscape.cd.foundation/">CD.Foundation</a> Landscape<br><br>[s]<br>Guto</p>
+<p><strong>Bora para os sites?</strong><br><br>Acesse o <a href="https://landscape.cncf.io/">CNCF</a> Landspace<br>Acesse o <a href="https://landscape.cncf.io/serverless">Serverless</a> Landscape<br>Acesse o <a href="https://landscape.cd.foundation/">CD.Foundation</a> Landscape<br><br>[s]<br>Guto<br><br>--</p>
+<p>Este post é do tipo #MindNotes, entenda <a href="https://gutocarvalho.net/o-que-sao-mindnotes/">aqui</a>.</p>
+<p>Se gostou manda um alo no twitter <a href="https://twitter.com/gutocarvalho">@gutocarvalho</a>.</p>
             ]]>
         </content>
     </entry>
@@ -134,7 +147,7 @@
         <id>https://gutocarvalho.net/boas-praticas-git-para-pessoas-e-times/</id>
             <category term="MindNotes"/>
 
-        <updated>2022-02-12T21:08:33-03:00</updated>
+        <updated>2022-02-16T08:46:26-03:00</updated>
             <summary>
                 <![CDATA[
                     30 dicas especiais para Cloud Engineers. Para que seus commits não sejam&hellip;
@@ -606,6 +619,10 @@ $ git push --tags
 <li><a href="https://github.com/git-tips/tips">https://github.com/git-tips/tips</a></li>
 <li><a href="https://codeburst.io/git-tips-and-tricks-to-improve-your-git-workflow-3f8652fa4a62">https://codeburst.io/git-tips-and-tricks-to-improve-your-git-workflow-3f8652fa4a62</a></li>
 </ul>
+<p>[s]<br>
+Guto</p>
+<p>Este post é do tipo #MindNotes, entenda <a href="https://gutocarvalho.net/o-que-sao-mindnotes/">aqui</a>.</p>
+<p>Se gostou manda um alo no twitter <a href="https://twitter.com/gutocarvalho">@gutocarvalho</a>.</p>
 
             ]]>
         </content>
@@ -619,7 +636,7 @@ $ git push --tags
         <id>https://gutocarvalho.net/entendendo-vcs-centralizado-e-distribuido/</id>
             <category term="MindNotes"/>
 
-        <updated>2022-02-12T18:42:45-03:00</updated>
+        <updated>2022-02-16T08:45:53-03:00</updated>
             <summary>
                 <![CDATA[
                     Essa é outra daquelas perguntinhas marotas de entrevistas, bora entender isso direitinho&hellip;
@@ -663,7 +680,7 @@ $ git push --tags
 Guto</p>
 <p>–</p>
 <p>Este post é do tipo #MindNotes, entenda <a href="https://gutocarvalho.net/o-que-sao-mindnotes/">aqui</a>.</p>
-<p>Se gostou manda um alo no twitter @gutocarvalho.</p>
+<p>Se gostou manda um alo no twitter <a href="https://twitter.com/gutocarvalho">@gutocarvalho</a>.</p>
 
             ]]>
         </content>
@@ -677,7 +694,7 @@ Guto</p>
         <id>https://gutocarvalho.net/entendendo-o-que-e-three-tier-application/</id>
             <category term="MindNotes"/>
 
-        <updated>2022-02-10T20:12:13-03:00</updated>
+        <updated>2022-02-16T08:45:45-03:00</updated>
             <summary>
                 <![CDATA[
                     Se você está se inscrevendo para vagas de Cloud Engineer ou DevOps&hellip;
@@ -715,6 +732,8 @@ Guto</p>
 </ul>
 <p>[s]<br>
 Guto</p>
+<p>Este post é do tipo #MindNotes, entenda <a href="https://gutocarvalho.net/o-que-sao-mindnotes/">aqui</a>.</p>
+<p>Se gostou manda um alo no twitter <a href="https://twitter.com/gutocarvalho">@gutocarvalho</a>.</p>
 
             ]]>
         </content>
@@ -728,7 +747,7 @@ Guto</p>
         <id>https://gutocarvalho.net/entendendo-diferenca-entre-lb-tipo-l4-e-l7/</id>
             <category term="MindNotes"/>
 
-        <updated>2022-02-11T08:42:38-03:00</updated>
+        <updated>2022-02-16T08:45:34-03:00</updated>
             <summary>
                 <![CDATA[
                     A ideia aqui é falar sobre a diferença de Load Balancer (LB)&hellip;
@@ -783,7 +802,7 @@ Guto</p>
 Guto</p>
 <p>–</p>
 <p>Este post é do tipo #MindNotes, entenda <a href="https://gutocarvalho.net/o-que-sao-mindnotes/">aqui</a>.</p>
-<p>Se gostou manda um alo no twitter @gutocarvalho.</p>
+<p>Se gostou manda um alo no twitter <a href="https://twitter.com/gutocarvalho">@gutocarvalho</a>.</p>
 
             ]]>
         </content>
@@ -797,7 +816,7 @@ Guto</p>
         <id>https://gutocarvalho.net/entendendo-o-dogpile-effect/</id>
             <category term="MindNotes"/>
 
-        <updated>2022-02-10T19:40:18-03:00</updated>
+        <updated>2022-02-16T08:45:19-03:00</updated>
             <summary>
                 <![CDATA[
                     Se você está se inscrevendo para vagas de Cloud Engineer ou DevOps&hellip;
@@ -824,7 +843,7 @@ Guto</p>
 Guto</p>
 <p>–</p>
 <p>Este post é do tipo #MindNotes, entenda <a href="https://gutocarvalho.net/o-que-sao-mindnotes/">aqui</a>.</p>
-<p>Se gostou manda um alo no twitter @gutocarvalho.</p>
+<p>Se gostou manda um alo no twitter <a href="https://twitter.com/gutocarvalho">@gutocarvalho</a>.</p>
 
             ]]>
         </content>
@@ -878,7 +897,7 @@ Guto</p>
         <id>https://gutocarvalho.net/novos-slidedecks-publicados/</id>
             <category term="MindNotes"/>
 
-        <updated>2022-02-10T12:52:01-03:00</updated>
+        <updated>2022-02-16T08:44:55-03:00</updated>
             <summary>
                 <![CDATA[
                     <p>Só vem ver o conteúdo, tá bacana!</p>
@@ -893,7 +912,7 @@ Guto</p>
 <div class="post__iframe"><iframe loading="lazy" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 560px; height: 314px;" class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/89925d0e218844bf96aceb1791f0eacb" title="EKS DR Investigation" allowfullscreen="allowfullscreen" mozallowfullscreen="mozallowfullscreen" webkitallowfullscreen="webkitallowfullscreen" data-ratio="1.78343949044586"></iframe></div> <br><br><strong>Apresentação sobre comparação entre service meshes Istio e Linkerd</strong> <br><br><div class="post__iframe"><iframe loading="lazy" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 560px; height: 314px;" class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/de8fd85d7de04f2da815b7475aba8dce" title="Service Mesh: Istio vs Linkerd" allowfullscreen="allowfullscreen" mozallowfullscreen="mozallowfullscreen" webkitallowfullscreen="webkitallowfullscreen" data-ratio="1.78343949044586"></iframe></div>
 <p>[s]<br>Guto<br><br>---</p>
 <p>Este post é do tipo #MindNotes, entenda <a href="https://gutocarvalho.net/o-que-sao-mindnotes/">aqui</a>.</p>
-<p>Se gostou manda um alo no twitter @gutocarvalho.</p>
+<p>Se gostou manda um alo no twitter <a href="https://twitter.com/gutocarvalho">@gutocarvalho</a>.</p>
             ]]>
         </content>
     </entry>
