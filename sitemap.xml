@@ -38,7 +38,7 @@
 </url>
 <url>
 <loc>https://gutocarvalho.net/boas-praticas-git-para-pessoas-e-times/</loc>
-<lastmod>2022-02-16T08:46:26-03:00</lastmod>
+<lastmod>2022-02-16T17:17:23-03:00</lastmod>
 </url>
 <url>
 <loc>https://gutocarvalho.net/brew-tipsgreater-broot/</loc>
@@ -175,6 +175,10 @@
 <url>
 <loc>https://gutocarvalho.net/entendendo-o-dogpile-effect/</loc>
 <lastmod>2022-02-16T08:45:19-03:00</lastmod>
+</url>
+<url>
+<loc>https://gutocarvalho.net/entendendo-o-kubernetes-and-cloud-native/</loc>
+<lastmod>2022-02-16T17:19:34-03:00</lastmod>
 </url>
 <url>
 <loc>https://gutocarvalho.net/entendendo-o-que-e-three-tier-application/</loc>
@@ -322,7 +326,7 @@
 </url>
 <url>
 <loc>https://gutocarvalho.net/lognumber20210613/</loc>
-<lastmod>2021-06-14T23:52:25-03:00</lastmod>
+<lastmod>2022-02-16T09:09:53-03:00</lastmod>
 <image:image>
 <image:loc>https://gutocarvalho.net/media/posts/26/allie-smile-2.jpg</image:loc>
 <image:title><![CDATA[]]></image:title>
@@ -378,7 +382,7 @@
 </url>
 <url>
 <loc>https://gutocarvalho.net/o-que-sao-tldrs/</loc>
-<lastmod>2022-01-06T11:01:53-03:00</lastmod>
+<lastmod>2022-02-16T17:18:41-03:00</lastmod>
 </url>
 <url>
 <loc>https://gutocarvalho.net/organizando-e-tornando-o-kubeconfig-interativo/</loc>
