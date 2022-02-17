@@ -3,7 +3,7 @@
     <title>Guto@Site</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2022-02-17T20:29:19-03:00</updated>
+    <updated>2022-02-17T20:32:05-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
@@ -18,15 +18,18 @@
         <id>https://gutocarvalho.net/minha-stack-com-cloud-engineer-em-20022/</id>
             <category term="MindNotes"/>
 
-        <updated>2022-02-17T20:29:19-03:00</updated>
+        <updated>2022-02-17T20:32:05-03:00</updated>
             <summary>
                 <![CDATA[
-                    As vezes me perguntam o que eu estou usando ou uso no&hellip;
+                    Me siga no twitter @gutocarvalho e acompanhe meus posts sobre Kubernetes, Cloud&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                <p>As vezes me perguntam o que eu estou usando ou uso no meu dia-a-dia.</p>
+                <p>Me siga no twitter <a href="https://twitter.com/gutocarvalho">@gutocarvalho</a> e acompanhe meus posts sobre Kubernetes, Cloud Native e CI/CD.</p>
+<p>Aproveite e siga também a <a href="https://twitter.com/CDeliveryFdn">CD Foundation</a> e <a href="https://twitter.com/cloudnativefdn">Cloud Native Foundation</a>.</p>
+<hr>
+<p>As vezes me perguntam o que eu estou usando ou uso no meu dia-a-dia.</p>
 <p>Bora lá descobrir!</p>
 <h4 id="para-orquestrar-infra-em-provedores-de-nuvem">Para orquestrar Infra em provedores de nuvem?</h4>
 <ul>
@@ -175,8 +178,11 @@
 <h2 id="amarrando-as-pontas">Amarrando as pontas</h2>
 <p>Acho que é isso. A lista é longa e mostra como o Cloud Enginner tem que ser flexível e estudar muito para integrar tudo e manter sua aplicação rodando em nuvem da forma mais estável, saudável, performática e segura possível ;)</p>
 <p>Volto para atualizar se tiver mais alguma coisa em mente!</p>
-<p>[s]
+<p>[s]<br>
 Guto</p>
+<p>–</p>
+<p>Este post é do tipo #MindNotes, entenda <a href="https://gutocarvalho.net/o-que-sao-mindnotes/">aqui</a>.</p>
+<p>Se gostou manda um alo no twitter <a href="https://twitter.com/gutocarvalho">@gutocarvalho</a>.</p>
 
             ]]>
         </content>
