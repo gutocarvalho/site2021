@@ -3,7 +3,7 @@
     <title>Guto@Site</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2022-02-16T17:23:02-03:00</updated>
+    <updated>2022-02-17T07:14:55-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
@@ -18,7 +18,7 @@
         <id>https://gutocarvalho.net/entendendo-o-kubernetes-and-cloud-native/</id>
             <category term="TLDR"/>
 
-        <updated>2022-02-16T17:23:02-03:00</updated>
+        <updated>2022-02-17T07:14:55-03:00</updated>
             <summary>
                 <![CDATA[
                     Bora entender isso e ficar na mesma página? Vem com a gente!&hellip;
@@ -35,15 +35,15 @@
 <p>Com o kubernetes podemos automatizar a implantação de nosso software integrando nossa pipeline com um cluster de containers, conseguindo assim entregar nosso software de maneira rápida e controlada.</p>
 <h2 id="origens">Origens</h2>
 <p>Em 2014 o google liberou um projeto open source interno que orquestrava containers, ele foi a base para o Kubernetes.</p>
-<h4 id="curiosidades-sobre-as-origens">Curiosidades sobre as origens</h4>
+<h3 id="curiosidades-sobre-as-origens">Curiosidades sobre as origens</h3>
 <p>No Google, internamente o projeto se chamava BORG.</p>
 <p>O projeto BORG foi reescrito em GO e foi rebatizado de Kubernetes.</p>
 <p>Kubernetes significa timoneiro – em grego, aquele que pilota uma embarcação.</p>
 <p>A primeira release do kubernetes foi lançada em 7 de Junho de 2014.</p>
 <h2 id="cloud-native-computing-foundation-ou-cncf">Cloud Native Computing Foundation ou CNCF</h2>
-<p>O Google queria algum lugar para hospedar não só o projeto Kubernetes em si, mais um lugar em que todos pudessem contribuir com o projeto e criar novas soluções para esse universo de aplicações rodando em containers.</p>
+<p>O Google queria algum lugar para hospedar não só o projeto Kubernetes em si, mais um lugar em que todos pudessem contribuir com o projeto e criar novas soluções para esse segmento de aplicações rodando em containers.</p>
 <p>Com essa ideia em mente, o Google entrou em contato com a Linux Foundation para criar uma estrutura que pudesse receber esse projeto e fomentar tecnologias e soluções ligadas a esse novo universo de containers.</p>
-<p>A Linux Foundation criou então a CNCF, Cloud Native Computing Foundation para fomentar o desenvolvimento do Kubernetes e de tecnologias com foco em containers. O Termo Cloud Native foi cunhado e passou a denomiar aplicações desta natureza.</p>
+<p>A Linux Foundation criou então a CNCF, Cloud Native Computing Foundation para fomentar o desenvolvimento do Kubernetes e de tecnologias com foco em containers. O Termo Cloud Native foi cunhado e passou a ser utilizado para se referir aplicações desta natureza.</p>
 <p>A CNCF foi fundada e teve seu anúncio junto com o lançamento da versão 1.0 do Kubernetes em 21 de Julho de 2015.</p>
 <h2 id="como-funciona-">Como funciona ?</h2>
 <p>O Kubernetes ou K8S como é chamado de forma abreviada é um orquestrador  que foi desenhado para gerenciar workloads de containers e serviços de forma automatizada, utilizando configuração declarativa que uso o estrutura e formato do projeto YAML.</p>
