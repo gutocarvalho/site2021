@@ -3,12 +3,178 @@
     <title>Guto@Site</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2022-02-17T17:13:45-03:00</updated>
+    <updated>2022-02-17T19:59:25-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
     <id>https://gutocarvalho.net</id>
 
+    <entry>
+        <title>Minha stack como Cloud Engineer em 2022</title>
+        <author>
+            <name>Guto Carvalho</name>
+        </author>
+        <link href="https://gutocarvalho.net/minha-stack-com-cloud-engineer-em-20022/"/>
+        <id>https://gutocarvalho.net/minha-stack-com-cloud-engineer-em-20022/</id>
+            <category term="MindNotes"/>
+
+        <updated>2022-02-17T19:59:25-03:00</updated>
+            <summary>
+                <![CDATA[
+                    As vezes me perguntam o que eu estou usando ou uso no&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p>As vezes me perguntam o que eu estou usando ou uso no meu dia-a-dia.</p>
+<p>Bora lá descobrir!</p>
+<h4 id="para-orquestrar-infra-em-provedores-de-nuvem">Para orquestrar Infra em provedores de nuvem?</h4>
+<ul>
+<li>Terraform</li>
+</ul>
+<h4 id="para-orquestrar-um-sistema-operacional">Para orquestrar um sistema operacional?</h4>
+<ul>
+<li>Ansible</li>
+</ul>
+<h4 id="qual-plataforma-eu-usoprefiro-para-rodar-apps">Qual plataforma eu uso/prefiro para rodar APPs?</h4>
+<ul>
+<li>Kubernetes</li>
+</ul>
+<h4 id="qual-meu-k8s-gerenciado-preferido">Qual meu K8S Gerenciado preferido?</h4>
+<p>Em primeiro lugar!</p>
+<ul>
+<li>EKS</li>
+</ul>
+<p>Uma nova opção que tem se mostrado econômica e viável</p>
+<ul>
+<li>Kubernetes da Jelastic que uso via <a href="https://saveincloud.com/pt">https://saveincloud.com/pt</a></li>
+</ul>
+<h4 id="qual-distribuição-preferida-para-kubernetes-onprem">Qual distribuição preferida para Kubernetes OnPrem?</h4>
+<ul>
+<li>RKE</li>
+</ul>
+<h4 id="qual-distribuição-preferida-para-kubernetes-leveedgeiot">Qual distribuição preferida para Kubernetes Leve/Edge/IoT?</h4>
+<ul>
+<li>K3S</li>
+</ul>
+<h4 id="runtime-para-kubernetes">Runtime para Kubernetes?</h4>
+<ul>
+<li>Docker</li>
+</ul>
+<h4 id="pretente-mudar-para-algum-outro-runtime">Pretente mudar para algum outro runtime?</h4>
+<p>Sem dúvida estou de olho em alternativas, são elas:</p>
+<ul>
+<li>CRI-O</li>
+<li>Containerd</li>
+</ul>
+<h4 id="quais-dashboards-preferidos-para-k8s">Quais dashboards preferidos para K8S?</h4>
+<ul>
+<li>LENS para Desktop</li>
+<li>Rancher como Dashboard Web</li>
+<li>K9S para terminal</li>
+</ul>
+<p>E estou de olho no projeto abaixo</p>
+<ul>
+<li>Kubevious</li>
+</ul>
+<h4 id="o-que-usa-para-validar-seus-manifestos-yaml-">O que usa para validar seus manifestos YAML ?</h4>
+<ul>
+<li>Kubeval</li>
+</ul>
+<h4 id="para-empacotar-apps-para-kubernetes">Para empacotar APPs para Kubernetes?</h4>
+<ul>
+<li>HELM</li>
+</ul>
+<h4 id="o-que-usaria-para-monitorar-o-cluster-e-apps-em-seu-kubernetes">O que usaria para monitorar o cluster e apps em seu Kubernetes?</h4>
+<ul>
+<li>Kube-prometheus-stack (Node Exporter + Prometheus + Grafana)</li>
+</ul>
+<h4 id="e-como-storage-de-blocos-distribuído-rodando-no-cluster">E como storage de blocos distribuído rodando no cluster?</h4>
+<ul>
+<li>Longhorn</li>
+</ul>
+<h4 id="e-como-storage-de-objetos-rodando-no-cluster">E como storage de objetos rodando no cluster?</h4>
+<ul>
+<li>Minio</li>
+</ul>
+<h4 id="e-para-fazer-backup">E para fazer backup?</h4>
+<ul>
+<li>Velero</li>
+</ul>
+<h4 id="e-como-ferramenta-de-registry">E como ferramenta de registry?</h4>
+<ul>
+<li>Harbor</li>
+</ul>
+<h4 id="o-que-usa-para-gerenciar-certificados-no-kubernetes">O que usa para gerenciar certificados no Kubernetes?</h4>
+<ul>
+<li>CertManager + LetsEncrypt</li>
+</ul>
+<h4 id="o-quer-usaria-para-service-mesh-no-kubernetes">O quer usaria para service mesh no Kubernetes?</h4>
+<ul>
+<li>Istio</li>
+</ul>
+<h4 id="o-que-usaria-no-kubernetes-para-autoscaling">O que usaria no kubernetes para autoscaling?</h4>
+<p>O que já vem pronto</p>
+<ul>
+<li>HPA</li>
+</ul>
+<p>E para complementar?</p>
+<ul>
+<li>Keptn</li>
+<li>Kaperter</li>
+</ul>
+<h4 id="o-que-usaria-para-manter-a-qualidade-da-apps-rodando">O que usaria para manter a qualidade da APPs rodando?</h4>
+<ul>
+<li>Keda</li>
+</ul>
+<h4 id="o-que-usaria-para-centralizar-logs-do-cluster-e-suas-apps">O que usaria para centralizar logs do cluster e suas APPs?</h4>
+<ul>
+<li>Grafana Loki</li>
+</ul>
+<h4 id="qual-tecnologia-de-cicd-usaria-hoje-em-dia">Qual tecnologia de CI/CD usaria hoje em dia?</h4>
+<p>Difícil, normalmente eu vou onde me sinto confortável:</p>
+<ul>
+<li>GitLab CI</li>
+<li>GitHub Actions</li>
+</ul>
+<p>Contudo estou inclinado em usar coisas mais Cloud Native e tenho estudado:</p>
+<ul>
+<li>ArgoCD</li>
+<li>Flux</li>
+<li>Tekton</li>
+<li>Werf</li>
+</ul>
+<h4 id="o-que-voce-usa-para-checar-a-sanidadesaúde-do-cluster">O que voce usa para checar a sanidade/saúde do cluster?</h4>
+<ul>
+<li>Popeye</li>
+<li>Kube Bench</li>
+</ul>
+<h4 id="e-para-checar-segurança">E para checar segurança?</h4>
+<ul>
+<li>Kuber Hunter</li>
+</ul>
+<h4 id="e-no-caso-de-chaos-test">E no caso de Chaos Test?</h4>
+<ul>
+<li>ChaosKube</li>
+</ul>
+<h4 id="para-api-gateway">Para API Gateway?</h4>
+<ul>
+<li>Kong</li>
+</ul>
+<h4 id="para-tracing">Para Tracing</h4>
+<p>To de olho no </p>
+<ul>
+<li>Grafana Tempo </li>
+</ul>
+<h2 id="amarrando-as-pontas">Amarrando as pontas</h2>
+<p>Acho que é isso, A lista é longa e mostra como o Cloud Enginner tem que ser flexível e estudar muito para integrar tudo e manter sua aplicação rodando em nuvem da forma mais estável, saudável, performática e segura possível ;)</p>
+<p>Volto para atualizar se tiver mais alguma coisa em mente!</p>
+<p>[s]
+Guto</p>
+
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>Live com Save&#x27;In&#x27;Cloud no dia 22 de Fevereiro</title>
         <author>
@@ -954,47 +1120,6 @@ Guto</p>
 <li><a href="https://www.a10networks.com/blog/how-do-layer-4-and-layer-7-load-balancing-differ">https://www.a10networks.com/blog/how-do-layer-4-and-layer-7-load-balancing-differ</a></li>
 <li><a href="https://www.nginx.com/resources/glossary/layer-7-load-balancing">https://www.nginx.com/resources/glossary/layer-7-load-balancing</a></li>
 <li><a href="https://levelup.gitconnected.com/l4-vs-l7-load-balancing-d2012e271f56">https://levelup.gitconnected.com/l4-vs-l7-load-balancing-d2012e271f56</a></li>
-</ul>
-<p>[s]<br>
-Guto</p>
-<p>–</p>
-<p>Este post é do tipo #MindNotes, entenda <a href="https://gutocarvalho.net/o-que-sao-mindnotes/">aqui</a>.</p>
-<p>Se gostou manda um alo no twitter <a href="https://twitter.com/gutocarvalho">@gutocarvalho</a>.</p>
-
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>Entendendo o Dogpile Effect</title>
-        <author>
-            <name>Guto Carvalho</name>
-        </author>
-        <link href="https://gutocarvalho.net/entendendo-o-dogpile-effect/"/>
-        <id>https://gutocarvalho.net/entendendo-o-dogpile-effect/</id>
-            <category term="MindNotes"/>
-
-        <updated>2022-02-16T08:45:19-03:00</updated>
-            <summary>
-                <![CDATA[
-                    Se você está se inscrevendo para vagas de Cloud Engineer ou DevOps&hellip;
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                <p>Se você está se inscrevendo para vagas de Cloud Engineer ou DevOps Engineer esse termo pode aparecer em sua entrevista. Eu confesso que hoje em dia eu não vejo a turma falando disso, parece uma questão superada do ponto de vista de engenharia de software, posts com esse termo datam de 2014 e achei alguns até mais antigos, no entando, parece que os recrutadores adoram perguntar isso, então bora lá entender o que é para saber responder :)</p>
-<h3 id="o-que-é">O que é?</h3>
-<p>Basicamente é o nome que se dá para aquele momento que os objetos em seu CACHE expiram e seu ambiente começa a tomar requests sem parar, frontend, backend e em especial sua database serão bastante exigidos pois seu CACHE praticamente sumiu. </p>
-<p>Imagine centenas de milhares de processos fazendo requests no seu frontend, backend e indiretamente no seu banco de dados, tudo vai ficar bem lento, o load vai subir muito, especialmente se você não tiver uma estratégia de escalabilidade configurada, e isso pode gerar até uma indisponibilidade de suas APPs gerando um enorme prejuizo financeiro e de imagem.</p>
-<h3 id="como-previnir-isso">Como previnir isso?</h3>
-<p>Geralmente o pessoal usa os semáforos ou “semaphore lock”. Nesse caso, quando um valor expira o primeiro request a requisitar o valor gerar um tipo de LOCK, com isso o valor vai ser regerado, enquanto isso, caso outros processos solicitem o mesmo valor, estes vão receber um conteúdo mais antigo (stale content) até que o novo valor seja regerado e armazenado no cache. Quando o novo valor estiver no cache, o lock será removido e o conteúdo novo servido para os novos requests.</p>
-<h3 id="mas-servir-conteúdo-antigo-ou-desatualizado-não-é-ruim">Mas servir conteúdo antigo ou desatualizado não é ruim?</h3>
-<p>Acredite, ruim seria sua aplicação ficar indisponível, servir um conteúdo desatualizado por poucos segundos será o menor dos seus problemas.</p>
-<h3 id="amarrando-as-pontas">Amarrando as pontas</h3>
-<p>Cada stack ou linguagem tem ferramentas, técnicas métodos para implementar o semaphore lock, isso é algo a ser tratado em nível de código de aplicação – geralmente.</p>
-<p>Essa é uma pergunta mais do ponto de vista de arquitetura e engenharia de software do que de infraestrutura, mas é importante entender o conceito e responder corretamente ao entrevistador.</p>
-<h3 id="refs">Refs</h3>
-<ul>
-<li><a href="https://www.sobstel.dev/blog/preventing-dogpile-effect/">https://www.sobstel.dev/blog/preventing-dogpile-effect/</a></li>
 </ul>
 <p>[s]<br>
 Guto</p>
