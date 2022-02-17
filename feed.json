@@ -10,6 +10,21 @@
     },
     "items": [
         {
+            "id": "https://gutocarvalho.net/live-com-saveincloud-no-dia-22-de-fevereiro/",
+            "url": "https://gutocarvalho.net/live-com-saveincloud-no-dia-22-de-fevereiro/",
+            "title": "Live com Save&#x27;In&#x27;Cloud no dia 22 de Fevereiro",
+            "summary": "<p>Pessoal estarei com a Save'in'Cloud falando sobre Kubernetes e Cloud Native. </p>\n",
+            "content_html": "<p>Pessoal estarei com a Save'in'Cloud falando sobre Kubernetes e Cloud Native. </p>\n\n<p>A live começará as 19 horas no horário de Brasília.<br><br>Participe e aproveite para tirar suas dúvidas!<br><br><a href=\"https://cloud.saveincloud.com.br/lp/meetup-kubernetes-22-02/\" target=\"_blank\" rel=\"noopener noreferrer\">https://cloud.saveincloud.com.br/lp/meetup-kubernetes-22-02/</a><br><br>[s]<br>Guto</p>",
+            "author": {
+                "name": "Guto Carvalho"
+            },
+            "tags": [
+                   "Eventos"
+            ],
+            "date_published": "2022-02-17T17:12:38-03:00",
+            "date_modified": "2022-02-17T17:13:45-03:00"
+        },
+        {
             "id": "https://gutocarvalho.net/entendendo-o-kubernetes-and-cloud-native/",
             "url": "https://gutocarvalho.net/entendendo-o-kubernetes-and-cloud-native/",
             "title": " Entendendo o Kubernetes &amp; Cloud Native",
@@ -59,7 +74,7 @@
             "url": "https://gutocarvalho.net/conheca-o-cloud-native-landscape/",
             "title": "Conheça o Cloud Native Landscape",
             "summary": "<p>Entenda para que serve e como usar!</p>\n",
-            "content_html": "<p>Entenda para que serve e como usar!</p>\n\n<p>Me siga no twitter <a href=\"https://twitter.com/gutocarvalho\">@gutocarvalho</a> e acompanhe meus posts sobre Cloud Native e CI/CD.</p>\n<p>Siga a <a href=\"https://twitter.com/CDeliveryFdn\">CD Foundation</a> e <a href=\"https://twitter.com/cloudnativefdn\">Cloud Native Foundation</a> no twitter.</p>\n<p>Revisor: <a href=\"https://twitter.com/rkpegoraro\">Ricardo Pegoraro</a><br><br><br></p>\n<hr>\n<figure class=\"post__image\"><br><br>Fala pessoa, tudo em paz?<br><br>Talvez você já tenha visto o Cloud Native Landscape, mas ainda tem dúvidas sobre ele.<br><br><img loading=\"lazy\"  src=\"https://gutocarvalho.net/media/posts/112/Screen-Shot-2022-02-15-at-10.11.44.png\" sizes=\"(min-width: 61.3125em) 50vw, 100vw\" srcset=\"https://gutocarvalho.net/media/posts/112/responsive/Screen-Shot-2022-02-15-at-10.11.44-xs.png 300w ,https://gutocarvalho.net/media/posts/112/responsive/Screen-Shot-2022-02-15-at-10.11.44-sm.png 480w ,https://gutocarvalho.net/media/posts/112/responsive/Screen-Shot-2022-02-15-at-10.11.44-md.png 768w\"  alt=\"\" width=\"1917\" height=\"876\"></figure>\n<p><strong>Para que serve isso?</strong><br><br>Esse landscape é um grande mapa de projetos que compõe esse universo <strong>Cloud Native</strong>, são centenas de <strong>projetos open source</strong> em constante expansão através de <strong>contribuições</strong> de suas <strong>comunidades</strong>.<br><br>O Landscape é uma grande vitrine de projetos. Essa vitrine te ajuda a encontrar soluções open source para seu projeto Cloud Native de forma simples e fácil.<br><br><strong>Como está organizado?</strong><br><br>O Landscape está separado em categorias e sub-categorias, sendo elas:<br><br>- <strong>App Definition And Development</strong><br>  - Database<br>  - Streaming &amp; Messaging<br>  - Application Definition &amp; Image Build<br>  - Continuous Integration &amp; Delivery<br><br><br>- <strong>Orchestration &amp; Management</strong><br>  - Scheduling &amp; Orchestration<br>  - Coordination &amp; Service Discovery<br>  - Remote Procedure Call<br>  - Service Proxy<br>  - API Gateway<br>  - Service Mesh<br><br>- <strong>Runtime</strong><br>  - Cloud Native Storage<br>  - Container Runtime<br>  - Cloud Native Network<br><br>- <strong>Provisioning</strong><br>  - Automation &amp; Configuration<br>  - Container Registry<br>  - Security &amp; Compliance<br>  - Key Management<br><br>- <strong>Special</strong><br>  - Kubernetes Certified Service Provider<br>  - Kubernetes Training Partner<br><br>- <strong>Plataform</strong><br>  - Certified Kubernetes Distribuition<br>  - Certified Kubernetes Hosted<br>  - Certified Kubernetes Installer<br><br>- <strong>Observabilty &amp; Analysis</strong><br>  - Monitoring<br>  - Logging<br>  - Tracing<br>  - Chaos Engineering<br><br><strong> Outros Landscapes<br></strong><br>E ainda temos dois projetos separados que também tem seus próprios landscapes<br>  <br>  - <strong><a href=\"https://landscape.cncf.io/serverless\">Serverless</a></strong> Landscape<br>  - <strong><a href=\"https://landscape.cd.foundation/\">CD.Foundation</a></strong> Landscape</p>\n<p><strong>Bora para os sites?</strong><br><br>Acesse o <a href=\"https://landscape.cncf.io/\">CNCF</a> Landspace<br>Acesse o <a href=\"https://landscape.cncf.io/serverless\">Serverless</a> Landscape<br>Acesse o <a href=\"https://landscape.cd.foundation/\">CD.Foundation</a> Landscape<br><br>[s]<br>Guto<br><br>--</p>\n<p>Este post é do tipo #MindNotes, entenda <a href=\"https://gutocarvalho.net/o-que-sao-mindnotes/\">aqui</a>.</p>\n<p>Se gostou manda um alo no twitter <a href=\"https://twitter.com/gutocarvalho\">@gutocarvalho</a>.</p>",
+            "content_html": "<p>Entenda para que serve e como usar!</p>\n\n<p>Me siga no twitter <a href=\"https://twitter.com/gutocarvalho\">@gutocarvalho</a> e acompanhe meus posts sobre Cloud Native e CI/CD.</p>\n<p>Siga a <a href=\"https://twitter.com/CDeliveryFdn\">CD Foundation</a> e <a href=\"https://twitter.com/cloudnativefdn\">Cloud Native Foundation</a> no twitter.</p>\n<p>Revisor: <a href=\"https://twitter.com/rkpegoraro\">Ricardo Pegoraro</a><br><br><br></p>\n<hr>\n<figure class=\"post__image\"><br><br>Fala pessoa, tudo em paz?<br><br>Talvez você já tenha visto o Cloud Native Landscape, mas ainda tem dúvidas sobre ele.<br><br><img loading=\"lazy\"  src=\"https://gutocarvalho.net/media/posts/112/Screen-Shot-2022-02-15-at-10.11.44.png\" sizes=\"(min-width: 61.3125em) 50vw, 100vw\" srcset=\"https://gutocarvalho.net/media/posts/112/responsive/Screen-Shot-2022-02-15-at-10.11.44-xs.png 300w ,https://gutocarvalho.net/media/posts/112/responsive/Screen-Shot-2022-02-15-at-10.11.44-sm.png 480w ,https://gutocarvalho.net/media/posts/112/responsive/Screen-Shot-2022-02-15-at-10.11.44-md.png 768w\"  alt=\"\" width=\"1917\" height=\"876\"></figure>\n<p><strong>Para que serve isso?</strong><br><br>Esse landscape é um grande mapa de projetos que compõe esse universo <strong>Cloud Native</strong>, são centenas de <strong>projetos open source</strong> em constante expansão através de <strong>contribuições</strong> de suas <strong>comunidades</strong>.<br><br>O Landscape é uma grande vitrine de projetos. Essa vitrine te ajuda a encontrar soluções open source para seu projeto Cloud Native de forma simples e fácil.<br><br><strong>Como está organizado?</strong><br><br>O Landscape está separado em categorias e sub-categorias, sendo elas:<br><br>- <strong>App Definition And Development</strong><br>  - Database<br>  - Streaming &amp; Messaging<br>  - Application Definition &amp; Image Build<br>  - Continuous Integration &amp; Delivery<br><br><br>- <strong>Orchestration &amp; Management</strong><br>  - Scheduling &amp; Orchestration<br>  - Coordination &amp; Service Discovery<br>  - Remote Procedure Call<br>  - Service Proxy<br>  - API Gateway<br>  - Service Mesh<br><br>- <strong>Runtime</strong><br>  - Cloud Native Storage<br>  - Container Runtime<br>  - Cloud Native Network<br><br>- <strong>Provisioning</strong><br>  - Automation &amp; Configuration<br>  - Container Registry<br>  - Security &amp; Compliance<br>  - Key Management<br><br>- <strong>Special</strong><br>  - Kubernetes Certified Service Provider<br>  - Kubernetes Training Partner<br><br>- <strong>Plataform</strong><br>  - Certified Kubernetes Distribuition<br>  - Certified Kubernetes Hosted<br>  - Certified Kubernetes Installer<br><br>- <strong>Observabilty &amp; Analysis</strong><br>  - Monitoring<br>  - Logging<br>  - Tracing<br>  - Chaos Engineering<br><br><strong>Como usar?</strong><br><br>É simples, precisa de uma solução de <strong>storage</strong>, procure uma na seção de <strong>storage</strong>, precisa de um <strong>proxy</strong>, tem uma seção para isso, basta pesquisar, testar e encontrar a solução que se encaixa com seu projeto.<br><br><strong> Outros Landscapes<br></strong><br>E ainda temos dois projetos separados que também tem seus próprios landscapes<br>  <br>  - <strong><a href=\"https://landscape.cncf.io/serverless\">Serverless</a></strong> Landscape<br>  - <strong><a href=\"https://landscape.cd.foundation/\">CD.Foundation</a></strong> Landscape</p>\n<p><strong>Bora para os sites?</strong><br><br>Acesse o <a href=\"https://landscape.cncf.io/\">CNCF</a> Landspace<br>Acesse o <a href=\"https://landscape.cncf.io/serverless\">Serverless</a> Landscape<br>Acesse o <a href=\"https://landscape.cd.foundation/\">CD.Foundation</a> Landscape<br><br>[s]<br>Guto<br><br>--</p>\n<p>Este post é do tipo #MindNotes, entenda <a href=\"https://gutocarvalho.net/o-que-sao-mindnotes/\">aqui</a>.</p>\n<p>Se gostou manda um alo no twitter <a href=\"https://twitter.com/gutocarvalho\">@gutocarvalho</a>.</p>",
             "author": {
                 "name": "Guto Carvalho"
             },
@@ -67,7 +82,7 @@
                    "MindNotes"
             ],
             "date_published": "2022-02-15T10:28:07-03:00",
-            "date_modified": "2022-02-16T08:55:46-03:00"
+            "date_modified": "2022-02-17T13:54:53-03:00"
         },
         {
             "id": "https://gutocarvalho.net/boas-praticas-git-para-pessoas-e-times/",
@@ -143,21 +158,6 @@
             ],
             "date_published": "2022-02-10T12:51:26-03:00",
             "date_modified": "2022-02-16T08:45:19-03:00"
-        },
-        {
-            "id": "https://gutocarvalho.net/cdfoundation-ambassador-2022/",
-            "url": "https://gutocarvalho.net/cdfoundation-ambassador-2022/",
-            "title": "CD.Foundation Ambassador 2022",
-            "summary": "<p>Eis que temos novidades, vem cá ver!</p>\n",
-            "content_html": "<p>Eis que temos novidades, vem cá ver!</p>\n\n<p>Eu me inscrevi e fui selecionado para ser embaixador da CD.Foundation em 2022.</p>\n<h2 id=\"toc_0\">Ainda não conhece da CD.Foundation?</h2>\n<p>CD significa Continuous Delivery, essa fundação tá embaixo da Linux Foundation e tem o objetivo de organizar, fomentar, promover e prover recursos para sustentar o crescimento de um ecosistema aberto de soluções para entrega contínua (CD) de software.</p>\n<p>Vai lá conhecer</p>\n<ul>\n<li><a href=\"https://cd.foundation\">https://cd.foundation</a></li>\n<li><a href=\"https://twitter.com/CDeliveryFdn\">https://twitter.com/CDeliveryFdn</a></li>\n</ul>\n<h2 id=\"toc_1\">O que faz um embaixador?</h2>\n<p>Basicamente vou trabalhar no apoio dos eventos da fundação, organizar meetups, apoiar a comunidade local, divulgar as atividades da CD e escrever muito conteúdo :)</p>\n<p>Aqui explica certinho</p>\n<ul>\n<li><a href=\"https://cd.foundation/ambassador-program-overview-application\">https://cd.foundation/ambassador-program-overview-application</a></li>\n</ul>\n<h2 id=\"toc_2\">Quais as minhas expectativas?</h2>\n<p>Espero poder ajudar a fundação a crescer e se estabelecer além de juntar a galera e escrever muito conteúdo :)</p>\n<p>[s]<br>Guto<br><br><br>--- <br><br>Este post usa a tag #FalaGutera, entenda <a href=\"https://gutocarvalho.net/sobre-o-que-e-a-tag-falagutera/\">aqui</a>.<br><br>Se gostou manda um alo no twitter @gutocarvalho.</p>",
-            "author": {
-                "name": "Guto Carvalho"
-            },
-            "tags": [
-                   "FalaGutera"
-            ],
-            "date_published": "2022-02-09T21:38:28-03:00",
-            "date_modified": "2022-02-09T21:40:06-03:00"
         }
     ]
 }
