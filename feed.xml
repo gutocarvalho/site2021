@@ -3,7 +3,7 @@
     <title>Guto@Site</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2022-02-17T07:29:23-03:00</updated>
+    <updated>2022-02-17T08:13:18-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
@@ -18,7 +18,7 @@
         <id>https://gutocarvalho.net/entendendo-o-kubernetes-and-cloud-native/</id>
             <category term="TLDR"/>
 
-        <updated>2022-02-17T07:29:23-03:00</updated>
+        <updated>2022-02-17T08:13:18-03:00</updated>
             <summary>
                 <![CDATA[
                     Bora entender isso e ficar na mesma página? Vem com a gente!&hellip;
@@ -70,9 +70,9 @@
 <p>É de fato um datacenter inteiro em uma única solução.</p>
 <h2 id="quais-os-benefícios">Quais os benefícios?</h2>
 <p>Como o kubernetes oferece tudo que sua aplicação precisa, você tem mais tempo para se preocupar com o negócio, isso pode melhorar sua produtividade e reduzir tempo gasto com configurações comuns geralmente executadas em sua infraestrutura clássica.</p>
-<p>O cluster kubernetes nos ajuda a usar os recursos computacionais de forma mais eficiente. Como tudo roda em containers, conseguimos compartilhar mais recursos computacionais com diferentes aplicações sendo executadas no cluster.</p>
+<p>O cluster kubernetes te ajuda a usar os recursos computacionais de forma mais eficiente. Como tudo roda em containers, você consegue compartilhar mais recursos computacionais com diferentes aplicações sendo executadas no cluster.</p>
 <p>O processo de entrega e o ciclo de desenvolvimento do software pode ser sensivelmente reduzido depois que você integrar o cluster ao seu processo de desenvolvimento.</p>
-<p>Uma vez que sua aplicação está rodando em Kubernetes, você conseguirá rodá-la praticamente em quaisquer cloud pública que suporte kubernetes. Essa portabilidade é muito importante e oferece a capacidade de seu software funcionar em diferentes claouds, podendo escolher aquela com melhor custo, ou até replicar sua aplicação em provedores diferentes para garantir mais disponibilidade.</p>
+<p>Uma vez que sua aplicação está rodando em Kubernetes, você conseguirá rodá-la praticamente em quaisquer cloud pública que suporte kubernetes. Essa portabilidade é muito importante e oferece a capacidade de seu software funcionar em diferentes clouds, podendo escolher aquela com melhor custo, ou até replicar sua aplicação em provedores diferentes para garantir mais disponibilidade.</p>
 <p>Ao usar aplicações dentro do cluster, você conseguirá reduzir sensivelmente o custo de sua conta em uma Cloud Pública, isso acontece pois o Kubernetes já traz a maioria dos recursos de forma nativa, reduzindo assim dua despesa no final do mês.</p>
 <p>O Kubernetes é o orquestrador líder de mercado, é comprovadamente estável, é mantido por diversas empresas incluindo o Google e foi testado em produção em diversos cenários com sucesso, o que nos garante que não estamos embarcando em uma aventura com uma tecnologia com pouca maturidade. Existem muitos cases de aplicações de missão crítica rodando em clusters Kubernetes, se é eficiente para eles, é eficiente para você.</p>
 <h2 id="é-realmente-seguro">É realmente seguro?</h2>
