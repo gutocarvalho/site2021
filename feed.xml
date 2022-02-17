@@ -3,7 +3,7 @@
     <title>Guto@Site</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2022-02-17T07:16:17-03:00</updated>
+    <updated>2022-02-17T07:29:23-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
@@ -18,7 +18,7 @@
         <id>https://gutocarvalho.net/entendendo-o-kubernetes-and-cloud-native/</id>
             <category term="TLDR"/>
 
-        <updated>2022-02-17T07:16:17-03:00</updated>
+        <updated>2022-02-17T07:29:23-03:00</updated>
             <summary>
                 <![CDATA[
                     Bora entender isso e ficar na mesma página? Vem com a gente!&hellip;
@@ -29,7 +29,6 @@
                 <p>Bora entender isso e ficar na mesma página? Vem com a gente!</p>
 <p>Me siga no twitter <a href="https://twitter.com/gutocarvalho">@gutocarvalho</a> e acompanhe meus posts sobre Cloud Native e CI/CD.</p>
 <p>Siga a <a href="https://twitter.com/CDeliveryFdn">CD Foundation</a> e <a href="https://twitter.com/cloudnativefdn">Cloud Native Foundation</a> no twitter.</p>
-<p>Revisor: <a href="https://twitter.com/rkpegoraro">Ricardo Pegoraro</a></p>
 <h2 id="o-que-é">O que é?</h2>
 <p>O kubernetes é um orquestrador de containers que oferece meios para você executar, escalar e atualizar seu software de forma simples e eficiente.</p>
 <p>Com o kubernetes podemos automatizar a implantação de nosso software integrando nossa pipeline com um cluster de containers, conseguindo assim entregar nosso software de maneira rápida e controlada.</p>
@@ -48,7 +47,7 @@
 <h2 id="como-funciona-">Como funciona ?</h2>
 <p>O Kubernetes ou K8S como é chamado de forma abreviada é um orquestrador  que foi desenhado para gerenciar workloads de containers e serviços de forma automatizada, utilizando configuração declarativa que usa o estrutura e formato de dados do projeto YAML.</p>
 <p>Isso significa que podemos definir o estado desejado de funcionamento de nosso cluster e também das aplicações rodando neste, apenas utilizando convenções em YAML. Os operadores do cluster vão ler essas definições e garantir esse estado, fazendo modificações quando for necessário.</p>
-<p>O kubernetes vai oferecer:</p>
+<p>O kubernetes oferece:</p>
 <ul>
 <li>Serviço de descoberta</li>
 <li>Serviço de balanceamento de carga</li>
@@ -56,24 +55,26 @@
 <li>Gerenciamento de redes e sub-redes</li>
 <li>Gerenciamento de DNS</li>
 <li>Orquestração de storage para os containers</li>
-<li>Automação do rollouts ou rollbacks de suas aplicações</li>
-<li>Gerenciamento dos certificados (geração automática de certificados SSL)</li>
+<li>Automação de rollouts ou rollbacks de suas aplicações</li>
+<li>Gerenciamento dos certificados com geração e renovação automática</li>
 <li>Gerenciamento de configuraçoes (configmaps)</li>
 <li>Gerenciamento de segredos (secrets)</li>
 <li>Gerenciamento de jobs (cronjobs)</li>
 <li>Gerenciamento de limites de recursos para cada container</li>
 <li>Self-healing, ele reinicia ou substitiu um container em caso de falha</li>
 </ul>
-<p>Em resumo, o kubernetes vai oferecer tudo que é necessário para sua aplicação rodar e ser acessada por seus usuários.</p>
+<p>Em resumo, o kubernetes vai oferecer tudo que é necessário para sua aplicação rodar e ser utilizada por seus usuários.</p>
 <h3 id="por-que-chamam-o-k8s-de-os-de-datacenter">Por que chamam o K8S de OS de Datacenter?</h3>
-<p>Em alguns treinamentos ou palestras você pode ouvir o pessoal falando que o BORG ou Kubernetes era um sistema operacional de datacenter, e tudo bem, faz sentido. Uma vez que o kubernetes oferece tudo que um software precisa, indo do endereço ip, rede, storage, balanceamento, dns, certificado, configurações, segredos, ele traz tudo que um datacenter ofereceria para uma aplicação em um lugar só, e essa é beleza e a força do projeto.</p>
+<p>Em alguns treinamentos ou palestras você pode ouvir o pessoal falando que o Kuberneters – antigo BORG – é um sistema operacional de datacenter, e tudo bem, faz sentido falar isso.</p>
+<p>Se obervarmos com cuidado, vamos ver que o kubernetes oferece tudo que um software precisa, indo do endereço ip, rede, storage, balanceamento, dns, certificado, configurações, segredos, em suma, ele traz tudo que um datacenter ofereceria para uma aplicação em um lugar só, e essa é beleza e a força do projeto.</p>
+<p>É de fato um datacenter inteiro em uma única solução.</p>
 <h2 id="quais-os-benefícios">Quais os benefícios?</h2>
-<p>Como o kubernetes oferece tudo que sua aplicação precisa, você tem mais tempo para se preocupar com o negócio, isso pode melhorar sua produtividade e reduzir tempo gasto com configurações comuns geralmente executados em sua infraestrutura clássica.</p>
-<p>O uso de cluster kubernetes nos ajuda a usar os recursos computacionais de forma mais eficiente. Como tudo roda em containers, conseguimos compartilhar mais recursos computacionais com diferentes aplicações sendo executadas.</p>
-<p>O processo de entrega e o ciclo de desenvolvimento do software pode ser sensivelmente reduzido depois de integrar o cluster ao seu processo de desenvolvimento.</p>
-<p>Uma vez que sua aplicação está rodando em Kubernetes, você conseguirá rodá-la praticamente em quaisquer cloud pública que suporte kubernetes. Essa portabilidade é muito importante e oferece a capacidade de funcionar em diferentes clouds, podendo escolher aquela com melhor custo, ou até replicar sua aplicação em provedores diferentes para garantir mais disponibilidade.</p>
-<p>Ao usar aplicações dentro do cluster, você conseguirá reduzir sensivelmente o custo em um Cloud Pública se compararmos com instâncais comuns (VMS) e serviços como Load Balancer, Storage, dentre outros.</p>
-<p>O Kubernetes é o orquestrador líder de mercado, é comprovamente estável, é mantido por diversas empresas incluindo o Google e foi testado em produção em diversos cenários com sucesso, o que nos garante que não estamos embarcando em uma aventura com uma nova tecnologia. Existem muitos cases de aplicações de missão crítica rodando em clusters Kubernetes, se é eficiente para eles, é eficiente para você.</p>
+<p>Como o kubernetes oferece tudo que sua aplicação precisa, você tem mais tempo para se preocupar com o negócio, isso pode melhorar sua produtividade e reduzir tempo gasto com configurações comuns geralmente executadas em sua infraestrutura clássica.</p>
+<p>O cluster kubernetes nos ajuda a usar os recursos computacionais de forma mais eficiente. Como tudo roda em containers, conseguimos compartilhar mais recursos computacionais com diferentes aplicações sendo executadas no cluster.</p>
+<p>O processo de entrega e o ciclo de desenvolvimento do software pode ser sensivelmente reduzido depois que você integrar o cluster ao seu processo de desenvolvimento.</p>
+<p>Uma vez que sua aplicação está rodando em Kubernetes, você conseguirá rodá-la praticamente em quaisquer cloud pública que suporte kubernetes. Essa portabilidade é muito importante e oferece a capacidade de seu software funcionar em diferentes claouds, podendo escolher aquela com melhor custo, ou até replicar sua aplicação em provedores diferentes para garantir mais disponibilidade.</p>
+<p>Ao usar aplicações dentro do cluster, você conseguirá reduzir sensivelmente o custo de sua conta em uma Cloud Pública, isso acontece pois o Kubernetes já traz a maioria dos recursos de forma nativa, reduzindo assim dua despesa no final do mês.</p>
+<p>O Kubernetes é o orquestrador líder de mercado, é comprovadamente estável, é mantido por diversas empresas incluindo o Google e foi testado em produção em diversos cenários com sucesso, o que nos garante que não estamos embarcando em uma aventura com uma tecnologia com pouca maturidade. Existem muitos cases de aplicações de missão crítica rodando em clusters Kubernetes, se é eficiente para eles, é eficiente para você.</p>
 <h2 id="é-realmente-seguro">É realmente seguro?</h2>
 <p>Sim é seguro, contudo, como qualquer outro software ou plataforma a segurança tem que fazer parte de suas preocupações desde o momento do design de seu cluster.</p>
 <p>Coisas como:</p>
@@ -94,7 +95,7 @@
 <p>Consegue sim, mesmo se for um monolito.</p>
 <p>Diferente do que muitos pensam o Kubernetes pode rodar qualquer software que esteja embarcado em um container, seja um monolito, um microserviço ou uma API.</p>
 <p>Obviamente se você estiver iniciando o desenvolvimento do seu software o ideal é pensar em decompor sua solução em microserviços que se comunicam via API, pensar em aplicações do tipo stateless, pensar em aplicações que podem rodar em múltiplos nodes e pods, pensar em uso de banco de dados externo, pensar em persistência e armazenamento de arquivos usando storage de objetos – estilo S3 – dentre outras boas práticas de APPs Cloud Native. </p>
-<p>Seguindo essas  dicas, você terá de fato uma aplicação Cloud Native que poderá usar o melhor do Kubernetes, sua aplicação conseguirá escalar horizontalmente e atender a demanda crescente de seus usuários.</p>
+<p>Seguindo essas  dicas, você terá de fato uma aplicação Cloud Native que poderá usar o melhor do Kubernetes. Sua aplicação conseguirá escalar horizontalmente e atender a demanda crescente de seus usuários.</p>
 <h2 id="consigo-rodar-kubernetes-on-premisses">Consigo rodar Kubernetes on-premisses?</h2>
 <p>Sim consegue, existem excelentes distribuições para rodar On-Premisses, uma delas é o RKE da Rancher.</p>
 <p>Quando falamos de on-premisses, precisamos pensar em um desenho robusto de nosso cluster, lembrar que precisamos de redudância entre hypervisors, backup real e eficiente, load balancer L4, centralização de logs, monitoramento, avaliação de métricas e performance, gerenciamento de certificados dentre outras coisas que precisam ser configuradas e levadas em conta para termos um cluster on-premisses rodando de forma segura, estável e performática.</p>
