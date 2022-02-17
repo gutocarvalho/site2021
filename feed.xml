@@ -3,7 +3,7 @@
     <title>Guto@Site</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2022-02-17T20:26:43-03:00</updated>
+    <updated>2022-02-17T20:29:19-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
@@ -18,7 +18,7 @@
         <id>https://gutocarvalho.net/minha-stack-com-cloud-engineer-em-20022/</id>
             <category term="MindNotes"/>
 
-        <updated>2022-02-17T20:26:43-03:00</updated>
+        <updated>2022-02-17T20:29:19-03:00</updated>
             <summary>
                 <![CDATA[
                     As vezes me perguntam o que eu estou usando ou uso no&hellip;
@@ -173,7 +173,7 @@
 <li>Grafana Tempo </li>
 </ul>
 <h2 id="amarrando-as-pontas">Amarrando as pontas</h2>
-<p>Acho que é isso, A lista é longa e mostra como o Cloud Enginner tem que ser flexível e estudar muito para integrar tudo e manter sua aplicação rodando em nuvem da forma mais estável, saudável, performática e segura possível ;)</p>
+<p>Acho que é isso. A lista é longa e mostra como o Cloud Enginner tem que ser flexível e estudar muito para integrar tudo e manter sua aplicação rodando em nuvem da forma mais estável, saudável, performática e segura possível ;)</p>
 <p>Volto para atualizar se tiver mais alguma coisa em mente!</p>
 <p>[s]
 Guto</p>
