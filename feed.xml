@@ -3,7 +3,7 @@
     <title>Guto@Site</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2022-02-17T20:32:05-03:00</updated>
+    <updated>2022-02-17T20:35:05-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
@@ -18,18 +18,19 @@
         <id>https://gutocarvalho.net/minha-stack-com-cloud-engineer-em-20022/</id>
             <category term="MindNotes"/>
 
-        <updated>2022-02-17T20:32:05-03:00</updated>
+        <updated>2022-02-17T20:35:05-03:00</updated>
             <summary>
                 <![CDATA[
-                    Me siga no twitter @gutocarvalho e acompanhe meus posts sobre Kubernetes, Cloud&hellip;
+                    As vezes me perguntam o que eu estou usando ou uso no&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                <p>Me siga no twitter <a href="https://twitter.com/gutocarvalho">@gutocarvalho</a> e acompanhe meus posts sobre Kubernetes, Cloud Native e CI/CD.</p>
+                <p>As vezes me perguntam o que eu estou usando ou uso no meu dia-a-dia.</p>
+<hr>
+<p>Me siga no twitter <a href="https://twitter.com/gutocarvalho">@gutocarvalho</a> e acompanhe meus posts sobre Kubernetes, Cloud Native e CI/CD.</p>
 <p>Aproveite e siga também a <a href="https://twitter.com/CDeliveryFdn">CD Foundation</a> e <a href="https://twitter.com/cloudnativefdn">Cloud Native Foundation</a>.</p>
 <hr>
-<p>As vezes me perguntam o que eu estou usando ou uso no meu dia-a-dia.</p>
 <p>Bora lá descobrir!</p>
 <h4 id="para-orquestrar-infra-em-provedores-de-nuvem">Para orquestrar Infra em provedores de nuvem?</h4>
 <ul>
