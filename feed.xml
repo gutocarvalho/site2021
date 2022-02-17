@@ -3,7 +3,7 @@
     <title>Guto@Site</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2022-02-17T07:14:55-03:00</updated>
+    <updated>2022-02-17T07:16:17-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
@@ -18,7 +18,7 @@
         <id>https://gutocarvalho.net/entendendo-o-kubernetes-and-cloud-native/</id>
             <category term="TLDR"/>
 
-        <updated>2022-02-17T07:14:55-03:00</updated>
+        <updated>2022-02-17T07:16:17-03:00</updated>
             <summary>
                 <![CDATA[
                     Bora entender isso e ficar na mesma página? Vem com a gente!&hellip;
@@ -46,7 +46,7 @@
 <p>A Linux Foundation criou então a CNCF, Cloud Native Computing Foundation para fomentar o desenvolvimento do Kubernetes e de tecnologias com foco em containers. O Termo Cloud Native foi cunhado e passou a ser utilizado para se referir aplicações desta natureza.</p>
 <p>A CNCF foi fundada e teve seu anúncio junto com o lançamento da versão 1.0 do Kubernetes em 21 de Julho de 2015.</p>
 <h2 id="como-funciona-">Como funciona ?</h2>
-<p>O Kubernetes ou K8S como é chamado de forma abreviada é um orquestrador  que foi desenhado para gerenciar workloads de containers e serviços de forma automatizada, utilizando configuração declarativa que uso o estrutura e formato do projeto YAML.</p>
+<p>O Kubernetes ou K8S como é chamado de forma abreviada é um orquestrador  que foi desenhado para gerenciar workloads de containers e serviços de forma automatizada, utilizando configuração declarativa que usa o estrutura e formato de dados do projeto YAML.</p>
 <p>Isso significa que podemos definir o estado desejado de funcionamento de nosso cluster e também das aplicações rodando neste, apenas utilizando convenções em YAML. Os operadores do cluster vão ler essas definições e garantir esse estado, fazendo modificações quando for necessário.</p>
 <p>O kubernetes vai oferecer:</p>
 <ul>
