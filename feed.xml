@@ -3,7 +3,7 @@
     <title>Guto@Site</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2022-02-17T19:59:25-03:00</updated>
+    <updated>2022-02-17T20:26:43-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
@@ -18,7 +18,7 @@
         <id>https://gutocarvalho.net/minha-stack-com-cloud-engineer-em-20022/</id>
             <category term="MindNotes"/>
 
-        <updated>2022-02-17T19:59:25-03:00</updated>
+        <updated>2022-02-17T20:26:43-03:00</updated>
             <summary>
                 <![CDATA[
                     As vezes me perguntam o que eu estou usando ou uso no&hellip;
@@ -85,15 +85,17 @@
 <ul>
 <li>HELM</li>
 </ul>
-<h4 id="o-que-usaria-para-monitorar-o-cluster-e-apps-em-seu-kubernetes">O que usaria para monitorar o cluster e apps em seu Kubernetes?</h4>
+<h4 id="o-que-usa-para-monitorar-o-cluster-e-apps-em-seu-kubernetes">O que usa para monitorar o cluster e apps em seu Kubernetes?</h4>
 <ul>
 <li>Kube-prometheus-stack (Node Exporter + Prometheus + Grafana)</li>
 </ul>
 <h4 id="e-como-storage-de-blocos-distribuído-rodando-no-cluster">E como storage de blocos distribuído rodando no cluster?</h4>
+<p>Quando existe a necessidade eu uso</p>
 <ul>
 <li>Longhorn</li>
 </ul>
 <h4 id="e-como-storage-de-objetos-rodando-no-cluster">E como storage de objetos rodando no cluster?</h4>
+<p>Quando existe a necessidade eu uso</p>
 <ul>
 <li>Minio</li>
 </ul>
@@ -109,11 +111,12 @@
 <ul>
 <li>CertManager + LetsEncrypt</li>
 </ul>
-<h4 id="o-quer-usaria-para-service-mesh-no-kubernetes">O quer usaria para service mesh no Kubernetes?</h4>
+<h4 id="o-quer-usa-para-service-mesh-no-kubernetes">O quer usa para service mesh no Kubernetes?</h4>
+<p>Quando o projeto pede, vamos de</p>
 <ul>
 <li>Istio</li>
 </ul>
-<h4 id="o-que-usaria-no-kubernetes-para-autoscaling">O que usaria no kubernetes para autoscaling?</h4>
+<h4 id="o-que-usa-no-kubernetes-para-autoscaling">O que usa no kubernetes para autoscaling?</h4>
 <p>O que já vem pronto</p>
 <ul>
 <li>HPA</li>
@@ -123,18 +126,19 @@
 <li>Keptn</li>
 <li>Kaperter</li>
 </ul>
-<h4 id="o-que-usaria-para-manter-a-qualidade-da-apps-rodando">O que usaria para manter a qualidade da APPs rodando?</h4>
+<h4 id="o-que-usa-para-manter-a-qualidade-da-apps-rodando">O que usa para manter a qualidade da APPs rodando?</h4>
+<p>Quando o projeto pede, vamos de</p>
 <ul>
 <li>Keda</li>
 </ul>
-<h4 id="o-que-usaria-para-centralizar-logs-do-cluster-e-suas-apps">O que usaria para centralizar logs do cluster e suas APPs?</h4>
+<h4 id="o-que-usa-para-centralizar-logs-do-cluster-e-suas-apps">O que usa para centralizar logs do cluster e suas APPs?</h4>
 <ul>
 <li>Grafana Loki</li>
 </ul>
-<h4 id="qual-tecnologia-de-cicd-usaria-hoje-em-dia">Qual tecnologia de CI/CD usaria hoje em dia?</h4>
-<p>Difícil, normalmente eu vou onde me sinto confortável:</p>
+<h4 id="qual-tecnologia-de-cicd-usa-hoje-em-dia">Qual tecnologia de CI/CD usa hoje em dia?</h4>
+<p>Difícil apontar uma, normalmente eu vou onde me sinto confortável:</p>
 <ul>
-<li>GitLab CI</li>
+<li>GitLab CI ou</li>
 <li>GitHub Actions</li>
 </ul>
 <p>Contudo estou inclinado em usar coisas mais Cloud Native e tenho estudado:</p>
@@ -144,20 +148,22 @@
 <li>Tekton</li>
 <li>Werf</li>
 </ul>
-<h4 id="o-que-voce-usa-para-checar-a-sanidadesaúde-do-cluster">O que voce usa para checar a sanidade/saúde do cluster?</h4>
+<h4 id="o-que-usa-para-checar-a-sanidadesaúde-do-cluster">O que usa para checar a sanidade/saúde do cluster?</h4>
 <ul>
 <li>Popeye</li>
 <li>Kube Bench</li>
 </ul>
-<h4 id="e-para-checar-segurança">E para checar segurança?</h4>
+<h4 id="e-para-checar-aspectos-de-segurança">E para checar aspectos de segurança?</h4>
 <ul>
 <li>Kuber Hunter</li>
 </ul>
 <h4 id="e-no-caso-de-chaos-test">E no caso de Chaos Test?</h4>
+<p>É bem nicho, mas tem essa ferramentinha simples e bacana</p>
 <ul>
 <li>ChaosKube</li>
 </ul>
 <h4 id="para-api-gateway">Para API Gateway?</h4>
+<p>Quando o projeto pede, vamos de</p>
 <ul>
 <li>Kong</li>
 </ul>
