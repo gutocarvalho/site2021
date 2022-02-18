@@ -3,7 +3,7 @@
     <title>Guto@Site</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2022-02-18T09:45:08-03:00</updated>
+    <updated>2022-02-18T09:56:09-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
@@ -18,7 +18,7 @@
         <id>https://gutocarvalho.net/kuma-um-projeto-para-ficar-de-olho/</id>
             <category term="MindNotes"/>
 
-        <updated>2022-02-18T09:45:08-03:00</updated>
+        <updated>2022-02-18T09:55:18-03:00</updated>
             <summary>
                 <![CDATA[
                     O kuma é um service mesh que roda em cima do envoy.
@@ -80,15 +80,15 @@ Guto</p>
         <id>https://gutocarvalho.net/minha-stack-com-cloud-engineer-em-20022/</id>
             <category term="MindNotes"/>
 
-        <updated>2022-02-18T09:34:18-03:00</updated>
+        <updated>2022-02-18T09:56:09-03:00</updated>
             <summary>
                 <![CDATA[
-                    As vezes me perguntam o que eu estou usando ou uso no&hellip;
+                    Projeto que uso no dia a dia como Cloud Engineer. Me siga&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                <p>As vezes me perguntam o que eu estou usando ou uso no meu dia-a-dia.</p>
+                <p>Projeto que uso no dia a dia como Cloud Engineer.</p>
 <hr>
 <p>Me siga no twitter <a href="https://twitter.com/gutocarvalho">@gutocarvalho</a> e acompanhe meus posts sobre Kubernetes, Cloud Native e CI/CD.</p>
 <p>Aproveite e siga também a <a href="https://twitter.com/CDeliveryFdn">CD Foundation</a> e <a href="https://twitter.com/cloudnativefdn">Cloud Native Foundation</a>.</p>
