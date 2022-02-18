@@ -10,6 +10,21 @@
     },
     "items": [
         {
+            "id": "https://gutocarvalho.net/conheca-o-manifesto-tech/",
+            "url": "https://gutocarvalho.net/conheca-o-manifesto-tech/",
+            "title": "Conheça o manifesto tech",
+            "summary": "<p>Manifesto para o mercado de tecnologia brasileiro</p>\n",
+            "content_html": "<p>Manifesto para o mercado de tecnologia brasileiro</p>\n\n<p>Ele foi lançado recentemente e confesso que ainda estou refletindo sobre ele, mas já dá para ver que existem empresas muito fortes tentando dar uma direção para contrações e  também discutir importantes mudanças de cultura nas empresas.<br><br>Vai lá e tire suas próprias conclusões:<br><br><a href=\"https://manifestotech.org/\">https://manifestotech.org/</a><br><br>[s]<br>Guto</p>",
+            "author": {
+                "name": "Guto Carvalho"
+            },
+            "tags": [
+                   "FalaGutera"
+            ],
+            "date_published": "2022-02-18T10:01:36-03:00",
+            "date_modified": "2022-02-18T10:01:36-03:00"
+        },
+        {
             "id": "https://gutocarvalho.net/kuma-um-projeto-para-ficar-de-olho/",
             "url": "https://gutocarvalho.net/kuma-um-projeto-para-ficar-de-olho/",
             "title": "Kuma.io, um projeto para ficar de olho!",
@@ -143,21 +158,6 @@
             ],
             "date_published": "2022-02-10T20:12:07-03:00",
             "date_modified": "2022-02-16T08:45:53-03:00"
-        },
-        {
-            "id": "https://gutocarvalho.net/entendendo-o-que-e-three-tier-application/",
-            "url": "https://gutocarvalho.net/entendendo-o-que-e-three-tier-application/",
-            "title": "Entendendo o que é three tier application",
-            "summary": "Se você está se inscrevendo para vagas de Cloud Engineer ou DevOps&hellip;",
-            "content_html": "<p>Se você está se inscrevendo para vagas de Cloud Engineer ou DevOps Engineer esse termo pode aparecer em sua entrevista, vamos entender de forma simples o que é.</p>\n<p>É um arquitetura client-server bem conhecida e está organizada da seguinte forma:</p>\n<ul>\n<li>Presentation Layer (GUI)</li>\n<li>Application Layer (Business)</li>\n<li>Data Layer (Persistence)</li>\n</ul>\n<p>Fazendo uma APP seguindo esse modelo nos dias de hoje geraria algo como:</p>\n<ul>\n<li>Frontend (HTML, JS, CSS)</li>\n<li>Backend (Python, C)</li>\n<li>Database (PostgreSQL, Mongo)</li>\n</ul>\n<p>Atualmente seria um <strong>Backend</strong> desenvolvido com a estratégia <strong>API-FIRST</strong>, um <strong>Frontend</strong> leve e moderno usando algum framework <strong>JS</strong> consumindo as <strong>APIs</strong> e <strong>Endpoints</strong> do <strong>Backend</strong> que estará gravando os dados em sistemas <strong>SGBDS</strong> modernos, sendo estes <strong>relacionais</strong> e <strong>não relacionais</strong> de acordo com o tipo de dado e contexto a ser persistido.</p>\n<h3 id=\"quais-as-vantagens\">Quais as vantagens?</h3>\n<ul>\n<li>Pode-se atualizar os componentes de forma separada e independente</li>\n<li>Como os componentes são separados, o desenvolvimento é simplificado e independente, podendo inclusive ser feito por times distintos</li>\n<li>Podemos trabalhar com objetivo de melhorar a escalabilidade em cada componente de forma independente, o que vai aumentar a resiliência e disponibilidade da aplicação</li>\n<li>Teremos mais segurança já que o o frontend nao fala diretamente com o banco</li>\n</ul>\n<p>Esse é o básico do básico sobre o assunto, mas suficiente para responder.</p>\n<h3 id=\"refs\">Refs</h3>\n<ul>\n<li><a href=\"https://www.logianalytics.com/5-benefits-3-tier-architecture\">https://www.logianalytics.com/5-benefits-3-tier-architecture</a></li>\n<li><a href=\"https://gocloudcareers.com/2021/10/21/what-is-a-three-tier-architecture\">https://gocloudcareers.com/2021/10/21/what-is-a-three-tier-architecture</a></li>\n<li><a href=\"https://ipwithease.com/three-tier-architecture-in-application/\">https://ipwithease.com/three-tier-architecture-in-application/</a></li>\n</ul>\n<p>[s]<br>\nGuto</p>\n<p>Este post é do tipo #MindNotes, entenda <a href=\"https://gutocarvalho.net/o-que-sao-mindnotes/\">aqui</a>.</p>\n<p>Se gostou manda um alo no twitter <a href=\"https://twitter.com/gutocarvalho\">@gutocarvalho</a>.</p>\n",
-            "author": {
-                "name": "Guto Carvalho"
-            },
-            "tags": [
-                   "MindNotes"
-            ],
-            "date_published": "2022-02-10T15:50:30-03:00",
-            "date_modified": "2022-02-16T08:45:45-03:00"
         }
     ]
 }

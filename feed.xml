@@ -3,12 +3,36 @@
     <title>Guto@Site</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2022-02-18T09:56:09-03:00</updated>
+    <updated>2022-02-18T10:01:36-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
     <id>https://gutocarvalho.net</id>
 
+    <entry>
+        <title>Conheça o manifesto tech</title>
+        <author>
+            <name>Guto Carvalho</name>
+        </author>
+        <link href="https://gutocarvalho.net/conheca-o-manifesto-tech/"/>
+        <id>https://gutocarvalho.net/conheca-o-manifesto-tech/</id>
+            <category term="FalaGutera"/>
+
+        <updated>2022-02-18T10:01:36-03:00</updated>
+            <summary>
+                <![CDATA[
+                    <p>Manifesto para o mercado de tecnologia brasileiro</p>
+
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p>Manifesto para o mercado de tecnologia brasileiro</p>
+
+<p>Ele foi lançado recentemente e confesso que ainda estou refletindo sobre ele, mas já dá para ver que existem empresas muito fortes tentando dar uma direção para contrações e  também discutir importantes mudanças de cultura nas empresas.<br><br>Vai lá e tire suas próprias conclusões:<br><br><a href="https://manifestotech.org/">https://manifestotech.org/</a><br><br>[s]<br>Guto</p>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>Kuma.io, um projeto para ficar de olho!</title>
         <author>
@@ -1077,59 +1101,6 @@ Guto</p>
 <p>[s]<br>
 Guto</p>
 <p>–</p>
-<p>Este post é do tipo #MindNotes, entenda <a href="https://gutocarvalho.net/o-que-sao-mindnotes/">aqui</a>.</p>
-<p>Se gostou manda um alo no twitter <a href="https://twitter.com/gutocarvalho">@gutocarvalho</a>.</p>
-
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>Entendendo o que é three tier application</title>
-        <author>
-            <name>Guto Carvalho</name>
-        </author>
-        <link href="https://gutocarvalho.net/entendendo-o-que-e-three-tier-application/"/>
-        <id>https://gutocarvalho.net/entendendo-o-que-e-three-tier-application/</id>
-            <category term="MindNotes"/>
-
-        <updated>2022-02-16T08:45:45-03:00</updated>
-            <summary>
-                <![CDATA[
-                    Se você está se inscrevendo para vagas de Cloud Engineer ou DevOps&hellip;
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                <p>Se você está se inscrevendo para vagas de Cloud Engineer ou DevOps Engineer esse termo pode aparecer em sua entrevista, vamos entender de forma simples o que é.</p>
-<p>É um arquitetura client-server bem conhecida e está organizada da seguinte forma:</p>
-<ul>
-<li>Presentation Layer (GUI)</li>
-<li>Application Layer (Business)</li>
-<li>Data Layer (Persistence)</li>
-</ul>
-<p>Fazendo uma APP seguindo esse modelo nos dias de hoje geraria algo como:</p>
-<ul>
-<li>Frontend (HTML, JS, CSS)</li>
-<li>Backend (Python, C)</li>
-<li>Database (PostgreSQL, Mongo)</li>
-</ul>
-<p>Atualmente seria um <strong>Backend</strong> desenvolvido com a estratégia <strong>API-FIRST</strong>, um <strong>Frontend</strong> leve e moderno usando algum framework <strong>JS</strong> consumindo as <strong>APIs</strong> e <strong>Endpoints</strong> do <strong>Backend</strong> que estará gravando os dados em sistemas <strong>SGBDS</strong> modernos, sendo estes <strong>relacionais</strong> e <strong>não relacionais</strong> de acordo com o tipo de dado e contexto a ser persistido.</p>
-<h3 id="quais-as-vantagens">Quais as vantagens?</h3>
-<ul>
-<li>Pode-se atualizar os componentes de forma separada e independente</li>
-<li>Como os componentes são separados, o desenvolvimento é simplificado e independente, podendo inclusive ser feito por times distintos</li>
-<li>Podemos trabalhar com objetivo de melhorar a escalabilidade em cada componente de forma independente, o que vai aumentar a resiliência e disponibilidade da aplicação</li>
-<li>Teremos mais segurança já que o o frontend nao fala diretamente com o banco</li>
-</ul>
-<p>Esse é o básico do básico sobre o assunto, mas suficiente para responder.</p>
-<h3 id="refs">Refs</h3>
-<ul>
-<li><a href="https://www.logianalytics.com/5-benefits-3-tier-architecture">https://www.logianalytics.com/5-benefits-3-tier-architecture</a></li>
-<li><a href="https://gocloudcareers.com/2021/10/21/what-is-a-three-tier-architecture">https://gocloudcareers.com/2021/10/21/what-is-a-three-tier-architecture</a></li>
-<li><a href="https://ipwithease.com/three-tier-architecture-in-application/">https://ipwithease.com/three-tier-architecture-in-application/</a></li>
-</ul>
-<p>[s]<br>
-Guto</p>
 <p>Este post é do tipo #MindNotes, entenda <a href="https://gutocarvalho.net/o-que-sao-mindnotes/">aqui</a>.</p>
 <p>Se gostou manda um alo no twitter <a href="https://twitter.com/gutocarvalho">@gutocarvalho</a>.</p>
 
