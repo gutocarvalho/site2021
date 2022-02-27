@@ -3,7 +3,7 @@
     <title>Guto@Site</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2022-02-26T23:04:46-03:00</updated>
+    <updated>2022-02-26T23:17:43-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
@@ -18,7 +18,7 @@
         <id>https://gutocarvalho.net/migrando-telegram-para-matrix/</id>
             <category term="FalaGutera"/>
 
-        <updated>2022-02-26T23:04:46-03:00</updated>
+        <updated>2022-02-26T23:17:43-03:00</updated>
             <summary>
                 <![CDATA[
                     Garantindo acesso às comunidades no caso de ficarmos sem Telegram, vem entender!&hellip;
@@ -86,6 +86,10 @@
 <li><a href="https://matrix.org/blog/posts">https://matrix.org/blog/posts</a></li>
 <li><a href="https://matrix.org/faq/">https://matrix.org/faq/</a></li>
 </ul>
+<p>Se você curtiu o projeto, vai gostar da loja deles, vai lá :)</p>
+<ul>
+<li><a href="https://shop.matrix.org/">https://shop.matrix.org/</a></li>
+</ul>
 <h3 id="matrix-na-fosdem-22">Matrix na FOSDEM 22</h3>
 <p>O FOSDEM de 2022 aconteceu dentro das redes do Matrix e isso foi um grande marco, me impressionou e me fez revisitar o projeto com outro olhar.</p>
 <ul>
@@ -123,8 +127,9 @@
 <p>Está rodando na minha casa, pode ser um pouco lento, é só para testes hein :)</p>
 <h3 id="por-que-mudar">Por que mudar?</h3>
 <p>Esse é um primeiro passo para um movimento que considero importante, migrar comunidades de tecnologias open-source para uma rede igualmente open e segura, mantida por uma fundação sem fins lucrativos, acessível, responsável e transparente.</p>
+<p>O Element.io é um cliente tão bom quanto ou até superior ao própio cliente to telegram para mobile, desktop ou web, se a questão é usabilidade, ele oferece algo em um nível similar.</p>
 <h3 id="o-que-usei-para-fazer-a-bridge">O que usei para fazer a bridge?</h3>
-<p>Usei o projeto matterbridge que uso há muitos anos. Inicialmente ele foi criado para conectar redes ao MatterMost, contudo, ele é flexível o suficiente para conectar diverentes redes entre si.</p>
+<p>Usei o projeto matterbridge que já uso e acompanho há muitos anos. Inicialmente o projeto foi criado para conectar outras redes ao MatterMost, contudo, ele cresceu e se tornou flexível o suficiente para conectar diferentes redes entre si.</p>
 <ul>
 <li><a href="https://github.com/42wim/matterbridge">https://github.com/42wim/matterbridge</a></li>
 </ul>
@@ -234,7 +239,8 @@ services:
 </code></pre>
 <p>Em breve solto os manifestos k8s e depois o pacote helm do matterbrige.</p>
 <h3 id="quais-serão-os-meus-próximos-passos">Quais serão os meus próximos passos?</h3>
-<p>Quero estudar mais sobre o Matrix, conhecer outras opções de server e client, entender sua criptografia, estender o alcance das bridges, ajudar quem quiser construir a sua e talvez começar a fazer meetups da CD.Foundation utilizando ele, acho que depois do FOSDEM o limite é nossa criatividade.</p>
+<p>Quero estudar mais sobre o Matrix, conhecer outras implementações do server como o dendrit, conhecer outros clientes, entender melhor sua criptografia para extrair mais dela, entender melhor sua API, estender o alcance das bridges no telegram, ajudar quem quiser construir a sua bridge e talvez começar a fazer meetups da CD.Foundation utilizando Matrix.org + Jitsi. </p>
+<p>Depois do FOSDEM e da imensa POC que eles fizeram, no momento o limite é nossa criatividade :)</p>
 <p>[s]<br>
 Guto</p>
 <hr>
