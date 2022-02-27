@@ -3,7 +3,7 @@
     <title>Guto@Site</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2022-02-26T23:17:43-03:00</updated>
+    <updated>2022-02-27T09:19:09-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
@@ -18,7 +18,7 @@
         <id>https://gutocarvalho.net/migrando-telegram-para-matrix/</id>
             <category term="FalaGutera"/>
 
-        <updated>2022-02-26T23:17:43-03:00</updated>
+        <updated>2022-02-27T09:19:09-03:00</updated>
             <summary>
                 <![CDATA[
                     Garantindo acesso às comunidades no caso de ficarmos sem Telegram, vem entender!&hellip;
@@ -42,45 +42,79 @@
 <ul>
 <li><a href="https://spec.matrix.org/latest">https://spec.matrix.org/latest</a></li>
 </ul>
+<h4 id="fundação-matrix">Fundação Matrix</h4>
 <p>O projeto é mantido pela Matrix Foundation, entidade sem fins lucrativos que além de organizar o desenvolvimento do projeto, roda também a plataforma matrix.org (synapse) como ponto de partida, disponível para federação com outras instâncias matrix/synapse.</p>
 <ul>
 <li><a href="https://matrix.org/foundation">https://matrix.org/foundation</a></li>
 </ul>
+<h4 id="pronto-para-produção">Pronto para produção</h4>
 <p>O projeto está na rua há algum tempo e <strong>já saiu do beta em 2019</strong>, podendo rodar em produção com segurança.</p>
 <ul>
 <li><a href="https://matrix.org/blog/2019/06/11/introducing-matrix-1-0-and-the-matrix-org-foundation">https://matrix.org/blog/2019/06/11/introducing-matrix-1-0-and-the-matrix-org-foundation</a></li>
 </ul>
 <p>Ele tem mensagens de texto, áudio, vídeo, voip e criptografia séria, é beeeeem completão, além de ser 100% open-source e tem também recursos de moderação excelentes.</p>
-<ul>
-<li><a href="https://matrix.org/docs/guides/moderation">https://matrix.org/docs/guides/moderation</a></li>
-</ul>
 <p>Do ponto de vista de mídias, ele suporta quase todos os tipos de arquivos de imagem, áudio e vídeo conhecidos.</p>
 <ul>
 <li><a href="https://matrix.org/discover">https://matrix.org/discover</a></li>
 </ul>
-<p>Quando a criptografia você pode ler mais aqui</p>
+<h4 id="moderação-de-alto-nível">Moderação de alto nível</h4>
+<p>O projeto em endereça as principais preocupações para fazer a gestão de comunidades tais como:</p>
+<ul>
+<li>Garantir que moderadores de salas tenham as ferramentas necessárias para fazer o enforce do código de conduta que eles aplicam</li>
+<li>Garantir que os administradores dos servidores tenham as ferramentas necessárias para fazer o enforce do termo de uso de suas instâncias</li>
+<li>Garantir que os usuários consigam filtram conteúdo que não desejam ver</li>
+</ul>
+<p>Junto a isso a moderação oferece:</p>
+<ul>
+<li>Remoção de mensagens em canais</li>
+<li>Gerenciamento de nomes e termos abusivos para salas e tópicos</li>
+<li>Power Levels, ou poderes granulares para usuários em salas</li>
+<li>Kick e ban de usuários</li>
+<li>Ban por IP</li>
+<li>Bloqueio de usuário</li>
+<li>Moderação de canal</li>
+<li>Um moderador de sala pode banir um servidor específico da sala</li>
+</ul>
+<p>Dentre muitos outros recursos, entre no link abaixo para saber mais</p>
+<ul>
+<li><a href="https://matrix.org/docs/guides/moderation">https://matrix.org/docs/guides/moderation</a></li>
+</ul>
+<h4 id="segurança-no-matrix">Segurança no Matrix</h4>
+<p>O projeto oferece o que tem de mais moderno em criptografia E2E. O sistema de criptografia do matrix visa garantir que apenas os destinatários de uma mensagem consigam decriptogafar e ler seu conteúdo. O sistema avisa inclusive se outros dispositivos foram adicionados a conversa. </p>
+<ul>
+<li><a href="https://matrix.org/docs/guides/end-to-end-encryption-implementation-guide">https://matrix.org/docs/guides/end-to-end-encryption-implementation-guide</a></li>
+</ul>
+<p>A criptografia do Matrix é baseada no “Double Ratchet Algorithm” popularizada pelo projeto Signal (que é considerado o mais seguro hoje). Ela foi baseada e estendida para que o mesmo nível de criptografia funcione em salas com milhares de dispositivos e usuários. Além disso, a criptografia do Matriz foi auditada de forma independente pelo grupo <a href="https://pentestreports.com/reports/iSEC/NCC_Group_Olm_Cryptogrpahic_Review_2016_11_01.pdf">NCC</a> o que traz uma segunda opnião sobre a qualidade da solução implementada. O relatório do grupo NCC é de 2016 e todas as issues apontadas já foram resolvidas.</p>
 <ul>
 <li><a href="https://gitlab.matrix.org/matrix-org/olm/blob/master/docs/olm.md">https://gitlab.matrix.org/matrix-org/olm/blob/master/docs/olm.md</a></li>
 <li><a href="https://gitlab.matrix.org/matrix-org/olm/blob/master/docs/megolm.md">https://gitlab.matrix.org/matrix-org/olm/blob/master/docs/megolm.md</a></li>
-<li><a href="https://matrix.org/docs/guides/end-to-end-encryption-implementation-guide">https://matrix.org/docs/guides/end-to-end-encryption-implementation-guide</a></li>
 </ul>
+<h4 id="apis-bots-e-sdks">APIs, Bots e SDK’s</h4>
 <p>O matrix tem um API bem flexível e dá para rodar bots, integrar com seus sistemas fazendo aquele <strong>chatops bacana</strong>.</p>
 <ul>
 <li><a href="https://matrix.org/bots">https://matrix.org/bots</a></li>
 <li><a href="https://matrix.org/sdks">https://matrix.org/sdks</a></li>
 <li><a href="https://matrix.org/docs/api/">https://matrix.org/docs/api/</a></li>
 </ul>
+<h4 id="implementações-de-servidores">Implementações de servidores</h4>
 <p>Você pode rodar sua própria instância/server do Matrix e se quiser pode integrar/federar com os outros servidores existentes.</p>
+<ul>
+<li><a href="https://matrix.org/docs/projects/server/synapse">https://matrix.org/docs/projects/server/synapse</a></li>
+<li><a href="https://matrix.org/docs/projects/server/dendrite">https://matrix.org/docs/projects/server/dendrite</a></li>
+</ul>
+<h4 id="implementações-de-clientes">Implementações de clientes</h4>
 <p>Existe o element.io que é um cliente fantástico para mobile, desktop e web, mas ele não é o único, tem dezenas de projetos clientes e até implementações alternativas para o core do Matrix.</p>
 <ul>
 <li><a href="https://matrix.org/clients">https://matrix.org/clients</a></li>
 <li><a href="https://matrix.org/docs/projects/try-matrix-now">https://matrix.org/docs/projects/try-matrix-now</a></li>
+<li><a href="https://matrix.org/docs/projects/client/element">https://matrix.org/docs/projects/client/element</a> (antigo riot)</li>
 </ul>
+<h4 id="conectando-redes-via-bridges">Conectando redes via Bridges</h4>
 <p>Fora isso tudo, uma das características mais interessantes do projeto Matrix é a integração com virtualmente qualquer outro projeto de comunicação, tais como irc, slack, telegram, whatsapp, mattermost, rocketchat, discord dentre outros, a integração é feita através do que eles chamam de bridges.</p>
 <ul>
 <li><a href="https://matrix.org/bridges">https://matrix.org/bridges</a></li>
 </ul>
-<p>Quer saber mais?</p>
+<h4 id="quer-saber-mais">Quer saber mais?</h4>
 <ul>
 <li><a href="https://matrix.org">https://matrix.org</a></li>
 <li><a href="https://matrix.org/blog/posts">https://matrix.org/blog/posts</a></li>
@@ -99,7 +133,11 @@
 <ul>
 <li><a href="https://fosdem.org/2022/schedule/track/matrixorg_foundation_and_community/">https://fosdem.org/2022/schedule/track/matrixorg_foundation_and_community/</a></li>
 </ul>
-<p>Por essa razão eu achei que era o momento de criar meu plano B lá na rede da Matrix.org.</p>
+<p>Com isso sabemos inclusive que é possível utilizá-lo para eventos online</p>
+<ul>
+<li><a href="https://matrix.org/docs/guides/running-online-events">https://matrix.org/docs/guides/running-online-events</a></li>
+</ul>
+<p>Por essa razão eu achei que era o momento de criar meu plano B lá na rede da Matrix.org já que seus recursos são tão interessantes.</p>
 <h3 id="o-que-eu-fiz">O que eu fiz?</h3>
 <p>Eu criei os seguintes canais no matrix.org  – <strong>dos quais eu ajudo a manter</strong> - e conectei aos mesmos canais no telegram.</p>
 <pre><code>#cicd-br (canal #cdnbr no telegram)
@@ -127,7 +165,7 @@
 <p>Está rodando na minha casa, pode ser um pouco lento, é só para testes hein :)</p>
 <h3 id="por-que-mudar">Por que mudar?</h3>
 <p>Esse é um primeiro passo para um movimento que considero importante, migrar comunidades de tecnologias open-source para uma rede igualmente open e segura, mantida por uma fundação sem fins lucrativos, acessível, responsável e transparente.</p>
-<p>O Element.io é um cliente tão bom quanto ou até superior ao própio cliente to telegram para mobile, desktop ou web, se a questão é usabilidade, ele oferece algo em um nível similar.</p>
+<p>O Element.io é um cliente tão bom quanto ou até superior ao próprio cliente to telegram para mobile, desktop ou web, se a questão é usabilidade, ele oferece algo em um mesmo nível de qualidade e usabilidade.</p>
 <h3 id="o-que-usei-para-fazer-a-bridge">O que usei para fazer a bridge?</h3>
 <p>Usei o projeto matterbridge que já uso e acompanho há muitos anos. Inicialmente o projeto foi criado para conectar outras redes ao MatterMost, contudo, ele cresceu e se tornou flexível o suficiente para conectar diferentes redes entre si.</p>
 <ul>
@@ -240,6 +278,9 @@ services:
 <p>Em breve solto os manifestos k8s e depois o pacote helm do matterbrige.</p>
 <h3 id="quais-serão-os-meus-próximos-passos">Quais serão os meus próximos passos?</h3>
 <p>Quero estudar mais sobre o Matrix, conhecer outras implementações do server como o dendrit, conhecer outros clientes, entender melhor sua criptografia para extrair mais dela, entender melhor sua API, estender o alcance das bridges no telegram, ajudar quem quiser construir a sua bridge e talvez começar a fazer meetups da CD.Foundation utilizando Matrix.org + Jitsi. </p>
+<ul>
+<li><a href="https://matrix.org/docs/guides/running-online-events">https://matrix.org/docs/guides/running-online-events</a></li>
+</ul>
 <p>Depois do FOSDEM e da imensa POC que eles fizeram, no momento o limite é nossa criatividade :)</p>
 <p>[s]<br>
 Guto</p>
