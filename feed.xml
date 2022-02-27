@@ -3,7 +3,7 @@
     <title>Guto@Site</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2022-02-27T09:36:38-03:00</updated>
+    <updated>2022-02-27T09:42:01-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
@@ -18,7 +18,7 @@
         <id>https://gutocarvalho.net/migrando-telegram-para-matrix/</id>
             <category term="FalaGutera"/>
 
-        <updated>2022-02-27T09:36:38-03:00</updated>
+        <updated>2022-02-27T09:42:01-03:00</updated>
             <summary>
                 <![CDATA[
                     Garantindo acesso às comunidades no caso de ficarmos sem Telegram, vem entender!&hellip;
@@ -36,7 +36,7 @@
 <p>O fato é que que o <strong>alto comando</strong> do Telegram simplesmente não responde nenhuma notificação do governo ou da justiça Brazuca, e estes por sua vez já avisaram que <strong>se continuarem assim, é provavel o bloqueio do APP</strong> nas redes de nosso país.</p>
 <p>Vale lembrar que o <strong>core</strong> do Telegram, bem como sua <strong>criptografia</strong> são <strong>projetos fechados</strong>, dos quais não podemos auditar e verificar.</p>
 <p>Juntando isso com a <strong>guerra que estourou na Ucrânia</strong> e as sanções ao invasor Russo, temos dois fortes motivos para ficar com o pé atrás no caso do Telegram, afinal é um <strong>projeto de origem russa</strong>, que tem como <strong>dono um bilionário Russo</strong> com várias coisas obscuras em sua história e trajetória até hoje.</p>
-<p>Com medo do cenário atual ter algum reflexo em nossas comunidades, eu fiquei pensando em como preservar os grupos que eu apoio no Telegram e construir um plano B no caso de corte dessa rede que usamos para compartilhar e se ajudar.</p>
+<p>Com receio do cenário atual ter algum reflexo em nossas comunidades, eu fiquei pensando em como preservar os grupos que eu apoio no Telegram e construir um plano B no caso de corte dessa rede que usamos para compartilhar e se ajudar.</p>
 <p>Indo no caminho de uma solução alternativa eu revisitei o projeto Matrix.</p>
 <h3 id="o-que-é-o-projeto-matrixorg">O que é o projeto Matrix.org?</h3>
 <p>O <strong>Matrix.org</strong> é um projeto que tem como objetivo criar padrões abertos para comunicação em tempo real, sendo descentralizado e tendo em mente segurança com forte criptografia, performance e escalabilidade.</p>
