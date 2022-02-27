@@ -3,7 +3,7 @@
     <title>Guto@Site</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2022-02-26T22:10:44-03:00</updated>
+    <updated>2022-02-26T22:28:04-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
@@ -18,7 +18,7 @@
         <id>https://gutocarvalho.net/migrando-telegram-para-matrix/</id>
             <category term="FalaGutera"/>
 
-        <updated>2022-02-26T22:10:44-03:00</updated>
+        <updated>2022-02-26T22:28:04-03:00</updated>
             <summary>
                 <![CDATA[
                     Garantindo acesso às comunidades no caso de ficarmos sem Telegram, vem entender!&hellip;
@@ -39,16 +39,40 @@
 <p>Indo no caminho de uma solução alternativa eu revisitei o projeto Matrix.</p>
 <h3 id="o-que-é-o-projeto-matrixorg">O que é o projeto Matrix.org?</h3>
 <p>O <strong>Matrix.org</strong> é um projeto que tem como objetivo criar padrões abertos para comunicação em tempo real, sendo descentralizado e tendo em mente segurança com forte criptografia, performance e escalabilidade.</p>
+<ul>
+<li><a href="https://spec.matrix.org/latest/">https://spec.matrix.org/latest/</a></li>
+</ul>
 <p>O projeto é mantido pela Matrix Foundation, entidade sem fins lucrativos que além de organizar o desenvolvimento do projeto, roda também a plataforma matrix.org (synapse) como ponto de partida, disponível para federação com outras instâncias matrix/synapse.</p>
+<ul>
+<li><a href="https://matrix.org/foundation/">https://matrix.org/foundation/</a></li>
+</ul>
 <p>O projeto está na rua há algum tempo e <strong>já saiu do beta em 2019</strong>, podendo rodar em produção com segurança.</p>
+<p><a href="https://matrix.org/blog/2019/06/11/introducing-matrix-1-0-and-the-matrix-org-foundation">https://matrix.org/blog/2019/06/11/introducing-matrix-1-0-and-the-matrix-org-foundation</a></p>
 <p>Ele tem mensagens de texto, áudio, vídeo, voip e criptografia séria, é beeeeem completão, além de ser 100% open-source :)</p>
+<ul>
+<li><a href="https://matrix.org/discover/">https://matrix.org/discover/</a></li>
+</ul>
 <p>Do ponto de vista de mídias, ele suporta quase todos os tipos de arquivos de imagem, áudio e vídeo conhecidos.</p>
 <p>O matrix tem um API bem flexível e dá para rodar bots, integrar com seus sistemas fazendo aquele <strong>chatops bacana</strong>.</p>
+<ul>
+<li><a href="https://matrix.org/bots/">https://matrix.org/bots/</a></li>
+</ul>
 <p>Você pode rodar sua própria instância/server do Matrix e se quiser pode integrar/federar com os outros servidores existentes.</p>
 <p>Existe o element.io que é um cliente fantástico para mobile, desktop e web, mas ele não é o único, tem dezenas de projetos clientes e até implementações alternativas para o core do Matrix.</p>
+<ul>
+<li><a href="https://matrix.org/clients/">https://matrix.org/clients/</a></li>
+<li><a href="https://matrix.org/sdks/">https://matrix.org/sdks/</a></li>
+<li><a href="https://matrix.org/docs/projects/try-matrix-now">https://matrix.org/docs/projects/try-matrix-now</a></li>
+</ul>
 <p>Fora isso tudo, uma das características mais interessantes do projeto Matrix é a integração com virtualmente qualquer outro projeto de comunicação, tais como irc, slack, telegram, whatsapp, mattermost, rocketchat, discord dentre outros, a integração é feita através do que eles chamam de bridges.</p>
 <ul>
 <li><a href="https://matrix.org/bridges">https://matrix.org/bridges</a></li>
+</ul>
+<p>Quer saber mais?</p>
+<ul>
+<li><a href="https://matrix.org">https://matrix.org</a></li>
+<li><a href="https://matrix.org/blog/posts">https://matrix.org/blog/posts</a></li>
+<li><a href="https://matrix.org/faq/">https://matrix.org/faq/</a></li>
 </ul>
 <h3 id="matrix-na-fosdem-22">Matrix na FOSDEM 22</h3>
 <p>O FOSDEM de 2022 aconteceu dentro das redes do Matrix e isso foi um grande marco, me impressionou e me fez revisitar o projeto com outro olhar.</p>
@@ -80,6 +104,11 @@
 <pre><code>#ansible-br
 </code></pre>
 <p>E vou conversar com os gestores dos canais no telegram para verificar se conseguimos linkar os canais no Matrix, claro que os donos serão os admins também, já assumo esse compromisso aqui.</p>
+<p>Ah subi também um cliente do element web para testar</p>
+<ul>
+<li><a href="https://element.nativetrail.io">https://element.nativetrail.io</a></li>
+</ul>
+<p>Está rodando na minha casa, pode ser um pouco lento, é só para testes hein :)</p>
 <h3 id="por-que-mudar">Por que mudar?</h3>
 <p>Esse é um primeiro passo para um movimento que considero importante, migrar comunidades de tecnologias open-source para uma rede igualmente open e segura, mantida por uma fundação sem fins lucrativos, acessível, responsável e transparente.</p>
 <h3 id="o-que-usei-para-fazer-a-bridge">O que usei para fazer a bridge?</h3>
