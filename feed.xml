@@ -3,7 +3,7 @@
     <title>Guto@Site</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2022-02-26T22:55:09-03:00</updated>
+    <updated>2022-02-26T23:04:46-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
@@ -18,7 +18,7 @@
         <id>https://gutocarvalho.net/migrando-telegram-para-matrix/</id>
             <category term="FalaGutera"/>
 
-        <updated>2022-02-26T22:55:09-03:00</updated>
+        <updated>2022-02-26T23:04:46-03:00</updated>
             <summary>
                 <![CDATA[
                     Garantindo acesso às comunidades no caso de ficarmos sem Telegram, vem entender!&hellip;
@@ -50,15 +50,25 @@
 <ul>
 <li><a href="https://matrix.org/blog/2019/06/11/introducing-matrix-1-0-and-the-matrix-org-foundation">https://matrix.org/blog/2019/06/11/introducing-matrix-1-0-and-the-matrix-org-foundation</a></li>
 </ul>
-<p>Ele tem mensagens de texto, áudio, vídeo, voip e criptografia séria, é beeeeem completão, além de ser 100% open-source :)</p>
+<p>Ele tem mensagens de texto, áudio, vídeo, voip e criptografia séria, é beeeeem completão, além de ser 100% open-source e tem também recursos de moderação excelentes.</p>
+<ul>
+<li><a href="https://matrix.org/docs/guides/moderation">https://matrix.org/docs/guides/moderation</a></li>
+</ul>
+<p>Do ponto de vista de mídias, ele suporta quase todos os tipos de arquivos de imagem, áudio e vídeo conhecidos.</p>
 <ul>
 <li><a href="https://matrix.org/discover">https://matrix.org/discover</a></li>
 </ul>
-<p>Do ponto de vista de mídias, ele suporta quase todos os tipos de arquivos de imagem, áudio e vídeo conhecidos.</p>
+<p>Quando a criptografia você pode ler mais aqui</p>
+<ul>
+<li><a href="https://gitlab.matrix.org/matrix-org/olm/blob/master/docs/olm.md">https://gitlab.matrix.org/matrix-org/olm/blob/master/docs/olm.md</a></li>
+<li><a href="https://gitlab.matrix.org/matrix-org/olm/blob/master/docs/megolm.md">https://gitlab.matrix.org/matrix-org/olm/blob/master/docs/megolm.md</a></li>
+<li><a href="https://matrix.org/docs/guides/end-to-end-encryption-implementation-guide">https://matrix.org/docs/guides/end-to-end-encryption-implementation-guide</a></li>
+</ul>
 <p>O matrix tem um API bem flexível e dá para rodar bots, integrar com seus sistemas fazendo aquele <strong>chatops bacana</strong>.</p>
 <ul>
 <li><a href="https://matrix.org/bots">https://matrix.org/bots</a></li>
 <li><a href="https://matrix.org/sdks">https://matrix.org/sdks</a></li>
+<li><a href="https://matrix.org/docs/api/">https://matrix.org/docs/api/</a></li>
 </ul>
 <p>Você pode rodar sua própria instância/server do Matrix e se quiser pode integrar/federar com os outros servidores existentes.</p>
 <p>Existe o element.io que é um cliente fantástico para mobile, desktop e web, mas ele não é o único, tem dezenas de projetos clientes e até implementações alternativas para o core do Matrix.</p>
