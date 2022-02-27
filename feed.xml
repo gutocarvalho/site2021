@@ -3,7 +3,7 @@
     <title>Guto@Site</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2022-02-26T22:48:55-03:00</updated>
+    <updated>2022-02-26T22:55:09-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
@@ -18,7 +18,7 @@
         <id>https://gutocarvalho.net/migrando-telegram-para-matrix/</id>
             <category term="FalaGutera"/>
 
-        <updated>2022-02-26T22:48:55-03:00</updated>
+        <updated>2022-02-26T22:55:09-03:00</updated>
             <summary>
                 <![CDATA[
                     Garantindo acesso às comunidades no caso de ficarmos sem Telegram, vem entender!&hellip;
@@ -47,7 +47,9 @@
 <li><a href="https://matrix.org/foundation">https://matrix.org/foundation</a></li>
 </ul>
 <p>O projeto está na rua há algum tempo e <strong>já saiu do beta em 2019</strong>, podendo rodar em produção com segurança.</p>
-<p><a href="https://matrix.org/blog/2019/06/11/introducing-matrix-1-0-and-the-matrix-org-foundation">https://matrix.org/blog/2019/06/11/introducing-matrix-1-0-and-the-matrix-org-foundation</a></p>
+<ul>
+<li><a href="https://matrix.org/blog/2019/06/11/introducing-matrix-1-0-and-the-matrix-org-foundation">https://matrix.org/blog/2019/06/11/introducing-matrix-1-0-and-the-matrix-org-foundation</a></li>
+</ul>
 <p>Ele tem mensagens de texto, áudio, vídeo, voip e criptografia séria, é beeeeem completão, além de ser 100% open-source :)</p>
 <ul>
 <li><a href="https://matrix.org/discover">https://matrix.org/discover</a></li>
