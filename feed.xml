@@ -3,7 +3,7 @@
     <title>Guto@Site</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2022-02-27T09:42:30-03:00</updated>
+    <updated>2022-02-27T09:44:25-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
@@ -18,7 +18,7 @@
         <id>https://gutocarvalho.net/migrando-telegram-para-matrix/</id>
             <category term="FalaGutera"/>
 
-        <updated>2022-02-27T09:42:30-03:00</updated>
+        <updated>2022-02-27T09:44:25-03:00</updated>
             <summary>
                 <![CDATA[
                     Garantindo acesso às comunidades no caso de ficarmos sem Telegram, vem entender!&hellip;
@@ -167,7 +167,7 @@
 <p>Está rodando na minha casa, pode ser um pouco lento, é só para testes hein :)</p>
 <h3 id="por-que-mudar">Por que mudar?</h3>
 <p>Esse é um primeiro passo para um movimento que considero importante, migrar comunidades de tecnologias open-source para uma rede igualmente open e segura, mantida por uma fundação sem fins lucrativos, acessível, responsável e transparente.</p>
-<p>O Element.io é um cliente tão bom quanto ou até superior ao próprio cliente to telegram para mobile, desktop ou web, se a questão é usabilidade, ele oferece algo em um mesmo nível de qualidade e usabilidade.</p>
+<p>O Element.io é um cliente tão bom quanto ou até superior ao próprio cliente do telegram para mobile, desktop ou web, se a questão é usabilidade, ele oferece algo em um mesmo nível de qualidade e usabilidade.</p>
 <h3 id="o-que-usei-para-fazer-a-bridge">O que usei para fazer a bridge?</h3>
 <p>Usei o projeto matterbridge que já uso e acompanho há muitos anos. Inicialmente o projeto foi criado para conectar outras redes ao MatterMost, contudo, ele cresceu e se tornou flexível o suficiente para conectar diferentes redes entre si.</p>
 <ul>
