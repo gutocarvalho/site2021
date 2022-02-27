@@ -3,7 +3,7 @@
     <title>Guto@Site</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2022-02-27T09:32:18-03:00</updated>
+    <updated>2022-02-27T09:35:03-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
@@ -18,7 +18,7 @@
         <id>https://gutocarvalho.net/migrando-telegram-para-matrix/</id>
             <category term="FalaGutera"/>
 
-        <updated>2022-02-27T09:32:18-03:00</updated>
+        <updated>2022-02-27T09:35:03-03:00</updated>
             <summary>
                 <![CDATA[
                     Garantindo acesso às comunidades no caso de ficarmos sem Telegram, vem entender!&hellip;
@@ -104,7 +104,7 @@
 <li><a href="https://matrix.org/docs/projects/server/dendrite">https://matrix.org/docs/projects/server/dendrite</a></li>
 </ul>
 <h4 id="implementações-de-clientes">Implementações de clientes</h4>
-<p>Existe o element.io que é um cliente fantástico para mobile, desktop e web, mas ele não é o único, tem dezenas de projetos clientes e até implementações alternativas para o core do Matrix.</p>
+<p>Existe o element.io que é um cliente fantástico para mobile, desktop e web, mas ele não é o único, existem diversos projetos de cliente Matrix</p>
 <ul>
 <li><a href="https://matrix.org/clients">https://matrix.org/clients</a></li>
 <li><a href="https://matrix.org/docs/projects/try-matrix-now">https://matrix.org/docs/projects/try-matrix-now</a></li>
@@ -115,6 +115,7 @@
 <ul>
 <li><a href="https://matrix.org/bridges">https://matrix.org/bridges</a></li>
 </ul>
+<p>Com a bridge você pode estender um canal do telegram para o matrix por exemplo, conectar ao discord, irc e com isso unificar sua comunidade.</p>
 <h4 id="quer-saber-mais">Quer saber mais?</h4>
 <ul>
 <li><a href="https://matrix.org">https://matrix.org</a></li>
