@@ -3,7 +3,7 @@
     <title>Guto@Site</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2022-03-09T10:17:37-03:00</updated>
+    <updated>2022-03-09T13:43:46-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
@@ -19,7 +19,7 @@
             <category term="TLDR"/>
             <category term="CDF"/>
 
-        <updated>2022-03-09T10:17:37-03:00</updated>
+        <updated>2022-03-09T13:43:46-03:00</updated>
             <summary>
                 <![CDATA[
                     Qual o objetivo desse post? Às vezes lemos em vagas ou ouvimos&hellip;
@@ -148,7 +148,7 @@ vamos tentar focar no que é comum em todos eles.</p>
 <li><a href="#entenda-configura%C3%A7%C3%A3o-de-redes-no-linux">Entenda configuração de redes no linux</a></li>
 <li><a href="#entenda-roteamento-no-Linux">Entenda roteamento no linux</a></li>
 <li><a href="#entenda-filtro-de-pacotes-no-linux">Entenda filtro de pacotes no linux</a></li>
-<li><a href="#entenda-t%C3%A9cnicas-e-ferramentas-de-troubleshooting">Entenda técnicas e ferramentas de troubleshooting de rede</a></li>
+<li><a href="#entenda-t%C3%A9cnicas-e-ferramentas-de-troubleshooting">Entenda técnicas e ferramentas de troubleshooting</a></li>
 </ul>
 </li>
 </ul>
@@ -574,7 +574,7 @@ vamos tentar focar no que é comum em todos eles.</p>
 <h2 id="entenda-o-ntp">Entenda o NTP</h2>
 <ul>
 <li>Entenda o que é o Network time Protocol ou NTP<ul>
-<li>Conheça as principais implementação do NTP server<ul>
+<li>Conheça as principais implementações do NTP server<ul>
 <li>systemd-timesyncd</li>
 <li>chrony (redhat systems)</li>
 <li>ntp</li>
