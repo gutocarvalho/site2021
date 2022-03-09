@@ -3,7 +3,7 @@
     <title>Guto@Site</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2022-03-09T10:13:16-03:00</updated>
+    <updated>2022-03-09T10:16:55-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
@@ -19,7 +19,7 @@
             <category term="TLDR"/>
             <category term="CDF"/>
 
-        <updated>2022-03-09T10:13:16-03:00</updated>
+        <updated>2022-03-09T10:16:55-03:00</updated>
             <summary>
                 <![CDATA[
                     Qual o objetivo desse post? Às vezes lemos em vagas ou ouvimos&hellip;
@@ -479,7 +479,7 @@ vamos tentar focar no que é comum em todos eles.</p>
 <li>100-199 repostas de informacao</li>
 </ul>
 </li>
-<li>Entenda os verbos HTTP<ul>
+<li>Entenda os principais verbos ou métodos HTTP<ul>
 <li>GET</li>
 <li>POST</li>
 <li>PUT</li>
