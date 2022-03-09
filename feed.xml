@@ -3,7 +3,7 @@
     <title>Guto@Site</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2022-03-09T10:04:35-03:00</updated>
+    <updated>2022-03-09T10:13:16-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
@@ -19,7 +19,7 @@
             <category term="TLDR"/>
             <category term="CDF"/>
 
-        <updated>2022-03-09T10:04:35-03:00</updated>
+        <updated>2022-03-09T10:13:16-03:00</updated>
             <summary>
                 <![CDATA[
                     Qual o objetivo desse post? Às vezes lemos em vagas ou ouvimos&hellip;
@@ -59,10 +59,12 @@ vamos tentar focar no que é comum em todos eles.</p>
 <li>GitOps Engineer.</li>
 </ul>
 <h2 id="como-entender-as-indicações-do-texto">Como entender as indicações do texto?</h2>
-<p>Aqui vamos usar dois termos simples</p>
-<p><strong>Conheça</strong>, se usado indica uma leitura de alto nível do assunto.
-<strong>Entenda</strong>, se usado indica que deve estudar a fundo, instalar e testar, se possível.
-<strong>Aprenda</strong>, vai lá e usa de verdade</p>
+<p>Aqui vamos usar alguns termos simples</p>
+<ul>
+<li><strong>Conheça</strong>, se usado indica uma leitura de alto nível do assunto.</li>
+<li><strong>Entenda</strong>, se usado indica que deve estudar a fundo, instalar e testar, se possível.</li>
+<li><strong>Aprenda</strong>, vai lá e usa de verdade</li>
+</ul>
 <h2 id="o-que-eu-vou-encontrar-aqui">O que eu vou encontrar aqui?</h2>
 <p>Vamos falar desde redes, protocolos, modelos, tecnologias, métodos, técnicas, ferramentas e poderemos tocar em alguns aspectos do Sistema Operacional Linux também.</p>
 <p>Nosso foco aqui é Open Source, Open Standards e sistemas Linux e Unix Like.</p>
