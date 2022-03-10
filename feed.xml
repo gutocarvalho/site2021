@@ -3,7 +3,7 @@
     <title>Guto@Site</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2022-03-10T08:35:10-03:00</updated>
+    <updated>2022-03-10T09:11:08-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
@@ -19,7 +19,7 @@
             <category term="TLDR"/>
             <category term="CDF"/>
 
-        <updated>2022-03-10T08:35:10-03:00</updated>
+        <updated>2022-03-10T09:11:08-03:00</updated>
             <summary>
                 <![CDATA[
                     Qual o objetivo desse post? Às vezes lemos em vagas ou ouvimos&hellip;
@@ -96,8 +96,23 @@ vamos tentar focar no que é comum em todos eles.</p>
 <h3 id="histórico-de-revisões">Histórico de revisões</h3>
 <ul>
 <li>2022-03-10<ul>
-<li>Atualizada a seção de CertManager</li>
-<li>Links adicionados na parte de Network</li>
+<li>Atualizada a seção Network</li>
+<li>Atualizada a seção de CertManager/LetsEncrypt</li>
+<li>Atualizada a seção Redes Linux<ul>
+<li>Atualizada a seção Interfaces de rede</li>
+<li>Atualizada a seção Iptables</li>
+<li>Atualizada a seção NTP</li>
+<li>Atualizada a seção VPN</li>
+</ul>
+</li>
+<li>Atualizada a seção Materiais complementares<ul>
+<li>Atualizada a seção Load Balancer</li>
+<li>Atualizada a seção Reverse Proxy</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Links adicionados na parte de Network<ul>
 <li>Links adicionados na parte de modelo OSI</li>
 <li>Links adicionados na parte de DNS</li>
 <li>Links adicionados em protocolos de rede</li>
@@ -179,27 +194,28 @@ vamos tentar focar no que é comum em todos eles.</p>
 <h2 id="entenda-o-que-é-network">Entenda o que é network</h2>
 <ul>
 <li>Entendenda redes<ul>
-<li>Entender o que é uma rede e para que serve (alto nível)</li>
-<li>Entender o que é um IP e para que serve (alto nível)</li>
-<li>Entender o que é uma máscara de rede e para que serve (alto nível)</li>
-<li>Entender máscara de redes/subredes  <ul>
-<li>Redes Classe A, B, C, D (Multicast), E (Experimental)</li>
-<li>Redes Reservadas</li>
-<li>Localhost</li>
+<li>Entender o que é uma rede e para que serve</li>
+<li>Entender o que é um IP e para que serve</li>
+<li>Entender o que é uma máscara de rede e para que serve</li>
+<li>Entender o que é uma sub-rede e paera que server <ul>
+<li>Entender as classes de rede A, B, C, D, E</li>
+<li>Entender e conhecer as redes reservadas</li>
+<li>Entender o que é localhost</li>
 </ul>
 </li>
+<li>Conheça a conversao binária para endereços IP </li>
 <li>Aprender a usar calculadora de redes</li>
-<li>Ler sobre conversao binária para endereços IP (alto nível, conceitual)</li>
 </ul>
 </li>
 <li>Conhecer Organizações<ul>
-<li>IETF</li>
-<li>IANA</li>
-<li>EFF</li>
-<li>ICANN</li>
+<li>Conhecer a IETF</li>
+<li>Conhecer a IRTF</li>
+<li>Conhecer a IANA</li>
+<li>Conhecer a EFF</li>
+<li>Conhecer a ICANN</li>
 </ul>
 </li>
-<li>Conhecer<ul>
+<li>Conhecer padrões de documentação<ul>
 <li>RFC</li>
 </ul>
 </li>
@@ -218,6 +234,7 @@ vamos tentar focar no que é comum em todos eles.</p>
 <p>Organizações</p>
 <ul>
 <li><a href="https://en.wikipedia.org/wiki/Internet_Engineering_Task_Force">Internet Engineering Task Force ou IETF - Wikipedia #EN_US</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Internet_Research_Task_Force">Internet Research Task Force ou IRTF - Wikipedia #EN_US</a></li>
 <li><a href="https://en.wikipedia.org/wiki/Internet_Assigned_Numbers_Authority">Internet Assigned Numbers Authority ou IANA - Wikipedia #EN_US</a></li>
 <li><a href="https://en.wikipedia.org/wiki/ICANN">Internet Corporation for Assigned Names and Numbers ou ICANN - Wikipedia #EN_US</a></li>
 <li><a href="https://en.wikipedia.org/wiki/Electronic_Frontier_Foundation">Eletronic Frontier Foundation ou EFF - Wikipedia #EN_US</a></li>
@@ -338,23 +355,22 @@ vamos tentar focar no que é comum em todos eles.</p>
 <li><a href="https://www.youtube.com/watch?v=uRvjPlbJ_98&amp;list=PLuf64C8sPVT_nObvAFU5W-SiE04ST-PlL&amp;index=8">Entendendo o TCP e IP</a></li>
 </ul>
 <h2 id="entenda-os-conceitos-de-rede-mais-importantes">Entenda os conceitos de rede mais importantes</h2>
-<p>entendendo formas de comunicação</p>
+<p>Entenda formas de comunicação</p>
 <ul>
-<li> Entender o que é unicast</li>
-<li> Entender o que é broadcast</li>
-<li> Entender o que é multicast</li>
-<li> Entender a diferença entre unicast e multicast</li>
+<li> Entenda o que é unicast</li>
+<li> Entenda o que é broadcast</li>
+<li> Entenda o que é multicast</li>
+<li> Entenda a diferença entre unicast e multicast</li>
 </ul>
-<p>entendendo nat</p>
+<p>Entenda NAT</p>
 <ul>
-<li>o que é para que serve?</li>
-<li>o que é pat e qual a diferença pro nat?</li>
+<li>Entenda o que é para que serve?</li>
+<li>Entenda o que é PAT e qual a diferença pro nat?</li>
 </ul>
-<p>entendendo essa tal de VLAN, 802.1Q (alto nível)</p>
+<p>Entenda essa tal de VLAN, 802.1Q (alto nível)</p>
 <ul>
-<li>o que é</li>
-<li>para que usamos</li>
-<li>por que é importante</li>
+<li>Entenda o que é VLAN</li>
+<li>Entenda para que usamos uma VLAN e sua importância</li>
 </ul>
 <h3 id="links-4">links</h3>
 <ul>
@@ -370,16 +386,16 @@ vamos tentar focar no que é comum em todos eles.</p>
 </ul>
 <h2 id="entenda-dhcp">Entenda DHCP</h2>
 <ul>
-<li>entenda para que serve o DHCP</li>
-<li>entenda como funciona o DHCP</li>
-<li>entenda o dhcp process (discovery, offer, request, ack )</li>
-<li>entenda o dhcp lease</li>
-<li>entenda como configurar um interface de rede para uso de DHCP<ul>
+<li>Entenda para que serve o DHCP</li>
+<li>Entenda como funciona o DHCP</li>
+<li>Entenda o dhcp process (discovery, offer, request, ack )</li>
+<li>Entenda o dhcp lease</li>
+<li>Entenda como configurar um interface de rede para uso de DHCP<ul>
 <li>ambiente debian-like</li>
 <li>ambiente redhat-like </li>
 </ul>
 </li>
-<li>conheça e veja um arquivo de configuração de algum dhcp server.</li>
+<li>Conheça e veja um arquivo de configuração de algum dhcp server.</li>
 </ul>
 <h3 id="links-5">links</h3>
 <ul>
@@ -395,60 +411,60 @@ vamos tentar focar no que é comum em todos eles.</p>
 <h2 id="entenda-dns">Entenda DNS</h2>
 <p>DNS Fundamentos </p>
 <ul>
-<li>Entender para que serve o DNS</li>
-<li>Entender como funciona a infraestrutura de DNS</li>
-<li>Conhecer as RFCs 1034 e 1035</li>
-<li>Entender a relação da IANA e DNS</li>
-<li>Entender a relação da ICANN e DNS</li>
+<li>Entenda para que serve o DNS</li>
+<li>Entenda como funciona a infraestrutura de DNS</li>
+<li>Conheça as RFCs 1034 e 1035</li>
+<li>Entenda a relação da IANA e DNS</li>
+<li>Entenda a relação da ICANN e DNS</li>
 </ul>
 <p>DNS estrutura</p>
 <ul>
-<li>Entender uma árvore de DNS</li>
-<li>Entender o que são os RootServers</li>
-<li>Entender como funciona a DNS Database</li>
-<li>Entender o que é um Registrar de DNS</li>
+<li>Entenda uma árvore de DNS</li>
+<li>Entenda o que são os RootServers</li>
+<li>Entenda como funciona a DNS Database</li>
+<li>Entenda o que é um Registrar de DNS</li>
 </ul>
 <p>DNS Domínios</p>
 <ul>
-<li>Entender o que é um TLDN</li>
-<li>Entender o que é um FQDN</li>
+<li>Entenda o que é um TLDN</li>
+<li>Entenda o que é um FQDN</li>
 </ul>
 <p>DNS como serviço</p>
 <ul>
-<li>Entender o que é um servidor de autoridade DNS</li>
-<li>Entender o que é um servidor de cache de DNS</li>
-<li>Entender o que é pesquisa recursiva e como funciona</li>
-<li>Entender o que é uma zonas de DNS</li>
-<li>Entender o que é TTL de uma zona</li>
-<li>Entender o que são registros de DNS</li>
-<li>Entender quais são os tipos de registro de DNS</li>
-<li>Entender o que é um DNS Reverso e IP Reverso</li>
+<li>Entenda o que é um servidor de autoridade DNS</li>
+<li>Entenda o que é um servidor de cache de DNS</li>
+<li>Entenda o que é pesquisa recursiva e como funciona</li>
+<li>Entenda o que é uma zonas de DNS</li>
+<li>Entenda o que é TTL de uma zona</li>
+<li>Entenda o que são registros de DNS</li>
+<li>Entenda quais são os tipos de registro de DNS</li>
+<li>Entenda o que é um DNS Reverso e IP Reverso</li>
 </ul>
 <p>DNSSEC</p>
 <ul>
-<li>Entender o que faz e como faz</li>
+<li>Entenda o que faz e como faz</li>
 </ul>
 <p>DNS no Brasil</p>
 <ul>
-<li>Conhecer o NIC.Br</li>
-<li>Entender o Registro.Br</li>
+<li>Conheça o NIC.Br</li>
+<li>Entenda o Registro.Br</li>
 </ul>
 <p>Principais implementações de serviços de DNS</p>
 <ul>
-<li>Projeto BIND (conhecer para fins históricos)</li>
-<li>Projeto PowerDNS</li>
-<li>Projeto UnBound DNS</li>
+<li>Conheça Projeto BIND</li>
+<li>Conheça Projeto PowerDNS</li>
+<li>Conheça Projeto UnBound DNS</li>
 </ul>
 <p>Troubleshooting</p>
 <ul>
-<li>Usando DIG para fazer troubleshooting de DNS</li>
-<li>Usando Nslookup para fazer troubleshotting de DNS</li>
+<li>Aprenda a usar DIG para fazer troubleshooting de DNS</li>
+<li>Aprenda a usar NSLOOKUP para fazer troubleshotting de DNS</li>
 </ul>
 <p>Arquivos importantes no SO para lidar com DNS</p>
 <ul>
-<li>Entender o arquivo /etc/hosts</li>
-<li>Entender o arquivo /etc/resolv.conf</li>
-<li>Entender o arquivo /etc/nsswitch.conf</li>
+<li>Entenda o arquivo /etc/hosts</li>
+<li>Entenda o arquivo /etc/resolv.conf</li>
+<li>Entenda o arquivo /etc/nsswitch.conf</li>
 </ul>
 <h3 id="links-6">links</h3>
 <p>Definições principais</p>
@@ -564,15 +580,15 @@ vamos tentar focar no que é comum em todos eles.</p>
 </ul>
 <h2 id="entenda-o-que-são-certificados">Entenda o que são certificados</h2>
 <ul>
-<li>entenda para que servem certificados</li>
-<li>entenda o que é uma CA</li>
-<li>entenda o que é um certificado wildcard</li>
-<li>entenda o que é um certificado auto assinado</li>
+<li>Entenda para que servem certificados</li>
+<li>Entenda o que é uma CA</li>
+<li>Entenda o que é um certificado wildcard</li>
+<li>Entenda o que é um certificado auto assinado</li>
 </ul>
 <h3 id="aprenda-trabalhar-com-openssl">aprenda trabalhar com openssl</h3>
 <ul>
-<li>entenda como criar certificados auto assinados</li>
-<li>entenda como ler informações de certificados </li>
+<li>Entenda como criar certificados auto assinados</li>
+<li>Entenda como ler informações de certificados </li>
 </ul>
 <h3 id="aprenda-a-trabalhar-com-letsencrypt-e-certbot">aprenda a trabalhar com letsencrypt e certbot</h3>
 <ul>
@@ -628,9 +644,9 @@ vamos tentar focar no que é comum em todos eles.</p>
 <ul>
 <li>Entenda o que é o Network time Protocol ou NTP<ul>
 <li>Conheça as principais implementações do NTP server<ul>
-<li>systemd-timesyncd</li>
-<li>chrony (redhat systems)</li>
-<li>ntp</li>
+<li>Conheça o timesyncd (parte do projeto systemd)</li>
+<li>Conheça o chrony (usado em redhat systems)</li>
+<li>Conheça o ntpd (ntp.org)</li>
 </ul>
 </li>
 <li>Conheça o principal cliente NTP, ntpdate</li>
@@ -736,33 +752,32 @@ vamos tentar focar no que é comum em todos eles.</p>
 </ul>
 <h2 id="entenda-o-que-é-vpn">Entenda o que é VPN</h2>
 <ul>
-<li>entenda o que é uma vpn?</li>
-<li>entenda para que serve?</li>
-<li>entenda o que é ipsec?</li>
-<li>entenda os tipos mais comuns<ul>
-<li>remote access</li>
-<li>point to point</li>
-<li>ipsec </li>
+<li>Entenda o que é uma vpn?</li>
+<li>Entenda para que serve?</li>
+<li>Entenda os tipos mais comuns<ul>
+<li>Entenda o tipo REMOTE ACCESS</li>
+<li>Entenda o tipo POINT TO POINT</li>
+<li>Entenda o tipo IPSEC</li>
 </ul>
 </li>
 </ul>
 <h3 id="aprenda-a-trabalhar-com-openvpn">aprenda a trabalhar com openvpn</h3>
 <ul>
-<li>entenda o uso de um cliente cli openvpn</li>
-<li>conheça exemplo de config de servidor openvpn</li>
+<li>Entenda o uso de um cliente cli openvpn</li>
+<li>Conheça exemplo de config de servidor openvpn</li>
 </ul>
 <h3 id="aprenda-a-trabalhar-com-wireguard">aprenda a trabalhar com wireguard</h3>
 <ul>
-<li>entenda o uso de um cliente cli wireguard</li>
-<li>conheça exemplo de config de servidor wireguard</li>
+<li>Entenda o uso de um cliente cli wireguard</li>
+<li>Conheça exemplo de config de servidor wireguard</li>
 </ul>
 <h3 id="aprenda-a-trabalhar-com-ipsec">aprenda a trabalhar com ipsec</h3>
 <ul>
-<li>entenda o que preciso saber sobre ipsec</li>
-<li>conheça os projetos e implementações mais importantes<ul>
-<li>openswan</li>
-<li>strongswan</li>
-<li>libreswan </li>
+<li>Entenda o que preciso saber sobre ipsec</li>
+<li>Conheça os projetos e implementações mais importantes<ul>
+<li>Conheça o projeto openswan</li>
+<li>Conheça o projeto strongswan</li>
+<li>Conheça o projeto libreswan </li>
 </ul>
 </li>
 </ul>
@@ -792,26 +807,28 @@ vamos tentar focar no que é comum em todos eles.</p>
 <h2 id="redes-no-linux">Redes no Linux</h2>
 <h3 id="entenda-configuração-de-redes-no-linux">Entenda configuração de redes no linux</h3>
 <ul>
-<li>interfaces<ul>
-<li>mac address</li>
-<li>types <ul>
-<li>bond (alto nível)</li>
-<li>bridge (alto nível)</li>
-<li>vlan</li>
+<li>Entenda o que são interfaces ethernet<ul>
+<li>Entenda que é mac address</li>
+<li>Entenda os tipos de configuração de interface <ul>
+<li>Entenda como criar uma interface BOND</li>
+<li>Entenda como criar uma interface BRIDGE</li>
+<li>Entenda como criar uma interface VLAN</li>
+<li>Entenda como criar uma interface VIRTUAL</li>
+<li>Entenda como criar uma interface LOOPBACK</li>
 </ul>
 </li>
 </ul>
 </li>
-<li>configurando interfaces<ul>
-<li>debian like</li>
-<li>redhat like</li>
-<li>netplan</li>
+<li>Entenda como configurar interfaces<ul>
+<li>Entenda a configuração em sistemas debian like</li>
+<li>Entenda a configuração em sistemas redhat like</li>
+<li>Entenda a configuração usando netplan</li>
 </ul>
 </li>
-<li>ferramentas<ul>
-<li>ifconfig, netstat</li>
-<li>ip, ss</li>
-<li>ethtool </li>
+<li>Entenda como usar ferramentas<ul>
+<li>Aprenda a usar o ifconfig, netstat</li>
+<li>Aprenda a usar o ip, ss</li>
+<li>Aprenda a usar o ethtool </li>
 </ul>
 </li>
 </ul>
@@ -819,12 +836,12 @@ vamos tentar focar no que é comum em todos eles.</p>
 <h3 id="entenda-roteamento-no-linux">Entenda roteamento no Linux</h3>
 <ul>
 <li>IP ROUTE<ul>
-<li>Entender como funciona</li>
-<li>Entender como ver rotas</li>
-<li>Entender como criar rotas</li>
-<li>Entender como deletar rotas</li>
-<li>Entender como ver e criar tabelas e rotas para tabelas</li>
-<li>Entender como persistir rotas de forma estática</li>
+<li>Entenda como funciona</li>
+<li>Entenda como ver rotas</li>
+<li>Entenda como criar rotas</li>
+<li>Entenda como deletar rotas</li>
+<li>Entenda como ver e criar tabelas e rotas para tabelas</li>
+<li>Entenda como persistir rotas de forma estática</li>
 </ul>
 </li>
 </ul>
@@ -832,26 +849,26 @@ vamos tentar focar no que é comum em todos eles.</p>
 <h3 id="entenda-filtro-de-pacotes-no-linux">Entenda filtro de pacotes no linux</h3>
 <ul>
 <li>IPTABLES Packet Filter<ul>
-<li>Entender para que serve e como funciona</li>
-<li>Entender tabela filter<ul>
-<li>Entender cadeia foward</li>
-<li>Entender cadeia ouput</li>
-<li>Entender cadeia input </li>
+<li>Entenda para que serve e como funciona</li>
+<li>Entenda tabela filter<ul>
+<li>Entenda cadeia foward</li>
+<li>Entenda cadeia ouput</li>
+<li>Entenda cadeia input </li>
 </ul>
 </li>
-<li>Entender tabela nat <ul>
-<li>Entender cadeia prerouting</li>
-<li>Entender cadeia forwarding</li>
-<li>Entender cadeia output</li>
-<li>Entender cadeia postrouting</li>
-<li>Fazer um DNAT</li>
-<li>Fazer um SNAT</li>
-<li>Fazer um Redirect</li>
-<li>Fazer um Masquerade</li>
+<li>Entenda tabela nat <ul>
+<li>Entenda cadeia prerouting</li>
+<li>Entenda cadeia forwarding</li>
+<li>Entenda cadeia output</li>
+<li>Entenda cadeia postrouting</li>
+<li>Aprenda a fazer um DNAT</li>
+<li>Aprenda a fazer um SNAT</li>
+<li>Aprenda a fazer um Redirect</li>
+<li>Aprenda a fazer um Masquerade</li>
 </ul>
 </li>
-<li>Entender tabela Mangle (Alto nível)<ul>
-<li>Marcar pacotes para roteamento (Alto nível) </li>
+<li>Entenda tabela Mangle<ul>
+<li>Aprenda a marcar pacotes para roteamento</li>
 </ul>
 </li>
 </ul>
@@ -868,35 +885,39 @@ vamos tentar focar no que é comum em todos eles.</p>
 <h3 id="entenda-técnicas-e-ferramentas-de-troubleshooting">Entenda técnicas e ferramentas de troubleshooting</h3>
 <p>Testando a conectividade</p>
 <ul>
-<li>Aprender a usar netcat para testes de conectividade</li>
-<li>Aprender a usar telnet para testes de conectividade</li>
-<li>Aprender a usar CURL e WGET para interagir com sites e pegar arquivos</li>
+<li>Aprenda a usar netcat para testes de conectividade</li>
+<li>Aprenda a usar telnet para testes de conectividade</li>
+<li>Aprenda a usar CURL e WGET para interagir com sites</li>
+<li>Aprenda a usar CURL e WGET para fazer download</li>
 </ul>
 <p>Analisando tráfego</p>
 <ul>
-<li>Aprender a usar tcpdump<ul>
-<li>Aprender a usar wireshark e tshark</li>
-</ul>
-</li>
+<li>Aprenda a usar tcpdump</li>
+<li>Aprenda a usar wireshark e tshark</li>
 </ul>
 <p>Redes no Linux</p>
 <ul>
-<li>Ver portas abertas e portas listen</li>
-<li>Ver conexões estabelecidas </li>
-<li>Encontrar processo que abriu a porta</li>
-<li>Usando PING</li>
-<li>Usando Traceroute</li>
-<li>Usando MTR</li>
-<li>Usando IPTraf</li>
+<li>Aprenda a ver portas abertas e portas listen</li>
+<li>Aprenda a ver conexões estabelecidas </li>
+<li>Aprenda como encontrar processo que abriu uma porta</li>
+<li>Aprenda a usar o PING</li>
+<li>Aprenda a usar o Traceroute</li>
+<li>Aprenda a usar o MTR</li>
 </ul>
 <h4 id="links-19">links</h4>
 <h1 id="material-complementar">Material complementar</h1>
 <p>Assuntos com conexão direta e indireta com redes</p>
 <h2 id="entenda-o-que-é-um-load-balancer">Entenda o que é um Load Balancer</h2>
 <ul>
-<li>O que faz um Load Balancer?<ul>
-<li>Load Balancer HTTP (camada 7)</li>
-<li>Load Balancer TCP (camada 4)</li>
+<li>Entenda o que faz um Load Balancer?<ul>
+<li>Entenda Load Balancer HTTP (camada 7)</li>
+<li>Entenda Load Balancer TCP (camada 4)</li>
+<li>Entenda estratégias de LB</li>
+<li>Entenda RoudRobin</li>
+<li>Entenda Weighted Round Robin</li>
+<li>Entenda Least Connection </li>
+<li>Entenda IP HASH</li>
+<li>Entenda o conceiro de Stick Session</li>
 </ul>
 </li>
 <li>Qual a diferença entre um LB 4 e 7?</li>
@@ -907,52 +928,47 @@ vamos tentar focar no que é comum em todos eles.</p>
 </ul>
 <h2 id="entenda-o-que-é-um-reverse-proxy">Entenda o que é um Reverse Proxy</h2>
 <ul>
-<li>Que faz e para que serve?</li>
-<li>Qual sua relacao com Load Balancers?</li>
+<li>Entenda o que faz e para que serve?</li>
+<li>Entenda Qual sua relacao com load balancers?</li>
 <li>Exemplos<ul>
 <li>Config no NGINX </li>
+<li>Config no HAPROXY</li>
 </ul>
 </li>
 </ul>
-<h3 id="links-21">links</h3>
 <h2 id="entenda-o-que-é-high-availbility">Entenda o que é High Availbility</h2>
 <ul>
-<li>O que é HA (high availbility) ?</li>
-<li>Para que serve?</li>
+<li>Entenda o que é HA (high availbility) ?</li>
+<li>Entenda quando usar</li>
 </ul>
-<h3 id="links-22">links</h3>
 <h2 id="entenda-o-que-é-escalabilidade">Entenda o que é Escalabilidade</h2>
 <ul>
-<li>O que significa escalar?</li>
-<li>O que é escalabilidade horizontal?</li>
-<li>O que é escalabilidade vertical?</li>
+<li>Entenda o que significa escalar?</li>
+<li>Entenda o que é escalabilidade horizontal?</li>
+<li>Entenda o que é escalabilidade vertical?</li>
 </ul>
 <p>Elasticidade</p>
 <ul>
-<li>O que significa?</li>
+<li>Entenda o que significa?</li>
 </ul>
-<h3 id="links-23">links</h3>
 <h2 id="entenda-o-que-são-apis">Entenda o que são APIs</h2>
 <ul>
 <li>Entender o que são ENDPOINTS</li>
 <li>Entender o que é REST</li>
-<li>Entender o que é SOAP (alto nível)</li>
+<li>Conheça o que é SOAP</li>
 <li>Usando CURL para consumir uma API</li>
 </ul>
-<h3 id="links-24">links</h3>
 <h2 id="entenda-o-que-é-cloud-init">Entenda o que é cloud-init</h2>
 <ul>
 <li>o que é</li>
 <li>para que serve</li>
 <li>como funciona</li>
 </ul>
-<h3 id="links-25">links</h3>
 <h2 id="outras-coisas-que-vale-a-pena-ler">Outras coisas que vale a pena ler</h2>
 <ul>
 <li>zeroconf</li>
 <li>bonjour</li>
 </ul>
-<h3 id="links-26">links</h3>
 <h1 id="termos-comuns-para-entender">Termos comuns para entender</h1>
 <p>Comuns</p>
 <ul>
@@ -984,7 +1000,7 @@ vamos tentar focar no que é comum em todos eles.</p>
 <li>Gambeta/Gambiarra/Solucao Ténica Extraordiária Temporária :P</li>
 <li>POG</li>
 </ul>
-<h3 id="links-27">links</h3>
+<h3 id="links-21">links</h3>
 <h2 id="amarrando-as-pontas">Amarrando as pontas</h2>
 <p>Esse post é uma tentativa de dar um norte ou um caminho para se tornar uma pessoa sólida em redes, entendendo quais são os aspectos fundamentais e necessários para o dia-a-dia na vida profissional.</p>
 <p>Se você conseguir ler, estudar, pesquisar e responder as perguntas, entender, conhecer e aprender os assuntos, estará no caminho certo.</p>
