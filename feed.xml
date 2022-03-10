@@ -3,7 +3,7 @@
     <title>Guto@Site</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2022-03-10T09:27:15-03:00</updated>
+    <updated>2022-03-10T09:30:19-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
@@ -19,7 +19,7 @@
             <category term="TLDR"/>
             <category term="CDF"/>
 
-        <updated>2022-03-10T09:27:15-03:00</updated>
+        <updated>2022-03-10T09:30:19-03:00</updated>
             <summary>
                 <![CDATA[
                     Qual o objetivo desse post? Às vezes lemos em vagas ou ouvimos&hellip;
@@ -29,7 +29,7 @@
             <![CDATA[
                 <h2 id="qual-o-objetivo-desse-post">Qual o objetivo desse post?</h2>
 <p>Às vezes lemos em vagas ou ouvimos em palestras que é necessário ter uma base sólida em redes e sistemas operacionais para atuar com Cloud ou DevOps, contudo, isso pode ser vago e sem contexto para a maioria.</p>
-<p>Quando falamos de redes estamos falando de um vasto CONTINENTE de conceitos e tecnologias, neste post vamos arranhar - apenas – a superfície desse continente, acredite.</p>
+<p>Quando falamos de redes estamos falando de um vasto CONTINENTE de conceitos e tecnologias, neste post vamos arranhar – de leve – a superfície desse continente, acredite.</p>
 <p>Aqui reunimos quais os conhecimentos de REDE necessários no dia-a-dia, e podemos dizer que eles podem ser considerados uma “BASE SÓLIDA” de alguém que está pronto para atuar em projetos no mercado profissional.</p>
 <p>Esperamos que as pessoas possam avaliar se já conhecem os temas, ou o quanto conhecem dos temas ou então, encontrar em que nível de conhecimento estão e caso não conheçam algo, podem colocar o assunto no seu ToDo para estudar.</p>
 <p>Neste post nós não devemos entrar em questões e termos de cloud providers, 
@@ -54,9 +54,10 @@ vamos tentar focar no que é comum em todos eles.</p>
 <p>Aqui o foco está nas pessoas atuando nas posições abaixo:</p>
 <ul>
 <li>Sysadmin;</li>
-<li>Cloud Engineer;</li>
 <li>Cloud Native Engineer;</li>
+<li>Cloud Engineer;</li>
 <li>DevOps Engineer;</li>
+<li>Plataform Engineer;</li>
 <li>GitOps Engineer.</li>
 </ul>
 <h2 id="como-entender-as-indicações-do-texto">Como entender as indicações do texto?</h2>
