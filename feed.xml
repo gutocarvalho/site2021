@@ -3,7 +3,7 @@
     <title>Guto@Site</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2022-03-10T09:17:27-03:00</updated>
+    <updated>2022-03-10T09:19:38-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
@@ -19,7 +19,7 @@
             <category term="TLDR"/>
             <category term="CDF"/>
 
-        <updated>2022-03-10T09:17:27-03:00</updated>
+        <updated>2022-03-10T09:19:38-03:00</updated>
             <summary>
                 <![CDATA[
                     Qual o objetivo desse post? Às vezes lemos em vagas ou ouvimos&hellip;
@@ -152,8 +152,8 @@ vamos tentar focar no que é comum em todos eles.</p>
 <li><a href="#entenda-os-protocolos-de-servi%C3%A7os-para-web">Entenda os protocolos de serviços para WEB</a></li>
 <li><a href="#entenda-transport-layer-security-ou-tls">Entenda Transport Layer Security ou TLS</a></li>
 <li><a href="#entenda-o-que-s%C3%A3o-certificados">Entenda o que são certificados</a><ul>
-<li><a href="#aprenda-trabalhar-com-openssl">aprenda trabalhar com openssl</a></li>
-<li><a href="#aprenda-a-trabalhar-com-letsencrypt-e-certbot">aprenda a trabalhar com letsencrypt e certbot</a></li>
+<li><a href="#aprenda-trabalhar-com-openssl">Aprenda trabalhar com openssl</a></li>
+<li><a href="#aprenda-a-trabalhar-com-letsencrypt-e-certbot">Aprenda a trabalhar com letsencrypt e certbot</a></li>
 </ul>
 </li>
 <li><a href="#entenda-o-ntp">Entenda o NTP</a></li>
@@ -161,13 +161,13 @@ vamos tentar focar no que é comum em todos eles.</p>
 <li><a href="#conhe%C3%A7a-e-entenda-o-protocolo-ldap-de-autentica%C3%A7%C3%A3o">Conheça e entenda o protocolo LDAP de autenticação</a></li>
 <li><a href="#entenda-o-protocolo-ssh-para-acesso-remoto">Entenda o protocolo SSH para acesso remoto</a></li>
 <li><a href="#conhe%C3%A7a-os-protocolos-de-correio-mais-comuns">Conheça os protocolos de correio mais comuns</a><ul>
-<li><a href="#conhe%C3%A7a-solu%C3%A7%C3%B5es-de-seguran%C3%A7a-para-correio-eletr%C3%B4nico">conheça soluções de segurança para correio eletrônico</a></li>
+<li><a href="#conhe%C3%A7a-solu%C3%A7%C3%B5es-de-seguran%C3%A7a-para-correio-eletr%C3%B4nico">Conheça soluções de segurança para correio eletrônico</a></li>
 </ul>
 </li>
 <li><a href="#entenda-o-que-%C3%A9-vpn">Entenda o que é VPN</a><ul>
-<li><a href="#aprenda-a-trabalhar-com-openvpn">aprenda a trabalhar com openvpn</a></li>
-<li><a href="#aprenda-a-trabalhar-com-wireguard">aprenda a trabalhar com wireguard</a></li>
-<li><a href="#aprenda-a-trabalhar-com-ipsec">aprenda a trabalhar com ipsec</a></li>
+<li><a href="#aprenda-a-trabalhar-com-openvpn">Aprenda a trabalhar com openvpn</a></li>
+<li><a href="#aprenda-a-trabalhar-com-wireguard">Aprenda a trabalhar com wireguard</a></li>
+<li><a href="#aprenda-a-trabalhar-com-ipsec">Aprenda a trabalhar com ipsec</a></li>
 </ul>
 </li>
 <li><a href="#redes-no-linux">Redes no linux</a> <ul>
