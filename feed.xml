@@ -3,7 +3,7 @@
     <title>Guto@Site</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2022-03-10T09:36:50-03:00</updated>
+    <updated>2022-03-10T09:40:35-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
@@ -18,8 +18,9 @@
         <id>https://gutocarvalho.net/o-que-significa-ter-uma-base-solida-em-redes/</id>
             <category term="TLDR"/>
             <category term="CDF"/>
+            <category term="BASESOLIDA"/>
 
-        <updated>2022-03-10T09:36:50-03:00</updated>
+        <updated>2022-03-10T09:40:35-03:00</updated>
             <summary>
                 <![CDATA[
                     Qual o objetivo desse post? Às vezes lemos em vagas ou ouvimos&hellip;
@@ -959,9 +960,9 @@ vamos tentar focar no que é comum em todos eles.</p>
 </ul>
 <h2 id="entenda-o-que-é-cloud-init">Entenda o que é cloud-init</h2>
 <ul>
-<li>o que é</li>
-<li>para que serve</li>
-<li>como funciona</li>
+<li>Entenda o que é e para que serve</li>
+<li>Entenda como funciona</li>
+<li>Aprenda a usar</li>
 </ul>
 <h2 id="outras-coisas-que-vale-a-pena-ler">Outras coisas que vale a pena ler</h2>
 <ul>
@@ -988,7 +989,7 @@ vamos tentar focar no que é comum em todos eles.</p>
 <li>Outage</li>
 <li>Unavailable</li>
 </ul>
-<p> Nao tao comuns</p>
+<p> Não tão comuns</p>
 <ul>
 <li>MTTR</li>
 <li>IaC</li>
