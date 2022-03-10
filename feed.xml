@@ -3,7 +3,7 @@
     <title>Guto@Site</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2022-03-09T13:43:46-03:00</updated>
+    <updated>2022-03-10T08:35:10-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
@@ -19,7 +19,7 @@
             <category term="TLDR"/>
             <category term="CDF"/>
 
-        <updated>2022-03-09T13:43:46-03:00</updated>
+        <updated>2022-03-10T08:35:10-03:00</updated>
             <summary>
                 <![CDATA[
                     Qual o objetivo desse post? Às vezes lemos em vagas ou ouvimos&hellip;
@@ -46,6 +46,7 @@ vamos tentar focar no que é comum em todos eles.</p>
 <li>O que é ter uma base sólida em shell.</li>
 </ul>
 <p>E quem sabe podemos entrar em Python, Ruby e Go. Se tiver gente que manje e queria compartilhar eu ajudo a escrever :)</p>
+<p>Se quiser ajudar comenta aí ou me chama no twitter :)</p>
 <h2 id="momento-merchan-p">Momento Merchan :P</h2>
 <p>Me siga no twitter <a href="https://twitter.com/gutocarvalho">@gutocarvalho</a> e acompanhe meus posts sobre Cloud Native e CI/CD.</p>
 <p>Aproveite e siga a <a href="https://twitter.com/CDeliveryFdn">CD Foundation</a> e <a href="https://twitter.com/cloudnativefdn">Cloud Native Foundation</a> no twitter.</p>
@@ -94,6 +95,16 @@ vamos tentar focar no que é comum em todos eles.</p>
 <p>A ideia é essa, acompanhe pelo histórico de revisões.</p>
 <h3 id="histórico-de-revisões">Histórico de revisões</h3>
 <ul>
+<li>2022-03-10<ul>
+<li>Atualizada a seção de CertManager</li>
+<li>Links adicionados na parte de Network</li>
+<li>Links adicionados na parte de modelo OSI</li>
+<li>Links adicionados na parte de DNS</li>
+<li>Links adicionados em protocolos de rede</li>
+<li>Links adicionados em conceitos de rede</li>
+<li>Links adicionados em DHCP</li>
+</ul>
+</li>
 <li>2022-03-09<ul>
 <li>Primeira versão</li>
 </ul>
@@ -148,7 +159,7 @@ vamos tentar focar no que é comum em todos eles.</p>
 <li><a href="#entenda-configura%C3%A7%C3%A3o-de-redes-no-linux">Entenda configuração de redes no linux</a></li>
 <li><a href="#entenda-roteamento-no-Linux">Entenda roteamento no linux</a></li>
 <li><a href="#entenda-filtro-de-pacotes-no-linux">Entenda filtro de pacotes no linux</a></li>
-<li><a href="#entenda-t%C3%A9cnicas-e-ferramentas-de-troubleshooting">Entenda técnicas e ferramentas de troubleshooting</a></li>
+<li><a href="#entenda-t%C3%A9cnicas-e-ferramentas-de-troubleshooting">Entenda técnicas e ferramentas de troubleshooting de rede</a></li>
 </ul>
 </li>
 </ul>
@@ -226,6 +237,12 @@ vamos tentar focar no que é comum em todos eles.</p>
 <li><a href="http://jodies.de/ipcalc">ipcalc web da jodies.de</a></li>
 <li><a href="https://gitlab.com/ipcalc/ipcalc">ipcalc para terminal</a></li>
 </ul>
+<p>Videos Professor Paulo Kretcheu</p>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=EYQu7uNKvYg&amp;list=PLuf64C8sPVT_nObvAFU5W-SiE04ST-PlL&amp;index=2">Básico de IP</a></li>
+<li><a href="https://www.youtube.com/watch?v=yLgansF_h1w&amp;list=PLuf64C8sPVT_nObvAFU5W-SiE04ST-PlL&amp;index=3">Básico de Máscara e Gateway</a></li>
+<li><a href="https://www.youtube.com/watch?v=7tUEHsQR9ak&amp;list=PLuf64C8sPVT_nObvAFU5W-SiE04ST-PlL&amp;index=5">Cálculo de sub-redes</a></li>
+</ul>
 <h2 id="entenda-o-modelo-osi">Entenda o modelo OSI</h2>
 <ul>
 <li>Entender o modelo<ul>
@@ -236,9 +253,14 @@ vamos tentar focar no que é comum em todos eles.</p>
 </li>
 </ul>
 <h3 id="links-1">links</h3>
+<p>Definições</p>
 <ul>
 <li><a href="https://pt.wikipedia.org/wiki/Modelo_OSI">Modelo OSI - Wikipedia #PT_BR</a></li>
 <li><a href="https://en.wikipedia.org/wiki/OSI_model">OSI Model - Wikipedia #EN_US</a></li>
+</ul>
+<p>Videos Professor Paulo Kretcheu</p>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=7sW8CXVx7IU&amp;list=PLuf64C8sPVT_nObvAFU5W-SiE04ST-PlL&amp;index=9">Introducao ao OSI</a></li>
 </ul>
 <h2 id="entenda-o-modelo-tcpip">Entenda o modelo TCP/IP</h2>
 <ul>
@@ -310,6 +332,11 @@ vamos tentar focar no que é comum em todos eles.</p>
 <ul>
 <li><a href="https://pt.wikipedia.org/wiki/Address_Resolution_Protocol">Address Resolution Protocol - Wikipedia #EN_US</a></li>
 </ul>
+<p>Videos Prof. Paulo Kretcheu</p>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=_ITRPKDFWSA&amp;list=PLuf64C8sPVT_nObvAFU5W-SiE04ST-PlL&amp;index=6">Entendendo Ethernet e ARP</a></li>
+<li><a href="https://www.youtube.com/watch?v=uRvjPlbJ_98&amp;list=PLuf64C8sPVT_nObvAFU5W-SiE04ST-PlL&amp;index=8">Entendendo o TCP e IP</a></li>
+</ul>
 <h2 id="entenda-os-conceitos-de-rede-mais-importantes">Entenda os conceitos de rede mais importantes</h2>
 <p>entendendo formas de comunicação</p>
 <ul>
@@ -337,6 +364,10 @@ vamos tentar focar no que é comum em todos eles.</p>
 <li><a href="https://en.wikipedia.org/wiki/Network_address_translation">Network Address Translation - Wikipedia #EN_US</a></li>
 <li><a href="https://pt.wikipedia.org/wiki/Virtual_LAN">Virtual Lan - Wikipedia #EN_US</a></li>
 </ul>
+<p>Videos Prof. Paulo Kretcheu</p>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=p1wdm_hkAY8&amp;list=PLuf64C8sPVT_nObvAFU5W-SiE04ST-PlL&amp;index=7">Entendendo nat</a></li>
+</ul>
 <h2 id="entenda-dhcp">Entenda DHCP</h2>
 <ul>
 <li>entenda para que serve o DHCP</li>
@@ -356,6 +387,10 @@ vamos tentar focar no que é comum em todos eles.</p>
 <li><a href="https://en.wikipedia.org/wiki/DHCPv6">DHCPv6 - Wikipedia #EN_US</a></li>
 <li><a href="https://en.wikipedia.org/wiki/Comparison_of_DHCP_server_software">DHCP Servers Comparison - Wikipedia #EN_US</a></li>
 <li><a href="https://datatracker.ietf.org/doc/html/rfc2131">RFC 2131 - DHCP</a></li>
+</ul>
+<p>Videos Prof. Paulo Kretcheu</p>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=7pU9iHoJRm4&amp;list=PLuf64C8sPVT_nObvAFU5W-SiE04ST-PlL&amp;index=4">Entendendo DHCP</a></li>
 </ul>
 <h2 id="entenda-dns">Entenda DNS</h2>
 <p>DNS Fundamentos </p>
@@ -461,6 +496,10 @@ vamos tentar focar no que é comum em todos eles.</p>
 <li><a href="https://datatracker.ietf.org/doc/html/rfc1034">RFC 1034 - DNS CONCEPTS</a></li>
 <li><a href="https://datatracker.ietf.org/doc/html/rfc1035">RFC 1035 - DNS IMPLEMENTATION</a></li>
 </ul>
+<p>Videos Prof. Paulo Kretcheu</p>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=i4KMcl0tuEg&amp;list=PLuf64C8sPVT_nObvAFU5W-SiE04ST-PlL&amp;index=10">Entendendo DNS</a></li>
+</ul>
 <h2 id="entenda-os-protocolos-de-serviços-para-web">Entenda os protocolos de serviços para WEB</h2>
 <p> Entenda e conheça o protocolos para web</p>
 <ul>
@@ -539,13 +578,27 @@ vamos tentar focar no que é comum em todos eles.</p>
 <ul>
 <li>Entenda o projeto letsencrypt</li>
 <li>Entenda o certbot<ul>
+<li>Entenda como gerar certificados standalone <ul>
 <li>Entenda como gerar um certificado simples</li>
 <li>Entenda como gerar um certificado wildcard</li>
-<li>Entenda como gerar um certificado com plugin DNS CloudFlare</li>
-<li>Entenda como renovar certificados</li>
-<li>Entenda como automatizar a renovação de certificados</li>
 </ul>
 </li>
+<li>Entenda como gerar um certificado usando DNS<ul>
+<li>Aprenda a usar o plugin CloudFlare</li>
+<li>Aprenda a usar o plugin Route53  </li>
+<li>Aprenda a usar o plugin GCP  </li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Entenda como usar certbot com webservers<ul>
+<li>Aprenda a usar o plugin para NGINX</li>
+<li>Aprenda a usar o plugin para Apache HTTPd</li>
+<li>Aprenda a usar o plugin para HAPROXY</li>
+</ul>
+</li>
+<li>Entenda como renovar certificados</li>
+<li>Entenda como automatizar a renovação de certificados</li>
 <li>Entenda o cert-manager</li>
 </ul>
 <h3 id="links-9">links</h3>
