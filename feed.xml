@@ -3,7 +3,7 @@
     <title>Guto@Site</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2022-03-10T09:19:38-03:00</updated>
+    <updated>2022-03-10T09:27:15-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
@@ -19,7 +19,7 @@
             <category term="TLDR"/>
             <category term="CDF"/>
 
-        <updated>2022-03-10T09:19:38-03:00</updated>
+        <updated>2022-03-10T09:27:15-03:00</updated>
             <summary>
                 <![CDATA[
                     Qual o objetivo desse post? Às vezes lemos em vagas ou ouvimos&hellip;
@@ -101,10 +101,10 @@ vamos tentar focar no que é comum em todos eles.</p>
 <li>Atualizada a seção Redes Linux<ul>
 <li>Atualizada a seção Interfaces de rede</li>
 <li>Atualizada a seção Iptables</li>
-<li>Atualizada a seção NTP</li>
-<li>Atualizada a seção VPN</li>
 </ul>
 </li>
+<li>Atualizada a seção NTP</li>
+<li>Atualizada a seção VPN</li>
 <li>Atualizada a seção Materiais complementares<ul>
 <li>Atualizada a seção Load Balancer</li>
 <li>Atualizada a seção Reverse Proxy</li>
@@ -262,10 +262,11 @@ vamos tentar focar no que é comum em todos eles.</p>
 </ul>
 <h2 id="entenda-o-modelo-osi">Entenda o modelo OSI</h2>
 <ul>
-<li>Entender o modelo<ul>
-<li>Entender as camadas</li>
-<li>Conhecer os principais protocolos de cada camada</li>
-<li>Entender que é apenas uma referência e nunca foi implementado</li>
+<li>Entenda o modelo<ul>
+<li>Entenda as camadas</li>
+<li>Conheça os principais protocolos de cada camada</li>
+<li>Entenda que é apenas uma referência e nunca foi implementado</li>
+<li>Entenda que ainda assim é a referência mais utilizada</li>
 </ul>
 </li>
 </ul>
@@ -281,11 +282,11 @@ vamos tentar focar no que é comum em todos eles.</p>
 </ul>
 <h2 id="entenda-o-modelo-tcpip">Entenda o modelo TCP/IP</h2>
 <ul>
-<li>Entender o modelo<ul>
-<li>Entender as camadas   </li>
-<li>Conhecer os principais protocolos de cada camada</li>
-<li>Entender que foi o modelo que se tornou padrão e ganhou o mercado</li>
-<li>Entender que toda a internet roda em cima dele</li>
+<li>Entenda o modelo<ul>
+<li>Entenda as camadas   </li>
+<li>Conheça os principais protocolos de cada camada</li>
+<li>Entença que foi o modelo que se tornou padrão e ganhou o mercado</li>
+<li>Entenda que toda a internet roda em cima dele :)</li>
 </ul>
 </li>
 </ul>
@@ -297,30 +298,30 @@ vamos tentar focar no que é comum em todos eles.</p>
 <h2 id="entenda-os-protocolos-de-rede-mais-importantes">Entenda os protocolos de rede mais importantes</h2>
 <ul>
 <li>IP<ul>
-<li>Entendendo IPv4<ul>
+<li>Entenda IPv4<ul>
 <li>Entenda o 3 Way Handshake </li>
 </ul>
 </li>
-<li>Entendendo IPSEC  (alto nível)</li>
-<li>Entendendo IPv6 (alto nível)</li>
+<li>Entenda IPSEC  (alto nível)</li>
+<li>Entenda IPv6 (alto nível)</li>
 </ul>
 </li>
 <li>TCP<ul>
-<li>Entender seus benefícios e drawbacks</li>
-<li>IANA e Portas </li>
-<li>Entender o processo de handshake </li>
+<li>Entenda seus benefícios e drawbacks</li>
+<li>Entenda IANA e Portas </li>
+<li>Entenda o processo de handshake </li>
 </ul>
 </li>
 <li>UDP<ul>
-<li>Entender seus benefícios e drawbacks</li>
+<li>Entenda seus benefícios e drawbacks</li>
 </ul>
 </li>
 <li>ICMP<ul>
-<li>Entender seus benefícios e para que serve</li>
+<li>Entenda seus benefícios e para que serve</li>
 </ul>
 </li>
 <li>ARP<ul>
-<li>Entender para que serve e como funciona</li>
+<li>Entenda para que serve e como funciona</li>
 </ul>
 </li>
 </ul>
