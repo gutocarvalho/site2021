@@ -3,7 +3,7 @@
     <title>Guto@Site</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2022-03-10T10:03:29-03:00</updated>
+    <updated>2022-03-10T10:23:07-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
@@ -20,7 +20,7 @@
             <category term="CDF"/>
             <category term="BASESOLIDA"/>
 
-        <updated>2022-03-10T10:03:29-03:00</updated>
+        <updated>2022-03-10T10:23:07-03:00</updated>
             <summary>
                 <![CDATA[
                     Qual o objetivo desse post? Às vezes lemos em vagas ou ouvimos&hellip;
@@ -112,17 +112,13 @@ vamos tentar focar no que é comum em todos eles.</p>
 <li>Atualizada a seção Reverse Proxy</li>
 </ul>
 </li>
-</ul>
-</li>
-<li>Links adicionados na parte de Network<ul>
+<li>Links adicionados na parte de Network</li>
 <li>Links adicionados na parte de modelo OSI</li>
 <li>Links adicionados na parte de DNS</li>
 <li>Links adicionados em protocolos de rede</li>
 <li>Links adicionados em conceitos de rede</li>
-<li>Links adicionados em DHCP</li>
-</ul>
-</li>
-<li>2022-03-09<ul>
+<li>Links adicionados em DHCP
+2022-03-09</li>
 <li>Primeira versão</li>
 </ul>
 </li>
@@ -764,17 +760,17 @@ vamos tentar focar no que é comum em todos eles.</p>
 </ul>
 </li>
 </ul>
-<h3 id="aprenda-a-trabalhar-com-openvpn">aprenda a trabalhar com openvpn</h3>
+<h3 id="aprenda-a-trabalhar-com-openvpn">Aprenda a trabalhar com openvpn</h3>
 <ul>
 <li>Entenda o uso de um cliente cli openvpn</li>
 <li>Conheça exemplo de config de servidor openvpn</li>
 </ul>
-<h3 id="aprenda-a-trabalhar-com-wireguard">aprenda a trabalhar com wireguard</h3>
+<h3 id="aprenda-a-trabalhar-com-wireguard">Aprenda a trabalhar com wireguard</h3>
 <ul>
 <li>Entenda o uso de um cliente cli wireguard</li>
 <li>Conheça exemplo de config de servidor wireguard</li>
 </ul>
-<h3 id="aprenda-a-trabalhar-com-ipsec">aprenda a trabalhar com ipsec</h3>
+<h3 id="aprenda-a-trabalhar-com-ipsec">Aprenda a trabalhar com ipsec</h3>
 <ul>
 <li>Entenda o que preciso saber sobre ipsec</li>
 <li>Conheça os projetos e implementações mais importantes<ul>
