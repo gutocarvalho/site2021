@@ -3,7 +3,7 @@
     <title>Guto@Site</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2022-03-10T09:40:35-03:00</updated>
+    <updated>2022-03-10T10:03:29-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
@@ -20,7 +20,7 @@
             <category term="CDF"/>
             <category term="BASESOLIDA"/>
 
-        <updated>2022-03-10T09:40:35-03:00</updated>
+        <updated>2022-03-10T10:03:29-03:00</updated>
             <summary>
                 <![CDATA[
                     Qual o objetivo desse post? Às vezes lemos em vagas ou ouvimos&hellip;
@@ -588,12 +588,12 @@ vamos tentar focar no que é comum em todos eles.</p>
 <li>Entenda o que é um certificado wildcard</li>
 <li>Entenda o que é um certificado auto assinado</li>
 </ul>
-<h3 id="aprenda-trabalhar-com-openssl">aprenda trabalhar com openssl</h3>
+<h3 id="aprenda-trabalhar-com-openssl">Aprenda trabalhar com openssl</h3>
 <ul>
 <li>Entenda como criar certificados auto assinados</li>
 <li>Entenda como ler informações de certificados </li>
 </ul>
-<h3 id="aprenda-a-trabalhar-com-letsencrypt-e-certbot">aprenda a trabalhar com letsencrypt e certbot</h3>
+<h3 id="aprenda-a-trabalhar-com-letsencrypt-e-certbot">Aprenda a trabalhar com letsencrypt e certbot</h3>
 <ul>
 <li>Entenda o projeto letsencrypt</li>
 <li>Entenda o certbot<ul>
@@ -851,13 +851,13 @@ vamos tentar focar no que é comum em todos eles.</p>
 <ul>
 <li>IPTABLES Packet Filter<ul>
 <li>Entenda para que serve e como funciona</li>
-<li>Entenda tabela filter<ul>
-<li>Entenda cadeia foward</li>
-<li>Entenda cadeia ouput</li>
-<li>Entenda cadeia input </li>
+<li>Entenda a  tabela filter<ul>
+<li>Entenda a cadeia foward</li>
+<li>Entenda a cadeia ouput</li>
+<li>Entenda a cadeia input</li>
 </ul>
 </li>
-<li>Entenda tabela nat <ul>
+<li>Entenda a tabela nat <ul>
 <li>Entenda cadeia prerouting</li>
 <li>Entenda cadeia forwarding</li>
 <li>Entenda cadeia output</li>
@@ -872,6 +872,8 @@ vamos tentar focar no que é comum em todos eles.</p>
 <li>Aprenda a marcar pacotes para roteamento</li>
 </ul>
 </li>
+<li>Conheça a tabela RAW</li>
+<li>Conheça a tabela Security</li>
 </ul>
 </li>
 </ul>
@@ -880,8 +882,16 @@ vamos tentar focar no que é comum em todos eles.</p>
 <li>Entenda a relação entre Iptables e Docker</li>
 </ul>
 <h4 id="links-16">links</h4>
+<p>Básicos</p>
 <ul>
-<li>[Guia Foca Iptables]](<a href="https://guiafoca.org/guiaonline/avancado/ch10.html">https://guiafoca.org/guiaonline/avancado/ch10.html</a>)</li>
+<li><a href="https://www.netfilter.org/documentation/HOWTO/networking-concepts-HOWTO.html#toc1">Netfilter Concepts</a></li>
+<li><a href="https://www.netfilter.org/documentation/HOWTO/packet-filtering-HOWTO.html#toc1">Netfilter Packet Filter</a></li>
+<li><a href="https://www.netfilter.org/documentation/HOWTO/NAT-HOWTO.html#toc1">Netfilter NAT</a></li>
+</ul>
+<p>Avançados</p>
+<ul>
+<li><a href="https://www.netfilter.org/documentation/HOWTO/netfilter-double-nat.html#toc1">Netfilter Double nat</a></li>
+<li><a href="https://www.netfilter.org/documentation/HOWTO/netfilter-extensions-HOWTO.html#toc1">Netfilter Extensions</a></li>
 </ul>
 <h3 id="entenda-técnicas-e-ferramentas-de-troubleshooting">Entenda técnicas e ferramentas de troubleshooting</h3>
 <p>Testando a conectividade</p>
@@ -912,12 +922,14 @@ vamos tentar focar no que é comum em todos eles.</p>
 <li>Entenda o que faz um Load Balancer?<ul>
 <li>Entenda Load Balancer HTTP (camada 7)</li>
 <li>Entenda Load Balancer TCP (camada 4)</li>
-<li>Entenda estratégias de LB</li>
+<li>Entenda estratégias de LB<ul>
 <li>Entenda RoudRobin</li>
 <li>Entenda Weighted Round Robin</li>
 <li>Entenda Least Connection </li>
 <li>Entenda IP HASH</li>
 <li>Entenda o conceiro de Stick Session</li>
+</ul>
+</li>
 </ul>
 </li>
 <li>Qual a diferença entre um LB 4 e 7?</li>
@@ -1005,6 +1017,9 @@ vamos tentar focar no que é comum em todos eles.</p>
 <p>Se você conseguir ler, estudar, pesquisar e responder as perguntas, entender, conhecer e aprender os assuntos, estará no caminho certo.</p>
 <h2 id="aquele-abraço">Aquele abraço!</h2>
 <p>Mando aquele abraço para o professor MESTRE Ulysses Almeida (@ulyssesalmeida) que me ensinou boa parte destes conceitos no início desse século.</p>
+<p>Mando aquele abraço para o Pizza (José Pissin) que me apresentou o Software Livre e isso mudou a minha vida.</p>
+<p>Mando aquele abraço pro @gomex e @badtux que via exemplo me fazem contribuir mais e mais e mais :)</p>
+<p>Mando aquele abraço para todos que leram, comentaram, revisaram e contribuiram de alguma forma com esse post!</p>
 <p>[s]<br>
 Guto</p>
 <p>–</p>
