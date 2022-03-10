@@ -3,7 +3,7 @@
     <title>Guto@Site</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2022-03-10T09:11:08-03:00</updated>
+    <updated>2022-03-10T09:17:27-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
@@ -19,7 +19,7 @@
             <category term="TLDR"/>
             <category term="CDF"/>
 
-        <updated>2022-03-10T09:11:08-03:00</updated>
+        <updated>2022-03-10T09:17:27-03:00</updated>
             <summary>
                 <![CDATA[
                     Qual o objetivo desse post? Às vezes lemos em vagas ou ouvimos&hellip;
@@ -832,7 +832,6 @@ vamos tentar focar no que é comum em todos eles.</p>
 </ul>
 </li>
 </ul>
-<h4 id="links-16">links</h4>
 <h3 id="entenda-roteamento-no-linux">Entenda roteamento no Linux</h3>
 <ul>
 <li>IP ROUTE<ul>
@@ -845,7 +844,6 @@ vamos tentar focar no que é comum em todos eles.</p>
 </ul>
 </li>
 </ul>
-<h4 id="links-17">links</h4>
 <h3 id="entenda-filtro-de-pacotes-no-linux">Entenda filtro de pacotes no linux</h3>
 <ul>
 <li>IPTABLES Packet Filter<ul>
@@ -878,7 +876,7 @@ vamos tentar focar no que é comum em todos eles.</p>
 <ul>
 <li>Entenda a relação entre Iptables e Docker</li>
 </ul>
-<h4 id="links-18">links</h4>
+<h4 id="links-16">links</h4>
 <ul>
 <li>[Guia Foca Iptables]](<a href="https://guiafoca.org/guiaonline/avancado/ch10.html">https://guiafoca.org/guiaonline/avancado/ch10.html</a>)</li>
 </ul>
@@ -904,7 +902,6 @@ vamos tentar focar no que é comum em todos eles.</p>
 <li>Aprenda a usar o Traceroute</li>
 <li>Aprenda a usar o MTR</li>
 </ul>
-<h4 id="links-19">links</h4>
 <h1 id="material-complementar">Material complementar</h1>
 <p>Assuntos com conexão direta e indireta com redes</p>
 <h2 id="entenda-o-que-é-um-load-balancer">Entenda o que é um Load Balancer</h2>
@@ -922,7 +919,7 @@ vamos tentar focar no que é comum em todos eles.</p>
 </li>
 <li>Qual a diferença entre um LB 4 e 7?</li>
 </ul>
-<h3 id="links-20">links</h3>
+<h3 id="links-17">links</h3>
 <ul>
 <li><a href="https://gutocarvalho.net/entendendo-diferenca-entre-lb-tipo-l4-e-l7">Entendendo a diferença entre LB do tipo L4 e L7</a></li>
 </ul>
@@ -997,18 +994,17 @@ vamos tentar focar no que é comum em todos eles.</p>
 </ul>
 <p>Termos especiais</p>
 <ul>
-<li>Gambeta/Gambiarra/Solucao Ténica Extraordiária Temporária :P</li>
+<li>Gambeta/Gambiarra/Solução Extraordiária Temporária #SQN :P</li>
 <li>POG</li>
 </ul>
-<h3 id="links-21">links</h3>
 <h2 id="amarrando-as-pontas">Amarrando as pontas</h2>
 <p>Esse post é uma tentativa de dar um norte ou um caminho para se tornar uma pessoa sólida em redes, entendendo quais são os aspectos fundamentais e necessários para o dia-a-dia na vida profissional.</p>
 <p>Se você conseguir ler, estudar, pesquisar e responder as perguntas, entender, conhecer e aprender os assuntos, estará no caminho certo.</p>
-<p>[s]
+<p>[s]<br>
 Guto</p>
 <p>–</p>
 <p>Este post é do tipo #TLDR, entenda <a href="https://gutocarvalho.net/o-que-sao-tldrs/">aqui</a>.</p>
-<p>Se gostou manda um alo no twitter <a href="https://twitter.com/gutocarvalho">@gutocarvalho</a>.</p>
+<p>Se gostou manda um alo no twitter <a href="https://twitter.com/gutocarvalho">@gutocarvalho</a> ou deixa um comentário bacana :)</p>
 
             ]]>
         </content>
