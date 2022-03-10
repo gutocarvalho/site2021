@@ -3,7 +3,7 @@
     <title>Guto@Site</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2022-03-10T09:30:19-03:00</updated>
+    <updated>2022-03-10T09:36:50-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
@@ -19,7 +19,7 @@
             <category term="TLDR"/>
             <category term="CDF"/>
 
-        <updated>2022-03-10T09:30:19-03:00</updated>
+        <updated>2022-03-10T09:36:50-03:00</updated>
             <summary>
                 <![CDATA[
                     Qual o objetivo desse post? Às vezes lemos em vagas ou ouvimos&hellip;
@@ -303,8 +303,8 @@ vamos tentar focar no que é comum em todos eles.</p>
 <li>Entenda o 3 Way Handshake </li>
 </ul>
 </li>
-<li>Entenda IPSEC  (alto nível)</li>
-<li>Entenda IPv6 (alto nível)</li>
+<li>Entenda IPSEC</li>
+<li>Entenda IPv6</li>
 </ul>
 </li>
 <li>TCP<ul>
@@ -1002,6 +1002,8 @@ vamos tentar focar no que é comum em todos eles.</p>
 <h2 id="amarrando-as-pontas">Amarrando as pontas</h2>
 <p>Esse post é uma tentativa de dar um norte ou um caminho para se tornar uma pessoa sólida em redes, entendendo quais são os aspectos fundamentais e necessários para o dia-a-dia na vida profissional.</p>
 <p>Se você conseguir ler, estudar, pesquisar e responder as perguntas, entender, conhecer e aprender os assuntos, estará no caminho certo.</p>
+<h2 id="aquele-abraço">Aquele abraço!</h2>
+<p>Mando aquele abraço para o professor MESTRE Ulysses Almeida (@ulyssesalmeida) que me ensinou boa parte destes conceitos no início desse século.</p>
 <p>[s]<br>
 Guto</p>
 <p>–</p>
