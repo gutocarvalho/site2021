@@ -3,12 +3,36 @@
     <title>Guto@Site</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2022-03-10T10:23:07-03:00</updated>
+    <updated>2022-03-11T16:57:21-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
     <id>https://gutocarvalho.net</id>
 
+    <entry>
+        <title>Conheça o projeto Docker OSX</title>
+        <author>
+            <name>Guto Carvalho</name>
+        </author>
+        <link href="https://gutocarvalho.net/conheca-o-projeto-docker-osx/"/>
+        <id>https://gutocarvalho.net/conheca-o-projeto-docker-osx/</id>
+            <category term="MindNotes"/>
+
+        <updated>2022-03-11T16:57:21-03:00</updated>
+            <summary>
+                <![CDATA[
+                    <p>Já pensou em rodar o OSX via Docker e se conectar no ambiente?</p>
+
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p>Já pensou em rodar o OSX via Docker e se conectar no ambiente?</p>
+
+<p>Pois é, tem um projeto que oferece isso com performance quase nativa, basta executar a imagem e se conectar via X11-Forwarding.<br><br>Conheça!<br><br>- <a href="https://github.com/sickcodes/Docker-OSX">https://github.com/sickcodes/Docker-OSX</a><br><br>[s]<br>Guto</p>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>O que significa ter uma base sólida em redes?</title>
         <author>
@@ -1872,30 +1896,6 @@ Guto</p>
 <p>Este post é do tipo #MindNotes, entenda <a href="https://gutocarvalho.net/o-que-sao-mindnotes/">aqui</a>.</p>
 <p>Se gostou manda um alo no twitter <a href="https://twitter.com/gutocarvalho">@gutocarvalho</a>.</p>
 
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>Live com Save&#x27;In&#x27;Cloud no dia 22 de Fevereiro</title>
-        <author>
-            <name>Guto Carvalho</name>
-        </author>
-        <link href="https://gutocarvalho.net/live-com-saveincloud-no-dia-22-de-fevereiro/"/>
-        <id>https://gutocarvalho.net/live-com-saveincloud-no-dia-22-de-fevereiro/</id>
-            <category term="Eventos"/>
-
-        <updated>2022-02-17T17:13:45-03:00</updated>
-            <summary>
-                <![CDATA[
-                    <p>Pessoal estarei com a Save'in'Cloud falando sobre Kubernetes e Cloud Native. </p>
-
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                <p>Pessoal estarei com a Save'in'Cloud falando sobre Kubernetes e Cloud Native. </p>
-
-<p>A live começará as 19 horas no horário de Brasília.<br><br>Participe e aproveite para tirar suas dúvidas!<br><br><a href="https://cloud.saveincloud.com.br/lp/meetup-kubernetes-22-02/" target="_blank" rel="noopener noreferrer">https://cloud.saveincloud.com.br/lp/meetup-kubernetes-22-02/</a><br><br>[s]<br>Guto</p>
             ]]>
         </content>
     </entry>
