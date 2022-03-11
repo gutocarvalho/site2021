@@ -1,0 +1,157 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>TCPDUMP Crash Course - Guto@Site</title><meta name="description" content="O TCPDUMP é uma ferramenta de captura de pacotes usada para fazermos&hellip;"><meta name="generator" content="Publii Open-Source CMS for Static Site"><link rel="canonical" href="https://gutocarvalho.net/tcpdump-crash-course/"><link rel="amphtml" href="https://gutocarvalho.net/amp/tcpdump-crash-course/"><link rel="alternate" type="application/atom+xml" href="https://gutocarvalho.net/feed.xml"><link rel="alternate" type="application/json" href="https://gutocarvalho.net/feed.json"><meta property="og:title" content="TCPDUMP Crash Course"><meta property="og:site_name" content="Guto@Site"><meta property="og:description" content="O TCPDUMP é uma ferramenta de captura de pacotes usada para fazermos&hellip;"><meta property="og:url" content="https://gutocarvalho.net/tcpdump-crash-course/"><meta property="og:type" content="article"><meta name="twitter:card" content="summary"><meta name="twitter:site" content="@gutocarvalho"><meta name="twitter:title" content="TCPDUMP Crash Course"><meta name="twitter:description" content="O TCPDUMP é uma ferramenta de captura de pacotes usada para fazermos&hellip;"><link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin><link href="https://fonts.googleapis.com/css?family=Asap:400,600,700&amp;display=swap" rel="stylesheet"><style>:root{--body-font:'Asap',sans-serif;--heading-font:var(--body-font);--logo-font:var(--body-font);--menu-font:var(--body-font)}</style><link rel="stylesheet" href="https://gutocarvalho.net/assets/css/style.css?v=47aad078e314013c1a1ca6569eaa9f2f"><script type="application/ld+json">{"@context":"http://schema.org","@type":"Article","mainEntityOfPage":{"@type":"WebPage","@id":"https://gutocarvalho.net/tcpdump-crash-course/"},"headline":"TCPDUMP Crash Course","datePublished":"2022-03-11T18:10","dateModified":"2022-03-11T18:10","description":"O TCPDUMP é uma ferramenta de captura de pacotes usada para fazermos&hellip;","author":{"@type":"Person","name":"Guto Carvalho"},"publisher":{"@type":"Organization","name":"Guto Carvalho"}}</script></head><body><div class="container js-container"><nav class="menu"><ul class="navbar__menu"><li><a href="https://gutocarvalho.net/quem-sou/" target="_self">Me conheça</a></li><li class="has-submenu"><span>Resume</span><ul class="navbar__submenu"><li><a href="https://resume.gutocarvalho.net" target="_self">ENGLISH</a></li><li><a href="https://curriculo.gutocarvalho.net" target="_self">PORTUGUESE</a></li></ul></li><li class="has-submenu"><span>Posts</span><ul class="navbar__submenu"><li><a href="https://gutocarvalho.net/" target="_self">BLOG</a></li><li><a href="https://twitter.com/gutocarvalho" target="_self">TWITTER</a></li></ul></li><li class="has-submenu"><span>Eu recomendo</span><ul class="navbar__submenu"><li><a href="https://gutocarvalho.net/comunidades/" target="_self">COMUNIDADES</a></li><li><a href="https://gutocarvalho.net/siga-o-pessoal-do-bem/" target="_self">PESSOAS</a></li><li><a href="https://gutocarvalho.net/ferramentas-interessantes-para-k8s/" target="_self">K8S TOOLS</a></li><li><a href="https://gutocarvalho.net/sites-interessantes-para-conhecer/" target="_self">TECH SITES</a></li></ul></li><li class="has-submenu"><span>Opinião</span><ul class="navbar__submenu"><li><a href="https://gutocarvalho.net/etiqueta-do-trabalho-remoto/" target="_self">ETIQUETA NO JOB REMOTO</a></li><li><a href="https://gutocarvalho.net/ti-remota-em-2022-entenda/" target="_self">ENTENDA O JOB REMOTO EM 22</a></li><li><a href="https://gutocarvalho.net/trinta-percepcoes-sobre-ti-em-2022/" target="_self">30 PERCEPCOES SOBRE TI EM 22</a></li><li><a href="https://gutocarvalho.net/quanto-eu-devo-cobrar-a-hora-de-projetos/" target="_self">VALOR HORA DE PROJETOS</a></li><li><a href="https://gutocarvalho.net/quanto-deveria-ganhar-um-cloud-engineer/" target="_self">SALARIO CLOUD ENGINEER</a></li></ul></li><li class="has-submenu"><span>TECH</span><ul class="navbar__submenu"><li><a href="https://gutocarvalho.net/tags/tips/" target="_self">DROPS</a></li><li><a href="https://gutocarvalho.net/tags/projetos/" target="_self">PROJETOS</a></li><li><a href="https://gutocarvalho.net/tags/mindnotes/" target="_self">MIND NOTES</a></li><li><a href="https://gutocarvalho.net/tags/mente/" target="_self">FALAGUTERA</a></li><li><a href="https://gutocarvalho.net/tags/k8s/" target="_self">K8S</a></li></ul></li><li class="has-submenu"><span>Vitae</span><ul class="navbar__submenu"><li><a href="https://gutocarvalho.net/tags/poesia/" target="_self">POESIA</a></li></ul></li><li><a href="https://gutocarvalho.net/archives/" target="_self">ARCHIVED SITES</a></li><li><a href="https://nativetrail.io" target="_self">NativeTrail</a></li><li><a href="https://www.google.com/search?q&#x3D;site%3Agutocarvalho.net" target="_blank">Busca</a></li><li><a href="https://gutocarvalho.net/contato/" target="_self">Contato</a></li></ul></nav><div class="content"><header class="top"><div class="top__item"><a class="logo" href="https://gutocarvalho.net/">Guto@Site</a></div><div class="top__item top__item--right"><button class="menu-toggle js-menu-toggle" aria-label="Menu" aria-expanded="false"><span class="menu-toggle-box"><span class="menu-toggle-inner">Menu</span></span></button></div></header><main class="main"><article class="post"><div class="main__left"><figure class="hero"><img src="https://gutocarvalho.net/media/website/guto.png" srcset="https://gutocarvalho.net/media/website/responsive/guto-xs.png 300w, https://gutocarvalho.net/media/website/responsive/guto-sm.png 480w, https://gutocarvalho.net/media/website/responsive/guto-md.png 768w, https://gutocarvalho.net/media/website/responsive/guto-lg.png 1024w, https://gutocarvalho.net/media/website/responsive/guto-xl.png 1280w, https://gutocarvalho.net/media/website/responsive/guto-2xl.png 1600w" sizes="(min-width: 61.3125em) 50vw, 100vw" loading="eager" width="885" height="802" alt="Guto Carvalho # 2022-01-05 @ BSB"><figcaption class="hero__caption">Guto Carvalho # 2022-01-05 @ BSB</figcaption></figure><header><h1>TCPDUMP Crash Course</h1><p><time datetime="2022-03-11T18:10">March 11, 2022 </time>by <a href="https://gutocarvalho.net/authors/gutocarvalho/" rel="author" title="Guto Carvalho">Guto Carvalho</a></p></header></div><div class="main__right"><div class="post__entry"><p>O TCPDUMP é uma ferramenta de captura de pacotes usada para fazermos troubleshooting de rede.</p><p>A ideia aqui é fazer um crash course de uso deste.</p><h2 id="para-quem-foi-feito-esse-post">Para quem foi feito esse post?</h2><p>Aqui o foco está nas pessoas atuando nas posições abaixo:</p><ul><li>Sysadmin;</li><li>Cloud Native Engineer;</li><li>Cloud Engineer;</li><li>DevOps Engineer;</li><li>Plataform Engineer;</li><li>GitOps Engineer.</li></ul><h2 id="momento-merchan-p">Momento Merchan :P</h2><p>Me siga no twitter <a href="https://twitter.com/gutocarvalho">@gutocarvalho</a> e acompanhe meus posts sobre Cloud Native e CI/CD.</p><p>Aproveite e siga a <a href="https://twitter.com/CDeliveryFdn">CD Foundation</a> e <a href="https://twitter.com/cloudnativefdn">Cloud Native Foundation</a> no twitter.</p><h2 id="tcpdump-crash-course">TCPDUMP Crash Course</h2><h3 id="capturando-pacotes-de-interfaces">capturando pacotes de interfaces</h3><p>Capturando tráfego de todas as interfaces</p><pre><code>$ tcpdump -i any
+</code></pre><p>Capturando tráfego de uma interface específica</p><pre><code>$ tcpdump -i en0
+</code></pre><p>Capturando tráfego de uma interface específica sem resolver nomes</p><pre><code>$ tcpdump -n -i en0
+</code></pre><p>Capturando tráfego de uma interface específica sem resolver nomes ou fazer checksums TCP</p><pre><code>$ tcpdump -n -K -i en0
+</code></pre><p>Capturando tráfego de uma interface específica sem resolver nomes e fazer lookups</p><pre><code>$ tcpdump -nn -i en0
+</code></pre><p>Capturando tráfego de uma interface específica sem ativar o modo promíscuo</p><pre><code>$ tcpdump -p -i en0
+</code></pre><h3 id="trabalhando-com-arquivos">trabalhando com arquivos</h3><p>Capturando tráfego de uma interface específica e jogando saída para um arquivo</p><pre><code>$ tcpdump -i eth0 -w tcpdump.txt
+</code></pre><p>Lendo pacotes de um arquivo (replay)</p><pre><code>$ tcpdump -i eth0 -r tcpdump.txt
+</code></pre><h3 id="capturando-pacotes-de-hosts-e-redes-específicos">capturando pacotes de hosts e redes específicos</h3><p>Capturando tráfego de um host específico</p><pre><code>$ tcpdump host 192.168.222.1
+</code></pre><p>Capturando tráfego de uma rede específica</p><pre><code>$ tcpdump net 192.168.222.0/24
+</code></pre><h3 id="capturando-pacotes-de-endereços-mac-específicos">capturando pacotes de endereços mac específicos</h3><p>Capturando pacotes com origem no endereço mac e8:2b:88:ef:55:11</p><pre><code>$ tcpdump ether src e8:2b:88:ef:55:11
+</code></pre><p>Capturando pacotes com destino ao endereço mac e8:2b:88:ef:55:11</p><pre><code>$ tcpdump ether dst e8:2b:88:ef:55:11
+</code></pre><p>Capturando pacotes enviados ou recebidos pelo mac e8:2b:88:ef:55:11</p><pre><code>$ tcpdump ether host e8:2b:88:ef:55:11
+</code></pre><h3 id="capturando-pacotes-de-origem-e-destino">capturando pacotes de origem e destino</h3><p>Capturando tráfego de uma origem específica</p><pre><code>$ tcpdump src 200.150.204.87
+</code></pre><p>Capturando tráfego para um destino específico</p><pre><code>$ tcpdump dst 200.150.204.87
+</code></pre><h3 id="capturando-pacotes-de-serviços-e-portas">capturando pacotes de serviços e portas</h3><p>Capturando tráfego de um serviço específico</p><pre><code>$ tcpdump http
+</code></pre><p>Capturando tráfego de uma porta específica</p><pre><code>$ tcpdump port 80
+</code></pre><p>Capturando tráfego de um range de portas</p><pre><code>$ tcpdump portrange 8001-8009
+    
+</code></pre><h3 id="capturando-pacotes-de-protocolos-específicos">capturando pacotes de protocolos específicos</h3><p>Capturando apenas pacotes IPv4</p><pre><code>$ tcpdump ip
+</code></pre><p>Capturando apenas pacotes IPv6</p><pre><code>$ tcpdump ipv6
+</code></pre><p>Capturando apenas pacotes TCP</p><pre><code>$ tcpdump tcp
+</code></pre><p>Capturando apenas pacotes UDP</p><pre><code>$ tcpdump udp
+</code></pre><p>Capturando apenas pacotes ICMP</p><pre><code>$ tcpdump icmp
+</code></pre><p>Capturando apenas pacotes ARP</p><pre><code>$ tcpdump arp
+</code></pre><h3 id="capturando-pacotes-em-quantidades-específicas">capturando pacotes em quantidades específicas</h3><p>Capturando os primeiros 100 pacotes TCP</p><pre><code>$ tcpdump -c 100 tcp
+</code></pre><h3 id="capturando-pacotes-de-tamanhos-específicos">capturando pacotes de tamanhos específicos</h3><p>Capturando pacotes maiores do que 200 bytes</p><pre><code>$ sudo tcpdump greater 200
+</code></pre><p>Capturando pacotes menores do que 200 bytes</p><pre><code>$ sudo tcpdump less 200
+</code></pre><h3 id="usando-operadores-lógicos-no-filtro-e-captura-de-pacotes">usando operadores lógicos no filtro e captura de pacotes</h3><p>Capturando pacotes com origem no IP 192.168.222.1 <strong>e</strong> destino na porta 8005 (AND)</p><pre><code>$ tcpdump -n -i en0 src 192.168.222.1 and dst port 8005
+</code></pre><p>Capturando pacotes da porta 8001 <strong>ou</strong> 8005 da interface eth0 (OR)</p><pre><code>$ tcpdump -n -i en0 port 8001 or port 8005
+</code></pre><p>Capturando pacotes da interface eth0 <strong>com exceção</strong> da porta 22 (AND NOT)</p><pre><code>$ tcpdump -n -i en0 and not port 22
+</code></pre><p>Capturando pacotes de origem a rede 10.10.0.0/24 e destino rede 192.169.100.0/24 (AND)</p><pre><code>$ tcpdump src net 10.10.0.0/24 and dst net 192.168.100.0/24
+</code></pre><p>Capturando pacotes de duas redes específicas (AND)</p><pre><code>$ tcpdump net 10.10.0.0/24 and net 192.168.100.0/24
+</code></pre><p>Capturando pacotes tcp entre dois hosts específicos (AND)</p><pre><code>$ tcpdump tcp and host 10.10.0.1 and host 192.168.100.54
+</code></pre><p>Capturando pacotes maiores ou igual a 32 bytes (GREATER)</p><pre><code>$ tcpdump tcp &gt;= 32
+</code></pre><p>Capturando pacotes menores ou igual a 32 bytes (LESS)</p><pre><code>$ tcpdump tcp &lt;= 32
+</code></pre><h3 id="configurando-timestamp-da-captura-de-pacotes">configurando timestamp da captura de pacotes</h3><p>Capturando pacotes com timestamp com nano-resolution</p><pre><code>$ tcpdump --time-stamp-precision nano
+</code></pre><p>Capturando pacotes com timestamp em formato unix epoc (seconds since January 1, 1970)</p><pre><code>$ tcpdump -tt
+</code></pre><p>Capturando pacotes com timestamp usando horas, minutos, segundos e microsegundos</p><pre><code>$ tcpdump -tttt
+</code></pre><h3 id="conhecendo-algumas-opções-do-tcpdump">conhecendo algumas opções do tcpdump</h3><p>Mostrando menos detalhes (quite mode)</p><pre><code>$ tcpdump -i en0 -q
+</code></pre><p>Não mostra timestamp</p><pre><code>$ tcpdump -i en0 -t
+</code></pre><p>Modo verboso</p><pre><code>$ tcpdump -i en0 -v
+</code></pre><p>Modo um pouco mais verboso</p><pre><code>$ tcpdump -i en0 -vv
+</code></pre><p>Modo ainda pouco mais verboso</p><pre><code>$ tcpdump -i en0 -vvv
+</code></pre><h3 id="dicas-soltas-do-tcpdump">dicas soltas do tcpdump</h3><p>Listando interfaces</p><pre><code>$ tcpdump -D
+</code></pre><p>Listando data-link types suportados no sistema</p><pre><code>$ tcpdump -L
+</code></pre><p>Definindo a saída em formato ASCII</p><pre><code>$ tcpdump -i en0 -A
+</code></pre><h2 id="refs">Refs</h2><ul><li><a href="https://www.tcpdump.org">https://www.tcpdump.org</a></li><li><a href="https://packetlife.net/media/library/12/tcpdump.pdf">https://packetlife.net/media/library/12/tcpdump.pdf</a></li><li><a href="https://www.comparitech.com/net-admin/tcpdump-cheat-sheet">https://www.comparitech.com/net-admin/tcpdump-cheat-sheet</a></li><li><a href="https://gist.github.com/jforge/27962c52223ea9b8003b22b8189d93fb">https://gist.github.com/jforge/27962c52223ea9b8003b22b8189d93fb</a></li><li><a href="https://www.xmodulo.com/tcpdump-cheat-sheet-examples.html">https://www.xmodulo.com/tcpdump-cheat-sheet-examples.html</a></li></ul><h2 id="amarrando-as-pontas">Amarrando as pontas</h2><p>Esse post é uma tentativa de dar um norte ou um caminho para fazer um bom troubleshooting de redes usando o tcpdump.</p><p>Volte sempre que precisar :)</p><h2 id="aquele-abraço">Aquele abraço!</h2><p>Mando aquele abraço para o professor MESTRE Ulysses Almeida (@ulyssesalmeida) que me ensinou a usar o TCPDUMP lá no início do século.</p><p>Mando aquele abraço pro @gomex e @badtux que via exemplo me fazem contribuir mais e mais e mais :)</p><p>Mando aquele abraço para todos que leram, comentaram, revisaram e contribuiram de alguma forma com esse post!</p><p>–</p><p>Este post é do tipo #Mindnodes, entenda <a href="https://gutocarvalho.net/o-que-sao-mindnotes/">aqui</a>.</p><p>Se gostou manda um alo no twitter <a href="https://twitter.com/gutocarvalho">@gutocarvalho</a> ou deixa um comentário bacana :)</p><p>[s] Guto</p><footer><div class="post__tag-share"><ul class="post__tag"><li><a href="https://gutocarvalho.net/tags/mindnotes/">MindNotes</a></li></ul><div class="post__share"><a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgutocarvalho.net%2Ftcpdump-crash-course%2F" class="js-share facebook" aria-label="Share with Facebook" rel="nofollow noopener noreferrer"><svg class="icon"><use xlink:href="https://gutocarvalho.net/assets/svg/svg-map.svg#facebook"/></svg> </a><a href="https://twitter.com/share?url=https%3A%2F%2Fgutocarvalho.net%2Ftcpdump-crash-course%2F&amp;via=gutocarvalho&amp;text=TCPDUMP%20Crash%20Course" class="js-share twitter" aria-label="Share with Twitter" rel="nofollow noopener noreferrer"><svg class="icon"><use xlink:href="https://gutocarvalho.net/assets/svg/svg-map.svg#twitter"/></svg> </a><a href="http://www.linkedin.com/shareArticle?url=https%3A%2F%2Fgutocarvalho.net%2Ftcpdump-crash-course%2F&amp;title=TCPDUMP%20Crash%20Course" class="js-share linkedin" aria-label="[MISSING TRANSLATION] Share with LinkedIn" rel="nofollow noopener noreferrer"><svg class="icon"><use xlink:href="https://gutocarvalho.net/assets/svg/svg-map.svg#linkedin"/></svg> </a><a href="https://api.whatsapp.com/send?text=TCPDUMP%20Crash%20Course https%3A%2F%2Fgutocarvalho.net%2Ftcpdump-crash-course%2F" class="js-share whatsapp" title="[MISSING TRANSLATION] Share with LinkedIn" rel="nofollow noopener noreferrer"><svg class="icon"><use xlink:href="https://gutocarvalho.net/assets/svg/svg-map.svg#whatsapp"/></svg></a></div></div><div class="post__bio"><img src="https://gutocarvalho.net/media/website/guto_22_02.png" loading="lazy" alt="Guto Carvalho"><h3><a href="https://gutocarvalho.net/authors/gutocarvalho/" title="Guto Carvalho">Guto Carvalho</a></h3><p>Navegando pelas nuvens nativas e pipelines infinitas.</p></div></footer></div></div></article></main><footer class="footer"><div class="footer__social"><a href="https://www.facebook.com/falagutera" class="facebook" aria-label="Facebook"><svg class="icon"><use xlink:href="https://gutocarvalho.net/assets/svg/svg-map.svg#facebook"/></svg> </a><a href="https://www.twitter.com/gutocarvalho" class="twitter" aria-label="Twitter"><svg class="icon"><use xlink:href="https://gutocarvalho.net/assets/svg/svg-map.svg#twitter"/></svg> </a><a href="https://www.instagram.com/falagutera" class="instagram" aria-label="Instagram"><svg class="icon"><use xlink:href="https://gutocarvalho.net/assets/svg/svg-map.svg#instagram"/></svg> </a><a href="https://www.linkedin.com/in/falagutera/" class="linkedin" aria-label="LinkedIn"><svg class="icon"><use xlink:href="https://gutocarvalho.net/assets/svg/svg-map.svg#linkedin"/></svg> </a><a href="https://www.youtube.com/falagutera" class="youtube" aria-label="Youtube"><svg class="icon"><use xlink:href="https://gutocarvalho.net/assets/svg/svg-map.svg#youtube"/></svg></a></div><div class="footer__copyright">License<br>Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.<br>Powered by <a href="https://getpublii.com" target="_blank" rel="nofollow noopener">Publii</a></div></footer></div></div><script defer="defer" src="https://gutocarvalho.net/assets/js/scripts.min.js?v=babd20e2a0a25821e63a0529c9feaae0"></script><script>var images = document.querySelectorAll('img[loading]');
+   
+           for (var i = 0; i < images.length; i++) {
+               if (images[i].complete) {
+                   images[i].classList.add('is-loaded');
+               } else {
+                   images[i].addEventListener('load', function () {
+                       this.classList.add('is-loaded');
+                   }, false);
+               }
+           }</script><div class="cookie-popup js-cookie-popup cookie-popup--uses-badge"><h2>Esse site usa cookies</h2><p>Esse site usa cookies apenas para verificar suas configurações de browser e melhorar sua experiência na navegação. Não guardaremos seus dados. <a href="#not-specified"></a></p><form><input id="gdpr-necessary" name="gdpr-necessary" checked="checked" disabled="disabled" type="checkbox"> <label for="gdpr-necessary">Experiência do usuário</label><p class="cookie-popup__save-wrapper"><button type="submit" class="cookie-popup__save">Save</button></p></form><span class="cookie-popup-label">Cookies Policy</span></div><script>(function() {
+                   function addScript (src, inline) {
+                       var newScript = document.createElement('script');
+   
+                       if (src) {
+                           newScript.setAttribute('src', src);
+                       }
+   
+                       if (inline) {
+                           newScript.text = inline;
+                       }
+   
+                       document.body.appendChild(newScript);
+                   }
+   
+                   var popup = document.querySelector('.js-cookie-popup');
+                   var checkboxes = popup.querySelectorAll('input[type="checkbox"]');
+                   var save = popup.querySelector('button');
+                   var currentConfig = localStorage.getItem('publii-gdpr-allowed-cookies');
+                   var blockedScripts = document.querySelectorAll('script[type^="gdpr-blocker/"]');
+                   
+   
+                   popup.addEventListener('click', function() {
+                       if (!popup.classList.contains('cookie-popup--is-sticky')) {
+                           popup.classList.add('cookie-popup--is-sticky');
+                       }
+                   });
+   
+                   save.addEventListener('click', function(e) {
+                       e.preventDefault();
+                       e.stopPropagation();
+                       popup.classList.remove('cookie-popup--is-sticky');
+                       var allowedGroups = [];
+   
+                       for (var i = 0; i < checkboxes.length; i++) {
+                           if (checkboxes[i].checked) {
+                               var groupName = checkboxes[i].getAttribute('name').replace('gdpr-', '');
+                               var scripts = document.querySelectorAll('script[type="gdpr-blocker/' + groupName + '"]');
+   
+                               for (var j = 0; j < scripts.length; j++) {
+                                   addScript(scripts[j].src, scripts[j].text);
+                               }
+   
+                               allowedGroups.push(groupName);
+                           }
+                       }
+   
+                       localStorage.setItem('publii-gdpr-allowed-cookies', allowedGroups.join(','));
+                       popup.classList.remove('cookie-popup--is-sticky');
+   
+                       setTimeout(function () {
+                           if (currentConfig !== null) {
+                               window.location.reload();
+                           }
+                       }, 250);
+                   });
+   
+                   if (currentConfig === null) {
+                       popup.classList.add('cookie-popup--is-sticky');
+                       var checkedGroups = popup.querySelectorAll('input[type="checkbox"]:checked');
+   
+                       for (var i = 0; i < checkedGroups.length; i++) {
+                           var allowedGroup = checkedGroups[i].name.replace('gdpr-', '');
+   
+                           if (allowedGroup !== '-' && allowedGroup !== '') {
+                               var scripts = document.querySelectorAll('script[type="gdpr-blocker/' + allowedGroup + '"]');
+   
+                               for (var j = 0; j < scripts.length; j++) {
+                                   addScript(scripts[j].src, scripts[j].text);
+                               }
+                           }
+                       }
+                   } else {
+                       if (currentConfig !== '') {
+                           var allowedGroups = currentConfig.split(',');
+                           var checkedCheckboxes = popup.querySelectorAll('input[type="checkbox"]:checked');
+   
+                           for (var j = 0; j < checkedCheckboxes.length; j++) {
+                               var name = checkedCheckboxes[j].name.replace('gdpr-', '');
+   
+                               if (allowedGroups.indexOf(name) === -1) {
+                                   checkedCheckboxes[j].checked = false;
+                               }
+                           }
+   
+                           for (var i = 0; i < allowedGroups.length; i++) {
+                               var scripts = document.querySelectorAll('script[type="gdpr-blocker/' + allowedGroups[i] + '"]');
+                               var checkbox = popup.querySelector('input[type="checkbox"][name="gdpr-' + allowedGroups[i] + '"]');
+   
+                               if (checkbox) {
+                                   checkbox.checked = true;
+                               }
+   
+                               for (var j = 0; j < scripts.length; j++) {
+                                   addScript(scripts[j].src, scripts[j].text);
+                               }
+                           }
+                       }
+                   }
+               })();</script></body></html>

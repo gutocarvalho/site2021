@@ -3,12 +3,221 @@
     <title>Guto@Site</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2022-03-11T16:57:21-03:00</updated>
+    <updated>2022-03-11T18:10:20-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
     <id>https://gutocarvalho.net</id>
 
+    <entry>
+        <title>TCPDUMP Crash Course</title>
+        <author>
+            <name>Guto Carvalho</name>
+        </author>
+        <link href="https://gutocarvalho.net/tcpdump-crash-course/"/>
+        <id>https://gutocarvalho.net/tcpdump-crash-course/</id>
+            <category term="MindNotes"/>
+
+        <updated>2022-03-11T18:10:20-03:00</updated>
+            <summary>
+                <![CDATA[
+                    O TCPDUMP é uma ferramenta de captura de pacotes usada para fazermos&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p>O TCPDUMP é uma ferramenta de captura de pacotes usada para fazermos troubleshooting de rede.</p>
+<p>A ideia aqui é fazer um crash course de uso deste.</p>
+<h2 id="para-quem-foi-feito-esse-post">Para quem foi feito esse post?</h2>
+<p>Aqui o foco está nas pessoas atuando nas posições abaixo:</p>
+<ul>
+<li>Sysadmin;</li>
+<li>Cloud Native Engineer;</li>
+<li>Cloud Engineer;</li>
+<li>DevOps Engineer;</li>
+<li>Plataform Engineer;</li>
+<li>GitOps Engineer.</li>
+</ul>
+<h2 id="momento-merchan-p">Momento Merchan :P</h2>
+<p>Me siga no twitter <a href="https://twitter.com/gutocarvalho">@gutocarvalho</a> e acompanhe meus posts sobre Cloud Native e CI/CD.</p>
+<p>Aproveite e siga a <a href="https://twitter.com/CDeliveryFdn">CD Foundation</a> e <a href="https://twitter.com/cloudnativefdn">Cloud Native Foundation</a> no twitter.</p>
+<h2 id="tcpdump-crash-course">TCPDUMP Crash Course</h2>
+<h3 id="capturando-pacotes-de-interfaces">capturando pacotes de interfaces</h3>
+<p>Capturando tráfego de todas as interfaces</p>
+<pre><code>$ tcpdump -i any
+</code></pre>
+<p>Capturando tráfego de uma interface específica</p>
+<pre><code>$ tcpdump -i en0
+</code></pre>
+<p>Capturando tráfego de uma interface específica sem resolver nomes</p>
+<pre><code>$ tcpdump -n -i en0
+</code></pre>
+<p>Capturando tráfego de uma interface específica sem resolver nomes ou fazer checksums TCP</p>
+<pre><code>$ tcpdump -n -K -i en0
+</code></pre>
+<p>Capturando tráfego de uma interface específica sem resolver nomes e fazer lookups</p>
+<pre><code>$ tcpdump -nn -i en0
+</code></pre>
+<p>Capturando tráfego de uma interface específica sem ativar o modo promíscuo</p>
+<pre><code>$ tcpdump -p -i en0
+</code></pre>
+<h3 id="trabalhando-com-arquivos">trabalhando com arquivos</h3>
+<p>Capturando tráfego de uma interface específica e jogando saída para um arquivo</p>
+<pre><code>$ tcpdump -i eth0 -w tcpdump.txt
+</code></pre>
+<p>Lendo pacotes de um arquivo (replay)</p>
+<pre><code>$ tcpdump -i eth0 -r tcpdump.txt
+</code></pre>
+<h3 id="capturando-pacotes-de-hosts-e-redes-específicos">capturando pacotes de hosts e redes específicos</h3>
+<p>Capturando tráfego de um host específico</p>
+<pre><code>$ tcpdump host 192.168.222.1
+</code></pre>
+<p>Capturando tráfego de uma rede específica</p>
+<pre><code>$ tcpdump net 192.168.222.0/24
+</code></pre>
+<h3 id="capturando-pacotes-de-endereços-mac-específicos">capturando pacotes de endereços mac específicos</h3>
+<p>Capturando pacotes com origem no endereço mac e8:2b:88:ef:55:11</p>
+<pre><code>$ tcpdump ether src e8:2b:88:ef:55:11
+</code></pre>
+<p>Capturando pacotes com destino ao endereço mac e8:2b:88:ef:55:11</p>
+<pre><code>$ tcpdump ether dst e8:2b:88:ef:55:11
+</code></pre>
+<p>Capturando pacotes enviados ou recebidos pelo mac e8:2b:88:ef:55:11</p>
+<pre><code>$ tcpdump ether host e8:2b:88:ef:55:11
+</code></pre>
+<h3 id="capturando-pacotes-de-origem-e-destino">capturando pacotes de origem e destino</h3>
+<p>Capturando tráfego de uma origem específica</p>
+<pre><code>$ tcpdump src 200.150.204.87
+</code></pre>
+<p>Capturando tráfego para um destino específico</p>
+<pre><code>$ tcpdump dst 200.150.204.87
+</code></pre>
+<h3 id="capturando-pacotes-de-serviços-e-portas">capturando pacotes de serviços e portas</h3>
+<p> Capturando tráfego de um serviço específico</p>
+<pre><code>$ tcpdump http
+</code></pre>
+<p>Capturando tráfego de uma porta específica</p>
+<pre><code>$ tcpdump port 80
+</code></pre>
+<p>Capturando tráfego de um range de portas   </p>
+<pre><code>$ tcpdump portrange 8001-8009
+    
+</code></pre>
+<h3 id="capturando-pacotes-de-protocolos-específicos">capturando pacotes de protocolos específicos</h3>
+<p>Capturando apenas pacotes IPv4</p>
+<pre><code>$ tcpdump ip
+</code></pre>
+<p>Capturando apenas pacotes IPv6</p>
+<pre><code>$ tcpdump ipv6
+</code></pre>
+<p>Capturando apenas pacotes TCP</p>
+<pre><code>$ tcpdump tcp
+</code></pre>
+<p>Capturando apenas pacotes UDP</p>
+<pre><code>$ tcpdump udp
+</code></pre>
+<p>Capturando apenas pacotes ICMP</p>
+<pre><code>$ tcpdump icmp
+</code></pre>
+<p>Capturando apenas pacotes ARP</p>
+<pre><code>$ tcpdump arp
+</code></pre>
+<h3 id="capturando-pacotes-em-quantidades-específicas">capturando pacotes em quantidades específicas</h3>
+<p>Capturando os primeiros 100 pacotes TCP</p>
+<pre><code>$ tcpdump -c 100 tcp
+</code></pre>
+<h3 id="capturando-pacotes-de-tamanhos-específicos">capturando pacotes de tamanhos específicos</h3>
+<p>Capturando pacotes maiores do que 200 bytes</p>
+<pre><code>$ sudo tcpdump greater 200
+</code></pre>
+<p>Capturando pacotes menores do que 200 bytes</p>
+<pre><code>$ sudo tcpdump less 200
+</code></pre>
+<h3 id="usando-operadores-lógicos-no-filtro-e-captura-de-pacotes">usando operadores lógicos no filtro e captura de pacotes</h3>
+<p>Capturando pacotes com origem no IP 192.168.222.1 <strong>e</strong> destino na porta 8005 (AND)</p>
+<pre><code>$ tcpdump -n -i en0 src 192.168.222.1 and dst port 8005
+</code></pre>
+<p>Capturando pacotes da porta 8001 <strong>ou</strong> 8005 da interface eth0 (OR)</p>
+<pre><code>$ tcpdump -n -i en0 port 8001 or port 8005
+</code></pre>
+<p>Capturando pacotes da interface eth0 <strong>com exceção</strong> da porta 22 (AND NOT)</p>
+<pre><code>$ tcpdump -n -i en0 and not port 22
+</code></pre>
+<p>Capturando pacotes de origem a rede 10.10.0.0/24 e destino rede 192.169.100.0/24 (AND)</p>
+<pre><code>$ tcpdump src net 10.10.0.0/24 and dst net 192.168.100.0/24
+</code></pre>
+<p>Capturando pacotes de duas redes específicas (AND)</p>
+<pre><code>$ tcpdump net 10.10.0.0/24 and net 192.168.100.0/24
+</code></pre>
+<p>Capturando pacotes tcp entre dois hosts específicos (AND)</p>
+<pre><code>$ tcpdump tcp and host 10.10.0.1 and host 192.168.100.54
+</code></pre>
+<p>Capturando pacotes maiores ou igual a 32 bytes (GREATER)</p>
+<pre><code>$ tcpdump tcp &gt;= 32
+</code></pre>
+<p>Capturando pacotes menores ou igual a 32 bytes (LESS)</p>
+<pre><code>$ tcpdump tcp &lt;= 32
+</code></pre>
+<h3 id="configurando-timestamp-da-captura-de-pacotes">configurando timestamp da captura de pacotes</h3>
+<p>Capturando pacotes com timestamp com nano-resolution</p>
+<pre><code>$ tcpdump --time-stamp-precision nano
+</code></pre>
+<p>Capturando pacotes com timestamp em formato unix epoc (seconds since January 1, 1970)</p>
+<pre><code>$ tcpdump -tt
+</code></pre>
+<p>Capturando pacotes com timestamp usando horas, minutos, segundos e microsegundos</p>
+<pre><code>$ tcpdump -tttt
+</code></pre>
+<h3 id="conhecendo-algumas-opções-do-tcpdump">conhecendo algumas opções do tcpdump</h3>
+<p>Mostrando menos detalhes (quite mode)</p>
+<pre><code>$ tcpdump -i en0 -q
+</code></pre>
+<p>Não mostra timestamp</p>
+<pre><code>$ tcpdump -i en0 -t
+</code></pre>
+<p>Modo verboso</p>
+<pre><code>$ tcpdump -i en0 -v
+</code></pre>
+<p>Modo um pouco mais verboso</p>
+<pre><code>$ tcpdump -i en0 -vv
+</code></pre>
+<p>Modo ainda pouco mais verboso</p>
+<pre><code>$ tcpdump -i en0 -vvv
+</code></pre>
+<h3 id="dicas-soltas-do-tcpdump">dicas soltas do tcpdump</h3>
+<p>Listando interfaces</p>
+<pre><code>$ tcpdump -D
+</code></pre>
+<p>Listando data-link types suportados no sistema</p>
+<pre><code>$ tcpdump -L
+</code></pre>
+<p>Definindo a saída em formato ASCII</p>
+<pre><code>$ tcpdump -i en0 -A
+</code></pre>
+<h2 id="refs">Refs</h2>
+<ul>
+<li><a href="https://www.tcpdump.org">https://www.tcpdump.org</a></li>
+<li><a href="https://packetlife.net/media/library/12/tcpdump.pdf">https://packetlife.net/media/library/12/tcpdump.pdf</a></li>
+<li><a href="https://www.comparitech.com/net-admin/tcpdump-cheat-sheet">https://www.comparitech.com/net-admin/tcpdump-cheat-sheet</a></li>
+<li><a href="https://gist.github.com/jforge/27962c52223ea9b8003b22b8189d93fb">https://gist.github.com/jforge/27962c52223ea9b8003b22b8189d93fb</a></li>
+<li><a href="https://www.xmodulo.com/tcpdump-cheat-sheet-examples.html">https://www.xmodulo.com/tcpdump-cheat-sheet-examples.html</a></li>
+</ul>
+<h2 id="amarrando-as-pontas">Amarrando as pontas</h2>
+<p>Esse post é uma tentativa de dar um norte ou um caminho para fazer um bom troubleshooting de redes usando o tcpdump.</p>
+<p>Volte sempre que precisar :)</p>
+<h2 id="aquele-abraço">Aquele abraço!</h2>
+<p>Mando aquele abraço para o professor MESTRE Ulysses Almeida (@ulyssesalmeida) que me ensinou a usar o TCPDUMP lá no início do século.</p>
+<p>Mando aquele abraço pro @gomex e @badtux que via exemplo me fazem contribuir mais e mais e mais :)</p>
+<p>Mando aquele abraço para todos que leram, comentaram, revisaram e contribuiram de alguma forma com esse post!</p>
+<p>–</p>
+<p>Este post é do tipo #Mindnodes, entenda <a href="https://gutocarvalho.net/o-que-sao-mindnotes/">aqui</a>.</p>
+<p>Se gostou manda um alo no twitter <a href="https://twitter.com/gutocarvalho">@gutocarvalho</a> ou deixa um comentário bacana :)</p>
+<p>[s]
+Guto</p>
+
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>Conheça o projeto Docker OSX</title>
         <author>
@@ -1711,185 +1920,6 @@ Guto</p>
 <p>Ele também traz um dashboard bem intuitivo para trabalhar.</p>
 <p>Conversei com alguns Cloud Engineers que falaram muito bem dele.</p>
 <p>Tá na fila para estudar!</p>
-<p>[s]<br>
-Guto</p>
-<p>–</p>
-<p>Este post é do tipo #MindNotes, entenda <a href="https://gutocarvalho.net/o-que-sao-mindnotes/">aqui</a>.</p>
-<p>Se gostou manda um alo no twitter <a href="https://twitter.com/gutocarvalho">@gutocarvalho</a>.</p>
-
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>Minha stack como Cloud Engineer em 2022</title>
-        <author>
-            <name>Guto Carvalho</name>
-        </author>
-        <link href="https://gutocarvalho.net/minha-stack-com-cloud-engineer-em-20022/"/>
-        <id>https://gutocarvalho.net/minha-stack-com-cloud-engineer-em-20022/</id>
-            <category term="MindNotes"/>
-
-        <updated>2022-02-18T12:05:18-03:00</updated>
-            <summary>
-                <![CDATA[
-                    Projetos que uso no dia a dia como Cloud Engineer. Me siga&hellip;
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                <p>Projetos que uso no dia a dia como Cloud Engineer.</p>
-<hr>
-<p>Me siga no twitter <a href="https://twitter.com/gutocarvalho">@gutocarvalho</a> e acompanhe meus posts sobre Kubernetes, Cloud Native e CI/CD.</p>
-<p>Aproveite e siga também a <a href="https://twitter.com/CDeliveryFdn">CD Foundation</a> e <a href="https://twitter.com/cloudnativefdn">Cloud Native Foundation</a>.</p>
-<hr>
-<p>Bora lá descobrir!</p>
-<h4 id="para-orquestrar-infra-em-provedores-de-nuvem">Para orquestrar Infra em provedores de nuvem?</h4>
-<ul>
-<li>Terraform</li>
-</ul>
-<h4 id="para-orquestrar-um-sistema-operacional">Para orquestrar um sistema operacional?</h4>
-<ul>
-<li>Ansible</li>
-</ul>
-<h4 id="qual-plataforma-eu-usoprefiro-para-rodar-apps">Qual plataforma eu uso/prefiro para rodar APPs?</h4>
-<ul>
-<li>Kubernetes</li>
-</ul>
-<h4 id="qual-meu-k8s-gerenciado-preferido">Qual meu K8S Gerenciado preferido?</h4>
-<p>Em primeiro lugar!</p>
-<ul>
-<li>EKS</li>
-</ul>
-<p>Uma nova opção que tem se mostrado econômica e viável</p>
-<ul>
-<li>Kubernetes da Jelastic que uso via <a href="https://saveincloud.com/pt">https://saveincloud.com/pt</a></li>
-</ul>
-<h4 id="qual-distribuição-preferida-para-kubernetes-onprem">Qual distribuição preferida para Kubernetes OnPrem?</h4>
-<ul>
-<li>RKE</li>
-</ul>
-<h4 id="qual-distribuição-preferida-para-kubernetes-leveedgeiot">Qual distribuição preferida para Kubernetes Leve/Edge/IoT?</h4>
-<ul>
-<li>K3S</li>
-</ul>
-<h4 id="runtime-para-kubernetes">Runtime para Kubernetes?</h4>
-<ul>
-<li>Docker</li>
-</ul>
-<h4 id="pretente-mudar-para-algum-outro-runtime">Pretente mudar para algum outro runtime?</h4>
-<p>Sem dúvida estou de olho em alternativas, são elas:</p>
-<ul>
-<li>CRI-O</li>
-<li>Containerd</li>
-</ul>
-<h4 id="quais-dashboards-preferidos-para-k8s">Quais dashboards preferidos para K8S?</h4>
-<ul>
-<li>LENS para Desktop</li>
-<li>Rancher como Dashboard Web</li>
-<li>K9S para terminal</li>
-</ul>
-<p>E estou de olho no projeto abaixo</p>
-<ul>
-<li>Kubevious</li>
-</ul>
-<h4 id="o-que-usa-para-validar-seus-manifestos-yaml-">O que usa para validar seus manifestos YAML ?</h4>
-<ul>
-<li>Kubeval</li>
-</ul>
-<h4 id="para-empacotar-apps-para-kubernetes">Para empacotar APPs para Kubernetes?</h4>
-<ul>
-<li>HELM</li>
-</ul>
-<h4 id="o-que-usa-para-monitorar-o-cluster-e-apps-em-seu-kubernetes">O que usa para monitorar o cluster e apps em seu Kubernetes?</h4>
-<ul>
-<li>Kube-prometheus-stack (Node Exporter + Prometheus + Grafana)</li>
-</ul>
-<h4 id="e-como-storage-de-blocos-distribuído-rodando-no-cluster">E como storage de blocos distribuído rodando no cluster?</h4>
-<p>Quando existe a necessidade eu uso</p>
-<ul>
-<li>Longhorn</li>
-</ul>
-<h4 id="e-como-storage-de-objetos-rodando-no-cluster">E como storage de objetos rodando no cluster?</h4>
-<p>Quando existe a necessidade eu uso</p>
-<ul>
-<li>Minio</li>
-</ul>
-<h4 id="e-para-fazer-backup">E para fazer backup?</h4>
-<ul>
-<li>Velero</li>
-</ul>
-<h4 id="e-como-ferramenta-de-registry">E como ferramenta de registry?</h4>
-<ul>
-<li>Harbor</li>
-</ul>
-<h4 id="o-que-usa-para-gerenciar-certificados-no-kubernetes">O que usa para gerenciar certificados no Kubernetes?</h4>
-<ul>
-<li>CertManager + LetsEncrypt</li>
-</ul>
-<h4 id="o-quer-usa-para-service-mesh-no-kubernetes">O quer usa para service mesh no Kubernetes?</h4>
-<p>Quando o projeto pede, vamos de</p>
-<ul>
-<li>Istio</li>
-</ul>
-<h4 id="o-que-usa-no-kubernetes-para-autoscaling">O que usa no kubernetes para autoscaling?</h4>
-<p>O que já vem pronto</p>
-<ul>
-<li>HPA</li>
-</ul>
-<p>E para complementar?</p>
-<ul>
-<li>Keptn ou</li>
-<li>Kaperter</li>
-</ul>
-<h4 id="o-que-usa-para-manter-a-qualidade-da-apps-rodando">O que usa para manter a qualidade da APPs rodando?</h4>
-<p>Quando o projeto pede, vamos de</p>
-<ul>
-<li>Keda</li>
-</ul>
-<h4 id="o-que-usa-para-centralizar-logs-do-cluster-e-suas-apps">O que usa para centralizar logs do cluster e suas APPs?</h4>
-<ul>
-<li>Grafana Loki</li>
-</ul>
-<h4 id="qual-tecnologia-de-cicd-usa-hoje-em-dia">Qual tecnologia de CI/CD usa hoje em dia?</h4>
-<p>Difícil apontar uma, normalmente eu vou onde me sinto confortável:</p>
-<ul>
-<li>GitLab CI ou</li>
-<li>GitHub Actions</li>
-</ul>
-<p>Contudo estou inclinado em usar coisas mais Cloud Native e tenho estudado:</p>
-<ul>
-<li>ArgoCD</li>
-<li>Flux</li>
-<li>Tekton</li>
-<li>Werf</li>
-</ul>
-<h4 id="o-que-usa-para-checar-a-sanidadesaúde-do-cluster">O que usa para checar a sanidade/saúde do cluster?</h4>
-<ul>
-<li>Popeye</li>
-<li>Kube Bench</li>
-</ul>
-<h4 id="e-para-checar-aspectos-de-segurança">E para checar aspectos de segurança?</h4>
-<ul>
-<li>Kuber Hunter</li>
-</ul>
-<h4 id="e-no-caso-de-chaos-test">E no caso de Chaos Test?</h4>
-<p>É bem nicho, mas tem essa ferramentinha simples e bacana</p>
-<ul>
-<li>ChaosKube</li>
-</ul>
-<h4 id="para-api-gateway">Para API Gateway?</h4>
-<p>Quando o projeto pede, vamos de</p>
-<ul>
-<li>Kong</li>
-</ul>
-<h4 id="para-tracing">Para Tracing</h4>
-<p>To de olho no </p>
-<ul>
-<li>Grafana Tempo + OpenTelemetry</li>
-</ul>
-<h2 id="amarrando-as-pontas">Amarrando as pontas</h2>
-<p>Acho que é isso. A lista é longa e mostra como o Cloud Enginner tem que ser flexível e estudar muito para integrar tudo e manter sua aplicação rodando em nuvem da forma mais estável, saudável, performática e segura possível ;)</p>
-<p>Volto para atualizar se tiver mais alguma coisa em mente!</p>
 <p>[s]<br>
 Guto</p>
 <p>–</p>
