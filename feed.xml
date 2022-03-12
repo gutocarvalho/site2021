@@ -3,7 +3,7 @@
     <title>Guto@Site</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2022-03-12T09:07:15-03:00</updated>
+    <updated>2022-03-12T09:38:55-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
@@ -18,7 +18,7 @@
         <id>https://gutocarvalho.net/tcpdump-crash-course/</id>
             <category term="MindNotes"/>
 
-        <updated>2022-03-12T09:07:15-03:00</updated>
+        <updated>2022-03-12T09:38:55-03:00</updated>
             <summary>
                 <![CDATA[
                     O TCPDUMP é uma ferramenta de captura e análise de pacotes usada&hellip;
@@ -197,7 +197,15 @@
 Concatanate : &amp;&amp; or &quot;and&quot;
 Alternate   : || or &quot;or&quot;
 </code></pre>
-<h5 id="veja-alguns-exemplos">Veja alguns exemplos</h5>
+<h4 id="quais-os-operadores-disponíveis">quais os operadores disponíveis?</h4>
+<pre><code>&gt;  : greater
+&lt;  : lower
+&gt;= : greater or equal
+&lt;= : lower or equal
+=  : equal
+!= : different
+</code></pre>
+<h4 id="veja-alguns-exemplos-de-composição-lógica-múltipla">veja alguns exemplos de composição lógica múltipla</h4>
 <p>Essa regra vai casar com tráfego na porta 80 com host 192.168.222.254 ou 192.168.222.200</p>
 <pre><code>$ tcpdump &#39;((tcp) and (port 80) and ((dst host 192.168.222.254) or (dst host 192.168.222.200)))&#39;
 </code></pre>
@@ -207,15 +215,7 @@ Alternate   : || or &quot;or&quot;
 <p>Essa regra vai filtrar tráfego para a rede de destino 192.168 com exceção do host 192.168.222.200</p>
 <pre><code>$ tcpdump &#39;((tcp) and ((dst net 192.168) and (not dst host 192.168.222.200)))&#39;
 </code></pre>
-<h4 id="quais-os-operadores-disponíveis">quais os operadores disponíveis?</h4>
-<pre><code>&gt;  : greater
-&lt;  : lower
-&gt;= : greater or equal
-&lt;= : lower or equal
-=  : equal
-!= : different
-</code></pre>
-<h3 id="capturando-flags-tcp-específicas">capturando flags tcp específicas</h3>
+<h3 id="capturando-flags-de-pacotes-tcp">capturando flags de pacotes TCP</h3>
 <p>Isolando apenas flags RST do protocolo TCP</p>
 <pre><code>$ tcpdump &#39;tcp[tcpflags] == tcp-rst&#39;
 </code></pre>
