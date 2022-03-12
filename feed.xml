@@ -3,7 +3,7 @@
     <title>Guto@Site</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2022-03-12T08:56:09-03:00</updated>
+    <updated>2022-03-12T09:04:21-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
@@ -18,7 +18,7 @@
         <id>https://gutocarvalho.net/tcpdump-crash-course/</id>
             <category term="MindNotes"/>
 
-        <updated>2022-03-12T08:56:09-03:00</updated>
+        <updated>2022-03-12T09:04:21-03:00</updated>
             <summary>
                 <![CDATA[
                     O TCPDUMP é uma ferramenta de captura e análise de pacotes usada&hellip;
@@ -307,7 +307,8 @@ Alternate   : || or &quot;or&quot;
 </code></pre>
 <h3 id="qual-o-meu-comando-do-dia-a-dia">qual o meu comando do dia a dia?</h3>
 <p>Use essa combinação para ver uma saída bastante verbosa, sem resolução de nomes ou portas e mostrando timestamp o mais human-readble possível.</p>
-<p>   $ tcpdump -ttttnnvvS</p>
+<pre><code>$ tcpdump -ttttnnvvS
+</code></pre>
 <h2 id="amarrando-as-pontas">Amarrando as pontas</h2>
 <p>Esse post é uma tentativa de dar um norte ou um caminho para fazer um bom troubleshooting de redes usando o tcpdump.</p>
 <p>Volte aqui sempre que precisar :)</p>
