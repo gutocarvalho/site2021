@@ -3,7 +3,7 @@
     <title>Guto@Site</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2022-03-12T09:04:21-03:00</updated>
+    <updated>2022-03-12T09:07:15-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
@@ -18,7 +18,7 @@
         <id>https://gutocarvalho.net/tcpdump-crash-course/</id>
             <category term="MindNotes"/>
 
-        <updated>2022-03-12T09:04:21-03:00</updated>
+        <updated>2022-03-12T09:07:15-03:00</updated>
             <summary>
                 <![CDATA[
                     O TCPDUMP é uma ferramenta de captura e análise de pacotes usada&hellip;
@@ -57,6 +57,7 @@
 <li>Julia Lamenza (@jlamenza)</li>
 <li>João (@P0ssuidao)</li>
 <li>Rafael Gomex (@gomex)</li>
+<li>Rafael Silva (@rafaotetra)</li>
 </ul>
 <h2 id="tcpdump-crash-course">TCPDUMP Crash Course</h2>
 <h3 id="instalando-no-mac">instalando no mac</h3>
@@ -330,7 +331,7 @@ Alternate   : || or &quot;or&quot;
 <li><a href="https://blog.wains.be/2007/2007-10-01-tcpdump-advanced-filters">https://blog.wains.be/2007/2007-10-01-tcpdump-advanced-filters</a></li>
 <li><a href="https://gist.github.com/jforge/27962c52223ea9b8003b22b8189d93fb">https://gist.github.com/jforge/27962c52223ea9b8003b22b8189d93fb</a></li>
 </ul>
-<p>[s]
+<p>[s]<br>
 Guto</p>
 
             ]]>
