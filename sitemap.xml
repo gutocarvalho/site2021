@@ -106,7 +106,7 @@
 </url>
 <url>
 <loc>https://gutocarvalho.net/conheca-o-projeto-docker-osx/</loc>
-<lastmod>2022-03-11T16:57:21-03:00</lastmod>
+<lastmod>2022-03-12T22:36:59-03:00</lastmod>
 </url>
 <url>
 <loc>https://gutocarvalho.net/contato/</loc>
@@ -171,6 +171,10 @@
 <url>
 <loc>https://gutocarvalho.net/diferenca-entre-jr-pl-sr-e-especialista/</loc>
 <lastmod>2021-06-26T00:17:59-03:00</lastmod>
+</url>
+<url>
+<loc>https://gutocarvalho.net/dig-crash-course/</loc>
+<lastmod>2022-03-14T09:47:35-03:00</lastmod>
 </url>
 <url>
 <loc>https://gutocarvalho.net/drops-criando-um-eks-basico-via-terraform/</loc>
@@ -418,7 +422,7 @@
 </url>
 <url>
 <loc>https://gutocarvalho.net/o-que-significa-ter-uma-base-solida-em-redes/</loc>
-<lastmod>2022-03-10T10:23:07-03:00</lastmod>
+<lastmod>2022-03-12T22:37:09-03:00</lastmod>
 </url>
 <url>
 <loc>https://gutocarvalho.net/organizando-e-tornando-o-kubeconfig-interativo/</loc>
@@ -520,7 +524,7 @@
 </url>
 <url>
 <loc>https://gutocarvalho.net/tcpdump-crash-course/</loc>
-<lastmod>2022-03-12T09:38:55-03:00</lastmod>
+<lastmod>2022-03-12T22:36:50-03:00</lastmod>
 </url>
 <url>
 <loc>https://gutocarvalho.net/teste-de-carga-com-ajuda-do-vegeta/</loc>

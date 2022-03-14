@@ -1,0 +1,962 @@
+<!doctype html><html amp lang="en"><head><meta charset="utf-8"><title>DIG Crash Course - Guto@Site</title><meta name="description" content="DIG Crash Course O DIG é uma ferramenta para interrogar servidores de&hellip;"><link rel="canonical" href="https://gutocarvalho.net/dig-crash-course/"><meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1"><link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet" type="text/css"><script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script><script async custom-element="amp-social-share" src="https://cdn.ampproject.org/v0/amp-social-share-0.1.js"></script><script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script><script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script><script async custom-element="amp-video" src="https://cdn.ampproject.org/v0/amp-video-0.1.js"></script><script type="application/ld+json">{"@context":"http://schema.org","@type":"Article","mainEntityOfPage":{"@type":"WebPage","@id":"https://gutocarvalho.net/amp/dig-crash-course/"},"headline":"DIG Crash Course","datePublished":"2022-03-12T22:11","dateModified":"2022-03-14T09:47","description":"DIG Crash Course O DIG é uma ferramenta para interrogar servidores de&hellip;","author":{"@type":"Person","name":"Guto Carvalho"},"publisher":{"@type":"Organization","name":"Guto Carvalho"}}</script><style amp-custom>article,
+aside,
+footer,
+header,
+hgroup,
+main,
+nav,
+section {
+  display: block; }
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  margin: 0;
+  padding: 0; }
+
+li {
+  list-style: none; }
+
+amp-img {
+  max-width: 100%; }
+
+button,
+input,
+select,
+textarea {
+  font: inherit; }
+
+html {
+  font-size: 1rem; }
+
+body {
+  background: #f1f1f1;
+  color: #262626;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  line-height: 1.6; }
+
+a {
+  color:  #039be5;
+  text-decoration: none;
+  -webkit-transition: all 0.12s linear 0s;
+  -o-transition: all 0.12s linear 0s;
+  transition: all 0.12s linear 0s; }
+
+a:hover {
+  color: #262626;
+  text-decoration: underline;
+  -webkit-text-decoration-skip: ink;
+  text-decoration-skip: ink; }
+
+a:active {
+  color: #262626; }
+
+a:focus {
+  outline: 2px dotted #039be5; }
+
+figure,
+blockquote,
+p,
+ul,
+ol,
+dl,
+table,
+hr,
+fieldset {
+  margin-top: 1.6rem; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #262626;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-weight: 500;
+  line-height: 1.2;
+  margin-top: 2.13333rem; }
+
+h1 {
+  font-size: 1.67583rem;
+  font-weight: normal; }
+
+h2 {
+  font-size: 1.4729rem; }
+
+h3 {
+  font-size: 1.29454rem; }
+
+h4 {
+  font-size: 1.13778rem; }
+
+h5 {
+  font-size: 1rem; }
+
+h6 {
+  font-size: 0.87891rem; }
+
+h2 + p,
+h3 + p,
+h4 + p,
+h5 + p,
+h6 + p {
+  margin-top: 0.8rem; }
+
+b,
+strong {
+  font-weight: 600; }
+
+blockquote {
+  color: #6c7175;
+  font-family: "Droid Serif", "Times", "Source Serif Pro", serif;
+  font-style: italic;
+  padding: 1.33333rem 0.53333rem 1.33333rem 3.2rem;
+  position: relative; }
+  blockquote:before {
+    display: block;
+    content: "\201C";
+    font-size: 4.41226rem;
+    position: absolute;
+    left: 0;
+    top: -12px;
+    color: rgba(108, 113, 117, 0.5); }
+  blockquote > :nth-child(1) {
+    margin-top: 0; }
+
+ul,
+ol {
+  margin-left: 2rem; }
+  ul > li,
+  ol > li {
+    list-style: inherit;
+    padding: 0 0 0.26667rem 0.26667rem; }
+
+dl dt {
+  color: #262626;
+  font-weight: 600; }
+
+code,
+pre {
+  background-color: #f1f1f1;
+  font-family: monospace; }
+
+pre {
+  margin: 1.6rem 0 0;
+  padding: 1.6rem;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  overflow-x: auto; }
+  pre > code {
+    color: #262626;
+    padding: 0; }
+
+code {
+  border-radius: 3px;
+  color: #262626;
+  padding: 0.26667rem 0.53333rem; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  border: 1px solid #d4d4d4;
+  width: 100%;
+  overflow-x: auto;
+  vertical-align: top;
+  text-align: left;
+  white-space: nowrap; }
+  table th {
+    font-weight: 500;
+    padding: 0.53333rem 1.06667rem; }
+  table tr {
+    border-bottom: 1px solid #d4d4d4; }
+    table tr:nth-child(2n) {
+      background: #f1f1f1; }
+  table td {
+    padding: 0.53333rem 1.06667rem; }
+
+figcaption {
+  clear: both;
+  color: rgba(108, 113, 117, 0.6);
+  font-size: 0.82397rem;
+  margin: 0.8rem 0 0;
+  text-align: center; }
+
+sub,
+sup {
+  font-size: 65%; }
+
+hr {
+  border: 0;
+  height: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3); }
+
+.btn, [type=button],
+[type=submit],
+button {
+  background: #039be5;
+  border: none;
+  border-radius: 2px;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 0.87891rem;
+  font-weight: 500;
+  line-height: 1.9;
+  padding: 0.53333rem 1.33333rem;
+  text-align: center;
+  text-decoration: none;
+  -webkit-transition: all .15s ease;
+  -o-transition: all .15s ease;
+  transition: all .15s ease;
+  width: auto; }
+  .btn:hover, [type=button]:hover,
+  [type=submit]:hover,
+  button:hover {
+    background: #262626;
+    color: #ffffff; }
+  .btn:focus, [type=button]:focus,
+  [type=submit]:focus,
+  button:focus {
+    outline: none; }
+  .btn-outline {
+    border: 1px solid #ddd;
+    background: #ffffff;
+    border-radius: 3px;
+    color: #262626; }
+
+[type=button],
+[type=submit],
+button {
+  text-transform: uppercase;
+  -webkit-appearance: none;
+  -moz-appearance: none; }
+
+.navbar {
+  background: #039be5;
+  -webkit-box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.2);
+  line-height: 3;
+  max-height: 4rem; }
+  .navbar > div {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: left;
+    max-width: 700px;
+    margin: 0 auto; }
+  .navbar a {
+    color: #ffffff;
+    text-decoration: none; }
+  .navbar-sidebar-toggle {
+    left: 0;
+    position: relative;
+    text-indent: -99999rem; }
+    .navbar-sidebar-toggle:before {
+      content: "";
+      display: block;
+      border-top: 0.375rem double #ffffff;
+      border-bottom: 0.125rem solid #ffffff;
+      height: 0.125rem;
+      position: absolute;
+      text-indent: 0;
+      top: 50%;
+      width: 1.3rem;
+      -webkit-transform: translate(0px, -50%);
+      -ms-transform: translate(0px, -50%);
+      transform: translate(0px, -50%); }
+
+
+.logo {
+            display: inline-block;
+  font-weight: 600;
+  line-height: 1;
+            margin: 0 auto;
+            height: 2rem;
+            text-indent: -9999px;
+            width: 240px;vertical-align: middle;
+        }
+        .logo.logo-text {
+            line-height: 2;
+            text-align: center;
+            text-indent: 0;
+        }
+
+amp-sidebar {
+  background: #ffffff;
+  width: 240px; }
+  amp-sidebar > ul {
+    margin: 0.8rem 0 0;
+    padding: 0; }
+    amp-sidebar > ul ul {
+      border-left: 1px solid #d4d4d4;
+      margin: 0.53333rem 0 0; }
+    amp-sidebar > ul li {
+      color: #262626;
+      font-size: 0.9375rem;
+      font-weight: 600;
+      list-style: none;
+      line-height: 1.4;
+      padding: 0.42667rem 1.06667rem; }
+      amp-sidebar > ul li li {
+        font-weight: normal;
+        padding: 0.26667rem 0 0.26667rem 1.06667rem; }
+    amp-sidebar > ul a,
+    amp-sidebar > ul a:visited {
+      color: #262626; }
+
+.bg-white {
+  background: #ffffff; }
+
+.wrap-page {
+  max-width: 700px;
+  margin: 0 auto; }
+
+@media all and (max-width: 43.6875em) {
+  .wrap-inner {
+    padding: 0 6%; } }
+
+.page-title {
+  background: #ffffff;
+  -webkit-box-shadow: 0 2px 3px rgba(38, 38, 38, 0.1);
+  box-shadow: 0 2px 3px rgba(38, 38, 38, 0.1);
+  margin-bottom: 0.8rem;
+  padding: 1.6rem 6%; }
+  .page-title > h1 {
+    margin: 0;
+    font-size: 1.29454rem; }
+  .page-title > p {
+    font-size: 0.87891rem;
+    color: #6c7175;
+    line-height: 1.3;
+    margin: 0.26667rem 0 0; }
+  .page-title-author {
+    border-radius: 50%;
+    float: left;
+    height: 2.5rem;
+    width: 2.5rem; }
+    .page-title-author + h1 {
+      margin-left: 3.5rem; }
+      .page-title-author + h1 + p {
+        margin-left: 3.5rem; }
+
+.card {
+  background: #ffffff;
+  -webkit-box-shadow: 0 2px 3px rgba(38, 38, 38, 0.1);
+  box-shadow: 0 2px 3px rgba(38, 38, 38, 0.1);
+  margin-bottom: 0.8rem;
+  padding-bottom: 1.06667rem; }
+
+  .card-meta {
+    border-top: 1px solid #d4d4d4;
+    color: rgba(108, 113, 117, 0.6);
+    font-size: 0.7242rem;
+    font-weight: 500;
+    margin-top: 1.06667rem;
+    padding-top: 1.06667rem;
+    text-transform: uppercase; }
+    .card-meta a + time:before {
+      content: "";
+      background: #d4d4d4;
+      display: inline-block;
+      height: 3px;
+      margin: 0 8px;
+      width: 3px;
+      vertical-align: middle;
+      border-radius: 50%; }
+  .card-text {
+    font-size: 0.9375rem;
+    overflow: hidden;
+    padding: 0 6%; }
+    .card-text h2 {
+      font-size: 1.13778rem; }
+
+.post {
+  margin-bottom: 2.13333rem; }
+  .post-featured-image {
+    margin-top: 0;
+    position: relative; }
+    .post-featured-image > figcaption {
+      background: rgba(0, 0, 0, 0.5);
+      border-radius: 3px;
+      color: #ffffff;
+      position: absolute;
+      bottom: 0.8rem;
+      padding: 0 0.26667rem;
+      right: 6%; }
+  .post-header {
+    margin-bottom: 2.13333rem; }
+  .post-meta {
+    border-bottom: 1px solid #d4d4d4;
+    color: rgba(108, 113, 117, 0.6);
+    font-size: 0.7242rem;
+    font-weight: 500;
+    margin-top: 1.06667rem;
+    padding-bottom: 1.06667rem;
+    text-transform: uppercase; }
+    .post-meta a + time:before {
+      content: "";
+      background: #d4d4d4;
+      display: inline-block;
+      height: 3px;
+      margin: 0 8px;
+      width: 3px;
+      vertical-align: middle;
+      border-radius: 50%; }
+  .post-tag {
+    margin: 0; }
+    .post-tag > li {
+      display: inline-block;
+      padding: 0; }
+      .post-tag > li a {
+        background: #f1f1f1;
+        border-radius: 2px;
+        color: #6c7175;
+        font-size: 0.77248rem;
+        display: inline-block;
+        margin: 0 0.26667rem 0.26667rem 0;
+        padding: 0.26667rem 0.53333rem; }
+        .post-tag > li a:hover {
+          background: #039be5;
+          color: #ffffff;
+          text-decoration: none; }
+  .post-share {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-top: 1.6rem;
+    width: 100%; }
+    .post-share amp-social-share {
+      -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+      flex: 1 0 auto;
+      background-size: 24px; }
+  .post-scroll {
+    color: #ffffff;
+    background: #039be5;
+    bottom: 10px;
+    border-radius: 50%;
+    border: none;
+    -webkit-box-shadow: 0 1px 1.5px 0 rgba(38, 38, 38, 0.12), 0 1px 1px 0 rgba(38, 38, 38, 0.24);
+    box-shadow: 0 1px 1.5px 0 rgba(38, 38, 38, 0.12), 0 1px 1px 0 rgba(38, 38, 38, 0.24);
+    font-size: 1.13778rem;
+    height: 46px;
+    opacity: 0;
+    outline: none;
+    position: fixed;
+    padding: 0;
+    right: 4%;
+    visibility: hidden;
+    width: 46px;
+    z-index: 9999; }
+    .post-scroll-marker {
+      height: 0px;
+      position: absolute;
+      top: 100px;
+      width: 0px; }
+        .post-pagination {
+    background: #f1f1f1;
+    -webkit-box-shadow: inset 0 2px 3px rgba(38, 38, 38, 0.1);
+    box-shadow: inset 0 2px 3px rgba(38, 38, 38, 0.1);
+    border-top: 1px solid #d4d4d4;
+    padding: 1.06667rem 0; }
+    .post-pagination > div {
+      line-height: 1.2;
+      padding: 0.53333rem 1.06667rem;
+      text-align: center; }
+      .post-pagination > div span {
+        display: block;
+        color: #6c7175;
+        font-size: 0.7242rem;
+        font-weight: 500;
+        margin-bottom: 0.26667rem;
+        text-transform: uppercase; }
+    .post-pagination-prev a:before {
+      content: "\2190";
+      margin-right: 0.26667rem; }
+    .post-pagination-next a:after {
+      content: "\2192";
+      margin-left: 0.26667rem; }
+
+aside {
+  margin: 1.6rem 0 0; }
+
+.align-left {
+  text-align: left; }
+
+.align-right {
+  text-align: right; }
+
+.align-center {
+  text-align: center; }
+
+.align-justify {
+  text-align: justify; }
+
+.msg {
+  border-left: 2px solid transparent;
+  padding: 1.06667rem 1.06667rem; }
+  .msg--highlight {
+    background-color: #fff8e6;
+    border-color: #e2ac4f; }
+  .msg--info {
+    background: rgba(45, 97, 201, 0.03);
+    border-color: #039be5; }
+  .msg--success {
+    background: #f7fbf6;
+    border-color: #5ab44b; }
+  .msg--warning {
+    background: #fff3f3;
+    border-color: #c06367;
+    color: #a94442; }
+
+.dropcap:first-letter {
+  float: left;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-size: 2.16943rem;
+  line-height: 0.7;
+  margin-right: 0.53333rem;
+  padding: 0.53333rem 0.53333rem 0.53333rem 0; }
+
+.pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin: 0.8rem 0; }
+  .pagination > a {
+    padding-left: 0;
+    padding-right: 0;
+    width: 49%; }
+  .pagination-right {
+    margin-left: auto; }
+
+.bottom {
+  background: #039be5;
+  color: #ffffff;
+  padding: 1.06667rem 4%;
+  text-align: center; }</style><style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript><script async src="https://cdn.ampproject.org/v0.js"></script><script custom-element="amp-animation" src="https://cdn.ampproject.org/v0/amp-animation-0.1.js" async></script><script custom-element="amp-position-observer" src="https://cdn.ampproject.org/v0/amp-position-observer-0.1.js" async></script></head><body class="bg-white"><nav class="navbar wrap-inner" id="top"><div><a on="tap:navbar-sidebar.toggle" class="navbar-sidebar-toggle" title="Menu">Menu</a> <a class="logo logo-text" href="https://gutocarvalho.net/amp/">Guto@Site</a></div></nav><main class="wrap-page"><article class="post"><div class="wrap-inner"><header class="post-header"><h1>DIG Crash Course</h1><p class="post-meta">[MISSING TRANSLATION] <a href="https://gutocarvalho.net/amp/authors/gutocarvalho/" rel="nofollow" title="Guto Carvalho">Guto Carvalho</a> <time datetime="2022-03-12T22:11">March 12, 2022</time></p></header><h1 id="dig-crash-course">DIG Crash Course</h1><p>O DIG é uma ferramenta para interrogar servidores de DNS.</p><p>Com o DIG nós conseguiremos fazer lookup de DNS com objetivos simples como troubleshooting por exemplo.</p><p>A ideia aqui é fazer um crash course dessa ferramenta.</p><p>Um Crash Course é um tipo de “curso rápido” sobre um determinado assunto, indo direto ao ponto de forma mais objetiva possível.</p><h2 id="quando-devo-usar-o-dig">Quando devo usar o DIG?</h2><p>Sempre que você precisar verificar alguma coisa em nível de DNS, seguem alguns cenários que o DIG pode te ajudar :</p><ul><li>para testar se a resolução de DNS está funcionando</li><li>para comparar a resolução de DNS entre NS diferentes</li><li>quando precisamos resolver um problema de DNS</li><li>para descobrir o IP de um registro de DNS</li><li>para descobrir o MX de um domínio</li><li>para descobrir o NS de um domínio</li><li>para descobrir o SOA de um domínio</li><li>para descobrir o PTR (reverso) de um endereço IP</li><li>para verificar se uma alteração de registro já fez efeito</li></ul><p>Essas são algumas das situações mais básicas em que o DIG pode ser útil.</p><h2 id="para-quem-foi-feito-esse-post">Para quem foi feito esse post?</h2><p>Aqui o foco está nas pessoas atuando nas posições abaixo:</p><ul><li>Sysadmin;</li><li>Cloud Native Engineer;</li><li>Cloud Engineer;</li><li>DevOps Engineer;</li><li>Plataform Engineer;</li><li>GitOps Engineer.</li></ul><h2 id="momento-merchan-p">Momento Merchan :P</h2><p>Me siga no twitter <a href="https://twitter.com/gutocarvalho">@gutocarvalho</a> e acompanhe meus posts sobre Cloud Native e CI/CD.</p><p>Aproveite e siga a <a href="https://twitter.com/CDeliveryFdn">CD Foundation</a> e <a href="https://twitter.com/cloudnativefdn">Cloud Native Foundation</a> no twitter.</p><h2 id="colaboradores">Colaboradores</h2><p>Pessoas que colaboraram com o texto.</p><ul><li>Julia Lamenza (@jlamenza)</li><li>João (@P0ssuidao)</li><li>Rafael Gomex (@gomex)</li><li>Rafael Silva (@rafaotetra)</li></ul><h2 id="dig-crash-course-1">Dig Crash Course</h2><h3 id="aprendendo-o-básico-para-uso-no-dia-a-dia">Aprendendo o básico para uso no dia a dia</h3><h4 id="fazendo-uma-pesquisa-simples-com-todos-os-detalhes">fazendo uma pesquisa simples com todos os detalhes</h4><pre><code>$ dig gutocarvalho.net
+</code></pre><h4 id="fazendo-uma-pesquisa-simples-retornando-só-o-ip">fazendo uma pesquisa simples retornando só o IP</h4><pre><code>$ dig +short gutocarvalho.net
+</code></pre><h4 id="pesquisando-o-soa-do-domínio">pesquisando o SOA do domínio</h4><pre><code>$ dig SOA gutocarvalho.net
+</code></pre><h4 id="pesquisando-o-ns-do-domínio">pesquisando o NS do domínio</h4><pre><code>$ dig NS gutocarvalho.net 
+</code></pre><h4 id="pesquisando-o-mx-de-correio">pesquisando o MX de correio</h4><pre><code>$ dig MX gutocarvalho.nmet
+</code></pre><h4 id="pesquisando-o-ttl-do-domínio">pesquisando o TTL do domínio</h4><pre><code>$ dig TTL gutocarvalho.net
+</code></pre><h4 id="pesquisando-o-ptr-reverso-de-um-ip">pesquisando o PTR (reverso) de um IP</h4><pre><code>$ dig -x 8.8.8.8
+</code></pre><h4 id="pesquisando-os-registros-txt-de-um-domínio">pesquisando os registros TXT de um domínio</h4><pre><code>$ dig txt gutocarvalho.net
+</code></pre><h3 id="explorando-um-pouco-mais-o-dig">Explorando um pouco mais o DIG</h3><h4 id="pesquisando-um-registro-em-um-ns-específico">pesquisando um registro em um NS específico</h4><pre><code>$ dig @1.1.1.1 lb.gutocarvalho
+</code></pre><h4 id="pesquisando-as-informações-dnssec-de-um-domínio">pesquisando as informações DNSSEC de um domínio</h4><pre><code>$ dig +dnssec gutocarvalho.net
+</code></pre><h3 id="pesquisando-as-chaves-dnssec-de-um-domínio">pesquisando as chaves DNSSEC de um domínio</h3><pre><code>$ dig DNSKEY -qr gutocarvalho.net
+</code></pre><h4 id="pesquisando-uma-entrada-de-dns-com-trace">pesquisando uma entrada de DNS com trace</h4><pre><code>$ dig +trace lb.gutocarvalho.net
+</code></pre><h4 id="verificando-o-tempo-de-resposta-do-soa-de-um-domínio">verificando o tempo de resposta do SOA de um domínio</h4><pre><code>$ dig +nssearch gutocarvalho.net
+</code></pre><h3 id="parâmetros-interessantes-do-dig">Parâmetros interessantes do DIG</h3><h4 id="short">+short</h4><pre><code>$ dig gutocarvalho.net +short
+
+185.199.110.153
+185.199.111.153
+185.199.108.153
+185.199.109.153
+</code></pre><p>O short só retorna os IPs para qual o registro aponta.</p><h4 id="tcp">+tcp</h4><pre><code>$ dig +tcp gutocarvalho.net
+</code></pre><p>Usado quando desejamos fazer a pesquisa via TCP, o padrão é UDP.</p><h4 id="time">+time</h4><pre><code>$ dig +time=5 gutocarvalho.net
+</code></pre><p>Define o timeout da pesquisa para 5 segundos.</p><h4 id="multiline">+multiline</h4><pre><code>$ dig gutocarvalho.net A +dnssec +multiline
+</code></pre><p>Vai pesquisar entradas A com DNSSEC associado em multi-linhas.</p><h3 id="filtrando-saída-do-dig-com-parâmetros-especiais">Filtrando saída do DIG com parâmetros especiais</h3><p>Primeiro vamos fazer uma pesquisa comum para ter uma saída completa</p><pre><code>$ dig gutocarvalho.net
+
+; &lt;&lt;&gt;&gt; DiG 9.10.6 &lt;&lt;&gt;&gt; gutocarvalho.net
+;; global options: +cmd
+;; Got answer:
+;; -&gt;&gt;HEADER&lt;&lt;- opcode: QUERY, status: NOERROR, id: 40038
+;; flags: qr rd ra ad; QUERY: 1, ANSWER: 4, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 4096
+;; QUESTION SECTION:
+;gutocarvalho.net.        IN    A
+
+;; ANSWER SECTION:
+gutocarvalho.net.    300    IN    A    185.199.108.153
+gutocarvalho.net.    300    IN    A    185.199.109.153
+gutocarvalho.net.    300    IN    A    185.199.110.153
+gutocarvalho.net.    300    IN    A    185.199.111.153
+
+;; Query time: 38 msec
+;; SERVER: 1.1.1.1#53(1.1.1.1)
+;; WHEN: Sat Mar 12 18:53:55 -03 2022
+;; MSG SIZE  rcvd: 109
+</code></pre><p>Agora vamos testando cada parâmetro</p><h4 id="noall">+noall</h4><pre><code>$ dig gutocarvalho.net +noall
+
+; &lt;&lt;&gt;&gt; DiG 9.10.6 &lt;&lt;&gt;&gt; gutocarvalho.net +noall
+;; global options: +cmd
+</code></pre><p>Observe que o noall omite toda a saída do comando, ele normalmente é usado com outros comandos de forma composta, um exemplo é o answer.</p><h4 id="answer-noall">+answer +noall</h4><pre><code>$ dig gutocarvalho.net +noall +answer
+
+; &lt;&lt;&gt;&gt; DiG 9.10.6 &lt;&lt;&gt;&gt; gutocarvalho.net +noall +answer
+;; global options: +cmd
+gutocarvalho.net.    300    IN    A    185.199.111.153
+gutocarvalho.net.    300    IN    A    185.199.108.153
+gutocarvalho.net.    300    IN    A    185.199.109.153
+gutocarvalho.net.    300    IN    A    185.199.110.153
+</code></pre><p>O answer é útil junto com o noall, ele vai nos trazer apenas a resposta, sem comments, question, authority, stats e quaisquer outras informações que estiverem disponíveis na resposta.</p><h4 id="nocmd">+nocmd</h4><pre><code> dig +nocmd a lb.gutocarvalho.net +noall +answer
+lb.gutocarvalho.net.    42    IN    A    200.150.204.87
+</code></pre><p>Quando aplicado retira a versao do bind e comando</p><pre><code>; &lt;&lt;&gt;&gt; DiG 9.10.6 &lt;&lt;&gt;&gt; a lb.gutocarvalho.net +noall +answer
+</code></pre><p>Para funcionar o parâmetro tem que vir logo após o comando dig</p><h4 id="nocomments">+nocomments</h4><pre><code>$ dig gutocarvalho.net +nocomments
+
+; &lt;&lt;&gt;&gt; DiG 9.10.6 &lt;&lt;&gt;&gt; gutocarvalho.net +nocomments
+;; global options: +cmd
+;gutocarvalho.net.        IN    A
+gutocarvalho.net.    297    IN    A    185.199.110.153
+gutocarvalho.net.    297    IN    A    185.199.111.153
+gutocarvalho.net.    297    IN    A    185.199.108.153
+gutocarvalho.net.    297    IN    A    185.199.109.153
+;; Query time: 29 msec
+;; SERVER: 1.1.1.1#53(1.1.1.1)
+;; WHEN: Sat Mar 12 18:58:57 -03 2022
+;; MSG SIZE  rcvd: 109
+</code></pre><p>O nocomments retira toda a parte inicial da resposta</p><pre><code>; &lt;&lt;&gt;&gt; DiG 9.10.6 &lt;&lt;&gt;&gt; gutocarvalho.net
+;; global options: +cmd
+;; Got answer:
+;; -&gt;&gt;HEADER&lt;&lt;- opcode: QUERY, status: NOERROR, id: 40925
+;; flags: qr rd ra ad; QUERY: 1, ANSWER: 4, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 4096
+;; QUESTION SECTION:
+;gutocarvalho.net.        IN    A
+</code></pre><h4 id="noquestion">+noquestion</h4><pre><code>$ dig gutocarvalho.net +noquestion
+
+; &lt;&lt;&gt;&gt; DiG 9.10.6 &lt;&lt;&gt;&gt; gutocarvalho.net +noquestion
+;; global options: +cmd
+;; Got answer:
+;; -&gt;&gt;HEADER&lt;&lt;- opcode: QUERY, status: NOERROR, id: 10078
+;; flags: qr rd ra ad; QUERY: 1, ANSWER: 4, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 4096
+;; ANSWER SECTION:
+gutocarvalho.net.    300    IN    A    185.199.108.153
+gutocarvalho.net.    300    IN    A    185.199.109.153
+gutocarvalho.net.    300    IN    A    185.199.110.153
+gutocarvalho.net.    300    IN    A    185.199.111.153
+
+;; Query time: 42 msec
+;; SERVER: 1.1.1.1#53(1.1.1.1)
+;; WHEN: Sat Mar 12 19:01:58 -03 2022
+;; MSG SIZE  rcvd: 109
+</code></pre><p>O noquestion retira essa parte da resposta</p><pre><code>;; QUESTION SECTION:
+;gutocarvalho.net.        IN    A
+</code></pre><h4 id="nostats">+nostats</h4><pre><code>$ dig gutocarvalho.net +nostats
+
+; &lt;&lt;&gt;&gt; DiG 9.10.6 &lt;&lt;&gt;&gt; gutocarvalho.net +nostats
+;; global options: +cmd
+;; Got answer:
+;; -&gt;&gt;HEADER&lt;&lt;- opcode: QUERY, status: NOERROR, id: 63625
+;; flags: qr rd ra ad; QUERY: 1, ANSWER: 4, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 4096
+;; QUESTION SECTION:
+;gutocarvalho.net.        IN    A
+
+;; ANSWER SECTION:
+gutocarvalho.net.    300    IN    A    185.199.109.153
+gutocarvalho.net.    300    IN    A    185.199.110.153
+gutocarvalho.net.    300    IN    A    185.199.111.153
+gutocarvalho.net.    300    IN    A    185.199.108.153
+</code></pre><p>Esse parâmetro suprime as estatísticas da pesquisa.</p><pre><code>;; Query time: 38 msec
+;; SERVER: 1.1.1.1#53(1.1.1.1)
+;; WHEN: Sat Mar 12 19:13:28 -03 2022
+;; MSG SIZE  rcvd: 109
+</code></pre><h4 id="noauthority">+noauthority</h4><pre><code>;; AUTHORITY SECTION:
+gutocarvalho.net.    3144    IN    NS    monroe.ns.cloudflare.com.
+gutocarvalho.net.    3144    IN    NS    houston.ns.cloudflare.com.
+</code></pre><p>É útil para remover essa parte da resposta, caso retorne o authority na pesquisa.</p><h4 id="noadditional">+noadditional</h4><pre><code>;; ADDITIONAL SECTION:
+lia.ns.cloudflare.com.    84354    IN    A      173.245.58.185
+lia.ns.cloudflare.com.    170762    IN    AAAA  2400:cb00:2049:1::adf5:3ab9
+mark.ns.cloudflare.com.    170734    IN    A      173.245.59.130
+mark.ns.cloudflare.com.    170734    IN    AAAA  2400:cb00:2049:1::adf5:3b82
+</code></pre><p>A seção aditional pode trazer informações como o IP dos DNS Server autoritativos da seção authority, esse parâmetro suprime esse trecho.</p><h4 id="norec">+norec</h4><pre><code>$ dig +norec @monroe.ns.cloudflare.com. gutocarvalho.net a
+</code></pre><p>Essa opção desabilita a pesquisa recursiva, neste caso a CloudFlare e responsável por responder por meu domínio, sendo que o servidor monroe é um dos meus servidores DNS, ele já sabe a resposta.</p><h2 id="pesquisas-parametrizadas-comuns">Pesquisas parametrizadas comuns</h2><p>pesquisa comum e rápida que retorna apenas o endereço IP</p><pre><code>$ dig +short lb.gutocarvalho.net
+</code></pre><p>pesquisando por registro A com resposta simples</p><pre><code>$ dig +nocmd lb.gutocarvalho.net a +noall +answer
+</code></pre><p>pesquisando por CNAME com resposta simples</p><pre><code>$ dig +nocmd mail.google.com cname +noall +answer
+</code></pre><p>pesquisando por registro TXT com resposta simples</p><pre><code>$ dig +nocmd google.com txt +noall +answer
+</code></pre><p>fazendo pesquisa em múltiplos domínios</p><pre><code>$ dig ubuntu.com mx +noall +answer redhat.com ns +noall +answer
+</code></pre><h2 id="pesquisa-usando-um-arquivo-bulk">Pesquisa usando um arquivo (bulk)</h2><p>Imagine que você tem o arquivo dominios.txt com o conteúdo abaixo</p><pre><code>gutocarvalho.net
+nativetrail.io
+viahorizonte.life
+</code></pre><p>vamos rodar agora uma pesquisa contra o arquivo</p><pre><code>$ dig -f dominios.txt +short
+</code></pre><p>saída</p><pre><code>185.199.110.153
+185.199.111.153
+185.199.108.153
+185.199.109.153
+185.199.111.153
+185.199.108.153
+185.199.109.153
+185.199.110.153
+185.199.110.153
+185.199.111.153
+185.199.108.153
+185.199.109.153
+</code></pre><p>:)</p><h3 id="quer-saber-mais">Quer saber mais?</h3><p>Para saber mais veja o help do comando</p><pre><code>$ dig --help
+</code></pre><p>Para ir além acesse a manpage</p><pre><code>$ man dig
+</code></pre><h2 id="configurando-seu-digrc">Configurando seu .digrc</h2><p>O dig tem um arquivo de configuração, o famoso .digrc.</p><pre><code>$ echo &quot;+nostats +nocomments +nocmd +noquestion +recurse&quot; &gt; ~/.digrc
+</code></pre><p>Agora você digita menos e tem o resultado desejado.</p><h2 id="um-pouco-de-teoria-de-dns-para-quem-gosta-">Um pouco de teoria de DNS para quem gosta :)</h2><h3 id="entendendo-o-funcionamento-do-dig">Entendendo o funcionamento do DIG</h3><p>Imagine que mandamos essa query pelo dig</p><pre><code>$ dig gutocarvalho.net
+</code></pre><p>Essa query é estrutura da seguinte forma pelo DIG para o servidor de DNS autoritativo</p><pre><code>
+           +-------------------------------------+
+Header     | OPCODE=SQUERY                       |
+           +-------------------------------------+
+Question   | QNAME=GUTO.NET., QCLASS=IN, QTYPE=A |
+           +-------------------------------------+
+Answer     | &lt;empty&gt;                             |
+           +-------------------------------------+
+Authority  | &lt;empty&gt;                             |
+           +-------------------------------------+
+Additional | &lt;empty&gt;                             |
+           +-------------------------------------+
+           
+</code></pre><p>A resposta do servidor que responde pelo domínio foi essa</p><pre><code>
+; &lt;&lt;&gt;&gt; DiG 9.10.6 &lt;&lt;&gt;&gt; gutocarvalho.net
+;; global options: +cmd
+;; Got answer:
+;; -&gt;&gt;HEADER&lt;&lt;- opcode: QUERY, status: NOERROR, id: 48153
+;; flags: qr rd ra ad; QUERY: 1, ANSWER: 4, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 4096
+;; QUESTION SECTION:
+;gutocarvalho.net.        IN    A
+
+;; ANSWER SECTION:
+gutocarvalho.net.    300    IN    A    185.199.110.153
+gutocarvalho.net.    300    IN    A    185.199.111.153
+gutocarvalho.net.    300    IN    A    185.199.108.153
+gutocarvalho.net.    300    IN    A    185.199.109.153
+
+;; Query time: 146 msec
+;; SERVER: 1.1.1.1#53(1.1.1.1)
+;; WHEN: Sun Mar 13 10:37:26 -03 2022
+;; MSG SIZE  rcvd: 109
+</code></pre><p>Podemos estruturar dessa forma para entender melhor</p><pre><code>           +--------------------------------------------+
+Header     | OPCODE=SQUERY, RESPONSE, AA                |
+           +--------------------------------------------+
+Question   | QNAME=GUTO.NET., QCLASS=IN, QTYPE=A        |
+           +--------------------------------------------+
+Answer     | GUTO.NET. 300 IN A 185.199.108.153         | 
+           |                   300 IN A 185.199.109.153 |
+           |                   300 IN A 185.199.110.153 |
+           |                   300 IN A 185.199.111.153 |
+           +--------------------------------------------+
+Authority  | &lt;empty&gt;                                    |
+           +--------------------------------------------+
+Additional | &lt;empty&gt;                                    |
+           +--------------------------------------------+
+</code></pre><h3 id="entendendo-as-repostas-entregues-pelo-dig">Entendendo as repostas entregues pelo DIG</h3><p>Uma resposta de consulta do DIG vem composta por informações separadas nas seções Header, Question, Answer, Authority e Additional.</p><pre><code>+------------+
+| Header     | Cabeçalho com informações diversas 
++------------+
+| Question   | A questão enviada para o nameserver
++------------+
+| Answer     | Registros que vão responder a query
++------------+
+| Authority  | Registros da autoridade do domínio
++------------+
+| Additional | Registros com informações adicionais
++------------+
+</code></pre><p>Vamos entender cada uma delas.</p><pre><code>- Header section, um cabeçalho fixo que contém ID, flgas e informações das outras seções (contadores)
+
+- Question section, contém a query que foi passada (QNAME), o tipo (QTYPE) e a classe (QCLLASS). Na resposta receberemos novamente a query
+
+- Answer section, pode conter a lista de reguistros, se houver resposta cada um irá trazer QNAME, QTYPE, QCLASS, TTL e informaçÕes de RDATA
+
+- Authority section, pode conter a lista de registros que apontam para os servidores autoritativos
+
+- Additional section, pode conter outros registros e mais informações sobre os servidores autoritativos
+</code></pre><h4 id="header-section">HEADER SECTION</h4><pre><code>;; -&gt;&gt;HEADER&lt;&lt;- opcode: QUERY, status: NOERROR, id: 63625
+;; flags: qr rd ra ad; QUERY: 1, ANSWER: 4, AUTHORITY: 0, ADDITIONAL: 1
+</code></pre><p>Informações que encontramos do HEADER</p><pre><code>+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+
+|                      ID                       |
++--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+
+|QR|   Opcode  |AA|TC|RD|RA| Z|AD|CD|   RCODE   |
++--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+
+|                    QDCOUNT                    |
++--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+
+|                    ANCOUNT                    |
++--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+
+|                    NSCOUNT                    |
++--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+
+|                    ARCOUNT                    |
++--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+
+</code></pre><p>Entendendo as informações do HEADER</p><pre><code>QR pode conter
+
+- 0, QUERY 
+- 1, RESPONSE
+
+OPCODE pode conter os seguintes valores:
+
+- 0    Query    [RFC1035]
+- 2    Status    [RFC1035]
+- 3    Unassigned    
+- 4    Notify    [RFC1996]
+- 5    Update    [RFC2136]
+- 6    DNS Stateful Operations (DSO)    [RFC8490]
+- 7-15    Unassigned
+
+No Header vamos encontrar as seguintes FLAGs:
+
+- AA: Authoritative Answer (set by the server)
+- TC: message is TrunCated (set by the server)
+- RD: Recursion Desired (set by the client and copied to the response)
+- RA: Recursion Available (set by the server)
+- AD: Authenticated Data, DNSSEC flag (set by the server)
+- CD: Checking Disabled, DNSSEC flag (set by the client, copied to the response)
+
+ No Header vamos encontrar o RCODE/Status (4 bits) que pode conter:
+
+- 0    NoError    No Error    [RFC1035]
+- 1    FormErr    Format Error    [RFC1035]
+- 2    ServFail    Server Failure    [RFC1035]
+- 3    NXDomain    Non-Existent Domain    [RFC1035]
+- 4    NotImp    Not Implemented    [RFC1035]
+- 5    Refused    Query Refused    [RFC1035]
+- 6    YXDomain    Name Exists when it should not    [RFC2136][RFC6672]
+- 7    YXRRSet    RR Set Exists when it should not    [RFC2136]
+- 8    NXRRSet    RR Set that should exist does not    [RFC2136]
+- 9    NotAuth    Server Not Authoritative for zone    [RFC2136]
+- 9    NotAuth    Not Authorized    [RFC8945]
+- 10    NotZone    Name not contained in zone    [RFC2136]
+- 11    DSOTYPENI    DSO-TYPE Not Implemented    [RFC8490]
+- 12-15    Unassigned        
+- 16    BADVERS    Bad OPT Version    [RFC6891]
+- 16    BADSIG    TSIG Signature Failure    [RFC8945]
+- 17    BADKEY    Key not recognized    [RFC8945]
+- 18    BADTIME    Signature out of time window    [RFC8945]
+- 19    BADMODE    Bad TKEY Mode    [RFC2930]
+- 20    BADNAME    Duplicate key name    [RFC2930]
+- 21    BADALG    Algorithm not supported    [RFC2930]
+- 22    BADTRUNC    Bad Truncation    [RFC8945]
+- 23    BADCOOKIE    Bad/missing Server Cookie    [RFC7873]
+- 24-3840    Unassigned        
+- 3841-4095    Reserved for Private Use        [RFC6895]
+- 4096-65534    Unassigned        
+- 65535    Reserved, can be allocated by Standards Action        [RFC6895]
+
+No Header também temos contadores, são eles:
+
+- QDCOUNT, número de respostas da seção queries
+- ANCOUNT, número de respostas da seção answers
+- NSCOUNT, número de respostas da seção autoritativos
+- ARCOUNT, número de respostas da seção adicional
+
+Os contadores vão retornar o número de registros encontrados na pesquisa
+</code></pre><p>Entendendo um pouco mais das Flags do HEADER</p><pre><code>Você verá que na resposta teremos geralmente 4 flags setadas, sao elas:
+
+- qr, rd, ra, ad.
+
+Vamos entendê-las agora
+
+- QR, é uma flag diferente que pode retornar 0 ou 1, 1 significa query
+
+- RD significa &quot;recursive desired&quot;, sinaliza que desejamos usar pesquisa recursiva, isso é definido pelo cliente.
+
+- RA significa &quot;recursive available&quot;, sinaliza que pesquisa recursiva está disponível, isso é definiado pelo servidor.
+
+- AD significa &quot;authenticated data&quot;, sinaliza que os dados de resposta e autoridade foram validados e autenticados pelas políticas de segurança daquele servidor de dns. É setado apenas quando todos os dados da resposta foram devidamente criptografados e verificados. Esse é um recurso do DNSSEC.
+
+Existem ainda as seguintes flags opcionais
+
+- AA, significa servidor autoritativo
+
+- TC, significa mensagem truncada
+
+E no caso de DNSSEC pode conter ainda
+
+- CD, significa &quot;checking disabled&quot;, utilizado pelo DNSSEC.
+
+- DO, que significa que a resposta do DNSSEC está ok
+</code></pre><p>Entendendo os status (RCODE) mais comuns</p><pre><code>- NOERROR (0), a pesquisa voltou sem erros
+- SERVFAIL (2), houve uma falha na resposta do servidor
+- NXDOMAN (3), o domínio não foi encontrado ou não existe
+- REFUSED (5), o pedido de query foi recusado
+</code></pre><h4 id="question-section">QUESTION SECTION</h4><p>Aqui encontraremos dados de nossa query.</p><pre><code>;; QUESTION SECTION:
+;gutocarvalho.net.        IN    A
+</code></pre><p>Uma query é estruturada da seguinte forma:</p><pre><code>    +--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+
+    |                                               |
+    /                     QNAME                     /
+    /                                               /
+    +--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+
+    |                     QTYPE                     |
+    +--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+
+    |                     QCLASS                    |
+    +--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+
+</code></pre><p>Vamos entender QNAME, QTYPE e QCLASS.</p><pre><code>
+- QNAME possuirá o domínio que você setou na query
+- QTYPE possuirá o tipo de RR que você utilizou na pesquisa
+- QCLASS possuirá o tipo de classe de DNS, geralmente IN (internet)
+</code></pre><h4 id="answer-section">ANSWER SECTION</h4><pre><code>;; ANSWER SECTION:
+gutocarvalho.net.    300    IN    A    185.199.108.153
+gutocarvalho.net.    300    IN    A    185.199.109.153
+gutocarvalho.net.    300    IN    A    185.199.110.153
+gutocarvalho.net.    300    IN    A    185.199.111.153
+</code></pre><p>Retorna os registros e informações destes, se houver.</p><h4 id="authority-section">AUTHORITY SECTION</h4><pre><code>;; AUTHORITY SECTION:
+gutocarvalho.net.    3533    IN    NS    monroe.ns.cloudflare.com.
+gutocarvalho.net.    3533    IN    NS    houston.ns.cloudflare.com.
+</code></pre><p>Retorna dados de autoridade acerca do domínio.</p><h4 id="aditional-section">ADITIONAL SECTION</h4><pre><code>;; ADDITIONAL SECTION:
+monroe.ns.cloudflare.com. 107    IN    A    172.64.34.153
+houston.ns.cloudflare.com. 900    IN    A    172.64.35.52
+</code></pre><p>Retorna dados adicionais da query.</p><h4 id="query-section">QUERY SECTION</h4><pre><code>;; Query time: 36 msec
+;; SERVER: 1.1.1.1#53(1.1.1.1)
+;; WHEN: Sat Mar 12 19:49:29 -03 2022
+;; MSG SIZE  rcvd: 109
+</code></pre><p>Retorna métricas da query, auto explicativo.</p><h3 id="glossário">Glossário</h3><p>termos comuns</p><ul><li>Zona, Uma zona contém as informações e registros de um domínio</li><li>TTL, significa Time to live, é o tempo de vida de um registro ou zona</li><li>DNSSEC, é um sistema de proteção que aumenta a segurança do DNS</li></ul><p>tipos de registros comuns e seus significados</p><ul><li>SOA, Start of Authority ou início de autoridade</li><li>NS, significa nameserver, esse registro aponta para um servidor de DNS</li><li>A, registro tipo endereço ipv4, é associado a um endereço IP</li><li>AAAA, registro tipo endereço ipv6, é associado a um endereço IP</li><li>PTR, registro tipo reverso, ele resolve um IP para um nome</li><li>CNAME, nome canônico, ele resolve um nome para outro nome.</li><li>MX, significa mail exchange, aponta para o servidor de correio</li><li>TXT, registros de texto, podem ter qualquer tipo de informação</li></ul><p>tipos de registro para DNSSEC</p><ul><li>DNSKEY: keeps the public key to verify RRSIGs</li><li>DS: keeps the digest of a DNSKEY RR</li><li>RRSIG: keeps the digital signature of an RRset</li><li>NSEC: used for authenticated denial existence, meaning to show an RRset is not part of a signed zone</li></ul><p>tipos de pesquisa de DNS</p><ul><li>Iterative approach: where the resolver/client repeatedly queries different servers until it finds the answer</li><li>Recursive approach: where the resolver/client sends the query only to a single server, but the server repeatedly queries different servers until it finds and returns the answer to the resolver</li></ul><h2 id="quais-outras-ferramentas-uso-para-troubleshooting-de-dns">Quais outras ferramentas uso para troubleshooting de DNS?</h2><p>ferramentas clássicas</p><ul><li>nslookup</li><li>host</li><li>whois</li></ul><p>ferramentas extras para testes do lado do cliente</p><ul><li><a href="https://github.com/projectdiscovery/dnsprobe">dnsprobe</a></li><li><a href="https://www.mavetju.org/unix/dnstracer.php">dnstracer</a></li><li><a href="//github.com/projectdiscovery/subfinder">subfinder</a> (para encontrar subdomains)</li><li><a href="https://github.com/dnsviz/dnsviz/">dnsviz</a> (avalia comportamento do seu DNS Server/DNSSEC)</li></ul><p>ferramentas extras para testes em seu servidor de dns</p><ul><li><a href="http://dns.measurement-factory.com/tools/dnstop/index.html">dnstop</a> (métricas)</li><li><a href="https://github.com/DNS-OARC/dnsperf">dnsperf</a> (teste de carga)</li><li><a href="https://github.com/DNS-OARC/flamethrower">flamethrower</a> (teste de carga)</li><li><a href="https://github.com/sandeeprenjith/dnsblast">dnsblast</a> (teste de carga)</li></ul><h2 id="quais-os-comandos-que-eu-mais-uso-no-dia-a-dia">Quais os comandos que eu mais uso no dia-a-dia?</h2><pre><code>$ dig +short lb.gutocarvalho.net
+$ dig -x 200.150.204.87
+$ dig mx gutocarvalho.net
+$ dig ns gutocarvalho.net
+</code></pre><h2 id="amarrando-as-pontas">Amarrando as pontas</h2><p>Esse post é uma tentativa de dar um norte ou um caminho para fazer um bom troubleshooting de DNS.</p><p>Volte aqui sempre que precisar :)</p><h2 id="aquele-abraço">Aquele abraço!</h2><p>Mando aquele abraço para o professor MESTRE Ulysses Almeida (@ulyssesalmeida) que me ensinou a usar o DIG lá no início do século.</p><p>Mando aquele abraço pro @gomex e @badtux que via exemplo me fazem contribuir mais e mais e mais :)</p><p>Mando aquele abraço para todos que leram, comentaram, revisaram e contribuíram de alguma forma com esse post!</p><h3 id="dns-rfcs">DNS RFC’s</h3><ul><li><a href="https://www.ietf.org/rfc/rfc1034.txt">https://www.ietf.org/rfc/rfc1034.txt</a></li><li><a href="https://www.ietf.org/rfc/rfc1035.txt">https://www.ietf.org/rfc/rfc1035.txt</a></li></ul><h3 id="references">References</h3><ul><li><a href="https://linux.die.net/man/1/dig">https://linux.die.net/man/1/dig</a></li><li><a href="https://cmdref.net/os/linux/command/dig.html">https://cmdref.net/os/linux/command/dig.html</a></li><li><a href="https://ipok.com.br/blog/usando-dig-para-pesquisas-de-dns-parte-1">https://ipok.com.br/blog/usando-dig-para-pesquisas-de-dns-parte-1</a></li><li><a href="https://ipok.com.br/blog/usando-dig-para-pesquisas-de-dns-parte-2">https://ipok.com.br/blog/usando-dig-para-pesquisas-de-dns-parte-2</a></li><li><a href="https://linuxize.com/post/how-to-use-dig-command-to-query-dns-in-linux">https://linuxize.com/post/how-to-use-dig-command-to-query-dns-in-linux</a></li><li><a href="https://www.hostinger.com/tutorials/how-to-use-the-dig-command-in-linux">https://www.hostinger.com/tutorials/how-to-use-the-dig-command-in-linux</a></li><li><a href="https://metebalci.com/blog/a-short-practical-tutorial-of-dig-dns-and-dnssec">https://metebalci.com/blog/a-short-practical-tutorial-of-dig-dns-and-dnssec</a></li><li><a href="https://neverendingsecurity.wordpress.com/2015/04/13/dig-commands-cheatsheet">https://neverendingsecurity.wordpress.com/2015/04/13/dig-commands-cheatsheet</a></li></ul><hr><p>Este post é do tipo #Mindnodes, entenda <a href="https://gutocarvalho.net/o-que-sao-mindnotes/">aqui</a>.</p><p>Se gostou manda um alô no twitter <a href="https://twitter.com/gutocarvalho">@gutocarvalho</a> ou deixa um comentário bacana :)</p><p>[s]<br>Guto</p><aside><ul class="post-tag"><li><a href="https://gutocarvalho.net/amp/tags/crash-course/">crash-course</a></li><li><a href="https://gutocarvalho.net/amp/tags/mindnotes/">MindNotes</a></li></ul><div class="post-share"><amp-social-share type="system" width="40" height="40" data-param-text="DIG Crash Course"></amp-social-share><amp-social-share type="facebook" width="40" height="40" data-param-app_id="" data-param-text="DIG Crash Course" data-param-href="https://gutocarvalho.net/amp/dig-crash-course/"></amp-social-share><amp-social-share type="twitter" width="40" height="40" data-param-text="DIG Crash Course" data-param-url="https://gutocarvalho.net/amp/dig-crash-course/"></amp-social-share><amp-social-share type="pinterest" width="40" height="40" data-param-url="https://gutocarvalho.net/amp/dig-crash-course/"></amp-social-share><amp-social-share type="tumblr" width="40" height="40" data-param-text="DIG Crash Course" data-param-url="https://gutocarvalho.net/amp/dig-crash-course/"></amp-social-share><amp-social-share type="whatsapp" width="40" height="40" data-param-text="DIG Crash Course" data-param-url="https://gutocarvalho.net/amp/dig-crash-course/"></amp-social-share></div></aside></div></article></main><amp-animation id="showAnim" layout="nodisplay"><script type="application/json">{
+                    "duration": "200ms",
+                    "fill": "both",
+                    "iterations": "1",
+                    "direction": "alternate",
+                    "animations": [{
+                        "selector": ".post-scroll",
+                        "keyframes": [{
+                            "opacity": "1",
+                            "visibility": "visible",
+                            "transform": "scale(1)"
+                        }]
+                    }]
+                }</script></amp-animation><amp-animation id="hideAnim" layout="nodisplay"><script type="application/json">{
+                    "duration": "200ms",
+                    "fill": "both",
+                    "iterations": "1",
+                    "direction": "alternate",
+                    "animations": [{
+                        "selector": ".post-scroll",
+                        "keyframes": [{
+                            "opacity": "0",
+                            "visibility": "hidden",
+                            "transform": "scale(0.1)"
+                        }]
+                    }]
+                }</script></amp-animation><div class="post-scroll-marker"><amp-position-observer on="enter:hideAnim.start; exit:showAnim.start" layout="nodisplay"></amp-position-observer></div><button class="post-scroll" on="tap:top.scrollTo(duration=200)">&#8593;</button><footer class="bottom">Powered by Publii</footer><amp-sidebar id="navbar-sidebar" layout="nodisplay"><ul><li><a href="https://gutocarvalho.net/amp/quem-sou/">Me conheça</a></li><li><span>Resume</span><ul class="navbar__submenu"><li><a href="https://resume.gutocarvalho.net" target="_self">ENGLISH</a></li><li><a href="https://curriculo.gutocarvalho.net" target="_self">PORTUGUESE</a></li></ul></li><li><span>Posts</span><ul class="navbar__submenu"><li><a href="https://gutocarvalho.net/amp/" target="_self">BLOG</a></li><li><a href="https://twitter.com/gutocarvalho" target="_self">TWITTER</a></li></ul></li><li><span>Eu recomendo</span><ul class="navbar__submenu"><li><a href="https://gutocarvalho.net/amp/comunidades/" target="_self">COMUNIDADES</a></li><li><a href="https://gutocarvalho.net/amp/siga-o-pessoal-do-bem/" target="_self">PESSOAS</a></li><li><a href="https://gutocarvalho.net/amp/ferramentas-interessantes-para-k8s/" target="_self">K8S TOOLS</a></li><li><a href="https://gutocarvalho.net/amp/sites-interessantes-para-conhecer/" target="_self">TECH SITES</a></li></ul></li><li><span>Opinião</span><ul class="navbar__submenu"><li><a href="https://gutocarvalho.net/amp/etiqueta-do-trabalho-remoto/" target="_self">ETIQUETA NO JOB REMOTO</a></li><li><a href="https://gutocarvalho.net/amp/ti-remota-em-2022-entenda/" target="_self">ENTENDA O JOB REMOTO EM 22</a></li><li><a href="https://gutocarvalho.net/amp/trinta-percepcoes-sobre-ti-em-2022/" target="_self">30 PERCEPCOES SOBRE TI EM 22</a></li><li><a href="https://gutocarvalho.net/amp/quanto-eu-devo-cobrar-a-hora-de-projetos/" target="_self">VALOR HORA DE PROJETOS</a></li><li><a href="https://gutocarvalho.net/amp/quanto-deveria-ganhar-um-cloud-engineer/" target="_self">SALARIO CLOUD ENGINEER</a></li></ul></li><li><span>TECH</span><ul class="navbar__submenu"><li><a href="https://gutocarvalho.net/amp/tags/tips/" target="_self">DROPS</a></li><li><a href="https://gutocarvalho.net/amp/tags/projetos/" target="_self">PROJETOS</a></li><li><a href="https://gutocarvalho.net/amp/tags/mindnotes/" target="_self">MIND NOTES</a></li><li><a href="https://gutocarvalho.net/amp/tags/mente/" target="_self">FALAGUTERA</a></li><li><a href="https://gutocarvalho.net/amp/tags/k8s/" target="_self">K8S</a></li></ul></li><li><span>Vitae</span><ul class="navbar__submenu"><li><a href="https://gutocarvalho.net/amp/tags/poesia/" target="_self">POESIA</a></li></ul></li><li><a href="https://gutocarvalho.net/amp/archives/">ARCHIVED SITES</a></li><li><a href="https://nativetrail.io">NativeTrail</a></li><li><a href="https://www.google.com/search?q&#x3D;site%3Agutocarvalho.net">Busca</a></li><li><a href="https://gutocarvalho.net/amp/contato/">Contato</a></li></ul></amp-sidebar><amp-analytics type="googleanalytics" id="analytics1"><script type="application/json">{
+            "vars": {
+                "account": "UA-1356269-1"
+            },
+            "triggers": {
+                "trackPageview": {
+                    "on": "visible",
+                    "request": "pageview"
+                }
+            }
+        }</script></amp-analytics></body></html>
