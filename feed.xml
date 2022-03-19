@@ -3,7 +3,7 @@
     <title>Guto@Site</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2022-03-14T10:02:20-03:00</updated>
+    <updated>2022-03-18T21:07:13-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
@@ -1037,7 +1037,7 @@ Guto</p>
             <category term="CDF"/>
             <category term="BASESOLIDA"/>
 
-        <updated>2022-03-12T22:37:09-03:00</updated>
+        <updated>2022-03-15T10:59:50-03:00</updated>
             <summary>
                 <![CDATA[
                     Qual o objetivo desse post? Às vezes lemos em vagas ou ouvimos&hellip;
@@ -1376,6 +1376,7 @@ vamos tentar focar no que é comum em todos eles.</p>
 <li> Entenda o que é unicast</li>
 <li> Entenda o que é broadcast</li>
 <li> Entenda o que é multicast</li>
+<li> Entenda o que é anycast</li>
 <li> Entenda a diferença entre unicast e multicast</li>
 </ul>
 <p>Entenda NAT</p>
@@ -1393,6 +1394,7 @@ vamos tentar focar no que é comum em todos eles.</p>
 <li><a href="https://en.wikipedia.org/wiki/Unicast">Unicast - Wikipedia #EN_US</a></li>
 <li><a href="https://en.wikipedia.org/wiki/Broadcasting_(networking)">Broadcast - Wikipedia #EN_US</a></li>
 <li><a href="https://en.wikipedia.org/wiki/Multicast">Multicast - Wikipedia #EN_US</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Anycast">Anycast - Wikipedia #EN_US</a></li>
 <li><a href="https://en.wikipedia.org/wiki/Network_address_translation">Network Address Translation - Wikipedia #EN_US</a></li>
 <li><a href="https://pt.wikipedia.org/wiki/Virtual_LAN">Virtual Lan - Wikipedia #EN_US</a></li>
 </ul>
@@ -2051,7 +2053,7 @@ Guto</p>
         <id>https://gutocarvalho.net/migrando-telegram-para-matrix/</id>
             <category term="FalaGutera"/>
 
-        <updated>2022-03-07T15:59:21-03:00</updated>
+        <updated>2022-03-18T21:07:13-03:00</updated>
             <summary>
                 <![CDATA[
                     Garantindo acesso às comunidades no caso de ficarmos sem Telegram, vem entender!&hellip;
@@ -2183,11 +2185,13 @@ Guto</p>
 #gitlab-br
 #docker-br
 #devops-br
+#terraform-br
 </code></pre>
 <p>Aproveitei para criar também os canais abaixo – <strong>que não estão sob minha administração no telegram</strong> – só falta pedir autorização dos donos e conectá-los</p>
 <pre><code>#kubernetes-br
 #rancher-br
-#terraform-br
+#packer-br
+#devopsdays-br
 </code></pre>
 <p>E já achei esse criado, também vou sugerir conectar ao primo no telegram.</p>
 <pre><code>#ansible-br
