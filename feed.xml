@@ -3,7 +3,7 @@
     <title>Guto@Site</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2022-03-18T21:20:58-03:00</updated>
+    <updated>2022-03-18T21:53:58-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
@@ -18,7 +18,7 @@
         <id>https://gutocarvalho.net/sem-telegram-entao-vem-pro-matrix/</id>
             <category term="FalaGutera"/>
 
-        <updated>2022-03-18T21:20:58-03:00</updated>
+        <updated>2022-03-18T21:53:58-03:00</updated>
             <summary>
                 <![CDATA[
                     <p>O ministro do STF Alexandre de Moraes determinou o <a href="https://www1.folha.uol.com.br/poder/2022/03/alexandre-de-moraes-determina-bloqueio-do-telegram-em-todo-o-brasil.shtml">bloqueio</a> do <strong>Telegram</strong> em todo Brasil.</p>
@@ -31,9 +31,10 @@
 
 <p>Obviamente isso não é algo imediato, as operadoras <strong>pediram até terça-feira</strong> para fazer tal bloqueio.</p>
 <p>No momento tem muita gente migrando para outras redes e a maioria está com receio de ficar sem acesso a suas comunidades de TI no Telegram.</p>
-<p>Em fevereiro eu escrevi um post sobre isso, no qual eu disse que eu já imaginava esse possível cenário, portanto, eu comecei a criar "bridges" entre os canais que eu mantenho no <strong>telegram</strong> e a rede "<strong>matrix.org</strong>".</p>
+<p>Em fevereiro eu escrevi um post sobre isso, no qual eu disse que eu já imaginava esse possível cenário, portanto, eu comecei a criar "<strong>bridges</strong>" entre os canais que eu mantenho no <strong>telegram</strong> e a rede "<strong>matrix.org</strong>".</p>
 <p>Eu explico o processo todo nesse post aqui<br><br>- <a href="https://gutocarvalho.net/migrando-telegram-para-matrix/">https://gutocarvalho.net/migrando-telegram-para-matrix/</a></p>
-<p>Leia o post para entender porque eu recomendo a matrix.org e como usar essa rede no celular, web ou desktop.</p>
+<p>Leia o post para entender porque eu recomendo a matrix.org e como usar essa rede no celular, web ou desktop.<br><br>Canais que você vai encontrar lá conectados ao telegram</p>
+<p>#cicd-br (canal #cdnbr no telegram)<br>#gitops-br<br>#cloudnative-br<br>#macusers-br<br>#tecladomecanico<br>#gitlab-br<br>#docker-br<br>#packer-br<br>#devops-br<br>#terraform-br<br>#devopsdays-br<br>#coberturas-br<br><br>Outros canais só no Matrix<br><br>#kubernetes-br<br>#ansible-br<br>#rancher-br<br><br></p>
 <p>Se você mantém comunidades no <strong>Telegram</strong> e precisa de ajuda para criar uma bridge para alguma outra rede, me chama no twitter (@gutocarvalho) que eu tento de ajudar da melhor forma :)</p>
 <p>[s]<br>Guto<br><br></p>
 <p>---<br><br>Este post é do tipo #FalaGutera, entenda <a href="https://gutocarvalho.net/sobre-o-que-e-a-tag-falagutera/">aqui</a>.</p>
@@ -2084,7 +2085,7 @@ Guto</p>
         <id>https://gutocarvalho.net/migrando-telegram-para-matrix/</id>
             <category term="FalaGutera"/>
 
-        <updated>2022-03-18T21:07:13-03:00</updated>
+        <updated>2022-03-18T21:51:37-03:00</updated>
             <summary>
                 <![CDATA[
                     Garantindo acesso às comunidades no caso de ficarmos sem Telegram, vem entender!&hellip;

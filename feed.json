@@ -14,7 +14,7 @@
             "url": "https://gutocarvalho.net/sem-telegram-entao-vem-pro-matrix/",
             "title": "Sem telegram? Vem pro Matrix!",
             "summary": "<p>O ministro do STF Alexandre de Moraes determinou o <a href=\"https://www1.folha.uol.com.br/poder/2022/03/alexandre-de-moraes-determina-bloqueio-do-telegram-em-todo-o-brasil.shtml\">bloqueio</a> do <strong>Telegram</strong> em todo Brasil.</p>\n",
-            "content_html": "<p>O ministro do STF Alexandre de Moraes determinou o <a href=\"https://www1.folha.uol.com.br/poder/2022/03/alexandre-de-moraes-determina-bloqueio-do-telegram-em-todo-o-brasil.shtml\">bloqueio</a> do <strong>Telegram</strong> em todo Brasil.</p>\n\n<p>Obviamente isso não é algo imediato, as operadoras <strong>pediram até terça-feira</strong> para fazer tal bloqueio.</p>\n<p>No momento tem muita gente migrando para outras redes e a maioria está com receio de ficar sem acesso a suas comunidades de TI no Telegram.</p>\n<p>Em fevereiro eu escrevi um post sobre isso, no qual eu disse que eu já imaginava esse possível cenário, portanto, eu comecei a criar \"bridges\" entre os canais que eu mantenho no <strong>telegram</strong> e a rede \"<strong>matrix.org</strong>\".</p>\n<p>Eu explico o processo todo nesse post aqui<br><br>- <a href=\"https://gutocarvalho.net/migrando-telegram-para-matrix/\">https://gutocarvalho.net/migrando-telegram-para-matrix/</a></p>\n<p>Leia o post para entender porque eu recomendo a matrix.org e como usar essa rede no celular, web ou desktop.</p>\n<p>Se você mantém comunidades no <strong>Telegram</strong> e precisa de ajuda para criar uma bridge para alguma outra rede, me chama no twitter (@gutocarvalho) que eu tento de ajudar da melhor forma :)</p>\n<p>[s]<br>Guto<br><br></p>\n<p>---<br><br>Este post é do tipo #FalaGutera, entenda <a href=\"https://gutocarvalho.net/sobre-o-que-e-a-tag-falagutera/\">aqui</a>.</p>\n<p>Se gostou manda um alo no twitter <a href=\"https://twitter.com/gutocarvalho\">@gutocarvalho</a>.</p>",
+            "content_html": "<p>O ministro do STF Alexandre de Moraes determinou o <a href=\"https://www1.folha.uol.com.br/poder/2022/03/alexandre-de-moraes-determina-bloqueio-do-telegram-em-todo-o-brasil.shtml\">bloqueio</a> do <strong>Telegram</strong> em todo Brasil.</p>\n\n<p>Obviamente isso não é algo imediato, as operadoras <strong>pediram até terça-feira</strong> para fazer tal bloqueio.</p>\n<p>No momento tem muita gente migrando para outras redes e a maioria está com receio de ficar sem acesso a suas comunidades de TI no Telegram.</p>\n<p>Em fevereiro eu escrevi um post sobre isso, no qual eu disse que eu já imaginava esse possível cenário, portanto, eu comecei a criar \"<strong>bridges</strong>\" entre os canais que eu mantenho no <strong>telegram</strong> e a rede \"<strong>matrix.org</strong>\".</p>\n<p>Eu explico o processo todo nesse post aqui<br><br>- <a href=\"https://gutocarvalho.net/migrando-telegram-para-matrix/\">https://gutocarvalho.net/migrando-telegram-para-matrix/</a></p>\n<p>Leia o post para entender porque eu recomendo a matrix.org e como usar essa rede no celular, web ou desktop.<br><br>Canais que você vai encontrar lá conectados ao telegram</p>\n<p>#cicd-br (canal #cdnbr no telegram)<br>#gitops-br<br>#cloudnative-br<br>#macusers-br<br>#tecladomecanico<br>#gitlab-br<br>#docker-br<br>#packer-br<br>#devops-br<br>#terraform-br<br>#devopsdays-br<br>#coberturas-br<br><br>Outros canais só no Matrix<br><br>#kubernetes-br<br>#ansible-br<br>#rancher-br<br><br></p>\n<p>Se você mantém comunidades no <strong>Telegram</strong> e precisa de ajuda para criar uma bridge para alguma outra rede, me chama no twitter (@gutocarvalho) que eu tento de ajudar da melhor forma :)</p>\n<p>[s]<br>Guto<br><br></p>\n<p>---<br><br>Este post é do tipo #FalaGutera, entenda <a href=\"https://gutocarvalho.net/sobre-o-que-e-a-tag-falagutera/\">aqui</a>.</p>\n<p>Se gostou manda um alo no twitter <a href=\"https://twitter.com/gutocarvalho\">@gutocarvalho</a>.</p>",
             "author": {
                 "name": "Guto Carvalho"
             },
@@ -22,7 +22,7 @@
                    "FalaGutera"
             ],
             "date_published": "2022-03-18T21:18:04-03:00",
-            "date_modified": "2022-03-18T21:20:58-03:00"
+            "date_modified": "2022-03-18T21:53:58-03:00"
         },
         {
             "id": "https://gutocarvalho.net/dig-crash-course/",
@@ -101,7 +101,7 @@
                    "FalaGutera"
             ],
             "date_published": "2022-02-26T21:49:31-03:00",
-            "date_modified": "2022-03-18T21:07:13-03:00"
+            "date_modified": "2022-03-18T21:51:37-03:00"
         },
         {
             "id": "https://gutocarvalho.net/video-da-live-k8s-com-saveincloud/",
