@@ -3,12 +3,44 @@
     <title>Guto@Site</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2022-03-18T21:07:13-03:00</updated>
+    <updated>2022-03-18T21:20:58-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
     <id>https://gutocarvalho.net</id>
 
+    <entry>
+        <title>Sem telegram? Vem pro Matrix!</title>
+        <author>
+            <name>Guto Carvalho</name>
+        </author>
+        <link href="https://gutocarvalho.net/sem-telegram-entao-vem-pro-matrix/"/>
+        <id>https://gutocarvalho.net/sem-telegram-entao-vem-pro-matrix/</id>
+            <category term="FalaGutera"/>
+
+        <updated>2022-03-18T21:20:58-03:00</updated>
+            <summary>
+                <![CDATA[
+                    <p>O ministro do STF Alexandre de Moraes determinou o <a href="https://www1.folha.uol.com.br/poder/2022/03/alexandre-de-moraes-determina-bloqueio-do-telegram-em-todo-o-brasil.shtml">bloqueio</a> do <strong>Telegram</strong> em todo Brasil.</p>
+
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p>O ministro do STF Alexandre de Moraes determinou o <a href="https://www1.folha.uol.com.br/poder/2022/03/alexandre-de-moraes-determina-bloqueio-do-telegram-em-todo-o-brasil.shtml">bloqueio</a> do <strong>Telegram</strong> em todo Brasil.</p>
+
+<p>Obviamente isso não é algo imediato, as operadoras <strong>pediram até terça-feira</strong> para fazer tal bloqueio.</p>
+<p>No momento tem muita gente migrando para outras redes e a maioria está com receio de ficar sem acesso a suas comunidades de TI no Telegram.</p>
+<p>Em fevereiro eu escrevi um post sobre isso, no qual eu disse que eu já imaginava esse possível cenário, portanto, eu comecei a criar "bridges" entre os canais que eu mantenho no <strong>telegram</strong> e a rede "<strong>matrix.org</strong>".</p>
+<p>Eu explico o processo todo nesse post aqui<br><br>- <a href="https://gutocarvalho.net/migrando-telegram-para-matrix/">https://gutocarvalho.net/migrando-telegram-para-matrix/</a></p>
+<p>Leia o post para entender porque eu recomendo a matrix.org e como usar essa rede no celular, web ou desktop.</p>
+<p>Se você mantém comunidades no <strong>Telegram</strong> e precisa de ajuda para criar uma bridge para alguma outra rede, me chama no twitter (@gutocarvalho) que eu tento de ajudar da melhor forma :)</p>
+<p>[s]<br>Guto<br><br></p>
+<p>---<br><br>Este post é do tipo #FalaGutera, entenda <a href="https://gutocarvalho.net/sobre-o-que-e-a-tag-falagutera/">aqui</a>.</p>
+<p>Se gostou manda um alo no twitter <a href="https://twitter.com/gutocarvalho">@gutocarvalho</a>.</p>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>DIG Crash Course</title>
         <author>
@@ -1021,8 +1053,7 @@ Guto</p>
         <content type="html">
             <![CDATA[
                 <p>Já pensou em rodar o OSX via Docker e se conectar no ambiente?</p>
-
-<p>Pois é, tem um projeto que oferece isso com performance quase nativa, basta executar a imagem e se conectar via X11-Forwarding.<br><br>Conheça!<br><br>- <a href="https://github.com/sickcodes/Docker-OSX">https://github.com/sickcodes/Docker-OSX</a><br><br>[s]<br>Guto</p>
+Pois é, tem um projeto que oferece isso com performance quase nativa, basta executar a imagem e se conectar via X11-Forwarding.<br><br>Conheça!<br><br>- <a href="https://github.com/sickcodes/Docker-OSX">https://github.com/sickcodes/Docker-OSX</a><br><br>[s]<br>Guto</p>
             ]]>
         </content>
     </entry>
@@ -1314,7 +1345,7 @@ vamos tentar focar no que é comum em todos eles.</p>
 <ul>
 <li>IP<ul>
 <li>Entenda IPv4<ul>
-<li>Entenda o 3 Way Handshake </li>
+<li>Entenda o 3 Way Handshake</li>
 </ul>
 </li>
 <li>Entenda IPSEC</li>
@@ -1324,7 +1355,7 @@ vamos tentar focar no que é comum em todos eles.</p>
 <li>TCP<ul>
 <li>Entenda seus benefícios e drawbacks</li>
 <li>Entenda IANA e Portas </li>
-<li>Entenda o processo de handshake </li>
+<li>Entenda o processo de handshake</li>
 </ul>
 </li>
 <li>UDP<ul>
@@ -1373,11 +1404,11 @@ vamos tentar focar no que é comum em todos eles.</p>
 <h2 id="entenda-os-conceitos-de-rede-mais-importantes">Entenda os conceitos de rede mais importantes</h2>
 <p>Entenda formas de comunicação</p>
 <ul>
-<li> Entenda o que é unicast</li>
-<li> Entenda o que é broadcast</li>
-<li> Entenda o que é multicast</li>
-<li> Entenda o que é anycast</li>
-<li> Entenda a diferença entre unicast e multicast</li>
+<li>Entenda o que é unicast</li>
+<li>Entenda o que é broadcast</li>
+<li>Entenda o que é multicast</li>
+<li>Entenda o que é anycast</li>
+<li>Entenda a diferença entre unicast e multicast</li>
 </ul>
 <p>Entenda NAT</p>
 <ul>
@@ -1410,7 +1441,7 @@ vamos tentar focar no que é comum em todos eles.</p>
 <li>Entenda o dhcp lease</li>
 <li>Entenda como configurar um interface de rede para uso de DHCP<ul>
 <li>ambiente debian-like</li>
-<li>ambiente redhat-like </li>
+<li>ambiente redhat-like</li>
 </ul>
 </li>
 <li>Conheça e veja um arquivo de configuração de algum dhcp server.</li>
@@ -1606,7 +1637,7 @@ vamos tentar focar no que é comum em todos eles.</p>
 <h3 id="aprenda-trabalhar-com-openssl">Aprenda trabalhar com openssl</h3>
 <ul>
 <li>Entenda como criar certificados auto assinados</li>
-<li>Entenda como ler informações de certificados </li>
+<li>Entenda como ler informações de certificados</li>
 </ul>
 <h3 id="aprenda-a-trabalhar-com-letsencrypt-e-certbot">Aprenda a trabalhar com letsencrypt e certbot</h3>
 <ul>
@@ -1620,7 +1651,7 @@ vamos tentar focar no que é comum em todos eles.</p>
 <li>Entenda como gerar um certificado usando DNS<ul>
 <li>Aprenda a usar o plugin CloudFlare</li>
 <li>Aprenda a usar o plugin Route53  </li>
-<li>Aprenda a usar o plugin GCP  </li>
+<li>Aprenda a usar o plugin GCP</li>
 </ul>
 </li>
 </ul>
@@ -1712,7 +1743,7 @@ vamos tentar focar no que é comum em todos eles.</p>
 <ul>
 <li>Entenda o que é SSH e para que ele serve <ul>
 <li>Entenda o funcionamento do SSH Client<ul>
-<li>Conheça um arquivo de config exemplo </li>
+<li>Conheça um arquivo de config exemplo</li>
 </ul>
 </li>
 <li>Entenda o funcionamento do SSH Server<ul>
@@ -1726,7 +1757,7 @@ vamos tentar focar no que é comum em todos eles.</p>
 <li>Entenda o funcionamento do Port Forward</li>
 <li>Entenda o funcionamento do X Forward</li>
 <li>Entenda o funcionamento do Jump Server</li>
-<li>Entenda o conceito de Bastion Host </li>
+<li>Entenda o conceito de Bastion Host</li>
 </ul>
 </li>
 </ul>
@@ -1795,7 +1826,7 @@ vamos tentar focar no que é comum em todos eles.</p>
 <li>Conheça os projetos e implementações mais importantes<ul>
 <li>Conheça o projeto openswan</li>
 <li>Conheça o projeto strongswan</li>
-<li>Conheça o projeto libreswan </li>
+<li>Conheça o projeto libreswan</li>
 </ul>
 </li>
 </ul>
@@ -1846,7 +1877,7 @@ vamos tentar focar no que é comum em todos eles.</p>
 <li>Entenda como usar ferramentas<ul>
 <li>Aprenda a usar o ifconfig, netstat</li>
 <li>Aprenda a usar o ip, ss</li>
-<li>Aprenda a usar o ethtool </li>
+<li>Aprenda a usar o ethtool</li>
 </ul>
 </li>
 </ul>
@@ -2353,8 +2384,7 @@ Guto</p>
         <content type="html">
             <![CDATA[
                 <p>Acompanhe o vídeo e se prepare para mais conteúdo ainda neste mês!</p>
-
-<figure class="post__video"><iframe loading="lazy" width="600" height="314" src="https://www.youtube.com/embed/QSaHK_pUSl4" allowfullscreen="allowfullscreen" data-mce-fragment="1"></iframe></figure>
+<iframe loading="lazy" width="600" height="314" src="https://www.youtube.com/embed/QSaHK_pUSl4" allowfullscreen="allowfullscreen" data-mce-fragment="1"></iframe></figure>
 <p>[s]<br>Guto</p>
 <p>--</p>
 <p>Este post é do tipo #MindNotes, entenda <a href="https://gutocarvalho.net/o-que-sao-mindnotes/">aqui</a>.</p>
@@ -2381,8 +2411,7 @@ Guto</p>
         <content type="html">
             <![CDATA[
                 <p>Essa semana eu encontrei esse post bacana sobre K8S Multi-Cluster.</p>
-
-<p><span style="color: var(--text-editor-body-color); font-family: var(--font-base); font-size: inherit; font-weight: var(--font-weight-normal);">Vai lá e dá uma lida.<br><br>- <a href="https://www.cncf.io/blog/2021/04/12/simplifying-multi-clusters-in-kubernetes/">Simplifing Multi-Cluster in Kubernetes - CNCF Blog</a><br><br></span><span style="color: var(--text-editor-body-color); font-family: var(--font-base); font-size: inherit; font-weight: var(--font-weight-normal);">Recomendo a leitura!</span></p>
+<span style="color: var(--text-editor-body-color); font-family: var(--font-base); font-size: inherit; font-weight: var(--font-weight-normal);">Vai lá e dá uma lida.<br><br>- <a href="https://www.cncf.io/blog/2021/04/12/simplifying-multi-clusters-in-kubernetes/">Simplifing Multi-Cluster in Kubernetes - CNCF Blog</a><br><br></span><span style="color: var(--text-editor-body-color); font-family: var(--font-base); font-size: inherit; font-weight: var(--font-weight-normal);">Recomendo a leitura!</span></p>
 <p>[s]<br>Guto</p>
 <p>--</p>
 <p>Este post é do tipo #MindNotes, entenda <a href="https://gutocarvalho.net/o-que-sao-mindnotes/">aqui</a>.</p>
@@ -2505,7 +2534,7 @@ Guto</p>
 </li>
 <li><p>Ajudar a empresa crescer e atingir suas metas</p>
 </li>
-<li><p>Crescer junto com a empresa </p>
+<li><p>Crescer junto com a empresa</p>
 </li>
 </ul>
 <h2 id="ações-que-iremos-apoiar-sempre-e-que-desejamos-ver-acontecer">Ações que iremos apoiar sempre e que desejamos ver acontecer</h2>
@@ -2628,30 +2657,6 @@ Guto</p>
 <p>Este post é do tipo #FalaGutera, entenda <a href="https://gutocarvalho.net/sobre-o-que-e-a-tag-falagutera/">aqui</a>.</p>
 <p>Se gostou manda um alo no twitter <a href="https://twitter.com/gutocarvalho">@gutocarvalho</a>.</p>
 
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>Conheça o manifesto tech</title>
-        <author>
-            <name>Guto Carvalho</name>
-        </author>
-        <link href="https://gutocarvalho.net/conheca-o-manifesto-tech/"/>
-        <id>https://gutocarvalho.net/conheca-o-manifesto-tech/</id>
-            <category term="FalaGutera"/>
-
-        <updated>2022-02-18T14:45:44-03:00</updated>
-            <summary>
-                <![CDATA[
-                    <p>Manifesto para o mercado de tecnologia brasileiro</p>
-
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                <p>Manifesto para o mercado de tecnologia brasileiro</p>
-
-<p>Ele foi lançado recentemente e confesso que ainda estou refletindo sobre ele, mas já dá para ver que as empresas signatárias são fortes e que estão tentando dar uma direção para contratações e também buscam abordar mudanças de cultura nas empresas.<br><br>Ainda estou lendo com calma e vou opinar assim que me sentir confortável, mas parece que o manifesto tá fazendo bastante barulho nas redes.<br><br>Então vai lá e tire suas próprias conclusões!<br><br><a href="https://manifestotech.org/">https://manifestotech.org/</a><br><br>[s]<br>Guto</p>
             ]]>
         </content>
     </entry>

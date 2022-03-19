@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Quem sou? - Guto@Site</title><meta name="description" content=" Eu sou uma pessoa simples, fã de tecnologias que facilitam a&hellip;"><meta name="generator" content="Publii Open-Source CMS for Static Site"><link rel="canonical" href="https://gutocarvalho.net/quem-sou/"><link rel="amphtml" href="https://gutocarvalho.net/amp/quem-sou/"><link rel="alternate" type="application/atom+xml" href="https://gutocarvalho.net/feed.xml"><link rel="alternate" type="application/json" href="https://gutocarvalho.net/feed.json"><meta property="og:title" content="Quem sou?"><meta property="og:site_name" content="Guto@Site"><meta property="og:description" content=" Eu sou uma pessoa simples, fã de tecnologias que facilitam a&hellip;"><meta property="og:url" content="https://gutocarvalho.net/quem-sou/"><meta property="og:type" content="article"><meta name="twitter:card" content="summary"><meta name="twitter:site" content="@gutocarvalho"><meta name="twitter:title" content="Quem sou?"><meta name="twitter:description" content=" Eu sou uma pessoa simples, fã de tecnologias que facilitam a&hellip;"><link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin><link href="https://fonts.googleapis.com/css?family=Asap:400,600,700&amp;display=swap" rel="stylesheet"><style>:root{--body-font:'Asap',sans-serif;--heading-font:var(--body-font);--logo-font:var(--body-font);--menu-font:var(--body-font)}</style><link rel="stylesheet" href="https://gutocarvalho.net/assets/css/style.css?v=47aad078e314013c1a1ca6569eaa9f2f"><link rel="stylesheet" href="https://gutocarvalho.net/assets/css/photoswipe.css?v=ffb247881cd6f611d007fd4a96b7b16a"><script type="application/ld+json">{"@context":"http://schema.org","@type":"Article","mainEntityOfPage":{"@type":"WebPage","@id":"https://gutocarvalho.net/quem-sou/"},"headline":"Quem sou?","datePublished":"2021-05-29T22:43","dateModified":"2022-02-01T07:22","description":" Eu sou uma pessoa simples, fã de tecnologias que facilitam a&hellip;","author":{"@type":"Person","name":"Guto Carvalho"},"publisher":{"@type":"Organization","name":"Guto Carvalho"}}</script><style>.pswp--svg .pswp__button,
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Quem sou? - Guto@Site</title><meta name="description" content="Eu sou uma pessoa simples, fã de tecnologias que facilitam a vida&hellip;"><meta name="generator" content="Publii Open-Source CMS for Static Site"><link rel="canonical" href="https://gutocarvalho.net/quem-sou/"><link rel="amphtml" href="https://gutocarvalho.net/amp/quem-sou/"><link rel="alternate" type="application/atom+xml" href="https://gutocarvalho.net/feed.xml"><link rel="alternate" type="application/json" href="https://gutocarvalho.net/feed.json"><meta property="og:title" content="Quem sou?"><meta property="og:site_name" content="Guto@Site"><meta property="og:description" content="Eu sou uma pessoa simples, fã de tecnologias que facilitam a vida&hellip;"><meta property="og:url" content="https://gutocarvalho.net/quem-sou/"><meta property="og:type" content="article"><meta name="twitter:card" content="summary"><meta name="twitter:site" content="@gutocarvalho"><meta name="twitter:title" content="Quem sou?"><meta name="twitter:description" content="Eu sou uma pessoa simples, fã de tecnologias que facilitam a vida&hellip;"><link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin><link href="https://fonts.googleapis.com/css?family=Asap:400,600,700&amp;display=swap" rel="stylesheet"><style>:root{--body-font:'Asap',sans-serif;--heading-font:var(--body-font);--logo-font:var(--body-font);--menu-font:var(--body-font)}</style><link rel="stylesheet" href="https://gutocarvalho.net/assets/css/style.css?v=e50cdebc7da4900d865e4d7f6b766cdf"><link rel="stylesheet" href="https://gutocarvalho.net/assets/css/photoswipe.css?v=ffb247881cd6f611d007fd4a96b7b16a"><script type="application/ld+json">{"@context":"http://schema.org","@type":"Article","mainEntityOfPage":{"@type":"WebPage","@id":"https://gutocarvalho.net/quem-sou/"},"headline":"Quem sou?","datePublished":"2021-05-29T22:43","dateModified":"2022-02-01T07:22","description":"Eu sou uma pessoa simples, fã de tecnologias que facilitam a vida&hellip;","author":{"@type":"Person","name":"Guto Carvalho","url":"https://gutocarvalho.net/authors/gutocarvalho/"},"publisher":{"@type":"Organization","name":"Guto Carvalho"}}</script><style>.pswp--svg .pswp__button,
 				          .pswp--svg .pswp__button--arrow--left:before,
 				          .pswp--svg .pswp__button--arrow--right:before {
 					          background-image: url(https://gutocarvalho.net/assets/svg/gallery-icons-light.svg);
@@ -89,7 +89,9 @@
                                for (var j = 0; j < scripts.length; j++) {
                                    addScript(scripts[j].src, scripts[j].text);
                                }
-   
+                               
+                               var groupEvent = new Event('publii-cookie-banner-unblock-' + groupName);
+                               document.body.dispatchEvent(groupEvent);
                                allowedGroups.push(groupName);
                            }
                        }
@@ -117,6 +119,9 @@
                                for (var j = 0; j < scripts.length; j++) {
                                    addScript(scripts[j].src, scripts[j].text);
                                }
+   
+                               var groupEvent = new Event('publii-cookie-banner-unblock-' + allowedGroup);
+                               document.body.dispatchEvent(groupEvent);
                            }
                        }
                    } else {
@@ -143,6 +148,9 @@
                                for (var j = 0; j < scripts.length; j++) {
                                    addScript(scripts[j].src, scripts[j].text);
                                }
+   
+                               var groupEvent = new Event('publii-cookie-banner-unblock-' + allowedGroups[i]);
+                               document.body.dispatchEvent(groupEvent);
                            }
                        }
                    }
