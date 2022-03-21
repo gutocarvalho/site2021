@@ -3,12 +3,69 @@
     <title>Guto@Site</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2022-03-18T21:53:58-03:00</updated>
+    <updated>2022-03-21T18:28:10-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
     <id>https://gutocarvalho.net</id>
 
+    <entry>
+        <title>Canais de TI integrados em 3 redes!</title>
+        <author>
+            <name>Guto Carvalho</name>
+        </author>
+        <link href="https://gutocarvalho.net/canais-de-ti-integrados-em-3-redes/"/>
+        <id>https://gutocarvalho.net/canais-de-ti-integrados-em-3-redes/</id>
+
+        <updated>2022-03-21T18:28:10-03:00</updated>
+            <summary>
+                <![CDATA[
+                    <p>Quer saber quais os canais integrados nas 3 redes? Então vem!</p>
+
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p>Quer saber quais os canais integrados nas 3 redes? Então vem!</p>
+
+<p>Até o momento temos as comunidades opensource abaixo:</p>
+<p>#devops-br<br>#cloudnative-br<br>#gitops-br<br>#cicd-br<br>#coberturas-br (coberturas de eventos)<br>#devopsdays-br<br>#codigo-de-conduta (canal de voluntários e mantenedores)<br><br>Os canais de tecnologias diversas:<br><br>#packer-br<br>#docker-br<br>#terraform-br<br>#gitlab-br<br><br>As comunidades de TI variadas:<br><br>#macusers-br<br>#tecladomecanico</p>
+<p>Agora canais comuns apenas no Matrix.org e Discord #BolhaTech<br><br>#kubernetes-br<br>#ansible-br<br>#rancher-br<br><br>Canais presentes – no momento – apenas no Discord #BolhaTech</p>
+<p>#cloud-aws<br>#cloud-gcp<br>#cloud-oracle<br>#cloud-azure<br>#sgbd-mysql<br>#sgbd-postgresql<br>#sgbd-redis<br>#network-br<br>#linux-br<br><br>Redes Cobertas<br><br>- Telegram<br>- Matrix.org<br>- Discord, servidor #BolhaTech<br><br>Bridge</p>
+<p>- Matterbridge<br><br>Que integrar seu canal? Me chama nas redes ou no twitter.<br><br>[s]<br>Guto</p>
+<p> </p>
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>Novo discord #BolhaTech</title>
+        <author>
+            <name>Guto Carvalho</name>
+        </author>
+        <link href="https://gutocarvalho.net/novo-discord-server-bolhatech/"/>
+        <id>https://gutocarvalho.net/novo-discord-server-bolhatech/</id>
+            <category term="FalaGutera"/>
+
+        <updated>2022-03-21T18:13:25-03:00</updated>
+            <summary>
+                <![CDATA[
+                    <p>Criamos um DISCORD para dominar o mundo... Brincadeira :P</p>
+
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p>Criamos um DISCORD para dominar o mundo... Brincadeira :P</p>
+
+<p>Fala meu povo.</p>
+<p>Passando para avisar que criamos um servidor no DISCORD chamado #BolhaTech e estamos integrando os canais dele com os canais do TELEGRAM e MATRIX.ORG.<br><br>Os mesmos canais de TI em 3 redes diferentes, use oq quiser!</p>
+<p>:)</p>
+<p>Só vem!</p>
+<p><a href="https://discord.gg/8eNWpwz5">- https://discord.gg/8eNWpwz5</a></p>
+<p>[s]<br>Guto</p>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>Sem telegram? Vem pro Matrix!</title>
         <author>
@@ -18,7 +75,7 @@
         <id>https://gutocarvalho.net/sem-telegram-entao-vem-pro-matrix/</id>
             <category term="FalaGutera"/>
 
-        <updated>2022-03-18T21:53:58-03:00</updated>
+        <updated>2022-03-21T18:09:46-03:00</updated>
             <summary>
                 <![CDATA[
                     <p>O ministro do STF Alexandre de Moraes determinou o <a href="https://www1.folha.uol.com.br/poder/2022/03/alexandre-de-moraes-determina-bloqueio-do-telegram-em-todo-o-brasil.shtml">bloqueio</a> do <strong>Telegram</strong> em todo Brasil.</p>
@@ -2417,247 +2474,6 @@ Guto</p>
 <p>--</p>
 <p>Este post é do tipo #MindNotes, entenda <a href="https://gutocarvalho.net/o-que-sao-mindnotes/">aqui</a>.</p>
 <p>Se gostou manda um alo no twitter <a href="https://twitter.com/gutocarvalho">@gutocarvalho</a>.</p>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>Complemento ao manifesto tech</title>
-        <author>
-            <name>Guto Carvalho</name>
-        </author>
-        <link href="https://gutocarvalho.net/complemento-ao-manifesto-tech/"/>
-        <id>https://gutocarvalho.net/complemento-ao-manifesto-tech/</id>
-            <category term="FalaGutera"/>
-
-        <updated>2022-02-23T16:53:29-03:00</updated>
-            <summary>
-                <![CDATA[
-                    Temos visto grandes empresas se envolvendo e assinando o manifesto que tem&hellip;
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                <p>Temos visto grandes empresas se envolvendo e assinando o manifesto que tem sido assunto nas redes nos últimos dias.</p>
-<p>O Manifesto Tech foi criado para endereçar um problema de escassez de mão de obra atuando na formação de base, como dizem por aí, plantar júnior para colher sênior. Uma de suas grandes promessas é reduzir as exigências para pessoas que estão começando e investir na formação destas.</p>
-<p>Eu vejo como uma mudança positiva, alguns como uma mudança necessária e até tardia, outros estão aguardando para ver se vai funcionar.</p>
-<p>O fato é que ele tem um foco em resolver problemas de empresas, isso está muito claro no início do manifesto. O que falta nele é trazer a realidade de quem trabalha na empresa e por isso elaborei esse complemento para tentar ajudar nessa reflexão e construção coletiva.</p>
-<hr>
-<p>Me siga no twitter <a href="https://twitter.com/gutocarvalho">@gutocarvalho</a> e acompanhe meus posts sobre Cloud Native e CI/CD.</p>
-<p>Aproveite e siga a <a href="https://twitter.com/CDeliveryFdn">CD Foundation</a> e <a href="https://twitter.com/cloudnativefdn">Cloud Native Foundation</a> e acompanhe o trabalho destas incríveis entidades.</p>
-<hr>
-<h2 id="ideias-e-sentimentos">Ideias e sentimentos</h2>
-<p>Falei com muita gente, li muita coisa nas redes, combinei tudo isso com algumas experiências pessoais e construí esse complemento para o manifesto tech, totalmente livre, use quem quiser usar.</p>
-<p>Aqui trago valores e desejos que vi, ouvi e senti do lado das pessoas que trabalham nas empresas de TI Brazucas.</p>
-<p>Neste texto eu tentarei considerar e demonstrar desejos e sentimentos.</p>
-<p>Escreverei como parte de um grupo, e fique a vontade para se identificar parte se concordar e se encontrar com as ideias aqui descritas.</p>
-<p>Escrevo tranquilo pois sei que não estou sozinho, nem no sentimento, nem nos desejos.</p>
-<h2 id="valores-que-desejamos-encontrar-em-uma-empresa">Valores que desejamos encontrar em uma empresa</h2>
-<p>Nós desejamos uma cultura saudável e humana que enfatize e ofereça:</p>
-<ul>
-<li><p>Respeito </p>
-</li>
-<li><p>Empatia</p>
-</li>
-<li><p>Inclusão</p>
-</li>
-<li><p>Colaboração</p>
-</li>
-</ul>
-<h2 id="ambiente-que-desejamos-encontrar-em-uma-empresa">Ambiente que desejamos encontrar em uma empresa</h2>
-<p>Precisamos:</p>
-<ul>
-<li>Ambiente seguro para se estar e trabalhar</li>
-</ul>
-<p>Desejamos:</p>
-<ul>
-<li>Políticas claras contra assédio e quaisquer outras condutas inadequadas no ambiente de trabalho.</li>
-</ul>
-<p>Esperamos:</p>
-<ul>
-<li><p>Punições duríssimas contra agressores</p>
-</li>
-<li><p>Apoio total e sem julgamento para as vítimas</p>
-</li>
-</ul>
-<h2 id="características-que-desejamos-encontrar-em-uma-empresa">Características que desejamos encontrar em uma empresa</h2>
-<ul>
-<li><p>Cultura centrada em pessoas</p>
-</li>
-<li><p>Investimento na base com foco em ensinar e formar</p>
-</li>
-<li><p>Investimento para reter as pessoas mais experientes</p>
-</li>
-<li><p>Encontrar condições de crescimento reais e concretas</p>
-</li>
-<li><p>Encontrar um plano de capacitação contínua</p>
-</li>
-<li><p>Poder crescer sem pivotar para gestão</p>
-</li>
-<li><p>Mais foco no que se entrega, menos em microgerenciamento</p>
-</li>
-<li><p>Estimular mais colaboração e menos competição</p>
-</li>
-<li><p>Normalizar e estimular o trabalho remoto</p>
-</li>
-<li><p>Incorporar princípios da cultura blameless e devops</p>
-</li>
-<li><p>Construir uma cultura colaborativa com base em princípios humanos</p>
-</li>
-<li><p>Plano de remuneração justo e progressivo</p>
-</li>
-<li><p>Plano de benefícios justo e progressivo</p>
-</li>
-<li><p>Apoio psicológico em tempos de pandemia (e fora dela)</p>
-</li>
-<li><p>Participação em lucros para que todos cresçam juntos</p>
-</li>
-<li><p>Poder escolher entre remuneração ou folga em caso de trabalho adicional</p>
-</li>
-</ul>
-<h2 id="entendimentos-que-precisam-estar-alinhados-em-ambos-os-lados">Entendimentos que precisam estar alinhados em ambos os lados</h2>
-<ul>
-<li><p>Uma empresa é formada de pessoas, sem elas não há empresa</p>
-</li>
-<li><p>Da mesma forma entendemos que empresas geram oportunidades para pessoas e movimentam a economia de nosso país</p>
-</li>
-<li><p>Entendemos que as necessidades de uma empresa precisam estar em equilíbrio com as necessidades de quem trabalha nela, ambos são essenciais e precisam coexistir de uma forma saudável</p>
-</li>
-</ul>
-<h2 id="o-que-desejamos-enquanto-profissionais">O que desejamos enquanto profissionais</h2>
-<ul>
-<li><p>Respeitar e ser respeitado</p>
-</li>
-<li><p>Se sentir parte da empresa</p>
-</li>
-<li><p>Se sentir valorizado(a)</p>
-</li>
-<li><p>Ser ouvido(a) e se sentir ouvido(a)</p>
-</li>
-<li><p>Ajudar a empresa crescer e atingir suas metas</p>
-</li>
-<li><p>Crescer junto com a empresa</p>
-</li>
-</ul>
-<h2 id="ações-que-iremos-apoiar-sempre-e-que-desejamos-ver-acontecer">Ações que iremos apoiar sempre e que desejamos ver acontecer</h2>
-<ul>
-<li><p>Investimento na base prioritáriamente formando pessoas</p>
-</li>
-<li><p>Construção de equipes diversas</p>
-</li>
-<li><p>Geração de oportunidades para minorias</p>
-</li>
-<li><p>Formação de lideranças onde pessoas se sintam representadas</p>
-</li>
-</ul>
-<h2 id="amarrando-as-pontas">Amarrando as pontas</h2>
-<p>Acredito que isso é que pessoas esperam hoje, e talvez as empresas possam ir de encontro com essas expectativas, expandindo e demonstrando no manifesto que eles se preocupam não só em mudar a forma de contratar, mas sim em mudar a forma de se relacionar e se comportar com as pessoas dentro de suas empresas.</p>
-<h3 id="post-relacionado">Post relacionado</h3>
-<p>Veja também o post <a href="https://gutocarvalho.net/meus-pensamentos-sobre-o-manifesto-tech/">Meus pensamentos sobre o Manifesto Tech</a>.</p>
-<p>[s]<br>
-Guto</p>
-<hr>
-<p>Este post é do tipo #FalaGutera, entenda <a href="https://gutocarvalho.net/sobre-o-que-e-a-tag-falagutera/">aqui</a>.</p>
-<p>Se gostou manda um alo no twitter <a href="https://twitter.com/gutocarvalho">@gutocarvalho</a>.</p>
-
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>Meus pensamentos sobre o manifesto tech</title>
-        <author>
-            <name>Guto Carvalho</name>
-        </author>
-        <link href="https://gutocarvalho.net/meus-pensamentos-sobre-o-manifesto-tech/"/>
-        <id>https://gutocarvalho.net/meus-pensamentos-sobre-o-manifesto-tech/</id>
-            <category term="FalaGutera"/>
-
-        <updated>2022-02-22T12:24:30-03:00</updated>
-            <summary>
-                <![CDATA[
-                    Vejo que o pessoal nas redes tem debatido de forma intensa o&hellip;
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                <p>Vejo que o pessoal nas redes tem debatido de forma <strong>intensa</strong> o <strong>manifesto tech</strong>, alguns defendendo, outros criticando, algo bem normal, como tudo na vida.</p>
-<p>Acompanhando as redes, principalmente o twitter e telegram vejo que existe muita coisa interessante nos dois lados da conversa.</p>
-<p>Quer saber o eu que penso sobre isso tudo?</p>
-<p>Bora lá.</p>
-<hr>
-<p>Antes de mais nada, me siga no twitter <a href="https://twitter.com/gutocarvalho">@gutocarvalho</a> e acompanhe meus posts sobre Cloud Native e CI/CD.</p>
-<p>Aproveite e siga também a <a href="https://twitter.com/CDeliveryFdn">CD Foundation</a> e a <a href="https://twitter.com/cloudnativefdn">Cloud Native Foundation</a>.</p>
-<hr>
-<h2 id="precisamos-considerar-o-momento">Precisamos considerar o momento</h2>
-<p>O manifesto chega no mesmo momento que está <strong>dificil reter e contratar</strong> talentos, coincidência ou não.</p>
-<p>E reforço sobre esse momento, empresas estão com muita <strong>dificuldade</strong> de contratar, principalmente <strong>profissionais experientes</strong>. Algumas estão entrando em desespero porque não tem equipe para entregar o que já foi vendido para o ano.</p>
-<p>Empresas estão com muito <strong>dificuldade de reter</strong> os mais experientes, o <strong>assédio</strong> no linkedin e em outras redes sociais profissionais está acima do normal.</p>
-<p>Em resumo, o mercado está aquecido, tem <strong>muita oferta dentro e fora do Brasil</strong>.</p>
-<h2 id="precisamos-entender-os-movimentos-de-fora">Precisamos entender os movimentos de fora</h2>
-<p>O mercado de fora está nadando de braçada por causa da <strong>cotação do dólar</strong>, estão <strong>levando times inteiros</strong> de uma vez só, e estou falando de grandes empresas perdendo seus profissionais, empresas que conseguem competir com salário acima da média do mercado.</p>
-<p>As empresas de fora estão contratando profissionais com alta qualidade, alto desempenho e muita criatividade a custos baixíssimos para o mercado deles.</p>
-<p>Do ponto de vista dos profissionais, basta se virar razoavelmente no inglês que as ofertas passam dos <strong>20 mil reais por mês</strong> sem muito esforço. </p>
-<p>O trabalho é geralmente como contractor (PJ) e a cultura focada na entrega, trabalhando remoto, no conforto de casa <strong>e não tem relógio de ponto</strong>.</p>
-<h2 id="precisamos-rever-a-cultura-do-mercado-brazuca">Precisamos rever a cultura do mercado brazuca</h2>
-<p>O mercado interno continua com alguns problemas crônicos:</p>
-<ul>
-<li>Cultura inadequada para contratar com requisitos irreais</li>
-<li>Apesar dos requisitos irreais a remuneração não é atrativa</li>
-<li>Contratar só seniors esquecendo de investir na base</li>
-<li>Muito foco no relógio de ponto e pouco foco no valor agregado</li>
-<li>Insistem em posições presenciais quando não é necessário</li>
-<li>Só se sobe de carreira virando gestor</li>
-<li>Cultura interna sem foco em pessoas<ul>
-<li>Isso afasta os mais jovens</li>
-<li>Isso não retém os mais antigos</li>
-</ul>
-</li>
-</ul>
-<h2 id="precisamos-respeitar-as-críticas-ao-manifesto">Precisamos respeitar as críticas ao manifesto</h2>
-<p>Vejo pessoas trazendo críticas justas de problemas que são crônicos e que já passaram da hora de serem resolvidos. </p>
-<p>Vejo as pessoas desconfiadas com o momento trazendo questionamentos importantes, tais como:</p>
-<ul>
-<li>porque só agora?</li>
-<li>porque justamente no momento que empresas estão desesperadas?</li>
-<li>porque justamente no momento que os talentos estão indo embora do BR?</li>
-</ul>
-<p>Vejo pessoas apontando que o manifesto tem objetivo em resolver uma questão pontual do lado das empresas, esquecendo dos problemas das pessoas.</p>
-<h2 id="precisamos-respeitar-os-signatários">Precisamos respeitar os signatários</h2>
-<p>Esse movimento é muito importante e precisamos aceitar isso.</p>
-<p>Vejo o movimento das empresas como algo positivo, eles estão se mexendo, tentando dar um norte para a TI do Brasil seguir, estão tentando se adequar e isso é importante, não dava mais para ficar inerte e ver a mão de obra desaparecer ou fingir que a cultura deles ainda funciona.</p>
-<p>Obviamente a mudança dentro das empresas é mais lenta, complicada e nem sempre muda como precisa, mas já ganham pontos por tentarem.</p>
-<h2 id="meus-pensamentos-sobre-investir-na-base">Meus pensamentos sobre investir na base</h2>
-<p>Acho fundamental desde que realmente formem as pessoas.</p>
-<p>As vagas para JR hoje tem <strong>requisitos insanos</strong>, isso tem que mudar, J<strong>R a gente pega para ensinar</strong>, isso tem que ficar claro e ser o novo normal.</p>
-<p>A <strong>cultura</strong> precisa mudar, não só a <strong>postura</strong>, ao que me parece estão tomando uma nova <strong>postura</strong> em relação a contratar e formar pessoas.</p>
-<p>Como disse um amigo, eles querem <strong>plantar JRs para colherem SRs</strong>.</p>
-<h2 id="mas-será-que-vai-funcionar-imho">Mas será que vai funcionar, IMHO?</h2>
-<p>Estamos vivendo um momento único, muito peculiar, e todos estão tentando se adaptar a ele, empresas e pessoas.</p>
-<p>Se mudarem de <strong>postura</strong> sem mudar de <strong>cultura</strong>, eles estarão capacitando pessoas para perder daqui a dois ou três anos para as mesmas empresas de fora.</p>
-<p>Agora, se mudarem de <strong>cultura</strong> e criarem condições para que as pessoas fiquem, proporcionando crescimento de carreira, desafios reais e concretos, oportunidades de capacitação e uma remenuração adequada, eu realmente acho que pode funcionar.</p>
-<p>As <strong>mudanças na cultura</strong> também passam por <strong>mudanças de comportamento</strong> dentro da empresa, em especial com seus times. Hoje todos querem trabalhar em um <strong>ambiente seguro, livre de assédio, tendo respeito e empatia como cernes da relação</strong>, além de bons incentivos e benefícios. </p>
-<p>Se a empresa <strong>não</strong> consegue oferecer isso, de nada adianta assinar o manifesto.</p>
-<h2 id="o-que-poderia-ser-diferente-imho">O que poderia ser diferente, IMHO?</h2>
-<p>Acho que os valores humanos deveriam estar mais evidenciados e fazer parte do TOP 3 ou criar um TOP 5 deixando claro que o objetivo é criar uma cultura centrada em pessoas para que assim a empresa alcance seus objetivos e para que as pessoas cresçam junto com a empresa, ficando por lá por muitos anos.</p>
-<p>Não existem empresas sem pessoas, não se atinge metas sem pessoas, não se entrega valor sem pessoas,  então, acho que já é hora de assumir isso. </p>
-<p>As necessidades da empresa tem que estar em equilibrio com as necessidades das pessoas que trabalham nela.</p>
-<h2 id="como-ir-além-e-tentar-surtir-mais-efeito">Como ir além e tentar surtir mais efeito?</h2>
-<p>Acho que faltou endereçar os problemas culturais crônicos – brazucas – no manifesto, assumindo claramente que precisamos evoluir juntos, empresas e pessoas.</p>
-<p>Acho que faltou dar o recado de que cultura tóxica – que ainda existe em muitas empresas – tem que ser condenada e extinta.</p>
-<p>Acho que faltou deixar claro que pessoas são o foco nessa mudança de postura e de cultura das empresas Brazucas signatárias. O foco nos jovens é sensacional, mas temos que ir além.</p>
-<p>Acho que manifesto poderia ser mais amplo e incluir plenos, seniors e especialistas, afinal eles não são inimigos. Acredito que no momento eles não estão encontrando as condições adequadas para se manter no mercado Brazuca e somente isso, nem todos querem ser gestores para terem uma melhor remuneração, nem todos querem trabalhar para fora para serem valorizados, mas no fim foi o que conseguiram. Apesar de tudo, acho que com um pouco de esforço dá para acomodar todo mundo, basta cada um ceder um pouco, empresas e pessoas.</p>
-<h2 id="amarrando-as-pontas">Amarrando as pontas</h2>
-<p>Esses foram meus 50 cents na discussão, que continuem falando disso e que novas versões deste manifesto sejam lançadas conforme a percpeção de pessoas e empresas evoluem – de preferência o façam juntos.</p>
-<p>Alguns posts que podem dar umas ideias sobre cultura de TI em 2022.</p>
-<ul>
-<li><a href="https://gutocarvalho.net/trinta-percepcoes-sobre-ti-em-2022/">https://gutocarvalho.net/trinta-percepcoes-sobre-ti-em-2022/</a></li>
-<li><a href="https://gutocarvalho.net/ti-remota-em-2022-entenda/">https://gutocarvalho.net/ti-remota-em-2022-entenda/</a></li>
-</ul>
-<p>[s]<br>
-Guto</p>
-<hr>
-<p>Este post é do tipo #FalaGutera, entenda <a href="https://gutocarvalho.net/sobre-o-que-e-a-tag-falagutera/">aqui</a>.</p>
-<p>Se gostou manda um alo no twitter <a href="https://twitter.com/gutocarvalho">@gutocarvalho</a>.</p>
-
             ]]>
         </content>
     </entry>
