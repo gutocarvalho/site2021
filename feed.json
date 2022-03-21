@@ -14,14 +14,14 @@
             "url": "https://gutocarvalho.net/canais-de-ti-integrados-em-3-redes/",
             "title": "Canais de TI integrados em 3 redes!",
             "summary": "<p>Quer saber quais os canais integrados nas 3 redes? Então vem!</p>\n",
-            "content_html": "<p>Quer saber quais os canais integrados nas 3 redes? Então vem!</p>\n\n<p><strong>Até o momento temos as comunidades opensource abaixo:</strong></p>\n<p>#devops-br<br>#cloudnative-br<br>#gitops-br<br>#cicd-br<br>#coberturas-br (coberturas de eventos)<br>#devopsdays-br<br>#codigo-de-conduta (canal de voluntários e mantenedores)<br><br><strong>Os canais de tecnologias diversas:</strong><br><br>#packer-br<br>#terraform-br<br>#docker-br<br>#gitlab-br<br>#ansible-br<br><br><strong>As comunidades de TI variadas:</strong><br><br>#macusers-br<br>#tecladomecanico</p>\n<p><strong>Canais comuns apenas no Matrix.org e Discord #BolhaTech</strong><br><br>#kubernetes-br<br>#rancher-br<br><br>#vault-br<br>#nomad-br<br>#boundary-br<br><br><strong>Canais presentes – no momento – apenas no Discord #BolhaTech</strong></p>\n<p>#eventos-br<br>#vagas-br<br><br>#cloud-aws<br>#cloud-gcp<br>#cloud-oracle<br>#cloud-azure<br><br>#sgbd-mysql<br>#sgbd-postgresql<br>#sgbd-redis<br><br>#network-br<br>#linux-br<br><br><strong>Redes Cobertas pela bridge</strong><br><br>- Telegram<br>- Matrix.org<br>- Discord, servidor #BolhaTech<br><br><strong>Tecnologia de Bridge</strong></p>\n<p>- Matterbridge<br><br>Que integrar seu canal? Me chama no Matrix ou Discord que eu te ajudo.<br><br>[s]<br>Guto</p>\n<p>---<br><br>Este post é do tipo #FalaGutera, entenda <a href=\"https://gutocarvalho.net/sobre-o-que-e-a-tag-falagutera/\">aqui</a>.</p>\n<p>Se gostou manda um alo no twitter <a href=\"https://twitter.com/gutocarvalho\">@gutocarvalho</a>.</p>",
+            "content_html": "<p>Quer saber quais os canais integrados nas 3 redes? Então vem!</p>\n\n<p><strong>Até o momento temos as comunidades open source abaixo:</strong></p>\n<p>#devops-br<br>#cloudnative-br<br>#gitops-br<br>#cicd-br<br>#coberturas-br (coberturas de eventos)<br>#devopsdays-br<br>#codigo-de-conduta (canal de voluntários e mantenedores)<br><br><strong>Os canais de tecnologias diversas:</strong><br><br>#packer-br<br>#terraform-br<br>#docker-br<br>#gitlab-br<br>#ansible-br<br><br><strong>As comunidades de TI variadas:</strong><br><br>#macusers-br<br>#tecladomecanico</p>\n<p><strong>Canais comuns apenas no Matrix.org e Discord #BolhaTech</strong><br><br>#kubernetes-br<br>#rancher-br<br>#servicemesh-br<br><br>#vault-br<br>#nomad-br<br>#boundary-br<br><br>#eventos-br<br>#vagas-br<br><br><strong>Canais presentes – no momento – apenas no Discord #BolhaTech<br><br></strong>#cloud-aws<br>#cloud-gcp<br>#cloud-oracle<br>#cloud-azure<br><br>#sgbd-mysql<br>#sgbd-postgresql<br>#sgbd-redis<br><br>#network-br<br>#linux-br<br><br><strong>Redes Cobertas pela bridge</strong><br><br>- Telegram<br>- Matrix.org<br>- Discord, servidor #BolhaTech<br><br><strong>Tecnologia de Bridge</strong></p>\n<p>- Matterbridge<br><br>Que integrar seu canal? Me chama no Matrix ou Discord que eu te ajudo.<br><br>[s]<br>Guto</p>\n<p>---<br><br>Este post é do tipo #FalaGutera, entenda <a href=\"https://gutocarvalho.net/sobre-o-que-e-a-tag-falagutera/\">aqui</a>.</p>\n<p>Se gostou manda um alo no twitter <a href=\"https://twitter.com/gutocarvalho\">@gutocarvalho</a>.</p>",
             "author": {
                 "name": "Guto Carvalho"
             },
             "tags": [
             ],
             "date_published": "2022-03-21T18:28:10-03:00",
-            "date_modified": "2022-03-21T20:10:00-03:00"
+            "date_modified": "2022-03-21T20:23:45-03:00"
         },
         {
             "id": "https://gutocarvalho.net/novo-discord-server-bolhatech/",
@@ -36,7 +36,7 @@
                    "FalaGutera"
             ],
             "date_published": "2022-03-21T18:13:25-03:00",
-            "date_modified": "2022-03-21T19:10:21-03:00"
+            "date_modified": "2022-03-21T20:23:51-03:00"
         },
         {
             "id": "https://gutocarvalho.net/sem-telegram-entao-vem-pro-matrix/",
