@@ -3,12 +3,38 @@
     <title>Guto@Site</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2022-03-22T08:48:00-03:00</updated>
+    <updated>2022-03-31T19:28:28-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
     <id>https://gutocarvalho.net</id>
 
+    <entry>
+        <title>Multiwan em Casa</title>
+        <author>
+            <name>Guto Carvalho</name>
+        </author>
+        <link href="https://gutocarvalho.net/multiwan-em-casa-comofaz/"/>
+        <id>https://gutocarvalho.net/multiwan-em-casa-comofaz/</id>
+            <category term="FalaGutera"/>
+
+        <updated>2022-03-31T19:28:28-03:00</updated>
+            <summary>
+                <![CDATA[
+                    Multi-WAN + Balanceamento de Links Alguns profissionais – como eu – usam&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p><strong>Multi-WAN + Balanceamento de Links</strong></p>
+<p>Alguns profissionais – como eu – usam dois provedores para garantir que possam trabalhar sem interrupção em seu home office.</p>
+<p>Apesar de ter dois provedores, nem tudo são flores, ficar trocando de modem ou rede sem fio pode ser beeeem chato, além do que a rede WIFI de um modem vai interferir na outra, e mesmo que use cabos, ficar trocando o cabo de rede não é lá muito prático, em especial se está no meio de uma reunião, apresentação ou procedimento.<br><br>Para que a gente não passe por esses problemas, e para que a mudança de provedor ocorra de forma transparente, sem mexer com cabos ou trocar de rede sem fio, é preciso de um roteador <strong>multi-wan</strong> com balanceamento de links e também de um sistema wifi independente, de preferência com a tecnologia MESH.<br><br>Na minha primeira aventura nesse meio usei equipamentos da TP-Link<br><br>- Roteador TP-Link R600VPN<br>- Switch TP-Link 16 Portas Gigabit para ligar todos os dispositivos e quartos<br>- Access Point TP-Link Deco M5 ( 3 unidades )<br><br>Depois de alguns anos busquei algo mais flexível e profissional e adotei a UNIFI<br><br>- Unifi USG como roteador para 2 links de internet<br>- Unifi Switch8 60 para ligar todos os dispositivos e quartos<br>- Unifi Antena UAP-AC-M-BR Mesh A/C ( 2 unidades )<br><br><strong>E o provedor?</strong><br><br>É um pouco complexo conseguir retirar o modem do provedor, alguns não concordam, então nesse caso basta desligar o WIFI dos modems existentes, conectar seus novos equipamentos e usar o WIFI do seu sistema independente MESH.<br><br>Caso o provedor concorde em tirar o modem e deixar você discar PPPOE diretamente, o ideal é comprar um equipamento de conversão de FIBRA para ETHERNET do tipo GPON ou EPON, cada caso é um caso, isso vai depender da tecnologia do seu provedor.<br><br><strong>Curiosidades do meu cenário</strong><br><br>Aqui eu uso dois provedores de fibra, cada um vem de uma cidade diferente, em fibras independentes. O provedor principal tem IP Fixo oferece 50% de Upload em relação a velocidade contratada. Meu segundo provedor também oferece IP Fixo e 30% de upload em relação a velocidade contratada. Upload pra mim é importante por causa das Lives então o principal é o que tem mais upload, sempre.<br><br>Na maioria dos casos, o pessoal prefere usar o provedor de backup em planos com 50% ou até 1/3 da capacidade do plano principal, até para reduzir custos, mas varia de cada tipo de usuário, eu que sou power user, os planos são quase os mesmos. Aqui em casa eu não posso falhar, se perder internet levo 45 minutos a 1 hora para chegar em algum home office que tenha link bom o suficiente para eu conseguir trabalhar.<br><br><strong>Estratégias</strong><br><br>Podemos definir um balanceamento continuo entre os dois provedores ou então deixar o segundo como failover (backup), onde só será utilizado no caso de falha do primeiro, vai depender do gosto e necessidade de cada um.<br><br>É possível também criar grupos de dispositivos e definir que alguns vão sair por um provedor específico, com isso evitamos que o segundo link fique ocioso em caso de failover do primeiro, eu faço isso aqui, minhas alexas, tvs e smart devices estão pendurados no segundo provider de forma preferencial.<br><br><strong>Benefícios</strong><br><br>Confesso que eu nem percebo quando o provedor principal cai, é tudo bem transparente, se não fosse o APP no celular avisando eu nem iria saber que algo do tipo aconteceu.<br><br><strong>Referências</strong><br><br>TP-LINK</p>
+<p>- <a href="https://www.tp-link.com/br/business-networking/vpn-router/er605/">https://www.tp-link.com/br/business-networking/vpn-router/er605/</a>  router/lb<br>- <a href="https://www.tp-link.com/br/home-networking/wifi-router/deco-m5/">https://www.tp-link.com/br/home-networking/wifi-router/deco-m5/</a> antena wifi mesh<br>- <a href="https://tp-link.com/br/business-networking/easy-smart-switch/tl-sg108e/">https://www.tp-link.com/br/business-networking/easy-smart-switch/tl-sg108e/</a> switch</p>
+<p>UNIFI<br><br>- <a href="https://www.ui.com/unifi-routing/usg/">https://www.ui.com/unifi-routing/usg/</a> router/lb<br>- <a href="https://br.store.ui.com/products/unifi-ac-mesh-ap">https://br.store.ui.com/products/unifi-ac-mesh-ap</a> antena wifi mesh<br>- <a href="https://br.store.ui.com/products/unifi-switch-8-60w">https://br.store.ui.com/products/unifi-switch-8-60w</a> switch</p>
+<p><br>[s]<br>Guto</p>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>Canais de TI integrados em 3 redes!</title>
         <author>
@@ -17,7 +43,7 @@
         <link href="https://gutocarvalho.net/canais-de-ti-integrados-em-3-redes/"/>
         <id>https://gutocarvalho.net/canais-de-ti-integrados-em-3-redes/</id>
 
-        <updated>2022-03-21T20:23:45-03:00</updated>
+        <updated>2022-03-23T16:05:26-03:00</updated>
             <summary>
                 <![CDATA[
                     <p>Quer saber quais os canais integrados nas 3 redes? Então vem!</p>
@@ -46,7 +72,7 @@
         <id>https://gutocarvalho.net/novo-discord-server-bolhatech/</id>
             <category term="FalaGutera"/>
 
-        <updated>2022-03-22T08:48:00-03:00</updated>
+        <updated>2022-03-23T16:05:34-03:00</updated>
             <summary>
                 <![CDATA[
                     <p>Criamos um DISCORD para dominar o mundo... Brincadeira :P</p>
@@ -2441,33 +2467,6 @@ Guto</p>
             <![CDATA[
                 <p>Acompanhe o vídeo e se prepare para mais conteúdo ainda neste mês!</p>
 <iframe loading="lazy" width="600" height="314" src="https://www.youtube.com/embed/QSaHK_pUSl4" allowfullscreen="allowfullscreen" data-mce-fragment="1"></iframe></figure>
-<p>[s]<br>Guto</p>
-<p>--</p>
-<p>Este post é do tipo #MindNotes, entenda <a href="https://gutocarvalho.net/o-que-sao-mindnotes/">aqui</a>.</p>
-<p>Se gostou manda um alo no twitter <a href="https://twitter.com/gutocarvalho">@gutocarvalho</a>.</p>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>Post bacana sobre k8s multi-cluster</title>
-        <author>
-            <name>Guto Carvalho</name>
-        </author>
-        <link href="https://gutocarvalho.net/post-bacana-sobre-k8s-multi-cluster/"/>
-        <id>https://gutocarvalho.net/post-bacana-sobre-k8s-multi-cluster/</id>
-            <category term="MindNotes"/>
-
-        <updated>2022-02-23T17:13:18-03:00</updated>
-            <summary>
-                <![CDATA[
-                    <p>Essa semana eu encontrei esse post bacana sobre K8S Multi-Cluster.</p>
-
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                <p>Essa semana eu encontrei esse post bacana sobre K8S Multi-Cluster.</p>
-<span style="color: var(--text-editor-body-color); font-family: var(--font-base); font-size: inherit; font-weight: var(--font-weight-normal);">Vai lá e dá uma lida.<br><br>- <a href="https://www.cncf.io/blog/2021/04/12/simplifying-multi-clusters-in-kubernetes/">Simplifing Multi-Cluster in Kubernetes - CNCF Blog</a><br><br></span><span style="color: var(--text-editor-body-color); font-family: var(--font-base); font-size: inherit; font-weight: var(--font-weight-normal);">Recomendo a leitura!</span></p>
 <p>[s]<br>Guto</p>
 <p>--</p>
 <p>Este post é do tipo #MindNotes, entenda <a href="https://gutocarvalho.net/o-que-sao-mindnotes/">aqui</a>.</p>
