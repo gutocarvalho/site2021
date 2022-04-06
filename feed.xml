@@ -3,12 +3,39 @@
     <title>Guto@Site</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2022-04-03T18:20:44-03:00</updated>
+    <updated>2022-04-06T08:46:51-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
     <id>https://gutocarvalho.net</id>
 
+    <entry>
+        <title>Tomei um exposed do @badtux_</title>
+        <author>
+            <name>Guto Carvalho</name>
+        </author>
+        <link href="https://gutocarvalho.net/tomei-um-exposed-do-badtux/"/>
+        <id>https://gutocarvalho.net/tomei-um-exposed-do-badtux/</id>
+            <category term="FalaGutera"/>
+
+        <updated>2022-04-06T08:46:51-03:00</updated>
+            <summary>
+                <![CDATA[
+                    <p>Não é todo dia que a gente toma, mas esse é uma honra :)</p>
+
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p>Não é todo dia que a gente toma, mas esse é uma honra :)</p>
+
+<p>Eis que eu estava ontem na rua, resolvendo questões da vida, universo e tudo mais, de boas, e do nada o meu celular começou a pipocar notificação de todas as redes sociais possíveis e imagináveis, tudo graças a um EXPOSED do grande @Badtux_</p>
+<p>Muito obrigado meu parceiro e conte comigo sempre!</p>
+<figure class="post__video"><iframe loading="lazy" width="658" height="367" style="width: 658px; height: 367px;" src="https://www.youtube.com/embed/_Ah-pipPCQk" allowfullscreen="allowfullscreen" data-mce-fragment="1"></iframe></figure>
+<p>Ainda não conhece o @badtux_ e a #LinuxTips?<br><br>Demoro, cola lá <a href="https://www.linuxtips.io/">https://www.linuxtips.io/</a><br><br>[s]<br>Guto</p>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>Multiwan em Casa</title>
         <author>
@@ -1141,7 +1168,8 @@ Guto</p>
         <content type="html">
             <![CDATA[
                 <p>Já pensou em rodar o OSX via Docker e se conectar no ambiente?</p>
-Pois é, tem um projeto que oferece isso com performance quase nativa, basta executar a imagem e se conectar via X11-Forwarding.<br><br>Conheça!<br><br>- <a href="https://github.com/sickcodes/Docker-OSX">https://github.com/sickcodes/Docker-OSX</a><br><br>[s]<br>Guto</p>
+
+<p>Pois é, tem um projeto que oferece isso com performance quase nativa, basta executar a imagem e se conectar via X11-Forwarding.<br><br>Conheça!<br><br>- <a href="https://github.com/sickcodes/Docker-OSX">https://github.com/sickcodes/Docker-OSX</a><br><br>[s]<br>Guto</p>
             ]]>
         </content>
     </entry>
@@ -2448,33 +2476,6 @@ Guto</p>
 <p>Este post é do tipo #FalaGutera, entenda <a href="https://gutocarvalho.net/sobre-o-que-e-a-tag-falagutera/">aqui</a>.</p>
 <p>Se gostou manda um alo no twitter <a href="https://twitter.com/gutocarvalho">@gutocarvalho</a>.</p>
 
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>Vídeo da Live K8S com SaveInCloud</title>
-        <author>
-            <name>Guto Carvalho</name>
-        </author>
-        <link href="https://gutocarvalho.net/video-da-live-k8s-com-saveincloud/"/>
-        <id>https://gutocarvalho.net/video-da-live-k8s-com-saveincloud/</id>
-            <category term="MindNotes"/>
-
-        <updated>2022-02-23T17:11:27-03:00</updated>
-            <summary>
-                <![CDATA[
-                    <p>Acompanhe o vídeo e se prepare para mais conteúdo ainda neste mês!</p>
-
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                <p>Acompanhe o vídeo e se prepare para mais conteúdo ainda neste mês!</p>
-<iframe loading="lazy" width="600" height="314" src="https://www.youtube.com/embed/QSaHK_pUSl4" allowfullscreen="allowfullscreen" data-mce-fragment="1"></iframe></figure>
-<p>[s]<br>Guto</p>
-<p>--</p>
-<p>Este post é do tipo #MindNotes, entenda <a href="https://gutocarvalho.net/o-que-sao-mindnotes/">aqui</a>.</p>
-<p>Se gostou manda um alo no twitter <a href="https://twitter.com/gutocarvalho">@gutocarvalho</a>.</p>
             ]]>
         </content>
     </entry>

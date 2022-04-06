@@ -10,6 +10,21 @@
     },
     "items": [
         {
+            "id": "https://gutocarvalho.net/tomei-um-exposed-do-badtux/",
+            "url": "https://gutocarvalho.net/tomei-um-exposed-do-badtux/",
+            "title": "Tomei um exposed do @badtux_",
+            "summary": "<p>Não é todo dia que a gente toma, mas esse é uma honra :)</p>\n",
+            "content_html": "<p>Não é todo dia que a gente toma, mas esse é uma honra :)</p>\n\n<p>Eis que eu estava ontem na rua, resolvendo questões da vida, universo e tudo mais, de boas, e do nada o meu celular começou a pipocar notificação de todas as redes sociais possíveis e imagináveis, tudo graças a um EXPOSED do grande @Badtux_</p>\n<p>Muito obrigado meu parceiro e conte comigo sempre!</p>\n<figure class=\"post__video\"><iframe loading=\"lazy\" width=\"658\" height=\"367\" style=\"width: 658px; height: 367px;\" src=\"https://www.youtube.com/embed/_Ah-pipPCQk\" allowfullscreen=\"allowfullscreen\" data-mce-fragment=\"1\"></iframe></figure>\n<p>Ainda não conhece o @badtux_ e a #LinuxTips?<br><br>Demoro, cola lá <a href=\"https://www.linuxtips.io/\">https://www.linuxtips.io/</a><br><br>[s]<br>Guto</p>",
+            "author": {
+                "name": "Guto Carvalho"
+            },
+            "tags": [
+                   "FalaGutera"
+            ],
+            "date_published": "2022-04-06T08:43:22-03:00",
+            "date_modified": "2022-04-06T08:46:51-03:00"
+        },
+        {
             "id": "https://gutocarvalho.net/multiwan-em-casa-comofaz/",
             "url": "https://gutocarvalho.net/multiwan-em-casa-comofaz/",
             "title": "Multiwan em Casa",
@@ -105,7 +120,7 @@
             "url": "https://gutocarvalho.net/conheca-o-projeto-docker-osx/",
             "title": "Conheça o projeto Docker OSX",
             "summary": "<p>Já pensou em rodar o OSX via Docker e se conectar no ambiente?</p>\n",
-            "content_html": "<p>Já pensou em rodar o OSX via Docker e se conectar no ambiente?</p>\nPois é, tem um projeto que oferece isso com performance quase nativa, basta executar a imagem e se conectar via X11-Forwarding.<br><br>Conheça!<br><br>- <a href=\"https://github.com/sickcodes/Docker-OSX\">https://github.com/sickcodes/Docker-OSX</a><br><br>[s]<br>Guto</p>",
+            "content_html": "<p>Já pensou em rodar o OSX via Docker e se conectar no ambiente?</p>\n\n<p>Pois é, tem um projeto que oferece isso com performance quase nativa, basta executar a imagem e se conectar via X11-Forwarding.<br><br>Conheça!<br><br>- <a href=\"https://github.com/sickcodes/Docker-OSX\">https://github.com/sickcodes/Docker-OSX</a><br><br>[s]<br>Guto</p>",
             "author": {
                 "name": "Guto Carvalho"
             },
@@ -146,21 +161,6 @@
             ],
             "date_published": "2022-02-26T21:49:31-03:00",
             "date_modified": "2022-03-21T19:11:15-03:00"
-        },
-        {
-            "id": "https://gutocarvalho.net/video-da-live-k8s-com-saveincloud/",
-            "url": "https://gutocarvalho.net/video-da-live-k8s-com-saveincloud/",
-            "title": "Vídeo da Live K8S com SaveInCloud",
-            "summary": "<p>Acompanhe o vídeo e se prepare para mais conteúdo ainda neste mês!</p>\n",
-            "content_html": "<p>Acompanhe o vídeo e se prepare para mais conteúdo ainda neste mês!</p>\n<iframe loading=\"lazy\" width=\"600\" height=\"314\" src=\"https://www.youtube.com/embed/QSaHK_pUSl4\" allowfullscreen=\"allowfullscreen\" data-mce-fragment=\"1\"></iframe></figure>\n<p>[s]<br>Guto</p>\n<p>--</p>\n<p>Este post é do tipo #MindNotes, entenda <a href=\"https://gutocarvalho.net/o-que-sao-mindnotes/\">aqui</a>.</p>\n<p>Se gostou manda um alo no twitter <a href=\"https://twitter.com/gutocarvalho\">@gutocarvalho</a>.</p>",
-            "author": {
-                "name": "Guto Carvalho"
-            },
-            "tags": [
-                   "MindNotes"
-            ],
-            "date_published": "2022-02-23T17:10:26-03:00",
-            "date_modified": "2022-02-23T17:11:27-03:00"
         }
     ]
 }
