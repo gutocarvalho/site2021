@@ -3,12 +3,86 @@
     <title>Guto@Site</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2022-04-14T18:41:27-03:00</updated>
+    <updated>2022-04-14T19:29:45-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
     <id>https://gutocarvalho.net</id>
 
+    <entry>
+        <title>Projeto MailCow</title>
+        <author>
+            <name>Guto Carvalho</name>
+        </author>
+        <link href="https://gutocarvalho.net/projeto-mailcow/"/>
+        <id>https://gutocarvalho.net/projeto-mailcow/</id>
+            <category term="MindNotes"/>
+
+        <updated>2022-04-14T19:29:45-03:00</updated>
+            <summary>
+                <![CDATA[
+                    Tava dando uma olhada nas alternativas ao zimbra em 2002 e encontrei&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p>Tava dando uma olhada nas alternativas ao zimbra em 2002 e encontrei esse projeto.</p>
+<p>Eu ainda não testei, mas achei interessante.</p>
+<h3 id="site-do-projeto">Site do projeto</h3>
+<ul>
+<li><a href="https://mailcow.github.io">https://mailcow.github.io</a></li>
+</ul>
+<h3 id="código-fonte">Código fonte</h3>
+<ul>
+<li><a href="https://github.com/mailcow">https://github.com/mailcow</a></li>
+<li><a href="https://github.com/mailcow/mailcow-dockerized">https://github.com/mailcow/mailcow-dockerized</a></li>
+</ul>
+<h3 id="stack-do-projeto">Stack do projeto</h3>
+<ul>
+<li>ACME</li>
+<li>ClamAV (optional)</li>
+<li>Dovecot</li>
+<li>MariaDB</li>
+<li>Memcached</li>
+<li>Netfilter (Fail2ban-like integration by @mkuron)</li>
+<li>Nginx</li>
+<li>Oletools via Olefy</li>
+<li>PHP</li>
+<li>Postfix</li>
+<li>Redis</li>
+<li>Rspamd</li>
+<li>SOGo</li>
+<li>Solr (optional)</li>
+<li>Unbound</li>
+<li>A Watchdog to provide basic monitoring</li>
+</ul>
+<h3 id="features">Features</h3>
+<ul>
+<li>DKIM and ARC support</li>
+<li>Black- and whitelists per domain and per user</li>
+<li>Spam score management per-user (reject spam, mark spam, greylist)</li>
+<li>Allow mailbox users to create temporary spam aliases</li>
+<li>Prepend mail tags to subject or move mail to sub folder (per-user)</li>
+<li>Allow mailbox users to toggle incoming and outgoing TLS enforcement</li>
+<li>Allow users to reset SOGo ActiveSync device caches</li>
+<li>imapsync to migrate or pull remote mailboxes regularly</li>
+<li>TFA: Yubikey OTP and U2F USB (Google Chrome and derivatives only), TOTP</li>
+<li>Add domains, mailboxes, aliases, domain aliases and SOGo resources</li>
+<li>Add whitelisted hosts to forward mail to mailcow</li>
+<li>Fail2ban-like integration</li>
+<li>Quarantine system</li>
+<li>Antivirus scanning incl. macro scanning in office documents- </li>
+<li>Integrated basic monitoring</li>
+</ul>
+<p>Dentre outras coisas.</p>
+<p>Preciso testar qualquer hora…</p>
+<p>;)</p>
+<p>[s]<br>
+Guto</p>
+
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>Postal MTA</title>
         <author>
@@ -591,670 +665,6 @@ Guto</p>
 <p>[s]<br>Guto<br><br></p>
 <p>---<br><br>Este post é do tipo #FalaGutera, entenda <a href="https://gutocarvalho.net/sobre-o-que-e-a-tag-falagutera/">aqui</a>.</p>
 <p>Se gostou manda um alo no twitter <a href="https://twitter.com/gutocarvalho">@gutocarvalho</a>.</p>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>DIG Crash Course</title>
-        <author>
-            <name>Guto Carvalho</name>
-        </author>
-        <link href="https://gutocarvalho.net/dig-crash-course/"/>
-        <id>https://gutocarvalho.net/dig-crash-course/</id>
-            <category term="crash-course"/>
-            <category term="MindNotes"/>
-
-        <updated>2022-03-14T10:02:20-03:00</updated>
-            <summary>
-                <![CDATA[
-                    DIG Crash Course O DIG é uma ferramenta para interrogar servidores de&hellip;
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                <h1 id="dig-crash-course">DIG Crash Course</h1>
-<p>O DIG é uma ferramenta para interrogar servidores de DNS.</p>
-<p>Com o DIG nós conseguiremos fazer lookup de DNS com objetivos simples como troubleshooting por exemplo.</p>
-<p>A ideia aqui é fazer um crash course dessa ferramenta. </p>
-<p>Um Crash Course é um tipo de “curso rápido” sobre um determinado assunto, indo direto ao ponto de forma mais objetiva possível.</p>
-<h2 id="quando-devo-usar-o-dig">Quando devo usar o DIG?</h2>
-<p>Sempre que você precisar verificar alguma coisa em nível de DNS, seguem alguns cenários que o DIG pode te ajudar :</p>
-<ul>
-<li>para testar se a resolução de DNS está funcionando</li>
-<li>para comparar a resolução de DNS entre NS diferentes</li>
-<li>quando precisamos resolver um problema de DNS</li>
-<li>para descobrir o IP de um registro de DNS</li>
-<li>para descobrir o MX de um domínio</li>
-<li>para descobrir o NS de um domínio</li>
-<li>para descobrir o SOA de um domínio</li>
-<li>para descobrir o PTR (reverso) de um endereço IP</li>
-<li>para verificar se uma alteração de registro já fez efeito</li>
-</ul>
-<p>Essas são algumas das situações mais básicas em que o DIG pode ser útil.</p>
-<h2 id="para-quem-foi-feito-esse-post">Para quem foi feito esse post?</h2>
-<p>Aqui o foco está nas pessoas atuando nas posições abaixo:</p>
-<ul>
-<li>Sysadmin;</li>
-<li>Cloud Native Engineer;</li>
-<li>Cloud Engineer;</li>
-<li>DevOps Engineer;</li>
-<li>Plataform Engineer;</li>
-<li>GitOps Engineer.</li>
-</ul>
-<h2 id="momento-merchan-p">Momento Merchan :P</h2>
-<p>Me siga no twitter <a href="https://twitter.com/gutocarvalho">@gutocarvalho</a> e acompanhe meus posts sobre Cloud Native e CI/CD.</p>
-<p>Aproveite e siga a <a href="https://twitter.com/CDeliveryFdn">CD Foundation</a> e <a href="https://twitter.com/cloudnativefdn">Cloud Native Foundation</a> no twitter.</p>
-<h2 id="colaboradores">Colaboradores</h2>
-<p>Pessoas que colaboraram com o texto.</p>
-<ul>
-<li>Julia Lamenza (@jlamenza)</li>
-<li>João (@P0ssuidao)</li>
-<li>Rafael Gomex (@gomex)</li>
-<li>Rafael Silva (@rafaotetra)</li>
-</ul>
-<h2 id="dig-crash-course-1">Dig Crash Course</h2>
-<h3 id="aprendendo-o-básico-para-uso-no-dia-a-dia">Aprendendo o básico para uso no dia a dia</h3>
-<h4 id="fazendo-uma-pesquisa-simples-com-todos-os-detalhes">fazendo uma pesquisa simples com todos os detalhes</h4>
-<pre><code>$ dig gutocarvalho.net
-</code></pre>
-<h4 id="fazendo-uma-pesquisa-simples-retornando-só-o-ip">fazendo uma pesquisa simples retornando só o IP</h4>
-<pre><code>$ dig +short gutocarvalho.net
-</code></pre>
-<h4 id="pesquisando-o-soa-do-domínio">pesquisando o SOA do domínio</h4>
-<pre><code>$ dig SOA gutocarvalho.net
-</code></pre>
-<h4 id="pesquisando-o-ns-do-domínio">pesquisando o NS do domínio</h4>
-<pre><code>$ dig NS gutocarvalho.net 
-</code></pre>
-<h4 id="pesquisando-o-mx-de-correio">pesquisando o MX de correio</h4>
-<pre><code>$ dig MX gutocarvalho.nmet
-</code></pre>
-<h4 id="pesquisando-o-ttl-do-domínio">pesquisando o TTL do domínio</h4>
-<pre><code>$ dig TTL gutocarvalho.net
-</code></pre>
-<h4 id="pesquisando-o-ptr-reverso-de-um-ip">pesquisando o PTR (reverso) de um IP</h4>
-<pre><code>$ dig -x 8.8.8.8
-</code></pre>
-<h4 id="pesquisando-os-registros-txt-de-um-domínio">pesquisando os registros TXT de um domínio</h4>
-<pre><code>$ dig txt gutocarvalho.net
-</code></pre>
-<h3 id="explorando-um-pouco-mais-o-dig">Explorando um pouco mais o DIG</h3>
-<h4 id="pesquisando-um-registro-em-um-ns-específico">pesquisando um registro em um NS específico</h4>
-<pre><code>$ dig @1.1.1.1 lb.gutocarvalho
-</code></pre>
-<h4 id="pesquisando-as-informações-dnssec-de-um-domínio">pesquisando as informações DNSSEC de um domínio</h4>
-<pre><code>$ dig +dnssec gutocarvalho.net
-</code></pre>
-<h3 id="pesquisando-as-chaves-dnssec-de-um-domínio">pesquisando as chaves DNSSEC de um domínio</h3>
-<pre><code>$ dig DNSKEY -qr gutocarvalho.net
-</code></pre>
-<h4 id="pesquisando-uma-entrada-de-dns-com-trace">pesquisando uma entrada de DNS com trace</h4>
-<pre><code>$ dig +trace lb.gutocarvalho.net
-</code></pre>
-<h4 id="verificando-o-tempo-de-resposta-do-soa-de-um-domínio">verificando o tempo de resposta do SOA de um domínio</h4>
-<pre><code>$ dig +nssearch gutocarvalho.net
-</code></pre>
-<h3 id="parâmetros-interessantes-do-dig">Parâmetros interessantes do DIG</h3>
-<h4 id="short">+short</h4>
-<pre><code>$ dig gutocarvalho.net +short
-
-185.199.110.153
-185.199.111.153
-185.199.108.153
-185.199.109.153
-</code></pre>
-<p>O short só retorna os IPs para qual o registro aponta.</p>
-<h4 id="tcp">+tcp</h4>
-<pre><code>$ dig +tcp gutocarvalho.net
-</code></pre>
-<p>Usado quando desejamos fazer a pesquisa via TCP, o padrão é UDP.</p>
-<h4 id="time">+time</h4>
-<pre><code>$ dig +time=5 gutocarvalho.net
-</code></pre>
-<p>Define o timeout da pesquisa para 5 segundos.</p>
-<h4 id="multiline">+multiline</h4>
-<pre><code>$ dig gutocarvalho.net A +dnssec +multiline
-</code></pre>
-<p>Vai pesquisar entradas A com DNSSEC associado em multi-linhas.</p>
-<h3 id="filtrando-saída-do-dig-com-parâmetros-especiais">Filtrando saída do DIG com parâmetros especiais</h3>
-<p>Primeiro vamos fazer uma pesquisa comum para ter uma saída completa</p>
-<pre><code>$ dig gutocarvalho.net
-
-; &lt;&lt;&gt;&gt; DiG 9.10.6 &lt;&lt;&gt;&gt; gutocarvalho.net
-;; global options: +cmd
-;; Got answer:
-;; -&gt;&gt;HEADER&lt;&lt;- opcode: QUERY, status: NOERROR, id: 40038
-;; flags: qr rd ra ad; QUERY: 1, ANSWER: 4, AUTHORITY: 0, ADDITIONAL: 1
-
-;; OPT PSEUDOSECTION:
-; EDNS: version: 0, flags:; udp: 4096
-;; QUESTION SECTION:
-;gutocarvalho.net.        IN    A
-
-;; ANSWER SECTION:
-gutocarvalho.net.    300    IN    A    185.199.108.153
-gutocarvalho.net.    300    IN    A    185.199.109.153
-gutocarvalho.net.    300    IN    A    185.199.110.153
-gutocarvalho.net.    300    IN    A    185.199.111.153
-
-;; Query time: 38 msec
-;; SERVER: 1.1.1.1#53(1.1.1.1)
-;; WHEN: Sat Mar 12 18:53:55 -03 2022
-;; MSG SIZE  rcvd: 109
-</code></pre>
-<p>Agora vamos testando cada parâmetro</p>
-<h4 id="noall">+noall</h4>
-<pre><code>$ dig gutocarvalho.net +noall
-
-; &lt;&lt;&gt;&gt; DiG 9.10.6 &lt;&lt;&gt;&gt; gutocarvalho.net +noall
-;; global options: +cmd
-</code></pre>
-<p>Observe que o noall omite toda a saída do comando, ele normalmente é usado com outros comandos de forma composta, um exemplo é o answer.</p>
-<h4 id="answer-noall">+answer +noall</h4>
-<pre><code>$ dig gutocarvalho.net +noall +answer
-
-; &lt;&lt;&gt;&gt; DiG 9.10.6 &lt;&lt;&gt;&gt; gutocarvalho.net +noall +answer
-;; global options: +cmd
-gutocarvalho.net.    300    IN    A    185.199.111.153
-gutocarvalho.net.    300    IN    A    185.199.108.153
-gutocarvalho.net.    300    IN    A    185.199.109.153
-gutocarvalho.net.    300    IN    A    185.199.110.153
-</code></pre>
-<p>O answer é útil junto com o noall, ele vai nos trazer apenas a resposta, sem comments, question, authority, stats e quaisquer outras informações que estiverem disponíveis na resposta.</p>
-<h4 id="nocmd">+nocmd</h4>
-<pre><code> dig +nocmd a lb.gutocarvalho.net +noall +answer
-lb.gutocarvalho.net.    42    IN    A    200.150.204.87
-</code></pre>
-<p>Quando aplicado retira a versao do bind e comando</p>
-<pre><code>; &lt;&lt;&gt;&gt; DiG 9.10.6 &lt;&lt;&gt;&gt; a lb.gutocarvalho.net +noall +answer
-</code></pre>
-<p>Para funcionar o parâmetro tem que vir logo após o comando dig</p>
-<h4 id="nocomments">+nocomments</h4>
-<pre><code>$ dig gutocarvalho.net +nocomments
-
-; &lt;&lt;&gt;&gt; DiG 9.10.6 &lt;&lt;&gt;&gt; gutocarvalho.net +nocomments
-;; global options: +cmd
-;gutocarvalho.net.        IN    A
-gutocarvalho.net.    297    IN    A    185.199.110.153
-gutocarvalho.net.    297    IN    A    185.199.111.153
-gutocarvalho.net.    297    IN    A    185.199.108.153
-gutocarvalho.net.    297    IN    A    185.199.109.153
-;; Query time: 29 msec
-;; SERVER: 1.1.1.1#53(1.1.1.1)
-;; WHEN: Sat Mar 12 18:58:57 -03 2022
-;; MSG SIZE  rcvd: 109
-</code></pre>
-<p>O nocomments retira toda a parte inicial da resposta</p>
-<pre><code>; &lt;&lt;&gt;&gt; DiG 9.10.6 &lt;&lt;&gt;&gt; gutocarvalho.net
-;; global options: +cmd
-;; Got answer:
-;; -&gt;&gt;HEADER&lt;&lt;- opcode: QUERY, status: NOERROR, id: 40925
-;; flags: qr rd ra ad; QUERY: 1, ANSWER: 4, AUTHORITY: 0, ADDITIONAL: 1
-
-;; OPT PSEUDOSECTION:
-; EDNS: version: 0, flags:; udp: 4096
-;; QUESTION SECTION:
-;gutocarvalho.net.        IN    A
-</code></pre>
-<h4 id="noquestion">+noquestion</h4>
-<pre><code>$ dig gutocarvalho.net +noquestion
-
-; &lt;&lt;&gt;&gt; DiG 9.10.6 &lt;&lt;&gt;&gt; gutocarvalho.net +noquestion
-;; global options: +cmd
-;; Got answer:
-;; -&gt;&gt;HEADER&lt;&lt;- opcode: QUERY, status: NOERROR, id: 10078
-;; flags: qr rd ra ad; QUERY: 1, ANSWER: 4, AUTHORITY: 0, ADDITIONAL: 1
-
-;; OPT PSEUDOSECTION:
-; EDNS: version: 0, flags:; udp: 4096
-;; ANSWER SECTION:
-gutocarvalho.net.    300    IN    A    185.199.108.153
-gutocarvalho.net.    300    IN    A    185.199.109.153
-gutocarvalho.net.    300    IN    A    185.199.110.153
-gutocarvalho.net.    300    IN    A    185.199.111.153
-
-;; Query time: 42 msec
-;; SERVER: 1.1.1.1#53(1.1.1.1)
-;; WHEN: Sat Mar 12 19:01:58 -03 2022
-;; MSG SIZE  rcvd: 109
-</code></pre>
-<p>O noquestion retira essa parte da resposta</p>
-<pre><code>;; QUESTION SECTION:
-;gutocarvalho.net.        IN    A
-</code></pre>
-<h4 id="nostats">+nostats</h4>
-<pre><code>$ dig gutocarvalho.net +nostats
-
-; &lt;&lt;&gt;&gt; DiG 9.10.6 &lt;&lt;&gt;&gt; gutocarvalho.net +nostats
-;; global options: +cmd
-;; Got answer:
-;; -&gt;&gt;HEADER&lt;&lt;- opcode: QUERY, status: NOERROR, id: 63625
-;; flags: qr rd ra ad; QUERY: 1, ANSWER: 4, AUTHORITY: 0, ADDITIONAL: 1
-
-;; OPT PSEUDOSECTION:
-; EDNS: version: 0, flags:; udp: 4096
-;; QUESTION SECTION:
-;gutocarvalho.net.        IN    A
-
-;; ANSWER SECTION:
-gutocarvalho.net.    300    IN    A    185.199.109.153
-gutocarvalho.net.    300    IN    A    185.199.110.153
-gutocarvalho.net.    300    IN    A    185.199.111.153
-gutocarvalho.net.    300    IN    A    185.199.108.153
-</code></pre>
-<p>Esse parâmetro suprime as estatísticas da pesquisa.</p>
-<pre><code>;; Query time: 38 msec
-;; SERVER: 1.1.1.1#53(1.1.1.1)
-;; WHEN: Sat Mar 12 19:13:28 -03 2022
-;; MSG SIZE  rcvd: 109
-</code></pre>
-<h4 id="noauthority">+noauthority</h4>
-<pre><code>;; AUTHORITY SECTION:
-gutocarvalho.net.    3144    IN    NS    monroe.ns.cloudflare.com.
-gutocarvalho.net.    3144    IN    NS    houston.ns.cloudflare.com.
-</code></pre>
-<p>É útil para remover essa parte da resposta, caso retorne o authority na pesquisa.</p>
-<h4 id="noadditional">+noadditional</h4>
-<pre><code>;; ADDITIONAL SECTION:
-lia.ns.cloudflare.com.    84354    IN    A      173.245.58.185
-lia.ns.cloudflare.com.    170762    IN    AAAA  2400:cb00:2049:1::adf5:3ab9
-mark.ns.cloudflare.com.    170734    IN    A      173.245.59.130
-mark.ns.cloudflare.com.    170734    IN    AAAA  2400:cb00:2049:1::adf5:3b82
-</code></pre>
-<p>A seção aditional pode trazer informações como o IP dos DNS Server autoritativos da seção authority, esse parâmetro suprime esse trecho.</p>
-<h4 id="norec">+norec</h4>
-<pre><code>$ dig +norec @monroe.ns.cloudflare.com. gutocarvalho.net a
-</code></pre>
-<p>Essa opção desabilita a pesquisa recursiva, neste caso a CloudFlare 
-e responsável por responder por meu domínio, sendo que o servidor monroe é um dos meus servidores DNS, ele já sabe a resposta.</p>
-<h2 id="pesquisas-parametrizadas-comuns">Pesquisas parametrizadas comuns</h2>
-<p>pesquisa comum e rápida que retorna apenas o endereço IP</p>
-<pre><code>$ dig +short lb.gutocarvalho.net
-</code></pre>
-<p>pesquisando por registro A com resposta simples</p>
-<pre><code>$ dig +nocmd lb.gutocarvalho.net a +noall +answer
-</code></pre>
-<p>pesquisando por CNAME com resposta simples</p>
-<pre><code>$ dig +nocmd mail.google.com cname +noall +answer
-</code></pre>
-<p>pesquisando por registro TXT com resposta simples</p>
-<pre><code>$ dig +nocmd google.com txt +noall +answer
-</code></pre>
-<p>fazendo pesquisa em múltiplos domínios</p>
-<pre><code>$ dig ubuntu.com mx +noall +answer redhat.com ns +noall +answer
-</code></pre>
-<h2 id="pesquisa-usando-um-arquivo-bulk">Pesquisa usando um arquivo (bulk)</h2>
-<p>Imagine que você tem o arquivo dominios.txt com o conteúdo abaixo</p>
-<pre><code>gutocarvalho.net
-nativetrail.io
-viahorizonte.life
-</code></pre>
-<p>vamos rodar agora uma pesquisa contra o arquivo</p>
-<pre><code>$ dig -f dominios.txt +short
-</code></pre>
-<p>saída</p>
-<pre><code>185.199.110.153
-185.199.111.153
-185.199.108.153
-185.199.109.153
-185.199.111.153
-185.199.108.153
-185.199.109.153
-185.199.110.153
-185.199.110.153
-185.199.111.153
-185.199.108.153
-185.199.109.153
-</code></pre>
-<p>:)</p>
-<h3 id="quer-saber-mais">Quer saber mais?</h3>
-<p>Para saber mais veja o help do comando</p>
-<pre><code>$ dig --help
-</code></pre>
-<p>Para ir além acesse a manpage</p>
-<pre><code>$ man dig
-</code></pre>
-<h2 id="configurando-seu-digrc">Configurando seu .digrc</h2>
-<p>O dig tem um arquivo de configuração, o famoso .digrc.</p>
-<pre><code>$ echo &quot;+nostats +nocomments +nocmd +noquestion +recurse&quot; &gt; ~/.digrc
-</code></pre>
-<p>Agora você digita menos e tem o resultado desejado.</p>
-<h2 id="um-pouco-de-teoria-de-dns-para-quem-gosta-">Um pouco de teoria de DNS para quem gosta :)</h2>
-<h3 id="entendendo-o-funcionamento-do-dig">Entendendo o funcionamento do DIG</h3>
-<p>Imagine que mandamos essa query pelo dig</p>
-<pre><code>$ dig gutocarvalho.net
-</code></pre>
-<p>Essa query é estrutura da seguinte forma pelo DIG para o servidor de DNS autoritativo</p>
-<pre><code>
-           +-------------------------------------+
-Header     | OPCODE=SQUERY                       |
-           +-------------------------------------+
-Question   | QNAME=GUTO.NET., QCLASS=IN, QTYPE=A |
-           +-------------------------------------+
-Answer     | &lt;empty&gt;                             |
-           +-------------------------------------+
-Authority  | &lt;empty&gt;                             |
-           +-------------------------------------+
-Additional | &lt;empty&gt;                             |
-           +-------------------------------------+
-           
-</code></pre>
-<p>A resposta do servidor que responde pelo domínio foi essa</p>
-<pre><code>
-; &lt;&lt;&gt;&gt; DiG 9.10.6 &lt;&lt;&gt;&gt; gutocarvalho.net
-;; global options: +cmd
-;; Got answer:
-;; -&gt;&gt;HEADER&lt;&lt;- opcode: QUERY, status: NOERROR, id: 48153
-;; flags: qr rd ra ad; QUERY: 1, ANSWER: 4, AUTHORITY: 0, ADDITIONAL: 1
-
-;; OPT PSEUDOSECTION:
-; EDNS: version: 0, flags:; udp: 4096
-;; QUESTION SECTION:
-;gutocarvalho.net.        IN    A
-
-;; ANSWER SECTION:
-gutocarvalho.net.    300    IN    A    185.199.110.153
-gutocarvalho.net.    300    IN    A    185.199.111.153
-gutocarvalho.net.    300    IN    A    185.199.108.153
-gutocarvalho.net.    300    IN    A    185.199.109.153
-
-;; Query time: 146 msec
-;; SERVER: 1.1.1.1#53(1.1.1.1)
-;; WHEN: Sun Mar 13 10:37:26 -03 2022
-;; MSG SIZE  rcvd: 109
-</code></pre>
-<p>Podemos estruturar dessa forma para entender melhor</p>
-<pre><code>           +--------------------------------------------+
-Header     | OPCODE=SQUERY, RESPONSE, AA                |
-           +--------------------------------------------+
-Question   | QNAME=GUTO.NET., QCLASS=IN, QTYPE=A        |
-           +--------------------------------------------+
-Answer     | GUTO.NET. 300 IN A 185.199.108.153         | 
-           |                   300 IN A 185.199.109.153 |
-           |                   300 IN A 185.199.110.153 |
-           |                   300 IN A 185.199.111.153 |
-           +--------------------------------------------+
-Authority  | &lt;empty&gt;                                    |
-           +--------------------------------------------+
-Additional | &lt;empty&gt;                                    |
-           +--------------------------------------------+
-</code></pre>
-<h3 id="entendendo-as-repostas-entregues-pelo-dig">Entendendo as repostas entregues pelo DIG</h3>
-<p>Uma resposta de consulta do DIG vem composta por informações separadas nas seções Header, Question, Answer, Authority e Additional.</p>
-<pre><code>+------------+
-| Header     | Cabeçalho com informações diversas 
-+------------+
-| Question   | A questão enviada para o nameserver
-+------------+
-| Answer     | Registros que vão responder a query
-+------------+
-| Authority  | Registros da autoridade do domínio
-+------------+
-| Additional | Registros com informações adicionais
-+------------+
-</code></pre>
-<p>Vamos entender cada uma delas.</p>
-<pre><code>- Header section, um cabeçalho fixo que contém ID, flgas e informações das outras seções (contadores)
-
-- Question section, contém a query que foi passada (QNAME), o tipo (QTYPE) e a classe (QCLLASS). Na resposta receberemos novamente a query
-
-- Answer section, pode conter a lista de reguistros, se houver resposta cada um irá trazer QNAME, QTYPE, QCLASS, TTL e informaçÕes de RDATA
-
-- Authority section, pode conter a lista de registros que apontam para os servidores autoritativos
-
-- Additional section, pode conter outros registros e mais informações sobre os servidores autoritativos
-</code></pre>
-<h4 id="header-section">HEADER SECTION</h4>
-<pre><code>;; -&gt;&gt;HEADER&lt;&lt;- opcode: QUERY, status: NOERROR, id: 63625
-;; flags: qr rd ra ad; QUERY: 1, ANSWER: 4, AUTHORITY: 0, ADDITIONAL: 1
-</code></pre>
-<p>Informações que encontramos do HEADER</p>
-<pre><code>+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+
-|                      ID                       |
-+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+
-|QR|   Opcode  |AA|TC|RD|RA| Z|AD|CD|   RCODE   |
-+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+
-|                    QDCOUNT                    |
-+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+
-|                    ANCOUNT                    |
-+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+
-|                    NSCOUNT                    |
-+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+
-|                    ARCOUNT                    |
-+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+
-</code></pre>
-<p>Entendendo as informações do HEADER</p>
-<pre><code>QR pode conter
-
-- 0, QUERY 
-- 1, RESPONSE
-
-OPCODE pode conter os seguintes valores:
-
-- 0    Query    [RFC1035]
-- 2    Status    [RFC1035]
-- 3    Unassigned    
-- 4    Notify    [RFC1996]
-- 5    Update    [RFC2136]
-- 6    DNS Stateful Operations (DSO)    [RFC8490]
-- 7-15    Unassigned
-
-No Header vamos encontrar as seguintes FLAGs:
-
-- AA: Authoritative Answer (set by the server)
-- TC: message is TrunCated (set by the server)
-- RD: Recursion Desired (set by the client and copied to the response)
-- RA: Recursion Available (set by the server)
-- AD: Authenticated Data, DNSSEC flag (set by the server)
-- CD: Checking Disabled, DNSSEC flag (set by the client, copied to the response)
-
- No Header vamos encontrar o RCODE/Status (4 bits) que pode conter:
-
-- 0    NoError    No Error    [RFC1035]
-- 1    FormErr    Format Error    [RFC1035]
-- 2    ServFail    Server Failure    [RFC1035]
-- 3    NXDomain    Non-Existent Domain    [RFC1035]
-- 4    NotImp    Not Implemented    [RFC1035]
-- 5    Refused    Query Refused    [RFC1035]
-- 6    YXDomain    Name Exists when it should not    [RFC2136][RFC6672]
-- 7    YXRRSet    RR Set Exists when it should not    [RFC2136]
-- 8    NXRRSet    RR Set that should exist does not    [RFC2136]
-- 9    NotAuth    Server Not Authoritative for zone    [RFC2136]
-- 9    NotAuth    Not Authorized    [RFC8945]
-- 10    NotZone    Name not contained in zone    [RFC2136]
-- 11    DSOTYPENI    DSO-TYPE Not Implemented    [RFC8490]
-- 12-15    Unassigned        
-- 16    BADVERS    Bad OPT Version    [RFC6891]
-- 16    BADSIG    TSIG Signature Failure    [RFC8945]
-- 17    BADKEY    Key not recognized    [RFC8945]
-- 18    BADTIME    Signature out of time window    [RFC8945]
-- 19    BADMODE    Bad TKEY Mode    [RFC2930]
-- 20    BADNAME    Duplicate key name    [RFC2930]
-- 21    BADALG    Algorithm not supported    [RFC2930]
-- 22    BADTRUNC    Bad Truncation    [RFC8945]
-- 23    BADCOOKIE    Bad/missing Server Cookie    [RFC7873]
-- 24-3840    Unassigned        
-- 3841-4095    Reserved for Private Use        [RFC6895]
-- 4096-65534    Unassigned        
-- 65535    Reserved, can be allocated by Standards Action        [RFC6895]
-
-No Header também temos contadores, são eles:
-
-- QDCOUNT, número de respostas da seção queries
-- ANCOUNT, número de respostas da seção answers
-- NSCOUNT, número de respostas da seção autoritativos
-- ARCOUNT, número de respostas da seção adicional
-
-Os contadores vão retornar o número de registros encontrados na pesquisa
-</code></pre>
-<p>Entendendo um pouco mais das Flags do HEADER</p>
-<pre><code>Você verá que na resposta teremos geralmente 4 flags setadas, sao elas:
-
-- qr, rd, ra, ad.
-
-Vamos entendê-las agora
-
-- QR, é uma flag diferente que pode retornar 0 ou 1, 1 significa query
-
-- RD significa &quot;recursive desired&quot;, sinaliza que desejamos usar pesquisa recursiva, isso é definido pelo cliente.
-
-- RA significa &quot;recursive available&quot;, sinaliza que pesquisa recursiva está disponível, isso é definiado pelo servidor.
-
-- AD significa &quot;authenticated data&quot;, sinaliza que os dados de resposta e autoridade foram validados e autenticados pelas políticas de segurança daquele servidor de dns. É setado apenas quando todos os dados da resposta foram devidamente criptografados e verificados. Esse é um recurso do DNSSEC.
-
-Existem ainda as seguintes flags opcionais
-
-- AA, significa servidor autoritativo
-
-- TC, significa mensagem truncada
-
-E no caso de DNSSEC pode conter ainda
-
-- CD, significa &quot;checking disabled&quot;, utilizado pelo DNSSEC.
-
-- DO, que significa que a resposta do DNSSEC está ok
-</code></pre>
-<p>Entendendo os status (RCODE) mais comuns </p>
-<pre><code>- NOERROR (0), a pesquisa voltou sem erros
-- SERVFAIL (2), houve uma falha na resposta do servidor
-- NXDOMAN (3), o domínio não foi encontrado ou não existe
-- REFUSED (5), o pedido de query foi recusado
-</code></pre>
-<h4 id="question-section">QUESTION SECTION</h4>
-<p>Aqui encontraremos dados de nossa query.</p>
-<pre><code>;; QUESTION SECTION:
-;gutocarvalho.net.        IN    A
-</code></pre>
-<p>Uma query é estruturada da seguinte forma:</p>
-<pre><code>    +--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+
-    |                                               |
-    /                     QNAME                     /
-    /                                               /
-    +--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+
-    |                     QTYPE                     |
-    +--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+
-    |                     QCLASS                    |
-    +--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+
-</code></pre>
-<p>Vamos entender QNAME, QTYPE e QCLASS.</p>
-<pre><code>
-- QNAME possuirá o domínio que você setou na query
-- QTYPE possuirá o tipo de RR que você utilizou na pesquisa
-- QCLASS possuirá o tipo de classe de DNS, geralmente IN (internet)
-</code></pre>
-<h4 id="answer-section">ANSWER SECTION</h4>
-<pre><code>;; ANSWER SECTION:
-gutocarvalho.net.    300    IN    A    185.199.108.153
-gutocarvalho.net.    300    IN    A    185.199.109.153
-gutocarvalho.net.    300    IN    A    185.199.110.153
-gutocarvalho.net.    300    IN    A    185.199.111.153
-</code></pre>
-<p>Retorna os registros e informações destes, se houver.</p>
-<h4 id="authority-section">AUTHORITY SECTION</h4>
-<pre><code>;; AUTHORITY SECTION:
-gutocarvalho.net.    3533    IN    NS    monroe.ns.cloudflare.com.
-gutocarvalho.net.    3533    IN    NS    houston.ns.cloudflare.com.
-</code></pre>
-<p>Retorna dados de autoridade acerca do domínio.</p>
-<h4 id="aditional-section">ADITIONAL SECTION</h4>
-<pre><code>;; ADDITIONAL SECTION:
-monroe.ns.cloudflare.com. 107    IN    A    172.64.34.153
-houston.ns.cloudflare.com. 900    IN    A    172.64.35.52
-</code></pre>
-<p>Retorna dados adicionais da query.</p>
-<h4 id="query-section">QUERY SECTION</h4>
-<pre><code>;; Query time: 36 msec
-;; SERVER: 1.1.1.1#53(1.1.1.1)
-;; WHEN: Sat Mar 12 19:49:29 -03 2022
-;; MSG SIZE  rcvd: 109
-</code></pre>
-<p>Retorna métricas da query, auto explicativo.</p>
-<h3 id="glossário">Glossário</h3>
-<p>termos comuns</p>
-<ul>
-<li>Zona, Uma zona contém as informações e registros de um domínio</li>
-<li>TTL, significa Time to live, é o tempo de vida de um registro ou zona</li>
-<li>DNSSEC, é um sistema de proteção que aumenta a segurança do DNS</li>
-</ul>
-<p>tipos de registros comuns e seus significados</p>
-<ul>
-<li>SOA, Start of Authority ou início de autoridade</li>
-<li>NS, significa nameserver, esse registro aponta para um servidor de DNS</li>
-<li>A, registro tipo endereço ipv4, é associado a um endereço IP</li>
-<li>AAAA, registro tipo endereço ipv6, é associado a um endereço IP</li>
-<li>PTR, registro tipo reverso, ele resolve um IP para um nome</li>
-<li>CNAME, nome canônico, ele resolve um nome para outro nome.</li>
-<li>MX, significa mail exchange, aponta para o servidor de correio</li>
-<li>TXT, registros de texto, podem ter qualquer tipo de informação</li>
-</ul>
-<p>tipos de registro para DNSSEC</p>
-<ul>
-<li>DNSKEY: keeps the public key to verify RRSIGs</li>
-<li>DS: keeps the digest of a DNSKEY RR</li>
-<li>RRSIG: keeps the digital signature of an RRset</li>
-<li>NSEC: used for authenticated denial existence, meaning to show an RRset is not part of a signed zone</li>
-</ul>
-<p>tipos de pesquisa de DNS</p>
-<ul>
-<li>Iterative approach: where the resolver/client repeatedly queries different servers until it finds the answer</li>
-<li>Recursive approach: where the resolver/client sends the query only to a single server, but the server repeatedly queries different servers until it finds and returns the answer to the resolver</li>
-</ul>
-<h2 id="quais-outras-ferramentas-uso-para-troubleshooting-de-dns">Quais outras ferramentas uso para troubleshooting de DNS?</h2>
-<p>ferramentas clássicas</p>
-<ul>
-<li>nslookup</li>
-<li>host</li>
-<li>whois</li>
-</ul>
-<p>ferramentas extras para testes do lado do cliente</p>
-<ul>
-<li><a href="https://github.com/projectdiscovery/dnsprobe">dnsprobe</a></li>
-<li><a href="https://www.mavetju.org/unix/dnstracer.php">dnstracer</a></li>
-<li><a href="//github.com/projectdiscovery/subfinder">subfinder</a> (para encontrar subdomains)</li>
-<li><a href="https://github.com/dnsviz/dnsviz/">dnsviz</a> (avalia comportamento do seu DNS Server/DNSSEC)</li>
-</ul>
-<p>ferramentas extras para testes em seu servidor de dns</p>
-<ul>
-<li><a href="http://dns.measurement-factory.com/tools/dnstop/index.html">dnstop</a> (métricas)</li>
-<li><a href="https://github.com/DNS-OARC/dnsperf">dnsperf</a> (teste de carga)</li>
-<li><a href="https://github.com/DNS-OARC/flamethrower">flamethrower</a> (teste de carga)</li>
-<li><a href="https://github.com/sandeeprenjith/dnsblast">dnsblast</a> (teste de carga)</li>
-</ul>
-<h2 id="quais-os-comandos-que-eu-mais-uso-no-dia-a-dia">Quais os comandos que eu mais uso no dia-a-dia?</h2>
-<pre><code>$ dig +short lb.gutocarvalho.net
-$ dig -x 200.150.204.87
-$ dig mx gutocarvalho.net
-$ dig ns gutocarvalho.net
-</code></pre>
-<h2 id="amarrando-as-pontas">Amarrando as pontas</h2>
-<p>Esse post é uma tentativa de dar um norte ou um caminho para fazer um bom troubleshooting de DNS.</p>
-<p>Volte aqui sempre que precisar :)</p>
-<h2 id="aquele-abraço">Aquele abraço!</h2>
-<p>Mando aquele abraço para o professor MESTRE Ulysses Almeida (@ulyssesalmeida) que me ensinou a usar o DIG lá no início do século.</p>
-<p>Mando aquele abraço pro @gomex e @badtux que via exemplo me fazem contribuir mais e mais e mais :)</p>
-<p>Mando aquele abraço para todos que leram, comentaram, revisaram e contribuíram de alguma forma com esse post!</p>
-<h3 id="dns-rfcs">DNS RFC’s</h3>
-<ul>
-<li><a href="https://www.ietf.org/rfc/rfc1034.txt">https://www.ietf.org/rfc/rfc1034.txt</a></li>
-<li><a href="https://www.ietf.org/rfc/rfc1035.txt">https://www.ietf.org/rfc/rfc1035.txt</a></li>
-</ul>
-<h3 id="references">References</h3>
-<ul>
-<li><a href="https://linux.die.net/man/1/dig">https://linux.die.net/man/1/dig</a></li>
-<li><a href="https://cmdref.net/os/linux/command/dig.html">https://cmdref.net/os/linux/command/dig.html</a></li>
-<li><a href="https://ipok.com.br/blog/usando-dig-para-pesquisas-de-dns-parte-1">https://ipok.com.br/blog/usando-dig-para-pesquisas-de-dns-parte-1</a></li>
-<li><a href="https://ipok.com.br/blog/usando-dig-para-pesquisas-de-dns-parte-2">https://ipok.com.br/blog/usando-dig-para-pesquisas-de-dns-parte-2</a></li>
-<li><a href="https://linuxize.com/post/how-to-use-dig-command-to-query-dns-in-linux">https://linuxize.com/post/how-to-use-dig-command-to-query-dns-in-linux</a></li>
-<li><a href="https://www.hostinger.com/tutorials/how-to-use-the-dig-command-in-linux">https://www.hostinger.com/tutorials/how-to-use-the-dig-command-in-linux</a></li>
-<li><a href="https://metebalci.com/blog/a-short-practical-tutorial-of-dig-dns-and-dnssec">https://metebalci.com/blog/a-short-practical-tutorial-of-dig-dns-and-dnssec</a></li>
-<li><a href="https://neverendingsecurity.wordpress.com/2015/04/13/dig-commands-cheatsheet">https://neverendingsecurity.wordpress.com/2015/04/13/dig-commands-cheatsheet</a></li>
-</ul>
-<hr>
-<p>Este post é do tipo #Mindnodes, entenda <a href="https://gutocarvalho.net/o-que-sao-mindnotes/">aqui</a>.</p>
-<p>Se gostou manda um alô no twitter <a href="https://twitter.com/gutocarvalho">@gutocarvalho</a> ou deixa um comentário bacana :)</p>
-<p>[s]<br>
-Guto</p>
-
             ]]>
         </content>
     </entry>
