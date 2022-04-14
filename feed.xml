@@ -3,7 +3,7 @@
     <title>Guto@Site</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2022-04-14T19:40:09-03:00</updated>
+    <updated>2022-04-14T19:47:09-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
@@ -98,7 +98,7 @@ Guto</p>
         <id>https://gutocarvalho.net/postal-mailserver/</id>
             <category term="MindNotes"/>
 
-        <updated>2022-04-14T19:39:04-03:00</updated>
+        <updated>2022-04-14T19:47:09-03:00</updated>
             <summary>
                 <![CDATA[
                     Um novo projetinho bem interessante para mailserver/mta. Postal is a complete and&hellip;
@@ -124,7 +124,7 @@ Guto</p>
 <p>Suporta o envio de e-mail por SMTP ou API/HTTP.</p>
 <p>Faz tudo que é basicão de um MTA (aparentemente).</p>
 <p>Faz o que um SendGrid/Mailgaun faria (aparentemente).</p>
-<p>É feito em NodeJS pelo que vi (sem julgamentos).</p>
+<p>É feito em Ruby/Rails pelo que vi (sem julgamentos).</p>
 <h3 id="e-daí-esse-projeto">E daí esse projeto?</h3>
 <p>Para os apaixonados por gerenciar servidores de e-mail que nem eu (é eu sei que sou meio doido) é uma coisa interessante.</p>
 <h3 id="e-vai-usar-pra-que">E vai usar pra que?</h3>
