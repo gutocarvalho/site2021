@@ -3,12 +3,83 @@
     <title>Guto@Site</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2022-04-14T16:17:31-03:00</updated>
+    <updated>2022-04-14T16:26:35-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
     <id>https://gutocarvalho.net</id>
 
+    <entry>
+        <title>Auto-reply no telegram</title>
+        <author>
+            <name>Guto Carvalho</name>
+        </author>
+        <link href="https://gutocarvalho.net/auto-reply-no-telegram/"/>
+        <id>https://gutocarvalho.net/auto-reply-no-telegram/</id>
+            <category term="MindNotes"/>
+
+        <updated>2022-04-14T16:26:35-03:00</updated>
+            <summary>
+                <![CDATA[
+                    Surgiu a necessidade de colocar um auto-reply no Telegram para avisar que&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p>Surgiu a necessidade de colocar um <strong>auto-reply</strong> no Telegram para avisar que eu agora estou mais no Discord.</p>
+<p>Já tinha uma galera bem brava comigo por não responder PVT, Sorry gente :)</p>
+<p>Procurei em muitos lugares e acabei achando esse snippet <a href="https://gist.github.com/jbek7/c5fe0247a7fb74754b4ad9b31be3e22a">aqui</a> e estou usando desde então.</p>
+<p>Basicamente é um script em Python que usa a biblioteca Telethon.</p>
+<pre><code class="language-python">import time
+
+from telethon import TelegramClient, events
+
+# sample API_ID from https://github.com/telegramdesktop/tdesktop/blob/f98fdeab3fb2ba6f55daf8481595f879729d1b84/Telegram/SourceFiles/config.h#L220
+# or use your own
+api_id = SEU_API_ID
+api_hash = &#39;SEU_PAI_HASH&#39;
+
+# fill in your own details here
+phone = &#39;SEU_NUMERO_DE_TELEFONE&#39;
+session_file = &#39;./session.gutera&#39;  # use your username if unsure
+password = &#39;SUA_SENHA&#39;  # if you have two-step verification enabled
+
+# content of the automatic reply
+message = &quot;[guterabot] Olá, estou dando um tempo do telegram, caso precise falar comigo entre no DISCORD #BolhaTech https://abre.ai/bolhatech&quot;
+
+if __name__ == &#39;__main__&#39;:
+    # Create the client and connect
+    # use sequential_updates=True to respond to messages one at a time
+    client = TelegramClient(session_file, api_id, api_hash, sequential_updates=True)
+
+
+    @client.on(events.NewMessage(incoming=True))
+    async def handle_new_message(event):
+        if event.is_private:  # only auto-reply to private chats
+            from_ = await event.client.get_entity(event.from_id)  # this lookup will be cached by telethon
+            if not from_.bot:  # don&#39;t auto-reply to bots
+                print(time.asctime(), &#39;-&#39;, event.message)  # optionally log time and message
+                time.sleep(1)  # pause for 1 second to rate-limit automatic replies
+                await event.respond(message)
+
+
+    print(time.asctime(), &#39;-&#39;, &#39;Auto-replying...&#39;)
+    client.start(phone, password)
+    client.run_until_disconnected()
+    print(time.asctime(), &#39;-&#39;, &#39;Stopped!&#39;)
+</code></pre>
+<p>É só mandar um</p>
+<pre><code> $ python3 nome_do_arquivo.py
+</code></pre>
+<p>E pronto, auto-reply funcionando.</p>
+<h2 id="refs">Refs</h2>
+<ul>
+<li><a href="https://docs.telethon.dev/en/stable/">https://docs.telethon.dev/en/stable/</a></li>
+</ul>
+
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>Nova Bridge para Telegram e Discord</title>
         <author>
@@ -1457,30 +1528,6 @@ Alternate   : || or &quot;or&quot;
 <p>[s]<br>
 Guto</p>
 
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>Conheça o projeto Docker OSX</title>
-        <author>
-            <name>Guto Carvalho</name>
-        </author>
-        <link href="https://gutocarvalho.net/conheca-o-projeto-docker-osx/"/>
-        <id>https://gutocarvalho.net/conheca-o-projeto-docker-osx/</id>
-            <category term="MindNotes"/>
-
-        <updated>2022-03-12T22:36:59-03:00</updated>
-            <summary>
-                <![CDATA[
-                    <p>Já pensou em rodar o OSX via Docker e se conectar no ambiente?</p>
-
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                <p>Já pensou em rodar o OSX via Docker e se conectar no ambiente?</p>
-
-<p>Pois é, tem um projeto que oferece isso com performance quase nativa, basta executar a imagem e se conectar via X11-Forwarding.<br><br>Conheça!<br><br>- <a href="https://github.com/sickcodes/Docker-OSX">https://github.com/sickcodes/Docker-OSX</a><br><br>[s]<br>Guto</p>
             ]]>
         </content>
     </entry>
