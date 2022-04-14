@@ -3,7 +3,7 @@
     <title>Guto@Site</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2022-04-14T19:47:09-03:00</updated>
+    <updated>2022-04-14T20:07:11-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
@@ -90,7 +90,7 @@ Guto</p>
         </content>
     </entry>
     <entry>
-        <title>Postal Mailserver</title>
+        <title>Postal MailServer</title>
         <author>
             <name>Guto Carvalho</name>
         </author>
@@ -98,7 +98,7 @@ Guto</p>
         <id>https://gutocarvalho.net/postal-mailserver/</id>
             <category term="MindNotes"/>
 
-        <updated>2022-04-14T19:47:09-03:00</updated>
+        <updated>2022-04-14T20:07:11-03:00</updated>
             <summary>
                 <![CDATA[
                     Um novo projetinho bem interessante para mailserver/mta. Postal is a complete and&hellip;
@@ -155,7 +155,7 @@ Guto</p>
         <id>https://gutocarvalho.net/auto-reply-no-telegram/</id>
             <category term="MindNotes"/>
 
-        <updated>2022-04-14T16:26:35-03:00</updated>
+        <updated>2022-04-14T20:07:02-03:00</updated>
             <summary>
                 <![CDATA[
                     Surgiu a necessidade de colocar um auto-reply no Telegram para avisar que&hellip;
@@ -163,18 +163,16 @@ Guto</p>
             </summary>
         <content type="html">
             <![CDATA[
-                <p>Surgiu a necessidade de colocar um <strong>auto-reply</strong> no Telegram para avisar que eu agora estou mais no Discord.</p>
-<p>Já tinha uma galera bem brava comigo por não responder PVT, Sorry gente :)</p>
+                <p>Surgiu a necessidade de colocar um <strong>auto-reply</strong> no Telegram para avisar que agora eu estou mais presente no <a href="abre.ai/bolhatech">Discord</a>.</p>
+<p>Já tinha uma galera bem brava comigo por não responder PVT, sorry gente :)</p>
 <p>Procurei em muitos lugares e acabei achando esse snippet <a href="https://gist.github.com/jbek7/c5fe0247a7fb74754b4ad9b31be3e22a">aqui</a> e estou usando desde então.</p>
 <p>Basicamente é um script em Python que usa a biblioteca Telethon.</p>
 <pre><code class="language-python">import time
 
 from telethon import TelegramClient, events
 
-# sample API_ID from https://github.com/telegramdesktop/tdesktop/blob/f98fdeab3fb2ba6f55daf8481595f879729d1b84/Telegram/SourceFiles/config.h#L220
-# or use your own
 api_id = SEU_API_ID
-api_hash = &#39;SEU_PAI_HASH&#39;
+api_hash = &#39;SEU_API_HASH&#39;
 
 # fill in your own details here
 phone = &#39;SEU_NUMERO_DE_TELEFONE&#39;
