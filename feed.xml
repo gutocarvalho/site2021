@@ -3,7 +3,7 @@
     <title>Guto@Site</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2022-04-14T19:39:04-03:00</updated>
+    <updated>2022-04-14T19:40:09-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
@@ -18,16 +18,16 @@
         <id>https://gutocarvalho.net/projeto-mailcow/</id>
             <category term="MindNotes"/>
 
-        <updated>2022-04-14T19:37:15-03:00</updated>
+        <updated>2022-04-14T19:40:09-03:00</updated>
             <summary>
                 <![CDATA[
-                    Tava dando uma olhada nas alternativas ao zimbra em 2002 e encontrei&hellip;
+                    Tava dando uma olhada nas alternativas ao zimbra em 2022 e encontrei&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                <p>Tava dando uma olhada nas alternativas ao zimbra em 2002 e encontrei esse projeto.</p>
-<p>Eu ainda não testei, mas achei interessante.</p>
+                <p>Tava dando uma olhada nas alternativas ao zimbra em 2022 e encontrei esse projeto.</p>
+<p>Eu ainda não testei, mas achei interessante, muito mesmo.</p>
 <h3 id="site-do-projeto">Site do projeto</h3>
 <ul>
 <li><a href="https://mailcow.github.io">https://mailcow.github.io</a></li>
