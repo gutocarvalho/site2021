@@ -3,7 +3,7 @@
     <title>Guto@Site</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2022-04-14T18:21:31-03:00</updated>
+    <updated>2022-04-14T18:41:27-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
@@ -18,7 +18,7 @@
         <id>https://gutocarvalho.net/postal-mta/</id>
             <category term="MindNotes"/>
 
-        <updated>2022-04-14T18:21:31-03:00</updated>
+        <updated>2022-04-14T18:41:27-03:00</updated>
             <summary>
                 <![CDATA[
                     Um novo projetinho bem interessante. Postal is a complete and fully featured&hellip;
@@ -34,23 +34,32 @@
 <ul>
 <li><a href="https://docs.postalserver.io">https://docs.postalserver.io</a></li>
 </ul>
+<h3 id="código-fonte-do-projeto">Código fonte do projeto</h3>
+<ul>
+<li><a href="https://github.com/postalserver/docs">https://github.com/postalserver/docs</a></li>
+</ul>
 <h3 id="o-que-é-esse-trem">O que é esse trem?</h3>
 <p>Basicamente promete ser um Sendgrid/Mailgun open-source.</p>
-<p>Ele pode ficar na frente do seus servidores principais redirecionar os e-mail para servidores secundários com o Zimbra por exemplo e de quebra ainda te dá um monte de controles e métricas.</p>
-<p>É feito em Rails pelo que vi.</p>
+<p>Ele pode ficar na frente do seus servidores principais redirecionar os e-mail para servidores secundários como o Zimbra por exemplo, e de quebra ainda te dá um monte de controles e métricas interessantes.</p>
+<p>Suporta o envio de e-mail por SMTP ou API/HTTP.</p>
+<p>Faz tudo que é basicão de um MTA (aparentemente).</p>
+<p>É feito em NodeJS pelo que vi (sem julgamentos).</p>
 <h3 id="e-daí-esse-projeto">E daí esse projeto?</h3>
-<p>Para os apaixonados por gerenciador servidor de e-mail que nem eu (é eu sei que sou meio doido) é uma coisa interessante.</p>
+<p>Para os apaixonados por gerenciar servidores de e-mail que nem eu (é eu sei que sou meio doido) é uma coisa interessante.</p>
 <h3 id="e-vai-usar-pra-que">E vai usar pra que?</h3>
 <p>Ah, to pensando aqui em colocar ele na frente de um Zimbra.</p>
-<pre><code>MTA EXTERNO &gt;
-&gt; Postal
-&gt; Zimbra
-Postal &gt;
-MTA EXTERNO
+<pre><code>=== MTA EXTERNO &gt;
+=============== Postal &gt;
+======================= Zimbra &gt;
+================ Postal &lt; ====
+=== &lt; MTA EXTERNO ===
 </code></pre>
-<p>Tenho que testar qualquer hora….</p>
-<p>Postando para não esquecer.</p>
-<p>[s]
+<h3 id="mas-pq-seu-doido">Mas pq seu doido?</h3>
+<p>Ah, o Google vai contar o Google Mail Legacy e tá na hora de pensar em outra coisa.</p>
+<p>Eu estava procurando algo moderno para colocar no lugar do Postfix (o melhor MTA e também o mais chato de configurar) e achei ele.</p>
+<p>Tenho que testar qualquer hora, tenho dito.</p>
+<p>Postando para não esquecer desse carinha.</p>
+<p>[s]<br>
 Guto</p>
 
             ]]>
