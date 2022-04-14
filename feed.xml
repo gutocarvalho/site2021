@@ -3,7 +3,7 @@
     <title>Guto@Site</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2022-04-14T19:29:45-03:00</updated>
+    <updated>2022-04-14T19:37:15-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
@@ -18,7 +18,7 @@
         <id>https://gutocarvalho.net/projeto-mailcow/</id>
             <category term="MindNotes"/>
 
-        <updated>2022-04-14T19:29:45-03:00</updated>
+        <updated>2022-04-14T19:37:15-03:00</updated>
             <summary>
                 <![CDATA[
                     Tava dando uma olhada nas alternativas ao zimbra em 2002 e encontrei&hellip;
@@ -75,7 +75,13 @@
 <li>Integrated basic monitoring</li>
 </ul>
 <p>Dentre outras coisas.</p>
-<p>Preciso testar qualquer hora…</p>
+<h3 id="sogo-groupware">Sogo Groupware</h3>
+<p>Ele usa o SOGO como groupware web</p>
+<ul>
+<li><a href="https://www.sogo.nu/">https://www.sogo.nu/</a></li>
+</ul>
+<p>Outro projeto que eu ainda não conheço.</p>
+<p>Preciso testar essa stack qualquer hora…</p>
 <p>;)</p>
 <p>[s]<br>
 Guto</p>
