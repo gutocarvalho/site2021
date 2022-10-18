@@ -10,6 +10,21 @@
     },
     "items": [
         {
+            "id": "https://gutocarvalho.net/atualizacoes-criticas-para-o-zimbra/",
+            "url": "https://gutocarvalho.net/atualizacoes-criticas-para-o-zimbra/",
+            "title": "Atualizações críticas para o Zimbra",
+            "summary": "Se você usa o Zimbra 9.x ou 8.x e ainda não atualizou,&hellip;",
+            "content_html": "<p>Se você usa o Zimbra 9.x ou 8.x e ainda não atualizou, corre!</p>\n<p>Foram encontradas diversas vulnerabilidades que podem comprometer seu sistema de correio!</p>\n<p>Leia mais informações aqui:</p>\n<ul>\n<li><a href=\"https://wiki.zimbra.com/wiki/Zimbra_Releases/8.8.15/P34#Security_Fixes\">https://wiki.zimbra.com/wiki/Zimbra_Releases/8.8.15/P34#Security_Fixes</a></li>\n</ul>\n<p>Eu uso Zimbra e gosto muito, então vamos lá galera, vamos atualizar e manter a segurança de nossos ambientes!</p>\n<p>[s]\nGuto</p>\n",
+            "author": {
+                "name": "Guto Carvalho"
+            },
+            "tags": [
+                   "Drops"
+            ],
+            "date_published": "2022-10-18T07:28:57-03:00",
+            "date_modified": "2022-10-18T07:31:20-03:00"
+        },
+        {
             "id": "https://gutocarvalho.net/lula-ja-foi-preso-e-o-bolsonaro-tambem/",
             "url": "https://gutocarvalho.net/lula-ja-foi-preso-e-o-bolsonaro-tambem/",
             "title": "Lula já foi preso, e o Bolsonaro também!",
@@ -19,9 +34,10 @@
                 "name": "Guto Carvalho"
             },
             "tags": [
+                   "FalaGutera"
             ],
             "date_published": "2022-10-17T19:39:03-03:00",
-            "date_modified": "2022-10-17T19:43:58-03:00"
+            "date_modified": "2022-10-18T07:29:04-03:00"
         },
         {
             "id": "https://gutocarvalho.net/interferencias-religiosas-me-cansam/",
@@ -33,9 +49,10 @@
                 "name": "Guto Carvalho"
             },
             "tags": [
+                   "FalaGutera"
             ],
             "date_published": "2022-10-17T19:20:47-03:00",
-            "date_modified": "2022-10-17T19:20:47-03:00"
+            "date_modified": "2022-10-18T07:29:12-03:00"
         },
         {
             "id": "https://gutocarvalho.net/lula-e-inocente-ou-nao/",
@@ -47,23 +64,10 @@
                 "name": "Guto Carvalho"
             },
             "tags": [
+                   "FalaGutera"
             ],
             "date_published": "2022-10-17T19:13:09-03:00",
-            "date_modified": "2022-10-17T19:13:09-03:00"
-        },
-        {
-            "id": "https://gutocarvalho.net/ah-guto-mas-pq-voce-posta-sobre-politica/",
-            "url": "https://gutocarvalho.net/ah-guto-mas-pq-voce-posta-sobre-politica/",
-            "title": "Ah Guto, mas pq você posta sobre Política?",
-            "summary": "Ela faz parte de nossas vidas, ela interfere em nosso trabalho, em&hellip;",
-            "content_html": "<p>Ela faz parte de nossas vidas, ela interfere em nosso trabalho, em nossa profissão em nossas escolhas como profissionais.</p>\n<p>E também pois se eu tenho capacidade técnica para criar, construir e entregar software, eu também tenho capacidade crítica para analisar dados, fatos, resultados e experiências diversas, inclusive de dois governos tão diferentes.</p>\n<p>Tal como eu posso avaliar uma equipe de TI, em um consultoria para qualquer empresa, consigo avaliar o desempenho de duas equipes de governo, levando em conta critérios técnicos, matemáticos e resultados alcançados por cada time.</p>\n<p>Eu consigo enxergar qual time entregou mais, qual time teve melhor resultado e qual time teve melhor satisfação de seus usuários finais.</p>\n<p>Entendeu?</p>\n<p>Se você me segue por meu conteúdo, currículo e cases, entenda que todo o conhecimento e experiência que eu carrego não serve só para analisar TI, serve para analisar qualquer coisa, incluindo governos.</p>\n<p>E minha análise já foi feita.</p>\n<p>Eu sou anti-facista e voto pela liberdade e democracia sempre.</p>\n<p>[s]<br>\nGuto</p>\n",
-            "author": {
-                "name": "Guto Carvalho"
-            },
-            "tags": [
-            ],
-            "date_published": "2022-10-17T19:05:36-03:00",
-            "date_modified": "2022-10-17T19:05:36-03:00"
+            "date_modified": "2022-10-18T07:29:21-03:00"
         },
         {
             "id": "https://gutocarvalho.net/por-quais-razoes-fico-puto-com-quem-vota-no-presidente-atual/",
@@ -75,9 +79,10 @@
                 "name": "Guto Carvalho"
             },
             "tags": [
+                   "FalaGutera"
             ],
             "date_published": "2022-10-13T17:50:52-03:00",
-            "date_modified": "2022-10-13T21:26:09-03:00"
+            "date_modified": "2022-10-18T07:29:41-03:00"
         },
         {
             "id": "https://gutocarvalho.net/projeto-mailcow/",

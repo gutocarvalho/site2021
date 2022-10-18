@@ -3,12 +3,42 @@
     <title>Guto@Site</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2022-10-17T19:43:58-03:00</updated>
+    <updated>2022-10-18T07:31:20-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
     <id>https://gutocarvalho.net</id>
 
+    <entry>
+        <title>Atualizações críticas para o Zimbra</title>
+        <author>
+            <name>Guto Carvalho</name>
+        </author>
+        <link href="https://gutocarvalho.net/atualizacoes-criticas-para-o-zimbra/"/>
+        <id>https://gutocarvalho.net/atualizacoes-criticas-para-o-zimbra/</id>
+            <category term="Drops"/>
+
+        <updated>2022-10-18T07:31:20-03:00</updated>
+            <summary>
+                <![CDATA[
+                    Se você usa o Zimbra 9.x ou 8.x e ainda não atualizou,&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p>Se você usa o Zimbra 9.x ou 8.x e ainda não atualizou, corre!</p>
+<p>Foram encontradas diversas vulnerabilidades que podem comprometer seu sistema de correio!</p>
+<p>Leia mais informações aqui:</p>
+<ul>
+<li><a href="https://wiki.zimbra.com/wiki/Zimbra_Releases/8.8.15/P34#Security_Fixes">https://wiki.zimbra.com/wiki/Zimbra_Releases/8.8.15/P34#Security_Fixes</a></li>
+</ul>
+<p>Eu uso Zimbra e gosto muito, então vamos lá galera, vamos atualizar e manter a segurança de nossos ambientes!</p>
+<p>[s]
+Guto</p>
+
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>Lula já foi preso, e o Bolsonaro também!</title>
         <author>
@@ -16,8 +46,9 @@
         </author>
         <link href="https://gutocarvalho.net/lula-ja-foi-preso-e-o-bolsonaro-tambem/"/>
         <id>https://gutocarvalho.net/lula-ja-foi-preso-e-o-bolsonaro-tambem/</id>
+            <category term="FalaGutera"/>
 
-        <updated>2022-10-17T19:43:58-03:00</updated>
+        <updated>2022-10-18T07:29:04-03:00</updated>
             <summary>
                 <![CDATA[
                     Você que adora dizer que Lula é ex-presidiário, escuta essa. Bolsonaro também&hellip;
@@ -57,8 +88,9 @@
         </author>
         <link href="https://gutocarvalho.net/interferencias-religiosas-me-cansam/"/>
         <id>https://gutocarvalho.net/interferencias-religiosas-me-cansam/</id>
+            <category term="FalaGutera"/>
 
-        <updated>2022-10-17T19:20:47-03:00</updated>
+        <updated>2022-10-18T07:29:12-03:00</updated>
             <summary>
                 <![CDATA[
                     Incrível como nos momentos mais podres da história da humanidade a religião,&hellip;
@@ -83,8 +115,9 @@
         </author>
         <link href="https://gutocarvalho.net/lula-e-inocente-ou-nao/"/>
         <id>https://gutocarvalho.net/lula-e-inocente-ou-nao/</id>
+            <category term="FalaGutera"/>
 
-        <updated>2022-10-17T19:13:09-03:00</updated>
+        <updated>2022-10-18T07:29:21-03:00</updated>
             <summary>
                 <![CDATA[
                     Para você que fica reverberando inverdades na rede de que Lula não&hellip;
@@ -140,44 +173,15 @@
         </content>
     </entry>
     <entry>
-        <title>Ah Guto, mas pq você posta sobre Política?</title>
-        <author>
-            <name>Guto Carvalho</name>
-        </author>
-        <link href="https://gutocarvalho.net/ah-guto-mas-pq-voce-posta-sobre-politica/"/>
-        <id>https://gutocarvalho.net/ah-guto-mas-pq-voce-posta-sobre-politica/</id>
-
-        <updated>2022-10-17T19:05:36-03:00</updated>
-            <summary>
-                <![CDATA[
-                    Ela faz parte de nossas vidas, ela interfere em nosso trabalho, em&hellip;
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                <p>Ela faz parte de nossas vidas, ela interfere em nosso trabalho, em nossa profissão em nossas escolhas como profissionais.</p>
-<p>E também pois se eu tenho capacidade técnica para criar, construir e entregar software, eu também tenho capacidade crítica para analisar dados, fatos, resultados e experiências diversas, inclusive de dois governos tão diferentes.</p>
-<p>Tal como eu posso avaliar uma equipe de TI, em um consultoria para qualquer empresa, consigo avaliar o desempenho de duas equipes de governo, levando em conta critérios técnicos, matemáticos e resultados alcançados por cada time.</p>
-<p>Eu consigo enxergar qual time entregou mais, qual time teve melhor resultado e qual time teve melhor satisfação de seus usuários finais.</p>
-<p>Entendeu?</p>
-<p>Se você me segue por meu conteúdo, currículo e cases, entenda que todo o conhecimento e experiência que eu carrego não serve só para analisar TI, serve para analisar qualquer coisa, incluindo governos.</p>
-<p>E minha análise já foi feita.</p>
-<p>Eu sou anti-facista e voto pela liberdade e democracia sempre.</p>
-<p>[s]<br>
-Guto</p>
-
-            ]]>
-        </content>
-    </entry>
-    <entry>
         <title>Por quais razões fico Puto com quem vota no Presidente atual?</title>
         <author>
             <name>Guto Carvalho</name>
         </author>
         <link href="https://gutocarvalho.net/por-quais-razoes-fico-puto-com-quem-vota-no-presidente-atual/"/>
         <id>https://gutocarvalho.net/por-quais-razoes-fico-puto-com-quem-vota-no-presidente-atual/</id>
+            <category term="FalaGutera"/>
 
-        <updated>2022-10-13T21:26:09-03:00</updated>
+        <updated>2022-10-18T07:29:41-03:00</updated>
             <summary>
                 <![CDATA[
                     Quer saber porquê eu fico puto com quem votou e vai votar&hellip;
