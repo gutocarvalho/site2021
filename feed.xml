@@ -3,12 +3,48 @@
     <title>Guto@Site</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2022-10-20T07:48:35-03:00</updated>
+    <updated>2022-10-23T22:56:28-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
     <id>https://gutocarvalho.net</id>
 
+    <entry>
+        <title>Condeno o ataque contra a PF no Rio</title>
+        <author>
+            <name>Guto Carvalho</name>
+        </author>
+        <link href="https://gutocarvalho.net/condeno-o-ataque-contra-a-pf-no-rio/"/>
+        <id>https://gutocarvalho.net/condeno-o-ataque-contra-a-pf-no-rio/</id>
+
+        <updated>2022-10-23T22:56:28-03:00</updated>
+            <summary>
+                <![CDATA[
+                    Condeno os vinte disparos de Fuzil contra agentes da PF, Condendo o&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p>Condeno os vinte disparos de Fuzil contra agentes da PF,<br>
+Condendo o disparo de três granadas contra agentes da PF,<br>
+Condeno quem feriu e hospitalizou dois agentes da PF.<br></p>
+<p>Não é esse Brasil que eu quero, <br>
+Nem para mim, <br>
+Nem para meus filhos, <br>
+Nem para ninguém.<br></p>
+<p>Condeno duramente o ataque a nossa Polícia Federal,<br>
+Condeno os constantes ataque ao STF,<br>
+Condeno veementemente os ataques nossa querida democracia.</p>
+<p>E não esqueço que esse é um dos maiores aliados do atual presidente.</p>
+<p>No dia 30 estarei fazendo minha parte para mudar os rumos deste país!</p>
+<p>Vem comigo!</p>
+<p>Lula 13, Brasil Livre, Brasil de todos!</p>
+<p>[s]<br>
+Guto</p>
+
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>Sigo envergonhado com muita gente</title>
         <author>
@@ -440,86 +476,6 @@ nunca antes vista.</p>
 <p>Eu luto pela liberdade de criar meus filhos do meu jeito, para eles escolherem viver a vida do jeito deles, como quiserem, e para que eles sejam felizes em um país livre.</p>
 <p>Eu luto para que ninguém mais passe fome, para que todos tenham acesso a um sistema de saúde adequado, para que todos tenham empregos e consigam se sustentar, para que todos tenham segurança, para que todos possam estudar e crescer como sociedade, construindo continuamente uma sociedade mais diversa e justa.</p>
 <p>Se isso é ser de ESQUERDA, sou de esquerda com muito orgulho.</p>
-<p>[s]<br>
-Guto</p>
-
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>Projeto MailCow</title>
-        <author>
-            <name>Guto Carvalho</name>
-        </author>
-        <link href="https://gutocarvalho.net/projeto-mailcow/"/>
-        <id>https://gutocarvalho.net/projeto-mailcow/</id>
-            <category term="MindNotes"/>
-
-        <updated>2022-04-14T19:40:09-03:00</updated>
-            <summary>
-                <![CDATA[
-                    Tava dando uma olhada nas alternativas ao zimbra em 2022 e encontrei&hellip;
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                <p>Tava dando uma olhada nas alternativas ao zimbra em 2022 e encontrei esse projeto.</p>
-<p>Eu ainda não testei, mas achei interessante, muito mesmo.</p>
-<h3 id="site-do-projeto">Site do projeto</h3>
-<ul>
-<li><a href="https://mailcow.github.io">https://mailcow.github.io</a></li>
-</ul>
-<h3 id="código-fonte">Código fonte</h3>
-<ul>
-<li><a href="https://github.com/mailcow">https://github.com/mailcow</a></li>
-<li><a href="https://github.com/mailcow/mailcow-dockerized">https://github.com/mailcow/mailcow-dockerized</a></li>
-</ul>
-<h3 id="stack-do-projeto">Stack do projeto</h3>
-<ul>
-<li>ACME</li>
-<li>ClamAV (optional)</li>
-<li>Dovecot</li>
-<li>MariaDB</li>
-<li>Memcached</li>
-<li>Netfilter (Fail2ban-like integration by @mkuron)</li>
-<li>Nginx</li>
-<li>Oletools via Olefy</li>
-<li>PHP</li>
-<li>Postfix</li>
-<li>Redis</li>
-<li>Rspamd</li>
-<li>SOGo</li>
-<li>Solr (optional)</li>
-<li>Unbound</li>
-<li>A Watchdog to provide basic monitoring</li>
-</ul>
-<h3 id="features">Features</h3>
-<ul>
-<li>DKIM and ARC support</li>
-<li>Black- and whitelists per domain and per user</li>
-<li>Spam score management per-user (reject spam, mark spam, greylist)</li>
-<li>Allow mailbox users to create temporary spam aliases</li>
-<li>Prepend mail tags to subject or move mail to sub folder (per-user)</li>
-<li>Allow mailbox users to toggle incoming and outgoing TLS enforcement</li>
-<li>Allow users to reset SOGo ActiveSync device caches</li>
-<li>imapsync to migrate or pull remote mailboxes regularly</li>
-<li>TFA: Yubikey OTP and U2F USB (Google Chrome and derivatives only), TOTP</li>
-<li>Add domains, mailboxes, aliases, domain aliases and SOGo resources</li>
-<li>Add whitelisted hosts to forward mail to mailcow</li>
-<li>Fail2ban-like integration</li>
-<li>Quarantine system</li>
-<li>Antivirus scanning incl. macro scanning in office documents- </li>
-<li>Integrated basic monitoring</li>
-</ul>
-<p>Dentre outras coisas.</p>
-<h3 id="sogo-groupware">Sogo Groupware</h3>
-<p>Ele usa o SOGO como groupware web</p>
-<ul>
-<li><a href="https://www.sogo.nu/">https://www.sogo.nu/</a></li>
-</ul>
-<p>Outro projeto que eu ainda não conheço.</p>
-<p>Preciso testar essa stack qualquer hora…</p>
-<p>;)</p>
 <p>[s]<br>
 Guto</p>
 
