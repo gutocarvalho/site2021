@@ -10,6 +10,21 @@
     },
     "items": [
         {
+            "id": "https://gutocarvalho.net/meu-voto-e-13-no-dia-30-de-outubro/",
+            "url": "https://gutocarvalho.net/meu-voto-e-13-no-dia-30-de-outubro/",
+            "title": "Meu voto é 13 no dia 30 de Outubro!",
+            "summary": "No dia 30 de Outubro de 2022 meu voto – como sempre&hellip;",
+            "content_html": "<p>No dia 30 de Outubro de 2022 meu voto – como sempre foi – será 13.</p>\n<p>Voto pela democracia<br>\nVoto pela liberdade<br>\nVoto pela livre manifestação religiosa<br>\nVoto pela livre manifestação de pensamento<br>\nVoto pela livre manifestação política<br>\nVoto pelo estado LAICO<br></p>\n<p>Voto pelo amor livre em todas as suas formas e configurações<br>\nVoto pelo respeito a escolha e identificação de gênero<br>\nVoto para as mulheres serem livres e deciderem sobre seus corpos<br></p>\n<p>Voto para que minorias sejam respeitadas e protegidas<br>\nVoto para que maiorias sejam coerentes e sensatas<br></p>\n<p>Voto contra a fome<br>\nVoto contra a pobreza<br>\nVoto contra a miséria<br>\nVoto contra a violência<br>\nVoto contra o ódio<br>\nVoto contra as fakenews<br>\nVoto contra o facismo e o nazismo<br></p>\n<p>Voto a favor de um sistema econômico justo para todos<br>\nVoto a favor de um sistema de saúde humano e eficiente<br>\nVoto a favor de um sistema de educação moderno e evoluído<br>\nVoto a favor do esporte<br>\nVoto a favor do emprego<br>\nVoto a favor da segurança pública mais humana<br>\nVoto pela cultura e pela arte<br></p>\n<p>Voto pelo meio-ambiente<br>\nVoto pelo ser-humano viver em equilibrio com o meio-ambiente<br>\nVoto pelo planeta!<br></p>\n<p>Voto pelo direito dos meus filhos viverem da forma que desejarem<br>\nVoto pelo direito dos meus filhos amarem a quem quiserem<br>\nVoto para poder criá-los da forma da qual eu e a mãe acharmos adequado<br></p>\n<p>Voto pelo Brasil.<br>\nPara o Brasil.<br>\nCom o Brasil.<br></p>\n<p>Voto Lula<br>\nVoto 13.<br></p>\n<p>Vem com a gente!<br></p>\n",
+            "author": {
+                "name": "Guto Carvalho"
+            },
+            "tags": [
+                   "FalaGutera"
+            ],
+            "date_published": "2022-10-26T10:53:54-03:00",
+            "date_modified": "2022-10-26T10:53:54-03:00"
+        },
+        {
             "id": "https://gutocarvalho.net/vao-fechar-igrejas-no-brasil-sera/",
             "url": "https://gutocarvalho.net/vao-fechar-igrejas-no-brasil-sera/",
             "title": "Vão fechar igrejas no Brasil, será?",
@@ -143,21 +158,6 @@
             ],
             "date_published": "2022-10-20T07:39:01-03:00",
             "date_modified": "2022-10-20T07:39:01-03:00"
-        },
-        {
-            "id": "https://gutocarvalho.net/atualizacoes-criticas-para-o-zimbra/",
-            "url": "https://gutocarvalho.net/atualizacoes-criticas-para-o-zimbra/",
-            "title": "Atualizações críticas para o Zimbra",
-            "summary": "Se você usa o Zimbra 9.x ou 8.x e ainda não atualizou,&hellip;",
-            "content_html": "<p>Se você usa o Zimbra 9.x ou 8.x e ainda não atualizou, corre!</p>\n<p>Foram encontradas diversas vulnerabilidades que podem comprometer seu sistema de correio!</p>\n<p>Leia mais informações aqui:</p>\n<ul>\n<li><a href=\"https://wiki.zimbra.com/wiki/Zimbra_Releases/8.8.15/P34#Security_Fixes\">https://wiki.zimbra.com/wiki/Zimbra_Releases/8.8.15/P34#Security_Fixes</a></li>\n</ul>\n<p>Eu uso Zimbra e gosto muito, então vamos lá galera, vamos atualizar e manter a segurança de nossos ambientes!</p>\n<p>[s]<br>\nGuto</p>\n",
-            "author": {
-                "name": "Guto Carvalho"
-            },
-            "tags": [
-                   "Drops"
-            ],
-            "date_published": "2022-10-18T07:28:57-03:00",
-            "date_modified": "2022-10-18T08:07:25-03:00"
         }
     ]
 }

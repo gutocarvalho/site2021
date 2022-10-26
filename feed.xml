@@ -3,12 +3,71 @@
     <title>Guto@Site</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2022-10-26T10:38:31-03:00</updated>
+    <updated>2022-10-26T10:53:54-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
     <id>https://gutocarvalho.net</id>
 
+    <entry>
+        <title>Meu voto é 13 no dia 30 de Outubro!</title>
+        <author>
+            <name>Guto Carvalho</name>
+        </author>
+        <link href="https://gutocarvalho.net/meu-voto-e-13-no-dia-30-de-outubro/"/>
+        <id>https://gutocarvalho.net/meu-voto-e-13-no-dia-30-de-outubro/</id>
+            <category term="FalaGutera"/>
+
+        <updated>2022-10-26T10:53:54-03:00</updated>
+            <summary>
+                <![CDATA[
+                    No dia 30 de Outubro de 2022 meu voto – como sempre&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p>No dia 30 de Outubro de 2022 meu voto – como sempre foi – será 13.</p>
+<p>Voto pela democracia<br>
+Voto pela liberdade<br>
+Voto pela livre manifestação religiosa<br>
+Voto pela livre manifestação de pensamento<br>
+Voto pela livre manifestação política<br>
+Voto pelo estado LAICO<br></p>
+<p>Voto pelo amor livre em todas as suas formas e configurações<br>
+Voto pelo respeito a escolha e identificação de gênero<br>
+Voto para as mulheres serem livres e deciderem sobre seus corpos<br></p>
+<p>Voto para que minorias sejam respeitadas e protegidas<br>
+Voto para que maiorias sejam coerentes e sensatas<br></p>
+<p>Voto contra a fome<br>
+Voto contra a pobreza<br>
+Voto contra a miséria<br>
+Voto contra a violência<br>
+Voto contra o ódio<br>
+Voto contra as fakenews<br>
+Voto contra o facismo e o nazismo<br></p>
+<p>Voto a favor de um sistema econômico justo para todos<br>
+Voto a favor de um sistema de saúde humano e eficiente<br>
+Voto a favor de um sistema de educação moderno e evoluído<br>
+Voto a favor do esporte<br>
+Voto a favor do emprego<br>
+Voto a favor da segurança pública mais humana<br>
+Voto pela cultura e pela arte<br></p>
+<p>Voto pelo meio-ambiente<br>
+Voto pelo ser-humano viver em equilibrio com o meio-ambiente<br>
+Voto pelo planeta!<br></p>
+<p>Voto pelo direito dos meus filhos viverem da forma que desejarem<br>
+Voto pelo direito dos meus filhos amarem a quem quiserem<br>
+Voto para poder criá-los da forma da qual eu e a mãe acharmos adequado<br></p>
+<p>Voto pelo Brasil.<br>
+Para o Brasil.<br>
+Com o Brasil.<br></p>
+<p>Voto Lula<br>
+Voto 13.<br></p>
+<p>Vem com a gente!<br></p>
+
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>Vão fechar igrejas no Brasil, será?</title>
         <author>
@@ -306,36 +365,6 @@ Guto</p>
             <![CDATA[
                 <p>No momento, meu foco é o Brasil, o que acontece na Venezuela, Cuba, China ou Nicaragua não me interessa, eu quero é comida na mesa de todos e emprego para quem precisa, e quero isso para todos os países e pessoas, mas nesse momento o meu foco é no Brasil mesmo.</p>
 <p>Se quiser discutir política, economia, ciência, tecnologia, venha com fatos, dados e números e não com discurso sem fonte.</p>
-<p>[s]<br>
-Guto</p>
-
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>Atualizações críticas para o Zimbra</title>
-        <author>
-            <name>Guto Carvalho</name>
-        </author>
-        <link href="https://gutocarvalho.net/atualizacoes-criticas-para-o-zimbra/"/>
-        <id>https://gutocarvalho.net/atualizacoes-criticas-para-o-zimbra/</id>
-            <category term="Drops"/>
-
-        <updated>2022-10-18T08:07:25-03:00</updated>
-            <summary>
-                <![CDATA[
-                    Se você usa o Zimbra 9.x ou 8.x e ainda não atualizou,&hellip;
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                <p>Se você usa o Zimbra 9.x ou 8.x e ainda não atualizou, corre!</p>
-<p>Foram encontradas diversas vulnerabilidades que podem comprometer seu sistema de correio!</p>
-<p>Leia mais informações aqui:</p>
-<ul>
-<li><a href="https://wiki.zimbra.com/wiki/Zimbra_Releases/8.8.15/P34#Security_Fixes">https://wiki.zimbra.com/wiki/Zimbra_Releases/8.8.15/P34#Security_Fixes</a></li>
-</ul>
-<p>Eu uso Zimbra e gosto muito, então vamos lá galera, vamos atualizar e manter a segurança de nossos ambientes!</p>
 <p>[s]<br>
 Guto</p>
 
