@@ -3,12 +3,46 @@
     <title>Guto@Site</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2022-10-29T11:54:15-03:00</updated>
+    <updated>2022-10-29T12:03:46-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
     <id>https://gutocarvalho.net</id>
 
+    <entry>
+        <title>Ih, será que esse último post foi pra mim, hein?</title>
+        <author>
+            <name>Guto Carvalho</name>
+        </author>
+        <link href="https://gutocarvalho.net/ih-sera-que-esse-ultimo-post-foi-pra-mim-hein/"/>
+        <id>https://gutocarvalho.net/ih-sera-que-esse-ultimo-post-foi-pra-mim-hein/</id>
+            <category term="FalaGutera"/>
+
+        <updated>2022-10-29T12:03:46-03:00</updated>
+            <summary>
+                <![CDATA[
+                    Tá na dúvida? É fácil descobrir, marque um X nas alternativas abaixo:&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p>Tá na dúvida?</p>
+<p>É fácil descobrir, marque um X nas alternativas abaixo:</p>
+<p>[  ] Eu já fiz discurso pró-ditadura
+[  ] Eu fiz discurso anti-vacina
+[  ] Eu fiz discurso anti-ciência
+[  ] Eu fiz discurso pró-cloroquina para tratar COVID
+[  ] Eu já fiz discurso para fechar o STF
+[  ] Eu já divulguei fake news sobre Kit Gay
+[  ] Eu acredito que existe “Ideologia de Gênero” (mesmo sendo alfabetizado)
+[  ] Eu defendo que o ESTADO decida sobre o corpo e a vontade das mulheres</p>
+<p>Se você marcou qualquer uma das opções, é para você.</p>
+<p>Se você é alfabetizado, é para você.</p>
+<p>Se você tem nível superior, é para você mais ainda.</p>
+
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>Como vai ser minha vida após eleições?</title>
         <author>
@@ -351,31 +385,6 @@ Guto</p>
 <p>Escute parente e amigo, votando em quem você vota, você me diz quem muito sobre quem é.</p>
 <p>E eu sei que para você eu sou de esquerda, e segundo vocês sou vagabundo, bandido, corrupto, burro, cego, comunista, com bandido de estimação e muito mais.</p>
 <p>Seguindo a mesma lógica, vocês da família tradicional Brasileira também refletem todos os adjetivos que menciono na primeira linha deste post, afinal isso é tudo que cristo prega não é mesmo?</p>
-
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>Condeno a corrupção em qualquer forma!</title>
-        <author>
-            <name>Guto Carvalho</name>
-        </author>
-        <link href="https://gutocarvalho.net/condeno-a-corrupcao-em-qualquer-forma/"/>
-        <id>https://gutocarvalho.net/condeno-a-corrupcao-em-qualquer-forma/</id>
-            <category term="FalaGutera"/>
-
-        <updated>2022-10-20T07:46:21-03:00</updated>
-            <summary>
-                <![CDATA[
-                    Condeno a corrupção em todas as suas formas, inclusive em forma de&hellip;
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                <p>Condeno a corrupção em todas as suas formas, inclusive em forma de orçamento secreto que até esse mês já somou cerca de 630 mensalões, tudo isso em menos de 2 anos.</p>
-<p>Indignação não pode ser seletiva.</p>
-<p>[s]<br>
-Guto</p>
 
             ]]>
         </content>

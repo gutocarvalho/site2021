@@ -10,6 +10,21 @@
     },
     "items": [
         {
+            "id": "https://gutocarvalho.net/ih-sera-que-esse-ultimo-post-foi-pra-mim-hein/",
+            "url": "https://gutocarvalho.net/ih-sera-que-esse-ultimo-post-foi-pra-mim-hein/",
+            "title": "Ih, será que esse último post foi pra mim, hein?",
+            "summary": "Tá na dúvida? É fácil descobrir, marque um X nas alternativas abaixo:&hellip;",
+            "content_html": "<p>Tá na dúvida?</p>\n<p>É fácil descobrir, marque um X nas alternativas abaixo:</p>\n<p>[  ] Eu já fiz discurso pró-ditadura\n[  ] Eu fiz discurso anti-vacina\n[  ] Eu fiz discurso anti-ciência\n[  ] Eu fiz discurso pró-cloroquina para tratar COVID\n[  ] Eu já fiz discurso para fechar o STF\n[  ] Eu já divulguei fake news sobre Kit Gay\n[  ] Eu acredito que existe “Ideologia de Gênero” (mesmo sendo alfabetizado)\n[  ] Eu defendo que o ESTADO decida sobre o corpo e a vontade das mulheres</p>\n<p>Se você marcou qualquer uma das opções, é para você.</p>\n<p>Se você é alfabetizado, é para você.</p>\n<p>Se você tem nível superior, é para você mais ainda.</p>\n",
+            "author": {
+                "name": "Guto Carvalho"
+            },
+            "tags": [
+                   "FalaGutera"
+            ],
+            "date_published": "2022-10-29T12:03:46-03:00",
+            "date_modified": "2022-10-29T12:03:46-03:00"
+        },
+        {
             "id": "https://gutocarvalho.net/como-vai-ser-minha-vida-apos-eleicoes/",
             "url": "https://gutocarvalho.net/como-vai-ser-minha-vida-apos-eleicoes/",
             "title": "Como vai ser minha vida após eleições?",
@@ -143,21 +158,6 @@
             ],
             "date_published": "2022-10-20T07:45:02-03:00",
             "date_modified": "2022-10-20T07:46:17-03:00"
-        },
-        {
-            "id": "https://gutocarvalho.net/condeno-a-corrupcao-em-qualquer-forma/",
-            "url": "https://gutocarvalho.net/condeno-a-corrupcao-em-qualquer-forma/",
-            "title": "Condeno a corrupção em qualquer forma!",
-            "summary": "Condeno a corrupção em todas as suas formas, inclusive em forma de&hellip;",
-            "content_html": "<p>Condeno a corrupção em todas as suas formas, inclusive em forma de orçamento secreto que até esse mês já somou cerca de 630 mensalões, tudo isso em menos de 2 anos.</p>\n<p>Indignação não pode ser seletiva.</p>\n<p>[s]<br>\nGuto</p>\n",
-            "author": {
-                "name": "Guto Carvalho"
-            },
-            "tags": [
-                   "FalaGutera"
-            ],
-            "date_published": "2022-10-20T07:40:15-03:00",
-            "date_modified": "2022-10-20T07:46:21-03:00"
         }
     ]
 }
