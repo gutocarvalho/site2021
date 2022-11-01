@@ -10,6 +10,21 @@
     },
     "items": [
         {
+            "id": "https://gutocarvalho.net/vulnerabilidade-no-openssl/",
+            "url": "https://gutocarvalho.net/vulnerabilidade-no-openssl/",
+            "title": "Vulnerabilidade no OpenSSL",
+            "summary": "Se você está usando o OpenSSL 3.x atualize o quanto antes. Versões&hellip;",
+            "content_html": "<p>Se você está usando o OpenSSL 3.x atualize o quanto antes.</p>\n<p>Versões anteriores – aparentemente – não sao afetadas.</p>\n<p>As informações ainda não são muito claras, mas o projeto já está trabalhando para resolver.</p>\n<h2 id=\"refs\">Refs</h2>\n<p>OpenSSL</p>\n<ul>\n<li><a href=\"https://www.openssl.org/news/vulnerabilities-3.0.html\">https://www.openssl.org/news/vulnerabilities-3.0.html</a></li>\n<li><a href=\"https://www.openssl.org/news/secadv/20221011.txt\">https://www.openssl.org/news/secadv/20221011.txt</a></li>\n</ul>\n<p>Outros</p>\n<ul>\n<li><a href=\"https://www.trendmicro.com/en_za/research/22/j/openssl-critical-security-vulnerability-fix.html\">https://www.trendmicro.com/en_za/research/22/j/openssl-critical-security-vulnerability-fix.html</a></li>\n<li><a href=\"https://blog.checkpoint.com/2022/10/30/openssl-gives-heads-up-to-critical-vulnerability-disclosure-check-point-alerts-organizations-to-prepare-now/\">https://blog.checkpoint.com/2022/10/30/openssl-gives-heads-up-to-critical-vulnerability-disclosure-check-point-alerts-organizations-to-prepare-now/</a></li>\n<li><a href=\"https://snyk.io/blog/new-openssl-critical-vulnerability/\">https://snyk.io/blog/new-openssl-critical-vulnerability/</a></li>\n<li><a href=\"https://www.akamai.com/blog/security-research/openssl-vulnerability-how-to-effectively-prepare\">https://www.akamai.com/blog/security-research/openssl-vulnerability-how-to-effectively-prepare</a></li>\n<li><a href=\"https://blog.qualys.com/vulnerabilities-threat-research/2022/10/31/qualys-research-alert-prepare-for-a-critical-vulnerability-in-openssl-3-0\">https://blog.qualys.com/vulnerabilities-threat-research/2022/10/31/qualys-research-alert-prepare-for-a-critical-vulnerability-in-openssl-3-0</a></li>\n</ul>\n",
+            "author": {
+                "name": "Guto Carvalho"
+            },
+            "tags": [
+                   "MindNotes"
+            ],
+            "date_published": "2022-11-01T11:39:16-03:00",
+            "date_modified": "2022-11-01T11:39:16-03:00"
+        },
+        {
             "id": "https://gutocarvalho.net/ih-sera-que-esse-ultimo-post-foi-pra-mim-hein/",
             "url": "https://gutocarvalho.net/ih-sera-que-esse-ultimo-post-foi-pra-mim-hein/",
             "title": "Ih, será que esse último post foi pra mim, hein?",
@@ -143,21 +158,6 @@
             ],
             "date_published": "2022-10-20T07:46:09-03:00",
             "date_modified": "2022-10-20T07:46:09-03:00"
-        },
-        {
-            "id": "https://gutocarvalho.net/lidar-com-gente-nao-e-facil/",
-            "url": "https://gutocarvalho.net/lidar-com-gente-nao-e-facil/",
-            "title": "Lidar com gente não é fácil",
-            "summary": "É bem complicado para mim ter parentes e amigos que são homofóbicos,&hellip;",
-            "content_html": "<p>É bem complicado para mim ter parentes e amigos que são homofóbicos, racistas, capacitistas e extremistas religiosos.</p>\n<p>Como seguir mantendo relações com essas pessoas?</p>\n<p>Como ignorar isso?</p>\n<p>Como lidar com isso?</p>\n<p>Sim eu disse extremista religioso, especialmente se a pessoa acha que só sua religião é a certa, que só o seu ideal de moral é o certo, que só sua identidade de gênero é possível e que só a sua configuração de família é a que deveria ser aceita pela sociedade.</p>\n<p>É duro ter parentes que acham que o cristianismo está acima de tudo, é duro ter parentes que acreditam que seu ideal de família, moral e costumes é o único que deveria ser aceito no Brasil e no mundo.</p>\n<p>É duro ter parentes e amigos que tem ódio de pessoas pobres, pretas, gays e faveladas.</p>\n<p>E não adianta dizer que não tem nada contra essas pessoas, não adianta dizer que tem amigos ou que conhece pessoas pretas, pobres, faveladas ou gays, não é questão de ser contra ou a favor, você precisa é ter respeito, é algo realmente muito simples.</p>\n<p>E não ache que por você ter empregados nestas condições isso te faz alguém que conhece a realidade deles, você não conhece.</p>\n<p>É duro ver pessoas com nível superior que não exercitam o mínimo de senso crítico, que não estudam, pesquisam ou verificam fontes de informações.</p>\n<p>Bom, pelo menos agora que essas pessoas tem um presidente que faz e fala tudo isso a luz do dia, em frente das câmeras, sem nenhuma vergonha ou receio de punição, fica mais fácil identificar estes cristãos e defensores da família, afinal eles não precisam mais esconder suas escolhas, suas crenças, opiniões e todos os pré-conceitos que sempre carregaram consigo.</p>\n<p>Agora estas pessoas conseguem se identificar e se assumir, afinal eles tem empatia pelo presidente, e empatia funciona como um espelho, eles se enxergam no presidente e suas falas, comportamentos e vice-versa.</p>\n<p>Escute parente e amigo, votando em quem você vota, você me diz quem muito sobre quem é.</p>\n<p>E eu sei que para você eu sou de esquerda, e segundo vocês sou vagabundo, bandido, corrupto, burro, cego, comunista, com bandido de estimação e muito mais.</p>\n<p>Seguindo a mesma lógica, vocês da família tradicional Brasileira também refletem todos os adjetivos que menciono na primeira linha deste post, afinal isso é tudo que cristo prega não é mesmo?</p>\n",
-            "author": {
-                "name": "Guto Carvalho"
-            },
-            "tags": [
-                   "FalaGutera"
-            ],
-            "date_published": "2022-10-20T07:45:02-03:00",
-            "date_modified": "2022-10-20T07:46:17-03:00"
         }
     ]
 }

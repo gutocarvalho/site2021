@@ -3,12 +3,50 @@
     <title>Guto@Site</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2022-10-29T12:10:43-03:00</updated>
+    <updated>2022-11-01T11:39:16-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
     <id>https://gutocarvalho.net</id>
 
+    <entry>
+        <title>Vulnerabilidade no OpenSSL</title>
+        <author>
+            <name>Guto Carvalho</name>
+        </author>
+        <link href="https://gutocarvalho.net/vulnerabilidade-no-openssl/"/>
+        <id>https://gutocarvalho.net/vulnerabilidade-no-openssl/</id>
+            <category term="MindNotes"/>
+
+        <updated>2022-11-01T11:39:16-03:00</updated>
+            <summary>
+                <![CDATA[
+                    Se você está usando o OpenSSL 3.x atualize o quanto antes. Versões&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p>Se você está usando o OpenSSL 3.x atualize o quanto antes.</p>
+<p>Versões anteriores – aparentemente – não sao afetadas.</p>
+<p>As informações ainda não são muito claras, mas o projeto já está trabalhando para resolver.</p>
+<h2 id="refs">Refs</h2>
+<p>OpenSSL</p>
+<ul>
+<li><a href="https://www.openssl.org/news/vulnerabilities-3.0.html">https://www.openssl.org/news/vulnerabilities-3.0.html</a></li>
+<li><a href="https://www.openssl.org/news/secadv/20221011.txt">https://www.openssl.org/news/secadv/20221011.txt</a></li>
+</ul>
+<p>Outros</p>
+<ul>
+<li><a href="https://www.trendmicro.com/en_za/research/22/j/openssl-critical-security-vulnerability-fix.html">https://www.trendmicro.com/en_za/research/22/j/openssl-critical-security-vulnerability-fix.html</a></li>
+<li><a href="https://blog.checkpoint.com/2022/10/30/openssl-gives-heads-up-to-critical-vulnerability-disclosure-check-point-alerts-organizations-to-prepare-now/">https://blog.checkpoint.com/2022/10/30/openssl-gives-heads-up-to-critical-vulnerability-disclosure-check-point-alerts-organizations-to-prepare-now/</a></li>
+<li><a href="https://snyk.io/blog/new-openssl-critical-vulnerability/">https://snyk.io/blog/new-openssl-critical-vulnerability/</a></li>
+<li><a href="https://www.akamai.com/blog/security-research/openssl-vulnerability-how-to-effectively-prepare">https://www.akamai.com/blog/security-research/openssl-vulnerability-how-to-effectively-prepare</a></li>
+<li><a href="https://blog.qualys.com/vulnerabilities-threat-research/2022/10/31/qualys-research-alert-prepare-for-a-critical-vulnerability-in-openssl-3-0">https://blog.qualys.com/vulnerabilities-threat-research/2022/10/31/qualys-research-alert-prepare-for-a-critical-vulnerability-in-openssl-3-0</a></li>
+</ul>
+
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>Ih, será que esse último post foi pra mim, hein?</title>
         <author>
@@ -349,42 +387,6 @@ Guto</p>
 <p>O mundo na visão de vocês é um mundo que eu não quero fazer parte.</p>
 <p>Quero é distância de pessoas que pensam dessa forma.</p>
 <p>Pode dar unfollow, fará um favor a nós dois.</p>
-
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>Lidar com gente não é fácil</title>
-        <author>
-            <name>Guto Carvalho</name>
-        </author>
-        <link href="https://gutocarvalho.net/lidar-com-gente-nao-e-facil/"/>
-        <id>https://gutocarvalho.net/lidar-com-gente-nao-e-facil/</id>
-            <category term="FalaGutera"/>
-
-        <updated>2022-10-20T07:46:17-03:00</updated>
-            <summary>
-                <![CDATA[
-                    É bem complicado para mim ter parentes e amigos que são homofóbicos,&hellip;
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                <p>É bem complicado para mim ter parentes e amigos que são homofóbicos, racistas, capacitistas e extremistas religiosos.</p>
-<p>Como seguir mantendo relações com essas pessoas?</p>
-<p>Como ignorar isso?</p>
-<p>Como lidar com isso?</p>
-<p>Sim eu disse extremista religioso, especialmente se a pessoa acha que só sua religião é a certa, que só o seu ideal de moral é o certo, que só sua identidade de gênero é possível e que só a sua configuração de família é a que deveria ser aceita pela sociedade.</p>
-<p>É duro ter parentes que acham que o cristianismo está acima de tudo, é duro ter parentes que acreditam que seu ideal de família, moral e costumes é o único que deveria ser aceito no Brasil e no mundo.</p>
-<p>É duro ter parentes e amigos que tem ódio de pessoas pobres, pretas, gays e faveladas.</p>
-<p>E não adianta dizer que não tem nada contra essas pessoas, não adianta dizer que tem amigos ou que conhece pessoas pretas, pobres, faveladas ou gays, não é questão de ser contra ou a favor, você precisa é ter respeito, é algo realmente muito simples.</p>
-<p>E não ache que por você ter empregados nestas condições isso te faz alguém que conhece a realidade deles, você não conhece.</p>
-<p>É duro ver pessoas com nível superior que não exercitam o mínimo de senso crítico, que não estudam, pesquisam ou verificam fontes de informações.</p>
-<p>Bom, pelo menos agora que essas pessoas tem um presidente que faz e fala tudo isso a luz do dia, em frente das câmeras, sem nenhuma vergonha ou receio de punição, fica mais fácil identificar estes cristãos e defensores da família, afinal eles não precisam mais esconder suas escolhas, suas crenças, opiniões e todos os pré-conceitos que sempre carregaram consigo.</p>
-<p>Agora estas pessoas conseguem se identificar e se assumir, afinal eles tem empatia pelo presidente, e empatia funciona como um espelho, eles se enxergam no presidente e suas falas, comportamentos e vice-versa.</p>
-<p>Escute parente e amigo, votando em quem você vota, você me diz quem muito sobre quem é.</p>
-<p>E eu sei que para você eu sou de esquerda, e segundo vocês sou vagabundo, bandido, corrupto, burro, cego, comunista, com bandido de estimação e muito mais.</p>
-<p>Seguindo a mesma lógica, vocês da família tradicional Brasileira também refletem todos os adjetivos que menciono na primeira linha deste post, afinal isso é tudo que cristo prega não é mesmo?</p>
 
             ]]>
         </content>
