@@ -3,7 +3,7 @@
     <title>Guto@Site</title>
     <link href="https://gutocarvalho.net/feed.xml" rel="self" />
     <link href="https://gutocarvalho.net" />
-    <updated>2022-11-01T11:39:16-03:00</updated>
+    <updated>2022-11-01T14:55:28-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
@@ -18,7 +18,7 @@
         <id>https://gutocarvalho.net/vulnerabilidade-no-openssl/</id>
             <category term="MindNotes"/>
 
-        <updated>2022-11-01T11:39:16-03:00</updated>
+        <updated>2022-11-01T14:55:28-03:00</updated>
             <summary>
                 <![CDATA[
                     Se você está usando o OpenSSL 3.x atualize o quanto antes. Versões&hellip;
@@ -29,6 +29,9 @@
                 <p>Se você está usando o OpenSSL 3.x atualize o quanto antes.</p>
 <p>Versões anteriores – aparentemente – não sao afetadas.</p>
 <p>As informações ainda não são muito claras, mas o projeto já está trabalhando para resolver.</p>
+<h2 id="update-2022-10-01_1555">Update 2022-10-01_15:55</h2>
+<p>Saiu o posicionamento do projeto OPENSSL e o bugfix para o problema.</p>
+<p><a href="https://www.openssl.org/blog/blog/2022/11/01/email-address-overflows/">https://www.openssl.org/blog/blog/2022/11/01/email-address-overflows/</a></p>
 <h2 id="refs">Refs</h2>
 <p>OpenSSL</p>
 <ul>
