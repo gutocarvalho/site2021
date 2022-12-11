@@ -2,16 +2,16 @@
     "version": "https://jsonfeed.org/version/1",
     "title": "Guto@Site",
     "description": "",
-    "home_page_url": "https://gutocarvalho.net",
-    "feed_url": "https://gutocarvalho.net/feed.json",
+    "home_page_url": "https://pub.gutocarvalho.net",
+    "feed_url": "https://pub.gutocarvalho.net/feed.json",
     "user_comment": "",
     "author": {
         "name": "Guto Carvalho"
     },
     "items": [
         {
-            "id": "https://gutocarvalho.net/vulnerabilidade-no-openssl/",
-            "url": "https://gutocarvalho.net/vulnerabilidade-no-openssl/",
+            "id": "https://pub.gutocarvalho.net/vulnerabilidade-no-openssl/",
+            "url": "https://pub.gutocarvalho.net/vulnerabilidade-no-openssl/",
             "title": "Vulnerabilidade no OpenSSL",
             "summary": "Se você está usando o OpenSSL 3.x atualize o quanto antes. Versões&hellip;",
             "content_html": "<p>Se você está usando o OpenSSL 3.x atualize o quanto antes.</p>\n<p>Versões anteriores – aparentemente – não sao afetadas.</p>\n<p>As informações ainda não são muito claras, mas o projeto já está trabalhando para resolver.</p>\n<h2 id=\"update-2022-10-01_1555\">Update 2022-10-01_15:55</h2>\n<p>Saiu o posicionamento do projeto OPENSSL e o bugfix para o problema.</p>\n<p><a href=\"https://www.openssl.org/blog/blog/2022/11/01/email-address-overflows/\">https://www.openssl.org/blog/blog/2022/11/01/email-address-overflows/</a></p>\n<h2 id=\"refs\">Refs</h2>\n<p>OpenSSL</p>\n<ul>\n<li><a href=\"https://www.openssl.org/news/vulnerabilities-3.0.html\">https://www.openssl.org/news/vulnerabilities-3.0.html</a></li>\n<li><a href=\"https://www.openssl.org/news/secadv/20221011.txt\">https://www.openssl.org/news/secadv/20221011.txt</a></li>\n</ul>\n<p>Outros</p>\n<ul>\n<li><a href=\"https://www.trendmicro.com/en_za/research/22/j/openssl-critical-security-vulnerability-fix.html\">https://www.trendmicro.com/en_za/research/22/j/openssl-critical-security-vulnerability-fix.html</a></li>\n<li><a href=\"https://blog.checkpoint.com/2022/10/30/openssl-gives-heads-up-to-critical-vulnerability-disclosure-check-point-alerts-organizations-to-prepare-now/\">https://blog.checkpoint.com/2022/10/30/openssl-gives-heads-up-to-critical-vulnerability-disclosure-check-point-alerts-organizations-to-prepare-now/</a></li>\n<li><a href=\"https://snyk.io/blog/new-openssl-critical-vulnerability/\">https://snyk.io/blog/new-openssl-critical-vulnerability/</a></li>\n<li><a href=\"https://www.akamai.com/blog/security-research/openssl-vulnerability-how-to-effectively-prepare\">https://www.akamai.com/blog/security-research/openssl-vulnerability-how-to-effectively-prepare</a></li>\n<li><a href=\"https://blog.qualys.com/vulnerabilities-threat-research/2022/10/31/qualys-research-alert-prepare-for-a-critical-vulnerability-in-openssl-3-0\">https://blog.qualys.com/vulnerabilities-threat-research/2022/10/31/qualys-research-alert-prepare-for-a-critical-vulnerability-in-openssl-3-0</a></li>\n</ul>\n",
@@ -25,8 +25,8 @@
             "date_modified": "2022-11-01T14:55:28-03:00"
         },
         {
-            "id": "https://gutocarvalho.net/ih-sera-que-esse-ultimo-post-foi-pra-mim-hein/",
-            "url": "https://gutocarvalho.net/ih-sera-que-esse-ultimo-post-foi-pra-mim-hein/",
+            "id": "https://pub.gutocarvalho.net/ih-sera-que-esse-ultimo-post-foi-pra-mim-hein/",
+            "url": "https://pub.gutocarvalho.net/ih-sera-que-esse-ultimo-post-foi-pra-mim-hein/",
             "title": "Ih, será que esse último post foi pra mim, hein?",
             "summary": "Tá na dúvida? É fácil descobrir, marque um X nas alternativas abaixo:&hellip;",
             "content_html": "<p>Tá na dúvida?</p>\n<p>É fácil descobrir, marque um X nas alternativas abaixo:</p>\n<p>[  ] Eu já fiz discurso pró-ditadura<br>\n[  ] Eu fiz discurso anti-vacina<br>\n[  ] Eu fiz discurso anti-ciência<br>\n[  ] Eu fiz discurso pró-cloroquina para tratar COVID<br>\n[  ] Eu já fiz discurso para fechar o STF<br>\n[  ] Eu já divulguei fake news sobre Kit Gay<br>\n[  ] Eu acredito que existe “Ideologia de Gênero” (mesmo sendo alfabetizado)<br>\n[  ] Eu defendo que o ESTADO decida sobre o corpo e a vontade das mulheres<br></p>\n<p>Se marcou qualquer uma das opções, é para você.<br></p>\n<p>Se marcou e você é alfabetizado, é para você.<br></p>\n<p>Se marcou e tem nível superior, é para você mais ainda.<br></p>\n",
@@ -40,8 +40,8 @@
             "date_modified": "2022-10-29T12:10:43-03:00"
         },
         {
-            "id": "https://gutocarvalho.net/como-vai-ser-minha-vida-apos-eleicoes/",
-            "url": "https://gutocarvalho.net/como-vai-ser-minha-vida-apos-eleicoes/",
+            "id": "https://pub.gutocarvalho.net/como-vai-ser-minha-vida-apos-eleicoes/",
+            "url": "https://pub.gutocarvalho.net/como-vai-ser-minha-vida-apos-eleicoes/",
             "title": "Como vai ser minha vida após eleições?",
             "summary": "Independente do resultado das eleições, hoje eu falo hoje para você, isso,&hellip;",
             "content_html": "<p>Independente do resultado das eleições, hoje eu falo hoje para você, isso, você que é eleitor do Bolsonaro. Eu preciso te dizer uma coisa de forma bastante CLARA, vamos lá.</p>\n<p>Eu já disse que essa eleição não é DIREITA contra a ESQUERDA, mas vocês não escutam.</p>\n<p>Essa eleição é DEMOCRACIA contra o FANATISMO RELIGIOSO de pessoas que flertam com DITADURA e com a MILÍCIA.</p>\n<p>Se você me conhece, você sabe dos meus valores, vocês sabem no que eu acredito e no que eu defendo.</p>\n<p>Eu não vivi a Ditadura – ainda bem, mas eu estudei, eu conheço quem viveu (dos dois lados) e eu prezo minha inteligência e minha opinião, e acredito que nenhuma ditadura é boa para nenhum país, sociedade ou pessoa.</p>\n<p>Como empresário que fundou empresas de sucesso, como palestrante e professor há quase 20 anos, como uma pessoa com uma sólida carreira construída ao longo de quase 25 anos trabalhando com tecnologias avançadas, no Brasil e no exterior, trabalhando em iniciativa privada, em governos estaduais, distrital e federal, sendo referência em tecnologias no Brasil (na minha área) e também como Pai e cidadão, eu não tenho outra opção a não ser defender a DEMOCRACIA.</p>\n<p>Escute, vocês estão fazendo suas escolhas, contudo, não venha me procurar, não tente se aproximar, não tente me convidar para qualquer coisa, pois eu NÃO VOU.</p>\n<p>Na minha vida não tem espaço para os valores que vocês estão endossando, defendendo e disseminando com o seu voto.</p>\n<p>Na vida dos meus filhos não tem espaço para pessoas com valores que vocês estão endossando com o seu voto.</p>\n<p>Racismo, homofobia, ódio a pessoas diferentes, ódio contra minorias, ódio a pobres, ódio contra pessoas homoafetivas, discurso pró-armamentista, discursos para fechar STF dia sim e dia também, discurso pró-ditadura, discurso anti-ciência,  discurso anti-vacina, discurso anti-máscara, discurso pró-cloroquina para tratar covid, capacitismo, xenofobia e principalmente você que defende (por questões religiosas) que o ESTADO deva decidir o que uma mulher deseja ou não fazer com seu corpo, eu te digo, nada disso tem espaço na MINHA VIDA ou na vida dos MEUS FILHOS.</p>\n<p>Das minhas responsabilidades eu não vou fugir e farei tudo ao meu alcance, mas não esperem minha presença como já tiveram daqui para frente, e digo isso as pessoas mais próximas, amigos, colegas e familiares.</p>\n<p>Que isso fique bem claro, esse texto estará em todas as minhas redes e no meu BLOG, ficará registrado para ninguém dizer que eu não fui claro o suficiente.</p>\n<p>E como disse, independente do resultado destas eleições, que viva o Brasil, que viva a DEMOCRACIA, que viva a diferença, que o amor seja respeitado em todas as suas formas e configurações, e que o estado seja LAICO pois religião e política não devem se misturar jamais, a história nos prova isso.</p>\n",
@@ -55,8 +55,8 @@
             "date_modified": "2022-10-29T11:54:15-03:00"
         },
         {
-            "id": "https://gutocarvalho.net/meu-voto-e-13-no-dia-30-de-outubro/",
-            "url": "https://gutocarvalho.net/meu-voto-e-13-no-dia-30-de-outubro/",
+            "id": "https://pub.gutocarvalho.net/meu-voto-e-13-no-dia-30-de-outubro/",
+            "url": "https://pub.gutocarvalho.net/meu-voto-e-13-no-dia-30-de-outubro/",
             "title": "Meu voto é 13 no dia 30 de Outubro!",
             "summary": "No dia 30 de Outubro de 2022 meu voto – como sempre&hellip;",
             "content_html": "<p>No dia 30 de Outubro de 2022 meu voto – como sempre foi – será 13.</p>\n<p>Voto pela democracia<br>\nVoto pela liberdade<br>\nVoto pela livre manifestação religiosa<br>\nVoto pela livre manifestação de pensamento<br>\nVoto pela livre manifestação política<br>\nVoto pelo estado LAICO<br></p>\n<p>Voto pelo amor livre em todas as suas formas e configurações<br>\nVoto pelo respeito a escolha e identificação de gênero<br>\nVoto para as mulheres serem livres e deciderem sobre seus corpos<br></p>\n<p>Voto para que minorias sejam respeitadas e protegidas<br>\nVoto para que maiorias sejam coerentes e sensatas<br></p>\n<p>Voto contra a fome<br>\nVoto contra a pobreza<br>\nVoto contra a miséria<br>\nVoto contra a violência<br>\nVoto contra o ódio<br>\nVoto contra as fakenews<br>\nVoto contra o facismo e o nazismo<br></p>\n<p>Voto a favor de um sistema econômico justo para todos<br>\nVoto a favor de um sistema de saúde humano e eficiente<br>\nVoto a favor de um sistema de educação moderno e evoluído<br>\nVoto a favor do esporte<br>\nVoto a favor do emprego<br>\nVoto a favor da segurança pública mais humana<br>\nVoto pela cultura e pela arte<br></p>\n<p>Voto pelo meio-ambiente<br>\nVoto pelo ser-humano viver em equilibrio com o meio-ambiente<br>\nVoto pelo planeta!<br></p>\n<p>Voto pelo direito dos meus filhos viverem da forma que desejarem<br>\nVoto pelo direito dos meus filhos amarem a quem quiserem<br>\nVoto para poder criá-los da forma da qual eu e a mãe acharmos adequado<br></p>\n<p>Voto pelo Brasil.<br>\nPara o Brasil.<br>\nCom o Brasil.<br></p>\n<p>Voto Lula<br>\nVoto 13.<br></p>\n<p>Vem com a gente!<br></p>\n",
@@ -70,8 +70,8 @@
             "date_modified": "2022-10-26T10:53:54-03:00"
         },
         {
-            "id": "https://gutocarvalho.net/vao-fechar-igrejas-no-brasil-sera/",
-            "url": "https://gutocarvalho.net/vao-fechar-igrejas-no-brasil-sera/",
+            "id": "https://pub.gutocarvalho.net/vao-fechar-igrejas-no-brasil-sera/",
+            "url": "https://pub.gutocarvalho.net/vao-fechar-igrejas-no-brasil-sera/",
             "title": "Vão fechar igrejas no Brasil, será?",
             "summary": "Não gente, não vai. As igrejas, em especial as evangélicas só são&hellip;",
             "content_html": "<p>Não gente, não vai.</p>\n<p>As igrejas, em especial as evangélicas só são reconhecidas e tem CNPJ – podendo operar como igreja – por causa de uma lei sancionada pelo presidente Lula durante seu governo.</p>\n<p>O número de abertura de igrejas durante o governo do PT foi bem grande por essa razão, especialmente as evangélicas, e tudo ocorreu na maior normalidade.</p>\n<p>Durante o governo do PT também foi criado através da lei 12.328, de setembro de 2010, o Dia Nacional do Evangélico que é celebrado no dia 30 de Novembro.</p>\n<p>Fique tranquilo que nada vai acontecer com sua igreja, aliás, com nenhuma igreja.</p>\n<p>Lula é um democrata que defende a livre manifestação religiosa.</p>\n<p>E Lula se declara cristão.</p>\n<p>[s]<br>\nGuto</p>\n",
@@ -85,8 +85,8 @@
             "date_modified": "2022-10-26T10:21:06-03:00"
         },
         {
-            "id": "https://gutocarvalho.net/vai-haver-censura-no-brasil-sera/",
-            "url": "https://gutocarvalho.net/vai-haver-censura-no-brasil-sera/",
+            "id": "https://pub.gutocarvalho.net/vai-haver-censura-no-brasil-sera/",
+            "url": "https://pub.gutocarvalho.net/vai-haver-censura-no-brasil-sera/",
             "title": "Vai haver censura no Brasil, será?",
             "summary": "Não gente, não vai. Regulação e censura são coisas bem diferentes. Lula&hellip;",
             "content_html": "<p>Não gente, não vai.</p>\n<p>Regulação e censura são coisas bem diferentes.</p>\n<p>Lula lutou contra a censura ao lado de milhões de Brasileiros.</p>\n<p>Lula lutou contra a ditadura para reestabelecer a democracia no Brasil.</p>\n<p>A verdade é que a lei que regula a mídia e telecomunicações no país é de 1962 (LEI Nº 4.117) e precisa de atualizações. </p>\n<p>Em 1962 não existia internet, não existiam as redes sociais e diversas outras mídias digitais, e principalmente não existiam as FAKE NEWS e o discurso de ódio em seu formato DIGITAL.</p>\n<p>Precisamos discutir a regulação da mídia de forma participativa com discussões abertas onde a sociedade civil, universidades, organizações não-governamentais e especialistas possam contribuir de forma objetiva.</p>\n<p>Isso é algo que nós temos que fazer, independente do Presidente eleito.</p>\n<h2 id=\"ah-guto-mas-algum-país-faz-isso\">Ah guto, mas algum país faz isso?</h2>\n<p>Claro que faz, segue uma lista dos principais e mais importantes:</p>\n<ul>\n<li>Estados Unidos</li>\n<li>Alemanha</li>\n<li>França</li>\n<li>Reino Unido</li>\n</ul>\n<p>Todos eles tem regulação da mídia e estão constantemente reciclando as leis para conseguir acompanhar a evolução tecnológica.</p>\n<p>A União Européia inclusive está trabalhando para a partir de 2023 começar a regular a ação dos gigantes da TI para coibir casos de “Discurso de Ódio” e FakeNews nas redes.</p>\n<p>Basta dar um google para ver essas notícias.</p>\n<p>[s]<br>\nGuto</p>\n",
@@ -100,8 +100,8 @@
             "date_modified": "2022-10-26T10:35:01-03:00"
         },
         {
-            "id": "https://gutocarvalho.net/o-brasil-vai-virar-uma-ditadura-sera/",
-            "url": "https://gutocarvalho.net/o-brasil-vai-virar-uma-ditadura-sera/",
+            "id": "https://pub.gutocarvalho.net/o-brasil-vai-virar-uma-ditadura-sera/",
+            "url": "https://pub.gutocarvalho.net/o-brasil-vai-virar-uma-ditadura-sera/",
             "title": "O Brasil vai virar uma Ditadura, será?",
             "summary": "Não gente, não vai. O Lula tem como aliados 11 dos 23&hellip;",
             "content_html": "<p>Não gente, não vai.</p>\n<p>O Lula tem como aliados 11 dos 23 partidos políticos registrados no TSE, dentre eles PSB, PDT, PV, Cidadania, Rede, Solidariedde e outros. </p>\n<p>Todos são partidos pró-democracia.</p>\n<p>E o próprio Lula foi as ruas e lutou para reestabelecer o regime democrático no Brasil.</p>\n<p>Lula inclusive foi preso em 19 de abril de 1980 (42 anos atrás) quando ainda era apenas um líder sindical. O regime (a.k.a ditadura) usou a LEI DE SEGURANÇA NACIONAL e enviou o DOPS para prendê-lo. </p>\n<p>O curioso é que essa é a mesma LEI que o atual presidente tentou usar para prender o Youtuber Felipe Neto em 2020, 42 anos depois.</p>\n<p>Não faz sentido nenhum dizer que vamos virar DITADURA se o candidato de 11 partidos lutou contra uma em nosso país e foi até preso por isso.</p>\n<p>Isso não é lógico, não faz sentido, não tem fundamento.</p>\n<p>Para de replicar inverdades.</p>\n<p>Vai, você é mais inteligente que isso.</p>\n<p>[s]<br>\nGuto</p>\n",
@@ -115,8 +115,8 @@
             "date_modified": "2022-10-26T16:44:32-03:00"
         },
         {
-            "id": "https://gutocarvalho.net/o-brasil-vai-virar-uma-venezuela-sera/",
-            "url": "https://gutocarvalho.net/o-brasil-vai-virar-uma-venezuela-sera/",
+            "id": "https://pub.gutocarvalho.net/o-brasil-vai-virar-uma-venezuela-sera/",
+            "url": "https://pub.gutocarvalho.net/o-brasil-vai-virar-uma-venezuela-sera/",
             "title": "O Brasil vai virar uma Venezuela, será?",
             "summary": "Não gente, não vai. Ah Guto, mas a Venezuela, Cuba, Coreia do&hellip;",
             "content_html": "<p>Não gente, não vai.</p>\n<p>Ah Guto, mas a Venezuela, Cuba, Coreia do Norte, Nicarágua são de esquerda.</p>\n<p>Não gente, não são.</p>\n<p>Esses países estão vivendo um regime ditatorial, o que é diferente de governo democrático.</p>\n<p>Ditadura é uma coisa, governo democrático de direita, esquerda ou centro é outra.</p>\n<p>Vamos conhecer alguns países com líderes de esquerda.</p>\n<ul>\n<li>Noruega</li>\n<li>Finlândia</li>\n<li>Dinamarca</li>\n<li>Islândia</li>\n<li>Espanha</li>\n<li>Alemanha</li>\n<li>Austrália</li>\n<li>México</li>\n</ul>\n<p>Esses países hoje estão sob liderança de políticos de esquerda, que se identificam como princípios socialistas ou social-democratas.</p>\n<p>E não, nenhum deles virou a Venezuela.</p>\n<p>Por aqui o PT ficou 13 anos no governo e também não viramos a Venezuela.</p>\n<p>Pare de replicar inverdades.</p>\n<p>Vai, você é mais inteligente que isso.</p>\n<p>[s]<br>\nGuto</p>\n",
@@ -130,8 +130,8 @@
             "date_modified": "2022-10-26T16:44:27-03:00"
         },
         {
-            "id": "https://gutocarvalho.net/condeno-o-ataque-contra-a-pf-no-rio/",
-            "url": "https://gutocarvalho.net/condeno-o-ataque-contra-a-pf-no-rio/",
+            "id": "https://pub.gutocarvalho.net/condeno-o-ataque-contra-a-pf-no-rio/",
+            "url": "https://pub.gutocarvalho.net/condeno-o-ataque-contra-a-pf-no-rio/",
             "title": "Condeno o ataque contra a PF no Rio",
             "summary": "Condeno os vinte disparos de Fuzil contra agentes da PF, Condendo o&hellip;",
             "content_html": "<p>Condeno os vinte disparos de Fuzil contra agentes da PF,<br>\nCondendo o disparo de três granadas contra agentes da PF,<br>\nCondeno quem feriu e hospitalizou dois agentes da PF.<br></p>\n<p>Não é esse Brasil que eu quero, <br>\nNem para mim, <br>\nNem para meus filhos, <br>\nNem para ninguém.<br></p>\n<p>Condeno duramente o ataque a nossa Polícia Federal,<br>\nCondeno os constantes ataque ao nosso STF,<br>\nCondeno veementemente os ataques a nossa querida democracia.</p>\n<p>E não esqueço que esse criminoso é um dos maiores aliados do atual presidente.</p>\n<p>No dia 30 estarei fazendo minha parte para mudar os rumos deste país!</p>\n<p>Vem comigo!</p>\n<p>Lula 13, Brasil Livre, Brasil de todos!</p>\n<p>[s]<br>\nGuto</p>\n",
@@ -145,8 +145,8 @@
             "date_modified": "2022-10-26T10:19:09-03:00"
         },
         {
-            "id": "https://gutocarvalho.net/sigo-envergonhado-com-muita-gente/",
-            "url": "https://gutocarvalho.net/sigo-envergonhado-com-muita-gente/",
+            "id": "https://pub.gutocarvalho.net/sigo-envergonhado-com-muita-gente/",
+            "url": "https://pub.gutocarvalho.net/sigo-envergonhado-com-muita-gente/",
             "title": "Sigo envergonhado com muita gente",
             "summary": "Sigo envergonhado com muitos parentes, amigos e colegas cristãos, evangélicos e espíritas.",
             "content_html": "<p>Sigo envergonhado com muitos parentes, amigos e colegas cristãos, evangélicos e espíritas.</p>\n<p>Gente quanta ignorância, quanto ódio, quando egoísmo, quanta cegueira, quanta teimosia.</p>\n<p>Será que só os seus valores valem?</p>\n<p>Será que só a sua religião vale?</p>\n<p>Será que só o que você acredita vale?</p>\n<p>Só o que você acha que é amor que vale?</p>\n<p>Só que você acha que é família é que o vale?</p>\n<p>O mundo na visão de vocês é um mundo que eu não quero fazer parte.</p>\n<p>Quero é distância de pessoas que pensam dessa forma.</p>\n<p>Pode dar unfollow, fará um favor a nós dois.</p>\n",

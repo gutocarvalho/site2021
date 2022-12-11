@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
     <title>Guto@Site</title>
-    <link href="https://gutocarvalho.net/feed.xml" rel="self" />
-    <link href="https://gutocarvalho.net" />
+    <link href="https://pub.gutocarvalho.net/feed.xml" rel="self" />
+    <link href="https://pub.gutocarvalho.net" />
     <updated>2022-11-01T14:55:28-03:00</updated>
     <author>
         <name>Guto Carvalho</name>
     </author>
-    <id>https://gutocarvalho.net</id>
+    <id>https://pub.gutocarvalho.net</id>
 
     <entry>
         <title>Vulnerabilidade no OpenSSL</title>
         <author>
             <name>Guto Carvalho</name>
         </author>
-        <link href="https://gutocarvalho.net/vulnerabilidade-no-openssl/"/>
-        <id>https://gutocarvalho.net/vulnerabilidade-no-openssl/</id>
+        <link href="https://pub.gutocarvalho.net/vulnerabilidade-no-openssl/"/>
+        <id>https://pub.gutocarvalho.net/vulnerabilidade-no-openssl/</id>
             <category term="MindNotes"/>
 
         <updated>2022-11-01T14:55:28-03:00</updated>
@@ -55,8 +55,8 @@
         <author>
             <name>Guto Carvalho</name>
         </author>
-        <link href="https://gutocarvalho.net/ih-sera-que-esse-ultimo-post-foi-pra-mim-hein/"/>
-        <id>https://gutocarvalho.net/ih-sera-que-esse-ultimo-post-foi-pra-mim-hein/</id>
+        <link href="https://pub.gutocarvalho.net/ih-sera-que-esse-ultimo-post-foi-pra-mim-hein/"/>
+        <id>https://pub.gutocarvalho.net/ih-sera-que-esse-ultimo-post-foi-pra-mim-hein/</id>
             <category term="FalaGutera"/>
 
         <updated>2022-10-29T12:10:43-03:00</updated>
@@ -89,8 +89,8 @@
         <author>
             <name>Guto Carvalho</name>
         </author>
-        <link href="https://gutocarvalho.net/como-vai-ser-minha-vida-apos-eleicoes/"/>
-        <id>https://gutocarvalho.net/como-vai-ser-minha-vida-apos-eleicoes/</id>
+        <link href="https://pub.gutocarvalho.net/como-vai-ser-minha-vida-apos-eleicoes/"/>
+        <id>https://pub.gutocarvalho.net/como-vai-ser-minha-vida-apos-eleicoes/</id>
             <category term="FalaGutera"/>
 
         <updated>2022-10-29T11:54:15-03:00</updated>
@@ -123,8 +123,8 @@
         <author>
             <name>Guto Carvalho</name>
         </author>
-        <link href="https://gutocarvalho.net/meu-voto-e-13-no-dia-30-de-outubro/"/>
-        <id>https://gutocarvalho.net/meu-voto-e-13-no-dia-30-de-outubro/</id>
+        <link href="https://pub.gutocarvalho.net/meu-voto-e-13-no-dia-30-de-outubro/"/>
+        <id>https://pub.gutocarvalho.net/meu-voto-e-13-no-dia-30-de-outubro/</id>
             <category term="FalaGutera"/>
 
         <updated>2022-10-26T10:53:54-03:00</updated>
@@ -182,8 +182,8 @@ Voto 13.<br></p>
         <author>
             <name>Guto Carvalho</name>
         </author>
-        <link href="https://gutocarvalho.net/vao-fechar-igrejas-no-brasil-sera/"/>
-        <id>https://gutocarvalho.net/vao-fechar-igrejas-no-brasil-sera/</id>
+        <link href="https://pub.gutocarvalho.net/vao-fechar-igrejas-no-brasil-sera/"/>
+        <id>https://pub.gutocarvalho.net/vao-fechar-igrejas-no-brasil-sera/</id>
             <category term="FalaGutera"/>
 
         <updated>2022-10-26T10:21:06-03:00</updated>
@@ -212,8 +212,8 @@ Guto</p>
         <author>
             <name>Guto Carvalho</name>
         </author>
-        <link href="https://gutocarvalho.net/vai-haver-censura-no-brasil-sera/"/>
-        <id>https://gutocarvalho.net/vai-haver-censura-no-brasil-sera/</id>
+        <link href="https://pub.gutocarvalho.net/vai-haver-censura-no-brasil-sera/"/>
+        <id>https://pub.gutocarvalho.net/vai-haver-censura-no-brasil-sera/</id>
             <category term="FalaGutera"/>
 
         <updated>2022-10-26T10:35:01-03:00</updated>
@@ -254,8 +254,8 @@ Guto</p>
         <author>
             <name>Guto Carvalho</name>
         </author>
-        <link href="https://gutocarvalho.net/o-brasil-vai-virar-uma-ditadura-sera/"/>
-        <id>https://gutocarvalho.net/o-brasil-vai-virar-uma-ditadura-sera/</id>
+        <link href="https://pub.gutocarvalho.net/o-brasil-vai-virar-uma-ditadura-sera/"/>
+        <id>https://pub.gutocarvalho.net/o-brasil-vai-virar-uma-ditadura-sera/</id>
             <category term="FalaGutera"/>
 
         <updated>2022-10-26T16:44:32-03:00</updated>
@@ -287,8 +287,8 @@ Guto</p>
         <author>
             <name>Guto Carvalho</name>
         </author>
-        <link href="https://gutocarvalho.net/o-brasil-vai-virar-uma-venezuela-sera/"/>
-        <id>https://gutocarvalho.net/o-brasil-vai-virar-uma-venezuela-sera/</id>
+        <link href="https://pub.gutocarvalho.net/o-brasil-vai-virar-uma-venezuela-sera/"/>
+        <id>https://pub.gutocarvalho.net/o-brasil-vai-virar-uma-venezuela-sera/</id>
             <category term="FalaGutera"/>
 
         <updated>2022-10-26T16:44:27-03:00</updated>
@@ -331,8 +331,8 @@ Guto</p>
         <author>
             <name>Guto Carvalho</name>
         </author>
-        <link href="https://gutocarvalho.net/condeno-o-ataque-contra-a-pf-no-rio/"/>
-        <id>https://gutocarvalho.net/condeno-o-ataque-contra-a-pf-no-rio/</id>
+        <link href="https://pub.gutocarvalho.net/condeno-o-ataque-contra-a-pf-no-rio/"/>
+        <id>https://pub.gutocarvalho.net/condeno-o-ataque-contra-a-pf-no-rio/</id>
             <category term="FalaGutera"/>
 
         <updated>2022-10-26T10:19:09-03:00</updated>
@@ -368,8 +368,8 @@ Guto</p>
         <author>
             <name>Guto Carvalho</name>
         </author>
-        <link href="https://gutocarvalho.net/sigo-envergonhado-com-muita-gente/"/>
-        <id>https://gutocarvalho.net/sigo-envergonhado-com-muita-gente/</id>
+        <link href="https://pub.gutocarvalho.net/sigo-envergonhado-com-muita-gente/"/>
+        <id>https://pub.gutocarvalho.net/sigo-envergonhado-com-muita-gente/</id>
             <category term="FalaGutera"/>
 
         <updated>2022-10-20T07:46:09-03:00</updated>
